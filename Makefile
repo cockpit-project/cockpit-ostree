@@ -1,6 +1,6 @@
 PACKAGE_NAME := $(shell python3 -c "import json; print(json.load(open('package.json'))['name'])")
 ifeq ($(TEST_OS),)
-TEST_OS = centos-7
+TEST_OS = fedora-atomic
 endif
 export TEST_OS
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
@@ -64,8 +64,6 @@ clean:
 install: dist/index.js
 	mkdir -p $(DESTDIR)/usr/share/cockpit/$(PACKAGE_NAME)
 	cp -r dist/* $(DESTDIR)/usr/share/cockpit/$(PACKAGE_NAME)
-	mkdir -p $(DESTDIR)/usr/share/metainfo/
-	cp org.cockpit-project.$(PACKAGE_NAME).metainfo.xml $(DESTDIR)/usr/share/metainfo/
 
 # this requires a built source tree and avoids having to install anything system-wide
 devel-install: dist/index.js
@@ -75,13 +73,13 @@ devel-install: dist/index.js
 # when building a distribution tarball, call webpack with a 'production' environment
 dist-gzip: NODE_ENV=production
 dist-gzip: clean all
-	tar czf cockpit-$(PACKAGE_NAME).tar.gz --transform 's,^,cockpit-$(PACKAGE_NAME)/,' $$(git ls-files) dist/
+	tar czf $(PACKAGE_NAME).tar.gz --transform 's,^,$(PACKAGE_NAME)/,' $$(git ls-files) dist/
 
 srpm: dist-gzip
 	rpmbuild -bs \
 	  --define "_sourcedir `pwd`" \
 	  --define "_srcrpmdir `pwd`" \
-	  cockpit-$(PACKAGE_NAME).spec
+	  $(PACKAGE_NAME).spec
 
 rpm: dist-gzip
 	mkdir -p "`pwd`/output"
@@ -93,14 +91,14 @@ rpm: dist-gzip
 	  --define "_srcrpmdir `pwd`" \
 	  --define "_rpmdir `pwd`/output" \
 	  --define "_buildrootdir `pwd`/build" \
-	  cockpit-$(PACKAGE_NAME).spec
+	  $(PACKAGE_NAME).spec
 	find `pwd`/output -name '*.rpm' -printf '%f\n' -exec mv {} . \;
 	rm -r "`pwd`/rpmbuild"
 	rm -r "`pwd`/output" "`pwd`/build"
 
 # build a VM with locally built rpm installed
 $(VM_IMAGE): rpm bots
-	bots/image-customize -v -r 'rpm -e cockpit-$(PACKAGE_NAME) || true' -i cockpit -i `pwd`/cockpit-$(PACKAGE_NAME)-*.noarch.rpm -s $(CURDIR)/test/vm.install $(TEST_OS)
+	bots/image-customize -v -r 'rpm -e $(PACKAGE_NAME) || true' -i cockpit -i `pwd`/$(PACKAGE_NAME)-*.noarch.rpm -s $(CURDIR)/test/vm.install $(TEST_OS)
 
 # convenience target for the above
 vm: $(VM_IMAGE)
