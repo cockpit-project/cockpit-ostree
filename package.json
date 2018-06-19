@@ -1,9 +1,9 @@
 {
-  "name": "starter-kit",
+  "name": "cockpit-ostree",
   "version": "0.1.0",
-  "description": "Scaffolding for a cockpit module",
+  "description": "Manage software updates for ostree based systems in Cockpit",
   "main": "index.js",
-  "repository": "git@github.com:cockpit/starter-kit.git",
+  "repository": "git@github.com:cockpit-project/cockpit-ostree.git",
   "author": "",
   "license": "LGPL-2.1",
   "scripts": {

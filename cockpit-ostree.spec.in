@@ -1,20 +1,21 @@
-Name: cockpit-starter-kit
+Name: cockpit-ostree
 Version: @VERSION@
 Release: 1%{?dist}
-Summary: Cockpit Starter Kit Example Module
-License: LGPLv2.1+
-
-Source: cockpit-starter-kit-%{version}.tar.gz
 BuildArch: noarch
 BuildRequires: /usr/bin/python3
+Summary: Cockpit user interface for rpm-ostree
+License: LGPLv2.1+
+Requires: cockpit-bridge >= 125
+Requires: cockpit-system >= 125
+Requires: /usr/libexec/rpm-ostreed
 
-%define debug_package %{nil}
+Source: cockpit-ostree.tar.gz
 
 %description
-Cockpit Starter Kit Example Module
+Cockpit component for managing software updates for ostree based systems.
 
 %prep
-%setup -n cockpit-starter-kit
+%setup -n cockpit-ostree
 
 %build
 # There is nothing to do, release tarballs already have dist/.
