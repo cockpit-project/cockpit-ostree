@@ -21,8 +21,9 @@ var production = process.env.NODE_ENV === 'production';
 
 var info = {
     entries: {
-        "index": [
-            "./index.es6"
+        "ostree": [
+            "./app.js",
+            "./ostree.less"
         ]
     },
     files: [
@@ -154,8 +155,8 @@ module.exports = {
             },
             {
                 exclude: /node_modules/,
-                loader: extract.extract('css-loader!sass-loader'),
-                test: /\.scss$/
+                test: /\.less$/,
+                loader: extract.extract('css-loader!less-loader')
             }
         ]
     },

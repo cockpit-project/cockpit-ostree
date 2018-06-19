@@ -1,12 +1,14 @@
 {
-    "version": "0.1",
+    "version": "170",
+    "name": "updates",
     "requires": {
-        "cockpit": "137"
+        "cockpit": "125"
     },
 
     "tools": {
-        "index": {
-            "label": "Starter Kit"
+        "ostree": {
+            "label": "Software Updates",
+            "path": "index.html"
         }
     }
 }

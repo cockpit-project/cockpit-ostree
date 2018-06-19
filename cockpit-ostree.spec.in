@@ -8,7 +8,7 @@ Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
 Requires: /usr/libexec/rpm-ostreed
 
-Source: cockpit-ostree.tar.gz
+Source: cockpit-ostree-%{version}.tar.gz
 
 %description
 Cockpit component for managing software updates for ostree based systems.
