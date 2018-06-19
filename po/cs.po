@@ -1,0 +1,2439 @@
+# Zdenek <chmelarz@gmail.com>, 2016. #zanata
+# Daniel Rusek <mail@asciiwolf.com>, 2017. #zanata
+# Jiri Eischmann <jiri@eischmann.cz>, 2017. #zanata
+# Vladi Nodzak <gamesvladi+fedora@gmail.com>, 2017. #zanata
+# Zdenek <chmelarz@gmail.com>, 2017. #zanata
+# Zdenek <chmelarz@gmail.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2018-02-27 04:55+0000\n"
+"Last-Translator: Zdenek <chmelarz@gmail.com>\n"
+"Language-Team: Czech\n"
+"Language: cs\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "ID klíče $0"
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 balíček"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 balíčky"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- Přidat nový repozitář"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:90
+msgid "Add"
+msgstr "Přidat"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "Přidat další klíč"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:39
+msgid "Apply"
+msgstr "Použít"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:255
+msgid "Available"
+msgstr "Dostupný"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Začíná textem '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Zrušit"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Změnit repozitář"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Zkontrolovat aktualizace"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Hledám aktualizace"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr ""
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr ""
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:253
+msgid "Default"
+msgstr "Výchozí"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:38
+msgid "Delete"
+msgstr "Smazat"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr ""
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+# auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
+#: src/index.html:258
+msgid "Failed"
+msgstr "Neúspěšný"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#: src/index.html:99
+msgid "Name"
+msgstr "Název"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr ""
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr ""
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#: src/index.html:307
+msgid "Origin"
+msgstr "Původ"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#: src/index.html:266
+msgid "Packages"
+msgstr "Balíčky"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr ""
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr ""
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr ""
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr ""
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr ""
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr ""
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#: src/index.html:251
+msgid "Running"
+msgstr "Běží"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr ""
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr ""
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr ""
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:288
+msgid "Status"
+msgstr "Stav"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr ""
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr ""
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Aktualizace"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr ""
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr ""
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/index.html:303
+msgid "Version"
+msgstr "Verze"
+
+#: src/index.html:282
+msgid "When"
+msgstr ""
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " (shared with the OS)"
+#~ msgstr "(sdíleno s OS)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr "1\"Chcete smazat následující nody?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "Blokové zařízení"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 Velikost bloku dat"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 Disky"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "$0 Souborový systém"
+
+#~ msgid ""
+#~ "$0 Only users with local credentials will be able to log into this "
+#~ "machine. This may also effect other services as DNS resolution settings "
+#~ "and the list of trusted CAs may change."
+#~ msgstr ""
+#~ "$0 Pouze uživatelé s místními uživatelskými právy mají přístup k tomuto "
+#~ "zařízení.  To může mít vliv na ostatní služby jako DNS nastavení and může "
+#~ "být rozdílný seznam CA certifikátů."
+
+#~ msgid "$0 Template"
+#~ msgstr "$0 Šablona"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bit"
+#~ msgstr[1] "$0 bity"
+#~ msgstr[2] "$0 bitů"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 bajt"
+#~ msgstr[1] "$0 bajty"
+#~ msgstr[2] "$0 bajtů"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 bajt"
+#~ msgstr[1] "$0 bajty"
+#~ msgstr[2] "$0 bajtů"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 den"
+#~ msgstr[1] "$0 dny"
+#~ msgstr[2] "$0 dnů"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 disk chybí"
+#~ msgstr[1] "$0 disky chybí"
+#~ msgstr[2] "$0 disků chybí"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 disk chybí"
+#~ msgstr[1] "$0 disky chybí"
+#~ msgstr[2] "$0 disků chybí"
+
+#~ msgid "$0 error"
+#~ msgstr "$0 chyba"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 skončil s kódem $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 selhalo"
+
+#~ msgid "$0 filesystems can not be made larger."
+#~ msgstr "$0 souborové systémy nelze zvětšit."
+
+#~ msgid "$0 filesystems can not be made smaller."
+#~ msgstr "$0 souborové systémy nelze zmenšit."
+
+#~ msgid "$0 filesystems can not be resized here."
+#~ msgstr "$0 souborové systémy zde nelze změnit."
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 hodina"
+#~ msgstr[1] "$0 hodiny"
+#~ msgstr[2] "$0 hodin"
+
+#~ msgid ""
+#~ "$0 is available for most operating systems. To install it, search for it "
+#~ "in GNOME Software or run the following:"
+#~ msgstr ""
+#~ "$0 je k dispozici pro většinu operačních systémů. K instalaci je třeba "
+#~ "hledat v GNOME Software nebo spustit:"
+
+#~ msgid "$0 is in active use"
+#~ msgstr "$0 je právě používán"
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 zabit se signálem $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 minuta"
+#~ msgstr[1] "$0 minuty"
+#~ msgstr[2] "$0 minut"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 měsíc"
+#~ msgstr[1] "$0 měsíce"
+#~ msgstr[2] "$0 měsíců"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 výskyt"
+#~ msgstr[1] "$0 výskyty"
+#~ msgstr[2] "$0 výskytů"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0 z $1"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 sdílení"
+
+#~ msgid "$0 update"
+#~ msgid_plural "$0 updates"
+#~ msgstr[0] "$0 aktualizace"
+#~ msgstr[1] "$0 aktualizace"
+#~ msgstr[2] "$0 aktualizací"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 týden"
+#~ msgstr[1] "$0 týdny"
+#~ msgstr[2] "$0 týdnů"
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 rok"
+#~ msgstr[1] "$0 roky"
+#~ msgstr[2] "$0 roků"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% volný"
+#~ msgstr[1] "$0% volné"
+#~ msgstr[2] "$0% volných"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% využitý"
+#~ msgstr[1] "$0% využité"
+#~ msgstr[2] "$0% využitých"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, $1 volné"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (z $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "${size} ${desc}"
+#~ msgstr "${size} ${desc}"
+
+#~ msgid "'Organization' required to register."
+#~ msgstr "\"Organizace\" je k registraci vyžadována."
+
+#~ msgid "'Organization' required when using activation keys."
+#~ msgstr "\"Organizace\" je vyžadována, pokud používáte aktivační klíče."
+
+#~ msgid "(default)"
+#~ msgstr "(výchozí)"
+
+#~ msgid "(none)"
+#~ msgstr "(žádné)"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 minuta"
+
+#~ msgid "1 day"
+#~ msgstr "1 den"
+
+#~ msgid "1 hour"
+#~ msgstr "1 hodina"
+
+#~ msgid "1 min"
+#~ msgstr "1 minuta"
+
+#~ msgid "1 week"
+#~ msgstr "1 týden"
+
+#~ msgid "10th"
+#~ msgstr "10."
+
+#~ msgid "11th"
+#~ msgstr "11. "
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12."
+
+#~ msgid "13th"
+#~ msgstr "13."
+
+#~ msgid "14th"
+#~ msgstr "14."
+
+#~ msgid "15th"
+#~ msgstr "15."
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16."
+
+#~ msgid "17th"
+#~ msgstr "17."
+
+#~ msgid "18th"
+#~ msgstr "18."
+
+#~ msgid "19th"
+#~ msgstr "19."
+
+#~ msgid "1st"
+#~ msgstr "1."
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 min"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 minut"
+
+#~ msgid "20th"
+#~ msgstr "20."
+
+#~ msgid "21st"
+#~ msgstr "21."
+
+#~ msgid "22nd"
+#~ msgstr "22."
+
+#~ msgid "23rd"
+#~ msgstr "23."
+
+#~ msgid "24th"
+#~ msgstr "24."
+
+#~ msgid "25th"
+#~ msgstr "25."
+
+#~ msgid "26th"
+#~ msgstr "26."
+
+#~ msgid "27th"
+#~ msgstr "27."
+
+#~ msgid "28th"
+#~ msgstr "28."
+
+#~ msgid "29th"
+#~ msgstr "29."
+
+#~ msgid "2nd"
+#~ msgstr "2."
+
+#~ msgid "3 min"
+#~ msgstr "3 min"
+
+#~ msgid "30th"
+#~ msgstr "30."
+
+#~ msgid "31st"
+#~ msgstr "31."
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3."
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 min"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 minut"
+
+#~ msgid "4th"
+#~ msgstr "4."
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "5 min"
+#~ msgstr "5 min"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5."
+
+#~ msgid "6 hours"
+#~ msgstr "6 hodin"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 minut"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6."
+
+#~ msgid "7th"
+#~ msgstr "7."
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8."
+
+#~ msgid "9th"
+#~ msgstr "9."
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "Kompatibilní verze Cockpit není nainstalována na {{#strong}}{{host}}{{/"
+#~ "strong}}."
+
+#~ msgid "A disk is needed."
+#~ msgstr "Je zapotřebí disk."
+
+#~ msgid ""
+#~ "A spare disk needs to be added first before this disk can be removed."
+#~ msgstr "Je třeba přidat náhradní disk než bude možné tento disk smazat."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Uživatelské rozhraní pro GNU/Linux servery"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP monitorování"
+
+#~ msgid "ARP Ping"
+#~ msgstr "ARP ping"
+
+#~ msgid "AWS Elastic Block Store"
+#~ msgstr "AWS Elastic Block Store"
+
+#~ msgid "About Cockpit"
+#~ msgstr "O Cockpitu"
+
+#~ msgid "Access"
+#~ msgstr "Přístup"
+
+#~ msgid "Access Modes"
+#~ msgstr "Režimy přístupu"
+
+#~ msgid "Access Policy"
+#~ msgstr "Politika přístupu"
+
+# auto translated by TM merge from project: Pulseaudio, version: 6.0, DocId: pulseaudio.pot
+#~ msgid "Access denied"
+#~ msgstr "Přístup odepřen"
+
+#~ msgid "Account Expiration"
+#~ msgstr "Expirace účtu"
+
+#~ msgid "Account Settings"
+#~ msgstr "Nastavení účtu"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "Účet není přístupný nebo není možné jej měnit."
+
+#~ msgid "Accounts"
+#~ msgstr "Účty"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Účty"
+
+#~ msgid "Action"
+#~ msgstr "Akce"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivovat"
+
+#~ msgid "Activating $target"
+#~ msgstr "Aktivuji $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Aktivační klíč"
+
+# auto translated by TM merge from project: ibus-libpinyin, version: master, DocId: ibus-libpinyin
+#~ msgid "Active"
+#~ msgstr "Aktivní"
+
+#~ msgid "Active Backup"
+#~ msgstr "Aktivní záloha"
+
+#~ msgid "Active Pages"
+#~ msgstr "Aktivní stránky"
+
+#~ msgid "Actual"
+#~ msgstr "Aktuální"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Adaptivní rozložení zátěže"
+
+#, fuzzy
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Adaptivní přenos rozložení zátěže"
+
+#~ msgid "Add $0"
+#~ msgstr "Přidat $0"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Přidat další úložiště"
+
+#~ msgid "Add Bond"
+#~ msgstr "Přidat vazbu"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Přidat most"
+
+#~ msgid "Add Cluster Node"
+#~ msgstr "Přidat clusterový uzel"
+
+#~ msgid "Add Disks"
+#~ msgstr "Přidat disky"
+
+#~ msgid "Add Group"
+#~ msgstr "Přidat skupinu"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Přidat uzel Kubernetes"
+
+#~ msgid "Add Machine to Dashboard"
+#~ msgstr "Přidat stroj na panel"
+
+#~ msgid "Add Member"
+#~ msgstr "Přidat člena"
+
+#~ msgid "Add Membership"
+#~ msgstr "Přidat členství"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Přidat nový cluster"
+
+#~ msgid "Add New User"
+#~ msgstr "Přidat nového uživatele"
+
+#~ msgid "Add Role"
+#~ msgstr "Přidat roli"
+
+#~ msgid "Add Storage"
+#~ msgstr "Přidat úložiště"
+
+#~ msgid "Add Team"
+#~ msgstr "Přidat tým"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "Add User"
+#~ msgstr "Přidat uživatele"
+
+#~ msgid "Add VLAN"
+#~ msgstr "Přidat VLAN"
+
+#~ msgid "Add iSCSI Portal"
+#~ msgstr "Přidat portál iSCSI"
+
+#~ msgid "Add key"
+#~ msgstr "Přidat klíč"
+
+#~ msgid "Add membership"
+#~ msgstr "Přidat členství"
+
+#~ msgid "Add public key"
+#~ msgstr "Přidat veřejný klíč"
+
+#~ msgid ""
+#~ "Adding <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Přidání <b>$0</b> přeruší spojení se serverem a způsobí nedostupnost "
+#~ "administračního uživatelského rozhraní."
+
+#~ msgid "Adding key"
+#~ msgstr "Přidání klíče"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "Přidávám fyzický svazek do $target"
+
+#~ msgid "Additional"
+#~ msgstr "Další"
+
+#~ msgid "Additional DNS $val"
+#~ msgstr "Další DNS $val"
+
+#~ msgid "Additional DNS Search Domains $val"
+#~ msgstr "Další domény vyhledávání DNS $val"
+
+#~ msgid "Additional Storage"
+#~ msgstr "Dodatečné úložiště"
+
+#~ msgid "Additional address $val"
+#~ msgstr "Dodatečná adresa $val"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Address"
+#~ msgstr "Adresa"
+
+#~ msgid "Address $val"
+#~ msgstr "Adresa $val"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Address:"
+#~ msgstr "Adresa:"
+
+# auto translated by TM merge from project: Spacewalk Web UI, version: master, DocId: java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+#~ msgid "Addresses"
+#~ msgstr "Adresa"
+
+#~ msgid "Adjust"
+#~ msgstr "Upravit"
+
+#~ msgid "Adjust Persistent Volume '{{ item.metadata.name }}'"
+#~ msgstr "Upravit persistentní  oddíl '{{ item.metadata.name }}'"
+
+#~ msgid "Adjust Replication Controller {{ item.metadata.name }}"
+#~ msgstr "Upravit replikační ovladač {{ item.metadata.name }}"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Upravit cestu"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Upravit službu"
+
+#~ msgid "Admin"
+#~ msgstr "Správce"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Heslo správce"
+
+#~ msgid "Advanced TCA"
+#~ msgstr "Pokročilé TCA"
+
+#~ msgid "After"
+#~ msgstr "Později"
+
+#~ msgid "After system boot"
+#~ msgstr "Při startu systému"
+
+#~ msgid "All In One"
+#~ msgstr "Vše v jednom"
+
+#~ msgid "All Projects"
+#~ msgstr "Všechny projekty"
+
+#~ msgid "All Types"
+#~ msgstr "Všechny typy"
+
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Všechna data na vybraných discích budou vymazána a disky budou přidány do "
+#~ "fondu úložišť."
+
+#~ msgid "All healthy"
+#~ msgstr "Všechny v pořádku"
+
+#~ msgid "All images"
+#~ msgstr "Všechny obrazy"
+
+#~ msgid "All in use"
+#~ msgstr "Všechny používané"
+
+#~ msgid "All running"
+#~ msgstr "Všechny spuštěné"
+
+#~ msgid "All running virtual machines will be turned off."
+#~ msgstr "Všechny spuštěné virtuální stroje budou vypnuty."
+
+# auto translated by TM merge from project: ibus, version: head, DocId: ibus10
+#~ msgid "Always"
+#~ msgstr "Vždy"
+
+#~ msgid "Annotations"
+#~ msgstr "Anotace"
+
+#~ msgid "Anonymous: Allow all unauthenticated users to pull images"
+#~ msgstr "Anonymní: Povolit všem neověřeným uživatelům nahrát obrazy"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikace"
+
+#~ msgid "Apply all updates"
+#~ msgstr "Aplikovat všechny aktualizace"
+
+#~ msgid "Apply security updates"
+#~ msgstr "Aplikovat bezpečnostní aktualizace"
+
+#~ msgid "Apply this solution"
+#~ msgstr "Aplikovat toto řešení"
+
+#~ msgid "Applying solution..."
+#~ msgstr "Aplikuji řešení..."
+
+#~ msgid "Applying updates"
+#~ msgstr "Aplikuji aktualizace"
+
+#~ msgid "Applying updates failed"
+#~ msgstr "Aplikuji neúspěšné aktualizace"
+
+# auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
+#~ msgid "Architecture"
+#~ msgstr "Architektura"
+
+#~ msgid "Are you sure you want to delete this image?"
+#~ msgstr "Opravdu chcete smazat tento obraz?"
+
+#~ msgid "Are you sure you want to leave the '$0' domain?"
+#~ msgstr "Opravdu chcete opustit doménu '$0'?"
+
+#~ msgid "Are you sure you want to leave this domain?"
+#~ msgstr "Opravdu chcete opustit tuto doménu?"
+
+#, fuzzy
+#~ msgid "Asset Tag"
+#~ msgstr "Tag zařízení"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Je vyžadováno alespoň $0 disků."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Je vyžadován alespoň 1 disk."
+
+#~ msgid "At specific time"
+#~ msgstr "V uvedený čas"
+
+#~ msgid "Audit log"
+#~ msgstr "Záznam auditu"
+
+#~ msgid "Authenticating"
+#~ msgstr "Ověřuji"
+
+#~ msgid "Authentication"
+#~ msgstr "Ověření"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "Ověření selhalo"
+
+#~ msgid "Authentication Failed: Server closed connection"
+#~ msgstr "Ověření selhalo: Server přerušil spojení"
+
+#~ msgid "Authentication failed"
+#~ msgstr "Ověření selhalo"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Authentication required"
+#~ msgstr "Nutné ověření"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Autorizované veřejné SSH klíče"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Automatic"
+#~ msgstr "Automatický"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Automaticky (pouze DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Automaticky (DHCP)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Automatické aktualizace"
+
+#~ msgid "Automatically selected host"
+#~ msgstr "Automaticky vybraný hostitel"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Automatické použití NTP"
+
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Automatické použití specifických NTP serverů"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "Autostart:"
+#~ msgstr "Automatické spuštění"
+
+#~ msgid "Available Updates"
+#~ msgstr "Dostupné aktualizace"
+
+#~ msgid "Available targets on $0"
+#~ msgstr "Dostupné cíle na $0"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "BIOS"
+#~ msgstr "BIOS"
+
+#~ msgid "BIOS date"
+#~ msgstr "Datum BIOSu"
+
+#~ msgid "BIOS version"
+#~ msgstr "Verze BIOSu"
+
+#~ msgid "Back to Accounts"
+#~ msgstr "Zpět k účtům"
+
+#~ msgid "Backing Device"
+#~ msgstr "Zálohovací zařízení"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "Chybná data předána mechanismu passwd1"
+
+#~ msgid "Base Template"
+#~ msgstr "Základní šablona"
+
+#~ msgid "Base template"
+#~ msgstr "Základní šablona"
+
+#~ msgid "Base template:"
+#~ msgstr "Základní šablona:"
+
+#~ msgid "Block"
+#~ msgstr "Blok"
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Blokové zařízení pro souborové systémy"
+
+#~ msgid "Blocked"
+#~ msgstr "Blokované"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Bond"
+#~ msgstr "Vazba"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Nastavení vazby"
+
+#~ msgid "Boot ID"
+#~ msgstr "Boot ID"
+
+#~ msgid "Boot Order:"
+#~ msgstr "Boot příkaz:"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Bridge"
+#~ msgstr "Most"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Nastavení portu mostu"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Nastavení mostu"
+
+#~ msgid "Bridge port"
+#~ msgstr "Port mostu"
+
+# auto translated by TM merge from project: tvtime, version: 1.0.7, DocId: tvtime
+#~ msgid "Broadcast"
+#~ msgstr "Vysílání"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Chybné nastavení"
+
+#~ msgid "Bugs:"
+#~ msgstr "Chyby:"
+
+#~ msgid "Built"
+#~ msgstr "Sestava"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#, fuzzy
+#~ msgid "CHANGE NETWORK STATE action failed"
+#~ msgstr "CHANGE NETWORK STATE akce selhala"
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "Stav CPU"
+
+#~ msgid "CPU Type:"
+#~ msgstr "Typ CPU:"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "Využití CPU: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "Priorita CPU"
+
+#~ msgid "CPU usage:"
+#~ msgstr "Využití CPU:"
+
+#~ msgid "CREATE VM action failed"
+#~ msgstr "CREATE VM akce selhala"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Nelze se spojit s Docker"
+
+#~ msgid "Can't delete while unlocked"
+#~ msgstr "Nelze smazat neuzamčený"
+
+#~ msgid "Can't load image"
+#~ msgstr "Nelze načíst obraz"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Nelze se připojit k neznámému zařízení"
+
+#~ msgid "Cannot decrypt PEM-encoded private key"
+#~ msgstr "Nelze rozšifrovat PEM-zakódovaný privátní klíč"
+
+#~ msgid "Cannot forward login credentials"
+#~ msgstr "Nelze přeposlat přístupové údaje"
+
+#~ msgid "Cannot join a domain because realmd is not available on this system"
+#~ msgstr ""
+#~ "Nelze se připojit do domény protože realmd není dostupný na tomto systému"
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "Nelze naplánovat událost v minulosti"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Capacity"
+#~ msgstr "Kapacita"
+
+#, fuzzy
+#~ msgid "Carrier"
+#~ msgstr "Nosič"
+
+#~ msgid "Ceph Filesystem Mount"
+#~ msgstr "Připojení souborového systému Ceph"
+
+#~ msgid "Ceph Monitors"
+#~ msgstr "Ceph monitory"
+
+#~ msgid "Change"
+#~ msgstr "Změna"
+
+#~ msgid "Change Host Name"
+#~ msgstr "Změnit název počítače"
+
+#~ msgid "Change Password"
+#~ msgstr "Změnit heslo"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Změnit profil výkonu"
+
+#~ msgid "Change Profile"
+#~ msgstr "Změnit profil"
+
+#~ msgid "Change System Time"
+#~ msgstr "Změnit systémový čas"
+
+#~ msgid "Change User"
+#~ msgstr "Změnit uživatele"
+
+#~ msgid "Change iSCSI Initiator Name"
+#~ msgstr "Změnit název iSCSI iniciátoru"
+
+#~ msgid "Change image stream"
+#~ msgstr "Změnit tok obrazu"
+
+#~ msgid "Change project"
+#~ msgstr "Změnit projekt"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Změnit limity zdroje"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Změnit limity zdrojů"
+
+#~ msgid "Change the settings"
+#~ msgstr "Změnit nastavení"
+
+#~ msgid ""
+#~ "Changing the settings will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Změna nastavení přeruší připojení k serveru a znepřístupní uživatelské "
+#~ "rozhraní pro správu."
+
+#~ msgid "Checking $target"
+#~ msgstr "Ověřuji $target"
+
+#~ msgid "Checking IP"
+#~ msgstr "Ověřuji IP"
+
+#~ msgid "Checking RAID Device $target"
+#~ msgstr "Ověřuji zařízení RAID $target"
+
+#~ msgid "Checking and Repairing RAID Device $target"
+#~ msgstr "Ověřuji o opravuji zařízení RAID $target"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Hledám nové aplikace"
+
+#~ msgid "Checking for public keys"
+#~ msgstr "Hledám veřejné klíče"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "Vyberte jazyk aplikace"
+
+#~ msgid "Chunk Size"
+#~ msgstr "Velikost bloku"
+
+#~ msgid "Claim"
+#~ msgstr "Nárok"
+
+#~ msgid "Claim Name"
+#~ msgstr "Název nároku"
+
+# auto translated by TM merge from project: libosinfo, version: master, DocId: libosinfo
+#~ msgid "Class"
+#~ msgstr "Třída"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "Čištění pro $target"
+
+#~ msgid ""
+#~ "Clicking \"Launch Remote Viewer\" will download a .vv file and launch $0."
+#~ msgstr ""
+#~ "Kliknutím na tlačítko \"Spustit vzdálený prohlížeč\" se stáhne soubor ve "
+#~ "formátu .vv a spustí se $0."
+
+#~ msgid "Client Certificate"
+#~ msgstr "Klientský certifikát"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Close"
+#~ msgstr "Zavřít"
+
+#~ msgid "Close Selected Pages"
+#~ msgstr "Zavřít vybrané stránky"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f23, DocId: pot/Cluster
+#~ msgid "Cluster"
+#~ msgstr "Cluster"
+
+#~ msgid "Cluster Templates"
+#~ msgstr "Šablony clusterů"
+
+#~ msgid "Cluster Virtual Machines"
+#~ msgstr "Cluster virtuálních strojů"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Cockpit authentication is configured incorrectly."
+#~ msgstr "Ověření Cockpit je nastaveno správně."
+
+#~ msgid ""
+#~ "Cockpit could not contact the given host $0. Make sure it has ssh running "
+#~ "on port $1, or specify another port in the address."
+#~ msgstr ""
+#~ "Cockpit nemohl kontaktovat uvedeného hostitele $0. Ujistěte se, že je ssh "
+#~ "spuštěno na portu $1 nebo specifikujte jiný port v adrese."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit nemohl kontaktovat uvedeného hostitele."
+
+#~ msgid ""
+#~ "Cockpit had an unexpected internal error. <br/><br/>You can try "
+#~ "restarting Cockpit by pressing refresh in your browser. The javascript "
+#~ "console contains details about this error (<b>Ctrl-Shift-J</b> in most "
+#~ "browsers)."
+#~ msgstr ""
+#~ "V Cockpit nastala neočekávaná interní chyba. <br/><br/>Můžete zkusit "
+#~ "Cockpit restartovat stisknutím tlačítka obnovit ve vašem prohlížeči. "
+#~ "Detailnější informace o této chybě jsou popsány v javascript konzoli "
+#~ "(<b>Ctrl-Shift-J</b> ve většině prohlížečů)."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit je správce serveru, který usnadňuje správu Linuxových serverů "
+#~ "prostřednictvím webového prohlížeče. Není žádným problémem skákat mezi "
+#~ "terminálem a nástrojem pro web. Služba spuštěná přes Cockpit může být "
+#~ "zastavena v terminálu. Podobně, pokud dojde k chybě v terminálu, je toto "
+#~ "vidět v rozhraní žurnálu Cockpitu."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr "Cockpit je interaktivní rozhraní pro správu Linuxového serveru."
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit není kompatibilní se softwarem v systému."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit není nainstalován"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit není v systému nainstalován."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit je ideální nástroj pro nové sysadminy, neboť jim umožňuje snadno "
+#~ "provádět jednoduché úkoly, jako je správa úložišť, kontrola žurnálu či "
+#~ "spouštění a zastavování služeb. Můžete současně sledovat a spravovat "
+#~ "několik serverů najednou. Stačí je přidat jedním kliknutím a vaše stroje "
+#~ "se budou starat o své kamarády."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit se nemohl spojit s {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit se nemohl přihlásit na {{#strong}}{{host}}{{/strong}}."
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Color"
+#~ msgstr "Barva"
+
+#~ msgid "Combined memory usage"
+#~ msgstr "Kombinované využití paměti"
+
+# auto translated by TM merge from project: SETroubleShoot, version: master, DocId: framework/po/setroubleshoot
+#~ msgid "Command"
+#~ msgstr "Příkaz"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "Příkaz nesmí být prázdný"
+
+#~ msgid "Command:"
+#~ msgstr "Příkaz:"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Comment"
+#~ msgstr "Poznámka"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Kompatibilní se všemi systémy a zařízeními (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Kompatibilní s moderním systémem a pevnými disky > 2TB (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Komprimovat výpisy paměti z havárií pro úsporu místa"
+
+#~ msgid "Compression"
+#~ msgstr "Komprese"
+
+#~ msgid "Condition $0=$1 was not met"
+#~ msgstr "Podmínka $0=$1 nebyla splněna"
+
+#~ msgid "Condition failed"
+#~ msgstr "Podmínka selhala"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Configuration"
+#~ msgstr "Nastavení"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Configure"
+#~ msgstr "Nastavit"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Konfigurace sítě Flanel"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Konfigurace Kubelet a Proxy"
+
+#~ msgid "Configure storage..."
+#~ msgstr "Konfigurace úložiště..."
+
+#~ msgid "Configuring"
+#~ msgstr "Konfigurace"
+
+#~ msgid "Configuring IP"
+#~ msgstr "Konfigurace IP"
+
+# auto translated by TM merge from project: ibus-input-pad, version: head, DocId: ibus-input-pad
+#~ msgid "Confirm"
+#~ msgstr "Potvrdit"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Potvrdit nové heslo"
+
+#~ msgid "Confirm deletion of $0"
+#~ msgstr "Potvrdit smazání $0"
+
+#~ msgid "Confirm migration"
+#~ msgstr "Potvrdit migraci"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Potvrdit přístupové heslo"
+
+#~ msgid "Confirm reload:"
+#~ msgstr "Potvrdit opětovné načtení:"
+
+#~ msgid "Confirm save:"
+#~ msgstr "Potvrdit uložení:"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Connect"
+#~ msgstr "Spojení"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Připojit se automaticky"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Connecting..."
+#~ msgstr "Připojování..."
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Connection"
+#~ msgstr "Spojení"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f24, DocId: pot/Containers
+#~ msgid "Containers"
+#~ msgstr "Kontejnery"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f24, DocId: pot/Containers
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Kontejnery"
+
+# auto translated by TM merge from project: comps, version: master, DocId: po/comps
+#~ msgid "Content"
+#~ msgstr "Obsah"
+
+#~ msgid "Convertible"
+#~ msgstr "Konvertibilní"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "Nelze přidat všechny disky"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "Nelze kontaktovat {{host}}"
+
+#~ msgid "Could not list services"
+#~ msgstr "Služby nelze zobrazit"
+
+#~ msgid "Could not parse PEM-encoded certificate"
+#~ msgstr "Nelze analyzovat certifikát kódovaný PEM"
+
+#~ msgid "Could not parse PEM-encoded private key"
+#~ msgstr "Nelze analyzovat soukromý klíč kódovaný PEM"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "Nelze obnovit úložný prostor"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Skupiny uživatelů nelze změnit"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Uživatelské heslo nelze změnit"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "Nelze se připojit k serveru"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Nelze se připojit k zařízení"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Nelze vytvořit nové uživatele"
+
+#~ msgid "Couldn't find running API server"
+#~ msgstr "Nelze najít běžící server API"
+
+#~ msgid ""
+#~ "Couldn't get system subscription status. Please ensure subscription-"
+#~ "manager is installed."
+#~ msgstr ""
+#~ "Nelze získat status odběru systému. Ujistěte se prosím, že je "
+#~ "nainstalován manager odběru."
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Nelze vypsat místní uživatele"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Nelze vypsat uživatele"
+
+# auto translated by TM merge from project: anaconda, version: rhel6-branch, DocId: anaconda
+#~ msgid "Create Partition"
+#~ msgstr "Vytvořit oddíl"
+
+# auto translated by TM merge from project: libreport, version: rhel6, DocId: libreport
+#~ msgid "Custom"
+#~ msgstr "Vlastní"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Description"
+#~ msgstr "Popis"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Description:"
+#~ msgstr "Popis:"
+
+# auto translated by TM merge from project: Fedora Websites, version: arm.fedoraproject.org, DocId: po/arm.fedoraproject.org
+#~ msgid "Desktop"
+#~ msgstr "Desktop"
+
+# auto translated by TM merge from project: blivet-gui, version: master, DocId: po/blivet-gui
+#~ msgid "Details"
+#~ msgstr "Podrobnosti"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Device"
+#~ msgstr "Zařízení"
+
+# auto translated by TM merge from project: usermode, version: default, DocId: usermode
+#~ msgid "Directory"
+#~ msgstr "Adresář"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Disable"
+#~ msgstr "Zakázat"
+
+#~ msgid "Disabled"
+#~ msgstr "Zakázáno"
+
+#~ msgid "Disconnected"
+#~ msgstr "Odpojeno"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Disk"
+#~ msgstr "Disk"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Disk I/O"
+#~ msgstr "Diskové I/O"
+
+# auto translated by TM merge from project: blivet-gui, version: master, DocId: po/blivet-gui
+#~ msgid "Disks"
+#~ msgstr "Disky"
+
+# auto translated by TM merge from project: appstream-glib, version: master, DocId: appstream-glib
+#~ msgid "Done!"
+#~ msgstr "Hotovo!"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Download"
+#~ msgstr "Stáhnout"
+
+# auto translated by TM merge from project: Fedora Websites, version: spins.fedoraproject.org, DocId: po/spins.fedoraproject.org
+#~ msgid "Downloading"
+#~ msgstr "Stažení"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgid "Drive"
+#~ msgstr "Mechanika"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Mechanika"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgid "Driver"
+#~ msgstr "Driver"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Edit"
+#~ msgstr "Upravit"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Empty"
+#~ msgstr "Prázdný"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Prázdný"
+
+#~ msgid "Enable"
+#~ msgstr "Povolit"
+
+#~ msgid "Enabled"
+#~ msgstr "Povoleno"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Encryption"
+#~ msgstr "Šifrování"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Entry"
+#~ msgstr "Položka"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Erase"
+#~ msgstr "Smazat"
+
+#~ msgid "Error"
+#~ msgstr "Chyba"
+
+# auto translated by TM merge from project: Fedora Websites, version: alt.fedoraproject.org, DocId: po/alt.fedoraproject.org
+#~ msgid "Everything"
+#~ msgstr "Vše"
+
+# auto translated by TM merge from project: appstream-glib, version: master, DocId: appstream-glib
+#~ msgid "FAILED"
+#~ msgstr "SELHALO"
+
+# auto translated by TM merge from project: system-config-firewall, version: master, DocId: po/system-config-firewall
+#~ msgid "File"
+#~ msgstr "Soubor"
+
+# auto translated by TM merge from project: usermode, version: default, DocId: usermode
+#~ msgid "Filesystem"
+#~ msgstr "Systém souborů"
+
+# auto translated by TM merge from project: comps, version: master, DocId: comps
+#~ msgid "Filesystems"
+#~ msgstr "Souborové systémy"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Fingerprint"
+#~ msgstr "Otisk"
+
+# auto translated by TM merge from project: blivet-gui, version: f23-branch, DocId: blivet-gui
+#~ msgid "Format"
+#~ msgstr "Formát"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Free"
+#~ msgstr "Volno"
+
+# auto translated by TM merge from project: anaconda, version: rhel6-branch, DocId: anaconda
+#~ msgid "Free Space"
+#~ msgstr "Volné místo"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Friday"
+#~ msgstr "pátek"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Full Name"
+#~ msgstr "Celé jméno"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Gateway:"
+#~ msgstr "Brána:"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "General"
+#~ msgstr "Obecné"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Groups"
+#~ msgstr "Skupiny"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgid "Hard Disk"
+#~ msgstr "Pevný disk"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Pevný disk"
+
+# auto translated by TM merge from project: accessibility-guide, version: master, DocId: Tools
+#~ msgid "Hardware"
+#~ msgstr "Hardware"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Host"
+#~ msgstr "Počítač"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Host Name"
+#~ msgstr "Název počítače"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Hours"
+#~ msgstr "Hodin"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "IP Address"
+#~ msgstr "IP adresa"
+
+# auto translated by TM merge from project: Spacewalk Backend, version: master, DocId: client/rhel/rhn-client-tools/po/rhn-client-tools
+#~ msgid "IP Address:"
+#~ msgstr "IP adresa:"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "Id"
+#~ msgstr "Id"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "Id:"
+#~ msgstr "Id:"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Identifier"
+#~ msgstr "Identifikátor"
+
+# auto translated by TM merge from project: authconfig, version: master, DocId: po/authconfig
+#~ msgid "Ignore"
+#~ msgstr "Ignorovat"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Inactive"
+#~ msgstr "Neaktivní"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#~ msgid "Install"
+#~ msgstr "Instalovat"
+
+# auto translated by TM merge from project: Fedora Installation Guide, version: f22, DocId: pot/SourceSpoke
+#~ msgid "Installation Source"
+#~ msgstr "Zdroj instalace"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Installed"
+#~ msgstr "Nainstalováno"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Installing"
+#~ msgstr "Instalování"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Interface"
+#~ msgstr "Rozhraní"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Interfaces"
+#~ msgstr "Rozhraní"
+
+# auto translated by TM merge from project: Pulseaudio, version: 6.0, DocId: pulseaudio.pot
+#~ msgid "Internal error"
+#~ msgstr "Vnitřní chyba"
+
+# auto translated by TM merge from project: Fedora Websites, version: alt.fedoraproject.org, DocId: po/alt.fedoraproject.org
+#~ msgid "Join"
+#~ msgstr "Přidejte se"
+
+# auto translated by TM merge from project: authconfig, version: master, DocId: po/authconfig
+#~ msgid "Join Domain"
+#~ msgstr "Připojit se k doméně"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Join a Domain"
+#~ msgstr "Připojit se k doméně"
+
+# auto translated by TM merge from project: Fedora Websites, version: spins.fedoraproject.org, DocId: po/spins.fedoraproject.org
+#~ msgid "Journal"
+#~ msgstr "Žurnál"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f23, DocId: pot/Kernel
+#~ msgid "Kernel"
+#~ msgstr "Jádro"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Labels"
+#~ msgstr "Štítky"
+
+#~ msgid "Launch Remote Viewer"
+#~ msgstr "Spustit vzdálený prohlížeč"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Location"
+#~ msgstr "Umístění"
+
+# auto translated by TM merge from project: authconfig, version: master, DocId: po/authconfig
+#~ msgid "Lock"
+#~ msgstr "Uzamknout"
+
+# auto translated by TM merge from project: python-fedora, version: 0.4.0, DocId: python-fedora
+#~ msgid "Log In"
+#~ msgstr "Přihlášení"
+
+# auto translated by TM merge from project: im-chooser , version: master, DocId: im-chooser
+#~ msgid "Log Out"
+#~ msgstr "Odhlásit"
+
+# auto translated by TM merge from project: blivet-gui, version: f23-branch, DocId: blivet-gui
+#~ msgid "Logical"
+#~ msgstr "logický"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Login"
+#~ msgstr "Přihlásit"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "MAC Address"
+#~ msgstr "MAC Adresa"
+
+# auto translated by TM merge from project: Entangle, version: master, DocId: entangle
+#~ msgid "Manual"
+#~ msgstr "Ruční"
+
+# auto translated by TM merge from project: tvtime, version: 1.0.7, DocId: tvtime
+#~ msgid "Medium"
+#~ msgstr "Středně"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Members"
+#~ msgstr "Členové"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Memory"
+#~ msgstr "Paměť"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Paměť"
+
+# auto translated by TM merge from project: Spacewalk Backend, version: master, DocId: client/rhel/rhn-client-tools/po/rhn-client-tools
+#~ msgid "Memory:"
+#~ msgstr "Paměť:"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Message"
+#~ msgstr "Zpráva"
+
+# auto translated by TM merge from project: libbytesize, version: master, DocId: libbytesize
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Minutes"
+#~ msgstr "Minut"
+
+# auto translated by TM merge from project: Cockpit, version: master, DocId: cockpit
+#~ msgid "Model"
+#~ msgstr "Model"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "Modify"
+#~ msgstr "Upravit"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Monday"
+#~ msgstr "pondělí"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "More"
+#~ msgstr "Další"
+
+# auto translated by TM merge from project: Fedora Websites, version: getfedora.org, DocId: po/getfedora
+#~ msgid "More details"
+#~ msgstr "Více podrobností"
+
+# auto translated by TM merge from project: anaconda, version: rhel6-branch, DocId: anaconda
+#~ msgid "Mount Point"
+#~ msgstr "Připojit do"
+
+# auto translated by TM merge from project: system-config-kdump, version: master, DocId: system-config-kdump
+#~ msgid "N/A"
+#~ msgstr "N/A"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "NFS"
+#~ msgstr "NFS"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Network"
+#~ msgstr "Síť"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f24, DocId: pot/Networking
+#~ msgid "Networking"
+#~ msgstr "Sítě"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f24, DocId: pot/Networking
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Sítě"
+
+#~ msgid "Never"
+#~ msgstr "Nikdy"
+
+# auto translated by TM merge from project: Fedora Websites, version: fedorahosted.org, DocId: po/fedorahosted
+#~ msgid "New Project"
+#~ msgstr "Nový projekt"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Next"
+#~ msgstr "Další"
+
+# auto translated by TM merge from project: anaconda, version: rhel6-branch, DocId: anaconda
+#~ msgid "No free space"
+#~ msgstr "Žádné volné místo"
+
+#~ msgid "No user name specified"
+#~ msgstr "Nebylo zadáno jméno uživatele."
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "No virtual machines"
+#~ msgstr "Žádné virtuálního stroje"
+
+#~ msgid "None"
+#~ msgstr "Žádný"
+
+#~ msgid "Not connected"
+#~ msgstr "Nepřipojeno"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Not found"
+#~ msgstr "Nenalezeno"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Note"
+#~ msgstr "Poznámka"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "OK"
+#~ msgstr "Budiž"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "OS Type:"
+#~ msgstr "Druh OS:"
+
+#~ msgid "Ok"
+#~ msgstr "Ok"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Options"
+#~ msgstr "Přepínače"
+
+# auto translated by TM merge from project: Fedora Release Notes, version: f23, DocId: pot/Overview
+#~ msgid "Overview"
+#~ msgstr "Přehled"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Parent"
+#~ msgstr "Rodič"
+
+# auto translated by TM merge from project: blivet-gui, version: f23-branch, DocId: blivet-gui
+#~ msgid "Partition"
+#~ msgstr "Oddíl"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Partitioning"
+#~ msgstr "Vytváření oddílů"
+
+# auto translated by TM merge from project: anaconda, version: f22-branch, DocId: anaconda
+#~ msgid "Passphrase"
+#~ msgstr "Heslo"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Password"
+#~ msgstr "Heslo"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "Path"
+#~ msgstr "Cesta"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Paths"
+#~ msgstr "Cesty"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Permanent"
+#~ msgstr "Trvalá"
+
+# auto translated by TM merge from project: Linux PAM, version: master, DocId: po/Linux-PAM
+#~ msgid "Permission denied"
+#~ msgstr "Přístup zamítnut"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Pool"
+#~ msgstr "Úložiště"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Port"
+#~ msgstr "Port"
+
+# auto translated by TM merge from project: PulseAudio for RHEL, version: 6.0, DocId: pulseaudio.pot
+#~ msgid "Portable"
+#~ msgstr "Přenosný"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Ports"
+#~ msgstr "Porty"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#~ msgid "Preparing"
+#~ msgstr "Příprava"
+
+# auto translated by TM merge from project: anaconda, version: master, DocId: main
+#~ msgid "Preserve"
+#~ msgstr "Zachovat"
+
+# auto translated by TM merge from project: blivet-gui, version: f23-branch, DocId: blivet-gui
+#~ msgid "Primary"
+#~ msgstr "primární"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Priority"
+#~ msgstr "Priorita"
+
+# auto translated by TM merge from project: libreport, version: master, DocId: libreport
+#~ msgid "Problem details"
+#~ msgstr "Detaily problému"
+
+# auto translated by TM merge from project: libosinfo, version: master, DocId: libosinfo
+#~ msgid "Product ID"
+#~ msgstr "ID produktu"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Protocol"
+#~ msgstr "Protokol"
+
+# auto translated by TM merge from project: Spacewalk Web UI, version: master, DocId: java/code/src/com/redhat/rhn/frontend/strings/java/StringResource
+#~ msgid "Proxy"
+#~ msgstr "Proxy"
+
+# auto translated by TM merge from project: anaconda, version: master, DocId: main
+#~ msgid "RAID Device"
+#~ msgstr "RAID zařízení"
+
+# auto translated by TM merge from project: anaconda, version: rhel6-branch, DocId: anaconda
+#~ msgid "RAID Devices"
+#~ msgstr "RAID zařízení"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Read Only"
+#~ msgstr "Pouze pro čtení"
+
+# auto translated by TM merge from project: system-config-kdump, version: master, DocId: system-config-kdump
+#~ msgid "Reboot"
+#~ msgstr "Restartovat"
+
+#~ msgid "Reload"
+#~ msgstr "Obnovit"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Remove"
+#~ msgstr "Odstranit"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#~ msgid "Removing"
+#~ msgstr "K odstranění"
+
+# auto translated by TM merge from project: abrt, version: rhel7, DocId: abrt
+#~ msgid "Report"
+#~ msgstr "Nahlásit"
+
+# auto translated by TM merge from project: gnome-abrt, version: master, DocId: gnome-abrt
+#~ msgid "Reported"
+#~ msgstr "Reportováno"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Repository"
+#~ msgstr "Repozitář"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Reset"
+#~ msgstr "Reset"
+
+#~ msgid "Restart"
+#~ msgstr "Restartovat"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Revision"
+#~ msgstr "Revize"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Role"
+#~ msgstr "Role"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Run"
+#~ msgstr "Spustit"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Saturday"
+#~ msgstr "sobota"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Save"
+#~ msgstr "Uložit"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Secret"
+#~ msgstr "Tajné"
+
+# auto translated by TM merge from project: Fedora OpenSSH Guide, version: master, DocId: Security
+#~ msgid "Security"
+#~ msgstr "Bezpečnost"
+
+#~ msgid "Select"
+#~ msgstr "Vybrat"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Administrátor serveru"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Servers"
+#~ msgstr "Servery"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Service"
+#~ msgstr "Služba"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Services"
+#~ msgstr "Služby"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Set"
+#~ msgstr "Sada"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#~ msgid "Severity"
+#~ msgstr "Závažnost"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Shared"
+#~ msgstr "Sdílená"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Shell"
+#~ msgstr "Shell"
+
+# auto translated by TM merge from project: anaconda, version: master, DocId: main
+#~ msgid "Shrink"
+#~ msgstr "Zmenšit"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Shut Down"
+#~ msgstr "Ukončit"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Size"
+#~ msgstr "Velikost"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#~ msgid "Source"
+#~ msgstr "Zdroj"
+
+#~ msgid "Start"
+#~ msgstr "Start"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "State"
+#~ msgstr "Stav"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "State:"
+#~ msgstr "Stav:"
+
+# auto translated by TM merge from project: Fedora Media Writer, version: master, DocId: mediawriter
+#~ msgid "Stop"
+#~ msgstr "Zastavit"
+
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#~ msgid "Stopped"
+#~ msgstr "Zastaveno"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Storage"
+#~ msgstr "Úložiště"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Summary"
+#~ msgstr "Souhrn"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Sunday"
+#~ msgstr "neděle"
+
+# auto translated by TM merge from project: udisks, version: udisks, DocId: udisks2
+#~ msgid "Swap"
+#~ msgstr "Odkládací oddíl"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "System"
+#~ msgstr "Systém"
+
+# auto translated by TM merge from project: virt-manager, version: master, DocId: virt-manager
+#~ msgid "Tablet"
+#~ msgstr "Tablet"
+
+# auto translated by TM merge from project: ibus, version: head, DocId: ibus10
+#~ msgid "Tags"
+#~ msgstr "Tagy"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Target"
+#~ msgstr "Cíl"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Team"
+#~ msgstr "Tým"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Hesla se neshodují."
+
+#~ msgid "This user name already exists"
+#~ msgstr "Toto jméno již existuje"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Thursday"
+#~ msgstr "čtvrtek"
+
+# auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
+#~ msgid "Total"
+#~ msgstr "Celkový"
+
+# auto translated by TM merge from project: SETroubleShoot, version: master, DocId: framework/po/setroubleshoot
+#~ msgid "Troubleshoot"
+#~ msgstr "Řešit potíže"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Tuesday"
+#~ msgstr "úterý"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+# auto translated by TM merge from project: firewalld, version: master, DocId: po/firewalld
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "UUID"
+#~ msgstr "UUID:"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "Unavailable"
+#~ msgstr "Nedostupné"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Unknown"
+#~ msgstr "Neznámý"
+
+# auto translated by TM merge from project: blivet-gui, version: f23-branch, DocId: blivet-gui
+#~ msgid "Unmount"
+#~ msgstr "Odpojit"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "Update"
+#~ msgstr "Aktualizovat"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Updated"
+#~ msgstr "Aktualizováno"
+
+# auto translated by TM merge from project: audit-viewer, version: default, DocId: audit-viewer
+#~ msgid "Usage"
+#~ msgstr "Použití"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "User"
+#~ msgstr "Uživatel"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "User Name"
+#~ msgstr "Uživatelské jméno"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "User name"
+#~ msgstr "Uživatelské jméno"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Username"
+#~ msgstr "Jméno uživatele"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Users"
+#~ msgstr "Uživatelé"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "Validating key"
+#~ msgstr "Ověřovací klíč"
+
+# auto translated by TM merge from project: libosinfo, version: master, DocId: libosinfo
+#~ msgid "Vendor"
+#~ msgstr "Výrobce"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "Verifying"
+#~ msgstr "Ověřuji"
+
+# auto translated by TM merge from project: anaconda, version: master, DocId: main
+#~ msgid "Volume"
+#~ msgstr "Svazek"
+
+# auto translated by TM merge from project: anaconda, version: master, DocId: main
+#~ msgid "Volume Group"
+#~ msgstr "Skupina oddílů"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#~ msgid "Wednesday"
+#~ msgstr "středa"
+
+# auto translated by TM merge from project: asknot-ng, version: 0.1, DocId: locale/asknot-ng
+#~ msgid "Writing"
+#~ msgstr "Psaní"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "Yes"
+#~ msgstr "Ano"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "active"
+#~ msgstr "aktivní"
+
+# auto translated by TM merge from project: libguestfs, version: master, DocId: po/libguestfs
+#~ msgid "bridge"
+#~ msgstr "most"
+
+# auto translated by TM merge from project: Blivet, version: master, DocId: blivet
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "byty"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "crashed"
+#~ msgstr "pád"
+
+# auto translated by TM merge from project: IBus-Chewing, version: master, DocId: ibus-chewing
+#~ msgid "default"
+#~ msgstr "výchozí"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "disabled"
+#~ msgstr "zakázáno"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#~ msgid "enabled"
+#~ msgstr "povoleno"
+
+# auto translated by TM merge from project: SSSD, version: master, DocId: po/sssd
+#~ msgid "error"
+#~ msgstr "chyba"
+
+# auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
+#~ msgid "idle"
+#~ msgstr "nečinný"
+
+# auto translated by TM merge from project: PulseAudio for RHEL, version: 6.0, DocId: pulseaudio.pot
+#~ msgid "n/a"
+#~ msgstr "nic"
+
+# auto translated by TM merge from project: anaconda, version: rhel8-alpha-branch, DocId: anaconda
+#~ msgid "none"
+#~ msgstr "nic"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "running"
+#~ msgstr "běžící"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#~ msgid "shut off"
+#~ msgstr "vypnuto"
+
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#~ msgid "udp"
+#~ msgstr "udp"
+
+# auto translated by TM merge from project: Spacewalk Backend, version: master, DocId: client/rhel/rhn-client-tools/po/rhn-client-tools
+#~ msgid "unknown"
+#~ msgstr "neznámý"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "user"
+#~ msgstr "uživatel"
+
+# auto translated by TM merge from project: Pulseaudio, version: master, DocId: pulseaudio.pot
+#~ msgid "yes"
+#~ msgstr "ano"
