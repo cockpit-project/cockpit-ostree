@@ -1,26 +1,3231 @@
-# starter-kit German translations
-#, fuzzy
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Peter <pvolpe@redhat.com>, 2015. #zanata
+# Michael Hofer <mail@michaelhofer.ch>, 2016. #zanata
+# cockpit <cockpituous@gmail.com>, 2016. #zanata
+# Paul Ritter <paul-ritter@gmx.net>, 2017. #zanata
+# cockpit <cockpituous@gmail.com>, 2017. #zanata
 msgid ""
 msgstr ""
-"Project-Id-Version: starter-kit 1.0\n"
+"Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:07+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2017-05-03 04:58+0000\n"
+"Last-Translator: Paul Ritter <paul-ritter@gmx.net>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Zanata 4.4.5\n"
 
-#: src/index.html:20
-msgid "Cockpit Starter Kit"
-msgstr "Cockpit Bausatz"
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "$0 Schlüssel-ID"
 
-#: src/app.jsx:40
-msgid "Running on $0"
-msgstr "Läuft auf $0"
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 Paket"
 
-#: src/manifest.json
-msgid "Starter Kit"
-msgstr "Bausatz"
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 Pakete"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- Neues Repository hinzufügen"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Hinzufügen"
+
+#: src/index.html:75
+#, fuzzy
+msgid "Add Another Key"
+msgstr "Einen weiteren Schlüssel hinzufügen"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Anwenden"
+
+#: src/index.html:255
+msgid "Available"
+msgstr ""
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Beginnt mit '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Repository ändern"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Nach Aktualisierungen suchen"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Suche nach Aktualisierungen"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "Verbinde zu OSTree"
+
+#: src/remotes.js:181
+#, fuzzy
+msgid "Couldn't load settings for '$0': $1"
+msgstr "Benutzerdaten konnten nicht geladen werden"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Standard"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Löschen"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+#, fuzzy
+msgid "Error loading remotes: $0"
+msgstr "Fehler beim Speichern der autorisierten Schlüssel:"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "Fehlgeschlagen"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+#: src/index.html:99
+msgid "Name"
+msgstr "Name"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+#, fuzzy
+msgid "No configuration data found"
+msgstr "Unbekannte Konfiguration"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr "OS $0 nicht gefunden"
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr ""
+
+#: src/remotes.js:261
+#, fuzzy
+msgid "Please provide a valid URL"
+msgstr "Bitte geben Sie einen gültigen Namespace an."
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr ""
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "Empfange Delta-Teile"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "Empfange Metadaten-Objekte"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "Empfange Objekte: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "Erneut verbinden"
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr "Rückgängig machen und Neustarten"
+
+#: src/index.html:251
+msgid "Running"
+msgstr "Läuft"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr "Untersuche Metadaten"
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "Signatur"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "Signiert von"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "Software Updates"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Status"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "Kann nicht mit OSTree kommunizieren"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "Aktualisieren und Neustarten"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Aktualisierungen"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "Aktualisiere"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "Benutze vertrauenswürdigen GPG-Schlüssel"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Version"
+
+#: src/index.html:282
+msgid "When"
+msgstr ""
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr "Schreibe Objekte"
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr "1\"Sind Sie sicher, dass Sie die folgenden Nodes löschen möchten?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 blockorientiertes Gerät"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 Chunk Size"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 Datenträger"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "$0 Dateisystem"
+
+#~ msgid "$0 Template"
+#~ msgstr "$0 Template"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bit"
+#~ msgstr[1] "$0 bits"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 Tag"
+#~ msgstr[1] "$0 Tage"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 Festplatte fehlt"
+#~ msgstr[1] "$0 Festplatten fehlen"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 Datenträger fehlt"
+#~ msgstr[1] "$0 Datenträger fehlen"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 fehlgeschlagen"
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 Stunde"
+#~ msgstr[1] "$0 Stunden"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 Minute"
+#~ msgstr[1] "$0 Minuten"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 Monat"
+#~ msgstr[1] "$0 Monate"
+
+#, fuzzy
+#~ msgid "$0 of $1"
+#~ msgstr "$0 von $01"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 mal geteilt"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 Woche"
+#~ msgstr[1] "$0 Wochen"
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 Jahr"
+#~ msgstr[1] "$0 Jahre"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% verfügbar"
+#~ msgstr[1] "$0% verfügbar"
+
+#, fuzzy
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% in Benutzung"
+#~ msgstr[1] "$0% in Benutzung"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (von $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 Minute"
+
+#~ msgid "1 day"
+#~ msgstr "1 Tag"
+
+#~ msgid "1 hour"
+#~ msgstr "1 Stunde"
+
+#~ msgid "1 min"
+#~ msgstr "1 Minute"
+
+#~ msgid "1 week"
+#~ msgstr "1 Woche"
+
+#~ msgid "10th"
+#~ msgstr "10."
+
+#~ msgid "11th"
+#~ msgstr "11."
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12."
+
+#~ msgid "13th"
+#~ msgstr "13."
+
+#~ msgid "14th"
+#~ msgstr "14."
+
+#~ msgid "15th"
+#~ msgstr "15."
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16."
+
+#~ msgid "17th"
+#~ msgstr "17."
+
+#~ msgid "18th"
+#~ msgstr "18."
+
+#~ msgid "19th"
+#~ msgstr "19."
+
+#~ msgid "1st"
+#~ msgstr "1."
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 Minuten"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 Minuten"
+
+#~ msgid "20th"
+#~ msgstr "20."
+
+#~ msgid "21st"
+#~ msgstr "21."
+
+#~ msgid "22nd"
+#~ msgstr "22."
+
+#~ msgid "23rd"
+#~ msgstr "23."
+
+#~ msgid "24th"
+#~ msgstr "24."
+
+#~ msgid "25th"
+#~ msgstr "25."
+
+#~ msgid "26th"
+#~ msgstr "26."
+
+#~ msgid "27th"
+#~ msgstr "27."
+
+#~ msgid "28th"
+#~ msgstr "28."
+
+#~ msgid "29th"
+#~ msgstr "29."
+
+#~ msgid "2nd"
+#~ msgstr "2."
+
+#~ msgid "3 min"
+#~ msgstr "3 Minuten"
+
+#~ msgid "30th"
+#~ msgstr "30."
+
+#~ msgid "31st"
+#~ msgstr "31."
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3."
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 Minuten"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 Minuten"
+
+#~ msgid "4th"
+#~ msgstr "4."
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 Minuten"
+
+#~ msgid "5 min"
+#~ msgstr "5 Minuten"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 Minuten"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5."
+
+#~ msgid "6 hours"
+#~ msgstr "6 Stunden"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 Minuten"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6."
+
+#~ msgid "7th"
+#~ msgstr "7."
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8."
+
+#~ msgid "9th"
+#~ msgstr "9."
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "Auf {{#strong}}{{host}}{{/strong}} ist keine kompatible Version von "
+#~ "Cockpit installiert."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Eine Benutzerschnittstelle für GNU/Linux Server"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP-Überwachung"
+
+#~ msgid "ARP Ping"
+#~ msgstr "ARP-Ping"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Über Cockpit"
+
+#~ msgid "Access denied"
+#~ msgstr "Zugriff verweigert"
+
+#~ msgid "Account Settings"
+#~ msgstr "Kontoeinstellungen"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "Konto nicht verfügbar oder Änderungen nicht möglich."
+
+#~ msgid "Accounts"
+#~ msgstr "Konten"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Konten"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivieren"
+
+#~ msgid "Activating $target"
+#~ msgstr "Aktiviere $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Aktivierungsschlüssel"
+
+#~ msgid "Active"
+#~ msgstr "Aktiv"
+
+#~ msgid "Active Backup"
+#~ msgstr "Aktive Sicherung"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Adaptives Load Balancing (alb)"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Adaptives Transmit Load Balancing (tlb)"
+
+#, fuzzy
+#~ msgid "Add $0"
+#~ msgstr "$0 hinzufügen"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Zusätzlichen Speicher hinzufügen"
+
+#~ msgid "Add Bond"
+#~ msgstr "Bündelung hinzufügen"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Bridge hinzufügen"
+
+#~ msgid "Add Disks"
+#~ msgstr "Datenträger hinzufügen"
+
+#~ msgid "Add Group"
+#~ msgstr "Gruppe hinzufügen"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Kubernetes Node hinzufügen"
+
+#~ msgid "Add Member"
+#~ msgstr "Mitglied hinzufügen"
+
+#~ msgid "Add Membership"
+#~ msgstr "Mitgliedschaft hinzufügen"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Neuen Cluster hinzufügen"
+
+#~ msgid "Add New User"
+#~ msgstr "Neuen Nutzer anlegen"
+
+#~ msgid "Add Role"
+#~ msgstr "Neue Rolle hinzufügen"
+
+#~ msgid "Add Storage"
+#~ msgstr "Speicher hinzufügen"
+
+#~ msgid "Add Team"
+#~ msgstr "Team hinzufügen"
+
+#~ msgid "Add User"
+#~ msgstr "Benutzer hinzufügen"
+
+#~ msgid "Add VLAN"
+#~ msgstr "VLAN hinzufügen"
+
+#~ msgid "Add key"
+#~ msgstr "Schlüssel hinzufügen"
+
+#~ msgid "Add membership"
+#~ msgstr "Mitgliedschaft hinzufügen"
+
+#~ msgid "Add public key"
+#~ msgstr "Öffentlichen Schlüssel hinzufügen"
+
+#~ msgid ""
+#~ "Adding <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Hinzufügen von <b>$0</b> wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid "Adding key"
+#~ msgstr "Schlüssel wird hinzugefügt"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "Füge physikalischen Datenträger zu $target hinzu"
+
+#~ msgid "Address"
+#~ msgstr "Adresse"
+
+#~ msgid "Address $val"
+#~ msgstr "Adresse $val"
+
+#~ msgid "Addresses"
+#~ msgstr "Adressen"
+
+#~ msgid "Adjust"
+#~ msgstr "Anpassen"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Route anpassen"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Dienst anpassen"
+
+#~ msgid "Admin"
+#~ msgstr "Administrator"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Passwort des Administrators"
+
+#~ msgid "All Projects"
+#~ msgstr "Alle Projekte"
+
+#, fuzzy
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Die ausgewählten Datenträger werden zum Storage Pool hinzugefügt. Dabei "
+#~ "werden sämtliche Daten auf den ausgewählten Datenträgern gelöscht."
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Mindestens $0 Datenträger sind nötig."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Mindestens ein Datenträger ist nötig."
+
+#~ msgid "Authenticating"
+#~ msgstr "Authentifiziere"
+
+#~ msgid "Authentication"
+#~ msgstr "Authentifizierung"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "Authentifizierung fehlgeschlagen"
+
+#~ msgid "Authentication required"
+#~ msgstr "Authentifikation erforderlich"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Autorisierte öffentliche SSH-Schlüssel"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatisch"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Automatisch (nur DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Automatisch (DHCP)"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Automatisch (NTP)"
+
+#, fuzzy
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Automatisch (spezifische NTP-Server)"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "Fehlerhafte Daten an passwd1 Mechanismus übergeben"
+
+#~ msgid "Blocked"
+#~ msgstr "Gesperrt"
+
+#~ msgid "Bond"
+#~ msgstr "Bond"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Bond Einstellungen"
+
+#, fuzzy
+#~ msgid "Bridge"
+#~ msgstr "Brücke"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Bridge Port Einstellungen"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Bridge Einstellungen"
+
+#~ msgid "Bridge port"
+#~ msgstr "Bridge-Port"
+
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Fehlerhafte Konfiguration"
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "CPU Status"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "CPU Auslastung: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "CPU Priorität"
+
+#~ msgid "Cached"
+#~ msgstr "Zwischengespeichert"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Verbindung zu Docker kann nicht hergestellt werden"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Kann nicht zu einer unbekannten Maschine verbinden"
+
+#~ msgid "Cannot join a domain because realmd is not available on this system"
+#~ msgstr ""
+#~ "Es konnte keiner Domain beigetreten werden, da realmd auf diesem System "
+#~ "nicht verfügbar ist."
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "Vorgang kann nicht für die Vergangenheit geplant werden"
+
+#~ msgid "Capacity"
+#~ msgstr "Kapazität"
+
+#~ msgid "Carrier"
+#~ msgstr "Träger"
+
+#, fuzzy
+#~ msgid "Change Host Name"
+#~ msgstr "Hostnamen ändern"
+
+#~ msgid "Change Password"
+#~ msgstr "Passwort ändern"
+
+#~ msgid "Change System Time"
+#~ msgstr "Systemzeit ändern"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Ressourcenlimits anpassen"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Ressourcenlimits anpassen"
+
+#, fuzzy
+#~ msgid "Change the settings"
+#~ msgstr "Bridge Port Einstellungen"
+
+#~ msgid ""
+#~ "Changing the settings will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Ändern der Einstellungen wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid "Checking IP"
+#~ msgstr "IP wird überprüft"
+
+#, fuzzy
+#~ msgid "Checking RAID Device $target"
+#~ msgstr "Erzeuge RAID-Gerät $target"
+
+#~ msgid "Checking and Repairing RAID Device $target"
+#~ msgstr "Überprüfe und repariere RAID-Gerät $target"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "Wählen Sie die in der Applikation zu verwendende Sprache"
+
+#, fuzzy
+#~ msgid "Chunk Size"
+#~ msgstr "Happengröße"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "$target wird aufgeräumt"
+
+#~ msgid "Client Certificate"
+#~ msgstr "Client-Zertifikat"
+
+#~ msgid "Close"
+#~ msgstr "Schließen"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid ""
+#~ "Cockpit could not contact the given host $0. Make sure it has ssh running "
+#~ "on port $1, or specify another port in the address."
+#~ msgstr ""
+#~ "Cockpit konnte den angegebenen Host $0 nicht erreichen. Stellen Sie "
+#~ "sicher, dass SSH auf Port $1 läuft oder geben Sie einen anderen Port in "
+#~ "der Adresse an."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit konnte den angegebenen Host nicht erreichen."
+
+#~ msgid ""
+#~ "Cockpit had an unexpected internal error. <br/><br/>You can try "
+#~ "restarting Cockpit by pressing refresh in your browser. The javascript "
+#~ "console contains details about this error (<b>Ctrl-Shift-J</b> in most "
+#~ "browsers)."
+#~ msgstr ""
+#~ "Es trat ein unerwarteter interner Fehler auf. <br/><br/>Sie können "
+#~ "Versuchen, Cockpit durch Aktualisieren der Seite neu zu starten. Die "
+#~ "Javascript Konsole enthält Details zum Fehler (<b>Strg-Umschalt-J</b> in "
+#~ "den meisten Browsern)."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit ist ein Server Manager zur einfachen Verwaltung Ihrer Linux "
+#~ "Server via Web Browser. Ein Wechsel zwischen dem Terminal und der "
+#~ "Weboberfläche ist kein Problem. Ein Service, der via Cockpit gestartet "
+#~ "wurde, kann im Terminal beendet werden. Genauso können Fehler, welche im "
+#~ "Terminal vorkommen, im Cockpit Journal angezeigt werden."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr ""
+#~ "Cockpit ist ein interaktives Administrationsinterface für Linux Server.\n"
+#~ "            "
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit ist mit der Software auf dem System nicht kompatibel."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit ist nicht installiert"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit ist auf dem System nicht installiert."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit ist perfekt für neue Systemadministratoren, da es ihnen auf "
+#~ "einfache Weise ermöglicht, simple Aufgaben wie Speicherverwaltung, "
+#~ "Journal / Logfile Analyse oder das Starten und Stoppen von Diensten "
+#~ "durchzuführen. Sie können gleichzeitig mehrere Server überwachen und "
+#~ "verwalten. Fügen Sie weitere Maschinen mit einem Klick hinzu und Ihre "
+#~ "Maschinen schauen zu ihren Kumpels."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit konnte den Host {{#strong}}{{host}}{{/strong}} nicht erreichen."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit konnte sich bei {{#strong}}{{host}}{{/strong}} nicht einloggen."
+
+#~ msgid "Color"
+#~ msgstr "Farbe"
+
+#~ msgid "Command"
+#~ msgstr "Befehl"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "Befehl darf nicht leer sein."
+
+#~ msgid "Command:"
+#~ msgstr "Befehl:"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#, fuzzy
+#~ msgid "Commit"
+#~ msgstr "Befehl"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "Kommunikation mit tuned schlug fehl"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Kompatibel mit allen Systemen und Geräten (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Kompatibel mit modernen Systemen und Festplatten > 2TB (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Absturzberichte komprimieren um Speicherplatz zu sparen"
+
+#~ msgid "Compression"
+#~ msgstr "Komprimierung"
+
+#~ msgid "Computer OU"
+#~ msgstr "Computer OU"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguration"
+
+#~ msgid "Configure"
+#~ msgstr "Konfigurieren"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Flannel Netzwerk konfigurieren"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Kubelet und Proxy konfigurieren"
+
+#~ msgid "Configuring"
+#~ msgstr "Konfiguriere"
+
+#~ msgid "Configuring IP"
+#~ msgstr "Konfiguriere IP"
+
+#~ msgid "Confirm"
+#~ msgstr "Bestätigen"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Neues Passwort wiederholen"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Passphrase wiederholen"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Verbindung automatisch herstellen"
+
+#~ msgid ""
+#~ "Connecting simultaneously to more than {{ limit }} machines is "
+#~ "unsupported."
+#~ msgstr ""
+#~ "Das gleichzeitige Verbinden zu mehr als  {{ limit }} Maschinen wird nicht "
+#~ "unterstützt."
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Verbinde zu Docker"
+
+#~ msgid "Connecting to SETroubleshoot daemon..."
+#~ msgstr "Verbinde zum SETroubleshoot Daemon..."
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "Verbindung zur Maschine wird hergestellt"
+
+#~ msgid "Connecting..."
+#~ msgstr "Verbinde..."
+
+#~ msgid "Connection"
+#~ msgstr "Verbindung"
+
+#~ msgid "Connection Error"
+#~ msgstr "Fehler bei der Verbindung"
+
+#~ msgid "Connection Error: $0"
+#~ msgstr "Fehler bei der Verbindung: $0"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Verbindungseinstellungen"
+
+#~ msgid "Connection has timed out."
+#~ msgstr "Zeitüberschreitung bei der Verbindung."
+
+#~ msgid "Container"
+#~ msgstr "Container"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Container Administrator"
+
+#~ msgid "Container ID"
+#~ msgstr "Container ID"
+
+#~ msgid "Container Name"
+#~ msgstr "Container Name"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "Der Container ist zur Zeit als nicht als in Ausführung gekennzeichnet, "
+#~ "das reguläre Anhalten schlug jedoch fehlt."
+
+#~ msgid "Container is currently running."
+#~ msgstr "Der Container läuft zur Zeit."
+
+#~ msgid "Container:"
+#~ msgstr "Container:"
+
+#~ msgid "Containers"
+#~ msgstr "Container"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Container"
+
+#~ msgid "Content"
+#~ msgstr "Inhalt"
+
+#, fuzzy
+#~ msgid "Control"
+#~ msgstr "Steuerung"
+
+#~ msgctxt "key"
+#~ msgid "Control"
+#~ msgstr "Strg"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "Konnte Host {{host}} nicht erreichen"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "Konnte den Storage Pool nicht zurücksetzen"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Benutzergruppen konnten nicht geändert werden"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Passwort konnte nicht geändert werden"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "Verbindung zum Server konnte nicht hergstellt werden"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Verbindung zur Maschine konnte nicht hergstellt werden"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Neue Benutzer konnten nicht angelegt werden"
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Lokale Benutzer konnten nicht gelistet werden"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Benutzer konnten nicht gelistet werden"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "Benutzerdaten konnten nicht geladen werden"
+
+#~ msgid "Crash dump location"
+#~ msgstr "Ort für Absturzberichte"
+
+#~ msgid "Create"
+#~ msgstr "Erstellen"
+
+#~ msgid "Create Logical Volume"
+#~ msgstr "Logischen Datenträger erstellen"
+
+#~ msgid "Create New Account"
+#~ msgstr "Neues Konto anlegen"
+
+#~ msgid "Create Partition"
+#~ msgstr "Partition erzeugen"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "RAID-Gerät erzeugen"
+
+#~ msgid "Create Snapshot"
+#~ msgstr "Snapshot erzeugen"
+
+#, fuzzy
+#~ msgid "Create Timers"
+#~ msgstr "Erstellen"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Datenträgerverbund erstellen"
+
+#, fuzzy
+#~ msgid "Create it"
+#~ msgstr "Erstellen"
+
+#~ msgid "Create new Logical Volume"
+#~ msgstr "Logischen Datenträger erstellen"
+
+#~ msgid "Create partition"
+#~ msgstr "Partition erzeugen"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "Partition auf $0 erzeugen"
+
+#~ msgid "Create partition table"
+#~ msgstr "Partitionstabelle erzeugen"
+
+#~ msgid "Created"
+#~ msgstr "Erstellt"
+
+#~ msgid "Created:"
+#~ msgstr "Erstellt:"
+
+#~ msgid "Creating RAID Device $target"
+#~ msgstr "Erzeuge RAID-Gerät $target"
+
+#~ msgid "Creating filesystem on $target"
+#~ msgstr "Dateisystem auf $0 wird erzeugt"
+
+#~ msgid "Creating logical volume $target"
+#~ msgstr "Erzeuge logischen Datenträger $target"
+
+#~ msgid "Creating partition $target"
+#~ msgstr "Erzeuge Partition $target"
+
+#~ msgid "Creating snapshot of $target"
+#~ msgstr "Erzeuge Snapshot von $target"
+
+#~ msgid ""
+#~ "Creating this VLAN will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Erzeugen dieses VLANs wird die Verbindung zum Server unterbrechen und "
+#~ "damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid ""
+#~ "Creating this bridge will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Erzeugen dieser Netzwerkbrücke wird die Verbindung zum Server "
+#~ "unterbrechen und damit den Zugriff auf die Benutzeroberfläche unmöglich "
+#~ "machen."
+
+#~ msgid "Creating volume group $target"
+#~ msgstr "Erzeuge Datenträgerverbund $target"
+
+#~ msgid "Custom"
+#~ msgstr "Benutzerdefiniert"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Benutzerdefiniert (Geben Sie den Dateisystemtyp an)"
+
+#~ msgid "Custom URL"
+#~ msgstr "Benutzerdefinierte URL"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "Datenträger ist FEHLERHAFT"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS $val"
+#~ msgstr "DNS $val"
+
+#, fuzzy
+#~ msgid "DNS Policy"
+#~ msgstr "DNS Policy"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "DNS Suchdomänen"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktivieren"
+
+#~ msgid "Deactivating"
+#~ msgstr "Wird deaktiviert"
+
+#~ msgid "Deactivating $target"
+#~ msgstr "Deaktiviere $target"
+
+#~ msgid "Delay"
+#~ msgstr "Verzögerung"
+
+#~ msgid "Delete $0"
+#~ msgstr "$0 löschen"
+
+#~ msgid "Delete '{{ name }}'"
+#~ msgstr "'{{ name }}' löschen"
+
+#~ msgid "Delete Files"
+#~ msgstr "Dateien löschen"
+
+#~ msgid "Delete {{ item.kind }}"
+#~ msgstr "{{ item.kind }} löschen"
+
+#~ msgid "Deleting $target"
+#~ msgstr "Lösche $target"
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr ""
+#~ "Das Löschen eines RAID-Gerätes löscht alle darauf vorhandenen Daten."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr ""
+#~ "Das Löschen eines Containers entfernt alle sich darin befindlichen Daten."
+
+#~ msgid "Deleting a volume group will erase all data on it."
+#~ msgstr ""
+#~ "Das Löschen eines Datenträgerverbunds löscht alle sich darin befindenden "
+#~ "Daten."
+
+#~ msgid "Deleting volume group $target"
+#~ msgstr "Lösche Datenträgerverbund ätarget"
+
+#~ msgid "Deploy Application"
+#~ msgstr "Applikation installieren"
+
+#~ msgid "Disable"
+#~ msgstr "Ausschalten"
+
+#~ msgid "Disable tuned"
+#~ msgstr "Tuned deaktivieren"
+
+#~ msgid "Disabled"
+#~ msgstr "Deaktiviert"
+
+#~ msgid "Disconnected"
+#~ msgstr "Getrennt"
+
+#, fuzzy
+#~ msgid "Disk I/O"
+#~ msgstr "Datenträger ist OK"
+
+#~ msgid "Disk is OK"
+#~ msgstr "Datenträger ist OK"
+
+#~ msgid "Disks"
+#~ msgstr "Datenträger"
+
+#~ msgid "Display Language"
+#~ msgstr "Anzeigesprache"
+
+#, fuzzy
+#~ msgid "Docker Version"
+#~ msgstr "Version"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr ""
+#~ "Docker ist auf Ihrem System entweder nicht installiert oder nicht "
+#~ "aktiviert"
+
+#~ msgid "Domain $0 could not be contacted"
+#~ msgstr "Die Domain $0 konnte nicht kontaktiert werden"
+
+#~ msgid "Domain Address"
+#~ msgstr "Domänenadressen"
+
+#~ msgid "Domain Administrator Name"
+#~ msgstr "Name des Domain-Administrators"
+
+#~ msgid "Domain Administrator Password"
+#~ msgstr "Passwort des Domain-Administrators"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "Vorhandene Daten nicht überschreiben"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Speichergerät"
+
+#~ msgid "Duplicate alias"
+#~ msgstr "Alias duplizieren"
+
+#~ msgid "Duplicate port"
+#~ msgstr "Port duplizieren"
+
+#~ msgid "Empty"
+#~ msgstr "Leer"
+
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Leeren"
+
+#~ msgid "Emptying $target"
+#~ msgstr "Leere $target"
+
+#~ msgid "Enable"
+#~ msgstr "Einschalten"
+
+#~ msgid "Enable Forcefully"
+#~ msgstr "Gewaltsam Einschalten"
+
+#~ msgid "Enabled"
+#~ msgstr "Aktiviert"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "Verschlüsseltes EXT4 (LUKS)"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "Verschlüsseltes XFS (LUKS)"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Verschlüsselungsoptionen"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "Geben Sie die IP Adresse oder den Hostnamen an"
+
+#~ msgid "Erase"
+#~ msgstr "Säubern"
+
+#~ msgid "Erasing $target"
+#~ msgstr "$target wird gelöscht"
+
+#~ msgid "Error"
+#~ msgstr "Fehler"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Fehlermeldung von Docker:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Fehler beim Speichern der autorisierten Schlüssel:"
+
+#~ msgid "Excellent password"
+#~ msgstr "Perfektes Passwort!"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "Beendet $ExitCode"
+
+#~ msgid "Extended Partition"
+#~ msgstr "Erweiterte Partition"
+
+#~ msgid "FAILED"
+#~ msgstr "KAPUTT"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "Maschine konnte nicht hinzugefügt werden: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Passwort konnte nicht geändert werden"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Maschine konnte nicht editiert werden: $0"
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr "Start von Docker fehlgeschlagen: $0"
+
+#~ msgid "Filesystem"
+#~ msgstr "Dateisystem"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Dateisystemtyp"
+
+#~ msgid "Force Delete"
+#~ msgstr "Löschen erzwingen"
+
+#~ msgid "Format"
+#~ msgstr "Formatieren"
+
+#~ msgid "Format $0"
+#~ msgstr "$0 formatieren"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Datenträger $0 formatieren"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr ""
+#~ "Das Formatieren eines Datenträgers löscht alle darauf vorhandenen Daten."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr ""
+#~ "Das Formatieren eines Speichergeräts löscht alle darauf vorhandenen Daten."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "Weiterleitungsverzögerung $forward_delay"
+
+#~ msgid "Free"
+#~ msgstr "Verfügbar"
+
+#~ msgid "General"
+#~ msgstr "Allgemein"
+
+#~ msgid "Go to"
+#~ msgstr "Gehe zu"
+
+#~ msgid "Go to now"
+#~ msgstr "Zu 'Jetzt' gehen"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Hairpin Modus"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Hairpin-Modus"
+
+#, fuzzy
+#~ msgid "Hard Disk"
+#~ msgstr "Festplatte"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Festplatte"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Hello-Zeit $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "Host"
+
+#, fuzzy
+#~ msgid "Hour : Minute"
+#~ msgstr "1 Minute"
+
+#, fuzzy
+#~ msgid "Hours"
+#~ msgstr "6 Stunden"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-Adresse"
+
+#~ msgid "IP Settings"
+#~ msgstr "IP Einstellungen"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "IPv4 Einstellungen"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "IPv6 Einstellungen"
+
+#~ msgid "Id $id"
+#~ msgstr "ID $id"
+
+#~ msgid "Ignore"
+#~ msgstr "Ignorieren"
+
+#~ msgid "Image"
+#~ msgstr "Bild"
+
+#~ msgid "Image $0"
+#~ msgstr "Bild $0"
+
+#, fuzzy
+#~ msgid "Image count"
+#~ msgstr "Bild $0"
+
+#, fuzzy
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Bild"
+
+#~ msgid "In Sync"
+#~ msgstr "Synchron"
+
+#~ msgid "Inactive"
+#~ msgstr "Inaktiv"
+
+#~ msgid "Instantiate"
+#~ msgstr "Instanzieren"
+
+#~ msgid "Interfaces"
+#~ msgstr "Schnittstellen"
+
+#, fuzzy
+#~ msgid "Invalid address $0"
+#~ msgstr "Ungültiger Schlüssel"
+
+#, fuzzy
+#~ msgid "Invalid credentials"
+#~ msgstr "Ungültiger Port"
+
+#, fuzzy
+#~ msgid "Invalid date format."
+#~ msgstr "Ungültiger Port"
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Ungültige Dateiberechtigungen"
+
+#~ msgid "Invalid key"
+#~ msgstr "Ungültiger Schlüssel"
+
+#, fuzzy
+#~ msgid "Invalid metric $0"
+#~ msgstr "Ungültiger Schlüssel"
+
+#, fuzzy
+#~ msgid "Invalid number."
+#~ msgstr "Ungültiger Schlüssel"
+
+#~ msgid "Invalid port"
+#~ msgstr "Ungültiger Port"
+
+#, fuzzy
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Ungültiger Port"
+
+#, fuzzy
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Ungültiger Port"
+
+#~ msgid "Join"
+#~ msgstr "Beitreten"
+
+#~ msgid "Join Domain"
+#~ msgstr "Einer Domain beitreten"
+
+#, fuzzy
+#~ msgid "Join a Domain"
+#~ msgstr "Einer Domain beitreten"
+
+#~ msgid "Journal entry"
+#~ msgstr "Journal-Eintrag"
+
+#~ msgid "Journal entry not found"
+#~ msgstr "Journal-Eintrag nicht gefunden"
+
+#~ msgid "Kernel"
+#~ msgstr "Kernel"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Kubernetes Cluster"
+
+#~ msgid "Leave"
+#~ msgstr "Verlassen"
+
+#, fuzzy
+#~ msgid "Leave Domain"
+#~ msgstr "Einer Domain beitreten"
+
+#~ msgid "Link Monitoring"
+#~ msgstr "Verbindungsüberwachung"
+
+#, fuzzy
+#~ msgid "Link Watch"
+#~ msgstr "Link local"
+
+#~ msgid "Link down delay"
+#~ msgstr "Verzögerung bei der Deaktivierung einer Verbindung"
+
+#~ msgid "Link local"
+#~ msgstr "Link local"
+
+#~ msgid "Link up delay"
+#~ msgstr "Verzögerung bei der Aktivierung einer Verbindung"
+
+#~ msgid "Links"
+#~ msgstr "Links"
+
+#, fuzzy
+#~ msgid "Load Balancing"
+#~ msgstr "Adaptives Load Balancing (alb)"
+
+#~ msgid "Load earlier entries"
+#~ msgstr "Frühere Einträge laden"
+
+#~ msgid "Loading..."
+#~ msgstr "Lade..."
+
+#, fuzzy
+#~ msgid "Local Disks"
+#~ msgstr "$0 Datenträger"
+
+#, fuzzy
+#~ msgid "Local Filesystem"
+#~ msgstr "Kein Dateisystem"
+
+#~ msgid "Lock"
+#~ msgstr "Schließen"
+
+#~ msgid "Lock Account"
+#~ msgstr "Konto sperren"
+
+#~ msgid "Logged In"
+#~ msgstr "Angemeldet"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Logischer Datenträger"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "Verbindung verloren. "
+
+#~ msgid "MII (Recommended)"
+#~ msgstr "MII (empfohlen)"
+
+#~ msgid "Machines"
+#~ msgstr "Maschinen"
+
+#~ msgid "Manual"
+#~ msgstr "Manuell"
+
+#~ msgid "Marking $target as faulty"
+#~ msgstr "Markiere $target als fehlerhaft"
+
+#~ msgid "Mask"
+#~ msgstr "Sperren"
+
+#~ msgid "Mask Forcefully"
+#~ msgstr "Maskieren erzwingen"
+
+#~ msgid "Master"
+#~ msgstr "Master"
+
+#~ msgid "Maximum message age $max_age"
+#~ msgstr "Maximales Alter der Nachrichten $max_age"
+
+#~ msgid "Members"
+#~ msgstr "Mitglieder"
+
+#~ msgid "Memory"
+#~ msgstr "Speicher"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Speicher"
+
+#~ msgid "Memory limit"
+#~ msgstr "Speicherlimite"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Nachricht an angemeldete Benutzer"
+
+#, fuzzy
+#~ msgid "Minutes"
+#~ msgstr "5 Minuten"
+
+#~ msgid "Mode"
+#~ msgstr "Modus"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "Überwachungsintervall"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "Überwachungsziele"
+
+#~ msgid "More"
+#~ msgstr "Mehr"
+
+#~ msgid "Mount"
+#~ msgstr "Einhängen"
+
+#~ msgid "Mount Options"
+#~ msgstr "Einhängoptionen"
+
+#~ msgid "Mount Point"
+#~ msgstr "Einhängestelle"
+
+#~ msgid "Mounting"
+#~ msgstr "Einhängen"
+
+#~ msgid "Mounting $target"
+#~ msgstr "$target wird eingehängt"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS - Kompatibel mit den meisten Systemen"
+
+#~ msgid "NTP Server"
+#~ msgstr "NTP Server"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "Name darf nicht leer sein."
+
+#, fuzzy
+#~ msgid "Name cannot be empty."
+#~ msgstr "Name darf nicht leer sein."
+
+#, fuzzy
+#~ msgid "Name cannot be longer than 127 characters."
+#~ msgstr "Der Name darf nicht mehr als 127 Zeichen enthalten."
+
+#, fuzzy
+#~ msgid "Name cannot contain the character '$0'."
+#~ msgstr "Der Name darf nicht das Zeichen '$0' enthalten."
+
+#, fuzzy
+#~ msgid "Name cannot contain whitespace."
+#~ msgstr "Der Name darf keine Leerzeichen enthalten."
+
+#~ msgid "Namespace"
+#~ msgstr "Namespace"
+
+#~ msgid "Namespace cannot be empty."
+#~ msgstr "Der Namespace darf nicht leer sein."
+
+#~ msgid "Network"
+#~ msgstr "Netzwerk"
+
+#~ msgid "Networking"
+#~ msgstr "Netzwerk"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Netzwerk"
+
+#~ msgid "Networking Logs"
+#~ msgstr "Netzwerk-Logs"
+
+#~ msgid "Never"
+#~ msgstr "Nie"
+
+#~ msgid "New Password"
+#~ msgstr "Neues Passwort"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "Das neue Passwort wurde nicht akzeptiert"
+
+#~ msgid "Next"
+#~ msgstr "Weiter"
+
+#~ msgid "No"
+#~ msgstr "Nein"
+
+#~ msgid "No Delay"
+#~ msgstr "Keine Verzögerung"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Kein Dateisystem"
+
+#~ msgid "No alias specified"
+#~ msgstr "Kein Alias angegeben"
+
+#~ msgid "No carrier"
+#~ msgstr "Kein Träger"
+
+#, fuzzy
+#~ msgid "No configuration found"
+#~ msgstr "Unbekannte Konfiguration"
+
+#~ msgid "No container specified"
+#~ msgstr "Kein Container angegeben"
+
+#, fuzzy
+#~ msgid "No installed products on the system."
+#~ msgstr ""
+#~ "Docker ist auf Ihrem System entweder nicht installiert oder nicht "
+#~ "aktiviert"
+
+#~ msgid ""
+#~ "No metadata file was selected. Please select a Kubernetes metadata file."
+#~ msgstr ""
+#~ "Es wurde keine Metadaten-Datei ausgewählt. Bitte geben Sie eine "
+#~ "Kubernetes Metadaten-Datei an. "
+
+#~ msgid "No partitioning"
+#~ msgstr "Keine Partitionierung"
+
+#~ msgid "No real name specified"
+#~ msgstr "Es wurde kein echter Name angegeben"
+
+#~ msgid "No such file or directory"
+#~ msgstr "Datei oder Verzeichnis nicht vorhanden"
+
+#~ msgid "No user name specified"
+#~ msgstr "Es wurde kein Benutzername angegeben."
+
+#~ msgid "No volume groups created"
+#~ msgstr "Keine Datenträgerverbünde erzeugt"
+
+#~ msgid "None"
+#~ msgstr "Kein"
+
+#~ msgid "Not Ready"
+#~ msgstr "Nicht bereit"
+
+#~ msgid "Not a valid number of replicas"
+#~ msgstr "Keine gültige Anzahl von Repliken"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "Ungültiger privater Schlüssel"
+
+#~ msgid "Not a valid value for Host"
+#~ msgstr "Kein gültiger Wert für Host"
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "Keine Berechtigung, auf diesem System Docker zu verwenden"
+
+#~ msgid "Not available"
+#~ msgstr "Nicht verfügbar"
+
+#~ msgid "Not found"
+#~ msgstr "Nicht gefunden"
+
+#~ msgid "Not running"
+#~ msgstr "Läuft nicht"
+
+#~ msgid "Off"
+#~ msgstr "Aus"
+
+#~ msgid "Old Password"
+#~ msgstr "Altes Passwort"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Altes Passwort wurde nicht akzeptiert"
+
+#~ msgid "On"
+#~ msgstr "Ein"
+
+#~ msgid "One Time Password"
+#~ msgstr "Einmalpasswort"
+
+#~ msgid "Ooops!"
+#~ msgstr "Ooops!"
+
+#~ msgid "Operation '$operation' on $target"
+#~ msgstr "Operation '$operation' auf $target"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Optisches Speichergerät"
+
+#~ msgid "Options"
+#~ msgstr "Einstellungen"
+
+#, fuzzy
+#~ msgid "Organization"
+#~ msgstr "Übersetzung"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Other Data"
+#~ msgstr "Andere Daten"
+
+#~ msgid "Other Devices"
+#~ msgstr "Andere Geräte"
+
+#~ msgid "Overwrite existing data with zeros"
+#~ msgstr "Vorhandene Daten mit Nullen überschreiben"
+
+#~ msgid "Parent"
+#~ msgstr "Parent"
+
+#~ msgid "Parent $parent"
+#~ msgstr "Parent $parent"
+
+#~ msgid "Part of "
+#~ msgstr "Teil von"
+
+#~ msgid "Partition"
+#~ msgstr "Partition"
+
+#~ msgid "Partitioning"
+#~ msgstr "Partitionierung"
+
+#~ msgid "Passphrase"
+#~ msgstr "Passwort"
+
+#, fuzzy
+#~ msgid "Passphrase cannot be empty"
+#~ msgstr "Passphrase darf nicht leer sein"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Passphrasen stimmen nicht überein."
+
+#~ msgid "Password"
+#~ msgstr "Passwort"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "Das Passwort kann nicht akzeptiert werden"
+
+#~ msgid "Password is too weak"
+#~ msgstr "Das gewählte Passwort ist zu schwach"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Passwort wurde nicht akzeptiert"
+
+#~ msgid "Path cost"
+#~ msgstr "Pfadkosten"
+
+#~ msgid "Path cost $path_cost"
+#~ msgstr "Pfadkosten $path_cost"
+
+#, fuzzy
+#~ msgid "Ping Interval"
+#~ msgstr "Überwachungsintervall"
+
+#, fuzzy
+#~ msgid "Ping Target"
+#~ msgstr "$target wird gelöscht"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "Bitte bestätigen Sie das Löschen von $0"
+
+#~ msgid "Please create another namespace for $0 \"$1\""
+#~ msgstr "Bitte erzeugen Sie einen anderen Namespace für $0 \"$1\""
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "Bitte geben Sie einen gültigen Namespace an."
+
+#~ msgid "Please type an address"
+#~ msgstr "Bitte geben Sie eine Adresse an"
+
+#~ msgid "Pool for Thin Logical Volumes"
+#~ msgstr "Pool für Thin Logical Volumes"
+
+#~ msgid "Ports"
+#~ msgstr "Ports"
+
+#~ msgid "Prefix length"
+#~ msgstr "Präfix"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "Präfix oder Netzmaske"
+
+#~ msgid "Preparing"
+#~ msgstr "Vorbereitung läuft"
+
+#, fuzzy
+#~ msgid "Preserve"
+#~ msgstr "Voreinstellen"
+
+#~ msgid "Preset"
+#~ msgstr "Voreinstellen"
+
+#~ msgid "Preset Forcefully"
+#~ msgstr "Gewaltsam Voreinstellen"
+
+#~ msgid "Primary"
+#~ msgstr "Primär"
+
+#~ msgid "Priority"
+#~ msgstr "Priorität"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Priorität $priority"
+
+#~ msgid "Project"
+#~ msgstr "Projekt"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 0 (Stripe)"
+#~ msgstr "RAID 0 (Gestreift)"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 1 (Mirror)"
+#~ msgstr "RAID 1 (Gespiegelt)"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 10 (Stripe of Mirrors)"
+#~ msgstr "RID 10 (Gestreifte Spiegel)"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 4 (Dedicated Parity)"
+#~ msgstr "RAID 4 (Dedizierte Parität)"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 5 (Distributed Parity)"
+#~ msgstr "RAID 5 (Verteilte Parität)"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID 6 (Double Distributed Parity)"
+#~ msgstr "RAID 6 (Doppelt Verteilte Parität)"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "RAID-Gerät $0"
+
+#~ msgid "RAID Level"
+#~ msgstr "RAID Ebene"
+
+#, fuzzy
+#~ msgid "Reading..."
+#~ msgstr "Lade..."
+
+#~ msgid "Ready"
+#~ msgstr "Bereit"
+
+#~ msgctxt "verb"
+#~ msgid "Ready"
+#~ msgstr "Bereiten"
+
+#~ msgid "Reboot"
+#~ msgstr "Neustart"
+
+#~ msgid "Receiving"
+#~ msgstr "Empfange"
+
+#~ msgid "Recovering"
+#~ msgstr "Am Erholen"
+
+#, fuzzy
+#~ msgid "Recovering RAID Device $target"
+#~ msgstr "Stoppe RAID-Gerät $target"
+
+#~ msgid "Reload"
+#~ msgstr "Neu Laden"
+
+#~ msgctxt "storage"
+#~ msgid "Removable Drive"
+#~ msgstr "Entfernbares Speichergerät"
+
+#~ msgid "Remove"
+#~ msgstr "Entfernen"
+
+#, fuzzy
+#~ msgid "Remove $0"
+#~ msgstr "Entfernen"
+
+#~ msgid "Removing $target from RAID Device"
+#~ msgstr "Entferne $target vom RAID-Gerät"
+
+#~ msgid ""
+#~ "Removing <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Entfernen von <b>$0</b> wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid "Removing physical volume from $target"
+#~ msgstr "Entferne physikalischen Datenträger von $target"
+
+#~ msgid "Rename"
+#~ msgstr "Umbenennen"
+
+#~ msgid "Rename Logical Volume"
+#~ msgstr "Logischen Datenträger umbenennen"
+
+#~ msgid "Rename Volume Group"
+#~ msgstr "Datenträgerverbund umbennen"
+
+#~ msgid "Renaming $target"
+#~ msgstr "$target wird umbenannt"
+
+#~ msgid "Repeat Daily"
+#~ msgstr "Täglich wiederholen"
+
+#~ msgid "Repeat Hourly"
+#~ msgstr "Stündlich wiederholen"
+
+#~ msgid "Repeat Monthly"
+#~ msgstr "Monatlich wiederholen"
+
+#~ msgid "Repeat Weekly"
+#~ msgstr "Wöchentlich wiederholen"
+
+#~ msgid "Repeat Yearly"
+#~ msgstr "Jährlich wiederholen"
+
+#~ msgid "Replicas"
+#~ msgstr "Repliken"
+
+#~ msgid "Replication Controller"
+#~ msgstr "Replication Controller"
+
+#~ msgid "Replication Controllers"
+#~ msgstr "Replication Controller"
+
+#~ msgid "Repository"
+#~ msgstr "Repository"
+
+#~ msgid "Repository URL"
+#~ msgstr "Repository URL"
+
+#~ msgid ""
+#~ "Resetting the storage pool will erase all containers and release disks in "
+#~ "the pool."
+#~ msgstr ""
+#~ "Das Zurücksetzen des Storage Pool löscht alle Container und Datenträger "
+#~ "im Pool."
+
+#~ msgid "Resizing $target"
+#~ msgstr "Größenänderung von $target"
+
+#~ msgid "Restart"
+#~ msgstr "Neustarten"
+
+#, fuzzy
+#~ msgid "Restoring connection"
+#~ msgstr "Erneut verbinden"
+
+#~ msgid "Role"
+#~ msgstr "Rolle"
+
+#~ msgid "Roles"
+#~ msgstr "Rollen"
+
+#~ msgid "Round Robin"
+#~ msgstr "Round Robin"
+
+#~ msgid "Route"
+#~ msgstr "Route"
+
+#~ msgid "Routes"
+#~ msgstr "Routen"
+
+#, fuzzy
+#~ msgid "Run"
+#~ msgstr "Läuft"
+
+#~ msgid "Run as"
+#~ msgstr "Ausführen als"
+
+#, fuzzy
+#~ msgid "Runner"
+#~ msgstr "Läuft"
+
+#~ msgid "SELinux is disabled on the system"
+#~ msgstr "SELinux ist auf dem System deaktiviert"
+
+#~ msgid "SELinux is disabled on the system."
+#~ msgstr "SELinux ist auf dem System deaktiviert"
+
+#~ msgid "SELinux system status is unknown."
+#~ msgstr "Der Status von SELinux ist unbekannt."
+
+#~ msgid "SMART self-test of $target"
+#~ msgstr "SMART-Selbsttest von $target"
+
+#~ msgid "STP Forward delay"
+#~ msgstr "STP Forward Delay"
+
+#~ msgid "STP Hello time"
+#~ msgstr "STP Hello-Zeitintervall"
+
+#~ msgid "STP Maximum message age"
+#~ msgstr "STP Maximum Message Age"
+
+#~ msgid "STP Priority"
+#~ msgstr "STP Priorität"
+
+#~ msgid "Saturday"
+#~ msgstr "Samstag"
+
+#~ msgid "Save"
+#~ msgstr "Speichern"
+
+#~ msgid "Seconds"
+#~ msgstr "Sekunden"
+
+#~ msgid "Securely erasing $target"
+#~ msgstr "$target wird sicher gelöscht"
+
+#~ msgid "Security"
+#~ msgstr "Sicherheit"
+
+#~ msgid "Select Manifest File..."
+#~ msgstr "Wählen Sie eine Manifestdatei aus..."
+
+#~ msgid "Select an object to see more details."
+#~ msgstr "Wählen Sie ein Objekt aus, um weitere Details anzuzeigen."
+
+#~ msgid ""
+#~ "Select the users that you would like to be synchronized with {{#strong}}"
+#~ "{{host}}{{/strong}}"
+#~ msgstr ""
+#~ "Wählen Sie die Nutzer aus, die mit {{#strong}}{{host}}{{/strong}} "
+#~ "synchronisiert werden sollen"
+
+#~ msgid "Sending"
+#~ msgstr "Sende"
+
+#~ msgid "Server"
+#~ msgstr "Server"
+
+#~ msgid "Server Address"
+#~ msgstr "Serveradresse"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Server Administrator"
+
+#~ msgid "Server address cannot be empty."
+#~ msgstr "Serveradresse darf nicht leer sein."
+
+#~ msgid "Server has closed the connection."
+#~ msgstr "Der Server hat die Verbindung beendet."
+
+#~ msgid "Servers"
+#~ msgstr "Server"
+
+#~ msgid "Service"
+#~ msgstr "Dienst"
+
+#, fuzzy
+#~ msgid "Service has an error"
+#~ msgstr "Dienst hat einen Fehler"
+
+#~ msgid "Service is running"
+#~ msgstr "Dienst läuft nicht"
+
+#~ msgid "Service is starting"
+#~ msgstr "Dienst startet"
+
+#~ msgid "Service is stopped"
+#~ msgstr "Dienst ist beendet"
+
+#~ msgid "Service is stopping"
+#~ msgstr "Dienst wird beendet"
+
+#~ msgid "Service name"
+#~ msgstr "Dienstname"
+
+#~ msgid "Services"
+#~ msgstr "Dienste"
+
+#~ msgid "Session"
+#~ msgstr "Sitzung"
+
+#~ msgid "Set Host name"
+#~ msgstr "Hostname festlegen"
+
+#~ msgid "Set Password"
+#~ msgstr "Passwort setzen"
+
+#, fuzzy
+#~ msgid "Set Time"
+#~ msgstr "Zeit setzen"
+
+#~ msgid "Set container environment variables"
+#~ msgstr "Umgebungsvariablen für Container setzen"
+
+#~ msgid ""
+#~ "Setting deviates from the configured state and will revert on the next "
+#~ "boot."
+#~ msgstr ""
+#~ "Abweichungen vom konfigurierten Zustand werden beim nächsten Neustart "
+#~ "zurückgesetzt."
+
+#~ msgid "Setting up loop device $target"
+#~ msgstr "Richte Loop Device $target ein"
+
+#~ msgid "Share Name"
+#~ msgstr "Freigabe Name"
+
+#~ msgid "Shared"
+#~ msgstr "Geteilt"
+
+#~ msgid "Show all Containers"
+#~ msgstr "Zeige alle Container an"
+
+#~ msgid "Show all Nodes"
+#~ msgstr "Zeige alle Knoten an"
+
+#~ msgid "Show all Persistent Volumes"
+#~ msgstr "Zeige alle persistenten Datenträger an"
+
+#~ msgid "Show all Projects"
+#~ msgstr "Zeige alle Projekte an"
+
+#~ msgid "Show all Replication Controllers"
+#~ msgstr "Zeige alle Replication Controller an"
+
+#~ msgid "Show all Routes"
+#~ msgstr "Zeige alle Routen an"
+
+#~ msgid "Show all Services"
+#~ msgstr "Zeige alle Dienste an"
+
+#~ msgid "Show all containers"
+#~ msgstr "Zeige alle Container an"
+
+#, fuzzy
+#~ msgid "Shut Down"
+#~ msgstr "Herunterfahren"
+
+#~ msgid "Since"
+#~ msgstr "Seit"
+
+#~ msgid "Since $0"
+#~ msgstr "Seit $0"
+
+#~ msgid "Size"
+#~ msgstr "Größe"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "Größe darf nicht negativ sein"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "Größe darf nicht Null sein"
+
+#, fuzzy
+#~ msgid "Size is too large"
+#~ msgstr "Größe zu groß"
+
+#~ msgid "Size must be a number"
+#~ msgstr "Größe muss eine Zahl sein"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "Zertifikatprüfung überspringen"
+
+#, fuzzy
+#~ msgid "Solid-State Disk"
+#~ msgstr "Solid-State Datenträger"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "Solid-State Datenträger"
+
+#~ msgid "Solution applied successfully"
+#~ msgstr "Lösung erfolgreich angewendet"
+
+#~ msgid "Solution failed"
+#~ msgstr "Lösung fehlgeschlagen"
+
+#~ msgid "Solutions"
+#~ msgstr "Lösungen"
+
+#~ msgid "Sorry, I don't know how to modify this volume"
+#~ msgstr ""
+#~ "Entschuldigung, ich weiß nicht, wie ich diesen Datenträger modifizieren "
+#~ "soll"
+
+#~ msgid "Source URL"
+#~ msgstr "Quell-URL"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "Spanning Tree Protocol"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "Spanning Tree Protocol (STP)"
+
+#~ msgid "Spare"
+#~ msgstr "Ersatz"
+
+#~ msgid "Stable"
+#~ msgstr "Stabil"
+
+#~ msgid "Start"
+#~ msgstr "Starten"
+
+#~ msgid "Start Docker"
+#~ msgstr "Docker starten"
+
+#~ msgid "Start Multipath"
+#~ msgstr "Multipath starten"
+
+#~ msgid "Starting RAID Device $target"
+#~ msgstr "Starte RAID-Gerät $target"
+
+#~ msgid "Starts"
+#~ msgstr "Startet"
+
+#~ msgid "State"
+#~ msgstr "Status"
+
+#~ msgid "State:"
+#~ msgstr "Status:"
+
+#~ msgid "Static"
+#~ msgstr "Statisch"
+
+#~ msgid "Status: $0"
+#~ msgstr "Status: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "Status: System ist nicht registriert"
+
+#~ msgid "Stop"
+#~ msgstr "Stoppen"
+
+#, fuzzy
+#~ msgid "Stop with"
+#~ msgstr "Stoppen"
+
+#~ msgid "Stopped"
+#~ msgstr "Angehalten"
+
+#~ msgid "Stopping RAID Device $target"
+#~ msgstr "Stoppe RAID-Gerät $target"
+
+#~ msgid "Store passphrase"
+#~ msgstr "Passphrase speichern"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "Gespeichertes Passwort"
+
+#~ msgid "Stored passphrase"
+#~ msgstr "Gespeichertes Passwort"
+
+#~ msgid "Summary"
+#~ msgstr "Zusammenfassung"
+
+#~ msgid "Sunday"
+#~ msgstr "Sonntag"
+
+#~ msgid "Swap"
+#~ msgstr "Auslagerungsspeicher "
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "Auslagerungsspeicher"
+
+#~ msgid "Swap Used"
+#~ msgstr "Benutzter Auslagerungsspeicher"
+
+#~ msgid "Switch off $0"
+#~ msgstr "$0 ausschalten"
+
+#~ msgid "Switch on $0"
+#~ msgstr "$0 anschalten"
+
+#~ msgid ""
+#~ "Switching off <b>$0</b>  will break the connection to the server, and "
+#~ "will make the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Ausschalten von <b>$0</b> wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid ""
+#~ "Switching off <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Ausschalten von <b>$0</b> wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid ""
+#~ "Switching on <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Das Einschalten von <b>$0</b> wird die Verbindung zum Server unterbrechen "
+#~ "und damit den Zugriff auf die Benutzeroberfläche unmöglich machen."
+
+#~ msgid "Synchronize"
+#~ msgstr "Synchronisieren"
+
+#~ msgid "Synchronize users"
+#~ msgstr "Benutzer synchronisieren"
+
+#~ msgid "Synchronized"
+#~ msgstr "Synchronisiert"
+
+#~ msgid "Synchronized with {{Server}}"
+#~ msgstr "Synchronisiert mit {{Server}}"
+
+#~ msgid "Synchronizing RAID Device $target"
+#~ msgstr "Synchronisiere RAID-Gerät $target"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "System Services"
+#~ msgstr "System Dienste"
+
+#~ msgid "System Time"
+#~ msgstr "Systemzeit"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Tag"
+#~ msgstr "Tag"
+
+#~ msgid "Target"
+#~ msgstr "Ziel"
+
+#~ msgid "Targets"
+#~ msgstr "Ziele"
+
+#, fuzzy
+#~ msgid "Team Port Settings"
+#~ msgstr "Bridge Port Einstellungen"
+
+#, fuzzy
+#~ msgid "Team Settings"
+#~ msgstr "IP Einstellungen"
+
+#~ msgid "Template"
+#~ msgstr "Vorlage"
+
+#~ msgid "Terminate Session"
+#~ msgstr "Sitzung beenden"
+
+#~ msgid "Test Configuration"
+#~ msgstr "Konfiguration prüfen"
+
+#~ msgid "Test is only available while the kdump service is running."
+#~ msgstr "Der Test ist nur verfügbar, wenn der Dienst kdump läuft."
+
+#~ msgid "Test kdump settings"
+#~ msgstr "kdump-Einstellungen prüfen"
+
+#~ msgid "Testing connection"
+#~ msgstr "Prüfe Verbindung"
+
+#~ msgid "The \"storaged\" API is not available on this system."
+#~ msgstr "Die \"storaged\" API ist auf diesem System nicht verfügbar."
+
+#~ msgid "The Docker storage pool cannot be managed on this system."
+#~ msgstr ""
+#~ "Der Docker Storage Pool kann auf diesem System nicht verwaltet werden."
+
+#~ msgid "The IP address or host name cannot contain whitespace."
+#~ msgstr "IP Adresse oder Hostname darf keine Leerzeichen enthalten."
+
+#~ msgid "The RAID Array is in a degraded state"
+#~ msgstr "Das RAID-Array befindet sich in einem degradierten Zustand"
+
+#~ msgid "The VM crashed."
+#~ msgstr "Die VM ist abgestürzt."
+
+#~ msgid "The VM is down."
+#~ msgstr "Die VM ist ausgeschaltet."
+
+#~ msgid "The VM is going down."
+#~ msgstr "Die VM wird ausgeschaltet."
+
+#~ msgid "The VM is idle."
+#~ msgstr "Die VM ist untätig."
+
+#~ msgid "The VM is paused."
+#~ msgstr "Die VM ist pausiert."
+
+#~ msgid "The VM is running."
+#~ msgstr "Die VM läuft."
+
+#~ msgid "The VM is suspended by guest power management."
+#~ msgstr "Die VM ist vom Gast Power Management suspendiert."
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "Das Adressfeld enthält ungültige Zeichen"
+
+#~ msgid ""
+#~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
+#~ "established. Are you sure you want to continue connecting?"
+#~ msgstr ""
+#~ "Die Authentizität von Host {{#strong}}{{host}}{{/strong}} kann nicht "
+#~ "bestätigt werden. Sind Sie sicher, dass Sie fortfahren wollen?"
+
+#~ msgid "The collected information will be stored locally on the system."
+#~ msgstr ""
+#~ "Die gesammelten Informationen werden lokal auf dem System gespeichert."
+
+#~ msgid "The configured state is unknown, it might change on the next boot."
+#~ msgstr ""
+#~ "Der konfigurierte Zustand ist unbekannt und kann sich beim nächsten "
+#~ "Neustart ändern."
+
+#~ msgid "The container '{{ target }}' does not exist."
+#~ msgstr "Der Container '{{ target }}' existiert nicht."
+
+#~ msgid "The current user isn't allowed to access system subscription status."
+#~ msgstr ""
+#~ "Der aktuelle Nutzer ist nicht berechtigt auf den Status der Subscriptions "
+#~ "zuzugreifen."
+
+#~ msgid "The group '{{ groupName }}' does not exist."
+#~ msgstr "Die Gruppe '{{ groupName }}' existiert nicht."
+
+#~ msgid ""
+#~ "The key of {{#strong}}{{host}}{{/strong}} does not match the key "
+#~ "previously in use. Unless this machine was recently replaced, it is "
+#~ "likely that someone is trying to attack your connection to this machine."
+#~ msgstr ""
+#~ "Der Schlüssel von {{#strong}}{{host}}{{/strong}} stimmt nicht mit dem "
+#~ "zuletzt benutzten Schlüssel überein. Falls die Maschine nicht kürzlich "
+#~ "ausgetauscht wurde, ist ein Angriff auf die Verbindung zur Maschine sehr "
+#~ "wahrscheinlich."
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "Der von Ihnen angegebene Schlüssel ist ungültig."
+
+#~ msgid "The last physical volume of a volume group cannot be removed."
+#~ msgstr ""
+#~ "Der letzte physische Datenträger einer Datenträgergruppe kann nicht "
+#~ "entfernt werden."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "Die Maschine startet neu"
+
+#~ msgid "The maximum number of replicas is 128"
+#~ msgstr "Die maximale Anzahl von Repliken ist 128"
+
+#~ msgid "The name contains invalid characters"
+#~ msgstr "Der Name enthält ungültige Zeichen"
+
+#~ msgid "The node '{{ target }}' does not exist."
+#~ msgstr "Der Knoten '{{ target }}' existiert nicht."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "Dieser Knoten verfügt nicht über ausreichend freien Speicherplatz"
+
+#~ msgid "The node doesn't have enough free memory"
+#~ msgstr "Dieser Knoten verfügt nicht über ausreichend freien Arbeitsspeicher"
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Die Passwörter stimmen nicht überein"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Die Passwörter stimmen nicht überein."
+
+#~ msgid "The pod '{{ target }}' does not exist."
+#~ msgstr "Der Pod '{{ target }}' existiert nicht."
+
+#~ msgid "The project '{{ projName }}' does not exist."
+#~ msgstr "Das Projekt '{{ projName }}' existiert nicht."
+
+#~ msgid "The replication controller '{{ target }}' does not exist."
+#~ msgstr "Der Replication Controller '{{ target }}' existiert nicht."
+
+#~ msgid "The route '{{ target }}' does not exist."
+#~ msgstr "Die Route '{{ target }}' existiert nicht."
+
+#~ msgid "The selected file is not a valid Kubernetes application manifest."
+#~ msgstr ""
+#~ "Die ausgewählte Datei ist kein gültiges Kubernetes Applikationsmanifest."
+
+#~ msgid "The server refused to authenticate using any supported methods."
+#~ msgstr ""
+#~ "Der Server hat die Authentifizierung mit allen unterstützten Methoden "
+#~ "abgelehnt."
+
+#~ msgid "The server uses a certificate signed by an unknown authority."
+#~ msgstr ""
+#~ "Der Server nutzt ein Zertifikat, das von einer unbekannten Stelle "
+#~ "signiert wurde."
+
+#~ msgid "The service '{{ target }}' does not exist."
+#~ msgstr "Der Dienst '{{ target }}' existiert nicht."
+
+#~ msgid "The user '{{ userName }}' does not exist."
+#~ msgstr "Der Benutzer '{{ userName }}' existiert nicht."
+
+#~ msgid "The user <b>$0</b> does not have permissions for creating timers"
+#~ msgstr "Der Benutzer <b>$0</b> hat keine Rechte zum Anlegen von Timern"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr ""
+#~ "Der Benutzer <b>$0</b> hat keine Rechte, um Server zu administrieren"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage storage"
+#~ msgstr "Der Benutzer <b>$0</b> hat keine Rechte, Speicher zu verwalten."
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "Der Benutzer <b>$0</b> hat keine Rechte, Konten zu verändern"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify hostnames"
+#~ msgstr "Der Benutzer <b>$0</b> hat keine Rechte, Hostnamen zu verändern"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr ""
+#~ "Der User <b>$0</b> hat keine Rechte, die Netzwerkeinstellungen zu "
+#~ "verändern."
+
+#~ msgid "The user <b>$0</b> is not permitted to modify realms"
+#~ msgstr "Der Benutzer <b>$0</b> hat keine Rechte, Bereiche zu änden."
+
+#~ msgid ""
+#~ "The user name can only consist of letters from a-z, digits, dots, dashes "
+#~ "and underscores."
+#~ msgstr ""
+#~ "Der Benutzername darf nur aus Buchstaben, Zahlen, Punkten, Binde- und "
+#~ "Unterstrichen bestehen."
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr ""
+#~ "Für dieses Konto existieren keine autorisierten öffentlichen Schlüssel"
+
+#~ msgid ""
+#~ "This day doesn't exist in all months.<br> The timer will only be executed "
+#~ "in months that have 31st."
+#~ msgstr ""
+#~ "Dieser Tag ist nicht in allen Monaten vorhanden.<br> Die Aktion wird nur "
+#~ "in Monaten mit 31 Tagen ausgeführt."
+
+#~ msgid "This device cannot be managed here."
+#~ msgstr "Dieses Gerät kann hier nicht verwaltet werden."
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "Dieses Feld darf nicht leer sein."
+
+#~ msgid "This image does not exist."
+#~ msgstr "Dieses Image existiert nicht."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "Diese Maschine wurde bereits hinzugefügt"
+
+#~ msgid "This may take a while"
+#~ msgstr "Dies kann eine Weile dauern"
+
+#~ msgid "This package is not compatible with this version of Cockpit"
+#~ msgstr "Das Paket ist mit dieser Cockpit-Version nicht kompatibel"
+
+#~ msgid "This package requires Cockpit version %s or later"
+#~ msgstr "Dieses Paket erfordert Cockpit in der Version %s oder höher"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "Dieses System benutzt ein benutzerdefiniertes Profil"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "Dieses System benutzt das empfohlene Profil"
+
+#~ msgid "This user name already exists"
+#~ msgstr "Dieser Benutzername existiert bereits"
+
+#~ msgid ""
+#~ "This version of cockpit-ws does not support connecting to a host with an "
+#~ "alternate user or port"
+#~ msgstr ""
+#~ "Das Verbinden zu einem Host mit alternativen Benutzernamen oder auf "
+#~ "anderen Ports wird von dieser Version von cockpit-ws nicht unterstützt"
+
+#~ msgid "This will test the kdump configuration by crashing the kernel."
+#~ msgstr ""
+#~ "Dies wird die kdump-Konfiguration durch einen Kernel-Absturz testen."
+
+#~ msgid "Thursday"
+#~ msgstr "Donnerstag"
+
+#~ msgid "Time Zone"
+#~ msgstr "Zeitzone"
+
+#~ msgid ""
+#~ "Tip: Make your key password match your login password to automatically "
+#~ "authenticate against other systems."
+#~ msgstr ""
+#~ "Tipp: Wenn Ihr Schlüsselpasswort mit Ihrem Login-Passwort übereinstimmt, "
+#~ "können Sie sich an anderen Systemen automatisiert anmelden."
+
+#~ msgid "To pull this image:"
+#~ msgstr "Zum Beziehen dieses Image:"
+
+#~ msgid ""
+#~ "To try a different port you will need to upgrade cockpit-ws to a newer "
+#~ "version."
+#~ msgstr ""
+#~ "Um einen anderen Port zu benutzen müssen Sie cockpit-ws aktualisieren."
+
+#~ msgid "Token"
+#~ msgstr "Token"
+
+#~ msgid "Too much data"
+#~ msgstr "Zu viele Daten"
+
+#~ msgid "Topology"
+#~ msgstr "Topologie"
+
+#~ msgid "Total"
+#~ msgstr "Insgesamt"
+
+#~ msgid "Troubleshoot"
+#~ msgstr "Fehlersuche"
+
+#~ msgid "Trust this certificate for this connection"
+#~ msgstr "Diesem Zertifikat für diese Verbindung vertrauen"
+
+#~ msgid "Try again"
+#~ msgstr "Nochmals versuchen"
+
+#~ msgid "Try to reconnect"
+#~ msgstr "Versuche neu zu verbinden"
+
+#~ msgid "Trying to synchronize with {{Server}}"
+#~ msgstr "Versuche mit  {{Server}} zu synchronisieren"
+
+#~ msgid "Tuesday"
+#~ msgstr "Dienstag"
+
+#~ msgid "Tuned has failed to start"
+#~ msgstr "Tuned konnte nicht gestartet werden"
+
+#~ msgid "Tuned is not available"
+#~ msgstr "Tuned ist nicht verfügbar"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "Tuned läuft nicht"
+
+#~ msgid "Tuned is off"
+#~ msgstr "Tuned ist ausgeschaltet"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Type a password"
+#~ msgstr "Geben Sie ein Passwort ein"
+
+#~ msgid "Type to filter…"
+#~ msgstr "Zum Filtern tippen..."
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unable to apply settings: $0"
+#~ msgstr "Kann Einstellungen nicht anwenden: $0"
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "Kann diese Lösung nicht automatisiert anwenden"
+
+#~ msgid "Unable to connect"
+#~ msgstr "Kann keine Verbindung herstellen"
+
+#~ msgid "Unable to decode Kubernetes application manifest."
+#~ msgstr "Kann Kubernetes Applikationsmanifest nicht verarbeiten."
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "Root-Konto konnte nicht gelöscht werden"
+
+#~ msgid "Unable to reach server"
+#~ msgstr "Kann Server nicht erreichen"
+
+#~ msgid "Unable to read the Kubernetes application manifest. Code $0."
+#~ msgstr ""
+#~ "Das Kubernetes Applikationsmanifest konnte nicht gelesen werden. Code $0."
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "Root-Konto konnte nicht umbenannt werden"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "Kann setroubleshootd nicht starten"
+
+#~ msgid "Unavailable"
+#~ msgstr "Nicht verfügbar"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Unerwarteter Fehler"
+
+#~ msgid "Unknown"
+#~ msgstr "Unbekannt"
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Unbekannt ($0)"
+
+#~ msgid "Unknown Host Key"
+#~ msgstr "Unbekannter Host-Schlüssel"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Unbekannte Konfiguration"
+
+#~ msgid "Unknown host name"
+#~ msgstr "Unbekannter Host-Name"
+
+#~ msgid "Unlock"
+#~ msgstr "Öffnen"
+
+#~ msgid "Unmanaged Interfaces"
+#~ msgstr "Unverwaltete Schnittstellen"
+
+#~ msgid "Unmask"
+#~ msgstr "Freigeben"
+
+#~ msgid "Unmount"
+#~ msgstr "Aushängen"
+
+#~ msgid "Unmounting $target"
+#~ msgstr "$target wird ausgehängt"
+
+#~ msgid "Unnamed"
+#~ msgstr "Unbennant"
+
+#~ msgid "Unrecognized Data"
+#~ msgstr "Unerkannte Daten"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Unerkannte Daten"
+
+#~ msgid "Unregistering system..."
+#~ msgstr "Deregistriere System..."
+
+#~ msgid "Unsupported setup mechanism"
+#~ msgstr "Nicht unterstützter Setup-Mechanismus"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "Läuft seit $StartedAt"
+
+#~ msgid "Update"
+#~ msgstr "Update"
+
+#~ msgid "Updating $0..."
+#~ msgstr "Aktualisiere $0..."
+
+#~ msgid "Use proxy server"
+#~ msgstr "Benutze Proxy-Server"
+
+#~ msgid "Use the following keys to authenticate against other systems"
+#~ msgstr ""
+#~ "Benutze die folgenen Schlüssel zur Authentifizierung an anderen Systemen"
+
+#~ msgid "Use the setting in /etc/kdump.conf"
+#~ msgstr "Benutze die Einstellungen in /etc/kdump.conf"
+
+#~ msgid "Used"
+#~ msgstr "Benutzt"
+
+#~ msgid "Used by Containers"
+#~ msgstr "Genutzt von Containern"
+
+#~ msgid "User"
+#~ msgstr "Benutzer"
+
+#~ msgid "User Name"
+#~ msgstr "Benutzername"
+
+#~ msgid "User Password"
+#~ msgstr "Benutzerpasswort"
+
+#~ msgid "User name"
+#~ msgstr "Benutzername"
+
+#~ msgid "User or Group"
+#~ msgstr "Benutzer oder Gruppe"
+
+#~ msgid "Username"
+#~ msgstr "Benutzername"
+
+#~ msgid "Users"
+#~ msgstr "Benutzer"
+
+#~ msgid "Using available credentials"
+#~ msgstr "Benutze verfügbare Zugangsdaten"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT - Kompatibel mit allen System und Geräten"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "VLAN Kennung"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "VLAN Einstellungen"
+
+#~ msgid "Validating key"
+#~ msgstr "Schlüssel wird überprüft"
+
+#~ msgid "Very securely erasing $target"
+#~ msgstr "$target wird sehr sicher gelöscht"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "Virtuelle Maschinen"
+
+#~ msgid "Volume Group"
+#~ msgstr "Datenträgerverbund"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "Datenträgerverbund $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "Datenträgerverbünde"
+
+#~ msgid "Waiting"
+#~ msgstr "Wartet"
+
+#~ msgid "Warning:"
+#~ msgstr "Warnung:"
+
+#~ msgid "Wednesday"
+#~ msgstr "Mittwoch"
+
+#~ msgid "Weeks"
+#~ msgstr "Wochen"
+
+#~ msgid "Welcome to the Image Registry"
+#~ msgstr "Willkommen bei der Image Registry"
+
+#~ msgid "With terminal"
+#~ msgstr "Mit Konsole"
+
+#~ msgid "Write-mostly"
+#~ msgstr "Hauptsächlich Schreiben"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS - Red Hat Enterprise Linux 7 default"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Ja"
+
+#~ msgid ""
+#~ "You are connected to {{#strong}}{{host}}{{/strong}}, however in order to "
+#~ "synchronize users, a user with superuser privileges is required."
+#~ msgstr ""
+#~ "Sie sind mit {{#strong}}{{host}}{{/strong}} verbunden, zum "
+#~ "Synchronisieren von Nutzern sind jedoch Administratorrechte erforderlich."
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr ""
+#~ "Sie sind derzeit direkt mit diesem Server verbunden und können ihn "
+#~ "deshalb nicht löschen."
+
+#, fuzzy
+#~ msgid ""
+#~ "You can bypass the certificate check, but any data you send to the server "
+#~ "could be intercepted by others."
+#~ msgstr ""
+#~ "Sie können die Zertifikatsprüfung umgehen, dann könnten jedoch sämtliche "
+#~ "an den Server gesendete Daten von Dritten mitgelesen werden."
+
+#~ msgid ""
+#~ "You can remove the previously stored key by running the following command"
+#~ msgstr ""
+#~ "Sie können den zuvor gespeicherten Schlüssel mit dem folgenden Befehl "
+#~ "entfernen"
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "Sie haben keine Berechtigung, die autorisierten öffentlichen Schlüssel "
+#~ "von diesem Konto anzuzeigen."
+
+#, fuzzy
+#~ msgid "You don't have permission to manage the Docker storage pool."
+#~ msgstr "Sie haben keine Berechtigung, den Docker Storage Pool zu verwalten."
+
+#~ msgid ""
+#~ "Your login credentials do not give you access to use the docker registry "
+#~ "from the command line."
+#~ msgstr ""
+#~ "Ihre Zugangsdaten erlauben Ihnen keinen Zugang zur Docker Registry von "
+#~ "der Kommandozeile."
+
+#~ msgid "Your session has been terminated."
+#~ msgstr "Ihre Sitzung wurde beendet."
+
+#~ msgid "Your session has expired. Please log in again."
+#~ msgstr "Die Session ist abgelaufen. Bitte neu einloggen."
+
+#~ msgid "[$0 bytes of binary data]"
+#~ msgstr "[$0 bytes Binäredaten]"
+
+#~ msgid "[binary data]"
+#~ msgstr "[Binärdaten]"
+
+#~ msgid "[no data]"
+#~ msgstr "[keine Daten]"
+
+#~ msgid "active"
+#~ msgstr "Aktiv"
+
+#~ msgid "alias"
+#~ msgstr "Alias"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "Bytes"
+
+#~ msgid "crashed"
+#~ msgstr "abgestürzt"
+
+#~ msgid "default"
+#~ msgstr "Vorgabe"
+
+#~ msgid "disabled"
+#~ msgstr "Aus"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "z.B. \"$0\""
+
+#~ msgid "enabled"
+#~ msgstr "An"
+
+#~ msgid "error"
+#~ msgstr "Fehler"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 - Red Hat Enterprise Linux 6 default"
+
+#~ msgid "failed to list ssh host keys: $0"
+#~ msgstr "Kann SSH-Hostschlüssel nicht anzeigen: $0"
+
+#~ msgid "iSCSI Targets"
+#~ msgstr "iSCSI Targets"
+
+#~ msgid "kdump status"
+#~ msgstr "kdump Status"
+
+#~ msgid "key"
+#~ msgstr "Schlüssel"
+
+#, fuzzy
+#~ msgid "locally in $0"
+#~ msgstr "lokal in $0"
+
+#~ msgid "no"
+#~ msgstr "Nein"
+
+#~ msgid "none"
+#~ msgstr "kein"
+
+#~ msgid "paused"
+#~ msgstr "pausiert"
+
+#, fuzzy
+#~ msgid "recommended"
+#~ msgstr "MII (empfohlen)"
+
+#~ msgid "running"
+#~ msgstr "Läuft"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "Suche nach Name, Namensraum oder Beschreibung"
+
+#~ msgid "select container"
+#~ msgstr "Container auswählen"
+
+#~ msgid "shares"
+#~ msgstr "Freigaben"
+
+#~ msgid "shutdown"
+#~ msgstr "Herunterfahren"
+
+#~ msgid "solution details"
+#~ msgstr "Lösungsdetails"
+
+#~ msgid "ssh key"
+#~ msgstr "SSH-Schlüssel"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "Angehalten (PM)"
+
+#~ msgid "to host port"
+#~ msgstr "An Port"
+
+#~ msgid "undefined"
+#~ msgstr "nicht definiert"
+
+#~ msgid "unknown"
+#~ msgstr "unbekannt"
+
+#~ msgid "unknown target"
+#~ msgstr "Unbekanntes Ziel"
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPUs:"
+
+#, fuzzy
+#~ msgid "value"
+#~ msgstr "Wert"
+
+#~ msgid "yes"
+#~ msgstr "Ja"
+
+#, fuzzy
+#~ msgid ""
+#~ "{{ condition.message }}. Timestamp: {{ condition.lastTransitionTime }} "
+#~ "Error count: {{ condition.generation }}"
+#~ msgstr ""
+#~ "{{ condition.message }}. Zeitstempel: {{ condition.lastTransitionTime }} "
+#~ "Fehleranzahl: {{ condition.generation }}"

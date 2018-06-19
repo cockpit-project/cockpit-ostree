@@ -1,0 +1,5860 @@
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2015. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2016. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2017. #zanata
+# cockpit <cockpituous@gmail.com>, 2017. #zanata
+# Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2018-05-03 04:56+0000\n"
+"Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
+"Language-Team: Catalan\n"
+"Language: ca\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 paquet"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 paquets"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- Afegeix un dipòsit nou"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Afegeix"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "Afegeix una altra clau"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr "Addicions"
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Aplica"
+
+#: src/index.html:255
+msgid "Available"
+msgstr "Disponible"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Comença amb '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Canvia de dipòsit"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Comprova si hi ha actualitzacions"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Comprovació per si hi ha actualitzacions"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "S'està connectant a OSTree"
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr "No s'ha pogut carregar els ajusts per a '$0': $1"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr "En ús actualment:"
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Predeterminat"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Suprimeix"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr "Reversions"
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr "Error en carregar els remots: $0"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr "Signatura vençuda"
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "Ha fallat"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr "Bona signatura"
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr "Signatura no vàlida"
+
+#: src/index.html:99
+msgid "Name"
+msgstr "Nom"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr "Sense desplegaments"
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr "No s'ha trobat desplegaments OSTree"
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr "No s'ha trobat cap dada de configuració"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr "No autoritzat per actualitzar el programari en aquest sistema"
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr "SO $0 no trobat"
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr "OSTree no està disponible en aquest sistema"
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr "Sistema operatiu"
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr "Actualitzacions del sistema operatiu"
+
+#: src/index.html:307
+msgid "Origin"
+msgstr "Origen"
+
+#: src/index.html:266
+msgid "Packages"
+msgstr "Paquets"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr "Si us plau, proporcioneu un URL vàlid"
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr "Si us plau, proporcioneu un nom vàlid"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "S'estan rebent les parts de deltes"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "S'estan rebent els objectes de metadades"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "S'estan rebent objectes: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "Torna a connectar"
+
+#: src/index.html:305
+msgid "Released"
+msgstr "Llançat"
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr "Supressions"
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr "En execució"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr "S'estan escanejant les metadades"
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "Signatura"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "Signat per"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "Actualitzacions"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Estat"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+"Aquest desplegament conté els mateixos paquets que el vostre sistema "
+"arrencat actualment"
+
+#: src/index.html:265
+msgid "Tree"
+msgstr "Arbre"
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "No es pot comunicar amb OSTree"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "Actualitza i reinicia"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Actualitzacions"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "S'està actualitzant"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "Utilitza una clau GPG de confiança"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Versió"
+
+#: src/index.html:282
+msgid "When"
+msgstr "Quan"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr "S'estan escrivint els objectes"
+
+#: src/index.html:186
+#, fuzzy
+msgid "at"
+msgstr "Camí"
+
+#~ msgid " (shared with the OS)"
+#~ msgstr " (compartit amb el SO)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"Voleu suprimir els següents nodes?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "Dispositiu de blocs $0"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 de mida del tros"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 discs"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "Sistema de fitxers $0"
+
+#~ msgid "$0 Template"
+#~ msgstr "Plantilla $0"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bit"
+#~ msgstr[1] "$0 bits"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 dia"
+#~ msgstr[1] "$0 dies"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "falta $0 disc"
+#~ msgstr[1] "falten $0 discs"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "falta $0 disc"
+#~ msgstr[1] "falten $0 discs"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 va sortir amb el codi $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 ha fallat"
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 hora"
+#~ msgstr[1] "$0 hores"
+
+#~ msgid ""
+#~ "$0 is available for most operating systems. To install it, search for it "
+#~ "in GNOME Software or run the following:"
+#~ msgstr ""
+#~ "$0 està disponible per a la majoria de sistemes operatius. Per instal·lar-"
+#~ "ho, cerqueu-ho a GNOME Software o executeu el següent:"
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 es va matar amb el senyal $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 minut"
+#~ msgstr[1] "$0 minuts"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 mes"
+#~ msgstr[1] "$0 mesos"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 ocurrència"
+#~ msgstr[1] "$0 ocurrències"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0 de $1"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 comparticions"
+
+#~ msgid "$0 update"
+#~ msgid_plural "$0 updates"
+#~ msgstr[0] "$0 actualització"
+#~ msgstr[1] "$0 actualitzacions"
+
+#~ msgid "$0 used of $1 ($2 saved)"
+#~ msgstr "$0 utilitzats de $1 ($2 estalviat)"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 setmana"
+#~ msgstr[1] "$0 setmanes"
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 any"
+#~ msgstr[1] "$0 anys"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% lliure"
+#~ msgstr[1] "$0% lliures"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% utilitzat"
+#~ msgstr[1] "$0% utilitzats"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0 amb $1 lliures"
+
+#~ msgid "$1 security fix"
+#~ msgid_plural "$1 security fixes"
+#~ msgstr[0] "$1 correcció de seguretat"
+#~ msgstr[1] "$1 correccions de seguretat"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (de $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "${size} ${desc}"
+#~ msgstr "${desc} de ${size}"
+
+#~ msgid "(default)"
+#~ msgstr "(predeterminat)"
+
+#~ msgid "(none)"
+#~ msgstr "(sense)"
+
+#~ msgid ", including $1 security fix"
+#~ msgid_plural ", including $1 security fixes"
+#~ msgstr[0] ", incloent-hi $1 correcció de seguretat"
+#~ msgstr[1] ", incloent-hi $1 correccions de seguretat"
+
+#~ msgid "--"
+#~ msgstr "--"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 minut"
+
+#~ msgid "1 day"
+#~ msgstr "1 dia"
+
+#~ msgid "1 hour"
+#~ msgstr "1 hora"
+
+#~ msgid "1 min"
+#~ msgstr "1 min"
+
+#~ msgid "1 week"
+#~ msgstr "1 setmana"
+
+#~ msgid "10th"
+#~ msgstr "10è"
+
+#~ msgid "11th"
+#~ msgstr "11è"
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12è"
+
+#~ msgid "13th"
+#~ msgstr "13è"
+
+#~ msgid "14th"
+#~ msgstr "14è"
+
+#~ msgid "15th"
+#~ msgstr "15è"
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16è"
+
+#~ msgid "17th"
+#~ msgstr "17è"
+
+#~ msgid "18th"
+#~ msgstr "18è"
+
+#~ msgid "19th"
+#~ msgstr "19è"
+
+#~ msgid "1st"
+#~ msgstr "1r"
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 min"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 minuts"
+
+#~ msgid "20th"
+#~ msgstr "20è"
+
+#~ msgid "21st"
+#~ msgstr "21è"
+
+#~ msgid "22nd"
+#~ msgstr "22è"
+
+#~ msgid "23rd"
+#~ msgstr "23è"
+
+#~ msgid "24th"
+#~ msgstr "24è"
+
+#~ msgid "25th"
+#~ msgstr "25è"
+
+#~ msgid "26th"
+#~ msgstr "26è"
+
+#~ msgid "27th"
+#~ msgstr "27è"
+
+#~ msgid "28th"
+#~ msgstr "28è"
+
+#~ msgid "29th"
+#~ msgstr "29è"
+
+#~ msgid "2nd"
+#~ msgstr "2n"
+
+#~ msgid "3 min"
+#~ msgstr "3 min"
+
+#~ msgid "30th"
+#~ msgstr "30è"
+
+#~ msgid "31st"
+#~ msgstr "31è"
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3r"
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 min"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 minuts"
+
+#~ msgid "4th"
+#~ msgstr "4t"
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 minuts"
+
+#~ msgid "5 min"
+#~ msgstr "5 min"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minuts"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5è"
+
+#~ msgid "6 hours"
+#~ msgstr "6 hores"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 minuts"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6è"
+
+#~ msgid "7th"
+#~ msgstr "7è"
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8è"
+
+#~ msgid "9th"
+#~ msgstr "9è"
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "Una versió compatible de Cockpit no està instal·lada a {{#strong}}{{host}}"
+#~ "{{/strong}}."
+
+#~ msgid "A disk is needed."
+#~ msgstr "Es necessita un disc."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Una interfície d'usuari per als servidors GNU/Linux"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "Monitoratge ARP"
+
+#~ msgid "ARP Ping"
+#~ msgstr "Ping ARP"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Quant a Cockpit"
+
+#~ msgid "Access"
+#~ msgstr "Accés"
+
+#~ msgid "Access Modes"
+#~ msgstr "Modes d'accés"
+
+#~ msgid "Access Policy"
+#~ msgstr "Política d'accés"
+
+#~ msgid "Access denied"
+#~ msgstr "Accés denegat"
+
+#~ msgid "Account Expiration"
+#~ msgstr "Venciment del compte"
+
+#~ msgid "Account Settings"
+#~ msgstr "Ajusts dels comptes"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "El compte no està disponible o no es pot editar."
+
+#~ msgid "Accounts"
+#~ msgstr "Comptes"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Comptes"
+
+#~ msgid "Action"
+#~ msgstr "Acció"
+
+#~ msgid "Activate"
+#~ msgstr "Activa"
+
+#~ msgid "Activating $target"
+#~ msgstr "S'està activant $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Clau d'activació"
+
+#~ msgid "Active"
+#~ msgstr "Activa"
+
+#~ msgid "Active Backup"
+#~ msgstr "Còpia de seguretat activa"
+
+#~ msgid "Active Pages"
+#~ msgstr "Pàgines actives"
+
+#~ msgid "Actual"
+#~ msgstr "Real"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Balanceig de càrrega adaptativa"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Balanceig de càrrega de transmissió adaptativa"
+
+#~ msgid "Add $0"
+#~ msgstr "Afegeix $0"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Afegeix emmagatzematge addicional"
+
+#~ msgid "Add Bond"
+#~ msgstr "Afegeix un enllaç"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Afegeix un pont"
+
+#~ msgid "Add Cluster Node"
+#~ msgstr "Afegeix un node de clúster"
+
+#~ msgid "Add Disks"
+#~ msgstr "Afegeix discs"
+
+#~ msgid "Add Group"
+#~ msgstr "Afegeix un grup"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Afegeix un node Kubernetes"
+
+#~ msgid "Add Machine to Dashboard"
+#~ msgstr "Afegeix la màquina al tauler de control"
+
+#~ msgid "Add Member"
+#~ msgstr "Afegeix un membre"
+
+#~ msgid "Add Membership"
+#~ msgstr "Afegeix una pertinença"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Afegeix un clúster nou"
+
+#~ msgid "Add New User"
+#~ msgstr "Afegeix un usuari nou"
+
+#~ msgid "Add Role"
+#~ msgstr "Afegeix un rol"
+
+#~ msgid "Add Services"
+#~ msgstr "Afegeix serveis"
+
+#~ msgid "Add Services…"
+#~ msgstr "Afegeix serveis..."
+
+#~ msgid "Add Storage"
+#~ msgstr "Afegeix emmagatzematge"
+
+#~ msgid "Add Team"
+#~ msgstr "Afegeix un equip"
+
+#~ msgid "Add User"
+#~ msgstr "Afegeix un usuari"
+
+#~ msgid "Add VLAN"
+#~ msgstr "Afegeix una VLAN"
+
+#~ msgid "Add iSCSI Portal"
+#~ msgstr "Afegeix un portal iSCSI"
+
+#~ msgid "Add key"
+#~ msgstr "Afegeix una clau"
+
+#~ msgid "Add membership"
+#~ msgstr "Afegeix una pertinença"
+
+#~ msgid "Add network key"
+#~ msgstr "Afegeix una clau de xarxa"
+
+#~ msgid "Add public key"
+#~ msgstr "Afegeix una clau pública"
+
+#~ msgid "Adding key"
+#~ msgstr "S'està afegint la clau"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "S'està afegint el volum físic a $target"
+
+#~ msgid "Additional"
+#~ msgstr "Addicional"
+
+#~ msgid "Additional DNS $val"
+#~ msgstr "DNS addicional $val"
+
+#~ msgid "Additional DNS Search Domains $val"
+#~ msgstr "Dominis de cerca DNS addicionals $val"
+
+#~ msgid "Additional Storage"
+#~ msgstr "Emmagatzematge addicional"
+
+#~ msgid "Additional address $val"
+#~ msgstr "Adreça addicional $val"
+
+#~ msgid "Address"
+#~ msgstr "Adreça"
+
+#~ msgid "Address $val"
+#~ msgstr "Adreça $val"
+
+#~ msgid "Address:"
+#~ msgstr "Adreça:"
+
+#~ msgid "Addresses"
+#~ msgstr "Adreces"
+
+#~ msgid "Adjust"
+#~ msgstr "Ajusta"
+
+#~ msgid "Adjust Persistent Volume '{{ item.metadata.name }}'"
+#~ msgstr "Ajusta el volum persistent '{{ item.metadata.name }}'"
+
+#~ msgid "Adjust Replication Controller {{ item.metadata.name }}"
+#~ msgstr "Ajusta el controlador de replicació {{ item.metadata.name }}"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Ajusta la ruta"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Ajusta el servei"
+
+#~ msgid "Admin"
+#~ msgstr "Administrador"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Contrasenya de l'administrador"
+
+#~ msgid "After"
+#~ msgstr "Després"
+
+#~ msgid "After system boot"
+#~ msgstr "Després de l'arrencada del sistema"
+
+#~ msgid "All In One"
+#~ msgstr "Tot en un"
+
+#~ msgid "All Projects"
+#~ msgstr "Tots els projectes"
+
+#~ msgid "All Types"
+#~ msgstr "Tots els tipus"
+
+#~ msgid "All images"
+#~ msgstr "Totes les imatges"
+
+#~ msgid "All in use"
+#~ msgstr "Tots en ús"
+
+#~ msgid "All running"
+#~ msgstr "Tot en execució"
+
+#~ msgid "All running virtual machines will be turned off."
+#~ msgstr "S'apagaran totes les màquines virtuals."
+
+#~ msgid "Allowed Services"
+#~ msgstr "Serveis permesos"
+
+#~ msgid "Always"
+#~ msgstr "Sempre"
+
+#~ msgid "Annotations"
+#~ msgstr "Anotacions"
+
+#~ msgid "Anonymous: Allow all unauthenticated users to pull images"
+#~ msgstr ""
+#~ "Anònim: permet que tots els usuaris no autenticats recuperin imatges"
+
+#~ msgid "Applications"
+#~ msgstr "Aplicacions"
+
+#~ msgid "Apply all updates"
+#~ msgstr "Aplica totes les actualitzacions"
+
+#~ msgid "Apply security updates"
+#~ msgstr "Aplica les actualitzacions de seguretat"
+
+#~ msgid "Apply this solution"
+#~ msgstr "Aplica aquesta solució"
+
+#~ msgid "Applying solution..."
+#~ msgstr "S'està aplicant la solució..."
+
+#~ msgid "Applying updates"
+#~ msgstr "Aplicació de les actualitzacions"
+
+#~ msgid "Applying updates failed"
+#~ msgstr "Ha fallat l'aplicació de les actualitzacions"
+
+#~ msgid "Architecture"
+#~ msgstr "Arquitectura"
+
+#~ msgid "Are you sure you want to delete this image?"
+#~ msgstr "Esteu segur que voleu suprimir aquesta imatge?"
+
+#~ msgid "Are you sure you want to leave the '$0' domain?"
+#~ msgstr "Esteu segur que voleu abandonar el domini '$0'?"
+
+#~ msgid "Are you sure you want to leave this domain?"
+#~ msgstr "Esteu segur que voleu abandonar aquest domini?"
+
+#~ msgid "Asset Tag"
+#~ msgstr "Etiqueta de recurs"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Com a mínim es necessiten $0 discs."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Com a mínim es necessita un disc."
+
+#~ msgid "At specific time"
+#~ msgstr "A l'instant específic"
+
+#~ msgid "Audit log"
+#~ msgstr "Registre d'auditoria"
+
+#~ msgid "Authenticating"
+#~ msgstr "S'està autenticant"
+
+#~ msgid "Authentication"
+#~ msgstr "Autenticació"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "L'autenticació ha fallat"
+
+#~ msgid "Authentication Failed: Server closed connection"
+#~ msgstr "Ha fallat l'autenticació: el servidor ha tancat la connexió"
+
+#~ msgid "Authentication failed"
+#~ msgstr "Ha fallat l'autenticació"
+
+#~ msgid "Authentication required"
+#~ msgstr "Autenticació requerida"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Claus SSH públiques autoritzades"
+
+#~ msgid "Automatic"
+#~ msgstr "Automàtic"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Automàtica, tan sols DHCP"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Automàtica (DHCP)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Actualitzacions automàtiques"
+
+#~ msgid "Automatically selected host"
+#~ msgstr "Amfitrió seleccionat automàticament"
+
+#~ msgid "Automatically start libvirt on boot"
+#~ msgstr "Inicia automàticament libvirt amb l'arrencada"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Automàticament mitjançant NTP"
+
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Automàticament mitjançant servidors NTP específics"
+
+#~ msgid "Autostart:"
+#~ msgstr "Inici automàtic:"
+
+#~ msgid "Available Updates"
+#~ msgstr "Actualitzacions disponibles"
+
+#~ msgid "Available targets on $0"
+#~ msgstr "Objectius disponibles en $0"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "BIOS"
+#~ msgstr "BIOS"
+
+#~ msgid "BIOS date"
+#~ msgstr "Data del BIOS"
+
+#~ msgid "BIOS version"
+#~ msgstr "Versió del BIOS"
+
+#~ msgid "Back to Accounts"
+#~ msgstr "Torna als comptes"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "S'han passat dades dolentes al mecanisme del passwd1"
+
+#~ msgid "Balancer"
+#~ msgstr "Eina de balanceig"
+
+#~ msgid "Base Template"
+#~ msgstr "Plantilla base"
+
+#~ msgid "Base template"
+#~ msgstr "Plantilla base"
+
+#~ msgid "Base template:"
+#~ msgstr "Plantilla base:"
+
+#~ msgid "Block"
+#~ msgstr "Bloc"
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Dispositiu de blocs per al sistema de fitxers"
+
+#~ msgid "Blocked"
+#~ msgstr "Bloquejat"
+
+#~ msgid "Bond"
+#~ msgstr "Enllaç"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Ajusts de l'enllaç"
+
+#~ msgid "Boot ID"
+#~ msgstr "Id. d'arrencada"
+
+#~ msgid "Boot Order:"
+#~ msgstr "Ordre d'arrencada:"
+
+#~ msgid "Bridge"
+#~ msgstr "Pont"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Ajusts del port del pont"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Ajusts del pont"
+
+#~ msgid "Bridge port"
+#~ msgstr "Port del pont"
+
+#~ msgid "Broadcast"
+#~ msgstr "Difusió"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Configuració trencada"
+
+#~ msgid "Bug Fix Updates Available"
+#~ msgstr "Hi ha disponibles actualitzacions de correcció d'errors"
+
+#~ msgid "Bugs:"
+#~ msgstr "Errors de programari:"
+
+#~ msgid "Bus"
+#~ msgstr "Bus"
+
+#~ msgid "CHANGE NETWORK STATE action failed"
+#~ msgstr "Ha fallat l'acció CHANGE NETWORK STATE"
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "Estat de la CPU"
+
+#~ msgid "CPU Type:"
+#~ msgstr "Tipus de CPU:"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "Utilització de la CPU: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "Prioritat de CPU"
+
+#~ msgid "CPU usage:"
+#~ msgstr "Ús de la CPU:"
+
+#~ msgid "CREATE VM action failed"
+#~ msgstr "Ha fallat l'acció CREATE VM"
+
+#~ msgid "Cached"
+#~ msgstr "Emmagatzemat temporalment"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "No es pot connectar a Docker"
+
+#~ msgid "Can't delete while unlocked"
+#~ msgstr "No es pot suprimir mentre estigui desbloquejat"
+
+#~ msgid "Can't load image"
+#~ msgstr "No es pot carregar la imatge"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "No es pot connectar a una màquina desconeguda"
+
+#~ msgid "Cannot join a domain because realmd is not available on this system"
+#~ msgstr ""
+#~ "No es pot unir a un domini perquè realmd no està disponible en aquest "
+#~ "sistema"
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "No es pot planificar un esdeveniment del passat"
+
+#~ msgid "Capacity"
+#~ msgstr "Capacitat"
+
+#~ msgid "Carrier"
+#~ msgstr "Portadora"
+
+#~ msgid "Change"
+#~ msgstr "Canvia"
+
+#~ msgid "Change Host Name"
+#~ msgstr "Canvia el nom d'amfitrió"
+
+#~ msgid "Change Password"
+#~ msgstr "Canvia la contrasenya"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Canvia el perfil de rendiment"
+
+#~ msgid "Change Profile"
+#~ msgstr "Canvia el perfil"
+
+#~ msgid "Change System Time"
+#~ msgstr "Canvia l'hora del sistema"
+
+#~ msgid "Change User"
+#~ msgstr "Canvia l'usuari"
+
+#~ msgid "Change iSCSI Initiator Name"
+#~ msgstr "Canvia el nom d'iniciador iSCSI"
+
+#~ msgid "Change image stream"
+#~ msgstr "Canvia el flux d'imatges"
+
+#~ msgid "Change project"
+#~ msgstr "Canvia el projecte"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Canvia els límits dels recursos"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Canvia els límits dels recursos"
+
+#~ msgid "Change the settings"
+#~ msgstr "Canvia els ajusts"
+
+#~ msgid "Checking IP"
+#~ msgstr "S'està comprovant la IP"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Comprovació per si hi ha aplicacions noves"
+
+#~ msgid "Checking for public keys"
+#~ msgstr "S'està comprovant si hi ha claus públiques"
+
+#~ msgid "Checking for updates…"
+#~ msgstr "Comprovació per si hi ha actualitzacions..."
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "Seleccioneu l'idioma per utilitzar amb l'aplicació"
+
+#~ msgid "Chunk Size"
+#~ msgstr "Mida del tros"
+
+#~ msgid "Claim"
+#~ msgstr "Reclama"
+
+#~ msgid "Claim Name"
+#~ msgstr "Nom de la reclamació"
+
+#~ msgid "Class"
+#~ msgstr "Classe"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "Neteja de $target"
+
+#~ msgid "Click to see system hardware information"
+#~ msgstr "Feu clic per veure la informació del maquinari del sistema"
+
+#~ msgid "Client Certificate"
+#~ msgstr "Certificat de client"
+
+#~ msgid "Close"
+#~ msgstr "Tanca"
+
+#~ msgid "Close Selected Pages"
+#~ msgstr "Tanca les pàgines seleccionades"
+
+#~ msgid "Cluster"
+#~ msgstr "Clúster"
+
+#~ msgid "Cluster Templates"
+#~ msgstr "Plantilles de clúster"
+
+#~ msgid "Cluster Virtual Machines"
+#~ msgstr "Màquines virtuals del clúster"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Cockpit authentication is configured incorrectly."
+#~ msgstr "L'autenticació de Cockpit està configurada incorrectament."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit no ha pogut contactar amb l'amfitrió indicat."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit és una eina de gestió de servidors que facilita l'administració "
+#~ "dels vostres servidors Linux a través d'un navegador web. Saltar entre el "
+#~ "terminal i l'eina web no és cap problema. Un servei iniciat a través de "
+#~ "Cockpit es pot aturar a través del terminal. De la mateixa manera, si es "
+#~ "produeix un error en el terminal, es pot observar en la interfície de les "
+#~ "publicacions de Cockpit."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr ""
+#~ "Cockpit és una interfície interactiva d'administració del servidor Linux."
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit no és compatible amb el programari del sistema."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit no està instal·lat"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit no està instal·lat al sistema."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit és perfecte per als nous administradors de sistemes, els permet "
+#~ "realitzar fàcilment les tasques senzilles com ara l'administració de "
+#~ "l'emmagatzematge, la inspecció de les publicacions i iniciar i aturar els "
+#~ "serveis. Podeu monitorar i administrar diversos servidors a la vegada. "
+#~ "Només heu d'afegir-los amb tan sols un clic i les vostres màquines es "
+#~ "veuran al cantó de les altres."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit no ha pogut contactar amb {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit no ha pogut iniciar la sessió a {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid "Color"
+#~ msgstr "Color"
+
+#~ msgid "Combined memory usage"
+#~ msgstr "Ús combinat de memòria"
+
+#~ msgid "Combined usage of $0 CPU core"
+#~ msgid_plural "Combined usage of $0 CPU cores"
+#~ msgstr[0] "Ús combinat de $0 nucli de CPU"
+#~ msgstr[1] "Ús combinat de $0 nuclis de CPU"
+
+#~ msgid "Command"
+#~ msgstr "Ordre"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "L'ordre no pot estar en blanc"
+
+#~ msgid "Command:"
+#~ msgstr "Ordre:"
+
+#~ msgid "Comment"
+#~ msgstr "Comentari"
+
+#~ msgid "Commit"
+#~ msgstr "Consigna"
+
+#~ msgid "Commit Image"
+#~ msgstr "Consigna la imatge"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "Ha fallat la comunicació amb tuned"
+
+#~ msgid "Compact PCI"
+#~ msgstr "PCI compacte"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Compatible amb tots els sistemes i dispositius (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Compatible amb els sistemes moderns i els discs durs > 2TB (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Comprimeix els estavellaments per estalviar espai"
+
+#~ msgid "Compression"
+#~ msgstr "Compressió"
+
+#~ msgid "Computer OU"
+#~ msgstr "OU de l'ordinador"
+
+#~ msgid "Condition failed"
+#~ msgstr "Ha fallat la condició"
+
+#~ msgid "Configuration"
+#~ msgstr "Configuració"
+
+#~ msgid "Configure"
+#~ msgstr "Configura"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Configura la xarxa Flannel"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Configura Kubelet i el servidor intermediari"
+
+#~ msgid "Configure storage..."
+#~ msgstr "Configura l'emmagatzematge..."
+
+#~ msgid "Configuring"
+#~ msgstr "S'està configurant"
+
+#~ msgid "Configuring IP"
+#~ msgstr "S'està configurant la IP"
+
+#~ msgid "Confirm"
+#~ msgstr "Confirmació"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Confirmació de la contrasenya nova"
+
+#~ msgid "Confirm deletion of $0"
+#~ msgstr "Confirma la supressió de $0"
+
+#~ msgid "Confirm migration"
+#~ msgstr "Confirmació de la migració"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Confirmació de la contrasenya"
+
+#~ msgid "Confirm reload:"
+#~ msgstr "Confirmació de la recàrrega:"
+
+#~ msgid "Confirm save:"
+#~ msgstr "Confirmació del desament:"
+
+#~ msgid "Connect"
+#~ msgstr "Connecta"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Connecta automàticament"
+
+#~ msgid "Connect to"
+#~ msgstr "Connecta't a"
+
+#~ msgid "Connect to oVirt Engine"
+#~ msgstr "Connecta't al motor d'oVirt"
+
+#~ msgid "Connect with any $0 viewer application."
+#~ msgstr "Connecta amb qualsevol aplicació de visualització $0."
+
+#~ msgid "Connect with any SPICE or VNC viewer application."
+#~ msgstr "Connecta amb qualsevol aplicació de visualització SPICE o VNC."
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "S'està connectant a Docker"
+
+#~ msgid "Connecting to SETroubleshoot daemon..."
+#~ msgstr "S'està connectant al dimoni de SETroubleshoot..."
+
+#~ msgid "Connecting to Virtualization Service"
+#~ msgstr "Connexió al servei de virtualització"
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "S'està connectant a la màquina"
+
+#~ msgid "Connecting..."
+#~ msgstr "S'està connectant..."
+
+#~ msgid "Connection"
+#~ msgstr "Connexió"
+
+#~ msgid "Connection Error"
+#~ msgstr "Error de connexió"
+
+#~ msgid "Connection Error: $0"
+#~ msgstr "Error de connexió: $0"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Ajusts de la connexió"
+
+#~ msgid "Connection has timed out."
+#~ msgstr "La connexió ha excedit el temps."
+
+#~ msgid "Connection will be lost"
+#~ msgstr "Es perdrà la connexió"
+
+#~ msgid "Console Type"
+#~ msgstr "Tipus de consola"
+
+#~ msgid "Consoles"
+#~ msgstr "Consoles"
+
+#~ msgid "Container"
+#~ msgstr "Contenidor"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Administrador del contenidor"
+
+#~ msgid "Container ID"
+#~ msgstr "Id. de contenidor"
+
+#~ msgid "Container Name"
+#~ msgstr "Nom del contenidor"
+
+#~ msgid "Container Runtime Version"
+#~ msgstr "Versió de l'entorn d'execució del contenidor"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "El contenidor actualment està marcat com a no en execució, però va fallar "
+#~ "l'aturada normal."
+
+#~ msgid "Container is currently running."
+#~ msgstr "El contenidor s'està executant actualment."
+
+#~ msgid "Container:"
+#~ msgstr "Contenidor:"
+
+#~ msgid "Containers"
+#~ msgstr "Contenidors"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Contenidors"
+
+#~ msgid "Content"
+#~ msgstr "Contingut"
+
+#~ msgid "Control"
+#~ msgstr "Control"
+
+#~ msgctxt "key"
+#~ msgid "Control"
+#~ msgstr "Control"
+
+#~ msgid "Convertible"
+#~ msgstr "Convertible"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "No s'han pogut afegir tots els discs"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "No s'ha pogut contactar amb {{host}}"
+
+#~ msgid "Could not list services"
+#~ msgstr "No s'han pogut llistar els serveis"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "No s'ha pogut restablir l'agrupació d'emmagatzematge"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "No s'han pogut canviar els grups de l'usuari"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "No s'ha pogut canviar la contrasenya de l'usuari"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "No s'ha pogut connectar al servidor"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "No s'ha pogut connectar a la màquina"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "No s'han pogut crear els nous usuaris"
+
+#~ msgid "Couldn't find running API server"
+#~ msgstr "No s'ha pogut trobar el servidor de l'API en execució"
+
+#~ msgid ""
+#~ "Couldn't get system subscription status. Please ensure subscription-"
+#~ "manager is installed."
+#~ msgstr ""
+#~ "No s'ha pogut obtenir l'estat de subscripció del sistema. Assegureu-vos "
+#~ "que subscription-manager estigui instal·lat."
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "No s'han pogut llistar els usuaris locals"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "No s'han pogut llistar els usuaris"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "No s'han pogut carregar les dades de l'usuari"
+
+#~ msgid "Count:"
+#~ msgstr "Nombre:"
+
+#~ msgid "Crash dump location"
+#~ msgstr "Ubicació del bolcat de l'estavellament"
+
+#~ msgid "Create"
+#~ msgstr "Crea"
+
+#~ msgid "Create Logical Volume"
+#~ msgstr "Crea un volum lògic"
+
+#~ msgid "Create New Account"
+#~ msgstr "Crea un compte nou"
+
+#~ msgid "Create New VM"
+#~ msgstr "Crea una MV nova"
+
+#~ msgid "Create New Virtual Machine"
+#~ msgstr "Crea una màquina virtual nova"
+
+#~ msgid "Create Partition"
+#~ msgstr "Crea una partició"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "Crea un dispositiu RAID"
+
+#~ msgid "Create Report"
+#~ msgstr "Crea l'informe"
+
+#~ msgid "Create Snapshot"
+#~ msgstr "Crea una instantània"
+
+#~ msgid "Create Thin Volume"
+#~ msgstr "Crea un volum disgregat"
+
+#~ msgid "Create Timer"
+#~ msgstr "Crea un temporitzador"
+
+#~ msgid "Create Timers"
+#~ msgstr "Crea temporitzadors"
+
+#~ msgid "Create VDO Device"
+#~ msgstr "Crea un dispositiu VDO"
+
+#~ msgid "Create VM"
+#~ msgstr "Crea la MV"
+
+#~ msgid "Create Virtual Machine"
+#~ msgstr "Crea una màquina virtual"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Crea un grup de volums"
+
+#~ msgid "Create diagnostic report"
+#~ msgstr "Crea l'informe de diagnòstic"
+
+#~ msgid "Create empty image stream"
+#~ msgstr "Crea un flux d'imatges buit"
+
+#~ msgid "Create image stream"
+#~ msgstr "Crea un flux d'imatges"
+
+#~ msgid "Create it"
+#~ msgstr "Crea-ho"
+
+#~ msgid "Create new Logical Volume"
+#~ msgstr "Crea un volum lògic nou"
+
+#~ msgid "Create partition"
+#~ msgstr "Crea una partició"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "Crea una partició a $0"
+
+#~ msgid "Create partition table"
+#~ msgstr "Crea la taula de particions"
+
+#~ msgid "Created"
+#~ msgstr "Creat"
+
+#~ msgid "Created:"
+#~ msgstr "Creat:"
+
+#~ msgid "Creating RAID Device $target"
+#~ msgstr "S'està creant el dispositiu RAID $target"
+
+#~ msgid "Creating filesystem on $target"
+#~ msgstr "S'està creant el sistema de fitxers a $target"
+
+#~ msgid "Creating logical volume $target"
+#~ msgstr "S'està creant el volum lògic $target"
+
+#~ msgid "Creating partition $target"
+#~ msgstr "S'està creant la partició $target"
+
+#~ msgid "Creating snapshot of $target"
+#~ msgstr "S'està creant una instantània de $target"
+
+#~ msgid "Creating volume group $target"
+#~ msgstr "S'està creant el grup de volums $target"
+
+#~ msgid "Current boot"
+#~ msgstr "Arrencada actual"
+
+#~ msgid "Custom"
+#~ msgstr "Personalitzat"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Personalitzat (introduïu el tipus del sistema de fitxers)"
+
+#~ msgid "Custom URL"
+#~ msgstr "URL personalitzat"
+
+#~ msgid "Custom encryption options"
+#~ msgstr "Opcions personalitzades de xifrat"
+
+#~ msgid "Custom mount option"
+#~ msgstr "Opció personalitzada de muntatge"
+
+#~ msgid "Custom mount options"
+#~ msgstr "Opcions personalitzades de muntatge"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "EL DISC ESTÀ FALLANT"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS $val"
+#~ msgstr "DNS $val"
+
+#~ msgid "DNS Policy"
+#~ msgstr "Política del DNS"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "Dominis de cerca DNS"
+
+#~ msgid "DNS Search Domains $val"
+#~ msgstr "Dominis de cerca DNS $val"
+
+#~ msgid "Dashboard"
+#~ msgstr "Tauler de control"
+
+#~ msgid "Data Used"
+#~ msgstr "Dades utilitzades"
+
+#~ msgid "Deactivate"
+#~ msgstr "Desactiva"
+
+#~ msgid "Deactivating"
+#~ msgstr "S'està desactivant"
+
+#~ msgid "Deactivating $target"
+#~ msgstr "S'està desactivant $target"
+
+#~ msgid "Deduplication"
+#~ msgstr "Deduplicació"
+
+#~ msgid "Delay"
+#~ msgstr "Retard"
+
+#~ msgid "Delete $0"
+#~ msgstr "Suprimeix $0"
+
+#~ msgid "Delete '{{ name }}'"
+#~ msgstr "Suprimeix '{{ name }}'"
+
+#~ msgid "Delete Files"
+#~ msgstr "Suprimeix els fitxers"
+
+#~ msgid "Delete Node"
+#~ msgstr "Suprimeix el node"
+
+#~ msgid "Delete Persistent Volume"
+#~ msgstr "Suprimeix el volum persistent"
+
+#~ msgid "Delete Persistent Volume Claim"
+#~ msgstr "Suprimeix la reclamació del volum persistent"
+
+#~ msgid "Delete Project"
+#~ msgstr "Suprimeix el projecte"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Suprimeix la selecció"
+
+#~ msgid "Delete associated storage files:"
+#~ msgstr "Suprimeix els fitxers d'emmagatzematge associats:"
+
+#~ msgid "Delete image stream"
+#~ msgstr "Suprimeix el flux d'imatges"
+
+#~ msgid "Delete {{ item.kind }}"
+#~ msgstr "Suprimeix {{ item.kind }}"
+
+#~ msgid "Deleting $target"
+#~ msgstr "S'està suprimint $target"
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr "La supressió d'un dispositiu RAID n'esborrarà totes les dades."
+
+#~ msgid "Deleting a VDO device will erase all data on it."
+#~ msgstr "Si suprimiu un dispositiu VDO, s'esborraran totes les dades."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr "La supressió d'un contenidor n'esborrarà totes les dades."
+
+#~ msgid "Deleting a logical volume will delete all data in it."
+#~ msgstr "La supressió d'un volum lògic n'esborrarà totes les dades."
+
+#~ msgid "Deleting a partition will delete all data in it."
+#~ msgstr "La supressió d'una partició n'esborrarà totes les dades."
+
+#~ msgid "Deleting a volume group will erase all data on it."
+#~ msgstr "La supressió d'un grup de volums n'esborrarà totes les dades."
+
+#~ msgid ""
+#~ "Deleting an image will delete it, but you can probably download it again "
+#~ "if you need it later.  Unless this image has never been pushed to a "
+#~ "repository, that is, in which case you probably can't download it again."
+#~ msgstr ""
+#~ "La supressió d'una imatge ho suprimirà, però probablement es pot baixar "
+#~ "de nou si es necessita més endavant. Llevat que aquesta imatge mai hagi "
+#~ "estat empesa a un dipòsit, que ho és, en aquest cas probablement no "
+#~ "pugueu baixar-ho de nou."
+
+#~ msgid "Deleting volume group $target"
+#~ msgstr "S'està suprimint el grup de volums $target"
+
+#~ msgid "Deploy"
+#~ msgstr "Desplega"
+
+#~ msgid "Deploy Application"
+#~ msgstr "Desplega l'aplicació"
+
+#~ msgid "Deployment Causes"
+#~ msgstr "Causes del desplegament"
+
+#~ msgid "Deployment Config"
+#~ msgstr "Configuració de desplegament"
+
+#~ msgid "Deployment Configs"
+#~ msgstr "Configuracions de desplegaments"
+
+#~ msgid "Description"
+#~ msgstr "Descripció"
+
+#~ msgid "Description:"
+#~ msgstr "Descripció:"
+
+#~ msgid "Desktop"
+#~ msgstr "Escriptori"
+
+#~ msgid "Details"
+#~ msgstr "Detalls"
+
+#~ msgid "Device"
+#~ msgstr "Dispositiu"
+
+#~ msgid "Device File"
+#~ msgstr "Fitxer de dispositiu"
+
+#~ msgid "Device is read-only"
+#~ msgstr "El dispositiu és de només lectura"
+
+#~ msgid "Diagnostic reports"
+#~ msgstr "Informes de diagnòstic"
+
+#~ msgid "Directory"
+#~ msgstr "Directori"
+
+#~ msgid "Directory $0 isn't writable or doesn't exist."
+#~ msgstr "No es pot escriure al directori $0 o bé no existeix."
+
+#~ msgid "Disable"
+#~ msgstr "Inhabilita"
+
+#~ msgid "Disable tuned"
+#~ msgstr "Inhabilita tuned"
+
+#~ msgid "Disabled"
+#~ msgstr "Inhabilitat"
+
+#~ msgid "Disconnect"
+#~ msgstr "Desconnecta"
+
+#~ msgid "Disconnected"
+#~ msgstr "Desconnectat"
+
+#~ msgid "Disk"
+#~ msgstr "Disc"
+
+#~ msgid "Disk I/O"
+#~ msgstr "E/S de disc"
+
+#~ msgid "Disk Utilization: $0%"
+#~ msgstr "Utilització del disc: $0%"
+
+#~ msgid "Disk is OK"
+#~ msgstr "El disc està bé"
+
+#~ msgid "Disks"
+#~ msgstr "Discs"
+
+#~ msgid "Display Language"
+#~ msgstr "Idioma de visualització"
+
+#~ msgid "Display name"
+#~ msgstr "Nom a mostrar"
+
+#~ msgid "Do you want to add the role '{{ fields.displayRole }}'?"
+#~ msgstr "Voleu afegir el rol '{{ fields.displayRole }}'?"
+
+#~ msgid ""
+#~ "Do you want to delete the '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}' image stream?"
+#~ msgstr ""
+#~ "Voleu suprimir el flux d'imatges '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}'?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume '{{item.metadata.name}}'?"
+#~ msgstr "Voleu suprimir el volum persistent '{{item.metadata.name}}'?"
+
+#~ msgid "Do you want to delete the {{ item.kind }} '{{item.metadata.name}}'?"
+#~ msgstr "Voleu suprimir {{ item.kind }} '{{item.metadata.name}}'?"
+
+#~ msgid "Do you want to delete this Node?"
+#~ msgstr "Voleu suprimir aquest node?"
+
+#~ msgid ""
+#~ "Do you want to remove the image tagged as '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+#~ msgstr ""
+#~ "Voleu suprimir la imatge etiquetada com a '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+
+#~ msgid ""
+#~ "Do you want to remove the role '{{ fields.displayRole }}' from member "
+#~ "{{ fields.member.metadata.name }}?"
+#~ msgstr ""
+#~ "Voleu suprimir el rol '{{ fields.displayRole }}' del membre {{ fields."
+#~ "member.metadata.name }}?"
+
+#~ msgid "Docker Version"
+#~ msgstr "Versió de Docker"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "Docker no està activat o instal·lat al sistema"
+
+#~ msgid "Domain"
+#~ msgstr "Domini"
+
+#~ msgid "Domain $0 could not be contacted"
+#~ msgstr "No s'ha pogut contactar amb el domini $0"
+
+#~ msgid "Domain $0 is not supported"
+#~ msgstr "El domini $0 no és compatible"
+
+#~ msgid "Domain Address"
+#~ msgstr "Adreça del domini"
+
+#~ msgid "Domain Administrator Name"
+#~ msgstr "Nom de l'administrador del domini"
+
+#~ msgid "Domain Administrator Password"
+#~ msgstr "Contrasenya de l'administrador del domini"
+
+#~ msgid "Don't Repeat"
+#~ msgstr "No repeteixis"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "No sobreescriguis les dades existents"
+
+#~ msgid "Don't pull images automatically"
+#~ msgstr "No recuperis automàticament les imatges"
+
+#~ msgid "Done!"
+#~ msgstr "Fet!"
+
+#~ msgid "Download"
+#~ msgstr "Baixa"
+
+#~ msgid "Download report"
+#~ msgstr "Baixa l'informe"
+
+#~ msgid "Download the MSI from $0"
+#~ msgstr "Baixa el MSI de $0"
+
+#~ msgid "Downloaded"
+#~ msgstr "Baixat"
+
+#~ msgid "Downloading"
+#~ msgstr "S'està baixant"
+
+#~ msgid "Drive"
+#~ msgstr "Unitat"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Unitat"
+
+#~ msgid "Driver"
+#~ msgstr "Controlador"
+
+#~ msgid "Drives"
+#~ msgstr "Unitats"
+
+#~ msgid "Duplicate alias"
+#~ msgstr "Àlies duplicat"
+
+#~ msgid "Duplicate port"
+#~ msgstr "Port duplicat"
+
+#~ msgid "Edit"
+#~ msgstr "Edita"
+
+#~ msgid "Edit Server"
+#~ msgstr "Edit el servidor"
+
+#~ msgid "Edit image stream"
+#~ msgstr "Edita el flux d'imatges"
+
+#~ msgid "Edit the vdsm.conf"
+#~ msgstr "Edita el fitxer vdsm.conf"
+
+#~ msgid "Ejecting $target"
+#~ msgstr "S'està expulsant $target"
+
+#~ msgid "Empty"
+#~ msgstr "Buida"
+
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Buit"
+
+#~ msgid "Empty Directory"
+#~ msgstr "Directori buit"
+
+#~ msgid "Emptying $target"
+#~ msgstr "S'està buidant $target"
+
+#~ msgid "Emulated Machine:"
+#~ msgstr "Màquina emulada:"
+
+#~ msgid "Enable"
+#~ msgstr "Habilita"
+
+#~ msgid "Enable Forcefully"
+#~ msgstr "Habilita-ho forçosament"
+
+#~ msgid "Enabled"
+#~ msgstr "Habilitat"
+
+#~ msgid "Encrypted $0"
+#~ msgstr "$0 xifrat"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "EXT4 xifrat (LUKS)"
+
+#~ msgid "Encrypted Logical Volume of $0"
+#~ msgstr "Volum lògic xifrat de $0"
+
+#~ msgid "Encrypted Partition of $0"
+#~ msgstr "Partició xifrada de $0"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "XFS xifrat (LUKS)"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Encrypted data"
+#~ msgstr "Dades xifrades"
+
+#~ msgid "Encryption"
+#~ msgstr "Xifratge"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Opcions de xifrat"
+
+#~ msgid "Endpoint"
+#~ msgstr "Extrem"
+
+#~ msgid "Endpoint Name"
+#~ msgstr "Nom de l'extrem"
+
+#~ msgid "Endpoints"
+#~ msgstr "Extrems"
+
+#~ msgid "Ends"
+#~ msgstr "Acaba"
+
+#~ msgid "Enforce policy:"
+#~ msgstr "Aplica la política:"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "Introduïu l'adreça IP o el nom d'amfitrió"
+
+#~ msgid "Enter New VM name"
+#~ msgstr "Introduïu el nom de la nova MV"
+
+#~ msgid "Entry"
+#~ msgstr "Entrada"
+
+#, fuzzy
+#~ msgid "Entrypoint"
+#~ msgstr "Extrem"
+
+#~ msgid "Environment"
+#~ msgstr "Entorn"
+
+#~ msgid "Erase"
+#~ msgstr "Esborra"
+
+#~ msgid "Erase containers and reset storage pool"
+#~ msgstr "Esborra els contenidors i restableix l'agrupació d'emmagatzematge"
+
+#~ msgid "Erasing $target"
+#~ msgstr "S'està esborrant $target"
+
+#~ msgid "Errata:"
+#~ msgstr "Fe d'errates:"
+
+#~ msgid "Error"
+#~ msgstr "Error"
+
+#~ msgid "Error getting certificate details: $0"
+#~ msgstr "Error en obtenir els detalls del certificat: $0"
+
+#~ msgid "Error loading users: {{perm_failed}}"
+#~ msgstr "Error en carregar els usuaris: {{perm_failed}}"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Missatge d'error de Docker:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Error en desar les claus autoritzades: "
+
+#~ msgid "Error while deleting alert: $0"
+#~ msgstr "Error mentre se suprimia l'alerta: $0"
+
+#~ msgid "Error while setting SELinux mode: '$0'"
+#~ msgstr "Error mentre s'establia el mode de SELinux: '$0'"
+
+#~ msgid "Error writing kubectl config"
+#~ msgstr "Error en escriure la configuració de kubectl"
+
+#~ msgid "Ethernet MAC"
+#~ msgstr "MAC d'ethernet"
+
+#~ msgid "Ethernet MTU"
+#~ msgstr "MTU d'ethernet"
+
+#~ msgid "Ethtool"
+#~ msgstr "Ethtool"
+
+#~ msgid "Everything"
+#~ msgstr "Tot"
+
+#~ msgid "Excellent password"
+#~ msgstr "Contrasenya excel·lent"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "Sortida $ExitCode"
+
+#~ msgid "Expose container ports"
+#~ msgstr "Exposa els ports del contenidor"
+
+#~ msgid "Extended Partition"
+#~ msgstr "Partició estesa"
+
+#~ msgid "FAILED"
+#~ msgstr "FALLAT"
+
+#~ msgid "FQDN"
+#~ msgstr "FQDN"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "No s'ha pogut afegir la màquina: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Ha fallat el canvi de contrasenya"
+
+#~ msgid "Failed to delete alert: $0"
+#~ msgstr "Ha fallat la supressió de l'alerta: $0"
+
+#~ msgid "Failed to disable tuned"
+#~ msgstr "Ha fallat la inhabilitació de tuned"
+
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr "Ha fallat la inhabilitació del perfil de tuned"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Ha fallat l'edició de la màquina: $0"
+
+#~ msgid "Failed to enable tuned"
+#~ msgstr "Ha fallat l'habilitació de tuned"
+
+#~ msgid "Failed to load authorized keys."
+#~ msgstr "Ha fallat la càrrega de les claus autoritzades."
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr "Ha fallat l'inici de Docker: $0"
+
+#~ msgid "Failed to stop Docker scope: $0"
+#~ msgstr "Ha fallat l'aturada de l'àmbit de Docker: $0"
+
+#~ msgid "Failed to switch profile"
+#~ msgstr "Ha fallat el canvi de perfil"
+
+#~ msgid "Fibre Channel"
+#~ msgstr "Fibre Channel"
+
+#~ msgid "File"
+#~ msgstr "Fitxer"
+
+#~ msgid "Filesystem"
+#~ msgstr "Sistema de fitxers"
+
+#~ msgid "Filesystem Mounting"
+#~ msgstr "Muntatge del sistema de fitxers"
+
+#~ msgid "Filesystem Name"
+#~ msgstr "Nom del sistema de fitxers"
+
+#~ msgid "Filesystem Type"
+#~ msgstr "Tipus de sistema de fitxers"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Tipus de sistema de fitxers"
+
+#~ msgid "Filesystems"
+#~ msgstr "Sistemes de fitxers"
+
+#~ msgid "Filter Services"
+#~ msgstr "Filtra els serveis"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Empremta"
+
+#~ msgid "Firewall"
+#~ msgstr "Tallafoc"
+
+#~ msgid "Firewall is not available"
+#~ msgstr "El tallafoc no està disponible"
+
+#~ msgid "Flex"
+#~ msgstr "Flex"
+
+#~ msgid "Flocker"
+#~ msgstr "Flocker"
+
+#~ msgid "Follows docker repo"
+#~ msgstr "Segueix el dipòsit docker"
+
+#~ msgid "Force Change"
+#~ msgstr "Obliga el canvi"
+
+#~ msgid "Force Delete"
+#~ msgstr "Força la supressió"
+
+#~ msgid "Force Restart"
+#~ msgstr "Força el reinici"
+
+#~ msgid "Force Shut Down"
+#~ msgstr "Força l'apagada"
+
+#~ msgid "Force password change"
+#~ msgstr "Obliga el canvi de contrasenya"
+
+#~ msgid "Format"
+#~ msgstr "Formata"
+
+#~ msgid "Format $0"
+#~ msgstr "Formata $0"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Formata el disc $0"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "La formatació d'un disc eliminarà totes les dades contingudes."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr ""
+#~ "La formatació d'un dispositiu d'emmagatzematge eliminarà totes les dades "
+#~ "contingudes."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "Retard del reenviament $forward_delay"
+
+#~ msgid "Free"
+#~ msgstr "Lliure"
+
+#~ msgid "Free Space"
+#~ msgstr "Espai lliure"
+
+#~ msgid "Friday"
+#~ msgstr "Divendres"
+
+#~ msgid "Full Name"
+#~ msgstr "Nom complet"
+
+#~ msgid "GCE Persistent Disk"
+#~ msgstr "Disc persistent GCE"
+
+#~ msgid "Gateway:"
+#~ msgstr "Passarel·la:"
+
+#~ msgid "General"
+#~ msgstr "General"
+
+#~ msgid "Generating report"
+#~ msgstr "S'està generant l'informe"
+
+#~ msgid "Get new image"
+#~ msgstr "Obtén una imatge nova"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "Git Repository"
+#~ msgstr "Dipòsit git"
+
+#~ msgid "Gluster FS"
+#~ msgstr "Gluster FS"
+
+#~ msgid "GlusterFS"
+#~ msgstr "GlusterFS"
+
+#~ msgid "Go to"
+#~ msgstr "Vés a"
+
+#~ msgid "Go to Application"
+#~ msgstr "Vés a l'aplicació"
+
+#~ msgid "Go to now"
+#~ msgstr "Vés a ara"
+
+#~ msgid "Graphics Console (VNC)"
+#~ msgstr "Consola gràfica (VNC)"
+
+#~ msgid "Graphics Console in Desktop Viewer"
+#~ msgstr "Consola gràfica al visualitzador d'escriptoris"
+
+#~ msgid "Group Members"
+#~ msgstr "Membres del grup"
+
+#~ msgid "Group or Project"
+#~ msgstr "Grup o projecte"
+
+#~ msgid "Groups"
+#~ msgstr "Grups"
+
+#~ msgid "Grow"
+#~ msgstr "Fes créixer"
+
+#~ msgid "Grow logical size of $0"
+#~ msgstr "Fes créixer la mida lògica de $0"
+
+#~ msgid "Grow to take all space"
+#~ msgstr "Fes créixer per agafar tot l'espai"
+
+#~ msgid "HA"
+#~ msgstr "HA"
+
+#~ msgid "HA:"
+#~ msgstr "HA:"
+
+#~ msgid "HTTP method"
+#~ msgstr "Mètode HTTP"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Mode hairpin"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Mode hairpin"
+
+#~ msgid "Hard Disk"
+#~ msgstr "Disc dur"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Disc dur"
+
+#~ msgid "Hardware"
+#~ msgstr "Maquinari"
+
+#~ msgid "Hardware Information"
+#~ msgstr "Informació del maquinari"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Hello time $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "Amfitrió"
+
+#~ msgid "Host Name"
+#~ msgstr "Nom d'amfitrió"
+
+#~ msgid "Host Path"
+#~ msgstr "Camí a l'amfitrió"
+
+#~ msgid "Host key is incorrect"
+#~ msgstr "La clau d'amfitrió és incorrecta"
+
+#~ msgid "Host to Maintenance"
+#~ msgstr "Amfitrió a manteniment"
+
+#~ msgid "Hour : Minute"
+#~ msgstr "hora : minut"
+
+#~ msgid "Hour needs to be a number between 0-23"
+#~ msgstr "L'hora ha de ser un nombre entre 0-23"
+
+#~ msgid "Hours"
+#~ msgstr "Hores"
+
+#~ msgid "I/O Wait"
+#~ msgstr "Espera d'E/S"
+
+#~ msgid "INSTALL VM action failed"
+#~ msgstr "Ha fallat l'acció INSTALL VM"
+
+#~ msgid "IP"
+#~ msgstr "IP"
+
+#~ msgid "IP Address"
+#~ msgstr "Adreça IP"
+
+#~ msgid "IP Address:"
+#~ msgstr "Adreça IP:"
+
+#~ msgid "IP Prefix Length:"
+#~ msgstr "Longitud del prefix IP:"
+
+#~ msgid "IP Settings"
+#~ msgstr "Ajusts de la IP"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "Ajusts d'IPv4"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "Ajusts d'IPv6"
+
+#~ msgid "ISCSI"
+#~ msgstr "ISCSI"
+
+#~ msgid "Id"
+#~ msgstr "Id"
+
+#~ msgid "Id $id"
+#~ msgstr "Id. $id"
+
+#~ msgid "Id:"
+#~ msgstr "Id:"
+
+#~ msgid "Identifier"
+#~ msgstr "Identificador"
+
+#~ msgid "Identities"
+#~ msgstr "Identitats"
+
+#~ msgid "Identity"
+#~ msgstr "Identitat"
+
+#~ msgid "Ignore"
+#~ msgstr "Ignora"
+
+#~ msgid "Image"
+#~ msgstr "Imatge"
+
+#~ msgid "Image $0"
+#~ msgstr "Imatge $0"
+
+#~ msgid "Image ID"
+#~ msgstr "Id. d'imatge"
+
+#~ msgid "Image Name"
+#~ msgstr "Nom de la imatge"
+
+#~ msgid "Image Registry"
+#~ msgstr "Registre d'imatges"
+
+#~ msgid "Image Search"
+#~ msgstr "Cerca de la imatge"
+
+#~ msgid "Image Stream"
+#~ msgstr "Flux d'imatges"
+
+#~ msgid "Image commands"
+#~ msgstr "Ordres de la imatge"
+
+#~ msgid "Image count"
+#~ msgstr "Nombre d'imatges"
+
+#~ msgid "Image stream"
+#~ msgstr "Flux d'imatges"
+
+#~ msgid "Image:"
+#~ msgstr "Imatge:"
+
+#~ msgid "Images"
+#~ msgstr "Imatges"
+
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Imatges"
+
+#~ msgid "Images and running containers"
+#~ msgstr "Imatges i contenidors en execució"
+
+#~ msgid "Images by project"
+#~ msgstr "Imatges per projecte"
+
+#~ msgid "Images may be pulled by anonymous users"
+#~ msgstr "Les imatges poden ser recuperades per usuaris anònims"
+
+#~ msgid "Images may be pulled by any authenticated user or group"
+#~ msgstr "Les imatges poden ser recuperades per usuaris o grups autenticats"
+
+#~ msgid "Images may only be pulled by specific users or groups"
+#~ msgstr ""
+#~ "Les imatges només poden ser recuperades per usuaris o grups específics"
+
+#~ msgid "Immediately Start VM"
+#~ msgstr "Inicia automàticament la MV"
+
+#~ msgid "In Sync"
+#~ msgstr "En sincronització"
+
+#~ msgid ""
+#~ "In order to synchronize users, you need to log in to {{#strong}}{{host}}"
+#~ "{{/strong}}."
+#~ msgstr ""
+#~ "Per sincronitzar els usuaris, cal que inicieu la sessió a {{#strong}}"
+#~ "{{host}}{{/strong}}."
+
+#~ msgid "Inactive"
+#~ msgstr "Inactiu"
+
+#~ msgid "Inactive volume"
+#~ msgstr "Volum inactiu"
+
+#~ msgid "Incorrect Host Key"
+#~ msgstr "Clau d'amfitrió incorrecta"
+
+#~ msgid "Initializing..."
+#~ msgstr "S'està inicialitzant..."
+
+#~ msgid "Install"
+#~ msgstr "Instal·la"
+
+#~ msgid "Install All Updates"
+#~ msgstr "Instal·la totes les actualitzacions"
+
+#~ msgid "Install Security Updates"
+#~ msgstr "Instal·la les actualitzacions de seguretat"
+
+#~ msgid "Install setroubleshoot-server to troubleshoot SELinux events."
+#~ msgstr ""
+#~ "Instal·leu setroubleshoot-server per resoldre els esdeveniments de "
+#~ "SELinux."
+
+#~ msgid "Installation Source"
+#~ msgstr "Origen d'instal·lació"
+
+#~ msgid "Installation Source Type"
+#~ msgstr "Tipus d'origen d'instal·lació"
+
+#~ msgid "Installation Source should not be empty"
+#~ msgstr "L'origen d'instal·lació no pot estar en blanc"
+
+#~ msgid "Installed"
+#~ msgstr "Instal·lat"
+
+#~ msgid "Installed products"
+#~ msgstr "Productes instal·lats"
+
+#~ msgid "Installing"
+#~ msgstr "S'està instal·lant"
+
+#~ msgid "Instantiate"
+#~ msgstr "Instancia"
+
+#~ msgid "Interface"
+#~ msgstr "Interfície"
+
+#~ msgid "Interfaces"
+#~ msgstr "Interfícies"
+
+#~ msgid "Internal error"
+#~ msgstr "Error intern"
+
+#~ msgid "Invalid address $0"
+#~ msgstr "Adreça no vàlida $0"
+
+#~ msgid "Invalid credentials"
+#~ msgstr "Credencials no vàlides"
+
+#~ msgid "Invalid date format"
+#~ msgstr "Format de data no vàlid"
+
+#~ msgid "Invalid date format and invalid time format"
+#~ msgstr "Format no vàlid de la data i l'hora"
+
+#~ msgid "Invalid date format."
+#~ msgstr "Format de data no vàlid."
+
+#~ msgid "Invalid expiration date"
+#~ msgstr "Data de venciment no vàlida"
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Permisos de fitxer no vàlids"
+
+#~ msgid "Invalid filename"
+#~ msgstr "nom de fitxer no vàlid"
+
+#~ msgid "Invalid key"
+#~ msgstr "Clau no vàlida"
+
+#~ msgid "Invalid metric $0"
+#~ msgstr "Mètrica no vàlida $0"
+
+#~ msgid "Invalid number of days"
+#~ msgstr "Nombre de dies no vàlid"
+
+#~ msgid "Invalid number."
+#~ msgstr "Número no vàlid."
+
+#~ msgid "Invalid port"
+#~ msgstr "Port no vàlid"
+
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Prefix no vàlid $0"
+
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Prefix o màscara de xarxa no vàlid $0"
+
+#~ msgid "Invalid time format"
+#~ msgstr "Format d'hora no vàlid"
+
+#~ msgid "Invalid time zone"
+#~ msgstr "Zona horària no vàlida"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "El nom d'usuari o la contrasenya no són vàlids"
+
+#~ msgid "Is sshd running on a different port?"
+#~ msgstr "S'està executant sshd en un port diferent?"
+
+#~ msgid "Jobs"
+#~ msgstr "Treballs"
+
+#~ msgid "Join"
+#~ msgstr "Uneix-te"
+
+#~ msgid "Join Domain"
+#~ msgstr "Uneix-te a un domini"
+
+#~ msgid "Join a Domain"
+#~ msgstr "Uneix-te a un domini"
+
+#~ msgid "Joining this domain is not supported"
+#~ msgstr "La unió a aquest domini no està admesa"
+
+#~ msgid "Journal"
+#~ msgstr "Publicacions"
+
+#~ msgid "Journal entry"
+#~ msgstr "Entrada de les publicacions"
+
+#~ msgid "Journal entry not found"
+#~ msgstr "Entrada no trobada de les publicacions"
+
+#~ msgid ""
+#~ "Kdump service not installed. Please ensure package kexec-tools is "
+#~ "installed."
+#~ msgstr ""
+#~ "El servei de Kdump no està instal·lat. Assegureu-vos que el paquet kexec-"
+#~ "tools estigui instal·lat."
+
+#~ msgid "Keep connection"
+#~ msgstr "Mantén la connexió"
+
+#~ msgid "Kerberos Ticket"
+#~ msgstr "Tiquet de Kerberos"
+
+#~ msgid "Kernel"
+#~ msgstr "Kernel"
+
+#~ msgid "Kernel Dump"
+#~ msgstr "Bolcat del kernel"
+
+#~ msgid "Kernel Version"
+#~ msgstr "Versió del kernel"
+
+#~ msgid "Key Ring Path"
+#~ msgstr "Camí a l'anell de claus"
+
+#~ msgid "Key can't be retrieved"
+#~ msgstr "No es pot recuperar la clau"
+
+#~ msgid "Key does not work"
+#~ msgstr "La clau no funciona"
+
+#~ msgid "Key is obsolete"
+#~ msgstr "La clau és obsoleta"
+
+#~ msgid "Key is okay"
+#~ msgstr "La clau és correcta"
+
+#~ msgid "Key server address"
+#~ msgstr "Adreça del servidor de claus"
+
+#~ msgid "Kubelet Version"
+#~ msgstr "Versió de Kubelet"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Clúster Kubernetes"
+
+#~ msgid "LACP Key"
+#~ msgstr "Clau LACP"
+
+#~ msgid "Labels"
+#~ msgstr "Etiquetes"
+
+#~ msgid "Labels:"
+#~ msgstr "Etiquetes:"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Les últimes 24 hores"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Els últims 7 dies"
+
+#~ msgid "Last Heartbeat"
+#~ msgstr "Últim batec"
+
+#~ msgid "Last Login"
+#~ msgstr "Últim inici de sessió"
+
+#~ msgid "Last Status Change"
+#~ msgstr "Últim canvi d'estat"
+
+#~ msgid "Last Trigger"
+#~ msgstr "Últim disparador"
+
+#~ msgid "Last Updated"
+#~ msgstr "Últim cop actualitzat"
+
+#~ msgid "Last checked: $0 ago"
+#~ msgstr "Última comprovació: fa $0"
+
+#~ msgid "Latest Version"
+#~ msgstr "Última versió"
+
+#~ msgid "Launch Remote Viewer"
+#~ msgstr "Llança el visualitzador remot"
+
+#~ msgid "Leave"
+#~ msgstr "Abandona"
+
+#~ msgid "Leave Domain"
+#~ msgstr "Abandona el domini"
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in user. "
+#~ "If you enter a different username, that user will always be used when "
+#~ "connecting to this machine."
+#~ msgstr ""
+#~ "Deixeu-ho en blanc per connectar a aquesta màquina amb l'usuari que ha "
+#~ "iniciat la sessió actualment. Si introduïu un altre nom d'usuari, sempre "
+#~ "s'utilitzarà aquest usuari quan es connecti a aquesta màquina."
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in "
+#~ "user{{#default_user}} ({{default_user}}){{/default_user}}. If you enter a "
+#~ "different username, that user will always be used connecting to this "
+#~ "machine."
+#~ msgstr ""
+#~ "Deixeu-ho en blanc per connectar a aquesta màquina amb "
+#~ "l'usuari{{#default_user}} ({{default_user}}){{/default_user}}, que ha "
+#~ "iniciat actualment la sessió. Si introduïu un altre nom d'usuari, sempre "
+#~ "s'utilitzarà aquest usuari quan es connecti a aquesta màquina."
+
+#~ msgid "Licensed under:"
+#~ msgstr "Llicenciat sota:"
+
+#~ msgid "Link Monitoring"
+#~ msgstr "Monitoratge de l'enllaç"
+
+#~ msgid "Link Watch"
+#~ msgstr "Observació de l'enllaç"
+
+#~ msgid "Link down delay"
+#~ msgstr "Retard del baixament de l'enllaç"
+
+#~ msgid "Link local"
+#~ msgstr "Enllaç local"
+
+#~ msgid "Link to another container"
+#~ msgstr "Enllaça a un altre contenidor"
+
+#~ msgid "Link up delay"
+#~ msgstr "Retard de l'aixecament de l'enllaç"
+
+#~ msgid "Links"
+#~ msgstr "Enllaços"
+
+#~ msgid "Links:"
+#~ msgstr "Enllaços:"
+
+#~ msgid "Load Balancing"
+#~ msgstr "Balanceig de càrrega"
+
+#~ msgid "Load earlier entries"
+#~ msgstr "Carrega les entrades anteriors"
+
+#~ msgid "Loading ..."
+#~ msgstr "S'està carregant..."
+
+#~ msgid "Loading available updates failed"
+#~ msgstr "Ha fallat la càrrega de les actualitzacions disponibles"
+
+#~ msgid "Loading available updates, please wait..."
+#~ msgstr "S'estan carregant les actualitzacions disponibles, espereu..."
+
+#~ msgid "Loading data ..."
+#~ msgstr "S'estan carregant les dades..."
+
+#~ msgid "Loading..."
+#~ msgstr "S'està carregant..."
+
+#~ msgid "Local Accounts"
+#~ msgstr "Comptes locals"
+
+#~ msgid "Local Disks"
+#~ msgstr "Discs locals"
+
+#~ msgid "Local Filesystem"
+#~ msgstr "Sistema de fitxers local"
+
+#~ msgid "Local Mount Point"
+#~ msgstr "Punt de muntatge local"
+
+#~ msgid "Location"
+#~ msgstr "Ubicació"
+
+#~ msgid "Lock"
+#~ msgstr "Bloqueja"
+
+#~ msgid "Lock Account"
+#~ msgstr "Bloqueja el compte"
+
+#~ msgid "Lock account on $0"
+#~ msgstr "Bloqueja el compte el $0"
+
+#~ msgid "Lock to prevent privileged tasks"
+#~ msgstr "Bloqueja per evitar tasques privilegiades"
+
+#~ msgid "Locked"
+#~ msgstr "Bloquejat"
+
+#~ msgid "Locking $target"
+#~ msgstr "S'està bloquejant $target"
+
+#~ msgid "Log In"
+#~ msgstr "Inicia la sessió"
+
+#~ msgid "Log Out"
+#~ msgstr "Tanca la sessió"
+
+#~ msgid "Log in again"
+#~ msgstr "Torna a iniciar la sessió"
+
+#~ msgid "Log in to {{host}}"
+#~ msgstr "Inicia la sessió a {{host}}"
+
+#~ msgid "Log messages"
+#~ msgstr "Missatges del registre"
+
+#~ msgid "Logged In"
+#~ msgstr "Autenticat"
+
+#~ msgid "Logical"
+#~ msgstr "Lògica"
+
+#~ msgid "Logical Size"
+#~ msgstr "Mida lògica"
+
+#~ msgid "Logical Unit Number"
+#~ msgstr "Número de la unitat lògica"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Volum lògic"
+
+#~ msgid "Logical Volume (Snapshot)"
+#~ msgstr "Volum lògic (instantània)"
+
+#~ msgid "Logical Volume of $0"
+#~ msgstr "Volum lògic de $0"
+
+#~ msgid "Login"
+#~ msgstr "Usuari"
+
+#~ msgid "Login Again"
+#~ msgstr "Torna a iniciar la sessió"
+
+#~ msgid "Login Password"
+#~ msgstr "Contrasenya d'inici de sessió"
+
+#~ msgid "Login commands"
+#~ msgstr "Ordres d'inici de sessió"
+
+#~ msgid "Login failed"
+#~ msgstr "Ha fallat l'inici de sessió"
+
+#~ msgid "Login/password or activation key required to register."
+#~ msgstr ""
+#~ "Per registrar es requereix un usuari/contrasenya o una clau d'activació."
+
+#~ msgid "Logout Successful"
+#~ msgstr "S'ha tancat la sessió amb èxit"
+
+#~ msgid "Logs"
+#~ msgstr "Registres"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "S'ha perdut la connexió. S'intenta connectar de nou"
+
+#~ msgid "MAC"
+#~ msgstr "MAC"
+
+#~ msgid "MAC Address"
+#~ msgstr "Adreça MAC"
+
+#~ msgid "MAC Address:"
+#~ msgstr "Adreça MAC:"
+
+#~ msgid "MIGRATE action failed"
+#~ msgstr "Ha fallat l'acció MIGRATE"
+
+#~ msgid "MII (Recommended)"
+#~ msgstr "MII (recomanat)"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "MTU must be a positive number"
+#~ msgstr "El valor de la MTU ha de ser un nombre positiu"
+
+#~ msgid "Machine ID"
+#~ msgstr "Id. de màquina"
+
+#~ msgid "Machine SSH Key Fingerprints"
+#~ msgstr "Empremtes de les claus SSH de la màquina"
+
+#~ msgid "Machines"
+#~ msgstr "Màquines"
+
+#~ msgid "Managed"
+#~ msgstr "Gestionat"
+
+#~ msgid "Manifest"
+#~ msgstr "Manifest"
+
+#~ msgid "Manual"
+#~ msgstr "Manual"
+
+#~ msgid "Manual Connection"
+#~ msgstr "Connexió manual"
+
+#~ msgid "Manually"
+#~ msgstr "Manualment"
+
+#~ msgid "Marking $target as faulty"
+#~ msgstr "S'està ficant $target com a defectuós"
+
+#~ msgid "Mask"
+#~ msgstr "Emmascara"
+
+#~ msgid "Mask Forcefully"
+#~ msgstr "Emmascara-ho forçosament"
+
+#~ msgid "Master"
+#~ msgstr "Màster"
+
+#~ msgid "Maximum message age $max_age"
+#~ msgstr "Envelliment màxim del missatge $max_age"
+
+#~ msgid "Medium"
+#~ msgstr "Mitjà"
+
+#~ msgid "Member of"
+#~ msgstr "Membre de"
+
+#~ msgid "Member of RAID Device"
+#~ msgstr "Membre del dispositiu RAID"
+
+#~ msgid "Member of RAID Device $0"
+#~ msgstr "Membre del dispositiu RAID $0"
+
+#~ msgid "Members"
+#~ msgstr "Membres"
+
+#~ msgid "Membership"
+#~ msgstr "Pertinença"
+
+#~ msgid "Memory"
+#~ msgstr "Memòria"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Memòria"
+
+#~ msgid "Memory Utilization: $0%"
+#~ msgstr "Utilització de la memòria:  $0%"
+
+#~ msgid "Memory limit"
+#~ msgstr "Límit de memòria"
+
+#~ msgid "Memory usage:"
+#~ msgstr "Ús de la memòria: "
+
+#~ msgid "Memory:"
+#~ msgstr "Memòria:"
+
+#~ msgid "Message"
+#~ msgstr "Missatge"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Missatge per als usuaris que hagin iniciat la sessió"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadades"
+
+#~ msgid "Metadata Used"
+#~ msgstr "Metadades utilitzades"
+
+#~ msgid "Method"
+#~ msgstr "Mètode"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "Migrate To:"
+#~ msgstr "Migra a:"
+
+#~ msgid "Mini PC"
+#~ msgstr "Mini PC"
+
+#~ msgid "Mini Tower"
+#~ msgstr "Mini torre"
+
+#~ msgid "Minute needs to be a number between 0-59"
+#~ msgstr "El minut ha de ser un nombre entre 0-59"
+
+#~ msgid "Minutes"
+#~ msgstr "Minuts"
+
+#~ msgid "Mode"
+#~ msgstr "Mode"
+
+#~ msgid "Model"
+#~ msgstr "Model"
+
+#~ msgid "Model type"
+#~ msgstr "Tipus de model"
+
+#~ msgid "Modify"
+#~ msgstr "Modifica"
+
+#~ msgid "Modifying $target"
+#~ msgstr "S'està modificant $target"
+
+#~ msgid "Monday"
+#~ msgstr "Dilluns"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "Interval del monitoratge"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "Objectius del monitoratge"
+
+#~ msgid "Monitors"
+#~ msgstr "Monitors"
+
+#~ msgid "More"
+#~ msgstr "Més"
+
+#~ msgid "More Information"
+#~ msgstr "Més informació"
+
+#~ msgid "More details"
+#~ msgstr "Més detalls"
+
+#~ msgid "Mount"
+#~ msgstr "Munta"
+
+#~ msgid "Mount Location"
+#~ msgstr "Ubicació del muntatge"
+
+#~ msgid "Mount Options"
+#~ msgstr "Opcions de muntatge"
+
+#~ msgid "Mount Point"
+#~ msgstr "Punt de muntatge"
+
+#~ msgid "Mount at boot"
+#~ msgstr "Munta a l'arrencada"
+
+#~ msgid "Mount container volumes"
+#~ msgstr "Munta els volums del contenidor"
+
+#~ msgid "Mount options"
+#~ msgstr "Opcions de muntatge"
+
+#~ msgid "Mount point can not be empty"
+#~ msgstr "El punt de muntatge no pot estar en blanc"
+
+#~ msgid "Mount point cannot be empty."
+#~ msgstr "El punt de muntatge no pot estar en blanc."
+
+#~ msgid "Mount point must start with \"/\"."
+#~ msgstr "El punt de muntatge ha de començar amb «/»."
+
+#~ msgid "Mount read only"
+#~ msgstr "Munta només de lectura"
+
+#~ msgid "Mounted At"
+#~ msgstr "Muntat a"
+
+#~ msgid "Mounting"
+#~ msgstr "Muntatge"
+
+#~ msgid "Mounting $target"
+#~ msgstr "S'està muntat $target"
+
+#~ msgid "N/A"
+#~ msgstr "N/D"
+
+#~ msgid "NFS"
+#~ msgstr "NFS"
+
+#~ msgid "NFS Mount"
+#~ msgstr "Muntatge NFS"
+
+#~ msgid "NFS Mounts"
+#~ msgstr "Muntatges NFS"
+
+#~ msgid "NSNA Ping"
+#~ msgstr "Ping NSNA"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS - Compatible amb la majoria dels sistemes"
+
+#~ msgid "NTP Server"
+#~ msgstr "Servidor NTP"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "El nom no pot estar en blanc."
+
+#~ msgid "Name cannot be empty."
+#~ msgstr "El nom no pot estar en blanc."
+
+#~ msgid "Name cannot be longer than 127 characters."
+#~ msgstr "El nom no pot ser superior als 127 caràcters."
+
+#~ msgid "Name cannot contain the character '$0'."
+#~ msgstr "El nom no pot contenir el caràcter «$0»."
+
+#~ msgid "Name cannot contain whitespace."
+#~ msgstr "El nom no pot contenir l'espai en blanc."
+
+#~ msgid "Name should not be empty"
+#~ msgstr "El nom no pot estar en blanc"
+
+#~ msgid "Namespace"
+#~ msgstr "Espai de noms"
+
+#~ msgid "Namespace cannot be empty."
+#~ msgstr "L'espai de noms no pot estar en blanc."
+
+#~ msgid "Need at least one NTP server"
+#~ msgstr "Com a mínim es necessita un servidor NTP"
+
+#~ msgid "Network"
+#~ msgstr "Xarxa"
+
+#~ msgid "Network Traffic"
+#~ msgstr "Trànsit de xarxa"
+
+#~ msgid "Network keys"
+#~ msgstr "Claus de xarxa"
+
+#~ msgid "Networking"
+#~ msgstr "Xarxa"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Xarxa"
+
+#~ msgid "Networking Logs"
+#~ msgstr "Registres de la xarxa"
+
+#~ msgid "Networks"
+#~ msgstr "Xarxes"
+
+#~ msgid "Never"
+#~ msgstr "Mai"
+
+#~ msgid "Never expire password"
+#~ msgstr "Mai venç la contrasenya"
+
+#~ msgid "Never lock account"
+#~ msgstr "No es bloqueja mai el compte"
+
+#~ msgid "New Group"
+#~ msgstr "Grup nou"
+
+#~ msgid "New NFS Mount"
+#~ msgstr "Muntatge NFS nou"
+
+#~ msgid "New Password"
+#~ msgstr "Contrasenya nova"
+
+#~ msgid "New Project"
+#~ msgstr "Projecte nou"
+
+#~ msgid "New image stream"
+#~ msgstr "Flux d'imatges nou"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "No s'ha acceptat la nova contrasenya"
+
+#~ msgid "New project"
+#~ msgstr "Projecte nou"
+
+#~ msgid "Next"
+#~ msgstr "Següent"
+
+#~ msgid "Next Run"
+#~ msgstr "Següent execució"
+
+#~ msgid "Nice"
+#~ msgstr "Nice"
+
+#~ msgid "No"
+#~ msgstr "No"
+
+#~ msgid "No Delay"
+#~ msgstr "Sense retard"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Sense sistema de fitxers"
+
+#~ msgid "No Logical Volumes"
+#~ msgstr "Sense volums lògics"
+
+#~ msgid "No NFS mounts set up"
+#~ msgstr "Cap emmagatzematge NFS preparat"
+
+#~ msgid "No SELinux alerts."
+#~ msgstr "Sense alertes de SELinux."
+
+#~ msgid "No VM found in oVirt."
+#~ msgstr "No s'ha trobat cap MV a oVirt."
+
+#~ msgid "No VM is running or defined on this host"
+#~ msgstr "No hi ha cap MV en execució o definida en aquest amfitrió"
+
+#~ msgid "No additional local storage found."
+#~ msgstr "No s'ha trobat cap emmagatzematge local addicional."
+
+#~ msgid "No alias specified"
+#~ msgstr "Sense especificar l'àlies"
+
+#~ msgid "No applications installed or available"
+#~ msgstr "No hi ha cap aplicació instal·lada o disponible"
+
+#~ msgid "No archive has been created."
+#~ msgstr "No s'ha creat cap arxiu."
+
+#~ msgid "No boot device found"
+#~ msgstr "No s'ha trobat cap dispositiu d'arrencada"
+
+#~ msgid "No carrier"
+#~ msgstr "Sense portadora"
+
+#~ msgid "No configuration found"
+#~ msgstr "No s'ha trobat cap configuració"
+
+#~ msgid "No container specified"
+#~ msgstr "Sense especificar el contenidor"
+
+#~ msgid "No containers"
+#~ msgstr "Sense contenidors"
+
+#~ msgid "No description provided."
+#~ msgstr "No s'ha proporcionat cap descripció."
+
+#~ msgid "No disks are available."
+#~ msgstr "No hi ha disponible cap disc."
+
+#~ msgid "No disks defined for this VM"
+#~ msgstr "No hi ha definit cap disc per a aquesta MV"
+
+#~ msgid "No drives attached"
+#~ msgstr "Sense unitats connectades"
+
+#~ msgid "No free space"
+#~ msgstr "Sense espai lliure"
+
+#~ msgid "No iSCSI targets set up"
+#~ msgstr "Cap destinació iSCSI preparada"
+
+#~ msgid "No image streams are present."
+#~ msgstr "No hi ha present cap flux d'imatges."
+
+#~ msgid "No images"
+#~ msgstr "Sense imatges"
+
+#~ msgid "No installation package found for this application."
+#~ msgstr "No s'ha trobat cap paquet d'instal·lació per a aquesta aplicació."
+
+#~ msgid "No installed products on the system."
+#~ msgstr "No hi ha cap producte instal·lat al sistema."
+
+#~ msgid "No matching files found"
+#~ msgstr "No s'ha trobat cap fitxer que coincideixi"
+
+#~ msgid "No media inserted"
+#~ msgstr "Sense mitjans inserits"
+
+#~ msgid ""
+#~ "No memory reserved. Append a crashkernel option to the kernel command "
+#~ "line (e.g. in /etc/default/grub) to reserve memory at boot time. Example: "
+#~ "crashkernel=512M"
+#~ msgstr ""
+#~ "No hi ha memòria reservada. Afegiu crashkernel a la línia d'ordres del "
+#~ "kernel (p. ex. a /etc/default/grub) per reservar memòria en temps "
+#~ "d'arrencada. Exemple: crashkernel=512M"
+
+#~ msgid ""
+#~ "No metadata file was selected. Please select a Kubernetes metadata file."
+#~ msgstr ""
+#~ "Sense seleccionar el fitxer de metadades. Si us plau, seleccioneu un "
+#~ "fitxer de metadades del Kubernetes."
+
+#~ msgid "No network interfaces defined for this VM"
+#~ msgstr "No s'ha definit cap interfície de xarxa per aquesta MV"
+
+#~ msgid "No nodes in cluster"
+#~ msgstr "Cap node al clúster"
+
+#~ msgid "No partitioning"
+#~ msgstr "Sense particionatge"
+
+#~ msgid "No real name specified"
+#~ msgstr "Sense especificar el nom real"
+
+#~ msgid "No results for $0"
+#~ msgstr "Cap resultat per a $0"
+
+#~ msgid "No running containers"
+#~ msgstr "Cap contenidor en execució"
+
+#~ msgid "No storage set up as RAID"
+#~ msgstr "Cap emmagatzematge preparat com a RAID"
+
+#~ msgid "No storage set up as VDO"
+#~ msgstr "Cap emmagatzematge preparat com a VDO"
+
+#~ msgid "No such file or directory"
+#~ msgstr "No existeix el fitxer o el directori"
+
+#~ msgid "No updates pending"
+#~ msgstr "No hi ha actualitzacions pendents"
+
+#~ msgid "No user name specified"
+#~ msgstr "Sense especificar el nom d'usuari"
+
+#~ msgid "No users are present."
+#~ msgstr "No hi ha usuaris presents."
+
+#~ msgid "No volume groups created"
+#~ msgstr "Cap grup de volums creat"
+
+#~ msgid "No volumes are present."
+#~ msgstr "No hi ha volums presents."
+
+#~ msgid "No volumes in use"
+#~ msgstr "Sense volums en ús"
+
+#~ msgid "Node"
+#~ msgstr "Node"
+
+#~ msgid "Node:"
+#~ msgstr "Node:"
+
+#~ msgid "Nodes"
+#~ msgstr "Nodes"
+
+#~ msgid "Nodes are the machines that run your containers."
+#~ msgstr "Els nodes són les màquines que executen els vostres contenidors."
+
+#~ msgid "None"
+#~ msgstr "Cap"
+
+#~ msgid "Not Available"
+#~ msgstr "No disponible"
+
+#~ msgid "Not Ready"
+#~ msgstr "No a punt"
+
+#~ msgid "Not a valid number of replicas"
+#~ msgstr "No és un nombre vàlid de rèpliques"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "No és una clau privada vàlida"
+
+#~ msgid "Not a valid value for Host"
+#~ msgstr "No és un valor vàlid per a l'amfitrió"
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "No s'autoritza l'accés Docker en aquest sistema"
+
+#~ msgid "Not authorized to upload-report"
+#~ msgstr "No autoritzat per pujar l'informe"
+
+#~ msgid "Not available"
+#~ msgstr "No disponible"
+
+#~ msgid "Not connected"
+#~ msgstr "No connectat"
+
+#~ msgid "Not deployed"
+#~ msgstr "No desplegat"
+
+#~ msgid "Not found"
+#~ msgstr "No s'ha trobat"
+
+#~ msgid "Not mounted"
+#~ msgstr "No muntat"
+
+#~ msgid "Not permitted to perform this action."
+#~ msgstr "No es permet realitzar aquesta acció."
+
+#~ msgid "Not running"
+#~ msgstr "No s'està executant"
+
+#~ msgid "Not synchronized"
+#~ msgstr "No sincronitzat"
+
+#~ msgid "Not yet synced"
+#~ msgstr "Encara no sincronitzat"
+
+#~ msgid "Note"
+#~ msgstr "Nota"
+
+#~ msgid "OS"
+#~ msgstr "SO"
+
+#~ msgid "OS Type:"
+#~ msgstr "Tipus de SO:"
+
+#~ msgid "OS Versions"
+#~ msgstr "Versions del SO"
+
+#~ msgid "Occurred $0"
+#~ msgstr "S'ha produït $0"
+
+#~ msgid "Occurred between $0 and $1"
+#~ msgstr "S'ha produït entre $0 i $1"
+
+#~ msgid "Off"
+#~ msgstr "Off"
+
+#~ msgid "Ok"
+#~ msgstr "D'acord"
+
+#~ msgid "Old Password"
+#~ msgstr "Contrasenya antiga"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Contrasenya antiga no acceptada"
+
+#~ msgid "On"
+#~ msgstr "On"
+
+#~ msgid "On Build"
+#~ msgstr "Amb la construcció"
+
+#~ msgid "On Failure"
+#~ msgstr "Amb la fallada"
+
+#~ msgid "On a mounted device"
+#~ msgstr "Amb un dispositiu muntat"
+
+#~ msgid "On failure, retry $0 time"
+#~ msgid_plural "On failure, retry $0 times"
+#~ msgstr[0] "Amb la fallada, reintenta $0 cop"
+#~ msgstr[1] "Amb la fallada, reintenta $0 cops"
+
+#~ msgid "One Time Password"
+#~ msgstr "Contrasenya d'un sol cop"
+
+#~ msgid "Only $0 of $1 are used."
+#~ msgstr "Només s'utilitzen $0 de $1."
+
+#~ msgid "Only Emergency"
+#~ msgstr "Només emergències"
+
+#~ msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed."
+#~ msgstr "Només es permeten lletres, números, : , _ , . , @ , -."
+
+#~ msgid "Ooops!"
+#~ msgstr "Ooops!"
+
+#~ msgid "Operation '$operation' on $target"
+#~ msgstr "L'operació '$operation' en $target"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Unitat òptica"
+
+#~ msgid "Optimized for:"
+#~ msgstr "Optimitzat per:"
+
+#~ msgid "Options"
+#~ msgstr "Opcions"
+
+#~ msgid "Organization"
+#~ msgstr "Organització"
+
+#~ msgid "Other"
+#~ msgstr "Altres"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Other Data"
+#~ msgstr "Altres dades"
+
+#~ msgid "Other Devices"
+#~ msgstr "Altres dispositius"
+
+#~ msgid "Other Options"
+#~ msgstr "Altres opcions"
+
+#~ msgid "Overview"
+#~ msgstr "Visió de conjunt"
+
+#~ msgid "Overwrite existing data with zeros"
+#~ msgstr "Sobreescriu les dades existents amb zeros"
+
+#~ msgid "PCI"
+#~ msgstr "PCI"
+
+#~ msgid "Package information"
+#~ msgstr "Informació dels paquets"
+
+#~ msgid "PackageKit crashed"
+#~ msgstr "PackageKit s'ha estavellat."
+
+#~ msgid "PackageKit is not installed"
+#~ msgstr "PackageKit no està instal·lat"
+
+#~ msgid "PackageKit reported error code $0"
+#~ msgstr "PackageKit ha informat un codi d'error $0"
+
+#~ msgid "Parent"
+#~ msgstr "Pare"
+
+#~ msgid "Parent $parent"
+#~ msgstr "Pare $parent"
+
+#~ msgid "Part of "
+#~ msgstr "Part de"
+
+#~ msgid "Partition"
+#~ msgstr "Partició"
+
+#~ msgid "Partition of $0"
+#~ msgstr "Partició de $0"
+
+#~ msgid "Partitioning"
+#~ msgstr "Particionatge"
+
+#~ msgid "Passive"
+#~ msgstr "Passiu"
+
+#~ msgid "Passphrase"
+#~ msgstr "Contrasenya"
+
+#~ msgid "Passphrase cannot be empty"
+#~ msgstr "La contrasenya no pot estar en blanc"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Les contrasenyes no coincideixen"
+
+#~ msgid "Password"
+#~ msgstr "Contrasenya"
+
+#~ msgid "Password Expiration"
+#~ msgstr "Venciment de la contrasenya"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "La contrasenya no és acceptable"
+
+#~ msgid "Password is too weak"
+#~ msgstr "La contrasenya és massa feble"
+
+#~ msgid "Password must be changed"
+#~ msgstr "S'ha de canviar la contrasenya"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Contrasenya no acceptada"
+
+#~ msgid "Paste the contents of your public SSH key file here"
+#~ msgstr "Enganxeu aquí el contingut del fitxer de la vostra clau SSH pública"
+
+#~ msgid "Path"
+#~ msgstr "Camí"
+
+#~ msgid "Path cost"
+#~ msgstr "Cost del camí"
+
+#~ msgid "Path cost $path_cost"
+#~ msgstr "Cost del camí $path_cost"
+
+#~ msgid "Path on Server"
+#~ msgstr "Camí al servidor"
+
+#~ msgid "Path on server cannot be empty."
+#~ msgstr "El camí al servidor no pot estar en blanc."
+
+#~ msgid "Path on server must start with \"/\"."
+#~ msgstr "El camí al servidor ha de començar amb «/»."
+
+#~ msgid "Path to ISO file on host's file system"
+#~ msgstr "Camí al fitxer ISO al sistema de fitxers de l'amfitrió"
+
+#~ msgid "Path to file"
+#~ msgstr "Camí al fitxer"
+
+#~ msgid "Paths"
+#~ msgstr "Camins"
+
+#~ msgid "Pending Volume Claims"
+#~ msgstr "Reclamacions de volums pendents"
+
+#~ msgid "Performance Profile"
+#~ msgstr "Perfil de rendiment"
+
+#~ msgid "Permanent"
+#~ msgstr "Permanent"
+
+#~ msgid "Permission denied"
+#~ msgstr "Permís denegat"
+
+#~ msgid "Persistent Volumes"
+#~ msgstr "Volums persistents"
+
+#~ msgid "Phase"
+#~ msgstr "Fase"
+
+#~ msgid "Physical Volume"
+#~ msgstr "Volum físic"
+
+#~ msgid "Physical Volumes"
+#~ msgstr "Volums físics"
+
+#~ msgid "Physical volume of $0"
+#~ msgstr "Volum físic de $0"
+
+#~ msgid "Ping Interval"
+#~ msgstr "Interval de ping"
+
+#~ msgid "Ping Target"
+#~ msgstr "Objectiu de ping"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "Si us plau, confirmeu la supressió de $0"
+
+#~ msgid "Please confirm forced deletion of $0"
+#~ msgstr "Si us plau, confirmeu la supressió forçada de $0"
+
+#~ msgid "Please confirm network key removal"
+#~ msgstr "Si us plau, confirmeu la supressió de la clau de xarxa"
+
+#~ msgid "Please confirm stopping of $0"
+#~ msgstr "Confirmeu l'aturada de $0"
+
+#~ msgid "Please confirm, the host shall be switched to maintenance mode."
+#~ msgstr "Confirmeu que l'amfitrió s'ha de canviar al mode de manteniment."
+
+#~ msgid "Please create another namespace for $0 \"$1\""
+#~ msgstr "Si us plau, creeu un altre espai de noms per a $0 \"$1\""
+
+#~ msgid "Please install the {0} package"
+#~ msgstr "Si us plau, instal·leu el paquet {0}"
+
+#~ msgid "Please provide a GlusterFS volume name"
+#~ msgstr "Si us plau, proporcioneu un nom de volum GlusterFS"
+
+#~ msgid "Please provide a username"
+#~ msgstr "Si us plau, proporcioneu un nom d'usuari vàlid"
+
+#~ msgid "Please provide a valid NFS server"
+#~ msgstr "Si us plau, proporcioneu un servidor NFS vàlid"
+
+#~ msgid "Please provide a valid address"
+#~ msgstr "Si us plau, proporcioneu una adreça vàlida"
+
+#~ msgid "Please provide a valid filesystem type"
+#~ msgstr "Si us plau, proporcioneu un tipus de sistema de fitxers vàlid"
+
+#~ msgid "Please provide a valid interface"
+#~ msgstr "Proporcioneu una interfície vàlida"
+
+#~ msgid "Please provide a valid logical unit number"
+#~ msgstr "Si us plau, proporcioneu un nombre vàlid d'unitat lògica"
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "Si us plau, proporcioneu un espai de noms vàlid."
+
+#~ msgid "Please provide a valid path"
+#~ msgstr "Si us plau, proporcioneu un camí vàlid"
+
+#~ msgid "Please provide a valid storage capacity."
+#~ msgstr "Si us plau, proporcioneu una capacitat d'emmagatzematge vàlida."
+
+#~ msgid "Please provide a valid target"
+#~ msgstr "Si us plau, proporcioneu un objectiu vàlid"
+
+#~ msgid ""
+#~ "Please provide fully qualified domain name and port of the oVirt engine."
+#~ msgstr ""
+#~ "Proporcioneu el nom de domini plenament qualificat i el port del motor "
+#~ "oVirt."
+
+#~ msgid ""
+#~ "Please provide valid oVirt engine fully qualified domain name (FQDN) and "
+#~ "port (443 by default)"
+#~ msgstr ""
+#~ "Proporcioneu el nom de domini plenament qualificat d'un motor oVirt vàlid "
+#~ "i el port (443 per defecte)."
+
+#~ msgid "Please select a valid access mode"
+#~ msgstr "Si us plau, seleccioneu un mode d'accés vàlid"
+
+#~ msgid "Please select a valid endpoint"
+#~ msgstr "Si us plau, seleccioneu un extrem vàlid"
+
+#~ msgid "Please select a valid policy option."
+#~ msgstr "Si us plau, seleccioneu una opció de política vàlida."
+
+#~ msgid "Please specify an expiration date"
+#~ msgstr "Si us plau, especifiqueu una data de venciment"
+
+#~ msgid "Please try another term"
+#~ msgstr "Si us plau, proveu un altre terme"
+
+#~ msgid "Please type an address"
+#~ msgstr "Si us plau, teclegeu una adreça"
+
+#~ msgid "Please wait till VMs list is loaded from the server."
+#~ msgstr "Espereu fins que la llista de MV es carregui del servidor."
+
+#~ msgid "Please wait till list of templates is loaded from the server."
+#~ msgstr "Espereu fins que la llista de plantilles es carregui del servidor."
+
+#~ msgid "Pod"
+#~ msgstr "Pod"
+
+#~ msgid "Pod:"
+#~ msgstr "Pod:"
+
+#~ msgid "Pods"
+#~ msgstr "Pods"
+
+#~ msgid "Pool"
+#~ msgstr "Agrupació"
+
+#~ msgid "Pool Name"
+#~ msgstr "Nom de l'agrupació"
+
+#~ msgid "Pool for Thin Logical Volumes"
+#~ msgstr "Agrupació per als volums lògics disgregats"
+
+#~ msgid "Pool for Thin Volumes"
+#~ msgstr "Agrupació per als volums disgregats"
+
+#~ msgid "Populate"
+#~ msgstr "Pobla"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Portable"
+#~ msgstr "Portable"
+
+#~ msgid "Ports"
+#~ msgstr "Ports"
+
+#~ msgid "Ports:"
+#~ msgstr "Ports:"
+
+#~ msgid "Power Options"
+#~ msgstr "Opcions d'energia"
+
+#~ msgid "Prefix length"
+#~ msgstr "Longitud del prefix"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "Longitud del prefix o Màscara de xarxa"
+
+#~ msgid "Preparing"
+#~ msgstr "S'està preparant"
+
+#~ msgid "Preserve"
+#~ msgstr "Preserva"
+
+#~ msgid "Preset"
+#~ msgstr "Preajusta"
+
+#~ msgid "Preset Forcefully"
+#~ msgstr "Preajusta-ho forçosament"
+
+#~ msgid "Pretty Host Name"
+#~ msgstr "Nom d'amfitrió bonic"
+
+#~ msgid "Primary"
+#~ msgstr "Principal"
+
+#~ msgid "Priority"
+#~ msgstr "Prioritat"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Prioritat $priority"
+
+#~ msgid "Private: Allow only specific users or groups to pull images"
+#~ msgstr ""
+#~ "Privat: permet que només els usuaris o grups específics recuperin imatges"
+
+#~ msgid "Privileged tasks not available"
+#~ msgstr "No hi ha tasques privilegiades disponibles"
+
+#~ msgid "Problem details"
+#~ msgstr "Detalls del problema"
+
+#~ msgid "Problem info"
+#~ msgstr "Informació del problema"
+
+#~ msgid "Problems"
+#~ msgstr "Problemes"
+
+#~ msgid "Process"
+#~ msgstr "Procés"
+
+#~ msgid "Product ID"
+#~ msgstr "Id. del producte"
+
+#~ msgid "Product name"
+#~ msgstr "Nom del producte"
+
+#~ msgid "Project"
+#~ msgstr "Projecte"
+
+#~ msgid "Project Members"
+#~ msgstr "Membres del projecte"
+
+#~ msgid "Project access policy allows anonymous users to pull images."
+#~ msgstr ""
+#~ "La política d'accés de projecte permet que els usuaris anònims recuperin "
+#~ "imatges."
+
+#~ msgid "Project access policy allows any authenticated user to pull images."
+#~ msgstr ""
+#~ "La política d'accés públic permet que qualsevol usuari o grup autenticat "
+#~ "recuperi imatges."
+
+#~ msgid "Project website"
+#~ msgstr "Lloc web del projecte"
+
+#~ msgid "Project:"
+#~ msgstr "Projecte:"
+
+#~ msgid "Projects"
+#~ msgstr "Projectes"
+
+#~ msgid "Prompting via passwd timed out"
+#~ msgstr "Per mitjà del temps d'espera de passwd"
+
+#~ msgid "Prompting via ssh-add timed out"
+#~ msgstr "Per mitjà del temps d'espera de ssh-add"
+
+#~ msgid "Prompting via ssh-keygen timed out"
+#~ msgstr "Per mitjà del temps d'espera de ssh-keygen"
+
+#~ msgid "Protocol"
+#~ msgstr "Protocol"
+
+#~ msgid "Proxy"
+#~ msgstr "Servidor intermediari"
+
+#~ msgid "Proxy Version"
+#~ msgstr "Versió del servidor intermediari"
+
+#~ msgid "Public Key"
+#~ msgstr "Clau pública"
+
+#~ msgid "Pull an image:"
+#~ msgstr "Recupera una imatge:"
+
+#~ msgid "Pull from"
+#~ msgstr "Recupera de"
+
+#~ msgid "Pull specific tags from another image repository"
+#~ msgstr "Recupera les etiquetes específiques d'un altre dipòsit d'imatges"
+
+#~ msgid "Purpose"
+#~ msgstr "Propòsit"
+
+#~ msgid "Qualified Name"
+#~ msgstr "Nom qualificat"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 0 (Stripe)"
+#~ msgstr "RAID 0 (segmentació)"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 1 (Mirror)"
+#~ msgstr "RAID 1 (rèplica)"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 10 (Stripe of Mirrors)"
+#~ msgstr "RAID 10 (segmentació de rèpliques)"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 4 (Dedicated Parity)"
+#~ msgstr "RAID 4 (paritat dedicada)"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 5 (Distributed Parity)"
+#~ msgstr "RAID 5 (paritat distribuïda)"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID 6 (Double Distributed Parity)"
+#~ msgstr "RAID 5 (doble paritat distribuïda)"
+
+#~ msgid "RAID Device"
+#~ msgstr "Dispositiu RAID"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "Dispositiu RAID $0"
+
+#~ msgid "RAID Devices"
+#~ msgstr "Dispositius RAID"
+
+#~ msgid "RAID Level"
+#~ msgstr "Nivell RAID"
+
+#~ msgid "RAID Member"
+#~ msgstr "Membre RAID"
+
+#~ msgid "REBOOT action failed"
+#~ msgstr "Ha fallat l'acció REBOOT"
+
+#~ msgid "Rados Block Device"
+#~ msgstr "Dispositiu de blocs rados"
+
+#~ msgid "Random"
+#~ msgstr "Aleatòria"
+
+#~ msgid "Read Only"
+#~ msgstr "Tan sols lectura"
+
+#~ msgid "Read and write from a single node"
+#~ msgstr "Lectura i escriptura d'un sol node"
+
+#~ msgid "Read and write from multiple nodes"
+#~ msgstr "Lectura i escriptura de diversos nodes"
+
+#~ msgid "Read only from multiple nodes"
+#~ msgstr "Només lectura de diversos nodes"
+
+#~ msgid "ReadOnly"
+#~ msgstr "NomésLectura"
+
+#~ msgid "ReadWrite"
+#~ msgstr "LecturaEscriptura"
+
+#~ msgid "Reading"
+#~ msgstr "Lectura"
+
+#~ msgid "Reading..."
+#~ msgstr "S'està llegint..."
+
+#~ msgid "Readonly"
+#~ msgstr "NomésLectura"
+
+#~ msgid "Ready"
+#~ msgstr "A punt"
+
+#~ msgid "Real Host Name"
+#~ msgstr "Nom d'amfitrió real"
+
+#~ msgid ""
+#~ "Real host name can only contain lower-case characters, digits, dashes, "
+#~ "and periods (with populated subdomains)"
+#~ msgstr ""
+#~ "El nom d'amfitrió real només pot contenir caràcters en minúscules, "
+#~ "dígits, guions i punts (amb subdominis poblats)"
+
+#~ msgid "Real host name must be 64 characters or less"
+#~ msgstr "El nom d'amfitrió real pot tenir com a molt 64 caràcters"
+
+#~ msgid "Reason"
+#~ msgstr "Motiu"
+
+#~ msgid "Reboot"
+#~ msgstr "Rearrencada"
+
+#~ msgid "Receiving"
+#~ msgstr "Recepció"
+
+#~ msgid "Recent"
+#~ msgstr "Recent"
+
+#~ msgid "Recovering"
+#~ msgstr "Recuperació"
+
+#~ msgid "Recycle"
+#~ msgstr "Recicla"
+
+#~ msgid "Reformat and add disks"
+#~ msgstr "Torna a formatar i afegeix discs"
+
+#~ msgid "Refreshing package information"
+#~ msgstr "Refrescament de la informació dels paquets"
+
+#~ msgid "Refusing to connect. Host is unknown"
+#~ msgstr "Es nega a connectar. L'amfitrió és desconegut"
+
+#~ msgid "Refusing to connect. Hostkey does not match"
+#~ msgstr "Es nega a connectar. La clau d'amfitrió no coincideix"
+
+#~ msgid "Refusing to connect. Hostkey is unknown"
+#~ msgstr "Es nega a connectar. La clau d'amfitrió és desconeguda"
+
+#~ msgid "Register"
+#~ msgstr "Registra"
+
+#~ msgid "Register New Volume"
+#~ msgstr "Registra un volum nou"
+
+#~ msgid "Register Persistent Volume"
+#~ msgstr "Registra un volum persistent"
+
+#~ msgid "Register oVirt"
+#~ msgstr "Registra l'oVirt"
+
+#~ msgid "Register system"
+#~ msgstr "Registra el sistema"
+
+#~ msgid "Registering oVirt to Cockpit"
+#~ msgstr "Registrament d'oVirt a Cockpit"
+
+#~ msgid "Register…"
+#~ msgstr "Registra..."
+
+#~ msgid "Reload"
+#~ msgstr "Recarrega"
+
+#~ msgid "Remote URL"
+#~ msgstr "URL remot"
+
+#~ msgid "Remote over NFS"
+#~ msgstr "Remot sobre NFS"
+
+#~ msgid "Remote over SSH"
+#~ msgstr "Remot sobre SSH"
+
+#~ msgid "Remote;Administration;"
+#~ msgstr "Remot;Administració;"
+
+#~ msgctxt "storage"
+#~ msgid "Removable Drive"
+#~ msgstr "Disc extraïble"
+
+#~ msgid "Remove"
+#~ msgstr "Suprimeix"
+
+#~ msgid "Remove $0"
+#~ msgstr "Suprimeix $0"
+
+#~ msgid "Remove Group"
+#~ msgstr "Suprimeix el grup"
+
+#~ msgid "Remove Member"
+#~ msgstr "Suprimeix el membre"
+
+#~ msgid "Remove Role"
+#~ msgstr "Suprimeix el rol"
+
+#~ msgid "Remove User"
+#~ msgstr "Suprimeix l'usuari"
+
+#~ msgid "Remove device"
+#~ msgstr "Treu el dispositiu"
+
+#~ msgid "Remove image tag"
+#~ msgstr "Suprimeix l'etiqueta de la imatge"
+
+#~ msgid "Remove key"
+#~ msgstr "Suprimeix la clau"
+
+#~ msgid "Remove membership"
+#~ msgstr "Suprimeix la pertinença"
+
+#~ msgid "Removing $target from RAID Device"
+#~ msgstr "S'està eliminant $target  del dispositiu RAID"
+
+#~ msgid "Removing physical volume from $target"
+#~ msgstr "S'està eliminant el volum físic de $target"
+
+#~ msgid "Rename"
+#~ msgstr "Reanomena"
+
+#~ msgid "Rename Logical Volume"
+#~ msgstr "Reanomena el volum lògic"
+
+#~ msgid "Rename Volume Group"
+#~ msgstr "Reanomena un grup de volums"
+
+#~ msgid "Renaming $target"
+#~ msgstr "S'està reanomenant $target"
+
+#~ msgid "Repeat Daily"
+#~ msgstr "Repeteix diàriament"
+
+#~ msgid "Repeat Hourly"
+#~ msgstr "Repeteix cada hora"
+
+#~ msgid "Repeat Monthly"
+#~ msgstr "Repeteix cada mes"
+
+#~ msgid "Repeat Weekly"
+#~ msgstr "Repeteix cada setmana"
+
+#~ msgid "Repeat Yearly"
+#~ msgstr "Repeteix cada any"
+
+#~ msgid "Replicas"
+#~ msgstr "Rèpliques"
+
+#~ msgid "Replication Controller"
+#~ msgstr "Controlador de replicació"
+
+#~ msgid "Replication Controllers"
+#~ msgstr "Controladors de replicació"
+
+#~ msgid "Reported"
+#~ msgstr "Informat"
+
+#~ msgid "Repository"
+#~ msgstr "Dipòsit"
+
+#~ msgid "Repository URL"
+#~ msgstr "URl del dipòsit"
+
+#~ msgid "Requests"
+#~ msgstr "Peticions"
+
+#~ msgid "Require password change every $0 days"
+#~ msgstr "Requereix el canvi de la contrasenya cada $0 dies"
+
+#~ msgid "Require password change on $0"
+#~ msgstr "Requereix el canvi de la contrasenya el $0"
+
+#~ msgid "Requires Authentication"
+#~ msgstr "Requereix autenticació"
+
+#~ msgid "Reserved memory"
+#~ msgstr "Memòria reservada"
+
+#~ msgid "Reset"
+#~ msgstr "Restableix"
+
+#~ msgid "Reset Storage Pool"
+#~ msgstr "Restableix l'agrupació d'emmagatzematge"
+
+#~ msgid "Resizing $target"
+#~ msgstr "S'està redimensionant $target"
+
+#~ msgid "Restart"
+#~ msgstr "Reinicia"
+
+#~ msgid "Restart Count"
+#~ msgstr "Reinicia el compte"
+
+#~ msgid "Restart Now"
+#~ msgstr "Reinicia ara"
+
+#~ msgid "Restart Policy"
+#~ msgstr "Reinicia la política"
+
+#~ msgid "Restart Policy:"
+#~ msgstr "Reinicia la política:"
+
+#~ msgid "Restart Recommended"
+#~ msgstr "Reinici recomanat"
+
+#~ msgid "Restarting"
+#~ msgstr "S'està reiniciant"
+
+#~ msgid "Restoring connection"
+#~ msgstr "S'està restaurant la connexió"
+
+#~ msgid "Retries:"
+#~ msgstr "Intents:"
+
+#~ msgid "Retrieving subscription status..."
+#~ msgstr "S'està recuperant l'estat de la subscripció..."
+
+#~ msgid "Reuse my password for privileged tasks"
+#~ msgstr "Reutilitza la meva contrasenya per a les tasques privilegiades"
+
+#~ msgid ""
+#~ "Reuse my password for privileged tasks and to connect to other machines"
+#~ msgstr ""
+#~ "Reutilitza la meva contrasenya per a les tasques privilegiades i per "
+#~ "connectar a altres màquines"
+
+#~ msgid "Revision"
+#~ msgstr "Revisió"
+
+#~ msgid "Role"
+#~ msgstr "Rol"
+
+#~ msgid "Roles"
+#~ msgstr "Rols"
+
+#~ msgid "Round Robin"
+#~ msgstr "Round Robin"
+
+#~ msgid "Routes"
+#~ msgstr "Encaminaments"
+
+#~ msgid "Run"
+#~ msgstr "Executa"
+
+#~ msgid "Run Here"
+#~ msgstr "Executa-ho aquí"
+
+#~ msgid "Run Image"
+#~ msgstr "Executa la imatge"
+
+#~ msgid "Run as"
+#~ msgstr "Executa com"
+
+#~ msgid "Runner"
+#~ msgstr "Runner"
+
+#~ msgid "Running Since:"
+#~ msgstr "En execució des de:"
+
+#~ msgid "SELinux Access Control Errors"
+#~ msgstr "Errors de control d'accés de SELinux"
+
+#~ msgid "SELinux Policy"
+#~ msgstr "Política de SELinux"
+
+#~ msgid "SELinux Troubleshoot"
+#~ msgstr "Solució de problema de SELinux"
+
+#~ msgid "SELinux is disabled on the system"
+#~ msgstr "SELinux no està inhabilitat al sistema"
+
+#~ msgid "SELinux is disabled on the system."
+#~ msgstr "SELinux no està inhabilitat al sistema."
+
+#~ msgid "SELinux system status is unknown."
+#~ msgstr "Es desconeix l'estat del sistema SELinux."
+
+#~ msgid "SHUTDOWN action failed"
+#~ msgstr "Ha fallat l'acció SHUTDOWN"
+
+#~ msgid "SMART self-test of $target"
+#~ msgstr "Autotest SMART de $target."
+
+#~ msgid "SPICE"
+#~ msgstr "SPICE"
+
+#~ msgid "SPICE Address:"
+#~ msgstr "Adreça SPICE:"
+
+#~ msgid "SPICE Port:"
+#~ msgstr "Port SPICE:"
+
+#~ msgid "SPICE TLS Port:"
+#~ msgstr "Port TLS SPICE:"
+
+#~ msgid "START action failed"
+#~ msgstr "Ha fallat l'acció START"
+
+#~ msgid "STP Forward delay"
+#~ msgstr "Retard del reenviament STP"
+
+#~ msgid "STP Hello time"
+#~ msgstr "STP Hello time"
+
+#~ msgid "STP Maximum message age"
+#~ msgstr "Envelliment màxim del missatge STP"
+
+#~ msgid "STP Priority"
+#~ msgstr "Prioritat STP"
+
+#~ msgid "SUSPEND action failed"
+#~ msgstr "Ha fallat l'acció SUSPEND"
+
+#~ msgid "Saturday"
+#~ msgstr "Dissabte"
+
+#~ msgid "Save"
+#~ msgstr "Desa"
+
+#~ msgid "Scheduling Disabled"
+#~ msgstr "Planificació inhabilitada"
+
+#~ msgid "Seconds"
+#~ msgstr "segons"
+
+#~ msgid "Secret"
+#~ msgstr "Secret"
+
+#~ msgid "Secret File"
+#~ msgstr "Fitxer secret"
+
+#~ msgid "Secret Name"
+#~ msgstr "Nom secret"
+
+#~ msgid "Secret Volume"
+#~ msgstr "Volum secret"
+
+#~ msgid "Secure Shell Keys"
+#~ msgstr "Claus de shell segures"
+
+#~ msgid "Securely erasing $target"
+#~ msgstr "S'està eliminant de forma segura $target"
+
+#~ msgid "Security"
+#~ msgstr "Seguretat"
+
+#~ msgid "Select"
+#~ msgstr "Selecciona"
+
+#~ msgid "Select Manifest File..."
+#~ msgstr "Selecciona el fitxer del manifest..."
+
+#~ msgid "Select an object to see more details."
+#~ msgstr "Seleccioneu un objecte per veure'n més detalls. "
+
+#~ msgid ""
+#~ "Select the users that you would like to be synchronized with {{#strong}}"
+#~ "{{host}}{{/strong}}"
+#~ msgstr ""
+#~ "Seleccioneu els usuaris que vulgueu que estiguin sincronitzats amb "
+#~ "{{#strong}}{{host}}{{/strong}}"
+
+#~ msgid "Send shortcut"
+#~ msgstr "Envia la drecera"
+
+#~ msgid "Sending"
+#~ msgstr "Enviament"
+
+#~ msgid "Serial Console"
+#~ msgstr "Consola sèrie"
+
+#~ msgid "Server"
+#~ msgstr "Servidor"
+
+#~ msgid "Server Address"
+#~ msgstr "Adreça del servidor"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Administrador del servidor"
+
+#~ msgid "Server address cannot be empty."
+#~ msgstr "L'adreça del servidor no pot estar en blanc."
+
+#~ msgid "Server cannot be empty."
+#~ msgstr "El servidor no pot estar en blanc."
+
+#~ msgid "Server has closed the connection."
+#~ msgstr "El servidor ha tancat la connexió."
+
+#~ msgid "Servers"
+#~ msgstr "Servidors"
+
+#~ msgid "Service"
+#~ msgstr "Servei"
+
+#~ msgid "Service Account"
+#~ msgstr "Compte del servei"
+
+#~ msgid "Service Logs"
+#~ msgstr "Registres del servei"
+
+#~ msgid "Service has an error"
+#~ msgstr "El servei té un error"
+
+#~ msgid "Service is running"
+#~ msgstr "El servei s'està executant"
+
+#~ msgid "Service is starting"
+#~ msgstr "El servei s'està iniciant"
+
+#~ msgid "Service is stopped"
+#~ msgstr "El servei està aturat"
+
+#~ msgid "Service is stopping"
+#~ msgstr "El servei s'està aturant"
+
+#~ msgid "Service name"
+#~ msgstr "Nom del servei"
+
+#~ msgid "Services"
+#~ msgstr "Serveis"
+
+#~ msgid "Session"
+#~ msgstr "Sessió"
+
+#~ msgid "Set"
+#~ msgstr "Estableix"
+
+#~ msgid "Set Host name"
+#~ msgstr "Estableix el nom d'amfitrió"
+
+#~ msgid "Set Password"
+#~ msgstr "Estableix la contrasenya"
+
+#~ msgid "Set Time"
+#~ msgstr "Ajusta l'hora"
+
+#~ msgid "Set container environment variables"
+#~ msgstr "Estableix les variables d'entorn del contenidor"
+
+#~ msgid "Set to"
+#~ msgstr "Estableix a"
+
+#~ msgid "Set up"
+#~ msgstr "Configurat"
+
+#~ msgid "Setting up"
+#~ msgstr "S'està configurant"
+
+#~ msgid "Setting up loop device $target"
+#~ msgstr "S'està preparant el dispositiu de bucles $target"
+
+#~ msgid "Severity"
+#~ msgstr "Gravetat"
+
+#~ msgid "Severity:"
+#~ msgstr "Gravetat:"
+
+#~ msgid "Share Name"
+#~ msgstr "Nom de compartició"
+
+#~ msgid "Shared"
+#~ msgstr "Compartida"
+
+#~ msgid "Shared: Allow any authenticated user to pull images"
+#~ msgstr "Compartit: permet que qualsevol usuari autenticat recuperi imatges"
+
+#~ msgid "Shell"
+#~ msgstr "Shell"
+
+#~ msgid "Show all Containers"
+#~ msgstr "Mostra tots els contenidors"
+
+#~ msgid "Show all Deployment Configs"
+#~ msgstr "Mostra totes les configuracions de desplegament"
+
+#~ msgid "Show all Nodes"
+#~ msgstr "Mostra tots els nodes"
+
+#~ msgid "Show all Persistent Volumes"
+#~ msgstr "Mostra tots els volums persistents"
+
+#~ msgid "Show all Pods"
+#~ msgstr "Mostra tots els pods"
+
+#~ msgid "Show all Projects"
+#~ msgstr "Mostra tots els projectes"
+
+#~ msgid "Show all Replication Controllers"
+#~ msgstr "Mostra tots els controladors de replicació"
+
+#~ msgid "Show all Routes"
+#~ msgstr "Mostra tots els encaminaments"
+
+#~ msgid "Show all Services"
+#~ msgstr "Mostra tots els serveis"
+
+#~ msgid "Show all containers"
+#~ msgstr "Mostra tots els contenidors"
+
+#~ msgid "Show all image streams"
+#~ msgstr "Mostra tots els fluxos d'imatges"
+
+#~ msgid "Show all images"
+#~ msgstr "Mostra totes les imatges"
+
+#~ msgid "Show fingerprints"
+#~ msgstr "Mostra les empremtes"
+
+#~ msgid "Shut Down"
+#~ msgstr "Apaga"
+
+#~ msgid "Since"
+#~ msgstr "Des de"
+
+#~ msgid "Since $0"
+#~ msgstr "Des de $0"
+
+#~ msgid "Size"
+#~ msgstr "Mida"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "La mida no pot ser negativa"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "La mida no pot ser zero"
+
+#~ msgid "Size is too large"
+#~ msgstr "La mida és massa gran"
+
+#~ msgid "Size must be a number"
+#~ msgstr "La mida ha de ser un número"
+
+#~ msgid "Size must be at least $0"
+#~ msgstr "La mida com a mínim ha de ser $0"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "Omet la verificació del certificat"
+
+#~ msgid "Slot"
+#~ msgstr "Ranura"
+
+#~ msgid "Sockets"
+#~ msgstr "Sockets"
+
+#~ msgid "Solid-State Disk"
+#~ msgstr "Disc d'estat sòlid"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "Disc d'estat sòlid"
+
+#~ msgid "Solution applied successfully"
+#~ msgstr "S'ha aplicat la solució amb èxit"
+
+#~ msgid "Solution failed"
+#~ msgstr "Ha fallat la solució"
+
+#~ msgid "Solutions"
+#~ msgstr "Solucions"
+
+#~ msgid "Source"
+#~ msgstr "Origen"
+
+#~ msgid "Source URL"
+#~ msgstr "URL d'origen"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "STP (Spanning Tree Protocol)"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "STP (Spanning Tree Protocol)"
+
+#~ msgid "Spare"
+#~ msgstr "Recanvi"
+
+#~ msgid "Specific Time"
+#~ msgstr "Instant concret"
+
+#~ msgid "Stable"
+#~ msgstr "Estable"
+
+#~ msgid "Start"
+#~ msgstr "Inicia"
+
+#~ msgid "Start Docker"
+#~ msgstr "Inicia Docker"
+
+#~ msgid "Start Multipath"
+#~ msgstr "Inicia el multicamí"
+
+#~ msgid "Start libvirt"
+#~ msgstr "Inicia libvirt"
+
+#~ msgid "Start the VM to see disk statistics."
+#~ msgstr "Inicieu la MV per veure les estadístiques del disc."
+
+#~ msgid "Starting RAID Device $target"
+#~ msgstr "S'està iniciant el dispositiu RAID $target"
+
+#~ msgid "Starting swapspace $target"
+#~ msgstr "S'està iniciant l'espai d'intercanvi $target"
+
+#~ msgid "Starts"
+#~ msgstr "Comença"
+
+#~ msgid "State"
+#~ msgstr "Estat"
+
+#~ msgid "State:"
+#~ msgstr "Estat:"
+
+#~ msgid "Static"
+#~ msgstr "Estàtic"
+
+#~ msgid "Status: $0"
+#~ msgstr "Estat: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "Estat: el sistema no està registrat"
+
+#~ msgid "Stop"
+#~ msgstr "Atura"
+
+#~ msgid "Stop Device"
+#~ msgstr "Atura el dispositiu"
+
+#~ msgid "Stop and Unmount"
+#~ msgstr "Atura i desmunta"
+
+#~ msgid "Stop and remove"
+#~ msgstr "Atura i treu"
+
+#~ msgid "Stop with"
+#~ msgstr "Atura amb"
+
+#~ msgid "Stopped"
+#~ msgstr "Aturat"
+
+#~ msgid "Stopping RAID Device $target"
+#~ msgstr "S'està aturant el dispositiu RAID $target"
+
+#~ msgid "Stopping swapspace $target"
+#~ msgstr "S'està aturant l'espai d'intercanvi $target"
+
+#~ msgid "Storage"
+#~ msgstr "Emmagatzematge"
+
+#~ msgid "Storage Logs"
+#~ msgstr "Registres de l'emmagatzematge"
+
+#~ msgid "Storage Size"
+#~ msgstr "Mida de l'emmagatzematge"
+
+#~ msgid "Storage Size should not be negative number"
+#~ msgstr "La mida de l'emmagatzematge no pot ser un número negatiu"
+
+#~ msgid "Storage pool"
+#~ msgstr "Agrupació d'emmagatzematge"
+
+#~ msgid "Store Performance Data"
+#~ msgstr "Desa les dades de rendiment"
+
+#~ msgid "Store passphrase"
+#~ msgstr "Emmagatzema la contrasenya"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "Contrasenya emmagatzemada"
+
+#~ msgid "Stored passphrase"
+#~ msgstr "Contrasenya emmagatzemada"
+
+#~ msgid "Strategy"
+#~ msgstr "Estratègia"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Subscripcions"
+
+#~ msgid "Summary"
+#~ msgstr "Resum"
+
+#~ msgid "Sunday"
+#~ msgstr "Diumenge"
+
+#~ msgid "Suspend"
+#~ msgstr "Suspèn"
+
+#~ msgid "Swap"
+#~ msgstr "Intercanvi"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "Espai d'intercanvi"
+
+#~ msgid "Swap Used"
+#~ msgstr "Intercanvi utilitzat"
+
+#~ msgid "Switch Host to Maintenance"
+#~ msgstr "Canvia l'amfitrió a manteniment"
+
+#~ msgid "Switch off $0"
+#~ msgstr "Apaga $0"
+
+#~ msgid "Switch on $0"
+#~ msgstr "Engega $0"
+
+#~ msgid "Switching host to maintenance mode failed. Received error: "
+#~ msgstr "Ha fallat el canvi de l'amfitrió a manteniment. Error rebut: "
+
+#~ msgid "Switching host to maintenance mode in progress ..."
+#~ msgstr "Canvi de l'amfitrió a manteniment en progrés..."
+
+#~ msgid "Synchronize"
+#~ msgstr "Sincronitza"
+
+#~ msgid "Synchronize users"
+#~ msgstr "Sincronitza els usuaris"
+
+#~ msgid "Synchronized"
+#~ msgstr "Sincronitzat"
+
+#~ msgid "Synchronized with {{Server}}"
+#~ msgstr "Sincronitzat amb {{Server}}"
+
+#~ msgid "Synchronizing RAID Device $target"
+#~ msgstr "Sincronització del dispositiu RAID $target"
+
+#~ msgid "System"
+#~ msgstr "Sistema"
+
+#~ msgid "System Information"
+#~ msgstr "Informació del sistema"
+
+#~ msgid "System Services"
+#~ msgstr "Serveis del sistema"
+
+#~ msgid "System Time"
+#~ msgstr "Hora del sistema"
+
+#~ msgid "System Up To Date"
+#~ msgstr "El sistema està actualitzat"
+
+#~ msgid "System is up to date"
+#~ msgstr "El sistema està al dia"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "TLS Termination"
+#~ msgstr "Finalització TLS"
+
+#~ msgid "Tablet"
+#~ msgstr "Tauleta"
+
+#~ msgid "Tag"
+#~ msgstr "Etiqueta"
+
+#~ msgid "Tags"
+#~ msgstr "Etiquetes"
+
+#~ msgid "Target"
+#~ msgstr "Objectiu"
+
+#~ msgid "Targets"
+#~ msgstr "Objectius"
+
+#~ msgid "Team"
+#~ msgstr "Equip"
+
+#~ msgid "Team Port"
+#~ msgstr "Port de l'equip"
+
+#~ msgid "Team Port Settings"
+#~ msgstr "Ajusts del port de l'equip"
+
+#~ msgid "Team Settings"
+#~ msgstr "Ajusts de l'equip"
+
+#~ msgid "Template"
+#~ msgstr "Plantilla"
+
+#~ msgid "Templates"
+#~ msgstr "Plantilles"
+
+#~ msgid "Templates of $0 cluster"
+#~ msgstr "Plantilles de clúster $0"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Terminate Session"
+#~ msgstr "Acaba la sessió"
+
+#~ msgid "Test Configuration"
+#~ msgstr "Prova la configuració"
+
+#~ msgid "Test is only available while the kdump service is running."
+#~ msgstr "Això només està disponible mentre el servei kdump està en execució."
+
+#~ msgid "Test kdump settings"
+#~ msgstr "Prova els ajusts de kdump"
+
+#~ msgid "The \"storaged\" API is not available on this system."
+#~ msgstr "L'API «storaged» no està disponible en aquest sistema."
+
+#~ msgid "The IP address or host name cannot contain whitespace."
+#~ msgstr "L'adreça IP o el nom d'amfitrió no poden contenir espais en blanc."
+
+#~ msgid "The VM crashed."
+#~ msgstr "La MV s'ha estavellat."
+
+#~ msgid "The VM is paused."
+#~ msgstr "La MV està en pausa."
+
+#~ msgid "The VM is running."
+#~ msgstr "La MV està en execució."
+
+#~ msgid "The VM is suspended by guest power management."
+#~ msgstr "La MV està en suspensió per la gestió d'energia del convidat."
+
+#~ msgid ""
+#~ "The account '$0' will be forced to change their password on next login"
+#~ msgstr ""
+#~ "El compte '$0' es veurà forçat a canviar de contrasenya el pròxim com que "
+#~ "iniciï la sessió."
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "L'adreça conté caràcters no vàlids"
+
+#~ msgid "The collected information will be stored locally on the system."
+#~ msgstr "La informació recopilada s'emmagatzemarà localment al sistema."
+
+#~ msgid "The container '{{ target }}' does not exist."
+#~ msgstr "El contenidor '{{ target }}' no existeix."
+
+#~ msgid ""
+#~ "The creation of this VDO device did not finish and the device can't be "
+#~ "used."
+#~ msgstr ""
+#~ "No s'ha finalitzat la creació d'aquest dispositiu VDO i no es pot "
+#~ "utilitzar aquest dispositiu."
+
+#~ msgid "The deployment config '{{ target }}' does not exist."
+#~ msgstr "La configuració del desplegament '{{ target }}' no existeix."
+
+#~ msgid "The following packages were recently updated:"
+#~ msgstr "Els paquets següents s'han actualitzat recentment:"
+
+#~ msgid "The following packages were updated $0:"
+#~ msgstr "Els paquets següents s'han actualitzat $0:"
+
+#~ msgid ""
+#~ "The generated archive contains data considered sensitive and its content "
+#~ "should be reviewed by the originating organization before being passed to "
+#~ "any third party."
+#~ msgstr ""
+#~ "L'arxiu generat conté dades considerades com a sensibles i el seu "
+#~ "contingut s'ha de revisar abans de passar-ho a un tercer."
+
+#~ msgid "The group '{{ groupName }}' does not exist."
+#~ msgstr "El grup '{{ groupName }}' no existeix."
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "La clau que heu proporcionat no era vàlida."
+
+#~ msgid "The last disk of a RAID device cannot be removed."
+#~ msgstr "No es pot treure l'últim disc d'un dispositiu RAID."
+
+#~ msgid "The last physical volume of a volume group cannot be removed."
+#~ msgstr "No es pot treure l'últim volum físic d'un grup de volums."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "La màquina s'està reiniciant"
+
+#~ msgid "The maximum number of replicas is 128"
+#~ msgstr "El nombre màxim de rèpliques és 128"
+
+#~ msgid "The name contains invalid characters"
+#~ msgstr "El nom conté caràcters no vàlids"
+
+#~ msgid "The node '{{ target }}' does not exist."
+#~ msgstr "El node '{{ target }}' no existeix."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "El node no té prou espai lliure al disc"
+
+#~ msgid "The node doesn't have enough free memory"
+#~ msgstr "El node no té prou memòria lliure al disc"
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Les contrasenyes no coincideixen"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Les contrasenyes no coincideixen."
+
+#~ msgid "The persistent volume '{{ target }}' does not exist."
+#~ msgstr "El volum persistent '{{ target }}' no existeix."
+
+#~ msgid "The pod '{{ target }}' does not exist."
+#~ msgstr "El pod '{{ target }}' no existeix."
+
+#~ msgid "The project '{{ projName }}' does not exist."
+#~ msgstr "El projecte '{{ projName }}' no existeix."
+
+#~ msgid "The replication controller '{{ target }}' does not exist."
+#~ msgstr "El controlador de replicació '{{ target }}' no existeix."
+
+#~ msgid "The route '{{ target }}' does not exist."
+#~ msgstr "L'encaminament '{{ target }}' no existeix."
+
+#~ msgid "The selected file is not a valid Kubernetes application manifest."
+#~ msgstr ""
+#~ "El fitxer seleccionat no és un manifest d'aplicació Kubernetes vàlid."
+
+#~ msgid "The server refused to authenticate using any supported methods."
+#~ msgstr ""
+#~ "El servidor ha refusat l'autenticació mitjançant qualsevol dels mètodes "
+#~ "compatibles."
+
+#~ msgid "The server uses a certificate signed by an unknown authority."
+#~ msgstr ""
+#~ "El servidor utilitza un certificat signat per una autoritat desconeguda."
+
+#~ msgid "The service '{{ target }}' does not exist."
+#~ msgstr "El servei '{{ target }}' no existeix."
+
+#~ msgid "The user '{{ userName }}' does not exist."
+#~ msgstr "L'usuari '{{ userName }}' no existeix."
+
+#~ msgid "The user <b>$0</b> does not have permissions for creating timers"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet crear temporitzadors"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet gestionar els servidors"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage storage"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet gestionar l'emmagatzematge"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet modificar els comptes"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify hostnames"
+#~ msgstr ""
+#~ "A l'usuari <b>$0</b> no se li permet modificar els noms d'amfitrions"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet modificar els ajusts de xarxa"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify realms"
+#~ msgstr "A l'usuari <b>$0</b> no se li permet modificar els reialmes"
+
+#~ msgid ""
+#~ "The user <b>$0</b> is not permitted to shutdown or restart this server"
+#~ msgstr ""
+#~ "A l'usuari <b>$0</b> no se li permet apagar o reiniciar aquest servidor."
+
+#~ msgid ""
+#~ "The user name can only consist of letters from a-z, digits, dots, dashes "
+#~ "and underscores."
+#~ msgstr ""
+#~ "El nom d'usuari només pot contenir lletres a-z, dígits, punts, guions "
+#~ "baixos i guions."
+
+#~ msgid ""
+#~ "The web browser configuration prevents Cockpit from running (inaccessible "
+#~ "$0)"
+#~ msgstr ""
+#~ "La configuració del navegador web impedeix que s'executi Cockpit "
+#~ "(inaccessible $0)"
+
+#~ msgid "There are currently no active pages"
+#~ msgstr "Actualment no hi ha pàgines actives"
+
+#~ msgid ""
+#~ "There are devices with multiple paths on the system, but the multipath "
+#~ "service is not running."
+#~ msgstr ""
+#~ "Hi ha dispositius amb diversos camins al sistema, però no s'està "
+#~ "executant el servei multipath."
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr "No hi ha cap clau pública autoritzada per aquest compte."
+
+#~ msgid ""
+#~ "There is not enough free space elsewhere to remove this physical volume. "
+#~ "At least $0 more free space is needed."
+#~ msgstr ""
+#~ "No hi ha prou espai lliure als altres llocs per suprimir aquest volum "
+#~ "físic. Es necessiten almenys $0 més d'espai lliure."
+
+#~ msgid "Thin Logical Volume"
+#~ msgstr "Volums lògics disgregats"
+
+#~ msgid ""
+#~ "This day doesn't exist in all months.<br> The timer will only be executed "
+#~ "in months that have 31st."
+#~ msgstr ""
+#~ "Aquest dia no existeix en tots els mesos.<br> El temporitzador només "
+#~ "s'executarà en aquells mesos que en tinguin 31."
+
+#~ msgid "This device cannot be managed here."
+#~ msgstr "Aquest dispositiu no es pot gestionar aquí."
+
+#~ msgid ""
+#~ "This device has filesystems that are currently in use.                "
+#~ "Proceeding will unmount all filesystems on it."
+#~ msgstr ""
+#~ "Aquest dispositiu té sistemes de fitxers actualment en ús. El procediment "
+#~ "desmuntarà tots els sistemes de fitxers que conté."
+
+#~ msgid "This device is currently used for RAID devices."
+#~ msgstr "Aquest dispositiu s'utilitza actualment amb dispositius RAID."
+
+#~ msgid ""
+#~ "This device is currently used for RAID devices.                Proceeding "
+#~ "will remove it from its RAID devices."
+#~ msgstr ""
+#~ "Aquest dispositiu s'utilitza actualment amb dispositius "
+#~ "RAID.                Si continueu, s'eliminarà dels dispositius\n"
+#~ " RAID."
+
+#~ msgid "This device is currently used for VDO devices."
+#~ msgstr "Aquest dispositiu s'utilitza actualment per als dispositiu VDO."
+
+#~ msgid "This device is currently used for volume groups."
+#~ msgstr "Aquest dispositiu s'utilitza actualment amb grups de volums."
+
+#~ msgid ""
+#~ "This device is currently used for volume groups.                "
+#~ "Proceeding will remove it from its volume groups."
+#~ msgstr ""
+#~ "Aquest dispositiu s'utilitza actualment amb grups de "
+#~ "volums.                Si continueu, s'eliminarà dels grups de volums."
+
+#~ msgid "This disk cannot be removed while the device is recovering."
+#~ msgstr "Aquest disc no es pot treure quan s'està recuperant el dispositiu."
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "Aquest camp no pot estar en blanc."
+
+#~ msgid "This image does not exist."
+#~ msgstr "No existeix aquesta image."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "La màquina ja ha estat afegida."
+
+#~ msgid "This may take a while"
+#~ msgstr "Això pot trigar una estona"
+
+#~ msgid ""
+#~ "This option is for single node testing only – local storage will not work "
+#~ "in a multi-node cluster"
+#~ msgstr ""
+#~ "Aquesta opció només és per a proves de node únic: l'emmagatzematge local "
+#~ "no funcionarà en un clúster de diversos nodes"
+
+#~ msgid "This package is not compatible with this version of Cockpit"
+#~ msgstr "Aquest paquet no és compatible amb aquesta versió de Cockpit"
+
+#~ msgid "This package requires Cockpit version %s or later"
+#~ msgstr "Aquest paquet requereix la versió %s, o posterior, de Cockpit"
+
+#~ msgid "This system is not registered"
+#~ msgstr "Aquest sistema no està registrat"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "El sistema està utilitzant un perfil personalitzat"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "El sistema està utilitzant el perfil recomanat"
+
+#~ msgid ""
+#~ "This tool will collect system configuration and diagnostic information "
+#~ "from this system for use with diagnosing problems with the system."
+#~ msgstr ""
+#~ "Aquesta eina recopilarà la configuració i la informació de diagnòstic "
+#~ "d'aquest sistema per a l'ús amb el diagnòstic de problemes amb el sistema."
+
+#~ msgid "This unit is an instance of the $0 template."
+#~ msgstr "Aquesta unitat és una instància de la plantilla $0."
+
+#~ msgid "This unit is not designed to be enabled explicitly."
+#~ msgstr "Aquesta unitat no està dissenyada per estar explícitament activada."
+
+#~ msgid "This user name already exists"
+#~ msgstr "Aquest nom d'usuari ja existeix"
+
+#~ msgid ""
+#~ "This version of cockpit-ws does not support connecting to a host with an "
+#~ "alternate user or port"
+#~ msgstr ""
+#~ "Aquesta versió de cockpit-ws no és compatible amb la connexió a un "
+#~ "amfitrió amb un usuari o port alternatius"
+
+#~ msgid "This virtual machine is not managed by oVirt"
+#~ msgstr "Aquesta màquina virtual no està gestionada per oVirt"
+
+#~ msgid "This volume has not been claimed"
+#~ msgstr "Aquest volum no ha estat reclamat"
+
+#~ msgid "This web browser is too old to run Cockpit (missing $0)"
+#~ msgstr "Aquest navegador web és massa antic per executar Cockpit (falta $0)"
+
+#~ msgid ""
+#~ "This will test kdump settings by crashing the kernel and thereby the "
+#~ "system. Depending on the settings, the system may not automatically "
+#~ "reboot and the process may take a while."
+#~ msgstr ""
+#~ "Això provarà la configuració de kdump en fer estavellar el kernel i, per "
+#~ "tant, el sistema. En funció dels ajusts, el sistema pot no reiniciar-se "
+#~ "automàticament i el procés pot trigar una estona."
+
+#~ msgid "This will test the kdump configuration by crashing the kernel."
+#~ msgstr "Això provarà la configuració de kdump en fer estavellar el kernel."
+
+#~ msgid "Thursday"
+#~ msgstr "Dijous"
+
+#~ msgid "Time Zone"
+#~ msgstr "Zona horària"
+
+#~ msgid "Timers"
+#~ msgstr "Temporitzadors"
+
+#~ msgid ""
+#~ "Tip: Make your key password match your login password to automatically "
+#~ "authenticate against other systems."
+#~ msgstr ""
+#~ "Consell: feu que la contrasenya de la clau coincideixi amb la vostra "
+#~ "contrasenya d'inici de sessió per autenticar automàticament contra altres "
+#~ "sistemes."
+
+#~ msgid ""
+#~ "To get software updates, this system needs to be registered with Red Hat, "
+#~ "either using the Red Hat Customer Portal or a local subscription server."
+#~ msgstr ""
+#~ "Per obtenir actualitzacions de programari, aquest sistema ha d'estar "
+#~ "registrat a Red Hat, ja sigui utilitzant Red Hat Customer Portal o un "
+#~ "servidor de subscripció local."
+
+#~ msgid "To pull this image:"
+#~ msgstr "Per recuperar aquesta imatge:"
+
+#~ msgid ""
+#~ "To try a different port you will need to upgrade cockpit-ws to a newer "
+#~ "version."
+#~ msgstr ""
+#~ "Per provar un port diferent, haureu d'actualitzar cockpit-ws a una versió "
+#~ "més recent."
+
+#~ msgid "Token"
+#~ msgstr "Testimoni"
+
+#~ msgid "Too many files found"
+#~ msgstr "S'han trobat massa fitxers"
+
+#~ msgid "Too much data"
+#~ msgstr "Hi ha massa dades"
+
+#~ msgid "Topology"
+#~ msgstr "Topologia"
+
+#~ msgid "Total"
+#~ msgstr "Total"
+
+#~ msgid "Tower"
+#~ msgstr "Torre"
+
+#~ msgid "Triggers"
+#~ msgstr "Disparadors"
+
+#~ msgid "Troubleshoot"
+#~ msgstr "Soluciona el problema"
+
+#~ msgid "Trust this certificate for this connection"
+#~ msgstr "Confia en aquest certificat per a aquesta connexió"
+
+#~ msgid "Try Again"
+#~ msgstr "Torna-ho a intentar"
+
+#~ msgid "Try again"
+#~ msgstr "Torna-ho a intentar"
+
+#~ msgid "Try to reconnect"
+#~ msgstr "Intenta tornar a connectar"
+
+#~ msgid "Trying to synchronize with {{Server}}"
+#~ msgstr "S'està intentant la sincronització amb {{Server}}"
+
+#~ msgid "Tuesday"
+#~ msgstr "Dimarts"
+
+#~ msgid "Tuned has failed to start"
+#~ msgstr "Tuned ha fallat en iniciar-se"
+
+#~ msgid "Tuned is not available"
+#~ msgstr "Tuned no està disponible"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "Tuned no s'està executant"
+
+#~ msgid "Tuned is off"
+#~ msgstr "Tuned no està aturat"
+
+#~ msgid "Type"
+#~ msgstr "Tipus"
+
+#~ msgid "Type a password"
+#~ msgstr "Teclegeu una contrasenya"
+
+#~ msgid "Type to filter…"
+#~ msgstr "Teclegeu per filtrar..."
+
+#~ msgid "Type:"
+#~ msgstr "Tipus:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "URL cannot be empty"
+#~ msgstr "L'URL no pot estar en blanc"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unable to apply settings: $0"
+#~ msgstr "No es poden aplicar els ajusts: $0"
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "No es pot aplicar automàticament aquesta solució"
+
+#~ msgid "Unable to connect"
+#~ msgstr "No es pot connectar"
+
+#~ msgid "Unable to connect to that address"
+#~ msgstr "No es pot connectar a aquesta adreça"
+
+#~ msgid "Unable to decode Kubernetes application manifest."
+#~ msgstr "No es pot descodificar el manifest d'aplicació de Kubernetes."
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "No es pot suprimir el compte de root"
+
+#~ msgid "Unable to get alert details."
+#~ msgstr "No es poden obtenir els detalls de l'alerta."
+
+#~ msgid "Unable to get alert: $0"
+#~ msgstr "No es pot obtenir l'alerta: $0"
+
+#~ msgid "Unable to reach server"
+#~ msgstr "No es pot arribar al servidor"
+
+#~ msgid "Unable to read the Kubernetes application manifest. Code $0."
+#~ msgstr "No es pot llegir el fitxer del manifest del Kubernetes. Codi $0."
+
+#~ msgid "Unable to remove mount"
+#~ msgstr "No es pot treure el punt de muntatge"
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "No es pot reanomenar el compte de root"
+
+#~ msgid "Unable to resolve"
+#~ msgstr "No es pot resoldre"
+
+#~ msgid "Unable to run fix: %0"
+#~ msgstr "No es pot executar la correcció: %0"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "No es pot iniciar setroubleshootd"
+
+#~ msgid "Unable to unmount filesystem"
+#~ msgstr "No es pot desmuntar el sistema de fitxers"
+
+#~ msgid "Unavailable"
+#~ msgstr "No disponible"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Error inesperat"
+
+#~ msgid "Unknown"
+#~ msgstr "Desconegut"
+
+#~ msgid "Unknown \"$0\""
+#~ msgstr "\"$0\" desconegut"
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Desconegut ($0)"
+
+#~ msgid "Unknown Application"
+#~ msgstr "Aplicació desconeguda"
+
+#~ msgid "Unknown Host Key"
+#~ msgstr "Clau desconeguda d'amfitrió"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Configuració desconeguda"
+
+#~ msgid "Unknown host name"
+#~ msgstr "Nom d'amfitrió desconegut"
+
+#~ msgid "Unless Stopped"
+#~ msgstr "A menys que s'aturi"
+
+#~ msgid "Unlock"
+#~ msgstr "Desbloqueja"
+
+#~ msgid "Unlock Key"
+#~ msgstr "Clau de desbloqueig"
+
+#~ msgid "Unlock at boot"
+#~ msgstr "Desbloqueja a l'arrencada"
+
+#~ msgid "Unlock read only"
+#~ msgstr "Desbloqueja només lectura"
+
+#~ msgid "Unlocked"
+#~ msgstr "Desbloquejat"
+
+#~ msgid "Unlocking $target"
+#~ msgstr "S'està desbloquejant $target"
+
+#~ msgid "Unmanaged Interfaces"
+#~ msgstr "Interfícies sense gestionar"
+
+#~ msgid "Unmask"
+#~ msgstr "Desemmascara"
+
+#~ msgid "Unmount"
+#~ msgstr "Desmunta"
+
+#~ msgid "Unmounting $target"
+#~ msgstr "S'està desmuntat $target"
+
+#~ msgid "Unnamed"
+#~ msgstr "Sense nom"
+
+#~ msgid "Unrecognized Data"
+#~ msgstr "Dades no reconegudes"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Dades no reconegudes"
+
+#~ msgid "Unregister"
+#~ msgstr "Desregistra"
+
+#~ msgid "Unregistered System"
+#~ msgstr "Sistema sense registrar"
+
+#~ msgid "Unregistering system..."
+#~ msgstr "S'està desregistrant el sistema..."
+
+#~ msgid "Unresolved"
+#~ msgstr "Sense resoldre"
+
+#~ msgid "Unsupported setup mechanism"
+#~ msgstr "Mecanisme de configuració no admès"
+
+#~ msgid "Unsupported volume"
+#~ msgstr "Volum no admès"
+
+#~ msgid "Untrusted host"
+#~ msgstr "Amfitrió no fiable"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "Aixecat des de $StartedAt"
+
+#~ msgid "Update"
+#~ msgstr "Actualitza"
+
+#~ msgid "Update History"
+#~ msgstr "Historial d'actualitzacions"
+
+#~ msgid "Update Log"
+#~ msgstr "Registre d'actualitzacions"
+
+#~ msgid "Updated"
+#~ msgstr "Actualitzat"
+
+#~ msgid "Updated packages may require a restart to take effect."
+#~ msgstr ""
+#~ "Els paquets actualitzats poden requerir un reinici perquè tinguin efecte."
+
+#~ msgid "Updates Available"
+#~ msgstr "Actualitzacions disponibles"
+
+#~ msgid "Updates are disabled."
+#~ msgstr "Les actualitzacions estan inhabilitades."
+
+#~ msgid "Updating $0..."
+#~ msgstr "S'està actualitzant $0..."
+
+#~ msgid "Upgrade to a more recent version of libvirt to view disk statistics"
+#~ msgstr ""
+#~ "Actualitzeu a una versió més recent de libvirt per visualitzar les "
+#~ "estadístiques dels discs"
+
+#~ msgid "Usage"
+#~ msgstr "Ús"
+
+#~ msgid "Usage of $0 CPU core"
+#~ msgid_plural "Usage of $0 CPU cores"
+#~ msgstr[0] "Ús de $0 nucli de CPU"
+#~ msgstr[1] "Ús de $0 nuclis de CPU"
+
+#~ msgid "Use new key"
+#~ msgstr "Utilitza una clau nova"
+
+#~ msgid "Use proxy server"
+#~ msgstr "Utilitza un servidor intermediari"
+
+#~ msgid "Use the following keys to authenticate against other systems"
+#~ msgstr "Utilitza les següents claus per autenticar contra altres sistemes"
+
+#~ msgid "Use the setting in /etc/kdump.conf"
+#~ msgstr "Utilitza l'ajust de /etc/kdump.conf"
+
+#~ msgid "Used"
+#~ msgstr "Utilitzat"
+
+#~ msgid "Used by Containers"
+#~ msgstr "Utilitzat pels contenidors"
+
+#~ msgid "User"
+#~ msgstr "Usuari"
+
+#~ msgid "User Name"
+#~ msgstr "Nom d'usuari"
+
+#~ msgid "User Password"
+#~ msgstr "Contrasenya d'usuari"
+
+#~ msgid "User interface for Linux servers"
+#~ msgstr "Interfície d'usuari per als servidors GNU/Linux"
+
+#~ msgid "User name"
+#~ msgstr "Nom d'usuari"
+
+#~ msgid "User name cannot be empty"
+#~ msgstr "El nom d'usuari no pot estar en blanc"
+
+#~ msgid "User or Group"
+#~ msgstr "Usuari o grup"
+
+#~ msgid "Username"
+#~ msgstr "Nom d'usuari"
+
+#~ msgid "Users"
+#~ msgstr "Usuaris"
+
+#~ msgid "Using available credentials"
+#~ msgstr "S'estan utilitzant les credencials disponibles"
+
+#~ msgid "VDO Device"
+#~ msgstr "Dispositiu VDO"
+
+#~ msgid "VDO Device $0"
+#~ msgstr "Dispositiu VDO $0"
+
+#~ msgid "VDO Devices"
+#~ msgstr "Dispositius VDO"
+
+#~ msgid "VDSM"
+#~ msgstr "VDSM"
+
+#~ msgid "VDSM Service Management"
+#~ msgstr "Gestió del servei VDSM"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT - Compatible amb tots els sistemes i dispositius"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "Id. VLAN"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "Ajusts de la VLAN"
+
+#~ msgid "VM DELETE failed."
+#~ msgstr "Ha fallat VM DELETE"
+
+#~ msgid "VM FORCE OFF action failed"
+#~ msgstr "Ha fallat l'acció VM FORCE OFF"
+
+#~ msgid "VM FORCE REBOOT action failed"
+#~ msgstr "Ha fallat l'acció VM FORCE REBOOT"
+
+#~ msgid "VM REBOOT action failed"
+#~ msgstr "Ha fallat l'acció VM REBOOT"
+
+#~ msgid "VM SHUT DOWN action failed"
+#~ msgstr "Ha fallat l'acció VM SHUT DOWN"
+
+#~ msgid "VM START action failed"
+#~ msgstr "Ha fallat l'acció VM START"
+
+#~ msgid "VM icon"
+#~ msgstr "Icona de la MV"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "VNC Address:"
+#~ msgstr "Adreça VNC:"
+
+#~ msgid "VNC Port:"
+#~ msgstr "Port VNC:"
+
+#~ msgid "VNC TLS Port:"
+#~ msgstr "Port TLS VNC:"
+
+#~ msgid "Validating authentication token"
+#~ msgstr "Validació del testimoni d'autenticació"
+
+#~ msgid "Validating key"
+#~ msgstr "S'està validant la clau"
+
+#~ msgid "Vendor"
+#~ msgstr "Fabricant"
+
+#~ msgid "Verified"
+#~ msgstr "Verificat"
+
+#~ msgid "Verify Key"
+#~ msgstr "Verifica la clau"
+
+#~ msgid "Verifying"
+#~ msgstr "S'està verificant"
+
+#~ msgid "Version num"
+#~ msgstr "Núm. versió"
+
+#~ msgid "Very securely erasing $target"
+#~ msgstr "S'està eliminant de forma molt segura $target"
+
+#~ msgid "View Registration Details"
+#~ msgstr "Mostra els detalls del registrament"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "Màquines virtuals"
+
+#~ msgid "Virtual Machines of $0 cluster"
+#~ msgstr "Màquines virtuals del clúster $0"
+
+#~ msgid "Virtualization Service (libvirt) is Not Active"
+#~ msgstr "El servei de virtualització  (libvirt) no està actiu"
+
+#~ msgid "Virtualization Service is Available"
+#~ msgstr "El servei de virtualització està disponible"
+
+#~ msgid "Volume"
+#~ msgstr "Volum"
+
+#~ msgid "Volume Group"
+#~ msgstr "Grup de volums"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "Grup de volums $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "Grups de volums"
+
+#~ msgid "Volume ID"
+#~ msgstr "Id. del volum"
+
+#~ msgid "Volume Name"
+#~ msgstr "Nom del volum"
+
+#~ msgid "Volume Type"
+#~ msgstr "Tipus del volum"
+
+#~ msgid "Volumes"
+#~ msgstr "Volums"
+
+#~ msgid "Waiting"
+#~ msgstr "S'està esperant"
+
+#~ msgid "Waiting for details..."
+#~ msgstr "S'estan esperant els detalls..."
+
+#~ msgid "Warning:"
+#~ msgstr "Advertència:"
+
+#~ msgid "Wednesday"
+#~ msgstr "Dimecres"
+
+#~ msgid "Weeks"
+#~ msgstr "Setmanes"
+
+#~ msgid "Welcome to the Image Registry"
+#~ msgstr "Benvingut al registre d'imatges"
+
+#~ msgid "With terminal"
+#~ msgstr "Amb terminal"
+
+#~ msgid "Write-mostly"
+#~ msgstr "Escriptura-majoritària"
+
+#~ msgid "Writing"
+#~ msgstr "Escriptura"
+
+#~ msgid "Wrong user name or password"
+#~ msgstr "Contrasenya o nom d'usuari incorrecte"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS - per defecte a Red Hat Enterprise Linux 7"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Sí"
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr ""
+#~ "Actualment esteu connectat directament a aquest servidor. No el podeu "
+#~ "suprimir."
+
+#~ msgid "You can deploy an application to your cluster."
+#~ msgstr "Podeu desplegar una aplicació al vostre clúster."
+
+#~ msgid ""
+#~ "You can remove the previously stored key by running the following command"
+#~ msgstr ""
+#~ "Podeu suprimir la clau prèviament emmagatzemada amb l'execució de la "
+#~ "següent ordre"
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "No teniu el permís per visualitzar les claus públiques autoritzades per "
+#~ "aquest compte."
+
+#~ msgid "You don't have permission to manage the Docker storage pool."
+#~ msgstr ""
+#~ "No teniu els permisos per gestionar l'agrupació d'emmagatzematge de "
+#~ "Docker."
+
+#~ msgid "You need to re-subscribe this system."
+#~ msgstr "Heu de tornar a subscriure aquest sistema."
+
+#~ msgid "Your browser does not support iframes."
+#~ msgstr "El vostre navegador no admet iframes."
+
+#~ msgid ""
+#~ "Your login credentials do not give you access to use the docker registry "
+#~ "from the command line."
+#~ msgstr ""
+#~ "Les vostres credencials d'inici de sessió no us donen accés a utilitzar "
+#~ "el registre de docker des de la línia d'ordres."
+
+#~ msgid ""
+#~ "Your server will close the connection soon. You can reconnect after it "
+#~ "has restarted."
+#~ msgstr ""
+#~ "El vostre servidor tancarà la connexió aviat. Podeu tornar a connectar un "
+#~ "cop s'hagi reiniciat."
+
+#~ msgid "Your session has been terminated."
+#~ msgstr "La vostra sessió ha estat finalitzada."
+
+#~ msgid "Your session has expired. Please log in again."
+#~ msgstr "La vostra sessió ha vençut. Si us plau, torneu a iniciar la sessió."
+
+#~ msgid "[$0 bytes of binary data]"
+#~ msgstr "[$0 bytes de dades binàries]"
+
+#~ msgid "[binary data]"
+#~ msgstr "[dades binàries]"
+
+#~ msgid "[no data]"
+#~ msgstr "[sense dades]"
+
+#~ msgid "active"
+#~ msgstr "actiu"
+
+#~ msgid "alias"
+#~ msgstr "àlies"
+
+#~ msgid "and restart the machine automatically."
+#~ msgstr "i reinicia automàticament la màquina."
+
+#~ msgid "bridge"
+#~ msgstr "pont"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "bytes"
+
+#~ msgid "cdrom"
+#~ msgstr "cdrom"
+
+#~ msgid "connecting"
+#~ msgstr "connectant"
+
+#~ msgid "cores"
+#~ msgstr "nuclis"
+
+#~ msgid "crashed"
+#~ msgstr "estavellat"
+
+#~ msgid "custom"
+#~ msgstr "personalitzat"
+
+#~ msgid "default"
+#~ msgstr "per defecte"
+
+#~ msgid "direct"
+#~ msgstr "directe"
+
+#~ msgid "disabled"
+#~ msgstr "inhabilitat"
+
+#~ msgid "disk"
+#~ msgstr "disc"
+
+#~ msgid "dying"
+#~ msgstr "morint"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "p. ex. \"$0\""
+
+#~ msgid "enabled"
+#~ msgstr "habilitat"
+
+#~ msgid "error"
+#~ msgstr "error"
+
+#~ msgid "ethernet"
+#~ msgstr "ethernet"
+
+#~ msgid "every day"
+#~ msgstr "cada dia"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 - per defecte a Red Hat Enterprise Linux 6"
+
+#~ msgid "failed to list ssh host keys: $0"
+#~ msgstr "no s'han pogut llistar les claus d'amfitrions ssh: $0"
+
+#~ msgid "host"
+#~ msgstr "amfitrió"
+
+#~ msgid "iSCSI"
+#~ msgstr "iSCSI"
+
+#~ msgid "iSCSI Targets"
+#~ msgstr "Destinacions iSCSI"
+
+#~ msgid "idle"
+#~ msgstr "ociós"
+
+#~ msgid "initializing"
+#~ msgstr "inicialitzant"
+
+#~ msgid "installation failed"
+#~ msgstr "ha fallat la instal·lació"
+
+#~ msgid "installing OS"
+#~ msgstr "instal·lant el SO"
+
+#~ msgid "invalid: multiple targets defined"
+#~ msgstr "no és vàlid: s'han definit diversos objectius"
+
+#~ msgid "kdump status"
+#~ msgstr "Estat de kdump"
+
+#~ msgid "key"
+#~ msgstr "clau"
+
+#~ msgid "locally in $0"
+#~ msgstr "localment a $0"
+
+#~ msgid "maintenance"
+#~ msgstr "manteniment"
+
+#~ msgid "mcast"
+#~ msgstr "mcast"
+
+#~ msgid "n/a"
+#~ msgstr "n/d"
+
+#~ msgid "network"
+#~ msgstr "xarxa"
+
+#~ msgid "no"
+#~ msgstr "no"
+
+#~ msgid "none"
+#~ msgstr "cap"
+
+#~ msgid "oVirt"
+#~ msgstr "oVirt"
+
+#~ msgid "oVirt Host State:"
+#~ msgstr "Estat de l'amfitrió oVirt:"
+
+#~ msgid "oVirt login in progress"
+#~ msgstr "Inici de sessió d'oVirt en progrés"
+
+#~ msgid "of $0 CPU core"
+#~ msgid_plural "of $0 CPU cores"
+#~ msgstr[0] "de $0 nucli de CPU"
+#~ msgstr[1] "de $0 nuclis de CPU"
+
+#~ msgid "on Fridays"
+#~ msgstr "els divendres"
+
+#~ msgid "on Mondays"
+#~ msgstr "els dilluns"
+
+#~ msgid "on Saturdays"
+#~ msgstr "els dissabtes"
+
+#~ msgid "on Sundays"
+#~ msgstr "els diumenges"
+
+#~ msgid "on Thursdays"
+#~ msgstr "els dijous"
+
+#~ msgid "on Tuesdays"
+#~ msgstr "els dimarts"
+
+#~ msgid "on Wednesdays"
+#~ msgstr "els dimecres"
+
+#~ msgid "other"
+#~ msgstr "altres"
+
+#~ msgid "paused"
+#~ msgstr "pausa"
+
+#~ msgid "pending approval"
+#~ msgstr "pendent d'aprovació"
+
+#~ msgid "pending volume claims"
+#~ msgstr "reclamacions de volums pendents"
+
+#~ msgid "reboot"
+#~ msgstr "reinicia"
+
+#~ msgid "recommended"
+#~ msgstr "recomanat"
+
+#~ msgid "running"
+#~ msgstr "en execució"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "cerqueu pel nom, per l'espai de noms o per la descripció"
+
+#~ msgid "select container"
+#~ msgstr "seleccioneu el contenidor"
+
+#~ msgid "server"
+#~ msgstr "servidor"
+
+#~ msgid "shares"
+#~ msgstr "comparticions"
+
+#~ msgid "show less"
+#~ msgstr "mostra menys"
+
+#~ msgid "show more"
+#~ msgstr "mostra més"
+
+#~ msgid "shut off"
+#~ msgstr "apagat"
+
+#~ msgid "shutdown"
+#~ msgstr "apaga"
+
+#~ msgid "solution details"
+#~ msgstr "detalls de la solució"
+
+#~ msgid "ssh key"
+#~ msgstr "clau ssh"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "suspès (PM)"
+
+#~ msgid "threads"
+#~ msgstr "fils"
+
+#~ msgid "to host path"
+#~ msgstr "al camí de l'amfitrió"
+
+#~ msgid "to host port"
+#~ msgstr "al port de l'amfitrió"
+
+#~ msgid "udp"
+#~ msgstr "udp"
+
+#~ msgid "unassigned"
+#~ msgstr "sense assignar"
+
+#~ msgid "undefined"
+#~ msgstr "indefinit"
+
+#~ msgid "unknown"
+#~ msgstr "desconegut"
+
+#~ msgid "unknown target"
+#~ msgstr "objectiu desconegut"
+
+#~ msgid "unpartitioned space on $0"
+#~ msgstr "espai sense particionar a $0"
+
+#~ msgid "upload a JSON file"
+#~ msgstr "puja un fitxer JSON"
+
+#~ msgid "user"
+#~ msgstr "usuari"
+
+#~ msgid "vCPUs"
+#~ msgstr "vCPU"
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPUs:"
+
+#~ msgid "value"
+#~ msgstr "valor"
+
+#~ msgid "yes"
+#~ msgstr "sí"
+
+#~ msgid ""
+#~ "{{ condition.message }}. Timestamp: {{ condition.lastTransitionTime }} "
+#~ "Error count: {{ condition.generation }}"
+#~ msgstr ""
+#~ "{{ condition.message }}. Marca temporal: {{ condition."
+#~ "lastTransitionTime }} Nombre d'errors: {{ condition.generation }}"

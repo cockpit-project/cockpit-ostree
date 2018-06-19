@@ -1,0 +1,7044 @@
+# Yuri Chornoivan <yurchor@ukr.net>, 2015.
+# Yuri Chornoivan <yurchor@ukr.net>, 2015. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2016. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2017. #zanata
+# Yuri Chornoivan <yurchor@ukr.net>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2018-05-24 05:50+0000\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "Ід. ключа $0"
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 пакунок"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 пакунків"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- Додати нове сховище"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Додати"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "Додати ще один ключ"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr "Додавання"
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Застосувати"
+
+#: src/index.html:255
+msgid "Available"
+msgstr "Доступні"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Починається з '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Змінити сховище"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Перевірити наявність оновлень"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Шукаємо оновлення"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "Встановлюємо з’єднання з OSTree"
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr "Не вдалося завантажити параметри для «$0»: $1"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr "Зараз використовуємо:"
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Типовий"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Вилучити"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr "Зниження"
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr "Застарілий підпис"
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "Помилка"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr "Чинний підпис"
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr "Некоректний підпис"
+
+#: src/index.html:99
+msgid "Name"
+msgstr "Назва"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr "Немає розгортань"
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr "Не знайдено розгорнутих OSTree"
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr "Не знайдено даних налаштувань"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr "Підпис недоступний"
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr "ОС $0 не знайдено"
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr "OSTree у цій системі недоступна"
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr "Операційна система"
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr "Оновлення операційної системи"
+
+#: src/index.html:307
+msgid "Origin"
+msgstr "Походження"
+
+#: src/index.html:266
+msgid "Packages"
+msgstr "Пакунки"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr "Будь ласка, вкажіть коректну адресу"
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr "Будь ласка, вкажіть коректну назву"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr "Перенести і перезавантажити"
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "Отримуємо частини відмінностей"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "Отримуємо об’єкти метаданих"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "Отримуємо об’єкти: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "Повторно з’єднатися"
+
+#: src/index.html:305
+msgid "Released"
+msgstr "Випущено"
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr "Вилучення"
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr "Відкотити і перезавантажити"
+
+#: src/index.html:251
+msgid "Running"
+msgstr "Працює"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr "Скануємо метадані"
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "Підпис"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "Підписано"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "Оновлення програм"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Стан"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+"У цьому розгортанні містяться деякі пакунки, які є у поточній завантаженій "
+"системі"
+
+#: src/index.html:265
+msgid "Tree"
+msgstr "Дерево"
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "Адреса"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "Не вдалося обмінятися даними з OSTree"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "Оновити і перезавантажити"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Оновлення"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "Оновлення"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "Використовувати надійний ключ GPG"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Версія"
+
+#: src/index.html:282
+msgid "When"
+msgstr "Умова"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr "Записуємо об’єкти"
+
+#: src/index.html:186
+msgid "at"
+msgstr "на"
+
+#~ msgid " (shared with the OS)"
+#~ msgstr " (спільний із операційною системою)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"Хочете вилучити вказані нижче вузли?"
+
+#~ msgid " or drag & drop."
+#~ msgstr " або перетягніть і скиньте."
+
+#~ msgid "\"http\" Key escrow"
+#~ msgstr "Депонування ключів «http»"
+
+#~ msgid "\"tang\" Binding server"
+#~ msgstr "Сервер прив'язки «tang»"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0, блоковий пристрій"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "Розмір фрагмента $0"
+
+#~ msgid "$0 Disks"
+#~ msgstr "Диски $0"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "Файлова система $0"
+
+#~ msgid ""
+#~ "$0 Only users with local credentials will be able to log into this "
+#~ "machine. This may also effect other services as DNS resolution settings "
+#~ "and the list of trusted CAs may change."
+#~ msgstr ""
+#~ "$0 Лише користувачі із локальними реєстраційними даними зможуть входити "
+#~ "до системи на цій машині. Це також може вплинути на роботу інших служб, "
+#~ "оскільки можуть змінитися параметри визначення адрес DNS та список "
+#~ "довірених служб сертифікації."
+
+#~ msgid "$0 Template"
+#~ msgstr "Шаблон $0"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 біт"
+#~ msgstr[1] "$0 біти"
+#~ msgstr[2] "$0 бітів"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 байт"
+#~ msgstr[1] "$0 байти"
+#~ msgstr[2] "$0 байтів"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 байт"
+#~ msgstr[1] "$0 байти"
+#~ msgstr[2] "$0 байтів"
+
+#~ msgid "$0 data + $1 overhead used of $2 ($3)"
+#~ msgstr "$0 даних + $1 додатково використано з $2 ($3)"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 день"
+#~ msgstr[1] "$0 дні"
+#~ msgstr[2] "$0 днів"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "Не вистачає $0 диска"
+#~ msgstr[1] "Не вистачає $0 дисків"
+#~ msgstr[2] "Не вистачає $0 дисків"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "Не вистачає $0 диска"
+#~ msgstr[1] "Не вистачає $0 дисків"
+#~ msgstr[2] "Не вистачає $0 дисків"
+
+#~ msgid "$0 error"
+#~ msgstr "Помилка $0"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 завершено роботу з кодом $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "Помилка $0"
+
+#~ msgid "$0 filesystems can not be made larger."
+#~ msgstr "Файлові системи $0 не можна розширювати."
+
+#~ msgid "$0 filesystems can not be made smaller."
+#~ msgstr "Файлові системи $0 не можна звужувати."
+
+#~ msgid "$0 filesystems can not be resized here."
+#~ msgstr "Тут не можна змінювати розмір файлових систем $0."
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 година"
+#~ msgstr[1] "$0 години"
+#~ msgstr[2] "$0 годин"
+
+#~ msgid ""
+#~ "$0 is available for most operating systems. To install it, search for it "
+#~ "in GNOME Software or run the following:"
+#~ msgstr ""
+#~ "$0 можна користуватися у більшості операційних систем. Щоб встановити "
+#~ "пакунок із програмою, знайдіть відповідний запис у Програмних засобах "
+#~ "GNOME або віддайте таку команду:"
+
+#~ msgid "$0 is in active use"
+#~ msgstr "$0 активно використовується"
+
+#~ msgid "$0 is not available from any repository."
+#~ msgstr "$0 немає у жодному зі сховищ."
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 завершено з сигналом $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 хвилина"
+#~ msgstr[1] "$0 хвилини"
+#~ msgstr[2] "$0 хвилин"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 місяць"
+#~ msgstr[1] "$0 місяці"
+#~ msgstr[2] "$0 місяців"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 відповідник"
+#~ msgstr[1] "$0 відповідники"
+#~ msgstr[2] "$0 відповідників"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0 з $1"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 спільних ресурсів"
+
+#~ msgid "$0 update"
+#~ msgid_plural "$0 updates"
+#~ msgstr[0] "$0 оновлення"
+#~ msgstr[1] "$0 оновлення"
+#~ msgstr[2] "$0 оновлень"
+
+#~ msgid "$0 used of $1 ($2 saved)"
+#~ msgstr "$0 використано з $1 ($2 заощаджено)"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 тиждень"
+#~ msgstr[1] "$0 тижні"
+#~ msgstr[2] "$0 тижнів"
+
+#~ msgid "$0 will be installed."
+#~ msgstr "Буде встановлено $0."
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 рік"
+#~ msgstr[1] "$0 роки"
+#~ msgstr[2] "$0 років"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "Вільно $0%"
+#~ msgstr[1] "Вільно $0%"
+#~ msgstr[2] "Вільно $0%"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "Використано $0%"
+#~ msgstr[1] "Використано $0%"
+#~ msgstr[2] "Використано $0%"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, вільно $1"
+
+#~ msgid "$1 security fix"
+#~ msgid_plural "$1 security fixes"
+#~ msgstr[0] "$1 виправлення захисту"
+#~ msgstr[1] "$1 виправлення захисту"
+#~ msgstr[2] "$1 виправлень захисту"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (з $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "${size} ${desc}"
+#~ msgstr "${size} ${desc}"
+
+#~ msgid "'Organization' required to register."
+#~ msgstr "«Установа» потребує реєстрації."
+
+#~ msgid "'Organization' required when using activation keys."
+#~ msgstr ""
+#~ "Слід вказати щось у полі «Установа», якщо використовуються ключі "
+#~ "активації."
+
+#~ msgid "(default)"
+#~ msgstr "(типовий)"
+
+#~ msgid "(none)"
+#~ msgstr "(немає)"
+
+#~ msgid ", including $1 security fix"
+#~ msgid_plural ", including $1 security fixes"
+#~ msgstr[0] ", включно із $1 виправленням захисту"
+#~ msgstr[1] ", включно із $1 виправленнями захисту"
+#~ msgstr[2] ", включно із $1 виправленнями захисту"
+
+#~ msgid "--"
+#~ msgstr "--"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 МіБ"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 хвилина"
+
+#~ msgid "1 day"
+#~ msgstr "1 день"
+
+#~ msgid "1 hour"
+#~ msgstr "1 година"
+
+#~ msgid "1 min"
+#~ msgstr "1 хв."
+
+#~ msgid "1 week"
+#~ msgstr "1 тиждень"
+
+#~ msgid "10th"
+#~ msgstr "10-е"
+
+#~ msgid "11th"
+#~ msgstr "11-е"
+
+#~ msgid "128 KiB"
+#~ msgstr "128 КіБ"
+
+#~ msgid "12th"
+#~ msgstr "12-е"
+
+#~ msgid "13th"
+#~ msgstr "13-е"
+
+#~ msgid "14th"
+#~ msgstr "14-е"
+
+#~ msgid "15th"
+#~ msgstr "15-е"
+
+#~ msgid "16 KiB"
+#~ msgstr "16 КіБ"
+
+#~ msgid "16th"
+#~ msgstr "16-е"
+
+#~ msgid "17th"
+#~ msgstr "17-е"
+
+#~ msgid "18th"
+#~ msgstr "18-е"
+
+#~ msgid "19th"
+#~ msgstr "19-е"
+
+#~ msgid "1st"
+#~ msgstr "1-е"
+
+#~ msgid "2 MiB"
+#~ msgstr "2 МіБ"
+
+#~ msgid "2 min"
+#~ msgstr "2 хв."
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 хвилин"
+
+#~ msgid "20th"
+#~ msgstr "20-е"
+
+#~ msgid "21st"
+#~ msgstr "21-е"
+
+#~ msgid "22nd"
+#~ msgstr "22-е"
+
+#~ msgid "23rd"
+#~ msgstr "23-є"
+
+#~ msgid "24th"
+#~ msgstr "24-е"
+
+#~ msgid "25th"
+#~ msgstr "25-е"
+
+#~ msgid "26th"
+#~ msgstr "26-е"
+
+#~ msgid "27th"
+#~ msgstr "27-е"
+
+#~ msgid "28th"
+#~ msgstr "28-е"
+
+#~ msgid "29th"
+#~ msgstr "29-е"
+
+#~ msgid "2nd"
+#~ msgstr "2-е"
+
+#~ msgid "3 min"
+#~ msgstr "3 хв."
+
+#~ msgid "30th"
+#~ msgstr "30-е"
+
+#~ msgid "31st"
+#~ msgstr "31-е"
+
+#~ msgid "32 KiB"
+#~ msgstr "32 КіБ"
+
+#~ msgid "3rd"
+#~ msgstr "3-є"
+
+#~ msgid "4 KiB"
+#~ msgstr "4 КіБ"
+
+#~ msgid "4 min"
+#~ msgstr "4 хв."
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 хвилин"
+
+#~ msgid "4th"
+#~ msgstr "4-е"
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 хвилин"
+
+#~ msgid "5 min"
+#~ msgstr "5 хв."
+
+#~ msgid "5 minutes"
+#~ msgstr "5 хвилин"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 КіБ"
+
+#~ msgid "5th"
+#~ msgstr "5-е"
+
+#~ msgid "6 hours"
+#~ msgstr "6 годин"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 хвилин"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 КіБ"
+
+#~ msgid "6th"
+#~ msgstr "6"
+
+#~ msgid "7th"
+#~ msgstr "7"
+
+#~ msgid "8 KiB"
+#~ msgstr "8 КіБ"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8"
+
+#~ msgid "9th"
+#~ msgstr "9-е"
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "У {{#strong}}{{host}}{{/strong}} не встановлено сумісної версії Cockpit."
+
+#~ msgid "A disk is needed."
+#~ msgstr "Потрібен диск."
+
+#~ msgid ""
+#~ "A spare disk needs to be added first before this disk can be removed."
+#~ msgstr "Перш ніж вилучати цей диск, слід додати резервний диск."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Інтерфейс користувача для серверів GNU/Linux"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "Стеження за ARP"
+
+#~ msgid "ARP Ping"
+#~ msgstr "Луна-імпульс ARP"
+
+#~ msgid "AWS Elastic Block Store"
+#~ msgstr "Блокове сховище AWS Elastic"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Про Cockpit"
+
+#~ msgid "Access"
+#~ msgstr "Доступ"
+
+#~ msgid "Access Modes"
+#~ msgstr "Режими доступу"
+
+#~ msgid "Access Policy"
+#~ msgstr "Правила доступу"
+
+#~ msgid "Access denied"
+#~ msgstr "Доступ заборонено"
+
+#~ msgid "Account Expiration"
+#~ msgstr "Строк дії облікового запису"
+
+#~ msgid "Account Settings"
+#~ msgstr "Параметри облікового запису"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "Обліковий запис недоступний або його не можна редагувати."
+
+#~ msgid "Accounts"
+#~ msgstr "Облікові записи"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Облікові записи"
+
+#~ msgid "Action"
+#~ msgstr "Дія"
+
+#~ msgid "Activate"
+#~ msgstr "Задіяти"
+
+#~ msgid "Activating $target"
+#~ msgstr "Активуємо $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Ключ активації"
+
+#~ msgid "Active"
+#~ msgstr "Активний"
+
+#~ msgid "Active Backup"
+#~ msgstr "Активне резервування"
+
+#~ msgid "Active Pages"
+#~ msgstr "Активні сторінки"
+
+#~ msgid "Active since"
+#~ msgstr "Активний з"
+
+#~ msgid "Actual"
+#~ msgstr "Поточна"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Адаптивне урівноваження навантаження"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Адаптивне урівноваження навантаження за передаванням"
+
+#~ msgid "Add $0"
+#~ msgstr "Додати $0"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Додати додаткове сховище"
+
+#~ msgid "Add Bond"
+#~ msgstr "Додати зв’язок"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Додати місток"
+
+#~ msgid "Add Cluster Node"
+#~ msgstr "Додати вузол кластера"
+
+#~ msgid "Add Disks"
+#~ msgstr "Додати диски"
+
+#~ msgid "Add Group"
+#~ msgstr "Додати групу"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Додати вузол Kubernetes"
+
+#~ msgid "Add Machine to Dashboard"
+#~ msgstr "Додати запис комп’ютера на панель"
+
+#~ msgid "Add Member"
+#~ msgstr "Додати учасника"
+
+#~ msgid "Add Membership"
+#~ msgstr "Додати запис участі"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Додати новий кластер"
+
+#~ msgid "Add New User"
+#~ msgstr "Додати нового користувача"
+
+#~ msgid "Add Role"
+#~ msgstr "Додати роль"
+
+#~ msgid "Add Services"
+#~ msgstr "Додавання служб"
+
+#~ msgid "Add Services…"
+#~ msgstr "Додати служби…"
+
+#~ msgid "Add Storage"
+#~ msgstr "Додати сховище даних"
+
+#~ msgid "Add Team"
+#~ msgstr "Додати команду"
+
+#~ msgid "Add User"
+#~ msgstr "Додати користувача"
+
+#~ msgid "Add VLAN"
+#~ msgstr "Додати VLAN"
+
+#~ msgid "Add iSCSI Portal"
+#~ msgstr "Додати портал iSCSI"
+
+#~ msgid "Add key"
+#~ msgstr "Додати клавішу"
+
+#~ msgid "Add membership"
+#~ msgstr "Додати запис участі"
+
+#~ msgid "Add network key"
+#~ msgstr "Додати ключ мережі"
+
+#~ msgid "Add public key"
+#~ msgstr "Додати відкритий ключ"
+
+#~ msgid ""
+#~ "Adding <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Додавання <b>$0</b> призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid "Adding key"
+#~ msgstr "Додавання ключа"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "Додаємо фізичний том до $target"
+
+#~ msgid "Additional"
+#~ msgstr "Додаткові"
+
+#~ msgid "Additional DNS $val"
+#~ msgstr "Додатковий DNS $val"
+
+#~ msgid "Additional DNS Search Domains $val"
+#~ msgstr "Додаткові домени пошуку DNS $val"
+
+#~ msgid "Additional Storage"
+#~ msgstr "Додаткове сховище"
+
+#~ msgid "Additional address $val"
+#~ msgstr "Додаткова адреса $val"
+
+#~ msgid "Additional packages:"
+#~ msgstr "Додаткові пакунки:"
+
+#~ msgid "Address"
+#~ msgstr "Адреса"
+
+#~ msgid "Address $val"
+#~ msgstr "Адреса $val"
+
+#~ msgid "Address:"
+#~ msgstr "Адреса:"
+
+#~ msgid "Addresses"
+#~ msgstr "Адреси"
+
+#~ msgid "Adjust"
+#~ msgstr "Скоригувати"
+
+#~ msgid "Adjust Persistent Volume '{{ item.metadata.name }}'"
+#~ msgstr "Скоригувати сталий том «{{ item.metadata.name }}»"
+
+#~ msgid "Adjust Replication Controller {{ item.metadata.name }}"
+#~ msgstr "Скоригувати контролер реплікації {{ item.metadata.name }}"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Скоригувати маршрут"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Скоригувати службу"
+
+#~ msgid "Admin"
+#~ msgstr "Адміністратор"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Пароль адміністратора"
+
+#~ msgid "Advanced TCA"
+#~ msgstr "Розширене TCA"
+
+#~ msgid "After"
+#~ msgstr "Після"
+
+#~ msgid "After system boot"
+#~ msgstr "Після завантаження системи"
+
+#~ msgid "Alert and above"
+#~ msgstr "Тривога і вище"
+
+#~ msgid "All In One"
+#~ msgstr "Усе-в-одному"
+
+#~ msgid "All Projects"
+#~ msgstr "Всі проекти"
+
+#~ msgid "All Types"
+#~ msgstr "Всі типи"
+
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Всі дані на позначених дисках буде витерто, а диски буде додано до "
+#~ "резервного сховища даних."
+
+#~ msgid "All healthy"
+#~ msgstr "Усі корисні"
+
+#~ msgid "All images"
+#~ msgstr "Усі образи"
+
+#~ msgid "All in use"
+#~ msgstr "Усі використано"
+
+#~ msgid "All running"
+#~ msgstr "Усі запущено"
+
+#~ msgid "All running virtual machines will be turned off."
+#~ msgstr "Усі запущені віртуальні машини буде вимкнено."
+
+#~ msgid "Allow \"http://\" URL"
+#~ msgstr "Дозволити адреси «http://»"
+
+#~ msgid "Allowed Services"
+#~ msgstr "Дозволені служби"
+
+#~ msgid "Always"
+#~ msgstr "Завжди"
+
+#~ msgid "Annotations"
+#~ msgstr "Анотації"
+
+#~ msgid "Anonymous: Allow all unauthenticated users to pull images"
+#~ msgstr ""
+#~ "Анонімний: дозволити усім нерозпізнаним користувачам отримувати образи"
+
+#~ msgid "Applications"
+#~ msgstr "Програми"
+
+#~ msgid "Apply all updates"
+#~ msgstr "Застосувати усі оновлення"
+
+#~ msgid "Apply security updates"
+#~ msgstr "Застосувати оновлення захисту"
+
+#~ msgid "Apply this solution"
+#~ msgstr "Застосувати це рішення"
+
+#~ msgid "Applying solution..."
+#~ msgstr "Застосовуємо рішення…"
+
+#~ msgid "Applying updates"
+#~ msgstr "Застосовуємо оновлення"
+
+#~ msgid "Applying updates failed"
+#~ msgstr "Не вдалося застосувати оновлення"
+
+#~ msgid "Architecture"
+#~ msgstr "Архітектура"
+
+#~ msgid "Are you sure you want to delete this image?"
+#~ msgstr "Ви справді хочете вилучити цей образ?"
+
+#~ msgid "Are you sure you want to leave the '$0' domain?"
+#~ msgstr "Ви справді хочете полишити домен «$0»?"
+
+#~ msgid "Are you sure you want to leave this domain?"
+#~ msgstr "Ви справді хочете полишити цей домен?"
+
+#~ msgid "Asset Tag"
+#~ msgstr "Мітка активу"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Потрібно принаймні $0 дисків."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Потрібен принаймні один диск."
+
+#~ msgid "At specific time"
+#~ msgstr "У вказаний момент часу"
+
+#~ msgid "Audit log"
+#~ msgstr "Журнал інспектування"
+
+#~ msgid "Authenticating"
+#~ msgstr "Автентифікація"
+
+#~ msgid "Authentication"
+#~ msgstr "Розпізнавання"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "Не вдалося пройти розпізнавання"
+
+#~ msgid "Authentication Failed: Server closed connection"
+#~ msgstr "Не вдалося пройти розпізнавання: з’єднання розірвано сервером"
+
+#~ msgid "Authentication failed"
+#~ msgstr "Помилка розпізнавання"
+
+#~ msgid "Authentication required"
+#~ msgstr "Слід пройти розпізнавання"
+
+#~ msgid "Author"
+#~ msgstr "Автор"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Уповноважені відкриті ключі SSH"
+
+#~ msgid "Automatic"
+#~ msgstr "Автоматично"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Автоматично (лише DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Автоматично (DHCP)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Автоматичні оновлення"
+
+#~ msgid "Automatically selected host"
+#~ msgstr "Автоматично вибраний вузол"
+
+#~ msgid "Automatically start libvirt on boot"
+#~ msgstr "Автоматично запускати libvirt при завантаженні"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Автоматично на основі NTP"
+
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Автоматично за допомогою певних серверів NTP"
+
+#~ msgid "Autostart:"
+#~ msgstr "Автозапуск:"
+
+#~ msgid "Available Updates"
+#~ msgstr "Доступні оновлення"
+
+#~ msgid "Available targets on $0"
+#~ msgstr "Доступні призначення на $0"
+
+#~ msgid "Avatar"
+#~ msgstr "Аватар"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "BIOS"
+#~ msgstr "BIOS"
+
+#~ msgid "BIOS date"
+#~ msgstr "Дата BIOS"
+
+#~ msgid "BIOS version"
+#~ msgstr "Версія BIOS"
+
+#~ msgid "Back to Accounts"
+#~ msgstr "Назад до облікових записів"
+
+#~ msgid "Backing Device"
+#~ msgstr "Резервний пристрій"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "Механізму passwd1 передано помилкові дані"
+
+#~ msgid "Balancer"
+#~ msgstr "Балансир"
+
+#~ msgid "Base Template"
+#~ msgstr "Базовий шаблон"
+
+#~ msgid "Base template"
+#~ msgstr "Базовий шаблон"
+
+#~ msgid "Base template:"
+#~ msgstr "Базовий шаблон:"
+
+#~ msgid "Before"
+#~ msgstr "До"
+
+#~ msgid "Binds To"
+#~ msgstr "Пов'язано з"
+
+#~ msgid "Blade"
+#~ msgstr "Blade"
+
+#~ msgid "Blade enclosure"
+#~ msgstr "Обгортка Blade"
+
+#~ msgid "Block"
+#~ msgstr "Блок"
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Блоковий пристрій для файлових систем"
+
+#~ msgid "Blocked"
+#~ msgstr "Заблоковано"
+
+#~ msgid "Bond"
+#~ msgstr "Прив’язка"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Параметри зв’язку"
+
+#~ msgid "Boot ID"
+#~ msgstr "Ід. завантаження"
+
+#~ msgid "Boot Order:"
+#~ msgstr "Порядок завантаження:"
+
+#~ msgid "Bound By"
+#~ msgstr "Пов'язано"
+
+#~ msgid "Bridge"
+#~ msgstr "Міст"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Параметри порту містка"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Параметри містка"
+
+#~ msgid "Bridge port"
+#~ msgstr "Порт містка"
+
+#~ msgid "Broadcast"
+#~ msgstr "Трансляція"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Помилки у налаштуваннях"
+
+#~ msgid "Bug Fix Updates Available"
+#~ msgstr "Доступні оновлення із виправленнями вад"
+
+#~ msgid "Bugs:"
+#~ msgstr "Вади:"
+
+#~ msgid "Built"
+#~ msgstr "Зібрано"
+
+#~ msgid "Bus"
+#~ msgstr "Канал"
+
+#~ msgid "Bus Expansion Chassis"
+#~ msgstr "Апаратний блок розширення каналу"
+
+#~ msgid "CHANGE NETWORK STATE action failed"
+#~ msgstr "Не вдалося виконати дію зі зміни стану мережі"
+
+#~ msgid "CPU"
+#~ msgstr "Процесор"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "Стан процесора"
+
+#~ msgid "CPU Type:"
+#~ msgstr "Тип процесора:"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "Використання процесора: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "Пріоритетність процесора"
+
+#~ msgid "CPU usage:"
+#~ msgstr "Використання процесора:"
+
+#~ msgid "CREATE VM action failed"
+#~ msgstr "Не вдалося виконати дію CREATE VM"
+
+#~ msgid "Cached"
+#~ msgstr "Кеш"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Не вдалося зв’язатися із Docker"
+
+#~ msgid "Can't delete while unlocked"
+#~ msgstr "Не можна вилучати, доки розблоковано"
+
+#~ msgid "Can't load image"
+#~ msgstr "Не вдалося завантажити образ"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Неможливо встановити з’єднання із невідомим комп’ютером"
+
+#~ msgid "Cannot decrypt PEM-encoded private key"
+#~ msgstr "Не вдалося розшифрувати зашифрований PEM закритий ключ"
+
+#~ msgid "Cannot forward login credentials"
+#~ msgstr "Не вдалося переспрямувати реєстраційні дані для входу"
+
+#~ msgid "Cannot join a domain because realmd is not available on this system"
+#~ msgstr ""
+#~ "Не вдалося долучитися до домену, оскільки у цій системі недоступна служба "
+#~ "realmd"
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "Не можна планувати подію на минуле"
+
+#~ msgid "Capacity"
+#~ msgstr "Місткість"
+
+#~ msgid "Carrier"
+#~ msgstr "Носій сигналу"
+
+#~ msgid "Ceph Filesystem Mount"
+#~ msgstr "Змонтована файлова система Ceph"
+
+#~ msgid "Ceph Monitors"
+#~ msgstr "Монітори Ceph"
+
+#~ msgid "Change"
+#~ msgstr "Змінити"
+
+#~ msgid "Change Host Name"
+#~ msgstr "Змінити назву вузла"
+
+#~ msgid "Change Password"
+#~ msgstr "Змінити пароль"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Зміна профілю швидкодії"
+
+#~ msgid "Change Profile"
+#~ msgstr "Змінити профіль"
+
+#~ msgid "Change System Time"
+#~ msgstr "Змінити системний час"
+
+#~ msgid "Change User"
+#~ msgstr "Змінити користувача"
+
+#~ msgid "Change iSCSI Initiator Name"
+#~ msgstr "Змінити назву ініціатора iSCSI"
+
+#~ msgid "Change image stream"
+#~ msgstr "Змінити потік образу"
+
+#~ msgid "Change project"
+#~ msgstr "Змінити проект"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Змінити обмеження ресурсів"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Змінити обмеження ресурсів"
+
+#~ msgid "Change the settings"
+#~ msgstr "Змінити параметри"
+
+#~ msgid ""
+#~ "Changing the settings will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Зміна параметрів призведе до розірвання з’єднання із сервером і зробить "
+#~ "адміністративний інтерфейс користувача недоступним."
+
+#~ msgid "Checking $target"
+#~ msgstr "Перевіряємо $target"
+
+#~ msgid "Checking IP"
+#~ msgstr "Перевіряємо IP"
+
+#~ msgid "Checking RAID Device $target"
+#~ msgstr "Перевіряємо пристрій RAID $target"
+
+#~ msgid "Checking and Repairing RAID Device $target"
+#~ msgstr "Перевіряємо і відновлюємо пристрій RAID $target"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Шукаємо нові програми"
+
+#~ msgid "Checking for public keys"
+#~ msgstr "Шукаємо відкриті ключі"
+
+#~ msgid "Checking for updates…"
+#~ msgstr "Шукаємо оновлення…"
+
+#~ msgid "Checking installed software"
+#~ msgstr "Перевіряємо встановлене програмне забезпечення"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr ""
+#~ "Виберіть мову перекладу, яку буде використано для інтерфейсу програми"
+
+#~ msgid "Chunk Size"
+#~ msgstr "Розмір фрагмента"
+
+#~ msgid "Cinder"
+#~ msgstr "Cinder"
+
+#~ msgid "Claim"
+#~ msgstr "Заявити"
+
+#~ msgid "Claim Name"
+#~ msgstr "Назва заявки"
+
+#~ msgid "Class"
+#~ msgstr "Клас"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "Спорожнюємо для $target"
+
+#~ msgid "Click to see system hardware information"
+#~ msgstr "Натисніть, щоб побачити дані щодо обладнання системи"
+
+#~ msgid ""
+#~ "Clicking \"Launch Remote Viewer\" will download a .vv file and launch $0."
+#~ msgstr ""
+#~ "У результаті натискання «Запустити віддалений переглядач» буде отримано "
+#~ "файл .vv і запущено $0."
+
+#~ msgid "Client Certificate"
+#~ msgstr "Сертифікат клієнта"
+
+#~ msgid "Close"
+#~ msgstr "Закрити"
+
+#~ msgid "Close Selected Pages"
+#~ msgstr "Закрити позначені сторінки"
+
+#~ msgid "Cluster"
+#~ msgstr "Кластер"
+
+#~ msgid "Cluster Templates"
+#~ msgstr "Шаблони кластера"
+
+#~ msgid "Cluster Virtual Machines"
+#~ msgstr "Віртуальні машини кластера"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Cockpit authentication is configured incorrectly."
+#~ msgstr "Розпізнавання у Cockpit налаштовано з помилками."
+
+#~ msgid ""
+#~ "Cockpit could not contact the given host $0. Make sure it has ssh running "
+#~ "on port $1, or specify another port in the address."
+#~ msgstr ""
+#~ "Cockpit не вдалося встановити зв’язок із вказаним вузлом $0. "
+#~ "Переконайтеся, що ssh запущено на порту $1 або вкажіть інший порт у "
+#~ "адресі."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit не вдалося встановити зв’язок із вказаним вузлом."
+
+#~ msgid ""
+#~ "Cockpit had an unexpected internal error. <br/><br/>You can try "
+#~ "restarting Cockpit by pressing refresh in your browser. The javascript "
+#~ "console contains details about this error (<b>Ctrl-Shift-J</b> in most "
+#~ "browsers)."
+#~ msgstr ""
+#~ "У Cockpit сталася неочікувана внутрішня помилка. <br/><br/>Ви можете "
+#~ "спробувати перезапустити Cockpit натисканням кнопки оновлення у вашій "
+#~ "програмі для перегляду інтернету. у консолі javascript можна знайти "
+#~ "подробиці щодо цієї помилки (<b>Ctrl-Shift-J</b> у більшості програм для "
+#~ "перегляду інтернету)."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit — програма для керування сервером, яка полегшує адміністрування "
+#~ "ваших серверів під керуванням Linux за допомогою програми для перегляду "
+#~ "сторінок інтернету. Ви зможете одночасно використовувати термінал і "
+#~ "вебінструмент. Службу, яку було запущено за допомогою Cockpit, можна "
+#~ "зупинити за допомогою термінала. І навпаки, якщо трапиться помилка у "
+#~ "терміналі, ви побачите її у інтерфейсі журналу Cockpit."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr "Cockpit — інтерактивний інтерфейс адміністратора сервера Linux."
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit є несумісним із програмним забезпеченням цієї системи."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit не встановлено"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit у цій системі не встановлено."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit — чудовий інструмент для системних адміністраторів-початківців. "
+#~ "За його допомогою вони без проблем впораються із простими завданнями, "
+#~ "зокрема адмініструванням сховищ даних, інспектуванням журналів та "
+#~ "запуском і зупиненням служб. Ви зможете одночасно стежити за роботою "
+#~ "декількох серверів і адмініструвати ці сервери. Просто додайте їх одним "
+#~ "клацанням кнопкою миші і ваш комп’ютер сам нагляне за своїми приятелями."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit не вдалося встановити зв’язок ізt {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log in to {{#strong}}{{host}}{{/strong}}. "
+#~ "{{#can_sync}}You may want to try to {{#sync_link}}synchronize users{{/"
+#~ "sync_link}}.{{/can_sync}} For more authentication options and "
+#~ "troubleshooting support please upgrade cockpit-ws to a newer version."
+#~ msgstr ""
+#~ "Cockpit не вдалося увійти до {{#strong}}{{host}}{{/strong}}. {{#can_sync}}"
+#~ "Вам варто спробувати {{#sync_link}}синхронізувати користувачів{{/"
+#~ "sync_link}}.{{/can_sync}} Щоб отримати доступ до ширшого спектра способів "
+#~ "розпізнавання та до підтримки діагностики помилок, будь ласка, оновіть "
+#~ "cockpit-ws."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit не вдалося увійти до {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. To use "
+#~ "this machine with cockpit you will need to enable one of the following "
+#~ "authentication methods in the sshd config on {{#strong}}{{host}}{{/"
+#~ "strong}}:"
+#~ msgstr ""
+#~ "Cockpit не вдалося увійти до {{#strong}}{{host}}{{/strong}}. Щоб "
+#~ "користуватися цим комп’ютером за допомогою cockpit, вам слід увімкнути "
+#~ "вказані нижче способи розпізнавання у налаштуваннях sshd на {{#strong}}"
+#~ "{{host}}{{/strong}}:"
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. You can "
+#~ "change your authentication credentials below. {{#can_sync}}You may prefer "
+#~ "to {{#sync_link}}synchronize accounts and passwords{{/sync_link}}.{{/"
+#~ "can_sync}}"
+#~ msgstr ""
+#~ "Cockpit не вдалося увійти до {{#strong}}{{host}}{{/strong}}. Ви можете "
+#~ "змінити ваші реєстраційні дані для розпізнавання нижче. {{#can_sync}}"
+#~ "Можливо, варто надати перевагу {{#sync_link}}синхронізації облікових "
+#~ "записів і паролів{{/sync_link}}.{{/can_sync}}"
+
+#~ msgid "Color"
+#~ msgstr "Колір"
+
+#~ msgid "Combined memory usage"
+#~ msgstr "Поєднане використання пам’яті"
+
+#~ msgid "Combined usage of $0 CPU core"
+#~ msgid_plural "Combined usage of $0 CPU cores"
+#~ msgstr[0] "Комбіноване використання $0 ядра процесора"
+#~ msgstr[1] "Комбіноване використання $0 ядер процесора"
+#~ msgstr[2] "Комбіноване використання $0 ядер процесора"
+
+#~ msgid "Command"
+#~ msgstr "Команда"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "Команда не може бути порожньою"
+
+#~ msgid "Command:"
+#~ msgstr "Команда:"
+
+#~ msgid "Comment"
+#~ msgstr "Коментар"
+
+#~ msgid "Commit"
+#~ msgstr "Надіслати"
+
+#~ msgid "Commit Image"
+#~ msgstr "Надіслати образ"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "Не вдалося обмінятися даними з tuned"
+
+#~ msgid "Compact PCI"
+#~ msgstr "Компактний PCI"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Сумісний із усіма системами та пристроями (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Сумісний зі сучасними системами та жорсткими дисками > 2 ТБ (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Стиснути дампи аварійних завершень для заощадження місця"
+
+#~ msgid "Compression"
+#~ msgstr "Стискання"
+
+#~ msgid "Computer OU"
+#~ msgstr "OU комп’ютера"
+
+#~ msgid "Condition $0=$1 was not met"
+#~ msgstr "Умову $0=$1 не виконано"
+
+#~ msgid "Condition failed"
+#~ msgstr "Не виконано умову"
+
+#~ msgid "Configuration"
+#~ msgstr "Налаштування"
+
+#~ msgid "Configure"
+#~ msgstr "Налаштувати"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Налаштувати роботу у мережі Flannel"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Налаштувати Kubelet і проксі"
+
+#~ msgid "Configure storage..."
+#~ msgstr "Налаштувати сховище даних…"
+
+#~ msgid "Configuring"
+#~ msgstr "Налаштовування"
+
+#~ msgid "Configuring IP"
+#~ msgstr "Налаштовуємо IP"
+
+#~ msgid "Confirm"
+#~ msgstr "Підтвердити"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Підтвердження нового пароля"
+
+#~ msgid "Confirm deletion of $0"
+#~ msgstr "Підтвердження вилучення $0"
+
+#~ msgid "Confirm migration"
+#~ msgstr "Підтвердження перенесення"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Підтвердить пароль"
+
+#~ msgid "Confirm reload:"
+#~ msgstr "Підтвердження перезавантаження:"
+
+#~ msgid "Confirm save:"
+#~ msgstr "Підтвердження збереження:"
+
+#~ msgid "Conflicted By"
+#~ msgstr "Конфліктує за"
+
+#~ msgid "Conflicts"
+#~ msgstr "Конфліктує"
+
+#~ msgid "Connect"
+#~ msgstr "З'єднатися"
+
+#~ msgid "Connect automatically"
+#~ msgstr "З’єднуватися автоматично"
+
+#~ msgid "Connect to"
+#~ msgstr "З’єднатися з"
+
+#~ msgid "Connect to oVirt Engine"
+#~ msgstr "З'єднатися із рушієм oVirt"
+
+#~ msgid "Connect with any $0 viewer application."
+#~ msgstr "З’єднатися із будь-якою програмою перегляду $0."
+
+#~ msgid "Connect with any SPICE or VNC viewer application."
+#~ msgstr "З’єднатися із будь-якою програмою перегляду SPICE або VNC."
+
+#~ msgid ""
+#~ "Connecting simultaneously to more than {{ limit }} machines is "
+#~ "unsupported."
+#~ msgstr ""
+#~ "Підтримки одночасного з’єднання із понад {{ limit }} комп’ютерами не "
+#~ "передбачено."
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Встановлюємо з’єднання із Docker"
+
+#~ msgid "Connecting to SETroubleshoot daemon..."
+#~ msgstr "Встановлюємо з’єднання із фоновою службою SETroubleshoot…"
+
+#~ msgid "Connecting to Virtualization Service"
+#~ msgstr "Встановлюємо зв'язок із службою віртуалізації"
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "Встановлюємо з’єднання із комп’ютером"
+
+#~ msgid "Connecting..."
+#~ msgstr "Встановлення з’єднання…"
+
+#~ msgid "Connection"
+#~ msgstr "З’єднання"
+
+#~ msgid "Connection Error"
+#~ msgstr "Помилка з'єднання"
+
+#~ msgid "Connection Error: $0"
+#~ msgstr "Помилка з’єднання: $0"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Параметри з’єднання"
+
+#~ msgid "Connection has timed out."
+#~ msgstr "Вичерпано час очікування на з’єднання."
+
+#~ msgid "Connection will be lost"
+#~ msgstr "З’єднання буде розірвано"
+
+#~ msgid "Consists Of"
+#~ msgstr "Складається з"
+
+#~ msgid "Console Type"
+#~ msgstr "Тип консолі"
+
+#~ msgid "Consoles"
+#~ msgstr "Консолі"
+
+#~ msgid "Container"
+#~ msgstr "Контейнер"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Адміністратор контейнера"
+
+#~ msgid "Container ID"
+#~ msgstr "Ід. контейнера"
+
+#~ msgid "Container Name"
+#~ msgstr "Назва контейнера"
+
+#~ msgid "Container Runtime Version"
+#~ msgstr "Версія середовища контейнера"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "Зараз контейнер позначено як такий, що працює, але звичайна спроба "
+#~ "зупинити роботу зазнала невдачі."
+
+#~ msgid "Container is currently running."
+#~ msgstr "Контейнер працює."
+
+#~ msgid "Container:"
+#~ msgstr "Контейнер:"
+
+#~ msgid "Containers"
+#~ msgstr "Контейнери"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Контейнери"
+
+#~ msgid "Content"
+#~ msgstr "Вміст"
+
+#~ msgid "Control"
+#~ msgstr "Керування"
+
+#~ msgctxt "key"
+#~ msgid "Control"
+#~ msgstr "Ctrl"
+
+#~ msgid "Convertible"
+#~ msgstr "Змінюваний"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "Не вдалося додати усі диски"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "Не вдалося встановити зв’язок із {{host}}"
+
+#~ msgid "Could not list services"
+#~ msgstr "Не вдалося побудувати список служб"
+
+#~ msgid "Could not parse PEM-encoded certificate"
+#~ msgstr "Не вдалося обробити зашифрований PEM сертифікат"
+
+#~ msgid "Could not parse PEM-encoded private key"
+#~ msgstr "Не вдалося обробити зашифрований PEM закритий ключ"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "Не вдалося скинути резервне сховище даних"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Не вдалося змінити групи користувачів"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Не вдалося змінити пароль користувача"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "Не вдалося встановити з’єднання із сервером"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Не вдалося встановити з’єднання із комп’ютером"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Не вдалося створити записи користувачів"
+
+#~ msgid "Couldn't find running API server"
+#~ msgstr "Не вдалося знайти запущений сервер API"
+
+#~ msgid ""
+#~ "Couldn't get system subscription status. Please ensure subscription-"
+#~ "manager is installed."
+#~ msgstr ""
+#~ "Не вдалося отримати дані щодо стану передплати системи. Будь ласка, "
+#~ "переконайтеся, що встановлено subscription-manager."
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Не вдалося побудувати список локальних користувачів"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Не вдалося побудувати список користувачів"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "Не вдалося завантажити дані користувача"
+
+#~ msgid "Count:"
+#~ msgstr "Кількість:"
+
+#~ msgid "Crash dump location"
+#~ msgstr "Розташування дампу аварійного завершення"
+
+#~ msgid "Crash system"
+#~ msgstr "Аварійно завершити роботу системи"
+
+#~ msgid "Create"
+#~ msgstr "Створити"
+
+#~ msgid "Create Logical Volume"
+#~ msgstr "Створити логічний том"
+
+#~ msgid "Create New Account"
+#~ msgstr "Створити новий рахунок"
+
+#~ msgid "Create New VM"
+#~ msgstr "Створити віртуальну машину"
+
+#~ msgid "Create New Virtual Machine"
+#~ msgstr "Створити віртуальну машину"
+
+#~ msgid "Create Partition"
+#~ msgstr "Створити розділ"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "Створити пристрій RAID"
+
+#~ msgid "Create Report"
+#~ msgstr "Створити звіт"
+
+#~ msgid "Create Snapshot"
+#~ msgstr "Створення знімка"
+
+#~ msgid "Create Thin Volume"
+#~ msgstr "Створити тонкий том"
+
+#~ msgid "Create Timer"
+#~ msgstr "Створити таймер"
+
+#~ msgid "Create Timers"
+#~ msgstr "Створити таймери"
+
+#~ msgid "Create VDO Device"
+#~ msgstr "Створити пристрій VDO"
+
+#~ msgid "Create VM"
+#~ msgstr "Створення ВМ"
+
+#~ msgid "Create Virtual Machine"
+#~ msgstr "Створити віртуальну машину"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Створити групу томів"
+
+#~ msgid "Create diagnostic report"
+#~ msgstr "Створити діагностичний звіт"
+
+#~ msgid "Create empty image stream"
+#~ msgstr "Створити порожній потік образу"
+
+#~ msgid "Create image stream"
+#~ msgstr "Створити потік образу"
+
+#~ msgid "Create it"
+#~ msgstr "Створити"
+
+#~ msgid "Create new Logical Volume"
+#~ msgstr "Створити логічний том"
+
+#~ msgid "Create partition"
+#~ msgstr "Створити розділ"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "Створити розділ на $0"
+
+#~ msgid "Create partition table"
+#~ msgstr "Створити таблицю розділів"
+
+#~ msgid "Created"
+#~ msgstr "Створено"
+
+#~ msgid "Created:"
+#~ msgstr "Створено:"
+
+#~ msgid "Creating RAID Device $target"
+#~ msgstr "Створюємо пристрій RAID $target"
+
+#~ msgid "Creating filesystem on $target"
+#~ msgstr "Створюємо файлову систему на $target"
+
+#~ msgid "Creating logical volume $target"
+#~ msgstr "Створюємо логічний том $target"
+
+#~ msgid "Creating partition $target"
+#~ msgstr "Створюємо розділ $target"
+
+#~ msgid "Creating snapshot of $target"
+#~ msgstr "Створюємо знімок $target"
+
+#~ msgid ""
+#~ "Creating this VLAN will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Створення цієї VLAN  призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Creating this bond will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Створення цього зв’язку призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Creating this bridge will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Створення цього містка призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Creating this team will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Створення цієї команди призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid "Creating volume group $target"
+#~ msgstr "Створюємо групу томів $target"
+
+#~ msgid "Creation of vm $0 failed"
+#~ msgstr "Не вдалося створити віртуальну машину $0"
+
+#~ msgid "Critical and above"
+#~ msgstr "Критичні і вище"
+
+#~ msgid "Current boot"
+#~ msgstr "Поточне завантаження"
+
+#~ msgid "Custom"
+#~ msgstr "Нетиповий"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Нетипова (Вкажіть тип файлової системи)"
+
+#~ msgid "Custom URL"
+#~ msgstr "Нетипова адреса"
+
+#~ msgid "Custom encryption options"
+#~ msgstr "Нетипові параметри шифрування"
+
+#~ msgid "Custom mount option"
+#~ msgstr "Нетиповий параметр монтування"
+
+#~ msgid "Custom mount options"
+#~ msgstr "Нетипові параметри монтування"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "ДИСК НЕПРАЦЕЗДАТНИЙ"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS $val"
+#~ msgstr "DNS $val"
+
+#~ msgid "DNS Policy"
+#~ msgstr "Правило DNS"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "Домени пошуку DNS"
+
+#~ msgid "DNS Search Domains $val"
+#~ msgstr "Домени пошуку DNS $val"
+
+#~ msgid "Dashboard"
+#~ msgstr "Панель приладів"
+
+#~ msgid "Data Used"
+#~ msgstr "Використано даних"
+
+#~ msgid "Deactivate"
+#~ msgstr "Вимкнути"
+
+#~ msgid "Deactivating"
+#~ msgstr "Деактивація"
+
+#~ msgid "Deactivating $target"
+#~ msgstr "Деактивуємо $target"
+
+#~ msgid "Debug and above"
+#~ msgstr "Діагностика і вище"
+
+#~ msgid "Deduplication"
+#~ msgstr "Скасування дублювання"
+
+#~ msgid "Delay"
+#~ msgstr "Затримка"
+
+#~ msgid "Delete $0"
+#~ msgstr "Вилучити $0"
+
+#~ msgid "Delete '{{ name }}'"
+#~ msgstr "Вилучити «{{ name }}»"
+
+#~ msgid "Delete Files"
+#~ msgstr "Вилучити файли"
+
+#~ msgid "Delete Node"
+#~ msgstr "Вилучити вузол"
+
+#~ msgid "Delete Persistent Volume"
+#~ msgstr "Вилучити сталий том"
+
+#~ msgid "Delete Persistent Volume Claim"
+#~ msgstr "Вилучити заявку на сталий том"
+
+#~ msgid "Delete Project"
+#~ msgstr "Вилучення проекту"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Вилучити позначене"
+
+#~ msgid "Delete associated storage files:"
+#~ msgstr "Вилучити пов’язані файли у сховищі даних:"
+
+#~ msgid "Delete image stream"
+#~ msgstr "Вилучити потік образу"
+
+#~ msgid "Delete {{ item.kind }}"
+#~ msgstr "Вилучити {{ item.kind }}"
+
+#~ msgid "Deleting $target"
+#~ msgstr "Вилучаємо $target"
+
+#~ msgid ""
+#~ "Deleting <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Вилучення <b>$0</b> призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Deleting a Pod will kill all associated containers. Pods may be "
+#~ "automatically created again in some cases."
+#~ msgstr ""
+#~ "Вилучення кокона призведе до завершення роботи усіх пов’язаних із ним "
+#~ "контейнерів. У певних випадках кокон може бути повторно створено "
+#~ "автоматично.\n"
+#~ "          "
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr "Вилучення пристрою RAID призведе до витирання з нього усіх даних."
+
+#~ msgid "Deleting a VDO device will erase all data on it."
+#~ msgstr "Вилучення пристрою VDO призведе до витирання усіх даних на ньому."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr ""
+#~ "Вилучення контейнера призведе до витирання усіх даних, що на ньому "
+#~ "зберігаються."
+
+#~ msgid "Deleting a logical volume will delete all data in it."
+#~ msgstr ""
+#~ "Вилучення логічного тому призведе до витирання усіх даних, що на ньому "
+#~ "зберігаються."
+
+#~ msgid "Deleting a partition will delete all data in it."
+#~ msgstr ""
+#~ "Вилучення розділу призведе до вилучення усіх даних, що на ньому "
+#~ "зберігаються."
+
+#~ msgid "Deleting a volume group will erase all data on it."
+#~ msgstr ""
+#~ "Вилучення групи томів призведе до витирання усіх даних, що у ній "
+#~ "зберігаються."
+
+#~ msgid ""
+#~ "Deleting an image will delete it, but you can probably download it again "
+#~ "if you need it later.  Unless this image has never been pushed to a "
+#~ "repository, that is, in which case you probably can't download it again."
+#~ msgstr ""
+#~ "Вилучення образу призведе до його вилучення, але ви, ймовірно, зможете "
+#~ "отримати його знову, якщо виникне потреба. Виключенням є випадок, коли "
+#~ "образ ніколи не було записано до сховища. У цьому випадку ви, ймовірно, "
+#~ "не зможете отримати образ знову."
+
+#~ msgid "Deleting volume group $target"
+#~ msgstr "Вилучаємо групу томів $target"
+
+#~ msgid "Deploy"
+#~ msgstr "Розгорнути"
+
+#~ msgid "Deploy Application"
+#~ msgstr "Розгорнути програму"
+
+#~ msgid "Deployment Causes"
+#~ msgstr "Причини розгортання"
+
+#~ msgid "Deployment Config"
+#~ msgstr "Налаштування розгортання"
+
+#~ msgid "Deployment Configs"
+#~ msgstr "Налаштування розгортання"
+
+#~ msgid "Description"
+#~ msgstr "Опис"
+
+#~ msgid "Description:"
+#~ msgstr "Опис:"
+
+#~ msgid "Desktop"
+#~ msgstr "Робоча станція"
+
+#~ msgid "Detachable"
+#~ msgstr "Змінний"
+
+#~ msgid "Details"
+#~ msgstr "Подробиці"
+
+#~ msgid "Device"
+#~ msgstr "Пристрій"
+
+#~ msgid "Device File"
+#~ msgstr "Файл пристрою"
+
+#~ msgid "Device is read-only"
+#~ msgstr "Пристрій придатний лише для читання"
+
+#~ msgid "Diagnostic reports"
+#~ msgstr "Діагностичні звіти"
+
+#~ msgid "Digest"
+#~ msgstr "Контрольна сума"
+
+#~ msgid "Directory"
+#~ msgstr "Каталог"
+
+#~ msgid "Directory $0 isn't writable or doesn't exist."
+#~ msgstr "Каталог $0 є непридатним до запису або не існує."
+
+#~ msgid "Disable"
+#~ msgstr "Вимкнути"
+
+#~ msgid "Disable tuned"
+#~ msgstr "Вимкнути tuned"
+
+#~ msgid "Disabled"
+#~ msgstr "Вимкнено"
+
+#~ msgid "Disconnect"
+#~ msgstr "Від’єднатися"
+
+#~ msgid "Disconnected"
+#~ msgstr "Роз'єднано"
+
+#~ msgid "Disconnected from serial console. Click the Reconnect button."
+#~ msgstr ""
+#~ "Від'єднано від послідовної консолі. Натисніть кнопку «Повторно "
+#~ "з'єднатися»."
+
+#~ msgid "Disk"
+#~ msgstr "Диск"
+
+#~ msgid "Disk I/O"
+#~ msgstr "Дисковий ввід/вивід"
+
+#~ msgid "Disk Utilization: $0%"
+#~ msgstr "Використання диска: $0%"
+
+#~ msgid "Disk is OK"
+#~ msgstr "З диском усе гаразд"
+
+#~ msgid "Disks"
+#~ msgstr "Диски"
+
+#~ msgid "Display Language"
+#~ msgstr "Мова перекладу"
+
+#~ msgid "Display name"
+#~ msgstr "Показана назва"
+
+#~ msgid "Do you want to add the role '{{ fields.displayRole }}'?"
+#~ msgstr "Хочете додати роль «{{ fields.displayRole }}»?"
+
+#~ msgid ""
+#~ "Do you want to delete the '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}' image stream?"
+#~ msgstr ""
+#~ "Хочете вилучити потік образу «{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}»?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume '{{item.metadata.name}}'?"
+#~ msgstr "Ви хочете вилучити сталий том «{{item.metadata.name}}»?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume Claim '{{item.metadata."
+#~ "name}}'?"
+#~ msgstr "Ви хочете вилучити заявку на сталий том «{{item.metadata.name}}»?"
+
+#~ msgid "Do you want to delete the {{ item.kind }} '{{item.metadata.name}}'?"
+#~ msgstr "Хочете вилучити {{ item.kind }} «{{item.metadata.name}}»?"
+
+#~ msgid "Do you want to delete this Node?"
+#~ msgstr "Хочете вилучити цей вузол?"
+
+#~ msgid ""
+#~ "Do you want to remove the image tagged as '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+#~ msgstr ""
+#~ "Хочете вилучити образ із мітками «{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}:{{tag.tag}}»?"
+
+#~ msgid ""
+#~ "Do you want to remove the role '{{ fields.displayRole }}' from member "
+#~ "{{ fields.member.metadata.name }}?"
+#~ msgstr ""
+#~ "Хочете вилучити роль «{{ fields.displayRole }}» із запису учасника "
+#~ "{{ fields.member.metadata.name }}?"
+
+#~ msgid "Docker Version"
+#~ msgstr "Версія Docker"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "Docker не встановлено або не активовано у цій системі"
+
+#~ msgid "Docking Station"
+#~ msgstr "Станція заряджання"
+
+#~ msgid "Domain"
+#~ msgstr "Домен"
+
+#~ msgid "Domain $0 could not be contacted"
+#~ msgstr "Не вдалося встановити зв’язок із доменом $0"
+
+#~ msgid "Domain $0 is not supported"
+#~ msgstr "Підтримки домену $0 не передбачено"
+
+#~ msgid "Domain Address"
+#~ msgstr "Адреса домену"
+
+#~ msgid "Domain Administrator Name"
+#~ msgstr "Ім’я адміністратора домену"
+
+#~ msgid "Domain Administrator Password"
+#~ msgstr "Пароль адміністратора домену"
+
+#~ msgid "Don't Repeat"
+#~ msgstr "Не повторювати"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "Не перезаписувати наявні дані"
+
+#~ msgid "Don't pull images automatically"
+#~ msgstr "Не отримувати образи автоматично"
+
+#~ msgid "Done!"
+#~ msgstr "Готово!"
+
+#~ msgid "Download"
+#~ msgstr "Отримати"
+
+#~ msgid "Download report"
+#~ msgstr "Звіт щодо отримання"
+
+#~ msgid "Download the MSI from $0"
+#~ msgstr "Отримати MSI з $0"
+
+#~ msgid "Downloaded"
+#~ msgstr "Отримано"
+
+#~ msgid "Downloading"
+#~ msgstr "Отримуємо"
+
+#~ msgid "Downloading $0"
+#~ msgstr "Отримуємо $0"
+
+#~ msgid "Drive"
+#~ msgstr "Диск"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Диск"
+
+#~ msgid "Driver"
+#~ msgstr "Драйвер"
+
+#~ msgid "Drives"
+#~ msgstr "Диски"
+
+#~ msgid "Drop file here to upload."
+#~ msgstr "Скиньте сюди файл для вивантаження."
+
+#~ msgid "Duplicate alias"
+#~ msgstr "Дублювання псевдоніма"
+
+#~ msgid "Duplicate port"
+#~ msgstr "Дублювання порту"
+
+#~ msgid "Edit"
+#~ msgstr "Змінити"
+
+#~ msgid "Edit Server"
+#~ msgstr "Змінити сервер"
+
+#~ msgid "Edit image stream"
+#~ msgstr "Редагувати потік образу"
+
+#~ msgid "Edit the vdsm.conf"
+#~ msgstr "Редагувати vdsm.conf"
+
+#~ msgid "Ejecting $target"
+#~ msgstr "Видобуваємо $target"
+
+#~ msgid "Embedded PC"
+#~ msgstr "Вбудований ПК"
+
+#~ msgid "Empty"
+#~ msgstr "Порожній"
+
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Спорожнити"
+
+#~ msgid "Empty Directory"
+#~ msgstr "Порожній каталог"
+
+#~ msgid "Emptying $target"
+#~ msgstr "Спорожняємо $target"
+
+#~ msgid "Emulated Machine:"
+#~ msgstr "Емуляція машини:"
+
+#~ msgid "Enable"
+#~ msgstr "Увімкнути"
+
+#~ msgid "Enable Forcefully"
+#~ msgstr "Примусово увімкнути"
+
+#~ msgid "Enabled"
+#~ msgstr "Увімкнено"
+
+#~ msgid "Encrypted $0"
+#~ msgstr "Зашифрований $0"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "Шифрована EXT4 (LUKS)"
+
+#~ msgid "Encrypted Logical Volume of $0"
+#~ msgstr "Зашифрований логічний том $0"
+
+#~ msgid "Encrypted Partition of $0"
+#~ msgstr "Шифрований розділ $0"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "Шифрована XFS (LUKS)"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Encrypted data"
+#~ msgstr "Зашифровані дані"
+
+#~ msgid "Encrypted volumes can not be resized here."
+#~ msgstr "Тут не можна змінювати розмір шифрованих томів."
+
+#~ msgid "Encrypted volumes need to be unlocked before they can be resized."
+#~ msgstr ""
+#~ "Перш ніж можна буде змінювати розмір зашифрованих томів, такі томи слід "
+#~ "розблокувати."
+
+#~ msgid "Encryption"
+#~ msgstr "Шифрування"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Параметри шифрування"
+
+#~ msgid "Endpoint"
+#~ msgstr "Кінцевий пункт"
+
+#~ msgid "Endpoint Name"
+#~ msgstr "Назва кінцевої точки"
+
+#~ msgid "Endpoints"
+#~ msgstr "Кінцеві точки"
+
+#~ msgid "Ends"
+#~ msgstr "Завершується"
+
+#~ msgid "Enforce policy:"
+#~ msgstr "Правила примушення:"
+
+#~ msgid "Enhancement Updates Available"
+#~ msgstr "Доступні оновлення із поліпшеннями"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "Введіть IP-адресу або назву вузла"
+
+#~ msgid "Enter New VM name"
+#~ msgstr "Введіть назву нової ВМ"
+
+#~ msgid ""
+#~ "Entering a different password here means you will need to retype it every "
+#~ "time you reconnect to this machine"
+#~ msgstr ""
+#~ "Введення іншого пароля у це поле означатиме, що вам доведеться повторно "
+#~ "вводити його кожного разу, коли ви повторно встановлюватимете з’єднання "
+#~ "із цією машиною."
+
+#~ msgid "Entry"
+#~ msgstr "Запис"
+
+#~ msgid "Entrypoint"
+#~ msgstr "Точка входження"
+
+#~ msgid "Environment"
+#~ msgstr "Середовище"
+
+#~ msgid "Erase"
+#~ msgstr "Витерти"
+
+#~ msgid "Erase containers and reset storage pool"
+#~ msgstr "Витерти контейнери і відновити початковий стан резервного сховища"
+
+#~ msgid "Erasing $target"
+#~ msgstr "Витираємо $target"
+
+#~ msgid "Errata:"
+#~ msgstr "Помилки:"
+
+#~ msgid "Error"
+#~ msgstr "Помилка"
+
+#~ msgid "Error and above"
+#~ msgstr "Помилка і вище"
+
+#~ msgid "Error getting certificate details: $0"
+#~ msgstr "Помилка під час спроби отримати параметри сертифіката: $0"
+
+#~ msgid "Error loading users: {{perm_failed}}"
+#~ msgstr "Помилка під час завантаження списку користувачів: {{perm_failed}}"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Повідомлення щодо помилки від Docker:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Помилка під час спроби зберегти уповноважені ключі: "
+
+#~ msgid "Error while deleting alert: $0"
+#~ msgstr "Помилка під час вилучення нагадування: $0"
+
+#~ msgid "Error while setting SELinux mode: '$0'"
+#~ msgstr "Помилка під час спроби встановити режим SELinux: «$0»"
+
+#~ msgid "Error writing kubectl config"
+#~ msgstr "Помилка під час спроби записати налаштування kubectl"
+
+#~ msgid "Ethernet MAC"
+#~ msgstr "MAC Ethernet"
+
+#~ msgid "Ethernet MTU"
+#~ msgstr "MTU Ethernet"
+
+#~ msgid "Ethtool"
+#~ msgstr "Ethtool"
+
+#~ msgid "Everything"
+#~ msgstr "Все"
+
+#~ msgid "Excellent password"
+#~ msgstr "Чудовий пароль"
+
+#~ msgid "Existing passphrase"
+#~ msgstr "Наявний пароль"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "Завершено $ExitCode"
+
+#~ msgid "Expansion Chassis"
+#~ msgstr "Апаратний блок розширення"
+
+#~ msgid "Expose container ports"
+#~ msgstr "Відкрити порти контейнера"
+
+#~ msgid "Extended Partition"
+#~ msgstr "Розширений розділ"
+
+#~ msgid "FAILED"
+#~ msgstr "ПОМИЛКА"
+
+#~ msgid "FQDN"
+#~ msgstr "FQDN"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "Не вдалося додати комп’ютер: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Не вдалося змінити пароль"
+
+#~ msgid "Failed to delete alert: $0"
+#~ msgstr "Не вдалося вилучити нагадування: $0"
+
+#~ msgid "Failed to disable tuned"
+#~ msgstr "Не вдалося вимкнути tuned"
+
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr "Невдалося вимкнути профіль tuned"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Не вдалося змінити запис комп’ютера: $0"
+
+#~ msgid "Failed to enable tuned"
+#~ msgstr "Не вдалося увімкнути tuned"
+
+#~ msgid "Failed to load authorized keys."
+#~ msgstr "Не вдалося завантажити уповноважені ключі."
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr "Не вдалося запустити Docker: $0"
+
+#~ msgid "Failed to stop Docker scope: $0"
+#~ msgstr "Не вдалося зупинити область Docker: $0"
+
+#~ msgid "Failed to switch profile"
+#~ msgstr "Не вдалося перемкнути профіль"
+
+#~ msgid "Fibre Channel"
+#~ msgstr "Оптоволоконний канал"
+
+#~ msgid "File"
+#~ msgstr "Файл"
+
+#~ msgid "Filesystem"
+#~ msgstr "Файлова система"
+
+#~ msgid "Filesystem Mounting"
+#~ msgstr "Монтування файлової системи"
+
+#~ msgid "Filesystem Name"
+#~ msgstr "Назва файлової системи"
+
+#~ msgid "Filesystem Type"
+#~ msgstr "Тип файлової системи"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Тип файлової системи"
+
+#~ msgid "Filesystems"
+#~ msgstr "Файлові системи"
+
+#~ msgid "Filter Services"
+#~ msgstr "Фільтрувати служби"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Відбиток"
+
+#~ msgid "Firewall"
+#~ msgstr "Брандмауер"
+
+#~ msgid "Firewall is not available"
+#~ msgstr "Брандмауер недоступний"
+
+#~ msgid "Flex"
+#~ msgstr "Flex"
+
+#~ msgid "Flocker"
+#~ msgstr "Flocker"
+
+#~ msgid "Flocker Dataset Name"
+#~ msgstr "Назва набору даних Flocker"
+
+#~ msgid "Follows docker repo"
+#~ msgstr "Стежить за сховищем docker"
+
+#~ msgid "Force Change"
+#~ msgstr "Примусова зміна"
+
+#~ msgid "Force Delete"
+#~ msgstr "Примусове вилучення"
+
+#~ msgid "Force Restart"
+#~ msgstr "Примусовий перезапуск"
+
+#~ msgid "Force Shut Down"
+#~ msgstr "Примусово вимкнути"
+
+#~ msgid "Force password change"
+#~ msgstr "Примусова зміна пароля"
+
+#~ msgid "Format"
+#~ msgstr "Формат"
+
+#~ msgid "Format $0"
+#~ msgstr "Форматувати $0"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Форматувати диск $0"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr ""
+#~ "Форматування диска призведе до знищення даних, які на ньому зберігаються."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr ""
+#~ "Форматування пристрою для зберігання даних призведе до знищення даних, "
+#~ "які на ньому зберігаються."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "Затримка переспрямування $forward_delay"
+
+#~ msgid "Free"
+#~ msgstr "Вільно"
+
+#~ msgid "Free Space"
+#~ msgstr "Вільне місце"
+
+#~ msgid "Friday"
+#~ msgstr "п'ятниця"
+
+#~ msgid "From"
+#~ msgstr "З"
+
+#~ msgid "Full Name"
+#~ msgstr "Повне ім'я"
+
+#~ msgid "GCE Persistent Disk"
+#~ msgstr "Сталий диск GCE"
+
+#~ msgid "Gateway:"
+#~ msgstr "Шлюз:"
+
+#~ msgid "General"
+#~ msgstr "Загальний"
+
+#~ msgid "Generating report"
+#~ msgstr "Створюємо звіт"
+
+#~ msgid "Get new image"
+#~ msgstr "Отримати новий образ"
+
+#~ msgid "GiB"
+#~ msgstr "ГіБ"
+
+#~ msgid "Git Repository"
+#~ msgstr "Сховище Git"
+
+#~ msgid "Gluster FS"
+#~ msgstr "ФС Gluster"
+
+#~ msgid "GlusterFS"
+#~ msgstr "GlusterFS"
+
+#~ msgid "Go to"
+#~ msgstr "Перейти до"
+
+#~ msgid "Go to Application"
+#~ msgstr "Перейти до програми"
+
+#~ msgid "Go to now"
+#~ msgstr "Перейти зараз"
+
+#~ msgid "Grant additional push or admin access to specific members below."
+#~ msgstr ""
+#~ "Нижче можна надати додатковий доступ для запису або адміністрування "
+#~ "окремим користувачам."
+
+#~ msgid "Graphics Console (VNC)"
+#~ msgstr "Графічна консоль (VNC)"
+
+#~ msgid "Graphics Console in Desktop Viewer"
+#~ msgstr "Графічна консоль у перегляді стільниці"
+
+#~ msgid "Group Members"
+#~ msgstr "Учасники групи"
+
+#~ msgid "Group or Project"
+#~ msgstr "Група або проект"
+
+#~ msgid "Groups"
+#~ msgstr "Групи"
+
+#~ msgid "Grow"
+#~ msgstr "Збільшити"
+
+#~ msgid "Grow Logical Volume"
+#~ msgstr "Збільшити логічний том"
+
+#~ msgid "Grow logical size of $0"
+#~ msgstr "Збільшити логічний розмір $0"
+
+#~ msgid "Grow to take all space"
+#~ msgstr "Збільшити так, щоб використати усе місце"
+
+#~ msgid "HA"
+#~ msgstr "HA"
+
+#~ msgid "HA:"
+#~ msgstr "HA:"
+
+#~ msgid "HTTP method"
+#~ msgstr "Метод HTTP"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Режим початкової зони"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Режим початкової зони (hairpin)"
+
+#~ msgid "Hand Held"
+#~ msgstr "Портативний"
+
+#~ msgid "Hard Disk"
+#~ msgstr "Твердий диск"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Жорсткий диск"
+
+#~ msgid "Hardware"
+#~ msgstr "Обладнання"
+
+#~ msgid "Hardware Information"
+#~ msgstr "Дані щодо обладнання"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Час вітання $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "Вузол"
+
+#~ msgid "Host Name"
+#~ msgstr "Назва вузла"
+
+#~ msgid "Host Path"
+#~ msgstr "Шлях на вузлі"
+
+#~ msgid "Host key is incorrect"
+#~ msgstr "Ключ вузла є неправильним"
+
+#~ msgid "Host to Maintenance"
+#~ msgstr "Вузол для обслуговування"
+
+#~ msgid "Hour : Minute"
+#~ msgstr "Година : Хвилина"
+
+#~ msgid "Hour needs to be a number between 0-23"
+#~ msgstr "Години слід вказувати у форматі числа від 0 до 23"
+
+#~ msgid "Hours"
+#~ msgstr "Години"
+
+#~ msgid "I/O Wait"
+#~ msgstr "Очікування В-В"
+
+#~ msgid "INSTALL VM action failed"
+#~ msgstr "Помилка під час дії зі встановлення ВМ"
+
+#~ msgid "IP"
+#~ msgstr "IP"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-адреса"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP-адреса:"
+
+#~ msgid "IP Prefix Length:"
+#~ msgstr "Довжина префікса IP:"
+
+#~ msgid "IP Settings"
+#~ msgstr "Параметри IP"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "Параметри IPv4"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "Параметри IPv6"
+
+#~ msgid "ISCSI"
+#~ msgstr "ISCSI"
+
+#~ msgid "Id"
+#~ msgstr "Ід."
+
+#~ msgid "Id $id"
+#~ msgstr "Ід. $id"
+
+#~ msgid "Id:"
+#~ msgstr "Ід.:"
+
+#~ msgid "Identifier"
+#~ msgstr "Ідентифікатор"
+
+#~ msgid "Identities"
+#~ msgstr "Профілі"
+
+#~ msgid "Identity"
+#~ msgstr "Профіль"
+
+#~ msgid "Ignore"
+#~ msgstr "Ігнорувати"
+
+#~ msgid "Image"
+#~ msgstr "Образ"
+
+#~ msgid "Image $0"
+#~ msgstr "Зображення $0"
+
+#~ msgid "Image ID"
+#~ msgstr "Ід. образу"
+
+#~ msgid "Image Name"
+#~ msgstr "Назви предметів"
+
+#~ msgid "Image Registry"
+#~ msgstr "Реєстр образів"
+
+#~ msgid "Image Search"
+#~ msgstr "Пошук образів"
+
+#~ msgid "Image Stream"
+#~ msgstr "Потік образу"
+
+#~ msgid "Image commands"
+#~ msgstr "Команди роботи з образами"
+
+#~ msgid "Image count"
+#~ msgstr "Кількість образів"
+
+#~ msgid "Image stream"
+#~ msgstr "Потік образу"
+
+#~ msgid "Image:"
+#~ msgstr "Зображення:"
+
+#~ msgid "Images"
+#~ msgstr "Зображення"
+
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Образи"
+
+#~ msgid "Images and running containers"
+#~ msgstr "Образи і запущені контейнери"
+
+#~ msgid "Images by project"
+#~ msgstr "Образи за проектом"
+
+#~ msgid "Images may be pulled by anonymous users"
+#~ msgstr "Обрати можуть отримувати анонімні користувачі"
+
+#~ msgid "Images may be pulled by any authenticated user or group"
+#~ msgstr ""
+#~ "Образи може бути отримати будь-яким розпізнаним користувачем або "
+#~ "учасником групи"
+
+#~ msgid "Images may only be pulled by specific users or groups"
+#~ msgstr ""
+#~ "Образи може бути отримано лише вказаними користувачами або учасниками груп"
+
+#~ msgid "Images pushed recently"
+#~ msgstr "Нещодавно вивантажені образи"
+
+#~ msgid "Immediately Start VM"
+#~ msgstr "Негайно запустити ВМ"
+
+#~ msgid "In Sync"
+#~ msgstr "Синхронізовано"
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, use the commands below."
+#~ msgstr ""
+#~ "З метою розпочати надсилання образів до реєстру скористайтеся наведеними "
+#~ "нижче командами."
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, you need to create a "
+#~ "project."
+#~ msgstr ""
+#~ "Щоб розпочати надсилання образів до реєстру, вам слід створити проект."
+
+#~ msgid ""
+#~ "In order to synchronize users, you need to log in to {{#strong}}{{host}}"
+#~ "{{/strong}}."
+#~ msgstr ""
+#~ "Для синхронізації параметрів користувачів, слід увійти до {{#strong}}"
+#~ "{{host}}{{/strong}}. "
+
+#~ msgid "Inactive"
+#~ msgstr "Неактивний"
+
+#~ msgid "Inactive volume"
+#~ msgstr "Неактивний том"
+
+#~ msgid "Incorrect Host Key"
+#~ msgstr "Неправильний ключ вузла"
+
+#~ msgid "Index Memory"
+#~ msgstr "Пам'ять покажчика"
+
+#~ msgid "Info and above"
+#~ msgstr "Інформація і вище"
+
+#~ msgid "Information about the Docker storage pool is not available."
+#~ msgstr "Немає доступу до даних щодо резервного сховища даних Docker."
+
+#~ msgid "Initializing..."
+#~ msgstr "Ініціалізація…"
+
+#~ msgid "Install"
+#~ msgstr "Встановити"
+
+#~ msgid "Install All Updates"
+#~ msgstr "Встановити усі оновлення"
+
+#~ msgid "Install NFS Support"
+#~ msgstr "Встановити підтримку NFS"
+
+#~ msgid "Install Security Updates"
+#~ msgstr "Встановити оновлення захисту"
+
+#~ msgid "Install Software"
+#~ msgstr "Встановити програмне забезпечення"
+
+#~ msgid "Install setroubleshoot-server to troubleshoot SELinux events."
+#~ msgstr ""
+#~ "Встановіть setroubleshoot-server, щоб мати змогу діагностувати причини "
+#~ "подій SELinux."
+
+#~ msgid "Installation Source"
+#~ msgstr "Джерело для встановлення"
+
+#~ msgid "Installation Source Type"
+#~ msgstr "Тип джерела для встановлення"
+
+#~ msgid "Installation Source should not be empty"
+#~ msgstr "Запис джерела для встановлення має бути непорожнім"
+
+#~ msgid "Installed"
+#~ msgstr "Встановлено"
+
+#~ msgid "Installed products"
+#~ msgstr "Встановлені продукти"
+
+#~ msgid "Installing"
+#~ msgstr "Встановлення"
+
+#~ msgid "Installing $0"
+#~ msgstr "Встановлюємо $0"
+
+#~ msgid "Instantiate"
+#~ msgstr "Створити екземпляр"
+
+#~ msgid "Interface"
+#~ msgstr "Інтерфейс"
+
+#~ msgid "Interfaces"
+#~ msgstr "Інтерфейси"
+
+#~ msgid "Internal Error: Invalid challenge header"
+#~ msgstr "Внутрішня помилка: некоректний заголовок виклику"
+
+#~ msgid "Internal error"
+#~ msgstr "Внутрішня помилка"
+
+#~ msgid "Invalid address $0"
+#~ msgstr "Некоректна адреса $0"
+
+#~ msgid "Invalid credentials"
+#~ msgstr "Реєстраційні дані вказано з помилками"
+
+#~ msgid "Invalid date format"
+#~ msgstr "Некоректний формат дати"
+
+#~ msgid "Invalid date format and invalid time format"
+#~ msgstr "Некоректний формат дати і часу"
+
+#~ msgid "Invalid date format."
+#~ msgstr "Некоректний формат дати."
+
+#~ msgid "Invalid expiration date"
+#~ msgstr "Некоректна дата строку завершення дії"
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Некоректні права доступу до файла"
+
+#~ msgid "Invalid filename"
+#~ msgstr "Некоректна назва файла"
+
+#~ msgid "Invalid key"
+#~ msgstr "Некоректний ключ"
+
+#~ msgid "Invalid metric $0"
+#~ msgstr "Некоректна метрика $0"
+
+#~ msgid "Invalid number of days"
+#~ msgstr "Некоректна кількість днів"
+
+#~ msgid "Invalid number."
+#~ msgstr "Некоректне число."
+
+#~ msgid "Invalid port"
+#~ msgstr "Некоректний порт"
+
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Некоректний префікс $0"
+
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Некоректний префікс або маска мережі $0"
+
+#~ msgid "Invalid time format"
+#~ msgstr "Некоректний формат визначення часу"
+
+#~ msgid "Invalid time zone"
+#~ msgstr "Некоректний часовий пояс"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Некоректне ім’я користувача чи пароль"
+
+#~ msgid "IoT Gateway"
+#~ msgstr "Шлюз IoT"
+
+#~ msgid "Is sshd running on a different port?"
+#~ msgstr "sshd працює на іншому порті?"
+
+#~ msgid "Jobs"
+#~ msgstr "Завдання"
+
+#~ msgid "Join"
+#~ msgstr "З'єднати"
+
+#~ msgid "Join Domain"
+#~ msgstr "Долучитися до домену"
+
+#~ msgid "Join a Domain"
+#~ msgstr "Долучитися до домену"
+
+#~ msgid "Joining this domain is not supported"
+#~ msgstr "Підтримки долучення до цього домену не передбачено"
+
+#~ msgid "Joins Namespace Of"
+#~ msgstr "Долучається до простору назв"
+
+#~ msgid "Journal"
+#~ msgstr "Журнал"
+
+#~ msgid "Journal entry"
+#~ msgstr "Запис журналу"
+
+#~ msgid "Journal entry not found"
+#~ msgstr "Не знайдено запису журналу"
+
+#~ msgid ""
+#~ "Kdump service not installed. Please ensure package kexec-tools is "
+#~ "installed."
+#~ msgstr ""
+#~ "Не встановлено службу Kdump. Будь ласка, переконайтеся, що у системі "
+#~ "встановлено пакунок kexec-tools."
+
+#~ msgid "Keep connection"
+#~ msgstr "Підтримувати з’єднання"
+
+#~ msgid "Kerberos Based SSO"
+#~ msgstr "SSO на основі Kerberos"
+
+#~ msgid "Kerberos Ticket"
+#~ msgstr "Квиток Kerberos"
+
+#~ msgid "Kernel"
+#~ msgstr "Ядро"
+
+#~ msgid "Kernel Dump"
+#~ msgstr "Дамп ядра"
+
+#~ msgid "Kernel Version"
+#~ msgstr "Версія ядра"
+
+#~ msgid "Key Ring Path"
+#~ msgstr "Шлях до сховища ключів"
+
+#~ msgid "Key can't be retrieved"
+#~ msgstr "Не вдалося отримати ключ"
+
+#~ msgid "Key does not work"
+#~ msgstr "Ключ не працює"
+
+#~ msgid "Key is obsolete"
+#~ msgstr "Ключ є застарілим"
+
+#~ msgid "Key is okay"
+#~ msgstr "Ключ працездатний"
+
+#~ msgid "Key server address"
+#~ msgstr "Адреса сервера ключів"
+
+#~ msgid "Kubelet Version"
+#~ msgstr "Версія Kubelet"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Кластер Kubernetes"
+
+#~ msgid "LACP Key"
+#~ msgstr "Ключ LACP"
+
+#~ msgid "Labels"
+#~ msgstr "Мітки"
+
+#~ msgid "Labels:"
+#~ msgstr "Мітки:"
+
+#~ msgid "Laptop"
+#~ msgstr "Переносний ПК"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Попередні 24 години"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Попередні 7 днів"
+
+#~ msgid "Last Heartbeat"
+#~ msgstr "Останній такт"
+
+#~ msgid "Last Login"
+#~ msgstr "Останній вхід"
+
+#~ msgid "Last Status Change"
+#~ msgstr "Остання зміна стану"
+
+#~ msgid "Last Trigger"
+#~ msgstr "Останній перемикач"
+
+#~ msgid "Last Updated"
+#~ msgstr "Останнє оновлення"
+
+#~ msgid "Last checked: $0 ago"
+#~ msgstr "Востаннє перевірено: $0 тому"
+
+#~ msgid "Latest Version"
+#~ msgstr "Найсвіжіша версія"
+
+#~ msgid "Launch Remote Viewer"
+#~ msgstr "Запустити віддалений переглядач"
+
+#~ msgid "Leave"
+#~ msgstr "Вийти"
+
+#~ msgid "Leave Domain"
+#~ msgstr "Полишити домен"
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in user. "
+#~ "If you enter a different username, that user will always be used when "
+#~ "connecting to this machine."
+#~ msgstr ""
+#~ "Не заповнюйте, щоб встановити з’єднання із цією машиною від імені "
+#~ "поточного користувача системи. Якщо ви введете ім’я іншого користувача, "
+#~ "для встановлення з’єднання із цією машиною завжди використовуватиметься "
+#~ "це ім’я."
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in "
+#~ "user{{#default_user}} ({{default_user}}){{/default_user}}. If you enter a "
+#~ "different username, that user will always be used connecting to this "
+#~ "machine."
+#~ msgstr ""
+#~ "Не заповнюйте, щоб встановити з’єднання із цією машиною від імені "
+#~ "поточного користувача системи{{#default_user}} ({{default_user}}){{/"
+#~ "default_user}}. Якщо ви введете ім’я іншого користувача, для встановлення "
+#~ "з’єднання із цією машиною завжди використовуватиметься це ім’я."
+
+#~ msgid "Licensed under:"
+#~ msgstr "Умови ліцензування:"
+
+#~ msgid "Link Monitoring"
+#~ msgstr "Спостереження за зв’язком"
+
+#~ msgid "Link Watch"
+#~ msgstr "Спостереження за посиланнями"
+
+#~ msgid "Link down delay"
+#~ msgstr "Затримка розірвання зв’язку"
+
+#~ msgid "Link local"
+#~ msgstr "Пов’язати локальний"
+
+#~ msgid "Link to another container"
+#~ msgstr "Посилання на інший контейнер"
+
+#~ msgid "Link up delay"
+#~ msgstr "Затримка встановлення зв’язку"
+
+#~ msgid "Links"
+#~ msgstr "Посилання"
+
+#~ msgid "Links:"
+#~ msgstr "Посилання:"
+
+#~ msgid "Load Balancing"
+#~ msgstr "Збалансовування навантаження"
+
+#~ msgid "Load earlier entries"
+#~ msgstr "Завантажити попередні записи"
+
+#~ msgid "Loading ..."
+#~ msgstr "Завантажуємо…"
+
+#~ msgid "Loading available updates failed"
+#~ msgstr "Не вдалося завантажити список доступних оновлень"
+
+#~ msgid "Loading available updates, please wait..."
+#~ msgstr "Завантажуємо доступні оновлення, зачекайте…"
+
+#~ msgid "Loading data ..."
+#~ msgstr "Завантажуємо дані…"
+
+#~ msgid "Loading..."
+#~ msgstr "Завантаження…"
+
+#~ msgid "Local Accounts"
+#~ msgstr "Локальні облікові записи"
+
+#~ msgid "Local Disks"
+#~ msgstr "Локальні диски"
+
+#~ msgid "Local Filesystem"
+#~ msgstr "Локальна файлова система"
+
+#~ msgid "Local Mount Point"
+#~ msgstr "Локальна точка монтування"
+
+#~ msgid "Location"
+#~ msgstr "Розташування"
+
+#~ msgid "Lock"
+#~ msgstr "Заблокувати"
+
+#~ msgid "Lock Account"
+#~ msgstr "Заблокувати обліковий запис"
+
+#~ msgid "Lock account on $0"
+#~ msgstr "Заблокувати обліковий запис $0"
+
+#~ msgid "Lock to prevent privileged tasks"
+#~ msgstr "Заблокувати, щоб запобігти виконанню привілейованих завдань"
+
+#~ msgid "Locked"
+#~ msgstr "Заблоковано"
+
+#~ msgid "Locking $target"
+#~ msgstr "Блокуємо $target"
+
+#~ msgid "Log In"
+#~ msgstr "Увійти"
+
+#~ msgid "Log Out"
+#~ msgstr "Вийти"
+
+#~ msgid "Log in again"
+#~ msgstr "Знову увійти"
+
+#~ msgid "Log in to {{host}}"
+#~ msgstr "Вхід до {{host}}"
+
+#~ msgid "Log in with your server user account."
+#~ msgstr ""
+#~ "Увійти на основі даних вашого облікового запису користувача сервера."
+
+#~ msgid "Log into OpenShift command line tools:"
+#~ msgstr "Вхід до інтерфейсу інструментів командного рядка OpenShift:"
+
+#~ msgid "Log into the registry:"
+#~ msgstr "Вхід до реєстру:"
+
+#~ msgid "Log messages"
+#~ msgstr "Повідомлення журналу"
+
+#~ msgid "Logged In"
+#~ msgstr "Вхід"
+
+#~ msgid "Logical"
+#~ msgstr "Логічний"
+
+#~ msgid "Logical Size"
+#~ msgstr "Логічний розмір"
+
+#~ msgid "Logical Unit Number"
+#~ msgstr "Логічний номер модуля"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Логічний том"
+
+#~ msgid "Logical Volume (Snapshot)"
+#~ msgstr "Логічний том (знімок)"
+
+#~ msgid "Logical Volume of $0"
+#~ msgstr "Логічний том $0"
+
+#~ msgid "Login"
+#~ msgstr "Користувач"
+
+#~ msgid "Login Again"
+#~ msgstr "Користувач ще раз"
+
+#~ msgid "Login Password"
+#~ msgstr "Пароль користувача"
+
+#~ msgid "Login commands"
+#~ msgstr "Команди входу"
+
+#~ msgid "Login failed"
+#~ msgstr "Невдала спроба увійти"
+
+#~ msgid "Login/password or activation key required to register."
+#~ msgstr ""
+#~ "Для реєстрації потрібна пара значень користувач-пароль або ключ активації."
+
+#~ msgid "Logout Successful"
+#~ msgstr "Успішний вихід"
+
+#~ msgid "Logs"
+#~ msgstr "Журнали"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "З’єднання розірвано. Намагаємося його повторно встановити"
+
+#~ msgid "Low Profile Desktop"
+#~ msgstr "Низькопрофільна робоча станція"
+
+#~ msgid "Lunch Box"
+#~ msgstr "Пусковий комп'ютер"
+
+#~ msgid "MAC"
+#~ msgstr "MAC"
+
+#~ msgid "MAC Address"
+#~ msgstr "MAC-адреса"
+
+#~ msgid "MAC Address:"
+#~ msgstr "MAC-адреса:"
+
+#~ msgid "MIGRATE action failed"
+#~ msgstr "Не вдалося виконати дію MIGRATE"
+
+#~ msgid "MII (Recommended)"
+#~ msgstr "MII (рекомендоване)"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "MTU must be a positive number"
+#~ msgstr "MTU має бути додатнім числом"
+
+#~ msgid "Machine ID"
+#~ msgstr "Ід. комп’ютера"
+
+#~ msgid "Machine SSH Key Fingerprints"
+#~ msgstr "Відбитки ключів SSH комп’ютерів"
+
+#~ msgid "Machines"
+#~ msgstr "Машини"
+
+#~ msgid "Main Server Chassis"
+#~ msgstr "Апаратний блок основного сервера"
+
+#~ msgid "Managed"
+#~ msgstr "Керована"
+
+#~ msgid "Manifest"
+#~ msgstr "Маніфест"
+
+#~ msgid "Manual"
+#~ msgstr "Вручну"
+
+#~ msgid "Manual Connection"
+#~ msgstr "З’єднання вручну"
+
+#~ msgid "Manually"
+#~ msgstr "Вручну"
+
+#~ msgid "Manually verify the key on the server: "
+#~ msgstr "Вручну перевірити ключ на сервері: "
+
+#~ msgid "Marking $target as faulty"
+#~ msgstr "Позначаємо $target як помилковий"
+
+#~ msgid "Mask"
+#~ msgstr "Маска"
+
+#~ msgid "Mask Forcefully"
+#~ msgstr "Примусово замаскувати"
+
+#~ msgid "Master"
+#~ msgstr "Основний"
+
+#~ msgid "Maximum message age $max_age"
+#~ msgstr "Максимальний вік повідомлення $max_age"
+
+#~ msgid "Medium"
+#~ msgstr "Носій"
+
+#~ msgid "Member of"
+#~ msgstr "Учасник"
+
+#~ msgid "Member of RAID Device"
+#~ msgstr "Елемент пристрою RAID"
+
+#~ msgid "Member of RAID Device $0"
+#~ msgstr "Елемент пристрою RAID $0"
+
+#~ msgid "Members"
+#~ msgstr "Учасники"
+
+#~ msgid "Membership"
+#~ msgstr "Участь"
+
+#~ msgid "Memory"
+#~ msgstr "Пам'ять"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Пам'ять"
+
+#~ msgid "Memory Utilization: $0%"
+#~ msgstr "Використання пам’яті: $0%"
+
+#~ msgid "Memory limit"
+#~ msgstr "Обмеження пам’яті"
+
+#~ msgid "Memory should be positive number"
+#~ msgstr "Об'єм пам'яті має бути додатним числом"
+
+#~ msgid "Memory usage:"
+#~ msgstr "Використання пам'яті:"
+
+#~ msgid "Memory:"
+#~ msgstr "Пам’ять:"
+
+#~ msgid "Message"
+#~ msgstr "Повідомлення"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Повідомлення користувачам, які увійшли"
+
+#~ msgid "Metadata"
+#~ msgstr "Метадані"
+
+#~ msgid "Metadata Used"
+#~ msgstr "Використано метаданих"
+
+#~ msgid "Method"
+#~ msgstr "Метод"
+
+#~ msgid "MiB"
+#~ msgstr "МіБ"
+
+#~ msgid "Migrate To:"
+#~ msgstr "Перенести до:"
+
+#~ msgid "Mini PC"
+#~ msgstr "Міні-ПК"
+
+#~ msgid "Mini Tower"
+#~ msgstr "Міні-башточка"
+
+#~ msgid "Minute needs to be a number between 0-59"
+#~ msgstr "Хвилини слід вказувати у форматі числа від 0 до 59"
+
+#~ msgid "Minutes"
+#~ msgstr "Хвилини"
+
+#~ msgid "Mode"
+#~ msgstr "Режим"
+
+#~ msgid "Model"
+#~ msgstr "Модель"
+
+#~ msgid "Model type"
+#~ msgstr "Тип моделі"
+
+#~ msgid "Modify"
+#~ msgstr "Змінити"
+
+#~ msgid "Modifying $target"
+#~ msgstr "Змінюємо $target"
+
+#~ msgid "Monday"
+#~ msgstr "понеділок"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "Інтервал оновлення"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "Спостерігаємо за цілями"
+
+#~ msgid "Monitors"
+#~ msgstr "Монітори"
+
+#~ msgid "More"
+#~ msgstr "Більше"
+
+#~ msgid "More Information"
+#~ msgstr "Докладніше"
+
+#~ msgid "More details"
+#~ msgstr "Докладніше"
+
+#~ msgid "Mount"
+#~ msgstr "Змонтувати"
+
+#~ msgid "Mount Location"
+#~ msgstr "Місце монтування"
+
+#~ msgid "Mount Options"
+#~ msgstr "Параметри монтування"
+
+#~ msgid "Mount Point"
+#~ msgstr "Точка монтування"
+
+#~ msgid "Mount at boot"
+#~ msgstr "Змонтувати при завантаженні"
+
+#~ msgid "Mount container volumes"
+#~ msgstr "Змонтувати томи контейнера"
+
+#~ msgid "Mount options"
+#~ msgstr "Параметри монтування"
+
+#~ msgid "Mount point can not be empty"
+#~ msgstr "Точка монтування не може бути порожньою"
+
+#~ msgid "Mount point cannot be empty."
+#~ msgstr "Точка монтування не може бути порожньою."
+
+#~ msgid "Mount point must start with \"/\"."
+#~ msgstr "Запис точки монтування має починатися з «/»."
+
+#~ msgid "Mount read only"
+#~ msgstr "Змонтувати лише для читання"
+
+#~ msgid "Mounted At"
+#~ msgstr "Змонтовано"
+
+#~ msgid "Mounting"
+#~ msgstr "Монтування"
+
+#~ msgid "Mounting $target"
+#~ msgstr "Монтуємо $target"
+
+#~ msgid "Multi-system Chassis"
+#~ msgstr "Багатосистемний апаратний блок"
+
+#~ msgid "N/A"
+#~ msgstr "н/д"
+
+#~ msgid "NFS"
+#~ msgstr "NFS"
+
+#~ msgid "NFS Mount"
+#~ msgstr "Змонтована NFS"
+
+#~ msgid "NFS Mounts"
+#~ msgstr "Монтування NFS"
+
+#~ msgid "NFS Support not installed"
+#~ msgstr "Не встановлено підтримки NFS"
+
+#~ msgid "NSNA Ping"
+#~ msgstr "Луна-імпульс NSNA"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS - Сумісна з більшістю систем"
+
+#~ msgid "NTP Server"
+#~ msgstr "Сервер NTP"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "Назва не повинна бути порожньою."
+
+#~ msgid "Name cannot be empty."
+#~ msgstr "Назва не може бути порожньою."
+
+#~ msgid "Name cannot be longer than 127 characters."
+#~ msgstr "Назва не повинна бути довшою за 127 символів."
+
+#~ msgid "Name cannot contain the character '$0'."
+#~ msgstr "Назва не повинна містити символу «$0»."
+
+#~ msgid "Name cannot contain whitespace."
+#~ msgstr "У назві не повинно бути пробілів"
+
+#~ msgid "Name should not be empty"
+#~ msgstr "Назва має бути непорожньою"
+
+#~ msgid "Name should not consist of empty characters only"
+#~ msgstr "Назва не може складатися лише із порожніх символів"
+
+#~ msgid "Namespace"
+#~ msgstr "Простір назв"
+
+#~ msgid "Namespace cannot be empty."
+#~ msgstr "Простір назв не може бути порожнім."
+
+#~ msgid "Need at least one NTP server"
+#~ msgstr "Потрібен принаймні один сервер NTP"
+
+#~ msgid "Network"
+#~ msgstr "Мережа"
+
+#~ msgid "Network Traffic"
+#~ msgstr "Навантаження на мережу"
+
+#~ msgid "Network keys"
+#~ msgstr "Ключі мережі"
+
+#~ msgid "Networking"
+#~ msgstr "Робота у мережі"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Робота у мережі"
+
+#~ msgid "Networking Logs"
+#~ msgstr "Журнали роботи у мережі"
+
+#~ msgid "Networks"
+#~ msgstr "Мережі"
+
+#~ msgid "Never"
+#~ msgstr "Ніколи"
+
+#~ msgid "Never expire password"
+#~ msgstr "Необмежений строк дії пароля"
+
+#~ msgid "Never lock account"
+#~ msgstr "Ніколи не блокувати обліковий запис"
+
+#~ msgid "New Group"
+#~ msgstr "Нова група"
+
+#~ msgid "New NFS Mount"
+#~ msgstr "Нове монтування NFS"
+
+#~ msgid "New Password"
+#~ msgstr "Новий пароль"
+
+#~ msgid "New Project"
+#~ msgstr "Новий проект"
+
+#~ msgid "New image stream"
+#~ msgstr "Новий потік образу"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "Новий пароль не прийнято"
+
+#~ msgid "New project"
+#~ msgstr "Новий проект"
+
+#~ msgid "Next"
+#~ msgstr "Далі"
+
+#~ msgid "Next Run"
+#~ msgstr "Наступний запуск"
+
+#~ msgid "Nice"
+#~ msgstr "Пріоритетність"
+
+#~ msgid "No"
+#~ msgstr "Ні"
+
+#~ msgid "No Delay"
+#~ msgstr "Без затримки"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Немає файлової системи"
+
+#~ msgid "No Logical Volumes"
+#~ msgstr "Немає логічних томів"
+
+#~ msgid "No NFS mounts set up"
+#~ msgstr "Монтувань NFS не налаштовано"
+
+#~ msgid "No PEM-encoded certificate found"
+#~ msgstr "Не знайдено зашифрованого PEM сертифіката"
+
+#~ msgid "No PEM-encoded private key found"
+#~ msgstr "Не знайдено зашифрованого PEM закритого ключа"
+
+#~ msgid "No Pods are using this claim"
+#~ msgstr "Цю вимогу не використовує жоден кокон"
+
+#~ msgid "No SELinux alerts."
+#~ msgstr "Немає сповіщень SELinux."
+
+#~ msgid "No VM found in oVirt."
+#~ msgstr "У oVirt не знайдено ВМ."
+
+#~ msgid "No VM is running or defined on this host"
+#~ msgstr ""
+#~ "У цій основній системі не запущено або не визначено віртуальних машин"
+
+#~ msgid "No Volume Bound"
+#~ msgstr "Не пов’язано тому"
+
+#~ msgid "No additional local storage found."
+#~ msgstr "Додаткових локальний сховищ даних не знайдено."
+
+#~ msgid "No alias specified"
+#~ msgstr "Альтернативної назви не вказано"
+
+#~ msgid "No applications installed or available"
+#~ msgstr "Немає встановлених або доступних програм"
+
+#~ msgid "No archive has been created."
+#~ msgstr "Архів не було створено."
+
+#~ msgid "No boot device found"
+#~ msgstr "Не знайдено пристрою для завантаження"
+
+#~ msgid "No carrier"
+#~ msgstr "Немає сигналу"
+
+#~ msgid "No configuration found"
+#~ msgstr "Не знайдено налаштувань"
+
+#~ msgid "No console defined for this virtual machine."
+#~ msgstr "Для цієї віртуальної машини консолей не визначено."
+
+#~ msgid "No container specified"
+#~ msgstr "Контейнер не вказано"
+
+#~ msgid "No containers"
+#~ msgstr "Немає контейнерів"
+
+#~ msgid "No containers that match the current filter"
+#~ msgstr "Немає контейнерів, які проходять поточні умови фільтрування"
+
+#~ msgid "No description provided."
+#~ msgstr "Опису не надано."
+
+#~ msgid "No disks are available."
+#~ msgstr "Немає доступних дисків."
+
+#~ msgid "No disks defined for this VM"
+#~ msgstr "Для цієї ВМ не визначено дисків"
+
+#~ msgid "No drives attached"
+#~ msgstr "Не долучено жодного диска"
+
+#~ msgid "No free space"
+#~ msgstr "Недостатньо вільного простору"
+
+#~ msgid "No groups are present."
+#~ msgstr "Немає груп."
+
+#~ msgid "No host keys found."
+#~ msgstr "Не знайдено ключів вузлів."
+
+#~ msgid "No iSCSI targets set up"
+#~ msgstr "Призначень iSCSI не налаштовано"
+
+#~ msgid "No image streams are present."
+#~ msgstr "Немає потоків образів."
+
+#~ msgid "No images"
+#~ msgstr "Немає образів"
+
+#~ msgid "No images pushed"
+#~ msgstr "Не вивантажено жодного образу"
+
+#~ msgid "No images that match the current filter"
+#~ msgstr "Немає образів, які проходять поточні умови фільтрування"
+
+#~ msgid "No installation package found for this application."
+#~ msgstr "Для цієї програми не знайдено пакунка для встановлення."
+
+#~ msgid "No installed products on the system."
+#~ msgstr "У системі немає встановлених продуктів."
+
+#~ msgid "No matching files found"
+#~ msgstr "Відповідних файлів не знайдено"
+
+#~ msgid "No media inserted"
+#~ msgstr "Не виявлено носія даних"
+
+#~ msgid ""
+#~ "No memory reserved. Append a crashkernel option to the kernel command "
+#~ "line (e.g. in /etc/default/grub) to reserve memory at boot time. Example: "
+#~ "crashkernel=512M"
+#~ msgstr ""
+#~ "Немає зарезервованої пам’яті. Додайте параметр crashkernel до командного "
+#~ "рядка ядра (наприклад у /etc/default/grub), щоб зарезервувати пам’ять під "
+#~ "час завантаження. Приклад: crashkernel=512M"
+
+#~ msgid ""
+#~ "No metadata file was selected. Please select a Kubernetes metadata file."
+#~ msgstr ""
+#~ "Не вибрано файл метаданих. Будь ласка, виберіть файл метаданих Kubernetes."
+
+#~ msgid "No network interfaces defined for this VM"
+#~ msgstr "Немає інтерфейсів мережі, які визначено для цієї ВМ"
+
+#~ msgid "No nodes in cluster"
+#~ msgstr "У кластері немає вузлів"
+
+#~ msgid "No oVirt connection"
+#~ msgstr "Немає з'єднання oVirt"
+
+#~ msgid "No open ports"
+#~ msgstr "Немає відкрити портів"
+
+#~ msgid "No partitioning"
+#~ msgstr "Немає розподілу на розділи"
+
+#~ msgid "No pods deployed"
+#~ msgstr "Коконів не розгорнуто"
+
+#~ msgid "No pods replicated"
+#~ msgstr "Реплік коконів не створено"
+
+#~ msgid "No pods scheduled"
+#~ msgstr "Коконів не заплановано"
+
+#~ msgid "No pods selected"
+#~ msgstr "Коконів не позначено"
+
+#~ msgid "No projects are present."
+#~ msgstr "Немає проектів."
+
+#~ msgid "No real name specified"
+#~ msgstr "Не вказано справжнього імені"
+
+#~ msgid "No results for $0"
+#~ msgstr "Не знайдено нічого, що б відповідало $0"
+
+#~ msgid "No running containers"
+#~ msgstr "Немає запущених контейнерів"
+
+#~ msgid "No running containers that match the current filter"
+#~ msgstr ""
+#~ "Немає запущених контейнерів, які проходять поточні умови фільтрування"
+
+#~ msgid "No storage set up as RAID"
+#~ msgstr "Жодне зі сховищ даних не налаштовано як RAID"
+
+#~ msgid "No storage set up as VDO"
+#~ msgstr "Немає сховища даних налаштованого як VDO"
+
+#~ msgid "No such file or directory"
+#~ msgstr "Немає такого файла або каталогу"
+
+#~ msgid "No tags are present."
+#~ msgstr "Немає міток."
+
+#~ msgid "No updates pending"
+#~ msgstr "У черзі немає оновлень"
+
+#~ msgid "No user name specified"
+#~ msgstr "Не вказано імені користувача"
+
+#~ msgid "No users are present."
+#~ msgstr "Немає користувачів."
+
+#~ msgid "No virtual machines"
+#~ msgstr "Немає віртуальних машин"
+
+#~ msgid "No volume groups created"
+#~ msgstr "Груп томів не створено"
+
+#~ msgid "No volumes are present."
+#~ msgstr "Немає томів."
+
+#~ msgid "No volumes in use"
+#~ msgstr "Немає використаних томів"
+
+#~ msgid "Node"
+#~ msgstr "Вузол"
+
+#~ msgid "Node:"
+#~ msgstr "Вузол:"
+
+#~ msgid "Nodes"
+#~ msgstr "Вузли"
+
+#~ msgid "Nodes are the machines that run your containers."
+#~ msgstr "Вузли — комп’ютери, на яких запущено ваші контейнери."
+
+#~ msgid "None"
+#~ msgstr "Немає"
+
+#~ msgid "Not Available"
+#~ msgstr "Немає доступу"
+
+#~ msgid "Not Ready"
+#~ msgstr "Не готовий"
+
+#~ msgid "Not a valid number of replicas"
+#~ msgstr "Некоректна кількість реплік"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "Некоректний закритий ключ"
+
+#~ msgid "Not a valid value for Host"
+#~ msgstr "Некоректне значення вузла"
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "Не уповноважено на доступ до Docker у цій системі"
+
+#~ msgid "Not authorized to upload-report"
+#~ msgstr "Не уповноважено на вивантаження звітів"
+
+#~ msgid "Not available"
+#~ msgstr "Недоступний"
+
+#~ msgid "Not connected"
+#~ msgstr "Не з’єднано"
+
+#~ msgid "Not deployed"
+#~ msgstr "Не розгорнуто"
+
+#~ msgid "Not found"
+#~ msgstr "Не знайдено"
+
+#~ msgid "Not mounted"
+#~ msgstr "Не змонтовано"
+
+#~ msgid "Not permitted to perform this action."
+#~ msgstr "Немає дозволу на виконання цієї дії."
+
+#~ msgid "Not running"
+#~ msgstr "Зупинено"
+
+#~ msgid "Not synchronized"
+#~ msgstr "Не синхронізовано"
+
+#~ msgid "Not yet synced"
+#~ msgstr "Ще не синхронізовано"
+
+#~ msgid "Note"
+#~ msgstr "Примітка"
+
+#~ msgid "Notebook"
+#~ msgstr "Ноутбук"
+
+#~ msgid "Notice and above"
+#~ msgstr "Зауваження і вище"
+
+#~ msgid "OK"
+#~ msgstr "Гаразд"
+
+#~ msgid "OS"
+#~ msgstr "ОС"
+
+#~ msgid "OS Type:"
+#~ msgstr "Тип ОС:"
+
+#~ msgid "OS Vendor"
+#~ msgstr "Виробник ОС"
+
+#~ msgid "OS Versions"
+#~ msgstr "Версії ОС"
+
+#~ msgid "Occurred $0"
+#~ msgstr "Сталося $0"
+
+#~ msgid "Occurred between $0 and $1"
+#~ msgstr "Сталося між $0 і $1"
+
+#~ msgid "Off"
+#~ msgstr "Вимкнено"
+
+#~ msgid "Ok"
+#~ msgstr "Гаразд"
+
+#~ msgid "Old Password"
+#~ msgstr "Старий пароль"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Старий пароль не прийнято"
+
+#~ msgid "On"
+#~ msgstr "Увімкнено"
+
+#~ msgid "On Build"
+#~ msgstr "Збирання"
+
+#~ msgid "On Failure"
+#~ msgstr "Якщо помилка"
+
+#~ msgid "On a mounted device"
+#~ msgstr "На змонтованому пристрої"
+
+#~ msgid "On failure, retry $0 time"
+#~ msgid_plural "On failure, retry $0 times"
+#~ msgstr[0] "Якщо помилка, повторити $0 раз"
+#~ msgstr[1] "Якщо помилка, повторити $0 рази"
+#~ msgstr[2] "Якщо помилка, повторити $0 разів"
+
+#~ msgid "One Time Password"
+#~ msgstr "Одноразовий пароль"
+
+#~ msgid "Only $0 of $1 are used."
+#~ msgstr "Використано лише $0 з $1."
+
+#~ msgid "Only Emergency"
+#~ msgstr "Лише критичне"
+
+#~ msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed."
+#~ msgstr "Можна використовувати лише літери, цифри, : , _ , . , @ , -."
+
+#~ msgid "Only files of size $0 MiB and less are supported"
+#~ msgstr "Підтримку передбачено лише для файлів розміру $0 МіБ або меншого"
+
+#~ msgid "Ooops!"
+#~ msgstr "Вибачте!"
+
+#~ msgid "Operation '$operation' on $target"
+#~ msgstr "Дія «$operation» над $target"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Пристрій читання оптичних дисків"
+
+#~ msgid "Optimized for:"
+#~ msgstr "Оптимізовано для:"
+
+#~ msgid "Options"
+#~ msgstr "Параметри"
+
+#~ msgid "Organization"
+#~ msgstr "Установа"
+
+#~ msgid "Other"
+#~ msgstr "Інше"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Other Data"
+#~ msgstr "Інші дані"
+
+#~ msgid "Other Devices"
+#~ msgstr "Інші пристрої"
+
+#~ msgid "Other Options"
+#~ msgstr "Інші параметри"
+
+#~ msgid "Overview"
+#~ msgstr "Огляд"
+
+#~ msgid "Overwrite existing data with zeros"
+#~ msgstr "Перезаписати наявні дані нулями"
+
+#~ msgid "PCI"
+#~ msgstr "PCI"
+
+#~ msgid "PD Name"
+#~ msgstr "Назва PD"
+
+#~ msgid "Package information"
+#~ msgstr "Дані щодо пакунка"
+
+#~ msgid "PackageKit crashed"
+#~ msgstr "Аварійне завершення роботи PackageKit"
+
+#~ msgid "PackageKit is not installed"
+#~ msgstr "PackageKit не встановлено"
+
+#~ msgid "PackageKit reported error code $0"
+#~ msgstr "PackageKit повідомлено про помилку із кодом $0"
+
+#~ msgid "Parent"
+#~ msgstr "Батьківський"
+
+#~ msgid "Parent $parent"
+#~ msgstr "Батьківський $parent"
+
+#~ msgid "Part Of"
+#~ msgstr "Частина"
+
+#~ msgid "Part of "
+#~ msgstr "Є частиною "
+
+#~ msgid "Partition"
+#~ msgstr "Розділ"
+
+#~ msgid "Partition of $0"
+#~ msgstr "Розділ $0"
+
+#~ msgid "Partitioning"
+#~ msgstr "Розподіл"
+
+#~ msgid "Passive"
+#~ msgstr "Неактивний"
+
+#~ msgid "Passphrase"
+#~ msgstr "Пароль"
+
+#~ msgid "Passphrase cannot be empty"
+#~ msgstr "Пароль не може бути порожнім"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Паролі не збігаються"
+
+#~ msgid "Password"
+#~ msgstr "Пароль"
+
+#~ msgid "Password Expiration"
+#~ msgstr "Строк дії пароля"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "Пароль є неприйнятним"
+
+#~ msgid "Password is too weak"
+#~ msgstr "Пароль є надто простим"
+
+#~ msgid "Password must be changed"
+#~ msgstr "Пароль має бути змінено"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Пароль не прийнято"
+
+#~ msgid ""
+#~ "Password not usable for privileged tasks or to connect to other machines"
+#~ msgstr ""
+#~ "Пароль непридатний для виконання для привілейованих завдань та з’єднання "
+#~ "з іншими комп’ютерами"
+
+#~ msgid "Paste JSON below, "
+#~ msgstr "Вставте JSON нижче, "
+
+#~ msgid "Paste the contents of your public SSH key file here"
+#~ msgstr "Сюди слід вставити вміст файла вашого відкритого ключа SSH"
+
+#~ msgid "Path"
+#~ msgstr "Шлях"
+
+#~ msgid "Path cost"
+#~ msgstr "Вартість маршруту"
+
+#~ msgid "Path cost $path_cost"
+#~ msgstr "Вартість шляху $path_cost"
+
+#~ msgid "Path on Server"
+#~ msgstr "Шлях на сервері"
+
+#~ msgid "Path on server cannot be empty."
+#~ msgstr "Шлях на сервері не може бути порожнім."
+
+#~ msgid "Path on server must start with \"/\"."
+#~ msgstr "Шлях на сервері має починатися з «/»."
+
+#~ msgid "Path to ISO file on host's file system"
+#~ msgstr "Шлях до ISO у файловій системі основної системи"
+
+#~ msgid "Path to file"
+#~ msgstr "Шлях до файла"
+
+#~ msgid "Paths"
+#~ msgstr "Шляхи"
+
+#~ msgid "Pending Volume Claims"
+#~ msgstr "Заявки щодо томів у черзі"
+
+#~ msgid "Performance Profile"
+#~ msgstr "Профіль швидкодії"
+
+#~ msgid "Peripheral Chassis"
+#~ msgstr "Периферійний апаратний блок"
+
+#~ msgid "Permanent"
+#~ msgstr "Постійний"
+
+#~ msgid "Permission denied"
+#~ msgstr "Доступ заборонено"
+
+#~ msgid "Persistent Volumes"
+#~ msgstr "Сталі томи"
+
+#~ msgid "Phase"
+#~ msgstr "Фаза"
+
+#~ msgid "Physical"
+#~ msgstr "Фізичний"
+
+#~ msgid "Physical Volume"
+#~ msgstr "Фізичний том"
+
+#~ msgid "Physical Volumes"
+#~ msgstr "Фізичні томи"
+
+#~ msgid "Physical volume of $0"
+#~ msgstr "Фізичний том $0"
+
+#~ msgid "Physical volumes can not be resized here."
+#~ msgstr "Тут не можна змінювати розміри фізичних томів."
+
+#~ msgid "Ping Interval"
+#~ msgstr "Проміжок між імпульсами"
+
+#~ msgid "Ping Target"
+#~ msgstr "Ціль тестування луною"
+
+#~ msgid "Pizza Box"
+#~ msgstr "З коробку для піци"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "Будь ласка, підтвердьте вилучення $0"
+
+#~ msgid "Please confirm forced deletion of $0"
+#~ msgstr "Будь ласка, підтвердьте примусове вилучення $0"
+
+#~ msgid "Please confirm network key removal"
+#~ msgstr "Будь ласка, підтвердьте вилучення ключа мережі"
+
+#~ msgid "Please confirm stopping of $0"
+#~ msgstr "Будь ласка, підтвердьте зупинку $0"
+
+#~ msgid "Please confirm, the host shall be switched to maintenance mode."
+#~ msgstr ""
+#~ "Будь ласка, підтвердьте, що вузол має бути перемкнуто у режим "
+#~ "обслуговування."
+
+#~ msgid "Please create another namespace for $0 \"$1\""
+#~ msgstr "Будь ласка, створіть інший простір назв для $0 «$1»"
+
+#~ msgid "Please install the {0} package"
+#~ msgstr "Будь ласка, встановіть пакунок {0}"
+
+#~ msgid "Please provide a GlusterFS volume name"
+#~ msgstr "Будь ласка, вкажіть назву тому GlusterFS"
+
+#~ msgid "Please provide a username"
+#~ msgstr "Будь ласка, вкажіть ім’я користувача"
+
+#~ msgid "Please provide a valid NFS server"
+#~ msgstr "Будь ласка, вкажіть коректний сервер NFS"
+
+#~ msgid "Please provide a valid address"
+#~ msgstr "Будь ласка, вкажіть коректну адресу"
+
+#~ msgid "Please provide a valid filesystem type"
+#~ msgstr "Будь ласка, вкажіть коректний тип файлової системи"
+
+#~ msgid "Please provide a valid interface"
+#~ msgstr "Будь ласка, вкажіть коректний інтерфейс"
+
+#~ msgid "Please provide a valid logical unit number"
+#~ msgstr "Будь ласка, вкажіть коректну кількість логічних одиниць"
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "Будь ласка, вкажіть коректний простір назв."
+
+#~ msgid "Please provide a valid path"
+#~ msgstr "Будь ласка, вкажіть коректний шлях"
+
+#~ msgid "Please provide a valid qualified name"
+#~ msgstr "Будь ласка, вкажіть коректну повну назву"
+
+#~ msgid "Please provide a valid storage capacity."
+#~ msgstr "Будь ласка, вкажіть коректну місткість сховища."
+
+#~ msgid "Please provide a valid target"
+#~ msgstr "Будь ласка, вкажіть коректне призначення"
+
+#~ msgid ""
+#~ "Please provide fully qualified domain name and port of the oVirt engine."
+#~ msgstr "Будь ласка, вкажіть повну доменну назву та порт рушія oVirt."
+
+#~ msgid ""
+#~ "Please provide valid oVirt engine fully qualified domain name (FQDN) and "
+#~ "port (443 by default)"
+#~ msgstr ""
+#~ "Будь ласка, вкажіть повну доменну адресу (FQDN) і порт (типово 443) рушія "
+#~ "oVirt"
+
+#~ msgid ""
+#~ "Please refer to oVirt's $0 for more information about Remote Viewer setup."
+#~ msgstr ""
+#~ "Будь ласка, зверніться до $0 oVirt, щоб дізнатися більше про "
+#~ "налаштовування засобу віддаленого перегляду."
+
+#~ msgid "Please select a valid access mode"
+#~ msgstr "Будь ласка, виберіть коректний режим доступу"
+
+#~ msgid "Please select a valid endpoint"
+#~ msgstr "Будь ласка, виберіть коректну кінцеву точку"
+
+#~ msgid "Please select a valid policy option."
+#~ msgstr "Будь ласка, виберіть коректний варіант правил."
+
+#~ msgid "Please specify an expiration date"
+#~ msgstr "Будь ласка, вкажіть кінцеву дату строку дії"
+
+#~ msgid "Please specify the host to connect to"
+#~ msgstr "Будь ласка, вкажіть вузол, з яким слід встановити з'єднання"
+
+#~ msgid "Please start the virtual machine to access its console."
+#~ msgstr ""
+#~ "Будь ласка, запустіть віртуальну машину, щоб отримати доступ до її "
+#~ "консолі."
+
+#~ msgid "Please try another term"
+#~ msgstr "Будь ласка, спробуйте інший ключ"
+
+#~ msgid "Please type an address"
+#~ msgstr "Будь ласка, введіть адресу"
+
+#~ msgid "Please wait till VMs list is loaded from the server."
+#~ msgstr ""
+#~ "Будь ласка, зачекайте, доки список віртуальних машин буде завантажено із "
+#~ "сервера."
+
+#~ msgid "Please wait till list of templates is loaded from the server."
+#~ msgstr ""
+#~ "Будь ласка, зачекайте, доки з сервера буде завантажено список шаблонів."
+
+#~ msgid "Plug"
+#~ msgstr "З'єднати"
+
+#~ msgid "Pod"
+#~ msgstr "Кокон"
+
+#~ msgid "Pod Address"
+#~ msgstr "Адреса коконів"
+
+#~ msgid "Pod Endpoints"
+#~ msgstr "Кінцеві точки коконів"
+
+#~ msgid "Pod Replicated"
+#~ msgstr "Створено репліку кокона"
+
+#~ msgid "Pod Selector"
+#~ msgstr "Вибір коконів"
+
+#~ msgid "Pod:"
+#~ msgstr "Кокон:"
+
+#~ msgid "Pods"
+#~ msgstr "Кокони"
+
+#~ msgid ""
+#~ "Pods contain one or more containers that run together on a node, "
+#~ "containing your application code."
+#~ msgstr ""
+#~ "Кокони містять один або декілька контейнерів, які працюють разом на "
+#~ "вузлі, де міститься код вашої програми."
+
+#~ msgid "Pool"
+#~ msgstr "Буфер"
+
+#~ msgid "Pool Name"
+#~ msgstr "Назва буфера"
+
+#~ msgid "Pool for Thin Logical Volumes"
+#~ msgstr "Буфер для тонких логічних томів"
+
+#~ msgid "Pool for Thin Volumes"
+#~ msgstr "Буфер для тонких томів"
+
+#~ msgid "Pool for thinly provisioned volumes"
+#~ msgstr "Буфер для тонких резервованих томів"
+
+#~ msgid "Populate"
+#~ msgstr "Заповнити"
+
+#~ msgid "Port"
+#~ msgstr "Порт"
+
+#~ msgid "Portable"
+#~ msgstr "Портативний"
+
+#~ msgid "Portgroup"
+#~ msgstr "Група портів"
+
+#~ msgid "Ports"
+#~ msgstr "Порти"
+
+#~ msgid "Ports:"
+#~ msgstr "Порти:"
+
+#~ msgid "Power Options"
+#~ msgstr "Параметри живлення"
+
+#~ msgid "Prefix length"
+#~ msgstr "Довжина префікса"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "Довжина префікса або маска мережі"
+
+#~ msgid "Preparing"
+#~ msgstr "Приготування"
+
+#~ msgid "Preparing for Maintenance"
+#~ msgstr "Готуємося до обслуговування"
+
+#~ msgid "Preserve"
+#~ msgstr "Зберегти"
+
+#~ msgid "Preset"
+#~ msgstr "Шаблон"
+
+#~ msgid "Preset Forcefully"
+#~ msgstr "Примусово початкові налаштування"
+
+#~ msgid "Pretty Host Name"
+#~ msgstr "Зручна назва вузла"
+
+#~ msgid "Primary"
+#~ msgstr "Основний"
+
+#~ msgid "Priority"
+#~ msgstr "Пріоритетність"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Пріоритетність $priority"
+
+#~ msgid "Private: Allow only specific users or groups to pull images"
+#~ msgstr ""
+#~ "Приватний: дозволити отримувати образи лише вказаним користувачам або "
+#~ "групам"
+
+#~ msgid "Privileged tasks not available"
+#~ msgstr "Привілейовані завдання недоступні"
+
+#~ msgid "Problem details"
+#~ msgstr "Подробиці щодо проблеми"
+
+#~ msgid "Problem info"
+#~ msgstr "Дані щодо проблеми"
+
+#~ msgid "Problems"
+#~ msgstr "Проблеми"
+
+#~ msgid "Process"
+#~ msgstr "Процес"
+
+#~ msgid "Product ID"
+#~ msgstr "Ід. продукту"
+
+#~ msgid "Product name"
+#~ msgstr "Назва продукту"
+
+#~ msgid "Project"
+#~ msgstr "Проект"
+
+#~ msgid "Project Members"
+#~ msgstr "Учасники проекту"
+
+#~ msgid "Project access policy allows anonymous users to pull images."
+#~ msgstr ""
+#~ "Правила доступу до проекту дозволяють анонімним користувачам отримувати "
+#~ "образи."
+
+#~ msgid "Project access policy allows any authenticated user to pull images."
+#~ msgstr ""
+#~ "Правила доступу до проекту дозволяють усім розпізнаним користувачам "
+#~ "отримувати образи."
+
+#~ msgid "Project access policy only allows specific members to access images."
+#~ msgstr ""
+#~ "Правила доступу до проекту дозволяють отримувати доступ до образів лише "
+#~ "окремим користувачам."
+
+#~ msgid "Project website"
+#~ msgstr "Сайт проекту"
+
+#~ msgid "Project:"
+#~ msgstr "Проект:"
+
+#~ msgid "Projects"
+#~ msgstr "Проекти"
+
+#~ msgid "Prompting via passwd timed out"
+#~ msgstr "Час очікування відповіді на запит за допомогою passwd вичерпано"
+
+#~ msgid "Prompting via ssh-add timed out"
+#~ msgstr "Час очікування відповіді на запит за допомогою ssh-add вичерпано"
+
+#~ msgid "Prompting via ssh-keygen timed out"
+#~ msgstr "Час очікування відповіді на запит за допомогою ssh-keygen вичерпано"
+
+#~ msgid "Propagates Reload To"
+#~ msgstr "Поширює перезавантаження на"
+
+#~ msgid "Protocol"
+#~ msgstr "Протокол"
+
+#~ msgid "Proxy"
+#~ msgstr "Проксі"
+
+#~ msgid "Proxy Version"
+#~ msgstr "Версія проксі"
+
+#~ msgid "Public Key"
+#~ msgstr "Відкритий ключ"
+
+#~ msgid "Public pulling repo"
+#~ msgstr "Відкрите сховище для отримання"
+
+#~ msgid "Pull an image:"
+#~ msgstr "Отримати образ:"
+
+#~ msgid "Pull from"
+#~ msgstr "Отримати з"
+
+#~ msgid "Pull specific tags from another image repository"
+#~ msgstr "Отримати вказані мітки з іншого сховища образів"
+
+#~ msgid "Purpose"
+#~ msgstr "Призначення"
+
+#~ msgid "Push an image:"
+#~ msgstr "Вивантажити образ:"
+
+#~ msgid "Qualified Name"
+#~ msgstr "Повна назва"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 0 (Stripe)"
+#~ msgstr "RAID 0 (Стрічка)"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 1 (Mirror)"
+#~ msgstr "RAID 1 (Дзеркало)"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 10 (Stripe of Mirrors)"
+#~ msgstr "RAID 10 (Стрічка дзеркал)"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 4 (Dedicated Parity)"
+#~ msgstr "RAID 4 (Пов’язана парність)"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 5 (Distributed Parity)"
+#~ msgstr "RAID 5 (Розподілена парність)"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID 6 (Double Distributed Parity)"
+#~ msgstr "RAID 6 (Подвійна розподілена парність)"
+
+#~ msgid "RAID Chassis"
+#~ msgstr "Апаратний блок RAID"
+
+#~ msgid "RAID Device"
+#~ msgstr "пристрій RAID"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "Пристій RAID $0"
+
+#~ msgid "RAID Devices"
+#~ msgstr "Пристрої RAID"
+
+#~ msgid "RAID Level"
+#~ msgstr "Рівень RAID"
+
+#~ msgid "RAID Member"
+#~ msgstr "Елемент RAID"
+
+#~ msgid "REBOOT action failed"
+#~ msgstr "Не вдалося виконати дію REBOOT"
+
+#~ msgid "Rack Mount Chassis"
+#~ msgstr "Апаратний блок монтування стійок"
+
+#~ msgid "Rados Block Device"
+#~ msgstr "Блоковий пристрій Rados"
+
+#~ msgid "Random"
+#~ msgstr "Випадковий"
+
+#~ msgid "Raw to a device"
+#~ msgstr "Без обробки на пристрій"
+
+#~ msgid "Read Only"
+#~ msgstr "Лише читання"
+
+#~ msgid "Read and write from a single node"
+#~ msgstr "Читання і запис із одного вузла"
+
+#~ msgid "Read and write from multiple nodes"
+#~ msgstr "Читання і запис із декількох вузлів"
+
+#~ msgid "Read only from multiple nodes"
+#~ msgstr "Читання лише з декількох вузлів"
+
+#~ msgid "ReadOnly"
+#~ msgstr "Лише запис"
+
+#~ msgid "ReadWrite"
+#~ msgstr "Запис-читання"
+
+#~ msgid "Reading"
+#~ msgstr "Читання"
+
+#~ msgid "Reading..."
+#~ msgstr "Читання…"
+
+#~ msgid "Readonly"
+#~ msgstr "Лише запис"
+
+#~ msgid "Ready"
+#~ msgstr "Готовий"
+
+#~ msgctxt "verb"
+#~ msgid "Ready"
+#~ msgstr "Готово"
+
+#~ msgid "Real Host Name"
+#~ msgstr "Справжня назва вузла"
+
+#~ msgid ""
+#~ "Real host name can only contain lower-case characters, digits, dashes, "
+#~ "and periods (with populated subdomains)"
+#~ msgstr ""
+#~ "Назва справжнього вузла має складатися лише з літер у нижньому регістрі, "
+#~ "цифр, дефісів та точок (із заповненими піддоменами)"
+
+#~ msgid "Real host name must be 64 characters or less"
+#~ msgstr "Назва справжнього вузла має складатися не більше ніж з 64 символів"
+
+#~ msgid "Reason"
+#~ msgstr "Підстава"
+
+#~ msgid "Reboot"
+#~ msgstr "Перезавантажити"
+
+#~ msgid "Receiving"
+#~ msgstr "Отримання"
+
+#~ msgid "Recent"
+#~ msgstr "Нещодавні"
+
+#~ msgid "Reclaim Policy"
+#~ msgstr "Правила повторного заявлення"
+
+#~ msgid "Recovering"
+#~ msgstr "Відновлюємо"
+
+#~ msgid "Recovering RAID Device $target"
+#~ msgstr "Відновлюємо пристрій RAID $target"
+
+#~ msgid "Recycle"
+#~ msgstr "Повторний цикл"
+
+#~ msgid "Reformat and add disks"
+#~ msgstr "Повторно форматувати і додати диски"
+
+#~ msgid "Refreshing package information"
+#~ msgstr "Оновлюємо дані щодо пакунків"
+
+#~ msgid "Refusing to connect. Host is unknown"
+#~ msgstr "Відмовляємо у з’єднанні. Невідомий вузол."
+
+#~ msgid "Refusing to connect. Hostkey does not match"
+#~ msgstr "Відмовляємо у з’єднанні. Ключі вузла не збігаються."
+
+#~ msgid "Refusing to connect. Hostkey is unknown"
+#~ msgstr "Відмовляємо у з’єднанні. Невідомий ключ вузла."
+
+#~ msgid "Register"
+#~ msgstr "Зареєструвати"
+
+#~ msgid "Register New Volume"
+#~ msgstr "Зареєструвати новий том"
+
+#~ msgid "Register Persistent Volume"
+#~ msgstr "Зареєструвати сталий том"
+
+#~ msgid "Register oVirt"
+#~ msgstr "Зареєструвати oVirt"
+
+#~ msgid "Register system"
+#~ msgstr "Зареєструвати систему"
+
+#~ msgid "Registering oVirt to Cockpit"
+#~ msgstr "Реєструємо oVirt на Cockpit"
+
+#~ msgid "Register…"
+#~ msgstr "Зареєструвати…"
+
+#~ msgid "Reload"
+#~ msgstr "Перезавантажити"
+
+#~ msgid "Reload Propagated From"
+#~ msgstr "Поширене перезавантаження з"
+
+#~ msgid "Remote URL"
+#~ msgstr "Віддалена адреса"
+
+#~ msgid "Remote over NFS"
+#~ msgstr "Віддалене на основі NFS"
+
+#~ msgid "Remote over SSH"
+#~ msgstr "Віддалене на основі SSH"
+
+#~ msgid "Remote registry is insecure"
+#~ msgstr "Віддалений реєстр є незахищеним"
+
+#~ msgid "Remote;Administration;"
+#~ msgstr "віддалене;адміністрування;"
+
+#~ msgctxt "storage"
+#~ msgid "Removable Drive"
+#~ msgstr "Портативний диск"
+
+#~ msgid "Removals:"
+#~ msgstr "Вилучення:"
+
+#~ msgid "Remove"
+#~ msgstr "Вилучити"
+
+#~ msgid "Remove $0"
+#~ msgstr "Вилучити $0"
+
+#~ msgid "Remove Group"
+#~ msgstr "Вилучити групу"
+
+#~ msgid "Remove Member"
+#~ msgstr "Вилучити члена"
+
+#~ msgid "Remove Role"
+#~ msgstr "Вилучити роль"
+
+#~ msgid "Remove User"
+#~ msgstr "Вилучити користувача"
+
+#~ msgid "Remove device"
+#~ msgstr "Вилучити пристрій"
+
+#~ msgid "Remove image tag"
+#~ msgstr "Вилучити мітку образу"
+
+#~ msgid "Remove key"
+#~ msgstr "Вилучити ключ"
+
+#~ msgid "Remove membership"
+#~ msgstr "Вилучити запис участі"
+
+#~ msgid "Removing"
+#~ msgstr "Вилучаємо"
+
+#~ msgid "Removing $0"
+#~ msgstr "Вилучаємо $0"
+
+#~ msgid "Removing $target from RAID Device"
+#~ msgstr "Вилучаємо $target з пристрою RAID"
+
+#~ msgid ""
+#~ "Removing <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Вилучення <b>$0</b> призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid "Removing network keys might prevent unattended booting."
+#~ msgstr "Вилучення ключів мережі може запобігти небажаному завантаженню."
+
+#~ msgid "Removing physical volume from $target"
+#~ msgstr "Вилучаємо фізичний том з $target"
+
+#~ msgid "Rename"
+#~ msgstr "Перейменувати"
+
+#~ msgid "Rename Logical Volume"
+#~ msgstr "Перейменувати логічний том"
+
+#~ msgid "Rename Volume Group"
+#~ msgstr "Перейменувати групу томів"
+
+#~ msgid "Renaming $target"
+#~ msgstr "Перейменовуємо $target"
+
+#~ msgid "Repairing $target"
+#~ msgstr "Відновлюємо $target"
+
+#~ msgid "Repeat Daily"
+#~ msgstr "Повторювати щодня"
+
+#~ msgid "Repeat Hourly"
+#~ msgstr "Повторювати щогодини"
+
+#~ msgid "Repeat Monthly"
+#~ msgstr "Повторювати щомісяця"
+
+#~ msgid "Repeat Weekly"
+#~ msgstr "Повторювати щотижня"
+
+#~ msgid "Repeat Yearly"
+#~ msgstr "Повторювати щороку"
+
+#~ msgid "Replicas"
+#~ msgstr "Репліки"
+
+#~ msgid "Replication Controller"
+#~ msgstr "Контролер реплікації"
+
+#~ msgid "Replication Controllers"
+#~ msgstr "Керування реплікацією"
+
+#~ msgid ""
+#~ "Replication controllers dynamically create instances of pods from "
+#~ "templates, and remove pods when necessary."
+#~ msgstr ""
+#~ "Контролери реплікації динамічно створюють екземпляри коконів із шаблонів "
+#~ "і вилучають кокони, якщо потрібно."
+
+#~ msgid "Report"
+#~ msgstr "Звіт"
+
+#~ msgid "Reported"
+#~ msgstr "Повідомлено"
+
+#~ msgid "Reporter 'reporter-ureport' not found."
+#~ msgstr "Не знайдено засіб звітування «reporter-ureport»."
+
+#~ msgid "Reporting was unsucessful. Try running `reporter-ureport -d "
+#~ msgstr ""
+#~ "Не вдалося надіслати звіт. Спробуйте віддати команду «reporter-ureport -d "
+
+#~ msgid "Repository"
+#~ msgstr "Сховище"
+
+#~ msgid "Repository URL"
+#~ msgstr "Адреса сховища"
+
+#~ msgid "Requested"
+#~ msgstr "Запитано"
+
+#~ msgid "Requests"
+#~ msgstr "Запити"
+
+#~ msgid "Require password change every $0 days"
+#~ msgstr "Вимагати зміну пароля кожні $0 днів"
+
+#~ msgid "Require password change on $0"
+#~ msgstr "Вимагати зміну пароля $0"
+
+#~ msgid "Required By"
+#~ msgstr "Потрібен для"
+
+#~ msgid "Requires"
+#~ msgstr "Потребує"
+
+#~ msgid "Requires Authentication"
+#~ msgstr "Потрібне розпізнавання"
+
+#~ msgid "Requisite"
+#~ msgstr "Потрібний"
+
+#~ msgid "Requisite Of"
+#~ msgstr "Потрібний для"
+
+#~ msgid "Reserved memory"
+#~ msgstr "Зарезервована пам’ять"
+
+#~ msgid "Reset"
+#~ msgstr "Скинути"
+
+#~ msgid "Reset Storage Pool"
+#~ msgstr "Скинути резервне сховище"
+
+#~ msgid ""
+#~ "Resetting the storage pool will erase all containers and release disks in "
+#~ "the pool."
+#~ msgstr ""
+#~ "Скидання резервного сховища даних призведе до витирання усіх контейнерів "
+#~ "та звільнення дисків зі сховища."
+
+#~ msgid "Resizing $target"
+#~ msgstr "Зміна розміру $target"
+
+#~ msgid "Resolve above errors to continue"
+#~ msgstr "Усуньте наведені вище помилки, щоб продовжити"
+
+#~ msgid "Restart"
+#~ msgstr "Перезапустити"
+
+#~ msgid "Restart Count"
+#~ msgstr "Кількість перезапусків"
+
+#~ msgid "Restart Now"
+#~ msgstr "Перезапустити зараз"
+
+#~ msgid "Restart Policy"
+#~ msgstr "Правила перезапуску"
+
+#~ msgid "Restart Policy:"
+#~ msgstr "Правила перезапуску:"
+
+#~ msgid "Restart Recommended"
+#~ msgstr "Рекомендовано перезапустити"
+
+#~ msgid "Restarting"
+#~ msgstr "Перезапускаємо"
+
+#~ msgid "Restoring connection"
+#~ msgstr "Відновлюємо з’єднання"
+
+#~ msgid "Retain"
+#~ msgstr "Зберегти"
+
+#~ msgid "Retries:"
+#~ msgstr "Кількість спроб:"
+
+#~ msgid "Retrieving subscription status..."
+#~ msgstr "Отримуємо дані стану передплати…"
+
+#~ msgid "Retrieving the key from $0 has failed: $1."
+#~ msgstr "Не вдалося отримати ключ з $0: $1."
+
+#~ msgid "Reuse my password for privileged tasks"
+#~ msgstr "Повторно використати ваш пароль для привілейованих завдань"
+
+#~ msgid ""
+#~ "Reuse my password for privileged tasks and to connect to other machines"
+#~ msgstr ""
+#~ "Повторно використати ваш пароль для привілейованих завдань та з’єднання з "
+#~ "іншими комп’ютерами"
+
+#~ msgid "Revision"
+#~ msgstr "Модифікація"
+
+#~ msgid "Role"
+#~ msgstr "Роль"
+
+#~ msgid "Roles"
+#~ msgstr "Ролі"
+
+#~ msgid "Round Robin"
+#~ msgstr "Циклічне"
+
+#~ msgid "Route"
+#~ msgstr "Маршрут"
+
+#~ msgid "Routes"
+#~ msgstr "Маршрути"
+
+#~ msgid "Run"
+#~ msgstr "Запустити"
+
+#~ msgid "Run Here"
+#~ msgstr "Запустити тут"
+
+#~ msgid "Run Image"
+#~ msgstr "Запустити образ"
+
+#~ msgid "Run as"
+#~ msgstr "Запустити від імені"
+
+#~ msgid "Runner"
+#~ msgstr "Засіб для запуску"
+
+#~ msgid "Running Since:"
+#~ msgstr "Працює з:"
+
+#~ msgid "SELinux Access Control Errors"
+#~ msgstr "Помилка керування доступом SELinux"
+
+#~ msgid "SELinux Policy"
+#~ msgstr "Правила SELinux"
+
+#~ msgid "SELinux Troubleshoot"
+#~ msgstr "Усування вад SELinux"
+
+#~ msgid "SELinux is disabled on the system"
+#~ msgstr "У системі вимкнено SELinux"
+
+#~ msgid "SELinux is disabled on the system."
+#~ msgstr "SELinux вимкнено у системі."
+
+#~ msgid "SELinux system status is unknown."
+#~ msgstr "Стан системи SELinux є невідомим."
+
+#~ msgid "SHUTDOWN action failed"
+#~ msgstr "Не вдалося виконати дію SHUTDOWN"
+
+#~ msgid "SMART self-test of $target"
+#~ msgstr "Самоперевірка SMART $target"
+
+#~ msgid "SPICE"
+#~ msgstr "SPICE"
+
+#~ msgid "SPICE Address:"
+#~ msgstr "Адреса SPICE:"
+
+#~ msgid "SPICE Port:"
+#~ msgstr "Порт SPICE:"
+
+#~ msgid "SPICE TLS Port:"
+#~ msgstr "Порт TLS SPICE:"
+
+#~ msgid "START action failed"
+#~ msgstr "Не вдалося виконати дію START"
+
+#~ msgid "STP Forward delay"
+#~ msgstr "Затримка переспрямування STP"
+
+#~ msgid "STP Hello time"
+#~ msgstr "Час вітання STP"
+
+#~ msgid "STP Maximum message age"
+#~ msgstr "Максимальний вік повідомлення STP"
+
+#~ msgid "STP Priority"
+#~ msgstr "Пріоритет STP"
+
+#~ msgid "SUSPEND action failed"
+#~ msgstr "Не вдалося виконати дію SUSPEND"
+
+#~ msgid "Saturday"
+#~ msgstr "субота"
+
+#~ msgid "Save"
+#~ msgstr "Зберегти"
+
+#~ msgid "Scheduled Pods"
+#~ msgstr "Заплановані кокони"
+
+#~ msgid "Scheduling Disabled"
+#~ msgstr "Планування вимкнено"
+
+#~ msgid "Sealed-case PC"
+#~ msgstr "ПК з опломбованим корпусом"
+
+#~ msgid "Seconds"
+#~ msgstr "Секунди"
+
+#~ msgid "Secret"
+#~ msgstr "Секретний"
+
+#~ msgid "Secret File"
+#~ msgstr "Файл ключа"
+
+#~ msgid "Secret Name"
+#~ msgstr "Назва ключа"
+
+#~ msgid "Secret Volume"
+#~ msgstr "Секретний том"
+
+#~ msgid "Secure Shell Keys"
+#~ msgstr "Ключі захищеної оболонки (SSH)"
+
+#~ msgid "Securely erasing $target"
+#~ msgstr "Безпечно витираємо $target"
+
+#~ msgid "Security"
+#~ msgstr "Безпека"
+
+#~ msgid "Security Updates Available"
+#~ msgstr "Доступні оновлення захисту"
+
+#~ msgid "Select"
+#~ msgstr "Вибрати"
+
+#~ msgid "Select Manifest File..."
+#~ msgstr "Вибір файла маніфесту…"
+
+#~ msgid "Select an object to see more details."
+#~ msgstr "Виберіть об’єкт для перегляду ширшого спектра параметрів."
+
+#~ msgid ""
+#~ "Select the users that you would like to be synchronized with {{#strong}}"
+#~ "{{host}}{{/strong}}"
+#~ msgstr ""
+#~ "Виберіть користувачів, записи яких ви б хотіли синхронізувати з "
+#~ "{{#strong}}{{host}}{{/strong}}"
+
+#~ msgid "Send Non-Maskable Interrupt"
+#~ msgstr "Надіслати немасковане переривання"
+
+#~ msgid "Send shortcut"
+#~ msgstr "Надіслати скорочення"
+
+#~ msgid "Sending"
+#~ msgstr "Надсилання"
+
+#~ msgid "Serial Console"
+#~ msgstr "Послідовна консоль"
+
+#~ msgid "Server"
+#~ msgstr "Сервер"
+
+#~ msgid "Server Address"
+#~ msgstr "Адреса сервера"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Адміністратор сервера"
+
+#~ msgid "Server address cannot be empty"
+#~ msgstr "Адреса сервера не може бути порожньою"
+
+#~ msgid "Server address cannot be empty."
+#~ msgstr "Адреса сервера не може бути порожньою."
+
+#~ msgid "Server can't be reached"
+#~ msgstr "Не вдалося встановити зв'язок із сервером"
+
+#~ msgid "Server cannot be empty."
+#~ msgstr "Запис сервера не може бути порожнім."
+
+#~ msgid "Server has closed the connection."
+#~ msgstr "З’єднання розірвано сервером."
+
+#~ msgid "Servers"
+#~ msgstr "Сервери"
+
+#~ msgid "Service"
+#~ msgstr "Служба"
+
+#~ msgid "Service Account"
+#~ msgstr "Обліковий запис служби"
+
+#~ msgid "Service Logs"
+#~ msgstr "Журнали служб"
+
+#~ msgid "Service has an error"
+#~ msgstr "Помилка у службі"
+
+#~ msgid "Service is running"
+#~ msgstr "Службу запущено"
+
+#~ msgid "Service is starting"
+#~ msgstr "Служба запускається"
+
+#~ msgid "Service is stopped"
+#~ msgstr "Службу зупинено"
+
+#~ msgid "Service is stopping"
+#~ msgstr "Служба зупиняється"
+
+#~ msgid "Service name"
+#~ msgstr "Назва служби"
+
+#~ msgid "Services"
+#~ msgstr "Служби"
+
+#~ msgid ""
+#~ "Services group pods and provide a common DNS name and an optional, load-"
+#~ "balanced IP address to access them."
+#~ msgstr ""
+#~ "Служби збирають у групи кокони і надають загальну назву DNS та додаткову, "
+#~ "збалансовану за навантаженням IP-адресу для доступу до них."
+
+#~ msgid "Session"
+#~ msgstr "Сеанс"
+
+#~ msgid "Session Affinity"
+#~ msgstr "Спорідненість сеансу"
+
+#~ msgid "Set"
+#~ msgstr "Встановити"
+
+#~ msgid "Set Host name"
+#~ msgstr "Встановити назву вузла"
+
+#~ msgid "Set Password"
+#~ msgstr "Встановити пароль"
+
+#~ msgid "Set Time"
+#~ msgstr "Встановити час"
+
+#~ msgid "Set container environment variables"
+#~ msgstr "Встановити змінні середовища контейнера"
+
+#~ msgid "Set to"
+#~ msgstr "Встановити значення"
+
+#~ msgid "Set up"
+#~ msgstr "Налаштувати"
+
+#~ msgid ""
+#~ "Setting deviates from the configured state and will revert on the next "
+#~ "boot."
+#~ msgstr ""
+#~ "Параметр не відповідає налаштованому стану, його буде скинуто під час "
+#~ "наступного завантаження."
+
+#~ msgid "Setting up"
+#~ msgstr "Налаштовуємо"
+
+#~ msgid "Setting up loop device $target"
+#~ msgstr "Налаштовуємо петльовий пристрій $target"
+
+#~ msgid "Severity"
+#~ msgstr "Важливість"
+
+#~ msgid "Severity:"
+#~ msgstr "Критичність:"
+
+#~ msgid "Share Name"
+#~ msgstr "Назва ресурсу"
+
+#~ msgid "Shared"
+#~ msgstr "Спільний"
+
+#~ msgid "Shared: Allow any authenticated user to pull images"
+#~ msgstr "Спільний: дозволити усім розпізнаним користувачам отримувати образи"
+
+#~ msgid "Shell"
+#~ msgstr "Оболонка"
+
+#~ msgid "Show all Containers"
+#~ msgstr "Показати усі контейнери"
+
+#~ msgid "Show all Deployment Configs"
+#~ msgstr "Показати усі налаштування розгортання"
+
+#~ msgid "Show all Nodes"
+#~ msgstr "Показати усі вузли"
+
+#~ msgid "Show all Persistent Volumes"
+#~ msgstr "Показати усі сталі томи"
+
+#~ msgid "Show all Pod Containers"
+#~ msgstr "Показати усі контейнери коконів"
+
+#~ msgid "Show all Pods"
+#~ msgstr "Показати усі кокони"
+
+#~ msgid "Show all Projects"
+#~ msgstr "Показати усі проекти"
+
+#~ msgid "Show all Replication Controllers"
+#~ msgstr "Показати усі контролери реплікації"
+
+#~ msgid "Show all Routes"
+#~ msgstr "Показати усі маршрути"
+
+#~ msgid "Show all Services"
+#~ msgstr "Показувати всі служби"
+
+#~ msgid "Show all containers"
+#~ msgstr "Показати усі контейнери"
+
+#~ msgid "Show all image streams"
+#~ msgstr "Показати усіх потоки образів"
+
+#~ msgid "Show all images"
+#~ msgstr "Показати усі образи"
+
+#~ msgid "Show fingerprints"
+#~ msgstr "Показати відбитки"
+
+#~ msgid "Shrink"
+#~ msgstr "Стиснути"
+
+#~ msgid "Shrink Logical Volume"
+#~ msgstr "Стиснути логічний том"
+
+#~ msgid "Shut Down"
+#~ msgstr "Вимкнути"
+
+#~ msgid "Since"
+#~ msgstr "З"
+
+#~ msgid "Since $0"
+#~ msgstr "З $0"
+
+#~ msgid "Size"
+#~ msgstr "Розмір"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "Розмір не може бути від’ємним"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "Розмір не може бути нульовим"
+
+#~ msgid "Size is too large"
+#~ msgstr "Розмір є надто великим"
+
+#~ msgid "Size must be a number"
+#~ msgstr "Розмір має бути числом"
+
+#~ msgid "Size must be at least $0"
+#~ msgstr "Розмір має бути не меншим за $0"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "Пропустити перевірку сертифікатів"
+
+#~ msgid "Slot"
+#~ msgstr "Слот"
+
+#~ msgid "Sockets"
+#~ msgstr "Сокети"
+
+#~ msgid "Solid-State Disk"
+#~ msgstr "Твердотільний диск"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "Твердотільний диск"
+
+#~ msgid "Solution applied successfully"
+#~ msgstr "Рішення успішно застосовано"
+
+#~ msgid "Solution failed"
+#~ msgstr "Помилка рішення"
+
+#~ msgid "Solutions"
+#~ msgstr "Рішення"
+
+#~ msgid ""
+#~ "Some other program is currently using the package manager, please wait..."
+#~ msgstr ""
+#~ "Програмою для керування пакунків користується якась інша програма, будь "
+#~ "ласка, зачекайте…"
+
+#~ msgid "Sorry, I don't know how to modify this volume"
+#~ msgstr "Вибачте, спосіб внесення змін до цього тому невідомий"
+
+#~ msgid "Source"
+#~ msgstr "Джерело"
+
+#~ msgid "Source URL"
+#~ msgstr "Початкова адреса"
+
+#~ msgid "Source should start with http, ftp or nfs protocol"
+#~ msgstr ""
+#~ "Адреса джерела має починатися із назви протоколу — http, ftp або nfs"
+
+#~ msgid "Space-saving Computer"
+#~ msgstr "Компактний комп'ютер"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "Протокол пересування ієрархією"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "Протокол пересування ієрархією (STP)"
+
+#~ msgid "Spare"
+#~ msgstr "Запас"
+
+#~ msgid "Specific Time"
+#~ msgstr "У визначений час"
+
+#~ msgid "Stable"
+#~ msgstr "Стабільний"
+
+#~ msgid "Start"
+#~ msgstr "Почати"
+
+#~ msgid "Start Docker"
+#~ msgstr "Запустити Docker"
+
+#~ msgid "Start Multipath"
+#~ msgstr "Запустити Multipath"
+
+#~ msgid "Start libvirt"
+#~ msgstr "Запустити libvirt"
+
+#~ msgid "Start the VM to see disk statistics."
+#~ msgstr "Запустити віртуальну машину для перегляду статистики диска."
+
+#~ msgid "Starting RAID Device $target"
+#~ msgstr "Зупиняємо пристрій RAID $target"
+
+#~ msgid "Starting swapspace $target"
+#~ msgstr "Запускаємо резервну область пам’яті $target"
+
+#~ msgid "Starts"
+#~ msgstr "Починається"
+
+#~ msgid "State"
+#~ msgstr "Стан"
+
+#~ msgid "State:"
+#~ msgstr "Стан:"
+
+#~ msgid "Stateless"
+#~ msgstr "Без збереження стану"
+
+#~ msgid "Stateless:"
+#~ msgstr "Без збереження стану:"
+
+#~ msgid "Static"
+#~ msgstr "Статичний"
+
+#~ msgid "Status: $0"
+#~ msgstr "Стан: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "Стан: систему не зареєстровано"
+
+#~ msgid "Stick PC"
+#~ msgstr "Паличковий ПК"
+
+#~ msgid "Sticky"
+#~ msgstr "Липкий"
+
+#~ msgid "Stop"
+#~ msgstr "Зупинити"
+
+#~ msgid "Stop Device"
+#~ msgstr "Зупинити пристрій"
+
+#~ msgid "Stop and Unmount"
+#~ msgstr "Зупинити і демонтувати"
+
+#~ msgid "Stop and remove"
+#~ msgstr "Зупинити і вилучити"
+
+#~ msgid "Stop with"
+#~ msgstr "Зупинитися на"
+
+#~ msgid "Stopped"
+#~ msgstr "Зупинено"
+
+#~ msgid "Stopping RAID Device $target"
+#~ msgstr "Зупиняємо пристрій RAID $target"
+
+#~ msgid "Stopping swapspace $target"
+#~ msgstr "Зупиняємо резервну область пам’яті $target"
+
+#~ msgid "Storage"
+#~ msgstr "Сховище даних"
+
+#~ msgid "Storage Logs"
+#~ msgstr "Журнали зберігання"
+
+#~ msgid "Storage Size"
+#~ msgstr "Розмір зберігання"
+
+#~ msgid "Storage Size should not be negative number"
+#~ msgstr "Розмір зберігання має бути невід'ємним числом"
+
+#~ msgid "Storage pool"
+#~ msgstr "Буфер сховища"
+
+#~ msgid "Store Performance Data"
+#~ msgstr "Зберігати дані щодо швидкодії"
+
+#~ msgid "Store passphrase"
+#~ msgstr "Зберігати пароль"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "Збережений пароль"
+
+#~ msgid "Stored passphrase"
+#~ msgstr "Збережений пароль"
+
+#~ msgid "Strategy"
+#~ msgstr "Стратегія"
+
+#~ msgid "Sub Chassis"
+#~ msgstr "Підблок"
+
+#~ msgid "Sub Notebook"
+#~ msgstr "Підноутбук"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Передплати"
+
+#~ msgid "Summary"
+#~ msgstr "Резюме"
+
+#~ msgid "Sunday"
+#~ msgstr "неділя"
+
+#~ msgid "Support is installed."
+#~ msgstr "Підтримку встановлено."
+
+#~ msgid "Suspend"
+#~ msgstr "Призупинити"
+
+#~ msgid "Swap"
+#~ msgstr "Свопінґ"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "Резервна пам’ять"
+
+#~ msgid "Swap Used"
+#~ msgstr "Використано резерву"
+
+#~ msgid "Switch Host to Maintenance"
+#~ msgstr "Перемкнути вузол у режим обслуговування"
+
+#~ msgid "Switch off $0"
+#~ msgstr "Вимкнути $0"
+
+#~ msgid "Switch on $0"
+#~ msgstr "Увімкнути $0"
+
+#~ msgid "Switching host to maintenance mode failed. Received error: "
+#~ msgstr ""
+#~ "Не вдалося перемкнути вузол у режим обслуговування. Отримано повідомлення "
+#~ "про помилку:"
+
+#~ msgid "Switching host to maintenance mode in progress ..."
+#~ msgstr "Виконуємо перемикання вузла у режим обслуговування…"
+
+#~ msgid ""
+#~ "Switching off <b>$0</b>  will break the connection to the server, and "
+#~ "will make the administration UI unavailable."
+#~ msgstr ""
+#~ "Вимикання <b>$0</b> призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Switching off <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Вимикання <b>$0</b> призведе до розірвання з’єднання із сервером і "
+#~ "зробить адміністративний інтерфейс користувача недоступним."
+
+#~ msgid ""
+#~ "Switching on <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Вмикання <b>$0</b> призведе до розірвання з’єднання із сервером і зробить "
+#~ "адміністративний інтерфейс користувача недоступним."
+
+#~ msgid "Sync all tags from a remote image repository"
+#~ msgstr "Синхронізувати усі мітки з віддаленого сховища образів"
+
+#~ msgid "Synchronize"
+#~ msgstr "Синхронізувати"
+
+#~ msgid "Synchronize users"
+#~ msgstr "Синхронізувати користувачів"
+
+#~ msgid "Synchronized"
+#~ msgstr "Синхронізовано"
+
+#~ msgid "Synchronized with {{Server}}"
+#~ msgstr "Синхронізовано із {{Server}}"
+
+#~ msgid "Synchronizing RAID Device $target"
+#~ msgstr "Синхронізуємо пристрій RAID $target"
+
+#~ msgid "System"
+#~ msgstr "Система"
+
+#~ msgid "System Information"
+#~ msgstr "Дані щодо системи"
+
+#~ msgid "System Not Registered"
+#~ msgstr "Систему не зареєстровано"
+
+#~ msgid "System Services"
+#~ msgstr "Служби системи"
+
+#~ msgid "System Time"
+#~ msgstr "Системний час"
+
+#~ msgid "System Up To Date"
+#~ msgstr "Система не потребує оновлення"
+
+#~ msgid "System is up to date"
+#~ msgstr "Система не потребує оновлення"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "TLS Termination"
+#~ msgstr "Переривання TLS"
+
+#~ msgid "Tablet"
+#~ msgstr "Планшет"
+
+#~ msgid "Tag"
+#~ msgstr "Мітка"
+
+#~ msgid "Tags"
+#~ msgstr "Мітки"
+
+#~ msgid "Target"
+#~ msgstr "Призначення"
+
+#~ msgid "Target Portal"
+#~ msgstr "Портал призначення"
+
+#~ msgid "Target World Wide Names"
+#~ msgstr "WWN призначень"
+
+#~ msgid "Targets"
+#~ msgstr "Призначення"
+
+#~ msgid "Team"
+#~ msgstr "Команда"
+
+#~ msgid "Team Port"
+#~ msgstr "Порт команди"
+
+#~ msgid "Team Port Settings"
+#~ msgstr "Параметри порту команди"
+
+#~ msgid "Team Settings"
+#~ msgstr "Параметри команди"
+
+#~ msgid "Template"
+#~ msgstr "Шаблон"
+
+#~ msgid "Templates"
+#~ msgstr "Шаблони"
+
+#~ msgid "Templates of $0 cluster"
+#~ msgstr "Шаблони кластера $0"
+
+#~ msgid "Terminal"
+#~ msgstr "Термінал"
+
+#~ msgid "Terminate Session"
+#~ msgstr "Перервати сеанс"
+
+#~ msgid "Test Configuration"
+#~ msgstr "Налаштування перевірки"
+
+#~ msgid "Test is only available while the kdump service is running."
+#~ msgstr "Перевірка є доступною, лише якщо запущено службу kdump."
+
+#~ msgid "Test kdump settings"
+#~ msgstr "Перевірити параметри kdump"
+
+#~ msgid "Testing connection"
+#~ msgstr "Перевіряємо з’єднання"
+
+#~ msgid "The \"storaged\" API is not available on this system."
+#~ msgstr "У цій системі програмний інтерфейс «storaged» є недоступним."
+
+#~ msgid "The Docker storage pool cannot be managed on this system."
+#~ msgstr "У цій системі не можна керувати резервним сховищем даних Docker."
+
+#~ msgid "The IP address or host name cannot contain whitespace."
+#~ msgstr "У IP-адресі або назві вузла не повинно бути пробілів."
+
+#~ msgid "The RAID Array is in a degraded state"
+#~ msgstr "Масив RAID перебуває у стані із погіршеними властивостями"
+
+#~ msgid "The RAID device must be running in order to add spare disks."
+#~ msgstr "Для додавання резервних дисків має працювати пристрій RAID."
+
+#~ msgid "The RAID device must be running in order to remove disks."
+#~ msgstr "Для вилучення дисків має працювати пристрій RAID."
+
+#~ msgid "The VM crashed."
+#~ msgstr "Віртуальна машина аварійно завершила роботу."
+
+#~ msgid "The VM is down."
+#~ msgstr "Віртуальну машину вимкнено."
+
+#~ msgid "The VM is going down."
+#~ msgstr "Віртуальна машина вимикається."
+
+#~ msgid "The VM is idle."
+#~ msgstr "Віртуальна машина бездіяльна."
+
+#~ msgid "The VM is in process of dying (shut down or crash is not completed)."
+#~ msgstr ""
+#~ "Віртуальна машина завершує роботу (вимикання або аварійне завершення у "
+#~ "процесі)."
+
+#~ msgid "The VM is paused."
+#~ msgstr "Роботу віртуальної машини призупинено."
+
+#~ msgid "The VM is running and will be forced off before deletion."
+#~ msgstr ""
+#~ "Запущено віртуальну машину. Її буде примусово зупинено перед вилученням."
+
+#~ msgid "The VM is running."
+#~ msgstr "Віртуальна машина працює."
+
+#~ msgid "The VM is suspended by guest power management."
+#~ msgstr ""
+#~ "Роботу віртуальної машини призупинено засобами керування живленням "
+#~ "гостьової системи."
+
+#~ msgid ""
+#~ "The account '$0' will be forced to change their password on next login"
+#~ msgstr ""
+#~ "Обліковий запис «$0» має примусово змінити пароль під час наступного входу"
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "У адресі містяться некоректні символи"
+
+#~ msgid ""
+#~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
+#~ "established. Are you sure you want to continue connecting?"
+#~ msgstr ""
+#~ "Не вдалося встановити ідентичність вузла {{#strong}}{{host}}{{/strong}}. "
+#~ "Ви справді хочете продовжити спробу встановити з’єднання?"
+
+#~ msgid "The collected information will be stored locally on the system."
+#~ msgstr "Зібрані дані буде збережено локально у операційній системі."
+
+#~ msgid "The configured state is unknown, it might change on the next boot."
+#~ msgstr ""
+#~ "Налаштований стан є невідомим, його може бути змінено під час наступного "
+#~ "завантаження."
+
+#~ msgid "The container '{{ target }}' does not exist."
+#~ msgstr "Контейнера «{{ target }}» не існує."
+
+#~ msgid ""
+#~ "The creation of this VDO device did not finish and the device can't be "
+#~ "used."
+#~ msgstr ""
+#~ "Створення цього пристрою VDO не завершено, ним не можна користуватися."
+
+#~ msgid "The current user isn't allowed to access system subscription status."
+#~ msgstr ""
+#~ "Поточному користувачу заборонено отримувати доступ до стану передплати "
+#~ "системи."
+
+#~ msgid "The deployment config '{{ target }}' does not exist."
+#~ msgstr "Налаштувань розгортання «{{ target }}» не існує."
+
+#~ msgid ""
+#~ "The filesystem is in use by login sessions and system "
+#~ "services.                Proceeding will stop these."
+#~ msgstr ""
+#~ "Файлова система використовується службами системи або сеансами "
+#~ "користувачів. Виконання цієї дії призведе до припинення роботи цих служб "
+#~ "та сеансів."
+
+#~ msgid ""
+#~ "The filesystem is in use by login sessions.                Proceeding "
+#~ "will stop these."
+#~ msgstr ""
+#~ "Файлова система використовується сеансами користувачів. Виконання цієї "
+#~ "дії призведе до припинення роботи цих сеансів."
+
+#~ msgid ""
+#~ "The filesystem is in use by system services.                Proceeding "
+#~ "will stop these."
+#~ msgstr ""
+#~ "Файлова система використовується службами системи. Виконання цієї дії "
+#~ "призведе до припинення роботи цих служб."
+
+#~ msgid "The following packages were recently updated:"
+#~ msgstr "Нещодавно було оновлено такі пакунки:"
+
+#~ msgid "The following packages were updated $0:"
+#~ msgstr "Оновлено такі пакунки $0:"
+
+#~ msgid ""
+#~ "The generated archive contains data considered sensitive and its content "
+#~ "should be reviewed by the originating organization before being passed to "
+#~ "any third party."
+#~ msgstr ""
+#~ "У створеному архіві містяться дані, які є конфіденційними. Його вміст має "
+#~ "бути переглянути організацією походження, перш ніж архів буде передано "
+#~ "стороннім особам."
+
+#~ msgid "The group '{{ groupName }}' does not exist."
+#~ msgstr "Групи «{{ groupName }}» не існує."
+
+#~ msgid "The key of $0 will be removed."
+#~ msgstr "Ключ $0 буде вилучено."
+
+#~ msgid ""
+#~ "The key of {{#strong}}{{host}}{{/strong}} does not match the key "
+#~ "previously in use. Unless this machine was recently replaced, it is "
+#~ "likely that someone is trying to attack your connection to this machine."
+#~ msgstr ""
+#~ "Ключ {{#strong}}{{host}}{{/strong}} не відповідає раніше використаному "
+#~ "ключу. Якщо нещодавно ніхто не міняв цього комп’ютера, ймовірною причиною "
+#~ "є спроба атаки на ваше з’єднання із цим комп’ютером."
+
+#~ msgid ""
+#~ "The key server at $0 can not be reached.  This network key can not unlock "
+#~ "the encrypted data right now, but it might be able to when the server "
+#~ "becomes reachable again."
+#~ msgstr ""
+#~ "Не вдалося встановити зв'язок із сервером ключів $0. Цей ключ мережі не "
+#~ "може бути використано для доступу до зашифрованих даних зараз, але, "
+#~ "можливо, ним можна буде скористатися, коли доступ до сервера ключів буде "
+#~ "відновлено."
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "Наданий вами ключ є некоректним."
+
+#~ msgid "The last disk of a RAID device cannot be removed."
+#~ msgstr "Останній диск пристрою RAID вилучати не можна."
+
+#~ msgid "The last physical volume of a volume group cannot be removed."
+#~ msgstr "Не можна вилучати останній фізичний том із групи томів."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "Комп’ютер перезавантажується"
+
+#~ msgid "The maximum number of replicas is 128"
+#~ msgstr "Максимальною є кількість реплік 128"
+
+#~ msgid "The name contains invalid characters"
+#~ msgstr "У назві містяться некоректні символи"
+
+#~ msgid "The node '{{ target }}' does not exist."
+#~ msgstr "Вузла «{{ target }}» не існує."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "На вузлі недостатньо простору на диску"
+
+#~ msgid "The node doesn't have enough free memory"
+#~ msgstr "На вузлі недостатньо вільної пам’яті"
+
+#~ msgid "The output should match this text: "
+#~ msgstr "Виведення має бути таким: "
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Паролі не збігаються"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Паролі не збігаються."
+
+#~ msgid "The persistent volume '{{ target }}' does not exist."
+#~ msgstr "Сталого тому «{{ target }}» не існує."
+
+#~ msgid "The pod '{{ target }}' does not exist."
+#~ msgstr "Кокона «{{ target }}» не існує."
+
+#~ msgid "The project '{{ projName }}' does not exist."
+#~ msgstr "Проекту «{{ projName }}» не існує."
+
+#~ msgid "The replication controller '{{ target }}' does not exist."
+#~ msgstr "Контролера реплікації «{{ target }}» не існує."
+
+#~ msgid "The route '{{ target }}' does not exist."
+#~ msgstr "Маршруту «{{ target }}» не існує."
+
+#~ msgid "The scan from $time ($type) found no vulnerabilities."
+#~ msgstr "Скануванням від $time ($type) вразливостей не знайдено."
+
+#~ msgid "The scan from $time ($type) was not successful."
+#~ msgstr "Сканування $time ($type) виконати не вдалося."
+
+#~ msgid "The selected file is not a valid Kubernetes application manifest."
+#~ msgstr "Вибраний файл не є коректним маніфестом програми Kubernetes."
+
+#~ msgid "The server has returned a key that doesn't work."
+#~ msgstr "Сервером повернуто ключ, який не працює."
+
+#~ msgid ""
+#~ "The server refused to authenticate '$0' using password authentication, "
+#~ "and no other supported authentication methods are available."
+#~ msgstr ""
+#~ "Сервером відмовлено у розпізнаванні «$0» за допомогою пароля. Інших "
+#~ "підтримуваних способів розпізнавання не передбачено."
+
+#~ msgid "The server refused to authenticate using any supported methods."
+#~ msgstr ""
+#~ "Сервер відмовився розпізнавати користувача за допомогою будь-якого з "
+#~ "підтримуваних методів."
+
+#~ msgid "The server uses a certificate signed by an unknown authority."
+#~ msgstr ""
+#~ "На сервері використовується сертифікат, підписаний невідомою службою "
+#~ "сертифікації."
+
+#~ msgid "The service '{{ target }}' does not exist."
+#~ msgstr "Служби «{{ target }}» не існує."
+
+#~ msgid "The user '{{ userName }}' does not exist."
+#~ msgstr "Запису користувача «{{ userName }}» не існує."
+
+#~ msgid "The user <b>$0</b> does not have permissions for creating timers"
+#~ msgstr "Користувачу <b>$0</b> заборонено створювати таймери"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr "Користувачу <b>$0</b> заборонено керувати серверами"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage storage"
+#~ msgstr "Користувачу <b>$0</b> не дозволено керувати сховищем даних"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "Користувачу <b>$0</b> заборонено змінювати облікові записи"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify hostnames"
+#~ msgstr "Користувачу <b>$0</b> не дозволено змінювати назви вузлів"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr "Користувачу <b>$0</b> заборонено змінювати параметри роботи мережі"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify realms"
+#~ msgstr "Користувачу <b>$0</b> не дозволено вносити зміни до областей"
+
+#~ msgid ""
+#~ "The user <b>$0</b> is not permitted to shutdown or restart this server"
+#~ msgstr ""
+#~ "Користувачеві <b>$0</b> заборонено вимикати або перезапускати цей сервер"
+
+#~ msgid ""
+#~ "The user name can only consist of letters from a-z, digits, dots, dashes "
+#~ "and underscores."
+#~ msgstr ""
+#~ "Ім’я користувача може складатися лише із літер a-z, цифр, крапок, дефісів "
+#~ "та символів підкреслювання."
+
+#~ msgid ""
+#~ "The web browser configuration prevents Cockpit from running (inaccessible "
+#~ "$0)"
+#~ msgstr ""
+#~ "Налаштування програми для перегляду інтернету забороняють запуск Cockpit "
+#~ "(недоступна можливість $0)"
+
+#~ msgid "There are currently no active pages"
+#~ msgstr "Зараз активних сторінок немає"
+
+#~ msgid ""
+#~ "There are devices with multiple paths on the system, but the multipath "
+#~ "service is not running."
+#~ msgstr ""
+#~ "У системі є пристрої із декількома шляхами доступу, але службу multipath "
+#~ "не запущено."
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr "Для цього облікового запису немає уповноважених відкритих ключів."
+
+#~ msgid ""
+#~ "There is not enough free space elsewhere to remove this physical volume. "
+#~ "At least $0 more free space is needed."
+#~ msgstr ""
+#~ "Для вилучення цього фізичного тому недостатньо вільного місця. Потрібно "
+#~ "принаймні $0 вільного місця."
+
+#~ msgid "Thin Logical Volume"
+#~ msgstr "Тонкий логічний том"
+
+#~ msgid "This NFS mount is in use and only its options can be changed."
+#~ msgstr ""
+#~ "Це монтування NFS використовується; можна лише змінювати його параметри."
+
+#~ msgid "This VDO device does not use all of its backing device."
+#~ msgstr "Цей пристрій VDO не використовує увесь об'єм резервного пристрою."
+
+#~ msgid ""
+#~ "This box must be checked to confirm that the key will be transported "
+#~ "without HTTPS"
+#~ msgstr ""
+#~ "Цей пункт має бути позначено для підтведження пересилання ключа без HTTPS"
+
+#~ msgid ""
+#~ "This claim is in use. Deleting it may cause issues with the following pod:"
+#~ msgstr ""
+#~ "Ця заявка використовується. Її вилучення може призвести до проблем із цим "
+#~ "коконом:"
+
+#~ msgid ""
+#~ "This day doesn't exist in all months.<br> The timer will only be executed "
+#~ "in months that have 31st."
+#~ msgstr ""
+#~ "Цей день є не в усіх місяцях.<br> Таймер виконуватиметься лише у місяці, "
+#~ "у яких є 31 день."
+
+#~ msgid "This device cannot be managed here."
+#~ msgstr "Тут не можна керувати цим пристроєм."
+
+#~ msgid ""
+#~ "This device has filesystems that are currently in use.                "
+#~ "Proceeding will unmount all filesystems on it."
+#~ msgstr ""
+#~ "На цьому пристрої міститься файлова система, яка зараз використовується. "
+#~ "Виконання дії призведе до демонтування усіх файлових систем на пристрої."
+
+#~ msgid "This device is currently used for RAID devices."
+#~ msgstr "Цей пристрій зараз використовується для пристроїв RAID."
+
+#~ msgid ""
+#~ "This device is currently used for RAID devices.                Proceeding "
+#~ "will remove it from its RAID devices."
+#~ msgstr ""
+#~ "Цей пристрій зараз використовується для формування пристроїв RAID. Якщо "
+#~ "дію буде виконано, пристрій буде вилучено із його пристроїв RAID."
+
+#~ msgid "This device is currently used for VDO devices."
+#~ msgstr ""
+#~ "Цей пристрій зараз використовується для зберігання даних пристроїв VDO."
+
+#~ msgid "This device is currently used for volume groups."
+#~ msgstr "Цей пристрій зараза використовується для груп томів."
+
+#~ msgid ""
+#~ "This device is currently used for volume groups.                "
+#~ "Proceeding will remove it from its volume groups."
+#~ msgstr ""
+#~ "Цей пристрій зараз використовується для груп томів. Якщо дію буде "
+#~ "виконано, пристрій буде вилучено із його груп томів."
+
+#~ msgid "This disk cannot be removed while the device is recovering."
+#~ msgstr ""
+#~ "Цей диск не можна вилучати, доки пристрій перебуває у стані відновлення."
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "Вміст цього поля не може бути порожнім."
+
+#~ msgid ""
+#~ "This host is managed by a virtualization manager, so creation of new VMs "
+#~ "from the host is not possible."
+#~ msgstr ""
+#~ "Цей вузол керується засобом керування віртуалізацією, тому створення "
+#~ "нових віртуальних машин з вузла неможливе."
+
+#~ msgid "This image does not exist."
+#~ msgstr "Цього образу не існує."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "Цей комп’ютер вже було додано."
+
+#~ msgid "This may take a while"
+#~ msgstr "Зачекайте"
+
+#~ msgid "This network key is not recognized anymore by the server."
+#~ msgstr "Цей ключ мережі більше не розпізнається на сервері."
+
+#~ msgid ""
+#~ "This network key is obsolete. It is still functional but it should be "
+#~ "replaced. A new key has been retrieved from the server."
+#~ msgstr ""
+#~ "Цей ключ мережі є застарілим. Він усе ще працездатний, але його має бути "
+#~ "замінено. Від сервера отримано новий ключ."
+
+#~ msgid ""
+#~ "This network key is obsolete. It is still functional but it should be "
+#~ "replaced. A new key has been securely retrieved from the server."
+#~ msgstr ""
+#~ "Цей ключ мережі є застарілим. Він усе ще працездатний, але його має бути "
+#~ "замінено. Від сервера безпечно отримано новий ключ."
+
+#~ msgid ""
+#~ "This network key works fine right now and the encrypted data can be "
+#~ "unlocked with it."
+#~ msgstr ""
+#~ "Зараз цей ключ мережі є працездатним, за його допомогою можна отримати "
+#~ "доступу до зашифрованих даних."
+
+#~ msgid ""
+#~ "This option is for single node testing only – local storage will not work "
+#~ "in a multi-node cluster"
+#~ msgstr ""
+#~ "Цей параметр призначено лише для тестування окремих вузлів – локальне "
+#~ "сховище не працюватиму у багатовузловому кластері"
+
+#~ msgid "This package is not compatible with this version of Cockpit"
+#~ msgstr "Цей пакунок несумісний із цією версією Cockpit"
+
+#~ msgid "This package requires Cockpit version %s or later"
+#~ msgstr "Для цього пакунка потрібна версія Cockpit %s або новіша"
+
+#~ msgid "This system is not registered"
+#~ msgstr "Цю систему не зареєстровано"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "Ця система використовує нетиповий профіль"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "Ця система використовує рекомендований профіль"
+
+#~ msgid ""
+#~ "This tool will collect system configuration and diagnostic information "
+#~ "from this system for use with diagnosing problems with the system."
+#~ msgstr ""
+#~ "Ця програма збере дані щодо налаштувань системи і діагностичні дані з "
+#~ "цієї системи для виявлення причин проблем у системі."
+
+#~ msgid "This unit is an instance of the $0 template."
+#~ msgstr "Цей модуль є екземпляром шаблона $0."
+
+#~ msgid "This unit is not designed to be enabled explicitly."
+#~ msgstr "Цей модуль не створено для вмикання явним чином."
+
+#~ msgid "This user name already exists"
+#~ msgstr "Запис користувача із таким іменем уже існує"
+
+#~ msgid ""
+#~ "This version of cockpit-ws does not support connecting to a host with an "
+#~ "alternate user or port"
+#~ msgstr ""
+#~ "У цій версії cockpit-ws не передбачено підтримки встановлення з’єднання "
+#~ "із вузлом від альтернативного користувача або на альтернативному порті."
+
+#~ msgid "This virtual machine is not managed by oVirt"
+#~ msgstr "Ця віртуальна машина не керується з боку oVirt"
+
+#~ msgid ""
+#~ "This volume has been claimed by {{ item.item.spec.claimRef.namespace }} / "
+#~ "{{ item.item.spec.claimRef.name }}. Deleting it will break that claim and "
+#~ "may cause issues with any pods depending on it."
+#~ msgstr ""
+#~ "Цей том може бути заявлено для {{ item.item.spec.claimRef.namespace }} / "
+#~ "{{ item.item.spec.claimRef.name }}. Його вилучення порушить цю заявку і "
+#~ "може призвести до проблем із усіма коконами, які від нього залежать."
+
+#~ msgid "This volume has not been claimed"
+#~ msgstr "Цей том не заявлено"
+
+#~ msgid "This volume needs to be activated before it can be resized."
+#~ msgstr ""
+#~ "Перш ніж розмір цього тому можна буде змінювати, його слід активувати."
+
+#~ msgid "This web browser is too old to run Cockpit (missing $0)"
+#~ msgstr ""
+#~ "Ця програма для перегляду інтернету є надто старою для роботи з Cockpit "
+#~ "(не вистачає можливості $0)"
+
+#~ msgid "This web console will be updated."
+#~ msgstr "Цю вебконсоль буде оновлено."
+
+#~ msgid ""
+#~ "This will test kdump settings by crashing the kernel and thereby the "
+#~ "system. Depending on the settings, the system may not automatically "
+#~ "reboot and the process may take a while."
+#~ msgstr ""
+#~ "Виконати тестування параметрів kdump, аварійно завершивши роботу ядра, а "
+#~ "отже і системи. Залежно від параметрів, система може автоматично "
+#~ "перезавантажитися, що потребуватиме певного часу."
+
+#~ msgid "This will test the kdump configuration by crashing the kernel."
+#~ msgstr "Перевіряє налаштування kdump, аварійно завершуючи роботу ядра."
+
+#~ msgid "Thursday"
+#~ msgstr "четвер"
+
+#~ msgid "Time Zone"
+#~ msgstr "Часовий пояс"
+
+#~ msgid "Timers"
+#~ msgstr "Таймери"
+
+#~ msgid ""
+#~ "Tip: Make your key password match your login password to automatically "
+#~ "authenticate against other systems."
+#~ msgstr ""
+#~ "Підказка: для автоматичного розпізнавання на інших системах встановіть "
+#~ "однаковий пароль для ключа і для входу до системи."
+
+#~ msgid ""
+#~ "To get software updates, this system needs to be registered with Red Hat, "
+#~ "either using the Red Hat Customer Portal or a local subscription server."
+#~ msgstr ""
+#~ "Щоб отримувати оновлення програмного забезпечення, цю систему слід "
+#~ "зареєструвати у Red Hat або за допомогою порталу клієнтів Red Hat, або за "
+#~ "допомогою локального сервера передплати."
+
+#~ msgid "To pull this image:"
+#~ msgstr "Для отримання цього образу:"
+
+#~ msgid "To push an image to this image stream:"
+#~ msgstr "Щоб записати образ до цього потоку образів:"
+
+#~ msgid ""
+#~ "To try a different port you will need to upgrade cockpit-ws to a newer "
+#~ "version."
+#~ msgstr "Щоб спробувати інший порт, вам слід оновити cockpit-ws."
+
+#~ msgid "Token"
+#~ msgstr "Елемент"
+
+#~ msgid "Too many files found"
+#~ msgstr "Знайдено забагато файлів"
+
+#~ msgid "Too much data"
+#~ msgstr "Забагато даних"
+
+#~ msgid "Topology"
+#~ msgstr "Топологія"
+
+#~ msgid "Total"
+#~ msgstr "Загалом"
+
+#~ msgid "Total size: $0"
+#~ msgstr "Загальний розмір: $0"
+
+#~ msgid "Tower"
+#~ msgstr "Башточка"
+
+#~ msgid "Triggered By"
+#~ msgstr "Причина вмикання"
+
+#~ msgid "Triggers"
+#~ msgstr "Умовні зміни"
+
+#~ msgid "Troubleshoot"
+#~ msgstr "Діагностика проблем"
+
+#~ msgid "Trust Key"
+#~ msgstr "Довіряти ключу"
+
+#~ msgid "Trust new key"
+#~ msgstr "Довіряти новому ключу"
+
+#~ msgid "Trust this certificate for this connection"
+#~ msgstr "Довіряти цьому сертифікату для цього з’єднання"
+
+#~ msgid "Try Again"
+#~ msgstr "Спробувати ще раз"
+
+#~ msgid "Try again"
+#~ msgstr "Повторити спробу"
+
+#~ msgid "Try to reconnect"
+#~ msgstr "Спробувати з’єднатися знову"
+
+#~ msgid "Trying to synchronize with {{Server}}"
+#~ msgstr "Намагаємося синхронізуватися з {{Server}}"
+
+#~ msgid "Tuesday"
+#~ msgstr "вівторок"
+
+#~ msgid "Tuned has failed to start"
+#~ msgstr "Tuned не вдалося запустити"
+
+#~ msgid "Tuned is not available"
+#~ msgstr "Tuned недоступна"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "Tuned не запущено"
+
+#~ msgid "Tuned is off"
+#~ msgstr "Tuned вимкнено"
+
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgid "Type a password"
+#~ msgstr "Введіть пароль"
+
+#~ msgid "Type to filter…"
+#~ msgstr "Введіть щось для фільтрування…"
+
+#~ msgid "Type:"
+#~ msgstr "Тип:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "URL cannot be empty"
+#~ msgstr "Адреса не може бути порожньою"
+
+#~ msgid "URL must start with either \"http:\" or \"https:\""
+#~ msgstr "Адреса має починатися з «http:» або «https:»"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unable to apply settings: $0"
+#~ msgstr "Не вдалося застосувати параметри: $0"
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "Не вдалося застосувати це рішення у автоматичному режимі"
+
+#~ msgid "Unable to connect"
+#~ msgstr "Не вдалось з'єднатись"
+
+#~ msgid "Unable to connect to that address"
+#~ msgstr "Не вдалося встановити з’єднання із цією адресою"
+
+#~ msgid "Unable to decode Kubernetes application manifest."
+#~ msgstr "Не вдалося декодувати маніфест програми Kubernetes."
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "Неможливо вилучити обліковий запис root"
+
+#~ msgid "Unable to get alert details."
+#~ msgstr "Не вдалося отримати параметри нагадувань."
+
+#~ msgid "Unable to get alert: $0"
+#~ msgstr "Не вдалося отримати нагадування: $0"
+
+#~ msgid "Unable to reach server"
+#~ msgstr "Не вдалося досягти сервера"
+
+#~ msgid "Unable to read the Kubernetes application manifest. Code $0."
+#~ msgstr "Не вдалося прочитати маніфест програми Kubernetes. Код $0."
+
+#~ msgid "Unable to remove mount"
+#~ msgstr "Не вдалося вилучити монтування"
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "Неможливо перейменувати обліковий запис root"
+
+#~ msgid "Unable to resolve"
+#~ msgstr "Не вдалося визначити"
+
+#~ msgid "Unable to run fix: %0"
+#~ msgstr "Не вдалося виконати fix: %0"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "Не вдалося запустити setroubleshootd"
+
+#~ msgid "Unable to unmount filesystem"
+#~ msgstr "Не вдалося демонтувати файлову систему"
+
+#~ msgid "Unavailable"
+#~ msgstr "Недоступний"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Неочікувана помилка"
+
+#~ msgid "Unit"
+#~ msgstr "Модуль"
+
+#~ msgid "Unknown"
+#~ msgstr "Невідомий"
+
+#~ msgid "Unknown \"$0\""
+#~ msgstr "Невідомий «$0»"
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Невідомий ($0)"
+
+#~ msgid "Unknown Application"
+#~ msgstr "Невідома програма"
+
+#~ msgid "Unknown Host Key"
+#~ msgstr "Невідомий ключ вузла"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Невідомі налаштування"
+
+#~ msgid "Unknown host name"
+#~ msgstr "Невідома назва вузла"
+
+#~ msgid "Unless Stopped"
+#~ msgstr "Якщо не зупинено"
+
+#~ msgid "Unlock"
+#~ msgstr "Розблокувати"
+
+#~ msgid "Unlock Key"
+#~ msgstr "Розблокувати ключ"
+
+#~ msgid "Unlock at boot"
+#~ msgstr "Розблокувати при завантаженні"
+
+#~ msgid "Unlock read only"
+#~ msgstr "Розблокувати лише для читання"
+
+#~ msgid "Unlocked"
+#~ msgstr "Розблоковано"
+
+#~ msgid "Unlocking $target"
+#~ msgstr "Розблокуємо $target"
+
+#~ msgid "Unmanaged Interfaces"
+#~ msgstr "Некеровані інтерфейси"
+
+#~ msgid "Unmask"
+#~ msgstr "Розмаскувати"
+
+#~ msgid "Unmount"
+#~ msgstr "Демонтувати"
+
+#~ msgid "Unmounting $target"
+#~ msgstr "Демонтуємо $target"
+
+#~ msgid "Unnamed"
+#~ msgstr "Без назви"
+
+#~ msgid "Unplug"
+#~ msgstr "Від'єднати"
+
+#~ msgid "Unrecognized Data"
+#~ msgstr "Нерозпізнані дані"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Нерозпізнані дані"
+
+#~ msgid "Unrecognized data can not be made smaller here."
+#~ msgstr "Тут не можна зменшити об'єм нерозпізнаних даних."
+
+#~ msgid "Unregister"
+#~ msgstr "Знятись з реєстрації"
+
+#~ msgid "Unregistered System"
+#~ msgstr "Незареєстрована система"
+
+#~ msgid "Unregistering system..."
+#~ msgstr "Скасовуємо реєстрацію системи…"
+
+#~ msgid "Unresolved"
+#~ msgstr "Не визначено"
+
+#~ msgid "Unsupported setup mechanism"
+#~ msgstr "Непідтримуваний механізм налаштовування"
+
+#~ msgid "Unsupported volume"
+#~ msgstr "Непідтримуваний том"
+
+#~ msgid "Untrusted host"
+#~ msgstr "Ненадійний вузол"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "Працює з $StartedAt"
+
+#~ msgid "Update"
+#~ msgstr "Оновити"
+
+#~ msgid "Update History"
+#~ msgstr "Історія оновлень"
+
+#~ msgid "Update Log"
+#~ msgstr "Журнал оновлень"
+
+#~ msgid "Updated"
+#~ msgstr "Оновлено"
+
+#~ msgid "Updated packages may require a restart to take effect."
+#~ msgstr "Використання оновлених пакунків може потребувати перезапуску."
+
+#~ msgid "Updates Available"
+#~ msgstr "Доступні оновлення"
+
+#~ msgid "Updates are disabled."
+#~ msgstr "Оновлення вимкнено."
+
+#~ msgid "Updating $0..."
+#~ msgstr "Оновлення $0…"
+
+#~ msgid "Upgrade to a more recent version of libvirt to view disk statistics"
+#~ msgstr ""
+#~ "Щоб мати змогу переглядати статистику дисків, оновіться до новішої версії "
+#~ "libvirt"
+
+#~ msgid "Usage"
+#~ msgstr "Використання"
+
+#~ msgid "Usage of $0 CPU core"
+#~ msgid_plural "Usage of $0 CPU cores"
+#~ msgstr[0] "Використання $0 ядра процесора"
+#~ msgstr[1] "Використання $0 ядер процесора"
+#~ msgstr[2] "Використання $0 ядер процесора"
+
+#~ msgid "Use 512 Byte emulation"
+#~ msgstr "Емуляція 512 байтів"
+
+#~ msgid "Use new key"
+#~ msgstr "Скористатися новим ключем"
+
+#~ msgid "Use proxy server"
+#~ msgstr "Використовувати проксі-сервер"
+
+#~ msgid "Use the following keys to authenticate against other systems"
+#~ msgstr "Використати вказані нижче ключі для розпізнавання у інших системах"
+
+#~ msgid "Use the setting in /etc/kdump.conf"
+#~ msgstr "Використовувати параметр у /etc/kdump.conf"
+
+#~ msgid "Used"
+#~ msgstr "Використано"
+
+#~ msgid "Used by Containers"
+#~ msgstr "Використано контейнерами"
+
+#~ msgid "User"
+#~ msgstr "Користувач"
+
+#~ msgid "User Name"
+#~ msgstr "Ім'я користувача"
+
+#~ msgid "User Password"
+#~ msgstr "Пароль користувача"
+
+#~ msgid "User interface for Linux servers"
+#~ msgstr "Інтерфейс користувача для серверів Linux"
+
+#~ msgid "User name"
+#~ msgstr "Ім'я користувача"
+
+#~ msgid "User name cannot be empty"
+#~ msgstr "Ім’я користувача не може бути порожнім"
+
+#~ msgid "User or Group"
+#~ msgstr "Користувач або група"
+
+#~ msgid "Username"
+#~ msgstr "Користувач"
+
+#~ msgid "Users"
+#~ msgstr "Користувачі"
+
+#~ msgid "Using available credentials"
+#~ msgstr "З використанням доступних реєстраційних даних"
+
+#~ msgid "VDO Backing"
+#~ msgstr "Резерв VDO"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "VDO Backing"
+#~ msgstr "Резерв VDO"
+
+#~ msgid "VDO Device"
+#~ msgstr "Пристрій VDO"
+
+#~ msgid "VDO Device $0"
+#~ msgstr "Пристрій VDO $0"
+
+#~ msgid "VDO Devices"
+#~ msgstr "Пристрої VDO"
+
+#~ msgid "VDO backing devices can not be made smaller"
+#~ msgstr "Пристрої резервного копіювання VDO не можна звужувати"
+
+#~ msgid "VDSM"
+#~ msgstr "VDSM"
+
+#~ msgid "VDSM Service Management"
+#~ msgstr "Керування службою VDSM"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT - Сумісна із усіма системами та пристроями"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "Ід. VLAN"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "Параметри VLAN"
+
+#~ msgid "VM DELETE failed."
+#~ msgstr "Не вдалося виконати дію DELETE для ВМ."
+
+#~ msgid "VM FORCE OFF action failed"
+#~ msgstr "Не вдалося виконати дію FORCE OFF для ВМ"
+
+#~ msgid "VM FORCE REBOOT action failed"
+#~ msgstr "Не вдалося виконати дію FORCE REBOOT для ВМ"
+
+#~ msgid "VM REBOOT action failed"
+#~ msgstr "Не вдалося виконати дію REBOOT для ВМ"
+
+#~ msgid "VM SEND Non-Maskable Interrrupt action failed"
+#~ msgstr ""
+#~ "Спроба виконати дію немаскованого переривання VM SEND завершилася невдало"
+
+#~ msgid "VM SHUT DOWN action failed"
+#~ msgstr "Не вдалося виконати дію SHUT DOWN для ВМ"
+
+#~ msgid "VM START action failed"
+#~ msgstr "Не вдалося виконати дію START для ВМ"
+
+#~ msgid "VM definition is not a valid JSON."
+#~ msgstr "Визначення віртуальної машини не є коректним JSON."
+
+#~ msgid "VM definition is required."
+#~ msgstr "Потрібне визначення віртуальної машини."
+
+#~ msgid "VM definition must be an object."
+#~ msgstr "Визначення віртуальної машини має бути об'єктом."
+
+#~ msgid "VM icon"
+#~ msgstr "Піктограма ВМ"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "VNC Address:"
+#~ msgstr "Адреса VNC:"
+
+#~ msgid "VNC Port:"
+#~ msgstr "Порт VNC:"
+
+#~ msgid "VNC TLS Port:"
+#~ msgstr "Порт TLS VNC:"
+
+#~ msgid "Validating authentication token"
+#~ msgstr "Перевіряємо ключ розпізнавання"
+
+#~ msgid "Validating key"
+#~ msgstr "Перевірка ключа"
+
+#~ msgid "Vendor"
+#~ msgstr "Постачальник"
+
+#~ msgid "Verified"
+#~ msgstr "Перевірено"
+
+#~ msgid "Verify Key"
+#~ msgstr "Перевірити ключ"
+
+#~ msgid "Verifying"
+#~ msgstr "Перевіряємо"
+
+#~ msgid "Version num"
+#~ msgstr "Номер версії"
+
+#~ msgid "Very securely erasing $target"
+#~ msgstr "Дуже безпечно витираємо $target"
+
+#~ msgid "View Registration Details"
+#~ msgstr "Переглянути параметри реєстрації"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "Віртуальні машини"
+
+#~ msgid "Virtual Machines of $0 cluster"
+#~ msgstr "Віртуальні машини кластера $0"
+
+#~ msgid "Virtualization Service (libvirt) is Not Active"
+#~ msgstr "Служба віртуалізації (libvirt) не є активною"
+
+#~ msgid "Virtualization Service is Available"
+#~ msgstr "Доступна служба віртуалізації"
+
+#~ msgid "Virtualport"
+#~ msgstr "Віртуальний порт"
+
+#~ msgid "Volume"
+#~ msgstr "Том"
+
+#~ msgid "Volume Group"
+#~ msgstr "Група томів"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "Група томів $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "Групи томів"
+
+#~ msgid "Volume ID"
+#~ msgstr "Ід. тому"
+
+#~ msgid "Volume Name"
+#~ msgstr "Назва тому"
+
+#~ msgid "Volume Type"
+#~ msgstr "Тип тому"
+
+#~ msgid "Volumes"
+#~ msgstr "Томи"
+
+#~ msgid "Waiting"
+#~ msgstr "Очікування"
+
+#~ msgid "Waiting for details..."
+#~ msgstr "Очікуємо на подробиці…"
+
+#~ msgid "Waiting for other programs to finish using the package manager..."
+#~ msgstr ""
+#~ "Очікуємо на завершення роботи з програмою для керування пакунками інших "
+#~ "програм…"
+
+#~ msgid "Waiting for other software management operations to finish"
+#~ msgstr "Очікуємо на завершення інших дій із програмним забезпеченням"
+
+#~ msgid "Wanted By"
+#~ msgstr "Бажаний для"
+
+#~ msgid "Wants"
+#~ msgstr "Бажає"
+
+#~ msgid "Warning and above"
+#~ msgstr "Попередження і вище"
+
+#~ msgid "Warning:"
+#~ msgstr "Попередження:"
+
+#~ msgid "Wednesday"
+#~ msgstr "середа"
+
+#~ msgid "Weeks"
+#~ msgstr "Тижні"
+
+#~ msgid "Welcome to the Image Registry"
+#~ msgstr "Вітаємо у реєстрі образів"
+
+#~ msgid "With terminal"
+#~ msgstr "За допомогою термінала"
+
+#~ msgid "Write-mostly"
+#~ msgstr "Здебільшого запис"
+
+#~ msgid "Writing"
+#~ msgstr "Запис"
+
+#~ msgid "Wrong user name or password"
+#~ msgstr "Помилкове ім’я користувача чи пароль"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS - Типова для Red Hat Enterprise Linux 7"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Так"
+
+#~ msgid ""
+#~ "You are connected to {{#strong}}{{host}}{{/strong}}, however in order to "
+#~ "synchronize users, a user with superuser privileges is required."
+#~ msgstr ""
+#~ "Ви встановлюєте з’єднання із {{#strong}}{{host}}{{/strong}}. Втім, для "
+#~ "синхронізації даних користувачів потрібні права доступу адміністративного "
+#~ "користувача."
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr ""
+#~ "Зараз ваш комп’ютер безпосередньо з’єднано із цим сервером. Ви не можете "
+#~ "його вилучити."
+
+#~ msgid "You are not authorized to modify the firewall."
+#~ msgstr "Вас не уповноважено на внесення змін до брандмауера."
+
+#~ msgid ""
+#~ "You can bypass the certificate check, but any data you send to the server "
+#~ "could be intercepted by others."
+#~ msgstr ""
+#~ "Ви можете наказати пропустити перевірку сертифікатів, але якщо це буде "
+#~ "зроблено, будь-які дані, які надсилатимуться на сервер, може бути "
+#~ "перехоплено сторонніми особами."
+
+#~ msgid "You can deploy an application to your cluster."
+#~ msgstr "Ви можете розгорнути програму на вашому кластері."
+
+#~ msgid ""
+#~ "You can remove the previously stored key by running the following command"
+#~ msgstr "Вилучити раніше збережений ключ можна за допомогою такої команди"
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "У вас немає прав доступу для перегляду уповноважених відкритих ключів для "
+#~ "цього облікового запису."
+
+#~ msgid "You don't have permission to manage the Docker storage pool."
+#~ msgstr ""
+#~ "У вас немає прав доступу до керування резервним сховищем даних Docker."
+
+#~ msgid "You might want to remove it."
+#~ msgstr "Ймовірно, вам варто вилучити його."
+
+#~ msgid "You need to re-subscribe this system."
+#~ msgstr "Вам слід поновити передплату для цієї системи."
+
+#~ msgid "Your browser does not support iframes."
+#~ msgstr "У браузері не передбачено підтримки iframe."
+
+#~ msgid ""
+#~ "Your browser will disconnect, but this does not affect the update "
+#~ "process. You can reconnect in a few moments to continue watching the "
+#~ "progress."
+#~ msgstr ""
+#~ "Ваша програма для перегляду інтернету від'єднається, але це не вплине на "
+#~ "процес оновлення. Ви зможете з'єднатися знову за декілька секунд, щоб "
+#~ "продовжити спостереження за поступом."
+
+#~ msgid ""
+#~ "Your login credentials do not give you access to use the docker registry "
+#~ "from the command line."
+#~ msgstr ""
+#~ "Ваші реєстраційні дані не дають вам доступу до реєстру docker з "
+#~ "командного рядка."
+
+#~ msgid ""
+#~ "Your server will close the connection soon. You can reconnect after it "
+#~ "has restarted."
+#~ msgstr ""
+#~ "Невдовзі ваш сервер розірве з’єднання. Ви можете відновити це з’єднання, "
+#~ "щойно сервер буде перезапущено."
+
+#~ msgid "Your session has been terminated."
+#~ msgstr "Ваш сеанс перервано."
+
+#~ msgid "Your session has expired. Please log in again."
+#~ msgstr ""
+#~ "Строк роботи у вашому сеансі вичерпано. Будь ласка, увійдіть до системи "
+#~ "ще раз."
+
+#~ msgid "[$0 bytes of binary data]"
+#~ msgstr "[$0 байтів двійкових даних]"
+
+#~ msgid "[binary data]"
+#~ msgstr "[двійкові дані]"
+
+#~ msgid "[no data]"
+#~ msgstr "[немає даних]"
+
+#~ msgid "active"
+#~ msgstr "активний"
+
+#~ msgid "alias"
+#~ msgstr "псевдонім"
+
+#~ msgid "and restart the machine automatically."
+#~ msgstr "і перезапуск системи автоматично."
+
+#~ msgid "bridge"
+#~ msgstr "місток"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "байтів"
+
+#~ msgid "cdrom"
+#~ msgstr "cdrom"
+
+#~ msgid "connecting"
+#~ msgstr "встановлюємо з'єднання"
+
+#~ msgid "cores"
+#~ msgstr "ядра"
+
+#~ msgid "crashed"
+#~ msgstr "аварійне завершення"
+
+#~ msgid "custom"
+#~ msgstr "нетиповий"
+
+#~ msgid "default"
+#~ msgstr "типовий"
+
+#~ msgid "direct"
+#~ msgstr "безпосередньо"
+
+#~ msgid "disabled"
+#~ msgstr "вимкнено"
+
+#~ msgid "disk"
+#~ msgstr "диск"
+
+#~ msgid "down"
+#~ msgstr "нижче"
+
+#~ msgid "dying"
+#~ msgstr "вмирає"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "наприклад «$0»"
+
+#~ msgid "eg: my-image-stream"
+#~ msgstr "приклад: my-image-stream"
+
+#~ msgid "enabled"
+#~ msgstr "увімкнено"
+
+#~ msgid "error"
+#~ msgstr "помилка"
+
+#~ msgid "ethernet"
+#~ msgstr "ethernet"
+
+#~ msgid "every day"
+#~ msgstr "кожного дня"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 - Типова для Red Hat Enterprise Linux 6"
+
+#~ msgid "failed to list ssh host keys: $0"
+#~ msgstr "не вдалося побудувати список ключів SSH вузла: $0"
+
+#~ msgid "host"
+#~ msgstr "вузол"
+
+#~ msgid "hostdev"
+#~ msgstr "пристрій осн. системи"
+
+#~ msgid "iSCSI"
+#~ msgstr "iSCSI"
+
+#~ msgid "iSCSI Targets"
+#~ msgstr "Призначення iSCSI"
+
+#~ msgid "idle"
+#~ msgstr "бездіяльний"
+
+#~ msgid "initializing"
+#~ msgstr "ініціалізація"
+
+#~ msgid "installation failed"
+#~ msgstr "не вдалося встановити"
+
+#~ msgid "installing OS"
+#~ msgstr "встановлюємо ОС"
+
+#~ msgid "invalid: multiple targets defined"
+#~ msgstr "помилка: визначено декілька цілей"
+
+#~ msgid "kdump status"
+#~ msgstr "стан kdump"
+
+#~ msgid "kdumping"
+#~ msgstr "створюємо дамп ядра"
+
+#~ msgid "key"
+#~ msgstr "ключ"
+
+#~ msgid "locally in $0"
+#~ msgstr "локально у $0"
+
+#~ msgid "maintenance"
+#~ msgstr "супровід"
+
+#~ msgid "mcast"
+#~ msgstr "mcast"
+
+#~ msgid "n/a"
+#~ msgstr "н/д"
+
+#~ msgid "network"
+#~ msgstr "мережа"
+
+#~ msgid "no"
+#~ msgstr "ні"
+
+#~ msgid "non operational"
+#~ msgstr "не придатна до роботи"
+
+#~ msgid "non responsive"
+#~ msgstr "не відповідає"
+
+#~ msgid "none"
+#~ msgstr "немає"
+
+#~ msgid "oVirt"
+#~ msgstr "oVirt"
+
+#~ msgid "oVirt Host State:"
+#~ msgstr "Стан вузла oVirt:"
+
+#~ msgid "oVirt Provider installation script failed due to missing arguments."
+#~ msgstr ""
+#~ "Не вдалося виконати сценарій встановлення засобу забезпечення oVirt через "
+#~ "пропущені аргументи."
+
+#~ msgid ""
+#~ "oVirt Provider installation script failed: Can't write to /etc/cockpit/"
+#~ "machines-ovirt.config, try as root."
+#~ msgstr ""
+#~ "Не вдалося виконати сценарій встановлення засобу забезпечення oVirt: не "
+#~ "вдалося виконати запис до /etc/cockpit/machines-ovirt.config, спробуйте "
+#~ "від імені root."
+
+#~ msgid "oVirt installation script failed with following output: "
+#~ msgstr ""
+#~ "Не вдалося виконати сценарій встановлення oVirt із таким виведенням: "
+
+#~ msgid "oVirt login in progress"
+#~ msgstr "Виконуємо вхід до oVirt"
+
+#~ msgid "of $0 CPU core"
+#~ msgid_plural "of $0 CPU cores"
+#~ msgstr[0] "з $0 ядра процесора"
+#~ msgstr[1] "з $0 ядер процесора"
+#~ msgstr[2] "з $0 ядер процесора"
+
+#~ msgid "on Fridays"
+#~ msgstr "по п'ятницях"
+
+#~ msgid "on Mondays"
+#~ msgstr "по понеділках"
+
+#~ msgid "on Saturdays"
+#~ msgstr "по суботах"
+
+#~ msgid "on Sundays"
+#~ msgstr "по неділях"
+
+#~ msgid "on Thursdays"
+#~ msgstr "по четвергах"
+
+#~ msgid "on Tuesdays"
+#~ msgstr "по вівторках"
+
+#~ msgid "on Wednesdays"
+#~ msgstr "по середах"
+
+#~ msgid "other"
+#~ msgstr "інше"
+
+#~ msgid "paused"
+#~ msgstr "призупинено"
+
+#~ msgid "pending approval"
+#~ msgstr "чекаємо на підтвердження"
+
+#~ msgid "pending volume claims"
+#~ msgstr "запити тому у черзі"
+
+#~ msgid "reboot"
+#~ msgstr "перезавантаження"
+
+#~ msgid "recommended"
+#~ msgstr "найліпший"
+
+#~ msgid "running"
+#~ msgstr "працює"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "шукати за назвою, простором назв або описом"
+
+#~ msgid "select container"
+#~ msgstr "вибрати контейнер"
+
+#~ msgid "server"
+#~ msgstr "сервер"
+
+#~ msgid "shares"
+#~ msgstr "спільний"
+
+#~ msgid "show less"
+#~ msgstr "показати менше"
+
+#~ msgid "show more"
+#~ msgstr "показати більше"
+
+#~ msgid "shut off"
+#~ msgstr "вимкнути"
+
+#~ msgid "shutdown"
+#~ msgstr "завершити роботу"
+
+#~ msgid "sockets"
+#~ msgstr "сокети"
+
+#~ msgid "solution details"
+#~ msgstr "параметри рішення"
+
+#~ msgid "ssh key"
+#~ msgstr "ключ ssh"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "призупинено (PM)"
+
+#~ msgid "threads"
+#~ msgstr "потоки"
+
+#~ msgid "to host path"
+#~ msgstr "до шляху на вузлі"
+
+#~ msgid "to host port"
+#~ msgstr "до порту основної системи"
+
+#~ msgid "udp"
+#~ msgstr "udp"
+
+#~ msgid "unassigned"
+#~ msgstr "не прив'язано"
+
+#~ msgid "undefined"
+#~ msgstr "не визначено"
+
+#~ msgid "unknown"
+#~ msgstr "невідомо"
+
+#~ msgid "unknown target"
+#~ msgstr "невідоме призначення"
+
+#~ msgid "unpartitioned space on $0"
+#~ msgstr "нерозподілене місце на $0"
+
+#~ msgid "up"
+#~ msgstr "вище"
+
+#~ msgid "upload a JSON file"
+#~ msgstr "вивантажити файл JSON"
+
+#~ msgid "user"
+#~ msgstr "користувач"
+
+#~ msgid "vCPUs"
+#~ msgstr "Вірт. проц."
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPU:"
+
+#~ msgid "value"
+#~ msgstr "значення"
+
+#~ msgid "vhostuser"
+#~ msgstr "vhostuser"
+
+#~ msgid "yes"
+#~ msgstr "так"
+
+#~ msgid ""
+#~ "{{ condition.message }}. Timestamp: {{ condition.lastTransitionTime }} "
+#~ "Error count: {{ condition.generation }}"
+#~ msgstr ""
+#~ "{{ condition.message }}. Часова позначка: {{ condition."
+#~ "lastTransitionTime }} Кількість помилок: {{ condition.generation }}"
