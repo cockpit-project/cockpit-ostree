@@ -1,0 +1,4822 @@
+# Helinä Turumore <helina.turunen@gmail.com>, 2017. #zanata
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2017. #zanata
+# Toni Rantala <trantalafilo@gmail.com>, 2017. #zanata
+# Helinä Turumore <helina.turunen@gmail.com>, 2018. #zanata
+# Jiri Grönroos <jiri.gronroos@iki.fi>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2018-05-12 02:24+0000\n"
+"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
+"Language-Team: Finnish\n"
+"Language: fi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "$0 avain ID"
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 paketti"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 paketit"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- Lisää uusi asennuslähde"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Lisää"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "Lisää uusi avain"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr "Lisäykset"
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Toteuta"
+
+#: src/index.html:255
+msgid "Available"
+msgstr "Saatavilla"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Alkaa '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Peru"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Vaihda asennuslähde"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Etsi päivityksiä"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Etsitään päivityksiä"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "Yhdistetään OSTree:n"
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr "Ei voitu ladata asetuksia kohteelle '$0': $1"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr "Tällä hetkellä käytössä:"
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Oletus"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Poista"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr "Virhe ladattaessa ohjaimia: $0"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr "Vanhentunut allekirjoitus"
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "Epäonnistui"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr "Hyvä allekirjoitus"
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr "Virheellinen allekirjoitus"
+
+#: src/index.html:99
+msgid "Name"
+msgstr "Nimi"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr ""
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr "Käyttöjärjestelmää $0 ei löytynyt"
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr "Käyttöjärjestelmä"
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr "Käyttöjärjestelmäpäivitykset"
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr "Paketit"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr "Anna kelvollinen URL"
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr "Anna kelvollinen nimi"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "Vastaanotetaan delta-osia"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "Vastaanotetaan metadata-objekteja"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "Vastaanotetaan objekteja: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "Yhdistä uudelleen"
+
+#: src/index.html:305
+msgid "Released"
+msgstr "Julkaistu"
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr ""
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr ""
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "Allekirjoittanut"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "Ohjelmistopäivitykset"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Tila"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr "Puu"
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "Kommunikaatio OSTree:n kanssa epäonnistui"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "Päivitä ja käynnistä uudelleen"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Päivitykset"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "Päivitetään"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "Käytä luotettua GPG-avainta"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Versio"
+
+#: src/index.html:282
+msgid "When"
+msgstr "Kun"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " (shared with the OS)"
+#~ msgstr " (jaettu OS:n kanssa)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"Haluatko varmasti poistaa seuraavat Nodet?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 Lohkolaite"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 levyt"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "$0 tiedostojärjestelmä"
+
+#~ msgid ""
+#~ "$0 Only users with local credentials will be able to log into this "
+#~ "machine. This may also effect other services as DNS resolution settings "
+#~ "and the list of trusted CAs may change."
+#~ msgstr ""
+#~ "$0 Vain paikalliset käyttäjät voivat kirjautua tälle koneelle. Tämä voi "
+#~ "myös vaikuttaa muihin palveluihin, sillä DNS-määrityksen asetukset ja "
+#~ "luotettujen CA:den lista voivat muuttua. "
+
+#~ msgid "$0 Template"
+#~ msgstr "$0 mallipohja"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bitti"
+#~ msgstr[1] "$0 bittiä"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 tavu"
+#~ msgstr[1] "$0 tavua"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 tavu"
+#~ msgstr[1] "$0 tavua"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 päivä"
+#~ msgstr[1] "$0 päivää"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 levyä ei löydy"
+#~ msgstr[1] "$0 levyjä ei löydy"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 levyä ei löydy"
+#~ msgstr[1] "$0 levyjä ei löydy"
+
+#~ msgid "$0 error"
+#~ msgstr "$0 virhe"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 poistui koodilla $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 epäonnistui"
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 tunti"
+#~ msgstr[1] "$0 tuntia"
+
+#~ msgid ""
+#~ "$0 is available for most operating systems. To install it, search for it "
+#~ "in GNOME Software or run the following:"
+#~ msgstr ""
+#~ "$0 on saatavilla useimmille käyttöjärjestelmille. Asentaaksesi sen, hae "
+#~ "sitä GNOME Softwaresta, tai aja seuraava komento:"
+
+#~ msgid "$0 is in active use"
+#~ msgstr "$0 on aktiivisessa käytössä"
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 tapettu signaalilla $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 minuutti"
+#~ msgstr[1] "$0 minuuttia"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 kuukausi"
+#~ msgstr[1] "$0 kuukautta"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 tapahtuma"
+#~ msgstr[1] "$0 tapahtumat"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0/$1"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 jaot"
+
+#~ msgid "$0 update"
+#~ msgid_plural "$0 updates"
+#~ msgstr[0] "$0 päivitys"
+#~ msgstr[1] "$0 päivitystä"
+
+#~ msgid "$0 used of $1 ($2 saved)"
+#~ msgstr "$0 käytetty kohteesta $1 ($2 tallennettu)"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 viikko"
+#~ msgstr[1] "$0 viikkoa"
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 vuosi"
+#~ msgstr[1] "$0 vuotta"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% Vapaana"
+#~ msgstr[1] "$0% Vapaana"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% Käytetty"
+#~ msgstr[1] "$0% Käytetty"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, $1 vapaana"
+
+#~ msgid "$1 security fix"
+#~ msgid_plural "$1 security fixes"
+#~ msgstr[0] "$1 turvallisuuspäivitys"
+#~ msgstr[1] "$1 turvallisuuspäivitykset"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (kohteesta $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "${size} ${desc}"
+#~ msgstr "${size} ${desc}"
+
+#~ msgid "'Organization' required to register."
+#~ msgstr "'Organisaatio' vaaditaan rekisteröintiä varten."
+
+#~ msgid "'Organization' required when using activation keys."
+#~ msgstr "'Organisaatio' vaaditaan aktivointiavaimia käytettäessä."
+
+#~ msgid "(default)"
+#~ msgstr "(oletus)"
+
+#~ msgid "(none)"
+#~ msgstr "(ei mitään)"
+
+#~ msgid ", including $1 security fix"
+#~ msgid_plural ", including $1 security fixes"
+#~ msgstr[0] ", mukaan lukien $1 turvallisuuspäivitys"
+#~ msgstr[1] ", mukaan lukien $1 turvallisuuspäivitykset"
+
+#~ msgid "--"
+#~ msgstr "--"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 Minuutti"
+
+#~ msgid "1 day"
+#~ msgstr "1 päivä"
+
+#~ msgid "1 hour"
+#~ msgstr "1 tunti"
+
+#~ msgid "1 min"
+#~ msgstr "1 min"
+
+#~ msgid "1 week"
+#~ msgstr "1 viikko"
+
+#~ msgid "10th"
+#~ msgstr "10."
+
+#~ msgid "11th"
+#~ msgstr "11."
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12."
+
+#~ msgid "13th"
+#~ msgstr "13."
+
+#~ msgid "14th"
+#~ msgstr "14."
+
+#~ msgid "15th"
+#~ msgstr "15."
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16."
+
+#~ msgid "17th"
+#~ msgstr "17."
+
+#~ msgid "18th"
+#~ msgstr "18."
+
+#~ msgid "19th"
+#~ msgstr "19."
+
+#~ msgid "1st"
+#~ msgstr "1."
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 min"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 minuuttia"
+
+#~ msgid "20th"
+#~ msgstr "20."
+
+#~ msgid "21st"
+#~ msgstr "21."
+
+#~ msgid "22nd"
+#~ msgstr "22."
+
+#~ msgid "23rd"
+#~ msgstr "23."
+
+#~ msgid "24th"
+#~ msgstr "24."
+
+#~ msgid "25th"
+#~ msgstr "25."
+
+#~ msgid "26th"
+#~ msgstr "26."
+
+#~ msgid "27th"
+#~ msgstr "27."
+
+#~ msgid "28th"
+#~ msgstr "28."
+
+#~ msgid "29th"
+#~ msgstr "29."
+
+#~ msgid "2nd"
+#~ msgstr "2."
+
+#~ msgid "3 min"
+#~ msgstr "3 min"
+
+#~ msgid "30th"
+#~ msgstr "30."
+
+#~ msgid "31st"
+#~ msgstr "31."
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3."
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 min"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 minuuttia"
+
+#~ msgid "4th"
+#~ msgstr "4."
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 minuuttia"
+
+#~ msgid "5 min"
+#~ msgstr "5 min"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minuuttia"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5."
+
+#~ msgid "6 hours"
+#~ msgstr "6 tuntia"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 minuuttia"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6."
+
+#~ msgid "7th"
+#~ msgstr "7."
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8."
+
+#~ msgid "9th"
+#~ msgstr "9."
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "Yhteensopivaa versiota Cockpitistä ei ole asennettu kohteessa {{#strong}}"
+#~ "{{host}}{{/strong}}."
+
+#~ msgid "A disk is needed."
+#~ msgstr "Levy vaaditaan."
+
+#~ msgid ""
+#~ "A spare disk needs to be added first before this disk can be removed."
+#~ msgstr "Varalevy pitää lisätä ennen kuin tämä levy voidaan poistaa."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Käyttöliittymä GNU/Linux-palvelimille"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP-monitorointi"
+
+#~ msgid "ARP Ping"
+#~ msgstr "ARP Ping"
+
+#~ msgid "AWS Elastic Block Store"
+#~ msgstr "AWS Elastic Block Store"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Lisää Cockpitistä"
+
+#~ msgid "Access"
+#~ msgstr "Pääsy"
+
+#~ msgid "Access Policy"
+#~ msgstr "Pääsykäytäntö"
+
+#~ msgid "Access denied"
+#~ msgstr "Pääsy evätty"
+
+#~ msgid "Account Expiration"
+#~ msgstr "Tilin vanheneminen"
+
+#~ msgid "Account Settings"
+#~ msgstr "Tilin asetukset"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "Tili ei ole käytettävissä tai sitä ei voi muokata"
+
+#~ msgid "Accounts"
+#~ msgstr "Käyttäjätilit"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Käyttäjätilit"
+
+#~ msgid "Action"
+#~ msgstr "Toiminto"
+
+#~ msgid "Activate"
+#~ msgstr "Aktivoi"
+
+#~ msgid "Activating $target"
+#~ msgstr "Aktivoidaan $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Aktivointiavain"
+
+#~ msgid "Active"
+#~ msgstr "Aktiivinen"
+
+#~ msgid "Active Backup"
+#~ msgstr "Aktiivinen varmuuskopio"
+
+#~ msgid "Active Pages"
+#~ msgstr "Aktiiviset sivut"
+
+#~ msgid "Active since"
+#~ msgstr "Aktiivinen lähtien"
+
+#~ msgid "Actual"
+#~ msgstr "Todellinen"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Mukautuva kuorman tasapainottaja (balance-alb)"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Mukautuva lähtevän kuorman tasapainottaja (balance-tlb)"
+
+#~ msgid "Add $0"
+#~ msgstr "Lisää $0"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Lisää uusi tallennustila"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Lisää silta"
+
+#~ msgid "Add Cluster Node"
+#~ msgstr "Lisää Klusteri-Node"
+
+#~ msgid "Add Disks"
+#~ msgstr "Lisää levyjä"
+
+#~ msgid "Add Group"
+#~ msgstr "Lisää ryhmä"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Lisää Kubernetes-Node"
+
+#~ msgid "Add Machine to Dashboard"
+#~ msgstr "Lisää kone kojelaudalle"
+
+#~ msgid "Add Member"
+#~ msgstr "Lisää jäsen"
+
+#~ msgid "Add Membership"
+#~ msgstr "Lisää jäsenyys"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Lisää uusi klusteri"
+
+#~ msgid "Add New User"
+#~ msgstr "Lisää uusi käyttäjä"
+
+#~ msgid "Add Role"
+#~ msgstr "Lisää rooli"
+
+#~ msgid "Add Services"
+#~ msgstr "Lisää palveluja"
+
+#~ msgid "Add Services…"
+#~ msgstr "Lisää palveluja…"
+
+#~ msgid "Add Storage"
+#~ msgstr "Lisää tallennustila"
+
+#~ msgid "Add Team"
+#~ msgstr "Lisää tiimi"
+
+#~ msgid "Add User"
+#~ msgstr "Lisää käyttäjä"
+
+#~ msgid "Add VLAN"
+#~ msgstr "Lisää VLAN"
+
+#~ msgid "Add iSCSI Portal"
+#~ msgstr "Lisää iSCSI Portaali"
+
+#~ msgid "Add key"
+#~ msgstr "Lisää avain"
+
+#~ msgid "Add membership"
+#~ msgstr "Lisää jäsenyys"
+
+#~ msgid "Add network key"
+#~ msgstr "Lisää verkkoavain"
+
+#~ msgid "Add public key"
+#~ msgstr "Lisää julkinen avain"
+
+#~ msgid ""
+#~ "Adding <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "<b>$0</b>  lisääminen katkaisee yhteyden palvelimeen, jolloin "
+#~ "hallintakäyttöliittymä ei ole saatavilla."
+
+#~ msgid "Adding key"
+#~ msgstr "Avainta lisätään"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "Lisätään fyysinen taltio kohteeseen $target"
+
+#~ msgid "Additional DNS $val"
+#~ msgstr "Uusi DNS $val"
+
+#~ msgid "Additional DNS Search Domains $val"
+#~ msgstr "Uusi DNS Search Domains $val"
+
+#~ msgid "Additional Storage"
+#~ msgstr "Uusi tallennustila"
+
+#~ msgid "Additional address $val"
+#~ msgstr "Uusi osoite $val"
+
+#~ msgid "Address"
+#~ msgstr "Osoite"
+
+#~ msgid "Address $val"
+#~ msgstr "Osoite $val"
+
+#~ msgid "Address:"
+#~ msgstr "Osoite:"
+
+#~ msgid "Addresses"
+#~ msgstr "Osoitteet"
+
+#~ msgid "Adjust"
+#~ msgstr "Säädä"
+
+#~ msgid "Adjust Persistent Volume '{{ item.metadata.name }}'"
+#~ msgstr "Uusi Persistent Volume '{{ item.metadata.name }}'"
+
+#~ msgid "Adjust Replication Controller {{ item.metadata.name }}"
+#~ msgstr "Säädä Replication Controller {{ item.metadata.name }}"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Säädä reittiä"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Säädä palvelua"
+
+#~ msgid "Admin"
+#~ msgstr "Ylläpito"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Ylläpidon salasana"
+
+#~ msgid "After"
+#~ msgstr "Jälkeen"
+
+#~ msgid "After system boot"
+#~ msgstr "Järjestelmän käynnistyksen jälkeen"
+
+#~ msgid "All Projects"
+#~ msgstr "Kaikki projektit"
+
+#~ msgid "All Types"
+#~ msgstr "Kaikki tyypit"
+
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Kaikki valituilla levyillä oleva data poistetaan ja levyt lisätään "
+#~ "tallennuspooliin."
+
+#~ msgid "All healthy"
+#~ msgstr "Kaikki kunnossa"
+
+#~ msgid "All images"
+#~ msgstr "Kaikki levykuvat"
+
+#~ msgid "All in use"
+#~ msgstr "Kaikki käytössä olevat"
+
+#~ msgid "All running"
+#~ msgstr "Kaikki käynnissä"
+
+#~ msgid "All running virtual machines will be turned off."
+#~ msgstr "Kaikki käynnissä olevat virtuaalikoneet tullaan sammuttamaan."
+
+#~ msgid "Allow \"http://\" URL"
+#~ msgstr "Salli \"http://\"-osoite"
+
+#~ msgid "Allowed Services"
+#~ msgstr "Sallitut palvelut"
+
+#~ msgid "Always"
+#~ msgstr "Aina"
+
+#~ msgid "Annotations"
+#~ msgstr "Annotaatiot"
+
+#~ msgid "Anonymous: Allow all unauthenticated users to pull images"
+#~ msgstr ""
+#~ "Anonyymi: Salli kaikkien tunnistautumattomien käyttäjien ottaa levykuvia"
+
+#~ msgid "Applications"
+#~ msgstr "Sovellukset"
+
+#~ msgid "Apply all updates"
+#~ msgstr "Toteuta kaikki päivitykset"
+
+#~ msgid "Apply security updates"
+#~ msgstr "Toteuta tietoturvapäivitykset"
+
+#~ msgid "Apply this solution"
+#~ msgstr "Toteuta tämä ratkaisu"
+
+#~ msgid "Applying solution..."
+#~ msgstr "Toteutetaan ratkaisu..."
+
+#~ msgid "Applying updates"
+#~ msgstr "Toteutetaan päivityksiä"
+
+#~ msgid "Applying updates failed"
+#~ msgstr "Päivitysten toteuttaminen epäonnistui"
+
+#~ msgid "Architecture"
+#~ msgstr "Arkkitehtuuri"
+
+#~ msgid "Are you sure you want to delete this image?"
+#~ msgstr "Haluatko varmasti poistaa tämän levykuvan?"
+
+#~ msgid "Are you sure you want to leave the '$0' domain?"
+#~ msgstr "Oletko varma, että haluat poistua '$0' -domainista?"
+
+#~ msgid "Are you sure you want to leave this domain?"
+#~ msgstr "Oletko varma, että haluat poistua tästä domainista?"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Vähintään $0 levyä tarvitaan."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Vähintään yksi levy tarvitaan."
+
+#~ msgid "At specific time"
+#~ msgstr "Tiettynä aikana"
+
+#~ msgid "Audit log"
+#~ msgstr "Audit-loki"
+
+#~ msgid "Authenticating"
+#~ msgstr "Tunnistaudutaan"
+
+#~ msgid "Authentication"
+#~ msgstr "Tunnistautuminen"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "Tunnistautuminen epäonnistui"
+
+#~ msgid "Authentication Failed: Server closed connection"
+#~ msgstr "Tunnistautuminen epäonnistui: palvelin sulki yhteyden."
+
+#~ msgid "Authentication failed"
+#~ msgstr "Tunnistautuminen epäonnistui"
+
+#~ msgid "Authentication required"
+#~ msgstr "Tunnistautuminen vaaditaan"
+
+#~ msgid "Author"
+#~ msgstr "Tekijä"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Valtuutetut julkiset SSH-avaimet"
+
+#~ msgid "Automatic"
+#~ msgstr "Automaattinen"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Automaattinen (vain DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Automaattinen (DHCP)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Automaattiset päivitykset"
+
+#~ msgid "Automatically selected host"
+#~ msgstr "Automaattisesti valittu kone"
+
+#~ msgid "Automatically start libvirt on boot"
+#~ msgstr "Käynnistä libvirt automaattisesti käynnistyksen yhteydessä"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Käytetään automaattisesti NTP:tä"
+
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Käytetään automaattisesti tiettyjä NTP-palvelimia"
+
+#~ msgid "Autostart:"
+#~ msgstr "Autostart:"
+
+#~ msgid "Available Updates"
+#~ msgstr "Saatavilla olevat päivitykset"
+
+#~ msgid "Available targets on $0"
+#~ msgstr "Käytettävät kohteet $0"
+
+#~ msgid "Avatar"
+#~ msgstr "Avatar"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "BIOS"
+#~ msgstr "BIOS"
+
+#~ msgid "BIOS date"
+#~ msgstr "BIOS-päiväys"
+
+#~ msgid "BIOS version"
+#~ msgstr "BIOS-versio"
+
+#~ msgid "Back to Accounts"
+#~ msgstr "Takaisin käyttäjätileihin"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "Virheellistä dataa välitetty passwd1-mekanismille"
+
+#~ msgid "Balancer"
+#~ msgstr "Tasapainottaja"
+
+#~ msgid "Block"
+#~ msgstr "Lohko"
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Lohkolaite tiedostojärjestelmille"
+
+#~ msgid "Blocked"
+#~ msgstr "Estetty"
+
+#~ msgid "Bond"
+#~ msgstr "Side"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Sidosasetukset"
+
+#~ msgid "Boot ID"
+#~ msgstr "Boot ID"
+
+#~ msgid "Boot Order:"
+#~ msgstr "Käynnistysjärjestys:"
+
+#~ msgid "Bridge"
+#~ msgstr "Silta"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Sillan porttiasetukset"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Sillan asetukset"
+
+#~ msgid "Bridge port"
+#~ msgstr "Sillan portti"
+
+#~ msgid "Broadcast"
+#~ msgstr "Lähetys"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Rikkinäinen asetus"
+
+#~ msgid "Built"
+#~ msgstr "Rakennettu"
+
+#~ msgid "CHANGE NETWORK STATE action failed"
+#~ msgstr "CHANGE NETWORK STATE -toiminto epäonnistui"
+
+#~ msgid "CPU"
+#~ msgstr "Prosessori"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "Prosessorin tila"
+
+#~ msgid "CPU Type:"
+#~ msgstr "Prosessorin tyyppi:"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "Prosessorin käyttöaste: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "Prosessorin prioriteetti"
+
+#~ msgid "CPU usage:"
+#~ msgstr "Prosessorin käyttö"
+
+#~ msgid "CREATE VM action failed"
+#~ msgstr "CREATE VM -toiminto epäonnistui"
+
+#~ msgid "Cached"
+#~ msgstr "Välimuistissa"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Ei voitu yhdistää Dockeriin"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Ei voida yhdistää tuntemattomaan koneeseen"
+
+#~ msgid "Cannot decrypt PEM-encoded private key"
+#~ msgstr "PEM-salatun yksityisen avaimen salausta ei voida purkaa"
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "Tapahtumaa ei voi aikatauluttaa menneisyyteen"
+
+#~ msgid "Capacity"
+#~ msgstr "Koko"
+
+#~ msgid "Ceph Monitors"
+#~ msgstr "Ceph-monitorit"
+
+#~ msgid "Change"
+#~ msgstr "Vaihda"
+
+#~ msgid "Change Host Name"
+#~ msgstr "Vaihda konenimi (Host)"
+
+#~ msgid "Change Password"
+#~ msgstr "Vaihda salasana"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Vaihda suorituskyvyn profiili"
+
+#~ msgid "Change Profile"
+#~ msgstr "Vaihda profiili"
+
+#~ msgid "Change System Time"
+#~ msgstr "Vaihda järjestelmän aika"
+
+#~ msgid "Change User"
+#~ msgstr "Vaihda käyttäjä"
+
+#~ msgid "Change iSCSI Initiator Name"
+#~ msgstr "Vaihda iSCSI-asiakaslaitteen nimi"
+
+#~ msgid "Change image stream"
+#~ msgstr "Vaihda image stream"
+
+#~ msgid "Change project"
+#~ msgstr "Vaihda projekti"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Muuta resurssin rajoja"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Muuta resurssien rajoja"
+
+#~ msgid "Change the settings"
+#~ msgstr "Vaihda asetuksia"
+
+#~ msgid ""
+#~ "Changing the settings will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Asetuksien vaihtaminen katkaisee yhteyden palvelimeen, jolloin "
+#~ "hallintakäyttöliittymä ei ole saatavilla."
+
+#~ msgid "Checking $target"
+#~ msgstr "Tarkistetaan $target"
+
+#~ msgid "Checking IP"
+#~ msgstr "Tarkistetaan IP"
+
+#~ msgid "Checking RAID Device $target"
+#~ msgstr "Tarkistetaan RAID-laite $target"
+
+#~ msgid "Checking and Repairing RAID Device $target"
+#~ msgstr "Tarkistetaan ja korjataan RAID-laite $target"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Etsitään uusia sovelluksia"
+
+#~ msgid "Checking for public keys"
+#~ msgstr "Etsitään julkisia avaimia"
+
+#~ msgid "Checking for updates…"
+#~ msgstr "Etsitään päivityksiä…"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "Valitse sovelluksessa käytettävä kieli"
+
+#~ msgid "Cinder"
+#~ msgstr "Cinder"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "Siivotaan kohteelle $target"
+
+#~ msgid "Click to see system hardware information"
+#~ msgstr "Napsauta nähdäksesi järjestelmän laitteistotiedot"
+
+#~ msgid ""
+#~ "Clicking \"Launch Remote Viewer\" will download a .vv file and launch $0."
+#~ msgstr ""
+#~ "Painamalla \"Launch Remote Viewer\" lataat .vv-tiedoston ja avaat $0."
+
+#~ msgid "Client Certificate"
+#~ msgstr "Asiakasvarmenne"
+
+#~ msgid "Close"
+#~ msgstr "Sulje"
+
+#~ msgid "Close Selected Pages"
+#~ msgstr "Sulje valitut sivut"
+
+#~ msgid "Cluster"
+#~ msgstr "Klusteri"
+
+#~ msgid "Cluster Templates"
+#~ msgstr "Klusteri-mallit"
+
+#~ msgid "Cluster Virtual Machines"
+#~ msgstr "Klusterin virtuaalikoneet"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Cockpit authentication is configured incorrectly."
+#~ msgstr "Cockpitin tunnistautuminen on konfiguroitu virheellisesti."
+
+#~ msgid ""
+#~ "Cockpit could not contact the given host $0. Make sure it has ssh running "
+#~ "on port $1, or specify another port in the address."
+#~ msgstr ""
+#~ "Cockpit ei saanut yhteyttä hostiin $0. Varmista, että sillä on ssh "
+#~ "toiminnassa portissa $1, tai määrittele toinen portti osoitteessa."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit ei saanut yhteyttä hostiin."
+
+#~ msgid ""
+#~ "Cockpit had an unexpected internal error. <br/><br/>You can try "
+#~ "restarting Cockpit by pressing refresh in your browser. The javascript "
+#~ "console contains details about this error (<b>Ctrl-Shift-J</b> in most "
+#~ "browsers)."
+#~ msgstr ""
+#~ "Cockpitissä tapahtui odottamaton virhe. <br/><br/>Voit yrittää käynnistää "
+#~ "Cockpitin uudelleen päivittämällä selaimesi sivun. Javascript-konsolissa "
+#~ "on lisätietoja tästä virheestä (<b>Ctrl-Shift-J</b> useimmissa "
+#~ "selaimissa)."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit on palvelinhallintatyökalu, joka tekee ylläpidon helpoksi "
+#~ "selaimen kautta.  Liikkuminen päätteen ja verkkokäyttöliittymän välillä "
+#~ "ei ole ongelma. Cockpitissä aloitettu palvelu voidaan lopettaa "
+#~ "päätteessä.  Samaten päätteessä näkyvä virheilmoitus voidaan nähdä myös "
+#~ "Cockpitin journal-näkymässä."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr ""
+#~ "Cockpit on vuorovaikutteinen Linux-palvelimen ylläpitäjän käyttöliittymä."
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit ei ole yhteensopiva järjestelmän ohjelmiston kanssa."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit ei ole asennettu"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit ei ole asennettu järjestelmässä."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit on täydellinen uusille sysadmineille, mahdollistaen "
+#~ "yksinkertaisten toimintoja kuten tallennustilan hallinnan, päiväkirjojen "
+#~ "tarkistamisen sekä palveluiden käynnistämisen ja lopettamisen. Voit "
+#~ "monitoroida ja hallita useita palvelimia samanaikaisesti. Lisää ne "
+#~ "yhdellä napsautuksella ja koneesi katsovat kavereidensa perään."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit ei saanut yhteyttä kohteeseen {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log in to {{#strong}}{{host}}{{/strong}}. "
+#~ "{{#can_sync}}You may want to try to {{#sync_link}}synchronize users{{/"
+#~ "sync_link}}.{{/can_sync}} For more authentication options and "
+#~ "troubleshooting support please upgrade cockpit-ws to a newer version."
+#~ msgstr ""
+#~ "Cockpit ei pystynyt kirjautumaan kohteeseen {{#strong}}{{host}}{{/"
+#~ "strong}}. {{#can_sync}}Haluat ehkä kokeilla {{#sync_link}}käyttäjien "
+#~ "synkronointia{{/sync_link}}.{{/can_sync}} Lisää vaihtoehtoja "
+#~ "todentamiseen ja tukea vianetsintään saat, kun päivität cockpit-ws "
+#~ "uudempaan versioon."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr ""
+#~ "Cockpit ei pystynyt kirjautumaan kohteeseen {{#strong}}{{host}}{{/"
+#~ "strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. To use "
+#~ "this machine with cockpit you will need to enable one of the following "
+#~ "authentication methods in the sshd config on {{#strong}}{{host}}{{/"
+#~ "strong}}:"
+#~ msgstr ""
+#~ "Cockpit ei pystynyt kirjautumaan kohteeseen {{#strong}}{{host}}{{/"
+#~ "strong}}. Käyttääksesi tätä konetta Cockpitin kanssa sinun tulee ottaa "
+#~ "käyttöön jokin seuraavista todentamismetodeista sshd-konfiguraatiossa "
+#~ "kohteessa {{#strong}}{{host}}{{/strong}}:"
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. You can "
+#~ "change your authentication credentials below. {{#can_sync}}You may prefer "
+#~ "to {{#sync_link}}synchronize accounts and passwords{{/sync_link}}.{{/"
+#~ "can_sync}}"
+#~ msgstr ""
+#~ "Cockpit ei pystynyt kirjautumaan kohteeseen {{#strong}}{{host}}{{/"
+#~ "strong}}. Voit vaihtaa todentamiseen käyttämiäsi tunnuksi alla. "
+#~ "{{#can_sync}}Haluat ehkä {{#sync_link}}synkronoida käyttäjätilit ja "
+#~ "salasanat{{/sync_link}}.{{/can_sync}}"
+
+#~ msgid "Color"
+#~ msgstr "Väri"
+
+#~ msgid "Combined memory usage"
+#~ msgstr "Yhdistetty muistin käyttö"
+
+#~ msgid "Combined usage of $0 CPU core"
+#~ msgid_plural "Combined usage of $0 CPU cores"
+#~ msgstr[0] "Yhdistetty $0 CPU-ytimen käyttö"
+#~ msgstr[1] "Yhdistetty $0 CPU-ydinten käyttö"
+
+#~ msgid "Command"
+#~ msgstr "Komento"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "Komento ei voi olla tyhjä"
+
+#~ msgid "Command:"
+#~ msgstr "Komento:"
+
+#~ msgid "Comment"
+#~ msgstr "Kommentti"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "Yhteydenpito tuned kanssa epäonnistui"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Yhteensopiva kaikkien järjestelmien ja laitteiden kanssa (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr ""
+#~ "Yhteensopiva modernien järjestelmien ja kovalevyjen kanssa > 2TB (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Tiivistä crash dump säästääksesi tilaa"
+
+#~ msgid "Compression"
+#~ msgstr "Pakkaus"
+
+#~ msgid "Computer OU"
+#~ msgstr "Tietokone-OU"
+
+#~ msgid "Condition $0=$1 was not met"
+#~ msgstr "Ehto $0=$1 ei toteutunut"
+
+#~ msgid "Condition failed"
+#~ msgstr "Ehto epäonnistui"
+
+#~ msgid "Configuration"
+#~ msgstr "Asetukset"
+
+#~ msgid "Configure"
+#~ msgstr "Muokkaa asetuksia"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Muokkaa Flannel-verkotusta"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Aseta Kubelet ja välityspalvelin"
+
+#~ msgid "Configure storage..."
+#~ msgstr "Aseta tallennustila..."
+
+#~ msgid "Configuring"
+#~ msgstr "Asetetaan"
+
+#~ msgid "Configuring IP"
+#~ msgstr "Asetetaan IP"
+
+#~ msgid "Confirm"
+#~ msgstr "Vahvista"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Vahvista uusi salasana"
+
+#~ msgid "Confirm deletion of $0"
+#~ msgstr "Vahvista $0 poistaminen"
+
+#~ msgid "Confirm migration"
+#~ msgstr "Vahvista migraatio"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Vahvista salasana"
+
+#~ msgid "Confirm reload:"
+#~ msgstr "Vahvista uudelleenlataus:"
+
+#~ msgid "Confirm save:"
+#~ msgstr "Vahvista tallennus:"
+
+#~ msgid "Connect"
+#~ msgstr "Yhdistä"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Yhdistä automaattisesti"
+
+#~ msgid "Connect to"
+#~ msgstr "Yhdistä"
+
+#~ msgid "Connect to oVirt Engine"
+#~ msgstr "Yhdistä oVirt Engineen"
+
+#~ msgid "Connect with any $0 viewer application."
+#~ msgstr "Yhdistä mihin tahansa $0 -katseluohjelmaan."
+
+#~ msgid "Connect with any SPICE or VNC viewer application."
+#~ msgstr "Yhdistä mihin tahansa SPICE- tai VNC-katseluohjelmaan."
+
+#~ msgid ""
+#~ "Connecting simultaneously to more than {{ limit }} machines is "
+#~ "unsupported."
+#~ msgstr ""
+#~ "Samanaikainen yhdistäminen useampaan kuin {{ limit }} koneeseen ei ole "
+#~ "tuettu."
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Yhdistetään Dockeriin"
+
+#~ msgid "Connecting to SETroubleshoot daemon..."
+#~ msgstr "Yhdistetään SETroubleshoot daemoniin..."
+
+#~ msgid "Connecting to Virtualization Service"
+#~ msgstr "Yhdistetään virtualisointipalveluun"
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "Yhdistetään koneeseen"
+
+#~ msgid "Connecting..."
+#~ msgstr "Yhdistetään..."
+
+#~ msgid "Connection"
+#~ msgstr "Yhteys"
+
+#~ msgid "Connection Error"
+#~ msgstr "Yhteysvirhe"
+
+#~ msgid "Connection Error: $0"
+#~ msgstr "Yhteysvirhe: $0"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Yhteysasetukset"
+
+#~ msgid "Connection has timed out."
+#~ msgstr "Yhteys aikakatkaistiin."
+
+#~ msgid "Connection will be lost"
+#~ msgstr "Yhteys tulee katoamaan"
+
+#~ msgid "Consoles"
+#~ msgstr "Konsolit"
+
+#~ msgid "Container"
+#~ msgstr "Kontti"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Kontti-Admin"
+
+#~ msgid "Container ID"
+#~ msgstr "Kontti-ID"
+
+#~ msgid "Container Name"
+#~ msgstr "Kontin nimi"
+
+#~ msgid "Container Runtime Version"
+#~ msgstr "Kontin Runtime-versio"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "Kontti on merkitty ei käynnissä olevaksi, mutta tavallinen pysäyttäminen "
+#~ "epäonnistui."
+
+#~ msgid "Container is currently running."
+#~ msgstr "Kontti on parhaillaan käynnissä."
+
+#~ msgid "Container:"
+#~ msgstr "Kontti:"
+
+#~ msgid "Containers"
+#~ msgstr "Kontit"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Kontit"
+
+#~ msgid "Content"
+#~ msgstr "Sisältö"
+
+#~ msgid "Control"
+#~ msgstr "Hallinta"
+
+#~ msgctxt "key"
+#~ msgid "Control"
+#~ msgstr "Hallinta"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "Ei voitu lisätä kaikkia levyjä"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "Ei saatu yhteyttä kohteeseen {{host}}"
+
+#~ msgid "Could not list services"
+#~ msgstr "Ei voitu listata palveluita"
+
+#~ msgid "Could not parse PEM-encoded certificate"
+#~ msgstr "Ei voitu jäsentää PEM-koodattua varmennetta"
+
+#~ msgid "Could not parse PEM-encoded private key"
+#~ msgstr "Ei voitu jäsentää PEM-koodattua salaista avainta"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "Ei voitu resetoida tallennusvarantoa"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Ei voitu muuttaa käyttäjäryhmiä"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Ei voitu muuttaa käyttäjän salasanaa"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "Ei saatu yhteyttä palvelimeen"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Ei saatu yhteyttä koneeseen"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Uusia käyttäjiä ei voitu luoda"
+
+#~ msgid "Couldn't find running API server"
+#~ msgstr "Ei löydetty käynnissä olevaa API-palvelinta"
+
+#~ msgid ""
+#~ "Couldn't get system subscription status. Please ensure subscription-"
+#~ "manager is installed."
+#~ msgstr ""
+#~ "Ei voitu hakea järjestelmän tilauksen statusta. Varmista, että "
+#~ "subscription-manager on asennettu."
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Paikallaisia käyttäjiä ei voitu listata"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Käyttäjiä ei voitu listata"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "Käyttäjän dataa ei voitu ladata"
+
+#~ msgid "Crash dump location"
+#~ msgstr "Crash dumpin sijainti"
+
+#~ msgid "Create"
+#~ msgstr "Luo"
+
+#~ msgid "Create Logical Volume"
+#~ msgstr "Luo looginen taltio"
+
+#~ msgid "Create New Account"
+#~ msgstr "Luo uusi tili"
+
+#~ msgid "Create New VM"
+#~ msgstr "Luo uusi VM"
+
+#~ msgid "Create New Virtual Machine"
+#~ msgstr "Luo uusi virtuaalikone"
+
+#~ msgid "Create Partition"
+#~ msgstr "Luo osio"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "Luo RAID-laite"
+
+#~ msgid "Create Report"
+#~ msgstr "Luo raportti"
+
+#~ msgid "Create Snapshot"
+#~ msgstr "Luo tilannevedos"
+
+#~ msgid "Create Thin Volume"
+#~ msgstr "Luo Thin-taltio"
+
+#~ msgid "Create Timer"
+#~ msgstr "Luo ajastin"
+
+#~ msgid "Create Timers"
+#~ msgstr "Luo ajastimet"
+
+#~ msgid "Create VDO Device"
+#~ msgstr "Luo VDO-laite"
+
+#~ msgid "Create VM"
+#~ msgstr "Luo VM"
+
+#~ msgid "Create Virtual Machine"
+#~ msgstr "Luo virtuaalikone"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Luo taltioryhmä"
+
+#~ msgid "Create diagnostic report"
+#~ msgstr "Luo diagnostiikkaraportti"
+
+#~ msgid "Create empty image stream"
+#~ msgstr "Luo tyhjä image stream"
+
+#~ msgid "Create it"
+#~ msgstr "Luo se"
+
+#~ msgid "Create new Logical Volume"
+#~ msgstr "Luo uusi looginen taltio"
+
+#~ msgid "Create partition"
+#~ msgstr "Luo osio"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "Luo osio kohteessa $0"
+
+#~ msgid "Create partition table"
+#~ msgstr "Luo osiotaulu"
+
+#~ msgid "Created"
+#~ msgstr "Luotu"
+
+#~ msgid "Created:"
+#~ msgstr "Luotu:"
+
+#~ msgid "Creating RAID Device $target"
+#~ msgstr "Luodaan RAID-laite $target"
+
+#~ msgid "Creating filesystem on $target"
+#~ msgstr "Luodaan tiedostojärjestelmää kohteessa $target"
+
+#~ msgid "Creating logical volume $target"
+#~ msgstr "Luodan loogista taltiota $target"
+
+#~ msgid "Creating partition $target"
+#~ msgstr "Luodaan osiota $target"
+
+#~ msgid "Creating snapshot of $target"
+#~ msgstr "Luodaan tilannevedos kohteesta $target"
+
+#~ msgid ""
+#~ "Creating this VLAN will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Tämän VLANin luominen katkaisee yhteyden palvelimeen, jolloin "
+#~ "hallintakäyttöliittymä ei ole saatavilla."
+
+#~ msgid ""
+#~ "Creating this bridge will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Tämän sillan luominen katkaisee yhteyden serverille, jolloin "
+#~ "hallintakäyttöliittymä ei ole saatavilla."
+
+#~ msgid "Creating volume group $target"
+#~ msgstr "Luodaan taltioryhmä $target"
+
+#~ msgid "Creation of vm $0 failed"
+#~ msgstr "Virtuaalikoneen $0 luominen epäonnistui"
+
+#~ msgid "Current boot"
+#~ msgstr "Tämänhetkinen käynnistys"
+
+#~ msgid "Custom"
+#~ msgstr "Mukautettu"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Mukautettu (Lisää tiedostojärjestelmän tyyppi)"
+
+#~ msgid "Custom URL"
+#~ msgstr "Mukautettu URL"
+
+#~ msgid "Custom encryption options"
+#~ msgstr "Mukautetut salausvalinnat"
+
+#~ msgid "Custom mount option"
+#~ msgstr "Mukautettu liitosvalinta"
+
+#~ msgid "Custom mount options"
+#~ msgstr "Mukautetut liitosvalinnat"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "LEVY ON PETTÄMÄSSÄ"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS $val"
+#~ msgstr "DNS $val"
+
+#~ msgid "DNS Policy"
+#~ msgstr "DNS-käytäntö"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "DNS Search Domainit"
+
+#~ msgid "DNS Search Domains $val"
+#~ msgstr "DNS Search Domainit $val"
+
+#~ msgid "Dashboard"
+#~ msgstr "Kojelauta"
+
+#~ msgid "Data Used"
+#~ msgstr "Dataa käytetty"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktivoi"
+
+#~ msgid "Deactivating"
+#~ msgstr "Deaktivoidaan"
+
+#~ msgid "Deactivating $target"
+#~ msgstr "Deaktivoidaan $target"
+
+#~ msgid "Delay"
+#~ msgstr "Viive"
+
+#~ msgid "Delete $0"
+#~ msgstr "Poista $0"
+
+#~ msgid "Delete '{{ name }}'"
+#~ msgstr "Poista '{{ name }}'"
+
+#~ msgid "Delete Files"
+#~ msgstr "Poista tiedostot"
+
+#~ msgid "Delete Node"
+#~ msgstr "Poista Node"
+
+#~ msgid "Delete Persistent Volume"
+#~ msgstr "Poista Persistent Volume"
+
+#~ msgid "Delete Persistent Volume Claim"
+#~ msgstr "Poista Persistent Volume Claim"
+
+#~ msgid "Delete Project"
+#~ msgstr "Poista projekti"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Poista valittu"
+
+#~ msgid "Delete image stream"
+#~ msgstr "Poista image stream"
+
+#~ msgid "Delete {{ item.kind }}"
+#~ msgstr "Poista {{ item.kind }}"
+
+#~ msgid "Deleting $target"
+#~ msgstr "Poistetaan $target"
+
+#~ msgid ""
+#~ "Deleting <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Kohteen <b>$0</b>  poistaminen katkaisee yhteyden palvelimeen, jolloin "
+#~ "hallintakäyttöliittymä ei ole saatavilla."
+
+#~ msgid ""
+#~ "Deleting a Pod will kill all associated containers. Pods may be "
+#~ "automatically created again in some cases."
+#~ msgstr ""
+#~ "Podin poistaminen tulee tappamaan kaikki liittyvät kontit. Podit voidaan "
+#~ "luoda uudestaan automaattisesti joissain tilanteissa."
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr "RAID-laitteen poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Deleting a VDO device will erase all data on it."
+#~ msgstr "VDO-laitteen poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr "Kontin poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Deleting a logical volume will delete all data in it."
+#~ msgstr "Loogisen taltion poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Deleting a partition will delete all data in it."
+#~ msgstr "Osion poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Deleting a volume group will erase all data on it."
+#~ msgstr "Taltion poistaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid ""
+#~ "Deleting an image will delete it, but you can probably download it again "
+#~ "if you need it later.  Unless this image has never been pushed to a "
+#~ "repository, that is, in which case you probably can't download it again."
+#~ msgstr ""
+#~ "Levykuvan tuhoaminen poistaa sen, mutta voit luultavasti ladata sen "
+#~ "uudelleen jos tarvitset sitä myöhemmin.  Mikäli levykuvaa ei ole koskaan "
+#~ "puskettu repositorioon, et voi ladata sitä uudestaan."
+
+#~ msgid "Deleting volume group $target"
+#~ msgstr "Tuhotaan taltioryhmä $target"
+
+#~ msgid "Description"
+#~ msgstr "Kuvaus"
+
+#~ msgid "Description:"
+#~ msgstr "Kuvaus:"
+
+#~ msgid "Desktop"
+#~ msgstr "Työpöytä"
+
+#~ msgid "Details"
+#~ msgstr "Yksityiskohdat"
+
+#~ msgid "Device"
+#~ msgstr "Laite"
+
+#~ msgid "Device File"
+#~ msgstr "Laitetiedosto"
+
+#~ msgid "Device is read-only"
+#~ msgstr "Laite on \"vain luku\"-muotoa"
+
+#~ msgid "Diagnostic reports"
+#~ msgstr "Diagnostiikkaraportit"
+
+#~ msgid "Directory"
+#~ msgstr "Hakemisto"
+
+#~ msgid "Directory $0 isn't writable or doesn't exist."
+#~ msgstr "Hakemistolle $0 ei voi kirjoittaa tai se ei ole olemassa."
+
+#~ msgid "Disable"
+#~ msgstr "Poista käytöstä"
+
+#~ msgid "Disable tuned"
+#~ msgstr "Poista tuned käytöstä"
+
+#~ msgid "Disabled"
+#~ msgstr "Ei käytössä"
+
+#~ msgid "Disconnect"
+#~ msgstr "Katkaise yhteys"
+
+#~ msgid "Disconnected"
+#~ msgstr "Katkaistu"
+
+#~ msgid "Disk"
+#~ msgstr "Levy"
+
+#~ msgid "Disk I/O"
+#~ msgstr "Levyn I/O"
+
+#~ msgid "Disk Utilization: $0%"
+#~ msgstr "Levyn käyttöaste: $0%"
+
+#~ msgid "Disk is OK"
+#~ msgstr "Levy on OK"
+
+#~ msgid "Disks"
+#~ msgstr "Levyt"
+
+#~ msgid "Display Language"
+#~ msgstr "Näytä kieli"
+
+#~ msgid "Display name"
+#~ msgstr "Näytä nimi"
+
+#~ msgid "Do you want to add the role '{{ fields.displayRole }}'?"
+#~ msgstr "Haluatko lisätä roolin '{{ fields.displayRole }}'?"
+
+#~ msgid ""
+#~ "Do you want to delete the '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}' image stream?"
+#~ msgstr ""
+#~ "Haluatko tuhota '{{stream.metadata.namespace}}/{{stream.metadata.name}}' -"
+#~ "image streamin?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume '{{item.metadata.name}}'?"
+#~ msgstr "Haluatko tuhota Persistent Volumen '{{item.metadata.name}}'?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume Claim '{{item.metadata."
+#~ "name}}'?"
+#~ msgstr "Haluatko tuhota Persistent Volume Claimin '{{item.metadata.name}}'?"
+
+#~ msgid "Do you want to delete the {{ item.kind }} '{{item.metadata.name}}'?"
+#~ msgstr "Haluatko tuhota {{ item.kind }} '{{item.metadata.name}}'?"
+
+#~ msgid "Do you want to delete this Node?"
+#~ msgstr "Haluatko tuhota tämän Noden?"
+
+#~ msgid ""
+#~ "Do you want to remove the image tagged as '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+#~ msgstr ""
+#~ "Haluatko tuhota levykuvan, joka on merkitty '{{stream.metadata."
+#~ "namespace}}/{{stream.metadata.name}}:{{tag.tag}}'?"
+
+#~ msgid ""
+#~ "Do you want to remove the role '{{ fields.displayRole }}' from member "
+#~ "{{ fields.member.metadata.name }}?"
+#~ msgstr ""
+#~ "Haluatko poistaa roolin '{{ fields.displayRole }}' jäseneltä {{ fields."
+#~ "member.metadata.name }}?"
+
+#~ msgid "Docker Version"
+#~ msgstr "Docker-versio"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "Docker ei ole asennettu tai aktiivisena järjestelmässä"
+
+#~ msgid "Domain"
+#~ msgstr "Domain"
+
+#~ msgid "Domain $0 could not be contacted"
+#~ msgstr "Domainiin $0 ei saatu yhteyttä"
+
+#~ msgid "Domain $0 is not supported"
+#~ msgstr "Domain $0 ei ole tuettu"
+
+#~ msgid "Domain Address"
+#~ msgstr "Domain-osoite"
+
+#~ msgid "Domain Administrator Name"
+#~ msgstr "Domain-ylläpitäjän nimi"
+
+#~ msgid "Domain Administrator Password"
+#~ msgstr "Domain-ylläpitäjän salasana"
+
+#~ msgid "Don't Repeat"
+#~ msgstr "Älä toista"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "Älä ylikirjoita olemassa olevaa dataa"
+
+#~ msgid "Don't pull images automatically"
+#~ msgstr "Älä hae levykuvia automaattisesti"
+
+#~ msgid "Done!"
+#~ msgstr "Valmis!"
+
+#~ msgid "Download"
+#~ msgstr "Lataa"
+
+#~ msgid "Download report"
+#~ msgstr "Lataa raportti"
+
+#~ msgid "Download the MSI from $0"
+#~ msgstr "Lataa MSI kohteesta $0"
+
+#~ msgid "Downloaded"
+#~ msgstr "Ladattu"
+
+#~ msgid "Downloading"
+#~ msgstr "Ladataan"
+
+#~ msgid "Drive"
+#~ msgstr "Levy"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Levy"
+
+#~ msgid "Driver"
+#~ msgstr "Ajuri"
+
+#~ msgid "Drives"
+#~ msgstr "Levyt"
+
+#~ msgid "Drop file here to upload."
+#~ msgstr "Pudosta tiedosto tähän lähettääksesi."
+
+#~ msgid "Duplicate alias"
+#~ msgstr "Aliaksen duplikaatti"
+
+#~ msgid "Duplicate port"
+#~ msgstr "Portin duplikaatti"
+
+#~ msgid "Edit"
+#~ msgstr "Muokkaa"
+
+#~ msgid "Edit Server"
+#~ msgstr "Muokkaa palvelinta"
+
+#~ msgid "Edit image stream"
+#~ msgstr "Muokkaa image streamia"
+
+#~ msgid "Edit the vdsm.conf"
+#~ msgstr "Muokkaa vdsm.conf-tiedostoa"
+
+#~ msgid "Ejecting $target"
+#~ msgstr "Ejektoidaan $target"
+
+#~ msgid "Empty"
+#~ msgstr "Tyhjä"
+
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Tyhjä"
+
+#~ msgid "Empty Directory"
+#~ msgstr "Tyhjä hakemisto"
+
+#~ msgid "Emptying $target"
+#~ msgstr "Tyhjennetään $target"
+
+#~ msgid "Emulated Machine:"
+#~ msgstr "Emuloitu kone:"
+
+#~ msgid "Enable"
+#~ msgstr "Ota käyttöön"
+
+#~ msgid "Enable Forcefully"
+#~ msgstr "Ota käyttöön väkisin"
+
+#~ msgid "Enabled"
+#~ msgstr "Käytössä"
+
+#~ msgid "Encrypted $0"
+#~ msgstr "Salattu $0"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "Salattu EXT4 (LUKS)"
+
+#~ msgid "Encrypted Logical Volume of $0"
+#~ msgstr "Salattu looginen taltio $0"
+
+#~ msgid "Encrypted Partition of $0"
+#~ msgstr "Salattu osio $0"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "Salattu XFS (LUKS)"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Encrypted data"
+#~ msgstr "Salattu data"
+
+#~ msgid "Encrypted volumes can not be resized here."
+#~ msgstr "Salattujen taltioiden kokoa ei voi muuttaa täällä."
+
+#~ msgid "Encrypted volumes need to be unlocked before they can be resized."
+#~ msgstr ""
+#~ "Salattujen taltioiden salaus tulee olla avattu, ennen kuin niiden kokoa "
+#~ "voidaan muuttaa."
+
+#~ msgid "Encryption"
+#~ msgstr "Salaus"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Salauksen valinnat"
+
+#~ msgid "Enforce policy:"
+#~ msgstr "Toimeenpane käytäntö:"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "Anna IP-osoite tai host-nimi"
+
+#~ msgid "Enter New VM name"
+#~ msgstr "Anna Uusi VM nimi"
+
+#~ msgid ""
+#~ "Entering a different password here means you will need to retype it every "
+#~ "time you reconnect to this machine"
+#~ msgstr ""
+#~ "Erilaisen salasanan antaminen tässä tarkoittaa, että sinun tulee antaa "
+#~ "salasana uudestaan joka kerta kun yhdistät uudelleen tähän koneeseen."
+
+#~ msgid "Environment"
+#~ msgstr "Ympäristö"
+
+#~ msgid "Erase"
+#~ msgstr "Tyhjennä"
+
+#~ msgid "Erase containers and reset storage pool"
+#~ msgstr "Tyhjennä kontit ja resetoi tallennusvaranto"
+
+#~ msgid "Erasing $target"
+#~ msgstr "Tyhjennetään $target"
+
+#~ msgid "Error"
+#~ msgstr "Virhe"
+
+#~ msgid "Error getting certificate details: $0"
+#~ msgstr "Virhe haettaessa varmenteen yksityiskohtia: $0"
+
+#~ msgid "Error loading users: {{perm_failed}}"
+#~ msgstr "Virhe ladattaessa käyttäjiä: {{perm_failed}}"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Virheviesti Dockerilta:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Virhe tallentaessa valtuutettuja avaimia:"
+
+#~ msgid "Error while deleting alert: $0"
+#~ msgstr "Virhe poistaessa hälytystä:"
+
+#~ msgid "Error while setting SELinux mode: '$0'"
+#~ msgstr "Virhe asettaessa SELinuxin tilaa: '$0'"
+
+#~ msgid "Error writing kubectl config"
+#~ msgstr "Virhe kirjoittaessa kubectl config"
+
+#~ msgid "Ethernet MAC"
+#~ msgstr "Ethernet MAC"
+
+#~ msgid "Ethernet MTU"
+#~ msgstr "Ethernet MTU"
+
+#~ msgid "Ethtool"
+#~ msgstr "Ethtool"
+
+#~ msgid "Everything"
+#~ msgstr "Kaikki"
+
+#~ msgid "Excellent password"
+#~ msgstr "Erinomainen salasana"
+
+#~ msgid "Existing passphrase"
+#~ msgstr "Olemassa oleva tunnuslause"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "Poistui $ExitCode"
+
+#~ msgid "Expose container ports"
+#~ msgstr "Paljasta kontin portit"
+
+#~ msgid "Extended Partition"
+#~ msgstr "Laajennettu osio"
+
+#~ msgid "FAILED"
+#~ msgstr "EPÄONNISTUI"
+
+#~ msgid "FQDN"
+#~ msgstr "FQDN"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "Ei voitu lisätä konetta: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Ei voitu vaihtaa salasanaa"
+
+#~ msgid "Failed to delete alert: $0"
+#~ msgstr "Ei voitu tuhota virhettä: $0"
+
+#~ msgid "Failed to disable tuned"
+#~ msgstr "Ei voitu poistaa tuned käytöstä"
+
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr "Ei voitu poistaa tuned-profiilia käytöstä"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Ei voitu muokata konetta: $0"
+
+#~ msgid "Failed to enable tuned"
+#~ msgstr "Ei voitu ottaa tuned käyttöön"
+
+#~ msgid "Failed to load authorized keys."
+#~ msgstr "Ei voitu ladata valtuutettuja avaimia."
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr "Ei voitu käynnistää Dockeria: $0"
+
+#~ msgid "Failed to stop Docker scope: $0"
+#~ msgstr "Ei voitu pysäyttää Dockerin scopea: $0"
+
+#~ msgid "Failed to switch profile"
+#~ msgstr "Ei voitu vaihtaa profiilia"
+
+#~ msgid "Fibre Channel"
+#~ msgstr "Fibre-kanava"
+
+#~ msgid "File"
+#~ msgstr "Tiedosto"
+
+#~ msgid "Filesystem"
+#~ msgstr "Tiedostojärjestelmä"
+
+#~ msgid "Filesystem Mounting"
+#~ msgstr "Tiedostojärjestelmän liittäminen"
+
+#~ msgid "Filesystem Name"
+#~ msgstr "Tiedostojärjestelmän nimi"
+
+#~ msgid "Filesystem Type"
+#~ msgstr "Tiedostojärjestelmän tyyppi"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Tiedostojärjestelmän tyyppi"
+
+#~ msgid "Filesystems"
+#~ msgstr "Tiedostojärjestelmät"
+
+#~ msgid "Filter Services"
+#~ msgstr "Suodata palveluja"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Sormenjälki"
+
+#~ msgid "Firewall"
+#~ msgstr "Palomuuri"
+
+#~ msgid "Firewall is not available"
+#~ msgstr "Palomuuri ei ole saatavilla"
+
+#~ msgid "Flex"
+#~ msgstr "Flex"
+
+#~ msgid "Flocker"
+#~ msgstr "Flocker"
+
+#~ msgid "Flocker Dataset Name"
+#~ msgstr "Flocker Datasetin Nimi"
+
+#~ msgid "Follows docker repo"
+#~ msgstr "Seuraa docker-repoa"
+
+#~ msgid "Force Change"
+#~ msgstr "Pakota muutos"
+
+#~ msgid "Force Delete"
+#~ msgstr "Pakota poisto"
+
+#~ msgid "Force Restart"
+#~ msgstr "Pakota uudelleenkäynnistys"
+
+#~ msgid "Force Shut Down"
+#~ msgstr "Pakota sammutus"
+
+#~ msgid "Force password change"
+#~ msgstr "Pakota salasanan vaihdos"
+
+#~ msgid "Format"
+#~ msgstr "Alusta"
+
+#~ msgid "Format $0"
+#~ msgstr "Alusta $0"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Alusta levy $0"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "Taltion alustaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr "Levylaitteen alustaminen tuhoaa kaiken sillä olevan datan."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "Edelleenohjaa viive $forward_delay"
+
+#~ msgid "Free"
+#~ msgstr "Vapaa"
+
+#~ msgid "Free Space"
+#~ msgstr "Vapaa tila"
+
+#~ msgid "Friday"
+#~ msgstr "Perjantai"
+
+#~ msgid "Full Name"
+#~ msgstr "Koko nimi"
+
+#~ msgid "GCE Persistent Disk"
+#~ msgstr "GCE Persistent Disk"
+
+#~ msgid "Gateway:"
+#~ msgstr "Yhdyskäytävä:"
+
+#~ msgid "General"
+#~ msgstr "Yleiset"
+
+#~ msgid "Generating report"
+#~ msgstr "Luodaan raporttia"
+
+#~ msgid "Get new image"
+#~ msgstr "Hae uusi levykuva"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "Git Repository"
+#~ msgstr "Git-tietovarasto"
+
+#~ msgid "Gluster FS"
+#~ msgstr "Gluster FS"
+
+#~ msgid "GlusterFS"
+#~ msgstr "GlusterFS"
+
+#~ msgid "Go to"
+#~ msgstr "Mene"
+
+#~ msgid "Go to Application"
+#~ msgstr "Siirry sovellukseen"
+
+#~ msgid "Go to now"
+#~ msgstr "Mene nyt"
+
+#~ msgid "Grant additional push or admin access to specific members below."
+#~ msgstr "Myönnä lisäoikeuksia (push tai admin) tietyille jäsenille alla."
+
+#~ msgid "Group Members"
+#~ msgstr "Ryhmän jäsenet"
+
+#~ msgid "Group or Project"
+#~ msgstr "Ryhmä tai projekti"
+
+#~ msgid "Groups"
+#~ msgstr "Ryhmät"
+
+#~ msgid "Grow"
+#~ msgstr "Kasvata"
+
+#~ msgid "Grow Logical Volume"
+#~ msgstr "Kasvata loogista taltiota"
+
+#~ msgid "Grow logical size of $0"
+#~ msgstr "Kasvata loogista kokoa $0"
+
+#~ msgid "HA"
+#~ msgstr "HA"
+
+#~ msgid "HA:"
+#~ msgstr "HA:"
+
+#~ msgid "HTTP method"
+#~ msgstr "HTTP-tapa"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Hair Pin -tila"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Hairpin-tila"
+
+#~ msgid "Hard Disk"
+#~ msgstr "Kiintolevy"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Kiintolevy"
+
+#~ msgid "Hardware"
+#~ msgstr "Laitteisto"
+
+#~ msgid "Hardware Information"
+#~ msgstr "Laitteistotiedot"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Hello time $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "Kone"
+
+#~ msgid "Host Name"
+#~ msgstr "Koneen nimi"
+
+#~ msgid "Host Path"
+#~ msgstr "Koneen polku"
+
+#~ msgid "Host key is incorrect"
+#~ msgstr "Koneen avain on väärin"
+
+#~ msgid "Hour : Minute"
+#~ msgstr "Tunti : Minuutti"
+
+#~ msgid "Hour needs to be a number between 0-23"
+#~ msgstr "Tunti tarvitsee numeron väliltä 0-23"
+
+#~ msgid "Hours"
+#~ msgstr "Tuntia"
+
+#~ msgid "I/O Wait"
+#~ msgstr "I/O Odottaa"
+
+#~ msgid "INSTALL VM action failed"
+#~ msgstr "INSTALL VM -toiminto epäonnistui"
+
+#~ msgid "IP"
+#~ msgstr "IP"
+
+#~ msgid "IP Address"
+#~ msgstr "IP-osoite"
+
+#~ msgid "IP Address:"
+#~ msgstr "IP-osoitteet:"
+
+#~ msgid "IP Prefix Length:"
+#~ msgstr "IP Prefix Pituus:"
+
+#~ msgid "IP Settings"
+#~ msgstr "IP-asetukset"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "IPv4-asetukset"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "IPv6-asetukset"
+
+#~ msgid "ISCSI"
+#~ msgstr "ISCSI"
+
+#~ msgid "Id"
+#~ msgstr "Id"
+
+#~ msgid "Id $id"
+#~ msgstr "Id $id"
+
+#~ msgid "Id:"
+#~ msgstr "Id:"
+
+#~ msgid "Identifier"
+#~ msgstr "Tunniste:"
+
+#~ msgid "Identities"
+#~ msgstr "Tunnisteet:"
+
+#~ msgid "Identity"
+#~ msgstr "Identiteetti"
+
+#~ msgid "Ignore"
+#~ msgstr "Ohita"
+
+#~ msgid "Image"
+#~ msgstr "Levykuva"
+
+#~ msgid "Image $0"
+#~ msgstr "Levykuva $0"
+
+#~ msgid "Image ID"
+#~ msgstr "Levykuvan ID"
+
+#~ msgid "Image Name"
+#~ msgstr "Levykuvan nimi"
+
+#~ msgid "Image Registry"
+#~ msgstr "Levykuvahakemisto"
+
+#~ msgid "Image Search"
+#~ msgstr "Levykuvan haku"
+
+#~ msgid "Image Stream"
+#~ msgstr "Image Stream"
+
+#~ msgid "Image commands"
+#~ msgstr "Levykuvan komennot"
+
+#~ msgid "Image count"
+#~ msgstr "Levykuvien määrä"
+
+#~ msgid "Image:"
+#~ msgstr "Levykuva:"
+
+#~ msgid "Images"
+#~ msgstr "Levykuvat"
+
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Levykuvat"
+
+#~ msgid "Images and running containers"
+#~ msgstr "Levykuvat ja käynnissä olevat kontit"
+
+#~ msgid "Images by project"
+#~ msgstr "Levykuvat projektien mukaan"
+
+#~ msgid "Images may be pulled by anonymous users"
+#~ msgstr "Levykuvia voidaan hakea anonyymeinä käyttäjinä"
+
+#~ msgid "Images may be pulled by any authenticated user or group"
+#~ msgstr "Levykuvia voidaan hakea tunnistamattomana käyttäjänä tai ryhmänä"
+
+#~ msgid "Images may only be pulled by specific users or groups"
+#~ msgstr "Levykuvia voivat hakea vain tietyt käyttäjät tai ryhmät"
+
+#~ msgid "Images pushed recently"
+#~ msgstr "Viimeksi tuotuja levykuvia"
+
+#~ msgid "Immediately Start VM"
+#~ msgstr "Käynnistä VM välittömästi"
+
+#~ msgid "In Sync"
+#~ msgstr "Synkronoitu"
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, use the commands below."
+#~ msgstr ""
+#~ "Aloittaaksesi levykuvien tuomisen rekisteriin, käytä alla olevia "
+#~ "komentoja."
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, you need to create a "
+#~ "project."
+#~ msgstr ""
+#~ "Aloittaaksesi levykuvien tuomisen rekisteriin, sinun tulee luoda projekti."
+
+#~ msgid ""
+#~ "In order to synchronize users, you need to log in to {{#strong}}{{host}}"
+#~ "{{/strong}}."
+#~ msgstr ""
+#~ "Synkronoidaksesi käyttäjät, sinun tulee olla kirjautuneena kohteeseen "
+#~ "{{#strong}}{{host}}{{/strong}}."
+
+#~ msgid "Inactive"
+#~ msgstr "Epäaktiivinen"
+
+#~ msgid "Inactive volume"
+#~ msgstr "Epäaktiivinen taltio"
+
+#~ msgid "Incorrect Host Key"
+#~ msgstr "Väärä Host Avain"
+
+#~ msgid "Information about the Docker storage pool is not available."
+#~ msgstr "Tieto Dockering tallentovarannosta ei ole saatavilla."
+
+#~ msgid "Install"
+#~ msgstr "Asenna"
+
+#~ msgid "Install All Updates"
+#~ msgstr "Asenna kaikki päivitykset"
+
+#~ msgid "Install Security Updates"
+#~ msgstr "Asenna tietoturvapäivitykset"
+
+#~ msgid "Install setroubleshoot-server to troubleshoot SELinux events."
+#~ msgstr ""
+#~ "Asenna setroubleshoot-server tehdäksesi vianetsinnän SELinux-tapahtumista."
+
+#~ msgid "Installation Source"
+#~ msgstr "Asennuslähde"
+
+#~ msgid "Installation Source Type"
+#~ msgstr "Asennuslähteen tyyppi"
+
+#~ msgid "Installation Source should not be empty"
+#~ msgstr "Asennuslähteen ei tulisi olla tyhjä"
+
+#~ msgid "Installed"
+#~ msgstr "Asennettu"
+
+#~ msgid "Installed products"
+#~ msgstr "Asennetut tuotteet"
+
+#~ msgid "Installing"
+#~ msgstr "Asennetaan"
+
+#~ msgid "Instantiate"
+#~ msgstr "Instansoi"
+
+#~ msgid "Interface"
+#~ msgstr "Liitäntä"
+
+#~ msgid "Interfaces"
+#~ msgstr "Liitännät"
+
+#~ msgid "Internal error"
+#~ msgstr "Sisäinen virhe"
+
+#~ msgid "Invalid address $0"
+#~ msgstr "Virheellinen osoite $0"
+
+#~ msgid "Invalid credentials"
+#~ msgstr "Virheelliset tunnistautumistiedot"
+
+#~ msgid "Invalid date format"
+#~ msgstr "Virheellinen päivämuoto"
+
+#~ msgid "Invalid date format and invalid time format"
+#~ msgstr "Virheellinen päivämuoto ja aikamuoto"
+
+#~ msgid "Invalid date format."
+#~ msgstr "Virheellinen päivämuoto."
+
+#~ msgid "Invalid expiration date"
+#~ msgstr "Virheellinen vanhenemispäivä."
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Virheelliset tiedosto-oikeudet"
+
+#~ msgid "Invalid filename"
+#~ msgstr "Virheellinen tiedostonimi"
+
+#~ msgid "Invalid key"
+#~ msgstr "Virheellinen avain"
+
+#~ msgid "Invalid metric $0"
+#~ msgstr "Virheellinen metriikka $0"
+
+#~ msgid "Invalid number."
+#~ msgstr "Virheellinen numero."
+
+#~ msgid "Invalid port"
+#~ msgstr "Virheellinen portti"
+
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Virheellinen etuliite $0"
+
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Virheellinen etuliite tai verkkopeite $0"
+
+#~ msgid "Invalid time format"
+#~ msgstr "Virheellinen aikamuoto"
+
+#~ msgid "Invalid time zone"
+#~ msgstr "Virheellinen aikavyöhyke"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Virheellinen käyttäjätunnus tai salasana"
+
+#~ msgid "Is sshd running on a different port?"
+#~ msgstr "Onko sshd käynnissä eri portissa?"
+
+#~ msgid "Jobs"
+#~ msgstr "Työt"
+
+#~ msgid "Join"
+#~ msgstr "Liity"
+
+#~ msgid "Join Domain"
+#~ msgstr "Liity domainiin"
+
+#~ msgid "Join a Domain"
+#~ msgstr "Liity domainiin"
+
+#~ msgid "Joining this domain is not supported"
+#~ msgstr "Liittyminen tähän domainiin ei ole tuettu"
+
+#~ msgid "Journal"
+#~ msgstr "Journal"
+
+#~ msgid "Journal entry"
+#~ msgstr "Journal-merkintä"
+
+#~ msgid "Journal entry not found"
+#~ msgstr "Journal-merkintää ei löytynyt"
+
+#~ msgid ""
+#~ "Kdump service not installed. Please ensure package kexec-tools is "
+#~ "installed."
+#~ msgstr ""
+#~ "Kdump-palvelua ei ole asennettu. Varmista, että paketti kexec-tools on "
+#~ "asennettu."
+
+#~ msgid "Keep connection"
+#~ msgstr "Pidä yhteys"
+
+#~ msgid "Kerberos Based SSO"
+#~ msgstr "Kerberos-pohjainen SSO"
+
+#~ msgid "Kerberos Ticket"
+#~ msgstr "Kerberos-tiketti"
+
+#~ msgid "Kernel"
+#~ msgstr "Kernel"
+
+#~ msgid "Kernel Version"
+#~ msgstr "Kernel-versio"
+
+#~ msgid "Key Ring Path"
+#~ msgstr "Key Ring Path"
+
+#~ msgid "Key does not work"
+#~ msgstr "Avain ei toimi"
+
+#~ msgid "Key is okay"
+#~ msgstr "Avain on OK"
+
+#~ msgid "Key server address"
+#~ msgstr "Avainpalvelimen osoite"
+
+#~ msgid "Kubelet Version"
+#~ msgstr "Kubelet-versio"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Kubernetes-klusteri"
+
+#~ msgid "LACP Key"
+#~ msgstr "LACP-avain"
+
+#~ msgid "Laptop"
+#~ msgstr "Kannettava"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Viimeiset 24 tuntia"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Viimeiset 7 päivää"
+
+#~ msgid "Last Heartbeat"
+#~ msgstr "Edellinen Heartbeat"
+
+#~ msgid "Last Login"
+#~ msgstr "Edellinen kirjautuminen"
+
+#~ msgid "Last Status Change"
+#~ msgstr "Edellinen tilamuutos"
+
+#~ msgid "Last Trigger"
+#~ msgstr "Edellinen liipaisin"
+
+#~ msgid "Last Updated"
+#~ msgstr "Viimeksi päivitetty"
+
+#~ msgid "Last checked: $0 ago"
+#~ msgstr "Viimeksi tarkistettu: $0 sitten"
+
+#~ msgid "Latest Version"
+#~ msgstr "Viimeisin versio"
+
+#~ msgid "Launch Remote Viewer"
+#~ msgstr "Käynnistä etäkatselin"
+
+#~ msgid "Leave"
+#~ msgstr "Jätä"
+
+#~ msgid "Leave Domain"
+#~ msgstr "Jätä domain"
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in user. "
+#~ "If you enter a different username, that user will always be used when "
+#~ "connecting to this machine."
+#~ msgstr ""
+#~ "Jätä tyhjäksi yhdistääksesi tähän koneeseen nykyisenä käyttäjänä. Jos "
+#~ "annat eri käyttäjänimen, sitä tullaan aina käyttämään yhdistettäessä "
+#~ "tähän koneeseen."
+
+#~ msgid "Licensed under:"
+#~ msgstr "Lisensoitu:"
+
+#~ msgid "Link to another container"
+#~ msgstr "Yhdistä toiseen konttiin"
+
+#~ msgid "Load Balancing"
+#~ msgstr "Kuorman tasapainotus"
+
+#~ msgid "Load earlier entries"
+#~ msgstr "Lataa aiemmat merkinnät"
+
+#~ msgid "Loading ..."
+#~ msgstr "Ladataan..."
+
+#~ msgid "Loading available updates failed"
+#~ msgstr "Saatavilla olevien päivitysten lataus epäonnistui"
+
+#~ msgid "Loading available updates, please wait..."
+#~ msgstr "Ladataan saatavilla olevat päivitykset, odota hetki..."
+
+#~ msgid "Loading data ..."
+#~ msgstr "Ladataan tietoja..."
+
+#~ msgid "Loading..."
+#~ msgstr "Ladataan..."
+
+#~ msgid "Local Accounts"
+#~ msgstr "Paikalliset tilit"
+
+#~ msgid "Local Disks"
+#~ msgstr "Paikalliset levyt"
+
+#~ msgid "Local Filesystem"
+#~ msgstr "Paikallinen tiedostojärjestelmä"
+
+#~ msgid "Local Mount Point"
+#~ msgstr "Paikallinen liitospiste"
+
+#~ msgid "Location"
+#~ msgstr "Sijainti"
+
+#~ msgid "Lock"
+#~ msgstr "Lukitse"
+
+#~ msgid "Lock Account"
+#~ msgstr "Lukitse tili"
+
+#~ msgid "Lock account on $0"
+#~ msgstr "Lukitse tili $0"
+
+#~ msgid "Locked"
+#~ msgstr "Lukitse"
+
+#~ msgid "Locking $target"
+#~ msgstr "Lukitaan $target"
+
+#~ msgid "Log In"
+#~ msgstr "Kirjaudu sisään"
+
+#~ msgid "Log Out"
+#~ msgstr "Kirjaudu ulos"
+
+#~ msgid "Log in again"
+#~ msgstr "Kirjaudu sisään uudelleen"
+
+#~ msgid "Log in to {{host}}"
+#~ msgstr "Kirjaudu kohteeseen {{host}}"
+
+#~ msgid "Log into OpenShift command line tools:"
+#~ msgstr "Kirjaudu OpenShiftin komentorivityökaluihin:"
+
+#~ msgid "Log into the registry:"
+#~ msgstr "Kirjaudu rekisteriin:"
+
+#~ msgid "Log messages"
+#~ msgstr "Kirjaa viestit"
+
+#~ msgid "Logged In"
+#~ msgstr "Kirjautunut sisään"
+
+#~ msgid "Logical"
+#~ msgstr "Looginen"
+
+#~ msgid "Logical Size"
+#~ msgstr "Looginen koko"
+
+#~ msgid "Logical Unit Number"
+#~ msgstr "Looginen yksikön numero"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Looginen taltio"
+
+#~ msgid "Logical Volume (Snapshot)"
+#~ msgstr "Looginen taltio (tilannevedos)"
+
+#~ msgid "Login"
+#~ msgstr "Kirjaudu sisään"
+
+#~ msgid "Login Again"
+#~ msgstr "Kirjaudu sisään uudelleen"
+
+#~ msgid "Login Password"
+#~ msgstr "Kirjautumissalasana"
+
+#~ msgid "Login commands"
+#~ msgstr "Kirjautumiskomennot"
+
+#~ msgid "Login failed"
+#~ msgstr "Kirjautuminen epäonnistui"
+
+#~ msgid "Logout Successful"
+#~ msgstr "Uloskirjautuminen onnistui"
+
+#~ msgid "Logs"
+#~ msgstr "Lokit"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "Yhteys menetettiin. Yritetään yhdistää uudelleen"
+
+#~ msgid "Low Profile Desktop"
+#~ msgstr "Matalan tason työpöytä"
+
+#~ msgid "MAC"
+#~ msgstr "MAC"
+
+#~ msgid "MAC Address"
+#~ msgstr "MAC-osoite"
+
+#~ msgid "MAC Address:"
+#~ msgstr "MAC-osoite:"
+
+#~ msgid "MIGRATE action failed"
+#~ msgstr "MIGRATE-toiminto epäonnistui"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "MTU must be a positive number"
+#~ msgstr "MTU:n tulee olla positiivinen numero"
+
+#~ msgid "Machine ID"
+#~ msgstr "Koneen ID"
+
+#~ msgid "Machine SSH Key Fingerprints"
+#~ msgstr "Koneen SSH-avaimen sormenjäljet"
+
+#~ msgid "Machines"
+#~ msgstr "Koneet"
+
+#~ msgid "Managed"
+#~ msgstr "Hallittu"
+
+#~ msgid "Manual Connection"
+#~ msgstr "Manuaalinen yhteys"
+
+#~ msgid "Manually"
+#~ msgstr "Manuaalisesti"
+
+#~ msgid "Manually verify the key on the server: "
+#~ msgstr "Vahvista palvelimen avain manuaalisesti:"
+
+#~ msgid "Marking $target as faulty"
+#~ msgstr "Merkitään $target virheelliseksi"
+
+#~ msgid "Mask"
+#~ msgstr "Peite"
+
+#~ msgid "Mask Forcefully"
+#~ msgstr "Peitä väkisin"
+
+#~ msgid "Master"
+#~ msgstr "Master"
+
+#~ msgid "Members"
+#~ msgstr "Jäsenet"
+
+#~ msgid "Membership"
+#~ msgstr "Jäsenyys"
+
+#~ msgid "Memory"
+#~ msgstr "Muisti"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Muisti"
+
+#~ msgid "Memory Utilization: $0%"
+#~ msgstr "Muistin käyttö: $0%"
+
+#~ msgid "Memory limit"
+#~ msgstr "Muistiraja"
+
+#~ msgid "Memory should be positive number"
+#~ msgstr "Muistin tulee olla positiivinen numero"
+
+#~ msgid "Memory usage:"
+#~ msgstr "Muistin käyttö:"
+
+#~ msgid "Memory:"
+#~ msgstr "Muisti:"
+
+#~ msgid "Message"
+#~ msgstr "Viesti"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Viesti sisäänkirjautuneille käyttäjille"
+
+#~ msgid "Method"
+#~ msgstr "Tapa"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "Minute needs to be a number between 0-59"
+#~ msgstr "Minuutit tulee olla esitetty numerovälillä 0-59"
+
+#~ msgid "Minutes"
+#~ msgstr "Minuutit"
+
+#~ msgid "Mode"
+#~ msgstr "Tila"
+
+#~ msgid "Model"
+#~ msgstr "Malli"
+
+#~ msgid "Model type"
+#~ msgstr "Mallityyppi"
+
+#~ msgid "Modify"
+#~ msgstr "Muokkaa"
+
+#~ msgid "Modifying $target"
+#~ msgstr "Muokataan $target"
+
+#~ msgid "Monday"
+#~ msgstr "Maanantai"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "Monitorointiväli"
+
+#~ msgid "More Information"
+#~ msgstr "Lisää tietoja"
+
+#~ msgid "More details"
+#~ msgstr "Lisätietoja"
+
+#~ msgid "Mount Location"
+#~ msgstr "Liitossijainti"
+
+#~ msgid "Mount Options"
+#~ msgstr "Liitosvalinnat"
+
+#~ msgid "Mount Point"
+#~ msgstr "Liitospiste"
+
+#~ msgid "Mount at boot"
+#~ msgstr "Liitä käynnistyksen yhteydessä"
+
+#~ msgid "Mount container volumes"
+#~ msgstr "Liitä konttitaltiot"
+
+#~ msgid "Mount options"
+#~ msgstr "Liitosvalinnat"
+
+#~ msgid "Mount point can not be empty"
+#~ msgstr "Liitospiste ei voi olla tyhjä"
+
+#~ msgid "Mount point cannot be empty."
+#~ msgstr "Liitospiste ei voi olla tyhjä."
+
+#~ msgid "Mounting"
+#~ msgstr "Liitetään"
+
+#~ msgid "Mounting $target"
+#~ msgstr "Liitetään $target"
+
+#~ msgid "NFS"
+#~ msgstr "NFS"
+
+#~ msgid "NFS Mount"
+#~ msgstr "NFS-liitos"
+
+#~ msgid "NFS Mounts"
+#~ msgstr "NFS-liitokset"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS - Yhteensopiva useimpien järjestelmien kanssa"
+
+#~ msgid "NTP Server"
+#~ msgstr "NTP-palvelin"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "Nimi ei voi olla tyhjä."
+
+#~ msgid "Name cannot be empty."
+#~ msgstr "Nimi ei voi olla tyhjä."
+
+#~ msgid "Name cannot be longer than 127 characters."
+#~ msgstr "Nimi voi sisältää enintään 127 merkkiä."
+
+#~ msgid "Name cannot contain the character '$0'."
+#~ msgstr "Nimi ei voi sisältää merkkiä '$0'."
+
+#~ msgid "Name should not be empty"
+#~ msgstr "Nimen ei tule olla tyhjä."
+
+#~ msgid "Namespace"
+#~ msgstr "Nimiavaruus"
+
+#~ msgid "Need at least one NTP server"
+#~ msgstr "Tarvitaan vähintään yksi NTP-palvelin"
+
+#~ msgid "Network"
+#~ msgstr "Verkko"
+
+#~ msgid "Network Traffic"
+#~ msgstr "Verkkoliikenne"
+
+#~ msgid "Network keys"
+#~ msgstr "Verkkoavaimet"
+
+#~ msgid "Networking"
+#~ msgstr "Verkko"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Verkko"
+
+#~ msgid "Networking Logs"
+#~ msgstr "Verkkolokit"
+
+#~ msgid "Networks"
+#~ msgstr "Verkot"
+
+#~ msgid "Never"
+#~ msgstr "Ei  koskaan"
+
+#~ msgid "Never expire password"
+#~ msgstr "Älä koskaan vanhenna salasanaa"
+
+#~ msgid "Never lock account"
+#~ msgstr "Älä koskaan lukitse tiliä"
+
+#~ msgid "New Group"
+#~ msgstr "Uusi ryhmä"
+
+#~ msgid "New NFS Mount"
+#~ msgstr "Uusi NFS-liitos"
+
+#~ msgid "New Password"
+#~ msgstr "Uusi salasana"
+
+#~ msgid "New Project"
+#~ msgstr "Uusi projekti"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "Uutta salasanaa ei hyväksytty"
+
+#~ msgid "New project"
+#~ msgstr "Uusi projekti"
+
+#~ msgid "Next"
+#~ msgstr "Seuraava"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Ei tiedostojärjestelmää"
+
+#~ msgid "No Logical Volumes"
+#~ msgstr "Ei loogisia taltioita"
+
+#~ msgid "No PEM-encoded certificate found"
+#~ msgstr "PEM-koodattua varmennetta ei löytynyt"
+
+#~ msgid "No PEM-encoded private key found"
+#~ msgstr "PEM-koodattua yksityistä avainta ei löytynyt"
+
+#~ msgid "No SELinux alerts."
+#~ msgstr "Ei SELinux-hälytyksiä."
+
+#~ msgid "No VM found in oVirt."
+#~ msgstr "oVirtistä ei löytynyt virtuaalikonetta."
+
+#~ msgid "No applications installed or available"
+#~ msgstr "Ei sovelluksia asennettuna tai saatavilla"
+
+#~ msgid "No boot device found"
+#~ msgstr "Käynnistyslaitetta ei löytynyt"
+
+#~ msgid "No containers"
+#~ msgstr "Ei kontteja"
+
+#~ msgid "No containers that match the current filter"
+#~ msgstr "Ei nykyistä suodatusta vastaavia kontteja"
+
+#~ msgid "No description provided."
+#~ msgstr "Kuvausta ei annettu."
+
+#~ msgid "No disks are available."
+#~ msgstr "Levyjä ei ole saatavilla."
+
+#~ msgid "No disks defined for this VM"
+#~ msgstr "Tälle virtuaalikoneelle ei ole määritetty levyjä."
+
+#~ msgid "No free space"
+#~ msgstr "Ei vapaata tilaa"
+
+#~ msgid "No groups are present."
+#~ msgstr "Ryhmiä ei ole läsnä."
+
+#~ msgid "No matching files found"
+#~ msgstr "Vastaavia tiedostoja ei löytynyt."
+
+#~ msgid "No network interfaces defined for this VM"
+#~ msgstr "Tälle virtuaalikoneelle ei ole määritetty verkkoliitäntöjä"
+
+#~ msgid "No nodes in cluster"
+#~ msgstr "Ei nodeja klusterissa"
+
+#~ msgid "No oVirt connection"
+#~ msgstr "Ei oVirt-yhteyttä"
+
+#~ msgid "No open ports"
+#~ msgstr "Ei avoimia portteja"
+
+#~ msgid "No partitioning"
+#~ msgstr "Ei osiointia"
+
+#~ msgid "No pods scheduled"
+#~ msgstr "Podeja ei ole aikataulutettu"
+
+#~ msgid "No pods selected"
+#~ msgstr "Podeja ei ole valittu"
+
+#~ msgid "No running containers"
+#~ msgstr "Ei käynnissä olevia kontteja"
+
+#~ msgid "No running containers that match the current filter"
+#~ msgstr "Ei suodatusta vastaavia käynnissä olevia kontteja"
+
+#~ msgid "No updates pending"
+#~ msgstr "Ei odottavia päivityksiä"
+
+#~ msgid "No virtual machines"
+#~ msgstr "Ei virtuaalikoneita"
+
+#~ msgid "No volume groups created"
+#~ msgstr "Taltioryhmiä ei ole luotu"
+
+#~ msgid "No volumes are present."
+#~ msgstr "Taltioita ei ole läsnä."
+
+#~ msgid "No volumes in use"
+#~ msgstr "Taltioita ei ole käytössä"
+
+#~ msgid "Node"
+#~ msgstr "Node"
+
+#~ msgid "Node:"
+#~ msgstr "Node:"
+
+#~ msgid "Nodes"
+#~ msgstr "Noodit"
+
+#~ msgid "Nodes are the machines that run your containers."
+#~ msgstr "Noodit ovat konttejasi suorittavia koneita."
+
+#~ msgid "Not Available"
+#~ msgstr "Ei saatavilla"
+
+#~ msgid "Not Ready"
+#~ msgstr "Ei valmiina"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "Ei kelvollinen yksityinen avain"
+
+#~ msgid "Not connected"
+#~ msgstr "Ei yhdistetty"
+
+#~ msgid "Not found"
+#~ msgstr "Ei löytynyt"
+
+#~ msgid "Not mounted"
+#~ msgstr "Ei liitetty"
+
+#~ msgid "Not permitted to perform this action."
+#~ msgstr "Ei oikeutta suorittaa tätä toimintoa."
+
+#~ msgid "Not running"
+#~ msgstr "Ei käynnissä"
+
+#~ msgid "Not synchronized"
+#~ msgstr "Ei synkronisoitu"
+
+#~ msgid "Not yet synced"
+#~ msgstr "Ei vielä synkronisoitu"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "OS"
+#~ msgstr "Käyttöjärjestelmä"
+
+#~ msgid "OS Type:"
+#~ msgstr "Käyttöjärjestelmän tyyppi:"
+
+#~ msgid "OS Vendor"
+#~ msgstr "Käyttöjärjestelmän toimittaja"
+
+#~ msgid "OS Versions"
+#~ msgstr "Käyttöjärjestelmäversiot"
+
+#~ msgid "Off"
+#~ msgstr "Pois"
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "Old Password"
+#~ msgstr "Vanha salasana"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Vanhaa salasanaa ei hyväksytty"
+
+#~ msgid "On"
+#~ msgstr "Päällä"
+
+#~ msgid "One Time Password"
+#~ msgstr "Kertakäyttöinen salasana"
+
+#~ msgid "Ooops!"
+#~ msgstr "Hups!"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Optinen asema"
+
+#~ msgid "Options"
+#~ msgstr "Valinnat"
+
+#~ msgid "Organization"
+#~ msgstr "Organisaatio"
+
+#~ msgid "Other Devices"
+#~ msgstr "Muut laitteet"
+
+#~ msgid "Other Options"
+#~ msgstr "Muut valinnat"
+
+#~ msgid "PCI"
+#~ msgstr "PCI"
+
+#~ msgid "Package information"
+#~ msgstr "Paketin tiedot"
+
+#~ msgid "PackageKit crashed"
+#~ msgstr "PackageKit kaatui"
+
+#~ msgid "PackageKit is not installed"
+#~ msgstr "PackageKit ei ole asennettu"
+
+#~ msgid "PackageKit reported error code $0"
+#~ msgstr "PackageKit raportoi virhekoodin $0"
+
+#~ msgid "Partition"
+#~ msgstr "Osio"
+
+#~ msgid "Partitioning"
+#~ msgstr "Osiointi"
+
+#~ msgid "Passphrase"
+#~ msgstr "Tunnuslause"
+
+#~ msgid "Passphrase cannot be empty"
+#~ msgstr "Tunnuslause ei voi olla tyhjä"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Tunnuslauseet eivät täsmää"
+
+#~ msgid "Password"
+#~ msgstr "Salasana"
+
+#~ msgid "Password Expiration"
+#~ msgstr "Salasanan vanheneminen"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "Salasana ei ole hyväksyttävä"
+
+#~ msgid "Password is too weak"
+#~ msgstr "Salasana on liian heikko"
+
+#~ msgid "Password must be changed"
+#~ msgstr "Salasana tulee vaihtaa"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Salasanaa ei hyväksytty"
+
+#~ msgid "Paste the contents of your public SSH key file here"
+#~ msgstr "Liitä julkisen SSH-avaintiedostosi sisältö tähän"
+
+#~ msgid "Path"
+#~ msgstr "Polku"
+
+#~ msgid "Paths"
+#~ msgstr "Polut"
+
+#~ msgid "Performance Profile"
+#~ msgstr "Suorituskykyprofiili"
+
+#~ msgid "Permission denied"
+#~ msgstr "Käyttö estetty"
+
+#~ msgid "Physical"
+#~ msgstr "Fyysinen"
+
+#~ msgid "Physical Volume"
+#~ msgstr "Fyysinen taltio"
+
+#~ msgid "Physical Volumes"
+#~ msgstr "Fyysiset taltiot"
+
+#~ msgid "Ping Interval"
+#~ msgstr "Ping-väli"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "Vahvista kohteen $0 poistaminen"
+
+#~ msgid "Please confirm forced deletion of $0"
+#~ msgstr "Vahvista kohteen $0 pakotettu poistaminen"
+
+#~ msgid "Please confirm network key removal"
+#~ msgstr "Vahvista verkkoavaimen poistaminen"
+
+#~ msgid "Please confirm stopping of $0"
+#~ msgstr "Vahvista kohteen $0 pysäyttäminen"
+
+#~ msgid "Please provide a GlusterFS volume name"
+#~ msgstr "Anna GlusterFS-taltion nimi"
+
+#~ msgid "Please provide a valid NFS server"
+#~ msgstr "Anna kelvollinen NFS-palvelin"
+
+#~ msgid "Please provide a valid address"
+#~ msgstr "Anna kelvollinen osoite"
+
+#~ msgid "Please provide a valid filesystem type"
+#~ msgstr "Anna kelvollinen tiedostojärjestelmän tyyppi"
+
+#~ msgid "Please provide a valid interface"
+#~ msgstr "Anna kelvollinen liitäntä"
+
+#~ msgid "Please provide a valid logical unit number"
+#~ msgstr "Anna kelvollinen loogisen yksikön numero"
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "Anna kelvollinen nimiavaruus."
+
+#~ msgid "Please provide a valid path"
+#~ msgstr "Anna kelvollinen polku"
+
+#~ msgid "Please select a valid policy option."
+#~ msgstr "Valitse kelvollinen käytäntövalinta."
+
+#~ msgid "Please specify an expiration date"
+#~ msgstr "Määritä vanhenemispäivä"
+
+#~ msgid "Please start the virtual machine to access its console."
+#~ msgstr "Käynnistä virtuaalikone päästäksesi sen konsoliin."
+
+#~ msgid "Please type an address"
+#~ msgstr "Anna osoite"
+
+#~ msgid "Please wait till VMs list is loaded from the server."
+#~ msgstr "Odota että virtuaalikoneiden lista ladataan palvelimelta."
+
+#~ msgid "Pod"
+#~ msgstr "Pod"
+
+#~ msgid "Pod Address"
+#~ msgstr "Podin osoite"
+
+#~ msgid "Pod:"
+#~ msgstr "Pod:"
+
+#~ msgid "Pods"
+#~ msgstr "Podit"
+
+#~ msgid ""
+#~ "Pods contain one or more containers that run together on a node, "
+#~ "containing your application code."
+#~ msgstr ""
+#~ "Podit sisältävät yhden tai useamman nodessa yhdessä toimivan kontin, ja "
+#~ "ne sisältävät sovelluksesi koodin."
+
+#~ msgid "Port"
+#~ msgstr "Portti"
+
+#~ msgid "Ports"
+#~ msgstr "Portit"
+
+#~ msgid "Ports:"
+#~ msgstr "Portit:"
+
+#~ msgid "Primary"
+#~ msgstr "Ensisijainen"
+
+#~ msgid "Priority"
+#~ msgstr "Prioriteeetti"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Prioriteetti $priority"
+
+#~ msgid "Problems"
+#~ msgstr "Ongelmat"
+
+#~ msgid "Product ID"
+#~ msgstr "Tuotteen ID"
+
+#~ msgid "Product name"
+#~ msgstr "Tuotteen nimi"
+
+#~ msgid "Project"
+#~ msgstr "Projekti"
+
+#~ msgid "Project Members"
+#~ msgstr "Projektin jäsenet"
+
+#~ msgid "Project website"
+#~ msgstr "Projektin verkkosivusto"
+
+#~ msgid "Project:"
+#~ msgstr "Projekti:"
+
+#~ msgid "Projects"
+#~ msgstr "Projektit"
+
+#~ msgid "Public Key"
+#~ msgstr "Julkinen avain"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID Device"
+#~ msgstr "RAID-laite"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "RAID-laite $0"
+
+#~ msgid "RAID Devices"
+#~ msgstr "RAID-laitteet"
+
+#~ msgid "RAID Level"
+#~ msgstr "RAID-taso"
+
+#~ msgid "RAID Member"
+#~ msgstr "RAID-jäsen"
+
+#~ msgid "REBOOT action failed"
+#~ msgstr "REBOOT-toiminto epäonnistui"
+
+#~ msgid "Rados Block Device"
+#~ msgstr "Rados-lohkolaite"
+
+#~ msgid "Random"
+#~ msgstr "Satunnainen"
+
+#~ msgid "Read Only"
+#~ msgstr "Vain luku"
+
+#~ msgid "Reading..."
+#~ msgstr "Luetaan..."
+
+#~ msgid "Ready"
+#~ msgstr "Valmis"
+
+#~ msgctxt "verb"
+#~ msgid "Ready"
+#~ msgstr "Valmis"
+
+#~ msgid "Reason"
+#~ msgstr "Syy"
+
+#~ msgid "Reboot"
+#~ msgstr "Käynnistä uudelleen"
+
+#~ msgid "Receiving"
+#~ msgstr "Vastaanotetaan"
+
+#~ msgid "Refreshing package information"
+#~ msgstr "Päivitetään pakettitietoja"
+
+#~ msgid "Register"
+#~ msgstr "Rekisteröi"
+
+#~ msgid "Register New Volume"
+#~ msgstr "Rekisteröi uusi taltio"
+
+#~ msgid "Register oVirt"
+#~ msgstr "Rekisteröi oVirt"
+
+#~ msgid "Register system"
+#~ msgstr "Rekisteröi järjestelmä"
+
+#~ msgid "Registering oVirt to Cockpit"
+#~ msgstr "Rekisteröidän oVirt Cockpitiin"
+
+#~ msgid "Register…"
+#~ msgstr "Rekisteröi…"
+
+#~ msgid "Reload"
+#~ msgstr "Lataa uudelleen"
+
+#~ msgid "Remote URL"
+#~ msgstr "Etä-URL"
+
+#~ msgid "Remote registry is insecure"
+#~ msgstr "Etärekisteri on turvaton"
+
+#~ msgid "Remove"
+#~ msgstr "Poista"
+
+#~ msgid "Remove $0"
+#~ msgstr "Poista $0"
+
+#~ msgid "Remove Group"
+#~ msgstr "Poista ryhmä"
+
+#~ msgid "Remove Member"
+#~ msgstr "Poista jäsen"
+
+#~ msgid "Remove Role"
+#~ msgstr "Poista rooli"
+
+#~ msgid "Remove User"
+#~ msgstr "Poista käyttäjä"
+
+#~ msgid "Remove device"
+#~ msgstr "Poista laite"
+
+#~ msgid "Remove key"
+#~ msgstr "Poista avain"
+
+#~ msgid "Remove membership"
+#~ msgstr "Poista jäsenyys"
+
+#~ msgid "Removing"
+#~ msgstr "Poistetaan"
+
+#~ msgid "Rename"
+#~ msgstr "Nimeä uudelleen"
+
+#~ msgid "Rename Logical Volume"
+#~ msgstr "Nimeä uudelleen looginen taltio"
+
+#~ msgid "Rename Volume Group"
+#~ msgstr "Nimeä uudelleen taltioryhmä"
+
+#~ msgid "Renaming $target"
+#~ msgstr "Nimetään uudelleen $target"
+
+#~ msgid "Repairing $target"
+#~ msgstr "Korjataan $target"
+
+#~ msgid "Repeat Daily"
+#~ msgstr "Toista joka päivä"
+
+#~ msgid "Repeat Hourly"
+#~ msgstr "Toista joka tunti"
+
+#~ msgid "Repeat Monthly"
+#~ msgstr "Toista joka kuukausi"
+
+#~ msgid "Repeat Weekly"
+#~ msgstr "Toista joka viikko"
+
+#~ msgid "Repeat Yearly"
+#~ msgstr "Toista joka vuosi"
+
+#~ msgid "Require password change every $0 days"
+#~ msgstr "Vaadi salasanan vaihto $0 päivän välein"
+
+#~ msgid "Require password change on $0"
+#~ msgstr "Vaadi salasanan vaihto $0"
+
+#~ msgid "Requires Authentication"
+#~ msgstr "Vaatii tunnistautumisen"
+
+#~ msgid "Reserved memory"
+#~ msgstr "Varattu muisti"
+
+#~ msgid "Restart"
+#~ msgstr "Käynnistä uudelleen"
+
+#~ msgid "Restart Count"
+#~ msgstr "Uudelleenkäynnistysten lukumäärä"
+
+#~ msgid "Restart Now"
+#~ msgstr "Käynnistä uudelleen nyt"
+
+#~ msgid "Restart Policy"
+#~ msgstr "Uudelleenkäynnistyksen käytäntö"
+
+#~ msgid "Restart Policy:"
+#~ msgstr "Uudelleenkäynnistyksen käytäntö:"
+
+#~ msgid "Restart Recommended"
+#~ msgstr "Uudelleenkäynnistystä suositellaan"
+
+#~ msgid "Restarting"
+#~ msgstr "Käynnistetään uudelleen"
+
+#~ msgid "Restoring connection"
+#~ msgstr "Palautetaan yhteys"
+
+#~ msgid "Retrieving subscription status..."
+#~ msgstr "Noudetaan tilauksen tilaa..."
+
+#~ msgid "Role"
+#~ msgstr "Rooli"
+
+#~ msgid "Roles"
+#~ msgstr "Roolit"
+
+#~ msgid "Route"
+#~ msgstr "Reitti"
+
+#~ msgid "Routes"
+#~ msgstr "Reitit"
+
+#~ msgid "SELinux Policy"
+#~ msgstr "SELinux-käytäntö"
+
+#~ msgid "SELinux Troubleshoot"
+#~ msgstr "SELinux-ongelmanratkaisu"
+
+#~ msgid "SELinux is disabled on the system"
+#~ msgstr "SELinux on poistettu käytöstä järjestelmässä"
+
+#~ msgid "SELinux is disabled on the system."
+#~ msgstr "SELinux on poistettu käytöstä järjestelmässä."
+
+#~ msgid "SELinux system status is unknown."
+#~ msgstr "SELinux-järjestelmän tila on tuntematon."
+
+#~ msgid "SHUTDOWN action failed"
+#~ msgstr "SHUTDOWN-toiminto epäonnistui"
+
+#~ msgid "SPICE"
+#~ msgstr "SPICE"
+
+#~ msgid "SPICE Address:"
+#~ msgstr "SPICE-osoite:"
+
+#~ msgid "SPICE Port:"
+#~ msgstr "SPICE-portti:"
+
+#~ msgid "SPICE TLS Port:"
+#~ msgstr "SPICE-TLS-portti:"
+
+#~ msgid "START action failed"
+#~ msgstr "START-toiminto epäonnistui"
+
+#~ msgid "SUSPEND action failed"
+#~ msgstr "SUSPEND-toiminto epäonnistui"
+
+#~ msgid "Saturday"
+#~ msgstr "Lauantai"
+
+#~ msgid "Save"
+#~ msgstr "Tallenna"
+
+#~ msgid "Scheduled Pods"
+#~ msgstr "Aikataulutetut podit"
+
+#~ msgid "Scheduling Disabled"
+#~ msgstr "Aikataulus poistettu käytöstä"
+
+#~ msgid "Seconds"
+#~ msgstr "Sekunnit"
+
+#~ msgid "Security Updates Available"
+#~ msgstr "Tietoturvapäivityksiä saatavilla"
+
+#~ msgid "Select"
+#~ msgstr "Valitse"
+
+#~ msgid "Sending"
+#~ msgstr "Lähetetään"
+
+#~ msgid "Server"
+#~ msgstr "Palvelin"
+
+#~ msgid "Server Address"
+#~ msgstr "Palvelimen osoite"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Palvelimen ylläpitäjä"
+
+#~ msgid "Server address cannot be empty"
+#~ msgstr "Palvelimen osoite ei voi olla tyhjä"
+
+#~ msgid "Server address cannot be empty."
+#~ msgstr "Palvelimen osoite ei voi olla tyhjä."
+
+#~ msgid "Server can't be reached"
+#~ msgstr "Palvelinta ei voi tavoittaa"
+
+#~ msgid "Server cannot be empty."
+#~ msgstr "Palvelin ei voi olla tyhjä."
+
+#~ msgid "Server has closed the connection."
+#~ msgstr "Palvelin on sulkenut yhteyden."
+
+#~ msgid "Servers"
+#~ msgstr "Palvelimet"
+
+#~ msgid "Service"
+#~ msgstr "Palvelu"
+
+#~ msgid "Service Account"
+#~ msgstr "Palvelutili"
+
+#~ msgid "Service Logs"
+#~ msgstr "Palvelulokit"
+
+#~ msgid "Service has an error"
+#~ msgstr "Palvelussa on virhe"
+
+#~ msgid "Service is running"
+#~ msgstr "Palvelu on käynnissä"
+
+#~ msgid "Service is starting"
+#~ msgstr "Palvelu käynnistyy"
+
+#~ msgid "Service is stopped"
+#~ msgstr "Palvelu on pysäytetty"
+
+#~ msgid "Service is stopping"
+#~ msgstr "Palvelu pysähtyy"
+
+#~ msgid "Service name"
+#~ msgstr "Palvelun nimi"
+
+#~ msgid "Services"
+#~ msgstr "Palvelut"
+
+#~ msgid "Session"
+#~ msgstr "Istunto"
+
+#~ msgid "Set Password"
+#~ msgstr "Aseta salasana"
+
+#~ msgid "Set Time"
+#~ msgstr "Aseta aika"
+
+#~ msgid "Set container environment variables"
+#~ msgstr "Aseta kontin ympäristömuuttujat"
+
+#~ msgid "Share Name"
+#~ msgstr "Jaon nimi"
+
+#~ msgid "Shared"
+#~ msgstr "Jaettu"
+
+#~ msgid "Show all Containers"
+#~ msgstr "Näytä kaikki kontit"
+
+#~ msgid "Show all Nodes"
+#~ msgstr "Näytä kaikki nodet"
+
+#~ msgid "Show all Pods"
+#~ msgstr "Näytä kaikki podit"
+
+#~ msgid "Show all Projects"
+#~ msgstr "Näytä kaikki projektit"
+
+#~ msgid "Show all Routes"
+#~ msgstr "Näytä kaikki reitit"
+
+#~ msgid "Show all Services"
+#~ msgstr "Näytä kaikki palvelut"
+
+#~ msgid "Show all containers"
+#~ msgstr "Näytä kaikki kontit"
+
+#~ msgid "Show fingerprints"
+#~ msgstr "Näytä sormenjäljet"
+
+#~ msgid "Shut Down"
+#~ msgstr "Sammuta"
+
+#~ msgid "Size"
+#~ msgstr "Koko"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "Koko ei  voi olla negatiivinen"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "Koko ei voi olla nolla"
+
+#~ msgid "Size is too large"
+#~ msgstr "Koko on liian suuri"
+
+#~ msgid "Size must be a number"
+#~ msgstr "Koon tulee olla numero"
+
+#~ msgid "Size must be at least $0"
+#~ msgstr "Koon tulee olla vähintään $0"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "Ohita varmenteen vahvistaminen"
+
+#~ msgid "Source"
+#~ msgstr "Lähde"
+
+#~ msgid "Source URL"
+#~ msgstr "Lähdeosoite"
+
+#~ msgid "Start"
+#~ msgstr "Käynnistä"
+
+#~ msgid "Start Docker"
+#~ msgstr "Käynnistä Docker"
+
+#~ msgid "Start Multipath"
+#~ msgstr "Käynnistä Multipath"
+
+#~ msgid "Start libvirt"
+#~ msgstr "Käynnistä libvirt"
+
+#~ msgid "Starting RAID Device $target"
+#~ msgstr "Käynnistetään RAID-laite $target"
+
+#~ msgid "State"
+#~ msgstr "Tila"
+
+#~ msgid "State:"
+#~ msgstr "Tila:"
+
+#~ msgid "Stateless"
+#~ msgstr "Tilaton"
+
+#~ msgid "Stateless:"
+#~ msgstr "Tilaton:"
+
+#~ msgid "Status: $0"
+#~ msgstr "Tila: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "Tila: Järjestelmä ei  ole rekisteröity"
+
+#~ msgid "Stick PC"
+#~ msgstr "Tikku-PC"
+
+#~ msgid "Stop"
+#~ msgstr "Pysäytä"
+
+#~ msgid "Stop Device"
+#~ msgstr "Pysäytä laite"
+
+#~ msgid "Stop and remove"
+#~ msgstr "Pysäytä ja poista"
+
+#~ msgid "Stopped"
+#~ msgstr "Pysäytetty"
+
+#~ msgid "Stopping RAID Device $target"
+#~ msgstr "Pysäytetään RAID-laite $target"
+
+#~ msgid "Storage"
+#~ msgstr "Tallennustila"
+
+#~ msgid "Storage Logs"
+#~ msgstr "Tallennustilan lokit"
+
+#~ msgid "Storage Size"
+#~ msgstr "Tallennustilan koko"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Tilaukset"
+
+#~ msgid "Sunday"
+#~ msgstr "Sunnuntai"
+
+#~ msgid "Synchronize"
+#~ msgstr "Synkronoi"
+
+#~ msgid "Synchronize users"
+#~ msgstr "Synkronoi käyttäjät"
+
+#~ msgid "Synchronized"
+#~ msgstr "Synkronoitu"
+
+#~ msgid "Synchronized with {{Server}}"
+#~ msgstr "Synkronoi palvelimen {{Server}} kanssa"
+
+#~ msgid "Synchronizing RAID Device $target"
+#~ msgstr "Synkronoidaan RAID-laitetta $target"
+
+#~ msgid "System"
+#~ msgstr "Järjestelmä"
+
+#~ msgid "System Information"
+#~ msgstr "Järjestelmätiedot"
+
+#~ msgid "System Not Registered"
+#~ msgstr "Järjestelmää ei ole rekisteröity"
+
+#~ msgid "System Services"
+#~ msgstr "Järjestelmäpalvelut"
+
+#~ msgid "System Time"
+#~ msgstr "Järjestelmän aika"
+
+#~ msgid "System Up To Date"
+#~ msgstr "Järjestelmä ajan tasalla"
+
+#~ msgid "System is up to date"
+#~ msgstr "Järjestelmä on ajan tasalla"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Test kdump settings"
+#~ msgstr "Testaa kdump-asetukset"
+
+#~ msgid "Testing connection"
+#~ msgstr "Testataan yhteyttä"
+
+#~ msgid "The VM crashed."
+#~ msgstr "Virtuaalikone kaatui."
+
+#~ msgid "The VM is down."
+#~ msgstr "Virtuaalikone on alhaalla."
+
+#~ msgid "The VM is going down."
+#~ msgstr "Virtuaalikone on menossa alas."
+
+#~ msgid "The VM is idle."
+#~ msgstr "Virtuaalikone on jouten."
+
+#~ msgid "The VM is paused."
+#~ msgstr "Virtuaalikone on keskeytetty."
+
+#~ msgid "The VM is running."
+#~ msgstr "Virtuaalikone on käynnissä."
+
+#~ msgid ""
+#~ "The account '$0' will be forced to change their password on next login"
+#~ msgstr ""
+#~ "Tili '$0' on pakotettu vaihtamaan salasanan seuraavalla "
+#~ "sisäänkirjautumiskerralla"
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "Osoite sisltää virheellisiä merkkejä"
+
+#~ msgid "The collected information will be stored locally on the system."
+#~ msgstr "Kerätyt tiedot tallennetaan paikallisesti järjestelmään."
+
+#~ msgid "The container '{{ target }}' does not exist."
+#~ msgstr "Konttia '{{ target }}' ei ole olemassa."
+
+#~ msgid "The following packages were recently updated:"
+#~ msgstr "Seuraavat paketit päivitettiin äskettäin:"
+
+#~ msgid "The following packages were updated $0:"
+#~ msgstr "Seuraavat paketit päivitettiin $0:"
+
+#~ msgid "The group '{{ groupName }}' does not exist."
+#~ msgstr "Ryhmää '{{ groupName }}' ei ole olemassa."
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "Antamasi avain ei ollut kelvollinen."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "Kone käynnistyy uudelleen"
+
+#~ msgid "The name contains invalid characters"
+#~ msgstr "Nimi sisältää virheellisiä merkkejä"
+
+#~ msgid "The node '{{ target }}' does not exist."
+#~ msgstr "Nodea '{{ target }}' ei ole olemassa."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "Nodessa ei ole riittävästi vapaata levytilaa"
+
+#~ msgid "The node doesn't have enough free memory"
+#~ msgstr "Nodessa ei ole riittävästi vapaata muistia"
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Salasanat eivät täsmää"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Salasanat eivät täsmää."
+
+#~ msgid "The pod '{{ target }}' does not exist."
+#~ msgstr "Podia '{{ target }}' ei ole olemassa."
+
+#~ msgid "The project '{{ projName }}' does not exist."
+#~ msgstr "Projektia '{{ projName }}' ei ole olemassa."
+
+#~ msgid "The route '{{ target }}' does not exist."
+#~ msgstr "Reittiä '{{ target }}' ei ole olemassa."
+
+#~ msgid "The server has returned a key that doesn't work."
+#~ msgstr "Palvelin palautti avaimen, joka ei toimi."
+
+#~ msgid "The server refused to authenticate using any supported methods."
+#~ msgstr ""
+#~ "Palvelin kieltäytyi tunnistautumista käyttäen mitään tuetuista tavoista."
+
+#~ msgid "The service '{{ target }}' does not exist."
+#~ msgstr "Palvelua '{{ target }}' ei ole olemassa."
+
+#~ msgid "The user '{{ userName }}' does not exist."
+#~ msgstr "Käyttäjää '{{ userName }}' ei ole olemassa."
+
+#~ msgid "The user <b>$0</b> does not have permissions for creating timers"
+#~ msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta luoda ajastimia"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta hallita palvelimia"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage storage"
+#~ msgstr "Käyttäjällä  <b>$0</b> ei ole oikeutta hallita tallennustilaa"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta muokata tilejä"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta muokata verkkoasetuksia"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify realms"
+#~ msgstr "Käyttäjällä <b>$0</b> ei ole oikeutta muokata realmeja"
+
+#~ msgid ""
+#~ "The user <b>$0</b> is not permitted to shutdown or restart this server"
+#~ msgstr ""
+#~ "Käyttäjällä <b>$0</b> ei ole oikeutta sammuttaa tai käynnistää uudelleen "
+#~ "tätä palvelinta"
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr "Tällä tilillä ei ole valtuutettuja julkisia avaimia."
+
+#~ msgid "This NFS mount is in use and only its options can be changed."
+#~ msgstr ""
+#~ "Tämä NFS-liitos on käytössä ja vain sen valintoja on mahdollista muokata."
+
+#~ msgid ""
+#~ "This day doesn't exist in all months.<br> The timer will only be executed "
+#~ "in months that have 31st."
+#~ msgstr ""
+#~ "Tätä päivää ei ole kaikissa kuukausissa. <br> Ajastin ajetaan vain "
+#~ "kuukausissa, joissa on 31. päivä."
+
+#~ msgid "This device cannot be managed here."
+#~ msgstr "Tätä laitetta ei voida hallita täällä."
+
+#~ msgid "This device is currently used for RAID devices."
+#~ msgstr "Tätä laitetta käytetään parhaillaan RAID-laitteille."
+
+#~ msgid "This device is currently used for VDO devices."
+#~ msgstr "Tätä laitetta käytetään parhaillaan VDO-laitteille."
+
+#~ msgid "This device is currently used for volume groups."
+#~ msgstr "Tätä laitetta käytetään parhaillaan taltioryhmille."
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "Tämä kenttä ei voi olla tyhjä."
+
+#~ msgid "This image does not exist."
+#~ msgstr "Tätä kuvaa ei ole olemassa."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "Tämä kone on jo lisätty."
+
+#~ msgid "This may take a while"
+#~ msgstr "Tässä voi mennä hetki."
+
+#~ msgid "This package is not compatible with this version of Cockpit"
+#~ msgstr "Tämä paketti ei ole yhteensopiva tämän Cockpitin version kanssa."
+
+#~ msgid "This package requires Cockpit version %s or later"
+#~ msgstr "Tämä paketti vaatii Cockpitin version %s tai uudemman"
+
+#~ msgid "This system is not registered"
+#~ msgstr "Tätä järjestelmää ei ole rekisteröity"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "Tämä järjestelmä käyttää mukautettua profiilia"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "Tämä järjestelmä käyttää suositeltua profiilia"
+
+#~ msgid "This user name already exists"
+#~ msgstr "Käyttäjätunnus on jo olemassa"
+
+#~ msgid "This virtual machine is not managed by oVirt"
+#~ msgstr "Tämä virtuaalikone ei ole oVirtin hallinnassa"
+
+#~ msgid "This volume needs to be activated before it can be resized."
+#~ msgstr "Tämä taltio tulee aktivoida, ennen kuin sen kokoa voi muuttaa."
+
+#~ msgid "Thursday"
+#~ msgstr "Torstai"
+
+#~ msgid "Time Zone"
+#~ msgstr "Aikavyöhyke"
+
+#~ msgid "Timers"
+#~ msgstr "Ajastimet"
+
+#~ msgid ""
+#~ "Tip: Make your key password match your login password to automatically "
+#~ "authenticate against other systems."
+#~ msgstr ""
+#~ "Vinkki: Luo avaimesi salasana vastaamaan käyttäjätunnuksesi salasanaa, "
+#~ "jotta voit automaattisesti tunnistautua muita järjestelmiä kohden."
+
+#~ msgid ""
+#~ "To try a different port you will need to upgrade cockpit-ws to a newer "
+#~ "version."
+#~ msgstr ""
+#~ "Kokeillaksesi toista porttia sinun tulee päivittää cockpit-ws uudempaan "
+#~ "versioon."
+
+#~ msgid "Too many files found"
+#~ msgstr "Löytyi liian monta tiedostoa"
+
+#~ msgid "Too much data"
+#~ msgstr "Liian paljon dataa"
+
+#~ msgid "Topology"
+#~ msgstr "Topologia"
+
+#~ msgid "Total"
+#~ msgstr "Yhteensä"
+
+#~ msgid "Tower"
+#~ msgstr "Torni"
+
+#~ msgid "Triggers"
+#~ msgstr "Liipaisimet"
+
+#~ msgid "Troubleshoot"
+#~ msgstr "Vianetsintä"
+
+#~ msgid "Trust this certificate for this connection"
+#~ msgstr "Luota tähän varmenteeseen tälle yhteydelle"
+
+#~ msgid "Try Again"
+#~ msgstr "Yritä uudelleen"
+
+#~ msgid "Try again"
+#~ msgstr "Yritä uudelleen"
+
+#~ msgid "Try to reconnect"
+#~ msgstr "Yritä yhdistää uudelleen"
+
+#~ msgid "Trying to synchronize with {{Server}}"
+#~ msgstr "Yritetään synkronoida palvelimen {{Server}} kanssa"
+
+#~ msgid "Tuesday"
+#~ msgstr "Tiistai"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "Tuned ei ole käynnissä"
+
+#~ msgid "Type"
+#~ msgstr "Tyyppi"
+
+#~ msgid "Type a password"
+#~ msgstr "Kirjoita salasana"
+
+#~ msgid "Type to filter…"
+#~ msgstr "Kirjoita suodattaaksesi..."
+
+#~ msgid "Type:"
+#~ msgstr "Tyyppi:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "URL cannot be empty"
+#~ msgstr "URL ei voi olla tyhjä"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unable to apply settings: $0"
+#~ msgstr "Asetusten asettaminen epäonnistui: $0"
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "Tämän ratkaisun automaattinen asettaminen epäonnistui"
+
+#~ msgid "Unable to connect"
+#~ msgstr "Yhteyden muodostaminen epäonnistui"
+
+#~ msgid "Unable to connect to that address"
+#~ msgstr "Siihen osoitteeseen yhdistäminen epäonnistui"
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "Root-käyttäjätilin poistaminen epäonnistui"
+
+#~ msgid "Unable to get alert details."
+#~ msgstr "Virheen lisätietojen hakeminen epäonnistui."
+
+#~ msgid "Unable to get alert: $0"
+#~ msgstr "Ei voitu hakea virhettä: $0"
+
+#~ msgid "Unable to reach server"
+#~ msgstr "Palvelimeen ei saada yhteyttä"
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "Root-käyttäjätilin uudelleennimeäminen epäonnistui"
+
+#~ msgid "Unable to run fix: %0"
+#~ msgstr "Ei voitu ajaa korjausta: %0"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "Ei voitu aloittaa setroubleshootd"
+
+#~ msgid "Unavailable"
+#~ msgstr "Ei käytettävissä"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Odottamaton virhe"
+
+#~ msgid "Unit"
+#~ msgstr "Yksikkö"
+
+#~ msgid "Unknown"
+#~ msgstr "Tuntematon"
+
+#~ msgid "Unknown \"$0\""
+#~ msgstr "Tuntematon \"$0\""
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Tuntematon ($0)"
+
+#~ msgid "Unknown Application"
+#~ msgstr "Tuntematon sovellus"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Tuntematon konfiguraatio"
+
+#~ msgid "Unless Stopped"
+#~ msgstr "Ellei pysäytetty"
+
+#~ msgid "Unlock"
+#~ msgstr "Avaa"
+
+#~ msgid "Unlock Key"
+#~ msgstr "Avaa avain"
+
+#~ msgid "Unlock at boot"
+#~ msgstr "Avaa käynnistyksen yhteydessä"
+
+#~ msgid "Unlocked"
+#~ msgstr "Avattu"
+
+#~ msgid "Unlocking $target"
+#~ msgstr "Avataan $target"
+
+#~ msgid "Unmanaged Interfaces"
+#~ msgstr "Hallitsemattomat liitännät"
+
+#~ msgid "Unmount"
+#~ msgstr "Irroita"
+
+#~ msgid "Unmounting $target"
+#~ msgstr "Irroitetaan $target"
+
+#~ msgid "Unnamed"
+#~ msgstr "Nimeämätön"
+
+#~ msgid "Unrecognized Data"
+#~ msgstr "Tunnistamaton Data"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Tunnistamaton Data"
+
+#~ msgid "Unsupported volume"
+#~ msgstr "Tukematon taltio"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "Päällä alkaen $StartedAt"
+
+#~ msgid "Update"
+#~ msgstr "Päivitä"
+
+#~ msgid "Update History"
+#~ msgstr "Päivityshistoria"
+
+#~ msgid "Update Log"
+#~ msgstr "Päivitysloki"
+
+#~ msgid "Updated"
+#~ msgstr "Päivitetty"
+
+#~ msgid "Updated packages may require a restart to take effect."
+#~ msgstr ""
+#~ "Päivitetyt paketit saattavat vaatia uudelleenkäynnistyksen, jotta "
+#~ "muutokset tulevat voimaan."
+
+#~ msgid "Updates Available"
+#~ msgstr "Päivityksiä saatavilla"
+
+#~ msgid "Updates are disabled."
+#~ msgstr "Päivitykset on poistettu käytöstä."
+
+#~ msgid "Updating $0..."
+#~ msgstr "Päivitetään $0..."
+
+#~ msgid "Upgrade to a more recent version of libvirt to view disk statistics"
+#~ msgstr "Päivitä libvirt uudempaan versioon nähdäksesi levytilastot"
+
+#~ msgid "Usage"
+#~ msgstr "Käyttö"
+
+#~ msgid "Use new key"
+#~ msgstr "Käytä uutta avainta"
+
+#~ msgid "Use proxy server"
+#~ msgstr "Käytä proxy-serveriä"
+
+#~ msgid "Use the following keys to authenticate against other systems"
+#~ msgstr "Käytä seuraavia avaimia todentamaan muita järjestelmiä kohden"
+
+#~ msgid "Use the setting in /etc/kdump.conf"
+#~ msgstr "Käytä asetusta sijainnissa /etc/kdump.conf"
+
+#~ msgid "Used"
+#~ msgstr "Käytetty"
+
+#~ msgid "User"
+#~ msgstr "Käyttäjä"
+
+#~ msgid "User Name"
+#~ msgstr "Käyttäjätunnus"
+
+#~ msgid "User Password"
+#~ msgstr "Salasana"
+
+#~ msgid "User interface for Linux servers"
+#~ msgstr "Käyttöliittymä Linux-palvelimille"
+
+#~ msgid "User name"
+#~ msgstr "Käyttäjätunnus"
+
+#~ msgid "User name cannot be empty"
+#~ msgstr "Käyttäjätunnus ei voi olla tyhjä"
+
+#~ msgid "User or Group"
+#~ msgstr "Käyttäjä tai ryhmä"
+
+#~ msgid "Username"
+#~ msgstr "Käyttäjätunnus"
+
+#~ msgid "Users"
+#~ msgstr "Käyttäjät"
+
+#~ msgid "Using available credentials"
+#~ msgstr "Käytetään saatavilla olevia käyttäjävaltuuksia"
+
+#~ msgid "VDO Device"
+#~ msgstr "VDO-laite"
+
+#~ msgid "VDO Device $0"
+#~ msgstr "VDO-laite $0"
+
+#~ msgid "VDO Devices"
+#~ msgstr "VDO-laitteet"
+
+#~ msgid "VDSM"
+#~ msgstr "VDSM"
+
+#~ msgid "VDSM Service Management"
+#~ msgstr "VDSM-palveluhallinta"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT - Yhteensopiva kaikkien järjestelmien ja laitteiden kanssa"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "VLAN Id"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "VLAN-asetukset"
+
+#~ msgid "VM DELETE failed."
+#~ msgstr "VM DELETE epäonnistui."
+
+#~ msgid "VM FORCE OFF action failed"
+#~ msgstr "VM FORCE OFF -toiminto epäonnistui"
+
+#~ msgid "VM FORCE REBOOT action failed"
+#~ msgstr "VM FORCE REBOOT -toiminto epäonnistui"
+
+#~ msgid "VM REBOOT action failed"
+#~ msgstr "VM REBOOT -toiminto epäonnistui"
+
+#~ msgid "VM SEND Non-Maskable Interrrupt action failed"
+#~ msgstr "VM SEND Non-Maskable Interrrupt -toiminto epäonnistui"
+
+#~ msgid "VM SHUT DOWN action failed"
+#~ msgstr "VM SHUT DOWN -toiminto epäonnistui"
+
+#~ msgid "VM START action failed"
+#~ msgstr "VM START -toiminto epäonnistui"
+
+#~ msgid "VM icon"
+#~ msgstr "VM-kuvake"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "VNC Address:"
+#~ msgstr "VNC-osoite:"
+
+#~ msgid "VNC Port:"
+#~ msgstr "VNC-portti:"
+
+#~ msgid "VNC TLS Port:"
+#~ msgstr "VNC-TLS-portti:"
+
+#~ msgid "Validating key"
+#~ msgstr "Vahvistetaan avainta"
+
+#~ msgid "Vendor"
+#~ msgstr "Toimittaja"
+
+#~ msgid "Verified"
+#~ msgstr "Vahvistettu"
+
+#~ msgid "Verify Key"
+#~ msgstr "Vahvista avain"
+
+#~ msgid "Verifying"
+#~ msgstr "Vahvistetaan"
+
+#~ msgid "Very securely erasing $target"
+#~ msgstr "Poistetaan hyvin turvallisesti $target"
+
+#~ msgid "View Registration Details"
+#~ msgstr "Näytä rekisteröinnin tiedot"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "Virtuaalikoneet"
+
+#~ msgid "Virtualization Service (libvirt) is Not Active"
+#~ msgstr "Virtualisointipalvelu (libvirt) ei ole aktiivinen"
+
+#~ msgid "Virtualization Service is Available"
+#~ msgstr "Virtualisointipalvelu ei ole saatavilla"
+
+#~ msgid "Volume"
+#~ msgstr "Taltio"
+
+#~ msgid "Volume Group"
+#~ msgstr "Taltioryhmä"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "Taltioryhmä $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "Taltioryhmät"
+
+#~ msgid "Volume ID"
+#~ msgstr "Taltio-ID"
+
+#~ msgid "Volume Name"
+#~ msgstr "Taltion nimi"
+
+#~ msgid "Volume Type"
+#~ msgstr "Taltion tyyppi"
+
+#~ msgid "Volumes"
+#~ msgstr "Taltiot"
+
+#~ msgid "Waiting"
+#~ msgstr "Odotetaan"
+
+#~ msgid "Waiting for details..."
+#~ msgstr "Odotetaan lisätietoja..."
+
+#~ msgid "Warning:"
+#~ msgstr "Varoitus:"
+
+#~ msgid "Wednesday"
+#~ msgstr "Keskiviikko"
+
+#~ msgid "Weeks"
+#~ msgstr "Viikot"
+
+#~ msgid "With terminal"
+#~ msgstr "Terminaalilla"
+
+#~ msgid "Writing"
+#~ msgstr "Kirjoitetaan"
+
+#~ msgid "Wrong user name or password"
+#~ msgstr "Väärä käyttäjätunnus tai salasana"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS - Red Hat Enterprise Linux 7 default"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Kyllä"
+
+#~ msgid ""
+#~ "You are connected to {{#strong}}{{host}}{{/strong}}, however in order to "
+#~ "synchronize users, a user with superuser privileges is required."
+#~ msgstr ""
+#~ "Olet yhdistetty kohteeseen {{#strong}}{{host}}{{/strong}}, mutta "
+#~ "synkronoidaksesi käyttäjiä vaaditaan yksi käyttäjä superuser-oikeuksilla."
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr ""
+#~ "Olet tällä hetkellä suoraan yhteydessä tähän palvelimeen. Et voi poistaa "
+#~ "sitä."
+
+#~ msgid "You are not authorized to modify the firewall."
+#~ msgstr "Sinulla ei ole valtuuksia muokata palomuuria."
+
+#~ msgid ""
+#~ "You can bypass the certificate check, but any data you send to the server "
+#~ "could be intercepted by others."
+#~ msgstr ""
+#~ "Voit ohittaa sertifikaatin tarkituksen, mutta muut voivat siepata mitä "
+#~ "vaan serverille lähettämääsi dataa."
+
+#~ msgid ""
+#~ "You can remove the previously stored key by running the following command"
+#~ msgstr ""
+#~ "Voit poistaa aiemmin tallennetun avaimen ajamalla seuraavan komennon"
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "Sinulla ei ole oikeutta tarkastella tämän käyttäjätilin julkisia avaimia."
+
+#~ msgid "You don't have permission to manage the Docker storage pool."
+#~ msgstr "Sinulla ei ole oikeutta hallita Dockerin tallennusvarantoa."
+
+#~ msgid "Your browser does not support iframes."
+#~ msgstr "Selaimesi ei tue iframeja."
+
+#~ msgid "Your session has been terminated."
+#~ msgstr "Istuntosi on päätetty."
+
+#~ msgid "Your session has expired. Please log in again."
+#~ msgstr "Istuntosi on vahventunut. Ole hyvä ja kirjaudu uudelleen sisään."
+
+#~ msgid "[$0 bytes of binary data]"
+#~ msgstr "[$0 tavua binääridatasta]"
+
+#~ msgid "[binary data]"
+#~ msgstr "[binääridata]"
+
+#~ msgid "[no data]"
+#~ msgstr "[ei dataa]"
+
+#~ msgid "alias"
+#~ msgstr "alias"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "tavua"
+
+#~ msgid "connecting"
+#~ msgstr "yhdistetään"
+
+#~ msgid "crashed"
+#~ msgstr "kaatui"
+
+#~ msgid "default"
+#~ msgstr "Oletus"
+
+#~ msgid "disabled"
+#~ msgstr "pois käytöstä"
+
+#~ msgid "dying"
+#~ msgstr "kuolemassa"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "esim. \"$0\""
+
+#~ msgid "eg: my-image-stream"
+#~ msgstr "esim.: my-image-stream"
+
+#~ msgid "enabled"
+#~ msgstr "käytössä"
+
+#~ msgid "error"
+#~ msgstr "virhe"
+
+#~ msgid "ethernet"
+#~ msgstr "ethernet"
+
+#~ msgid "every day"
+#~ msgstr "päivittäin"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 - Red Hat Enterprise Linux 6 default"
+
+#~ msgid "iSCSI"
+#~ msgstr "iSCSI"
+
+#~ msgid "iSCSI Targets"
+#~ msgstr "iSCSI-kohteet"
+
+#~ msgid "idle"
+#~ msgstr "jouten"
+
+#~ msgid "installation failed"
+#~ msgstr "asennus epäonnistui"
+
+#~ msgid "installing OS"
+#~ msgstr "asennetaan käyttöjärjestelmä"
+
+#~ msgid "invalid: multiple targets defined"
+#~ msgstr "virheellinen: useita kohteita määritelty"
+
+#~ msgid "kdump status"
+#~ msgstr "kdump-tila"
+
+#~ msgid "key"
+#~ msgstr "avain"
+
+#~ msgid "network"
+#~ msgstr "verkko"
+
+#~ msgid "no"
+#~ msgstr "ei"
+
+#~ msgid "none"
+#~ msgstr "Ei mitään"
+
+#~ msgid "oVirt"
+#~ msgstr "oVirt"
+
+#~ msgid "on Fridays"
+#~ msgstr "perjantaisin"
+
+#~ msgid "on Mondays"
+#~ msgstr "maanantaisin"
+
+#~ msgid "on Saturdays"
+#~ msgstr "lauantaisin"
+
+#~ msgid "on Sundays"
+#~ msgstr "sunnuntaisin"
+
+#~ msgid "on Thursdays"
+#~ msgstr "torstaisin"
+
+#~ msgid "on Tuesdays"
+#~ msgstr "tiistaisin"
+
+#~ msgid "on Wednesdays"
+#~ msgstr "keskiviikkoisin"
+
+#~ msgid "other"
+#~ msgstr "muu"
+
+#~ msgid "paused"
+#~ msgstr "pysäytetty"
+
+#~ msgid "pending approval"
+#~ msgstr "odottaa hyväksyntää"
+
+#~ msgid "recommended"
+#~ msgstr "suositeltu"
+
+#~ msgid "running"
+#~ msgstr "suoritetaan"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "etsi nimellä, nimiavaruudella tai kuvauksella"
+
+#~ msgid "select container"
+#~ msgstr "valitse kontti"
+
+#~ msgid "server"
+#~ msgstr "palvelin"
+
+#~ msgid "shares"
+#~ msgstr "jaot"
+
+#~ msgid "show less"
+#~ msgstr "näytä vähemmän"
+
+#~ msgid "show more"
+#~ msgstr "näytä enemmän"
+
+#~ msgid "shut off"
+#~ msgstr "sammutettu"
+
+#~ msgid "shutdown"
+#~ msgstr "sammuta"
+
+#~ msgid "solution details"
+#~ msgstr "ratkaisun yksityiskohdat"
+
+#~ msgid "ssh key"
+#~ msgstr "ssh-avain"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "pysäytetty (PM)"
+
+#~ msgid "threads"
+#~ msgstr "säikeet"
+
+#~ msgid "udp"
+#~ msgstr "udp"
+
+#~ msgid "undefined"
+#~ msgstr "määrittämätön"
+
+#~ msgid "unknown"
+#~ msgstr "tuntematon"
+
+#~ msgid "unknown target"
+#~ msgstr "tuntematon kohde"
+
+#~ msgid "upload a JSON file"
+#~ msgstr "lähetä JSON-tiedosto"
+
+#~ msgid "user"
+#~ msgstr "käyttäjä"
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPUt:"
+
+#~ msgid "value"
+#~ msgstr "Arvo"
+
+#~ msgid "yes"
+#~ msgstr "kyllä"
+
+#~ msgid ""
+#~ "{{ condition.message }}. Timestamp: {{ condition.lastTransitionTime }} "
+#~ "Error count: {{ condition.generation }}"
+#~ msgstr ""
+#~ "{{ condition.message }}. Aikaleima: {{ condition.lastTransitionTime }} "
+#~ "Virheiden lukumäärä: {{ condition.generation }}"

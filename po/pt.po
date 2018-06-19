@@ -1,0 +1,482 @@
+# Eduardo Ramalho <eduardo.ramalho@gmail.com>, 2016. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2016-12-01 09:09+0000\n"
+"Last-Translator: Eduardo Ramalho <eduardo.ramalho@gmail.com>\n"
+"Language-Team: Portuguese\n"
+"Language: pt\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "$0 key ID"
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 pacote"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 pacotes"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr ""
+
+#: src/index.html:90
+msgid "Add"
+msgstr ""
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr ""
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+#: src/index.html:39
+msgid "Apply"
+msgstr ""
+
+#: src/index.html:255
+msgid "Available"
+msgstr ""
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr ""
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr ""
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr ""
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr ""
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr ""
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr ""
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr ""
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+#: src/index.html:253
+msgid "Default"
+msgstr ""
+
+#: src/index.html:38
+msgid "Delete"
+msgstr ""
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr ""
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+#: src/index.html:258
+msgid "Failed"
+msgstr ""
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+#: src/index.html:99
+msgid "Name"
+msgstr ""
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr ""
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr ""
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr ""
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr ""
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr ""
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr ""
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr ""
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr ""
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr ""
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr ""
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr ""
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr ""
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr ""
+
+#: src/index.html:288
+msgid "Status"
+msgstr ""
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr ""
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr ""
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr ""
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr ""
+
+#: src/index.html:262
+msgid "Updating"
+msgstr ""
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr ""
+
+#: src/index.html:303
+msgid "Version"
+msgstr ""
+
+#: src/index.html:282
+msgid "When"
+msgstr ""
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " (shared with the OS)"
+#~ msgstr "(partilhado com o SO)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr "Deseja remover os seguintes Nós"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 Block Device"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 Tamanho"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 Discos"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "$0 Sistema de Ficheiros"
+
+#~ msgid "$0 Template"
+#~ msgstr "$0 Template"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bit"
+#~ msgstr[1] "$0 bits"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 byte"
+#~ msgstr[1] "$0 bytes"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 dia"
+#~ msgstr[1] "$0 dias"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 disco não existe"
+#~ msgstr[1] "$0 discos não existem"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 disco não existe"
+#~ msgstr[1] "$0 discos não existem"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 saiu com o nº de erro  $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 falhou"
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 hora"
+#~ msgstr[1] "$0 horas"
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 morreu com o sinal $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 minuto"
+#~ msgstr[1] "$0 minutos"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 mês"
+#~ msgstr[1] "$0 meses"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 occorrência"
+#~ msgstr[1] "$0 ocorrências"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0 de $1"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 partilhas"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, $1 livre"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (do $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "'Organization' required to register."
+#~ msgstr "'Organização' é necessário para registo."
+
+#~ msgid "'Organization' required when using activation keys."
+#~ msgstr "'Organização' é necessário com chaves de activação."
+
+#~ msgid "(default)"
+#~ msgstr "(omissão)"
+
+#~ msgid "(none)"
+#~ msgstr "(nenhum)"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 Minuto"
+
+#~ msgid "1 day"
+#~ msgstr "1 dia"
+
+#~ msgid "1 hour"
+#~ msgstr "1 hora"
+
+#~ msgid "1 min"
+#~ msgstr "1 min"
+
+#~ msgid "1 week"
+#~ msgstr "1 semana"
+
+#~ msgid "10th"
+#~ msgstr "10º"
+
+#~ msgid "11th"
+#~ msgstr "11º"
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12º"
+
+#~ msgid "13th"
+#~ msgstr "13º"
+
+#~ msgid "14th"
+#~ msgstr "14º"
+
+#~ msgid "15th"
+#~ msgstr "15º"
+
+#~ msgid "Volume"
+#~ msgstr "Volume"
+
+#~ msgid "Volume Group"
+#~ msgstr "Grupo Volume"
+
+#~ msgid "no"
+#~ msgstr "não"
+
+#~ msgid "none"
+#~ msgstr "nenhum"
+
+#~ msgid "pending volume claims"
+#~ msgstr "volumes requeridos pendentes"
+
+#~ msgid "recommended"
+#~ msgstr "recomendado"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "procurar por nome, domínio de nomes ou descrição"
+
+#~ msgid "select container"
+#~ msgstr "contentor seleccionado"
+
+#~ msgid "shares"
+#~ msgstr "partilhas"
+
+#~ msgid "solution details"
+#~ msgstr "detalhes da solução"
+
+#~ msgid "to host path"
+#~ msgstr "para caminho do anfitrião"
+
+#~ msgid "to host port"
+#~ msgstr "para porto do anfitrião"
+
+#~ msgid "undefined"
+#~ msgstr "indefinido"
+
+#~ msgid "unknown"
+#~ msgstr "desconhecido"
+
+#~ msgid "unknown target"
+#~ msgstr "destino desconhecido"
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPUs:"
+
+#~ msgid "value"
+#~ msgstr "valor"
+
+#~ msgid "yes"
+#~ msgstr "sim"

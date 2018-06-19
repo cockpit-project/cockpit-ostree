@@ -1,0 +1,983 @@
+# A S Alam <aalam@fedoraproject.org>, 2015. #zanata
+# A S Alam <aalam@fedoraproject.org>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2017-05-12 11:11+0000\n"
+"Last-Translator: A S Alam <aalam@fedoraproject.org>\n"
+"Language-Team: Punjabi\n"
+"Language: pa\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 ਪੈਕੇਜ"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 ਪੈਕੇਜ"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- ਨਵੀਂ ਰਿਪੋਜ਼ਟਰੀ ਜੋੜੋ"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "ਜੋੜੋ"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr ""
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+#: src/index.html:39
+msgid "Apply"
+msgstr ""
+
+#: src/index.html:255
+msgid "Available"
+msgstr ""
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr ""
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr ""
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr ""
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr ""
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr ""
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr ""
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr ""
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+#: src/index.html:253
+msgid "Default"
+msgstr "ਡਿਫਾਲਟ"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr ""
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr ""
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+#: src/index.html:258
+msgid "Failed"
+msgstr ""
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+#: src/index.html:99
+msgid "Name"
+msgstr "ਨਾਂ"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr ""
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr ""
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr ""
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr ""
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr ""
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr ""
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr ""
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr ""
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr ""
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr ""
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "ਦਸਤਖ਼ਤ"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "ਇਸ ਵਲੋਂ ਦਸਤਖਤ ਕੀਤੇ"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "ਸਾਫਟਵੇਅਰ ਅੱਪਡੇਟ"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "ਹਾਲਤ"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr ""
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr ""
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr ""
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr ""
+
+#: src/index.html:262
+msgid "Updating"
+msgstr ""
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr ""
+
+#: src/index.html:303
+msgid "Version"
+msgstr "ਵਰਜ਼ਨ"
+
+#: src/index.html:282
+msgid "When"
+msgstr "ਕਦੋਂ"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " (shared with the OS)"
+#~ msgstr "(ਓ.ਸਿ. ਨਾਲ ਸਾਂਝਾ ਕੀਤਾ)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"ਕੀ ਤੁਸੀਂ ਅੱਗੇ ਦਿੱਤੇ ਨੋਡ ਹਟਾਉਣੇ ਚਾਹੁੰਦੇ ਹੋ?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 ਬਲਾਕ ਜੰਤਰ"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 ਚੰਕ ਆਕਾਰ"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 ਡਿਸਕਾਂ"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "$0 ਫ਼ਾਈਲ ਸਿਸਟਮ"
+
+#~ msgid "$0 Template"
+#~ msgstr "$0 ਟੈਪਲੇਟ"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 ਬਿੱਟ"
+#~ msgstr[1] "$0 ਬਿੱਟ"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 ਬਾਈਟ"
+#~ msgstr[1] "$0 ਬਾਈਟ"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 ਬਾਈਟ"
+#~ msgstr[1] "$0 ਬਾਈਟ"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 ਦਿਨ"
+#~ msgstr[1] "$0 ਦਿਨ"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 ਡਿਸਕ ਗੁੰਮ ਹੈ"
+#~ msgstr[1] "$0 ਡਿਸਕਾਂ ਗੁੰਮ ਹਨ"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 ਡਿਸਕ ਗੁੰਮ ਹੈ"
+#~ msgstr[1] "$0 ਡਿਸਕਾਂ ਗੁੰਮ ਹਨ"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 ਅਸਫ਼ਲ ਹੈ"
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 ਘੰਟਾ"
+#~ msgstr[1] "$0 ਘੰਟੇ"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 ਮਿੰਟ"
+#~ msgstr[1] "$0 ਮਿੰਟ"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 ਮਹੀਨਾ"
+#~ msgstr[1] "$0 ਮਹੀਨੇ"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 ਮੌਜੂਦਗੀ"
+#~ msgstr[1] "$0 ਮੌਜੂਦਗੀਆਂ"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$1 'ਚੋਂ $0"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 ਸਾਂਝਾ"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 ਹਫ਼ਤਾ"
+#~ msgstr[1] "$0 ਹਫ਼ਤੇ"
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 ਸਾਲ"
+#~ msgstr[1] "$0 ਸਾਲ"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% ਖਾਲੀ"
+#~ msgstr[1] "$0% ਖਾਲੀ"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% ਵਰਤੀ"
+#~ msgstr[1] "$0% ਵਰਤੀ"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, $1 ਖਾਲੀ"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name ($host ਤੋਂ)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "(default)"
+#~ msgstr "(ਡਿਲਾਲਟ)"
+
+#~ msgid "(none)"
+#~ msgstr "(ਕੋਈ ਨਹੀਂ)"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 ਮਿੰਟ"
+
+#~ msgid "1 day"
+#~ msgstr "1 ਦਿਨ"
+
+#~ msgid "1 hour"
+#~ msgstr "1 ਘੰਟਾ"
+
+#~ msgid "1 min"
+#~ msgstr "1 ਮਿੰਟ"
+
+#~ msgid "1 week"
+#~ msgstr "1 ਹਫ਼ਤਾ"
+
+#~ msgid "10th"
+#~ msgstr "10ਵਾਂ"
+
+#~ msgid "11th"
+#~ msgstr "11ਵਾਂ"
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12ਵਾਂ"
+
+#~ msgid "13th"
+#~ msgstr "13ਵਾਂ"
+
+#~ msgid "14th"
+#~ msgstr "14ਵਾਂ"
+
+#~ msgid "15th"
+#~ msgstr "15ਵਾਂ"
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16ਵਾਂ"
+
+#~ msgid "17th"
+#~ msgstr "17ਵਾਂ"
+
+#~ msgid "18th"
+#~ msgstr "18ਵਾਂ"
+
+#~ msgid "19th"
+#~ msgstr "19ਵਾਂ"
+
+#~ msgid "1st"
+#~ msgstr "1ਲਾਂ"
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 ਮਿੰਟ"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 ਮਿੰਟ"
+
+#~ msgid "20th"
+#~ msgstr "20ਵਾਂ"
+
+#~ msgid "21st"
+#~ msgstr "21ਵਾਂ"
+
+#~ msgid "22nd"
+#~ msgstr "22ਵਾਂ"
+
+#~ msgid "23rd"
+#~ msgstr "23ਵਾਂ"
+
+#~ msgid "24th"
+#~ msgstr "24ਵਾਂ"
+
+#~ msgid "25th"
+#~ msgstr "25ਵਾਂ"
+
+#~ msgid "26th"
+#~ msgstr "26ਵਾਂ"
+
+#~ msgid "27th"
+#~ msgstr "27ਵਾਂ"
+
+#~ msgid "28th"
+#~ msgstr "28ਵਾਂ"
+
+#~ msgid "29th"
+#~ msgstr "29ਵਾਂ"
+
+#~ msgid "2nd"
+#~ msgstr "2ਜਾ"
+
+#~ msgid "3 min"
+#~ msgstr "3 ਮਿੰਟ"
+
+#~ msgid "30th"
+#~ msgstr "30ਵਾਂ"
+
+#~ msgid "31st"
+#~ msgstr "31ਵਾਂ"
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3ਜਾ"
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 ਮਿੰਟ"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 ਮਿੰਟ"
+
+#~ msgid "4th"
+#~ msgstr "4ਥਾ"
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 ਮਿੰਟ"
+
+#~ msgid "5 min"
+#~ msgstr "5 ਮਿੰਟ"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 ਮਿੰਟ"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5ਵਾਂ"
+
+#~ msgid "6 hours"
+#~ msgstr "6 ਘੰਟੇ"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 ਮਿੰਟ"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6ਵਾਂ"
+
+#~ msgid "7th"
+#~ msgstr "7ਵਾਂ"
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "802.3ad LACP"
+
+#~ msgid "8th"
+#~ msgstr "8ਵਾਂ"
+
+#~ msgid "9th"
+#~ msgstr "9ਵਾਂ"
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "ਗਨੂ/ਲੀਨਕਸ ਸਰਵਰ ਦਾ ਵਰਤੋਂਕਾਰ ਇੰਟਰਫੇਸ"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP ਨਿਗਰਾਨੀ"
+
+#~ msgid "ARP Ping"
+#~ msgstr "ARP ਪਿੰਗ"
+
+#~ msgid "About Cockpit"
+#~ msgstr "ਕਾਕਪਿੱਟ ਬਾਰੇ"
+
+#~ msgid "Access"
+#~ msgstr "ਪਹੁੰਚ"
+
+#~ msgid "Access Modes"
+#~ msgstr "ਪਹੁੰਚ ਢੰਗ"
+
+#~ msgid "Access Policy"
+#~ msgstr "ਪਹੁੰਚ ਨੀਤੀ"
+
+#~ msgid "Access denied"
+#~ msgstr "ਪਹੁੰਚ ਤੋਂ ਇਨਕਾਰ"
+
+#~ msgid "Account Settings"
+#~ msgstr "ਖਾਤਾ ਸੈਟਿੰਗਾਂ"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "ਖਾਤਾ ਮੌਜੂਦ ਨਹੀਂ ਹੈ ਜਾਂ ਸੋਧਿਆ ਨਹੀਂ ਜਾ ਸਕਦਾ"
+
+#~ msgid "Accounts"
+#~ msgstr "ਖਾਤੇ"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "ਖਾਤੇ"
+
+#~ msgid "Activate"
+#~ msgstr "ਸਰਗਰਮ ਕਰੋ"
+
+#~ msgid "Activating $target"
+#~ msgstr "$target ਨੂੰ ਸਰਗਰਮ ਕੀਤਾ ਜਾ ਰਿਹਾ ਹੈ"
+
+#~ msgid "Activation Key"
+#~ msgstr "ਸਰਗਰਮ ਕੁੰਜੀ"
+
+#~ msgid "Active"
+#~ msgstr "ਸਰਗਰਮ ਕਰੋ"
+
+#~ msgid "Active Backup"
+#~ msgstr "ਸਰਗਰਮ ਬੈਕਅੱਪ"
+
+#~ msgid "Actual"
+#~ msgstr "ਅਸਲ"
+
+#~ msgid "Cockpit"
+#~ msgstr "ਕਾਕਪਿਟ"
+
+#~ msgid "Confirm"
+#~ msgstr "ਤਸਦੀਕ ਕਰੋ"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "ਨਵੇਂ ਪਾਸਵਰਡ ਦੀ ਤਸਦੀਕ"
+
+#~ msgid "Create New Account"
+#~ msgstr "ਨਵਾਂ ਖਾਤਾ ਬਣਾਓ"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "ਰੇਡ ਡਿਵਾਇਸ ਬਣਾਓ"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "ਵਾਲੀਅਮ ਗਰੁੱਪ ਬਣਾਓ"
+
+#~ msgid "Delete Files"
+#~ msgstr "ਫਾਇਲਾਂ ਹਟਾਓ"
+
+#~ msgid "Drive"
+#~ msgstr "ਡਰਾਇਵ"
+
+#~ msgid "Drives"
+#~ msgstr "ਡਰਾਇਵ"
+
+#~ msgid "Filesystems"
+#~ msgstr "ਫਾਇਲ-ਸਿਸਟਮ"
+
+#~ msgid "Full Name"
+#~ msgstr "ਪੂਰਾ ਨਾਂ"
+
+#~ msgid "Go to"
+#~ msgstr "ਜਾਓ"
+
+#~ msgid "Last Login"
+#~ msgstr "ਪਿਛਲਾ ਲਾਗਇਨ"
+
+#~ msgid "Loading..."
+#~ msgstr "...ਲੋਡ ਕਰ ਰਿਹਾ ਹੈ"
+
+#~ msgid "Lock Account"
+#~ msgstr "ਖਾਤਾ ਲਾਕ ਕਰੋ"
+
+#~ msgid "Mount Point"
+#~ msgstr "ਮਾਊਸ ਪੁਆਇੰਟ"
+
+#~ msgid "New Password"
+#~ msgstr "ਨਵਾਂ ਪਾਸਵਰਡ"
+
+#~ msgid "Old Password"
+#~ msgstr "ਪੁਰਾਣਾ ਪਾਸਵਰਡ"
+
+#~ msgid "Other Devices"
+#~ msgstr "ਹੋਰ ਡਿਵਾਇਸ"
+
+#~ msgid "Passphrase"
+#~ msgstr "ਵਾਕ"
+
+#~ msgid "Password"
+#~ msgstr "ਪਾਸਵਰਡ"
+
+#~ msgid "Power Options"
+#~ msgstr "ਪਾਵਰ ਚੋਣਾਂ"
+
+#~ msgid "RAID Device"
+#~ msgstr "ਰੇਡ ਡਿਵਾਇਸ"
+
+#~ msgid "Reboot"
+#~ msgstr "ਮੁਡ਼ ਚਾਲੂ ਕਰੋ"
+
+#~ msgid "Roles"
+#~ msgstr "ਰੂਲ"
+
+#~ msgid "Show fingerprints"
+#~ msgstr "ਫਿੰਗਰਪਰਿੰਟ ਵੇਖੋ"
+
+#~ msgid "Shut Down"
+#~ msgstr "ਬੰਦ ਕਰੋ"
+
+#~ msgid "Since"
+#~ msgstr "ਇਸ ਤੋਂ"
+
+#~ msgid "Since $0"
+#~ msgstr "$0 ਤੋਂ"
+
+#~ msgid "Size"
+#~ msgstr "ਆਕਾਰ"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "ਆਕਾਰ ਸਿਫ਼ਰ ਤੋਂ ਘੱਟ ਨਹੀਂ ਹੋ ਸਕਦਾ"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "ਆਕਾਰ ਸਿਫ਼ਰ ਨਹੀਂ ਹੋ ਸਕਦਾ"
+
+#~ msgid "Size is too large"
+#~ msgstr "ਆਕਾਰ ਬਹੁਤ ਵੱਡਾ ਹੈ"
+
+#~ msgid "Size must be a number"
+#~ msgstr "ਆਕਾਰ ਨੰਬਰ ਹੋਣਾ ਚਾਹੀਦਾ ਹੈ"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "ਸਰਟੀਫਿਕੇਟ ਤਸਦੀਕ ਨੂੰ ਛੱਡੋ"
+
+#~ msgid "Sockets"
+#~ msgstr "ਸਾਕਟ"
+
+#~ msgid "Solid-State Disk"
+#~ msgstr "ਸਾਲਡ-ਸਟੇਟ ਡਿਸਕ"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "ਸਾਲਡ-ਸਟੇਟ ਡਿਸਕ"
+
+#~ msgid "Solution failed"
+#~ msgstr "ਹੱਲ਼ ਅਸਫ਼ਲ ਹੈ"
+
+#~ msgid "Solutions"
+#~ msgstr "ਹੱਲ਼"
+
+#~ msgid "Sorry, I don't know how to modify this volume"
+#~ msgstr "ਅਫਸੋਸ, ਮੈਨੂੰ ਪਤਾ ਨਹੀਂ ਕਿ ਇਹ ਵਾਲੀਅਮ ਨੂੰ ਕਿਵੇਂ ਸੋਧਣਾ ਹੈ"
+
+#~ msgid "Source URL"
+#~ msgstr "ਸਰੋਤ URL"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "ਸਪੈਨਿੰਗ ਟਰੀ ਪਰੋਟੋਕਾਲ"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "ਸਪੈਨਿੰਗ ਟਰੀ ਪਰੋਟੋਕਾਲ (STP)"
+
+#~ msgid "Spare"
+#~ msgstr "ਸਪੇਅਰ"
+
+#~ msgid "Specific Time"
+#~ msgstr "ਖਾਸ ਸਮਾਂ"
+
+#~ msgid "Stable"
+#~ msgstr "ਸਥਿਰ"
+
+#~ msgid "Start"
+#~ msgstr "ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "Start Docker"
+#~ msgstr "ਡੌਕਰ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "Start Multipath"
+#~ msgstr "ਮਲਟੀਪਾਥ ਸ਼ੁਰੂ ਕਰੋ"
+
+#~ msgid "State"
+#~ msgstr "ਹਾਲਤ"
+
+#~ msgid "State:"
+#~ msgstr "ਹਾਲਤ:"
+
+#~ msgid "Static"
+#~ msgstr "ਸਥਿਰ"
+
+#~ msgid "Status: $0"
+#~ msgstr "ਹਾਲਤ: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "ਹਾਲਤ: ਸਿਸਟ ਰਜਿਸਟਰ ਨਹੀਂ ਹੈ"
+
+#~ msgid "Sticky"
+#~ msgstr "ਸਟਿੱਕੀ"
+
+#~ msgid "Stop"
+#~ msgstr "ਰੋਕੋ"
+
+#~ msgid "Stopped"
+#~ msgstr "ਰੋਕਿਆ"
+
+#~ msgid "Storage"
+#~ msgstr "ਸਟੋਰੇਜ਼"
+
+#~ msgid "Storage Logs"
+#~ msgstr "ਸਟੋਰੇਜ਼ ਲਾਗ"
+
+#~ msgid "Storage pool"
+#~ msgstr "ਸਟੋਰੇਜ਼ ਪੂਲ"
+
+#~ msgid "Store Performance Data"
+#~ msgstr "ਸਟੋਰੇਜ਼ ਕਾਰਗੁਜ਼ਾਰੀ ਡਾਟਾ"
+
+#~ msgid "Store passphrase"
+#~ msgstr "ਵਾਕ ਨੂੰ ਸੰਭਾਲੋ"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "ਵਾਕ ਸੰਭਾਲਿਆ"
+
+#~ msgid "Stored passphrase"
+#~ msgstr "ਵਾਕ ਸੰਭਾਲਿਆ"
+
+#~ msgid "Strategy"
+#~ msgstr "ਕਾਰਜਨੀਤੀ"
+
+#~ msgid "Subscriptions"
+#~ msgstr "ਮੈਂਬਰੀ"
+
+#~ msgid "Summary"
+#~ msgstr "ਸਾਰ"
+
+#~ msgid "Sunday"
+#~ msgstr "ਐਤਵਾਰ"
+
+#~ msgid "Swap"
+#~ msgstr "ਸਵੈਪ"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "ਸਵੈਪ ਥਾਂ"
+
+#~ msgid "Swap Used"
+#~ msgstr "ਵਰਤੀ ਗਈ ਸਵੈਪ"
+
+#~ msgid "Switch off $0"
+#~ msgstr "$0 ਨੂੰ ਬੰਦ ਕਰੋ"
+
+#~ msgid "Switch on $0"
+#~ msgstr "$0 'ਤੇ ਚਾਲੂ ਕਰੋ"
+
+#~ msgid "Synchronize"
+#~ msgstr "ਸੈਕਰੋਨਾਈਜ਼"
+
+#~ msgid "System"
+#~ msgstr "ਸਿਸਟਮ"
+
+#~ msgid "System Services"
+#~ msgstr "ਸਿਸਟਮ ਸੇਵਾਵਾਂ"
+
+#~ msgid "System Time"
+#~ msgstr "ਸਿਸਟਮ ਸਮਾਂ"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Terminal"
+#~ msgstr "ਟਰਮੀਨਲ"
+
+#~ msgid "Test Configuration"
+#~ msgstr "ਸੰਰਚਨਾ ਦੀ ਜਾਂਚ ਕਰੋ"
+
+#~ msgid "Type"
+#~ msgstr "ਕਿਸਮ"
+
+#~ msgid "Usage"
+#~ msgstr "ਵਰਤੋਂ"
+
+#~ msgid "User"
+#~ msgstr "ਵਰਤੋਂਕਾਰ"
+
+#~ msgid "User Name"
+#~ msgstr "ਵਰਤੋਂਕਾਰ ਨਾਂ"
+
+#~ msgid "User Password"
+#~ msgstr "ਵਰਤੋਂਕਾਰ ਪਾਸਵਰਡ"
+
+#~ msgid "User name"
+#~ msgstr "ਵਰਤੋਂਕਾਰ ਨਾਂ"
+
+#~ msgid "User or Group"
+#~ msgstr "ਵਰਤੋਂਕਾਰ ਜਾਂ ਗਰੁੱਪ"
+
+#~ msgid "Username"
+#~ msgstr "ਵਰਤੋਂਕਾਰ ਨਾਂ"
+
+#~ msgid "Users"
+#~ msgstr "ਵਰਤੋਂਕਾਰ"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "VLAN Id"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "VLAN ਸੈਟਿੰਗਾਂ"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "ਵਰਚੁਅਲ ਮਸ਼ੀਨਾਂ"
+
+#~ msgid "Volume"
+#~ msgstr "ਵਾਲੀਅਮ"
+
+#~ msgid "Volume Group"
+#~ msgstr "ਵਾਲੀਅਮ ਗਰੁੱਪ"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "ਵਾਲੀਅਮ ਗਰੁੱਪ $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "ਵਾਲੀਅਮ ਗਰੁੱਪ"
+
+#~ msgid "Volume ID"
+#~ msgstr "ਵਾਲੀਅਮ ID"
+
+#~ msgid "Volume Name"
+#~ msgstr "ਵਾਲੀਅਮ ਕਿਸਮ"
+
+#~ msgid "Volume Type"
+#~ msgstr "ਵਾਲੀਅਮ ਕਿਸਮ"
+
+#~ msgid "Volumes"
+#~ msgstr "ਵਾਲੀਅਮ"
+
+#~ msgid "Waiting"
+#~ msgstr "ਉਡੀਕ ਜਾਰੀ ਹੈ"
+
+#~ msgid "Waiting for details..."
+#~ msgstr "...ਵੇਰਵਿਆਂ ਲਈ ਉਡੀਕ ਕੀਤੀ ਜਾ ਰਹੀ ਹੈ"
+
+#~ msgid "Warning:"
+#~ msgstr "ਚੇਤਾਵਨੀ:"
+
+#~ msgid "Wednesday"
+#~ msgstr "ਬੁੱਧਵਾਰ"
+
+#~ msgid "Weeks"
+#~ msgstr "ਹਫ਼ਤੇ"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "ਹਾਂ"
+
+#~ msgid "running"
+#~ msgstr "ਚੱਲ ਰਿਹਾ ਹੈ"
+
+#~ msgid "ssh key"
+#~ msgstr "ssh ਕੁੰਜੀ"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "ਸਸਪੈਂਡ (PM)"
+
+#~ msgid "undefined"
+#~ msgstr "ਨਾ-ਪ੍ਰਭਾਸ਼ਿਤ"
+
+#~ msgid "unknown"
+#~ msgstr "ਅਣਪਛਾਤਾ"
+
+#~ msgid "unknown target"
+#~ msgstr "ਅਣਪਛਾਤਾ ਟਾਰਗੇਟ"
+
+#~ msgid "vCPUs:"
+#~ msgstr "vCPUs:"
+
+#~ msgid "value"
+#~ msgstr "ਮੁੱਲ"
+
+#~ msgid "yes"
+#~ msgstr "ਹਾਂ"

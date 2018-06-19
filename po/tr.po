@@ -1,0 +1,1778 @@
+# Akın Ömeroğlu <akinomeroglu@gmail.com>, 2015. #zanata
+# Emin Tufan Çetin <etcetin@gmail.com>, 2016. #zanata
+# cockpit <cockpituous@gmail.com>, 2016. #zanata
+# cockpit <cockpituous@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2017-02-24 04:55+0000\n"
+"Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
+"Language-Team: Turkish\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n>1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr ""
+
+#: src/index.html:92
+#, fuzzy
+msgid "- Add New Repository"
+msgstr "Depo"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Ekle"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr ""
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Uygula"
+
+#: src/index.html:255
+msgid "Available"
+msgstr ""
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr ""
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "İptal"
+
+#: src/index.html:134
+#, fuzzy
+msgid "Change Repository"
+msgstr "Depo"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr ""
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr ""
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr ""
+
+#: src/remotes.js:181
+#, fuzzy
+msgid "Couldn't load settings for '$0': $1"
+msgstr "Kullanıcı verisi yüklenemedi"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Ön tanımlı"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Sil"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+#, fuzzy
+msgid "Error loading remotes: $0"
+msgstr "Yetkilendirilmiş anahtarın kaydedilmesinde hata:"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+#: src/index.html:258
+msgid "Failed"
+msgstr ""
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+#: src/index.html:99
+msgid "Name"
+msgstr "İsim"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+#, fuzzy
+msgid "No configuration data found"
+msgstr "Bilinmeyen konfigrasyon"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr ""
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr ""
+
+#: src/remotes.js:261
+#, fuzzy
+msgid "Please provide a valid URL"
+msgstr "Bir adres girin"
+
+#: src/remotes.js:254
+#, fuzzy
+msgid "Please provide a valid name"
+msgstr "Bir adres girin"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr ""
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr ""
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr ""
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr ""
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr "Çalışıyor"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr ""
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr ""
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr ""
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Durum"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr ""
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr ""
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr ""
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr ""
+
+#: src/index.html:262
+msgid "Updating"
+msgstr ""
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr ""
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Sürüm"
+
+#: src/index.html:282
+msgid "When"
+msgstr ""
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 Blok Device"
+
+#, fuzzy
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "Boş"
+#~ msgstr[1] "Boş"
+
+#, fuzzy
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "Kullanılmış"
+#~ msgstr[1] "Kullanılmış"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 dakika"
+
+#~ msgid "1 day"
+#~ msgstr "1 gün"
+
+#~ msgid "1 hour"
+#~ msgstr "1 saat "
+
+#~ msgid "1 week"
+#~ msgstr "1 hafta"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 dakika"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 dakika"
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 dakika"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 dakika"
+
+#~ msgid "6 hours"
+#~ msgstr "6 saat"
+
+#~ msgid "60 Minutes"
+#~ msgstr "60 dakika"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "GNU/Linux sunucular için bir kullanıcı arayüzü"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP İzleme"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Kokpit Hakkında"
+
+#~ msgid "Access"
+#~ msgstr "Erişim"
+
+#, fuzzy
+#~ msgid "Access Modes"
+#~ msgstr "Erişim"
+
+#~ msgid "Account Settings"
+#~ msgstr "Hesap Ayarları"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Hesaplar"
+
+#~ msgid "Activate"
+#~ msgstr "Aktifleştir"
+
+#~ msgid "Active"
+#~ msgstr "Aktif"
+
+#~ msgid "Active Backup"
+#~ msgstr "Aktif Yedekleme"
+
+#~ msgid "Add Disks"
+#~ msgstr "Disk Ekle"
+
+#, fuzzy
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Kubernetes Düğümleri"
+
+#, fuzzy
+#~ msgid "Add Membership"
+#~ msgstr "Üyeler"
+
+#, fuzzy
+#~ msgid "Add Role"
+#~ msgstr "Roller"
+
+#~ msgid "Add public key"
+#~ msgstr "Açık anahtar ekle"
+
+#~ msgid "Adding key"
+#~ msgstr "Anahtar ekleniyor"
+
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Addresses"
+#~ msgstr "Adresler"
+
+#~ msgid "Adjust"
+#~ msgstr "Ayarla"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Servisi Ayarla"
+
+#, fuzzy
+#~ msgid "All Types"
+#~ msgstr "Tip"
+
+#, fuzzy
+#~ msgid "All running"
+#~ msgstr "Çalışmıyor"
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "En azından bir disk gerekli"
+
+#~ msgid "Authenticating"
+#~ msgstr "Yetkilendiriliyor"
+
+#~ msgid "Authentication"
+#~ msgstr "Yetkilendirme"
+
+#~ msgid "Author"
+#~ msgstr "Yazar"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Yetkilendirilmiş Açık SSH Anahtarları"
+
+#~ msgid "Automatic"
+#~ msgstr "Otomatik"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Otomatik (Sadece DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Otomatik (DHCP)"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "passwd1 düzeneği için kötü veri geçti"
+
+#~ msgid "Blocked"
+#~ msgstr "Bloklanmış"
+
+#~ msgid "Bond"
+#~ msgstr "Bond"
+
+#~ msgid "Bridge"
+#~ msgstr "Köprü"
+
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "CPU Durumu"
+
+#~ msgid "CPU priority"
+#~ msgstr "CPU önceliği"
+
+#~ msgid "Cached"
+#~ msgstr "Belleklenmiş"
+
+#, fuzzy
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Docker'a bağlanılamadı"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Bilinmeyen bir makineye bağlanılamıyor"
+
+#~ msgid "Cannot decrypt PEM-encoded private key"
+#~ msgstr "PEM-şifreli özel anahtar çözülemiyor"
+
+#, fuzzy
+#~ msgid "Capacity"
+#~ msgstr "Kapasite"
+
+#~ msgid "Carrier"
+#~ msgstr "Taşıyıcı"
+
+#, fuzzy
+#~ msgid "Ceph Filesystem Mount"
+#~ msgstr "Dosya sistemi tipi"
+
+#, fuzzy
+#~ msgid "Ceph Monitors"
+#~ msgstr "Depo"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Başarım Profilini Değiştir"
+
+#~ msgid "Change Profile"
+#~ msgstr "Profil Değiştir"
+
+#~ msgid "Checking IP"
+#~ msgstr "IP kontrol ediliyor"
+
+#, fuzzy
+#~ msgid "Claim Name"
+#~ msgstr "Konteyner İsmi"
+
+#~ msgid "Close"
+#~ msgstr "Kapat"
+
+#, fuzzy
+#~ msgid "Cluster"
+#~ msgstr "Ana"
+
+#~ msgid "Cockpit"
+#~ msgstr "Kokpit"
+
+#~ msgid "Command"
+#~ msgstr "Komut"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "tuned ile iletişim başarısız"
+
+#~ msgid "Configure"
+#~ msgstr "Ayarla"
+
+#~ msgid "Configuring"
+#~ msgstr "Ayarlanıyor"
+
+#~ msgid "Configuring IP"
+#~ msgstr "IP ayarlanıyor"
+
+#~ msgid "Confirm"
+#~ msgstr "Onayla"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Yeni Parolayı Onayla"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Parolayı onayla"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Otomatik bağlan"
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Docker'a bağlanılıyor"
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "Makineye bağlanılıyor"
+
+#, fuzzy
+#~ msgid "Connection"
+#~ msgstr "Docker'a bağlanılıyor"
+
+#, fuzzy
+#~ msgid "Connection Error"
+#~ msgstr "Docker'a bağlanılıyor"
+
+#, fuzzy
+#~ msgid "Connection Error: $0"
+#~ msgstr "Docker'a bağlanılıyor"
+
+#, fuzzy
+#~ msgid "Connection Settings"
+#~ msgstr "Hesap Ayarları"
+
+#~ msgid "Container"
+#~ msgstr "Konteyner"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Konteyner Yöneticisi"
+
+#~ msgid "Container Name"
+#~ msgstr "Konteyner İsmi"
+
+#~ msgid "Container is currently running."
+#~ msgstr "Konteyner şu an çalışıyor."
+
+#~ msgid "Containers"
+#~ msgstr "Konteynerler"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Konteynerler"
+
+#~ msgid "Content"
+#~ msgstr "İçerik"
+
+#~ msgid "Could not list services"
+#~ msgstr "Servisler listelenemedi"
+
+#~ msgid "Could not parse PEM-encoded certificate"
+#~ msgstr "PEM-şifreli sertifika ayrıştırılamadı"
+
+#~ msgid "Could not parse PEM-encoded private key"
+#~ msgstr "PEM-şifreli özel anahtar ayrıştırılamıyor"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Kullanıcı kümeleri değiştirilemedi"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Kullanıcı parolası değiştirilemedi"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Makineye bağlanılamadı"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Yeni kullanıcılar oluşturulamadı"
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Yerel kullanıcılar listelenemedi"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Kullanıcılar listelenemedi"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "Kullanıcı verisi yüklenemedi"
+
+#~ msgid "Create"
+#~ msgstr "Yarat"
+
+#, fuzzy
+#~ msgid "Create Logical Volume"
+#~ msgstr "Mantıksal Bölümü Yeniden İsimlendir"
+
+#~ msgid "Create New Account"
+#~ msgstr "Yeni Hesap Yarat"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "RAID Yarat"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Volume Grubu Yarat"
+
+#~ msgid "Custom"
+#~ msgstr "Özel"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Özel (Dosya sistemi tipi girin)"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "DİSK BOZULUYOR"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "DNS Search Domains"
+
+#~ msgid "Deactivate"
+#~ msgstr "Deaktifleştir"
+
+#~ msgid "Deactivating"
+#~ msgstr "Deaktif ediliyor"
+
+#~ msgid "Delay"
+#~ msgstr "Gecikme"
+
+#~ msgid "Delete $0"
+#~ msgstr "Sil: $0"
+
+#~ msgid "Delete Files"
+#~ msgstr "Dosyaları Sil"
+
+#, fuzzy
+#~ msgid "Delete Node"
+#~ msgstr "Sil"
+
+#, fuzzy
+#~ msgid "Delete Project"
+#~ msgstr "Dosyaları Sil"
+
+#, fuzzy
+#~ msgid "Delete Selected"
+#~ msgstr "Dosyaları Sil"
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr "Bir RAID cihazını silmek üstündeki tüm veriyi silecektir."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr "Bir konteyneri silmek içindeki veriyi de silecektir."
+
+#~ msgid "Deploy"
+#~ msgstr "Devreye Al"
+
+#~ msgid "Deploy Application"
+#~ msgstr "Uygulamayı Devreye Al"
+
+#~ msgid "Disable tuned"
+#~ msgstr "tuned'i devre dışı bırak"
+
+#~ msgid "Disabled"
+#~ msgstr "Etkin değil"
+
+#~ msgid "Disconnected"
+#~ msgstr "Bağlantı kesildi"
+
+#, fuzzy
+#~ msgid "Disk"
+#~ msgstr "Diskler"
+
+#~ msgid "Disk is OK"
+#~ msgstr "Disk durumu iyi"
+
+#~ msgid "Disks"
+#~ msgstr "Diskler"
+
+#, fuzzy
+#~ msgid "Docker Version"
+#~ msgstr "Sürüm"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "Docker sistemde yüklü ya da aktif değil"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "Mevcut verinin üstüne yazma"
+
+#~ msgid "Drive"
+#~ msgstr "Sürücü"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Sürücü"
+
+#, fuzzy
+#~ msgid "Driver"
+#~ msgstr "Sürücü"
+
+#~ msgid "Empty"
+#~ msgstr "Boş"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "Şifreli EXT4 (LUKS)"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "Şifreli XFS (LUKS)"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Şifreleme seçenekleri"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "IP adresi ya da ana makine adı gir"
+
+#~ msgid "Erase"
+#~ msgstr "Sil"
+
+#~ msgid "Error"
+#~ msgstr "Hata"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Docker'dan hata mesajı:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Yetkilendirilmiş anahtarın kaydedilmesinde hata:"
+
+#~ msgid "Error while setting SELinux mode: '$0'"
+#~ msgstr "SELinux kipi belirlenirken hata: '$0'"
+
+#~ msgid "Excellent password"
+#~ msgstr "Mükemmel Parola"
+
+#~ msgid "FAILED"
+#~ msgstr "OLMADI"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "Makine ekleme başarısız: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Parola değişimi başarısız oldu"
+
+#~ msgid "Failed to disable tuned"
+#~ msgstr "tuned'i devre dışı bırakma başarısız"
+
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr "tuned profilini devre dışı bırakma başarısız"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Makine düzenleme başarısız:  $0"
+
+#~ msgid "Failed to enable tuned"
+#~ msgstr "tuned'i etkinleştirme başarısız"
+
+#~ msgid "Failed to load authorized keys."
+#~ msgstr "Yetkilendirilmiş anahtarların yüklemesi başarısız oldu."
+
+#, fuzzy
+#~ msgid "Filesystem Type"
+#~ msgstr "Dosya sistemi tipi"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Dosya sistemi tipi"
+
+#~ msgid "Filesystems"
+#~ msgstr "Dosya Sistemleri"
+
+#, fuzzy
+#~ msgid "Flocker"
+#~ msgstr "kilitlendi"
+
+#~ msgid "Force Delete"
+#~ msgstr "Zorla Sil"
+
+#~ msgid "Format"
+#~ msgstr "Biçimlendir"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "Bir diski biçimlendirmek üstünde yer alan veriyi silecektir."
+
+#~ msgid "Free"
+#~ msgstr "Boş"
+
+#~ msgid "Full Name"
+#~ msgstr "Tam İsim"
+
+#~ msgid "General"
+#~ msgstr "Genel"
+
+#, fuzzy
+#~ msgid "Git Repository"
+#~ msgstr "Depo"
+
+#~ msgid "Go to now"
+#~ msgstr "Şimdiye git"
+
+#, fuzzy
+#~ msgid "Group Members"
+#~ msgstr "Üyeler"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Sabit Disk"
+
+#~ msgid "Host"
+#~ msgstr "Host"
+
+#, fuzzy
+#~ msgid "Host Path"
+#~ msgstr "Host"
+
+#~ msgid "I/O Wait"
+#~ msgstr "I/O Beklemesi"
+
+#, fuzzy
+#~ msgid "IP Address:"
+#~ msgstr "Adres"
+
+#, fuzzy
+#~ msgid "IP Prefix Length:"
+#~ msgstr "Ön ek uzunluğu"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "IPv4 Ayarları"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "IPv6 Ayarları"
+
+#~ msgid "Ignore"
+#~ msgstr "Yoksay"
+
+#~ msgid "Image"
+#~ msgstr "Kalıp"
+
+#~ msgid "Image $0"
+#~ msgstr "Kalıp $0"
+
+#, fuzzy
+#~ msgid "Image Name"
+#~ msgstr "Kalıp $0"
+
+#, fuzzy
+#~ msgid "Image count"
+#~ msgstr "Kalıp $0"
+
+#, fuzzy
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Kalıp"
+
+#~ msgid "In Sync"
+#~ msgstr "Eş zamanlanıyor"
+
+#~ msgid "Inactive"
+#~ msgstr "Aktif değil"
+
+#, fuzzy
+#~ msgid "Interface"
+#~ msgstr "Arayüzler"
+
+#~ msgid "Interfaces"
+#~ msgstr "Arayüzler"
+
+#, fuzzy
+#~ msgid "Invalid address $0"
+#~ msgstr "Geçersiz anahtar"
+
+#~ msgid "Invalid date format"
+#~ msgstr "Geçersiz tarih biçimi"
+
+#~ msgid "Invalid date format and invalid time format"
+#~ msgstr "Geçersiz tarih ve geçersiz zaman biçimi"
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Geçersiz dosya izinleri"
+
+#~ msgid "Invalid key"
+#~ msgstr "Geçersiz anahtar"
+
+#, fuzzy
+#~ msgid "Invalid metric $0"
+#~ msgstr "Geçersiz anahtar"
+
+#~ msgid "Invalid port"
+#~ msgstr "Geçersiz port"
+
+#, fuzzy
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Geçersiz port"
+
+#, fuzzy
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Geçersiz port"
+
+#~ msgid "Invalid time format"
+#~ msgstr "Geçersiz zaman biçimi"
+
+#~ msgid "Jobs"
+#~ msgstr "İşler"
+
+#~ msgid "Join"
+#~ msgstr "Katıl"
+
+#~ msgid "Kernel"
+#~ msgstr "Çekirdek"
+
+#, fuzzy
+#~ msgid "Kernel Version"
+#~ msgstr "Sürüm"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Kubernetes kümesi"
+
+#~ msgid "Labels"
+#~ msgstr "Etiketler"
+
+#~ msgid "Last Login"
+#~ msgstr "Son Giriş"
+
+#~ msgid "Leave"
+#~ msgstr "Ayrıl"
+
+#, fuzzy
+#~ msgid "Leave Domain"
+#~ msgstr "DNS Search Domains"
+
+#~ msgid "Links"
+#~ msgstr "Linkler"
+
+#, fuzzy
+#~ msgid "Local Filesystem"
+#~ msgstr "Dosya sistemi yok"
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "Bağlama Seçenekleri"
+
+#~ msgid "Lock"
+#~ msgstr "Kilitle"
+
+#~ msgid "Lock Account"
+#~ msgstr "Hesabı Kilitle"
+
+#~ msgid "Logged In"
+#~ msgstr "Giriş Yapıldı"
+
+#, fuzzy
+#~ msgid "Logical Unit Number"
+#~ msgstr "Mantıksal Bölüm"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Mantıksal Bölüm"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "Bağlantı koptu. Tekrar bağlanmaya çalışıyor"
+
+#, fuzzy
+#~ msgid "MAC Address:"
+#~ msgstr "Adres"
+
+#, fuzzy
+#~ msgid "MTU must be a positive number"
+#~ msgstr "Boyut belirtilmeli"
+
+#~ msgid "Machines"
+#~ msgstr "Makineler"
+
+#~ msgid "Manual"
+#~ msgstr "Elle"
+
+#, fuzzy
+#~ msgid "Manually"
+#~ msgstr "Elle"
+
+#~ msgid "Master"
+#~ msgstr "Ana"
+
+#~ msgid "Members"
+#~ msgstr "Üyeler"
+
+#~ msgid "Memory"
+#~ msgstr "Bellek"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Bellek"
+
+#~ msgid "Memory limit"
+#~ msgstr "Bellek limiti"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Giriş yapmış kullanıcılara mesaj"
+
+#~ msgid "Mode"
+#~ msgstr "Mod"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "İzleme Sıklığı"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "İzleme Hedefleri"
+
+#, fuzzy
+#~ msgid "Monitors"
+#~ msgstr "ARP İzleme"
+
+#~ msgid "More"
+#~ msgstr "Daha fazla"
+
+#~ msgid "Mount"
+#~ msgstr "Bağla"
+
+#, fuzzy
+#~ msgid "Mount Location"
+#~ msgstr "Bağlama Seçenekleri"
+
+#~ msgid "Mount Options"
+#~ msgstr "Bağlama Seçenekleri"
+
+#~ msgid "Mount Point"
+#~ msgstr "Bağlama Noktası"
+
+#, fuzzy
+#~ msgid "NFS"
+#~ msgstr "DNS"
+
+#, fuzzy
+#~ msgid "NFS Mount"
+#~ msgstr "Bağla"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS - Çoğu sistemle uyumlu"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "İsim boş olamaz"
+
+#~ msgid "Network"
+#~ msgstr "Ağ"
+
+#~ msgid "Never"
+#~ msgstr "Asla"
+
+#~ msgid "New Password"
+#~ msgstr "Yeni Parola"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "Yeni parola kabul edilmedi"
+
+#~ msgid "Next"
+#~ msgstr "Sonraki"
+
+#, fuzzy
+#~ msgid "Next Run"
+#~ msgstr "Sonraki"
+
+#~ msgid "Nice"
+#~ msgstr "Nice"
+
+#~ msgid "No"
+#~ msgstr "Hayır"
+
+#~ msgid "No Delay"
+#~ msgstr "Gecikme yok"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Dosya sistemi yok"
+
+#~ msgid "No PEM-encoded certificate found"
+#~ msgstr "PEM-şifreli sertifika bulunamadı"
+
+#~ msgid "No PEM-encoded private key found"
+#~ msgstr "PEM-şifreli özel anahtar bulunamadı"
+
+#~ msgid "No carrier"
+#~ msgstr "Taşıyıcı yok"
+
+#, fuzzy
+#~ msgid "No configuration found"
+#~ msgstr "Bilinmeyen konfigrasyon"
+
+#, fuzzy
+#~ msgid "No host keys found."
+#~ msgstr "Bulunamadı"
+
+#~ msgid "No real name specified"
+#~ msgstr "Gerçek ad belirtilmedi"
+
+#~ msgid "No such file or directory"
+#~ msgstr "Böyle bir dosya ya da dizin yok"
+
+#~ msgid "No user name specified"
+#~ msgstr "Kullanıcı adı belirtilmedi"
+
+#, fuzzy
+#~ msgid "No users are present."
+#~ msgstr "Kullanıcı adı belirtilmedi"
+
+#~ msgid "Node"
+#~ msgstr "Düğüm"
+
+#~ msgid "Nodes"
+#~ msgstr "Düğümler"
+
+#~ msgid "Nodes are the machines that run your containers."
+#~ msgstr "Düğümler, konteynerlerinizi çalıştıran makinelerdir."
+
+#~ msgid "None"
+#~ msgstr "Hiçbiri"
+
+#~ msgid "Not Ready"
+#~ msgstr "Hazır değil"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "Geçerli bir özel anahtar değil"
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "Bu sistem üzerinde Docker'e erişim yetkisi yok"
+
+#~ msgid "Not connected"
+#~ msgstr "Bağlı değil"
+
+#~ msgid "Not found"
+#~ msgstr "Bulunamadı"
+
+#~ msgid "Not running"
+#~ msgstr "Çalışmıyor"
+
+#, fuzzy
+#~ msgid "OS Versions"
+#~ msgstr "Sürüm"
+
+#~ msgid "Off"
+#~ msgstr "Kapalı"
+
+#~ msgid "Old Password"
+#~ msgstr "Eski Parola"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Eski parola kabul edilmedi"
+
+#~ msgid "On"
+#~ msgstr "Açık"
+
+#~ msgid "One Time Password"
+#~ msgstr "Tek Seferlik Parola"
+
+#~ msgid "Ooops!"
+#~ msgstr "Tüh!"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Optik Sürücü"
+
+#~ msgid "Options"
+#~ msgstr "Seçenekler"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Other Data"
+#~ msgstr "Diğer Veri"
+
+#~ msgid "Other Devices"
+#~ msgstr "Diğer Aygıtlar"
+
+#, fuzzy
+#~ msgid "Overview"
+#~ msgstr "Servis"
+
+#~ msgid "Overwrite existing data with zeros"
+#~ msgstr "Mevcut veriyi sıfırlarla tekrar yaz"
+
+#, fuzzy
+#~ msgid "PD Name"
+#~ msgstr "İsim"
+
+#~ msgid "Parent"
+#~ msgstr "Ana"
+
+#~ msgid "Part of "
+#~ msgstr "Parçası: "
+
+#~ msgid "Passphrase"
+#~ msgstr "Parola"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Parolalar eşleşmiyor"
+
+#~ msgid "Password"
+#~ msgstr "Parola"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "Parola kabul edilebilir değil"
+
+#~ msgid "Password is too weak"
+#~ msgstr "Parola çok güçsüz"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Parola kabul edilmedi"
+
+#, fuzzy
+#~ msgid "Please provide a valid address"
+#~ msgstr "Bir adres girin"
+
+#, fuzzy
+#~ msgid "Please provide a valid target"
+#~ msgstr "Bir adres girin"
+
+#~ msgid "Please type an address"
+#~ msgstr "Bir adres girin"
+
+#~ msgid "Pod"
+#~ msgstr "Pod"
+
+#, fuzzy
+#~ msgid "Pool Name"
+#~ msgstr "Tam İsim"
+
+#~ msgid "Ports"
+#~ msgstr "Portlar"
+
+#~ msgid "Power Options"
+#~ msgstr "Güç Seçenekleri"
+
+#~ msgid "Prefix length"
+#~ msgstr "Ön ek uzunluğu"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "Ön ek uzunluğu ya da ağ maskesi"
+
+#~ msgid "Preparing"
+#~ msgstr "Hazırlanıyor"
+
+#~ msgid "Primary"
+#~ msgstr "Öncelikli"
+
+#~ msgid "Priority"
+#~ msgstr "Öncelik"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Öncelik $priority"
+
+#, fuzzy
+#~ msgid "Qualified Name"
+#~ msgstr "Tam İsim"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID Device"
+#~ msgstr "RAID Aygıtı"
+
+#~ msgid "RAID Devices"
+#~ msgstr "RAID Aygıtları"
+
+#~ msgid "RAID Level"
+#~ msgstr "RAID Level"
+
+#, fuzzy
+#~ msgid "Rados Block Device"
+#~ msgstr "Blok Aygıtı"
+
+#, fuzzy
+#~ msgid "Raw to a device"
+#~ msgstr "Blok Aygıtı"
+
+#, fuzzy
+#~ msgid "Read Only"
+#~ msgstr "Hazır"
+
+#, fuzzy
+#~ msgid "ReadOnly"
+#~ msgstr "Hazır"
+
+#, fuzzy
+#~ msgid "ReadWrite"
+#~ msgstr "Okunuyor"
+
+#~ msgid "Reading"
+#~ msgstr "Okunuyor"
+
+#, fuzzy
+#~ msgid "Reading..."
+#~ msgstr "Okunuyor"
+
+#~ msgid "Ready"
+#~ msgstr "Hazır"
+
+#~ msgid "Real Host Name"
+#~ msgstr "Gerçek Host İsmi"
+
+#, fuzzy
+#~ msgid "Register New Volume"
+#~ msgstr "Mantıksal Bölümü Yeniden Boyurlandır"
+
+#, fuzzy
+#~ msgid "Remote over NFS"
+#~ msgstr "Kaldır"
+
+#, fuzzy
+#~ msgid "Remote over SSH"
+#~ msgstr "Kaldır"
+
+#~ msgid "Remote;Administration;"
+#~ msgstr "Uzak;Yönetim;"
+
+#~ msgctxt "storage"
+#~ msgid "Removable Drive"
+#~ msgstr "Çıkarılabilir Disk"
+
+#~ msgid "Remove"
+#~ msgstr "Kaldır"
+
+#, fuzzy
+#~ msgid "Remove Group"
+#~ msgstr "Kaldır"
+
+#, fuzzy
+#~ msgid "Remove Member"
+#~ msgstr "RAID Üyesi"
+
+#, fuzzy
+#~ msgid "Remove Role"
+#~ msgstr "Kaldır"
+
+#, fuzzy
+#~ msgid "Remove User"
+#~ msgstr "Kaldır"
+
+#~ msgid "Rename"
+#~ msgstr "Yeniden İsimlendir"
+
+#~ msgid "Replication Controller"
+#~ msgstr "Replikasyon Kontrolörü"
+
+#~ msgid "Replication Controllers"
+#~ msgstr "Replikasyon Kontrolörleri"
+
+#~ msgid "Repository"
+#~ msgstr "Depo"
+
+#, fuzzy
+#~ msgid "Repository URL"
+#~ msgstr "Depo"
+
+#, fuzzy
+#~ msgid "Requires Authentication"
+#~ msgstr "Yetkilendirme"
+
+#~ msgid "Restart"
+#~ msgstr "Yeniden başlat"
+
+#, fuzzy
+#~ msgid "Restoring connection"
+#~ msgstr "Bağlanırken hata."
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "Sürüm"
+
+#~ msgid "Roles"
+#~ msgstr "Roller"
+
+#~ msgid "Round Robin"
+#~ msgstr "Round Robin"
+
+#, fuzzy
+#~ msgid "Route"
+#~ msgstr "Yönlendirmeler"
+
+#~ msgid "Routes"
+#~ msgstr "Yönlendirmeler"
+
+#~ msgid "STP Priority"
+#~ msgstr "STP Önceliği"
+
+#, fuzzy
+#~ msgid "Secret File"
+#~ msgstr "Aygıt dosyası"
+
+#, fuzzy
+#~ msgid "Secret Name"
+#~ msgstr "Kullanıcı Adı"
+
+#, fuzzy
+#~ msgid "Secret Volume"
+#~ msgstr "Volume Grubu Yarat"
+
+#~ msgid "Select an object to see more details."
+#~ msgstr "Daha fazla ayrıntı için bir obje seçin."
+
+#, fuzzy
+#~ msgid "Server"
+#~ msgstr "Servis"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Sunucu Yöneticisi"
+
+#~ msgid "Service"
+#~ msgstr "Servis"
+
+#, fuzzy
+#~ msgid "Service is running"
+#~ msgstr "Tuned çalışmıyor"
+
+#, fuzzy
+#~ msgid "Service is starting"
+#~ msgstr "Makine yeniden başlatılıyor"
+
+#, fuzzy
+#~ msgid "Service is stopped"
+#~ msgstr "Servisler"
+
+#~ msgid "Services"
+#~ msgstr "Servisler"
+
+#, fuzzy
+#~ msgid "Session"
+#~ msgstr "Sürüm"
+
+#~ msgid "Set Host name"
+#~ msgstr "Host ismi ayarla"
+
+#~ msgid "Set Password"
+#~ msgstr "Parola Belirle"
+
+#, fuzzy
+#~ msgid "Set Time"
+#~ msgstr "Zamanı Ayarla"
+
+#, fuzzy
+#~ msgid "Set to"
+#~ msgstr "Zamanı Ayarla"
+
+#, fuzzy
+#~ msgid "Share Name"
+#~ msgstr "Kullanıcı Adı"
+
+#~ msgid "Shared"
+#~ msgstr "Paylaşılan"
+
+#, fuzzy
+#~ msgid "Show all Containers"
+#~ msgstr "Konteynerler"
+
+#, fuzzy
+#~ msgid "Show all Pod Containers"
+#~ msgstr "Konteynerler"
+
+#, fuzzy
+#~ msgid "Show all Replication Controllers"
+#~ msgstr "Replikasyon Kontrolörleri"
+
+#, fuzzy
+#~ msgid "Show all Services"
+#~ msgstr "Servisler"
+
+#~ msgid "Size"
+#~ msgstr "Boyut"
+
+#, fuzzy
+#~ msgid "Size must be a number"
+#~ msgstr "Boyut belirtilmeli"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "SSD Disk"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "Spanning Tree Protocol"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "Spanning Tree Protocol (STP)"
+
+#~ msgid "Spare"
+#~ msgstr "Yedek"
+
+#~ msgid "Specific Time"
+#~ msgstr "Özel Bir Zamanda"
+
+#~ msgid "Start"
+#~ msgstr "Başlat"
+
+#~ msgid "Start Docker"
+#~ msgstr "Docker'ı Başlat"
+
+#~ msgid "Stop"
+#~ msgstr "Durdur"
+
+#, fuzzy
+#~ msgid "Stop with"
+#~ msgstr "Durdur"
+
+#~ msgid "Stopped"
+#~ msgstr "Durduruldu"
+
+#~ msgid "Storage"
+#~ msgstr "Depolama"
+
+#, fuzzy
+#~ msgid "Storage pool"
+#~ msgstr "Depolama"
+
+#~ msgid "Store passphrase"
+#~ msgstr "Parolayı sakla"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "Saklı Parolalar"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "Swap Alanı"
+
+#~ msgid "Swap Used"
+#~ msgstr "Kullanılan Swap"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Tag"
+#~ msgstr "Etiket"
+
+#, fuzzy
+#~ msgid "Test Configuration"
+#~ msgstr "Ayarlanıyor"
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "Adres geçersiz karakterler içeriyor"
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "Sağladığınız anahtar geçerli değil."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "Makine yeniden başlatılıyor"
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Parolalar eşleşmişyor"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Parolalar uyuşmuyor."
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "<b>$0</b> kullanıcısı hesapları düzenlemek için yetkili değil"
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr "Bu hesap için yetkilendirilmiş açık anahtar yok."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "Bu makine zaten eklenmiş."
+
+#~ msgid "This may take a while"
+#~ msgstr "Bu biraz zaman alabilir"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "Bu sistem özel profil kullanıyor"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "Bu sistem önerilen profili kullanıyor"
+
+#~ msgid "This user name already exists"
+#~ msgstr "Böyle bir kullanıcı adı zaten var"
+
+#~ msgid "Time Zone"
+#~ msgstr "Zaman Dilimi"
+
+#~ msgid "Try again"
+#~ msgstr "Tekrar Dene"
+
+#~ msgid "Tuned has failed to start"
+#~ msgstr "Tuned başlatılırken başarısız oldu"
+
+#~ msgid "Tuned is not available"
+#~ msgstr "Tuned uygun değil"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "Tuned çalışmıyor"
+
+#~ msgid "Tuned is off"
+#~ msgstr "Tuned kapalı"
+
+#~ msgid "Type"
+#~ msgstr "Tip"
+
+#, fuzzy
+#~ msgid "Type:"
+#~ msgstr "Tip"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "Kök hesabı silinemiyor"
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "Kök hesabı yeniden adlandırılamıyor"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "setroubleshootd başlatılamıyor"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Beklenmeyen hata"
+
+#~ msgid "Unknown"
+#~ msgstr "Bilinmiyor"
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Bilinmiyor ($)"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Bilinmeyen konfigrasyon"
+
+#, fuzzy
+#~ msgid "Unless Stopped"
+#~ msgstr "Durduruldu"
+
+#~ msgid "Unlock"
+#~ msgstr "Kilidi Aç"
+
+#~ msgid "Unmount"
+#~ msgstr "Çöz"
+
+#~ msgid "Unnamed"
+#~ msgstr "İsimsiz"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Tanımlanamayan Veri"
+
+#~ msgid "Used"
+#~ msgstr "Kullanılmış"
+
+#, fuzzy
+#~ msgid "Used by Containers"
+#~ msgstr "Konteynerler"
+
+#~ msgid "User"
+#~ msgstr "Kullanıcı"
+
+#~ msgid "User Name"
+#~ msgstr "Kullanıcı Adı"
+
+#~ msgid "User Password"
+#~ msgstr "Kullanıcı Parolası"
+
+#, fuzzy
+#~ msgid "Username"
+#~ msgstr "Kullanıcı Adı"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT - Tüm sistemler ve cihazlarla uyumlu"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "VLAN id"
+
+#~ msgid "Validating key"
+#~ msgstr "Anahtar doğrulanıyor"
+
+#, fuzzy
+#~ msgid "Volume"
+#~ msgstr "Mantıksal Bölüm"
+
+#, fuzzy
+#~ msgid "Volume Name"
+#~ msgstr "Tam İsim"
+
+#~ msgid "Waiting"
+#~ msgstr "Bekleniyor"
+
+#~ msgid "With terminal"
+#~ msgstr "Terminal ile"
+
+#~ msgid "Writing"
+#~ msgstr "Yazılıyor"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS - Red Hat Enterprise Linux 7 ön tanımlı"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Evet"
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr "Şu an bu sunucuya doğrudan bağlısınız. Silme işlemi yapamazsınız."
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "Bu hesabın yetkilendirilmiş açık anahtarlarını görmeniz için izniniz yok."
+
+#~ msgid "alias"
+#~ msgstr "takma ad"
+
+#~ msgid "default"
+#~ msgstr "ön tanımlı"
+
+#, fuzzy
+#~ msgid "disabled"
+#~ msgstr "Etkin değil"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "örn. \"$0\""
+
+#, fuzzy
+#~ msgid "enabled"
+#~ msgstr "Etkin değil"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 - Red Hat Enterprise Linux 6 ön tanımlı"
+
+#~ msgid "none"
+#~ msgstr "hiç biri"
+
+#, fuzzy
+#~ msgid "running"
+#~ msgstr "Çalışıyor"
+
+#, fuzzy
+#~ msgid "shares"
+#~ msgstr "Paylaşılan"
+
+#, fuzzy
+#~ msgid "to host path"
+#~ msgstr "Host"
+
+#, fuzzy
+#~ msgid "unknown"
+#~ msgstr "Bilinmiyor"

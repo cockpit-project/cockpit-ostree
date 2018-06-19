@@ -1,0 +1,7015 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# Peter <pvolpe@redhat.com>, 2015. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2015. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2016. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2017. #zanata
+# Piotr Drąg <piotrdrag@gmail.com>, 2018. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2018-05-24 06:33+0000\n"
+"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: pl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
+"|| n%100>=20) ? 1 : 2;\n"
+"X-Generator: Zanata 4.4.5\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr "Identyfikator klucza $0"
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr "$0 pakiet"
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr "$0 pakiety"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "— Dodaj nowe repozytorium"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "Dodaj"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "Dodaj inny klucz"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr "Dodane"
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "Zastosuj"
+
+#: src/index.html:255
+msgid "Available"
+msgstr "Dostępne"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Zaczyna się od „-----BEGIN PGP PUBLIC KEY BLOCK-----”"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "Anuluj"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "Zmień repozytorium"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "Wyszukaj aktualizacje"
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr "Wyszukiwanie aktualizacji"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "Łączenie z OSTree"
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr "Nie można wczytać ustawień dla „$0”: $1"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr "Obecnie używane:"
+
+#: src/index.html:253
+msgid "Default"
+msgstr "Domyślne"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "Usuń"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr "Zainstalowane w starszej wersji"
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr "Błąd podczas wczytywania repozytoriów: $0"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr "Podpis wygasł"
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "Niepowodzenie"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr "Dobry podpis"
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr "Nieprawidłowy podpis"
+
+#: src/index.html:99
+msgid "Name"
+msgstr "Nazwa"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr "Brak wdrożeń"
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr "Nie odnaleziono wdrożeń OSTree"
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr "Nie odnaleziono danych konfiguracji"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr "Brak dostępnych podpisów"
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr "Brak upoważnienia do aktualizowania oprogramowania w tym systemie"
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr "Nie odnaleziono systemu operacyjnego $0"
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr "OSTree jest niedostępne w tym systemie"
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr "System operacyjny"
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr "Aktualizacje systemu operacyjnego"
+
+#: src/index.html:307
+msgid "Origin"
+msgstr "Pochodzenie"
+
+#: src/index.html:266
+msgid "Packages"
+msgstr "Pakiety"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr "Proszę podać prawidłowy adres URL"
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr "Proszę podać prawidłową nazwę"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr "Zaktualizuj i uruchom ponownie"
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "Pobieranie części delta"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "Pobieranie obiektów metadanych"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "Pobieranie obiektów: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "Połącz ponownie"
+
+#: src/index.html:305
+msgid "Released"
+msgstr "Wydano"
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr "Usunięte"
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr "Przywróć i uruchom ponownie"
+
+#: src/index.html:251
+msgid "Running"
+msgstr "Działające"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr "Skanowanie metadanych"
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "Podpis"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "Podpisane przez"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "Aktualizacje oprogramowania"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "Stan"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr "To wdrożenie zawiera takie same pakiety, co obecnie uruchomiony system"
+
+#: src/index.html:265
+msgid "Tree"
+msgstr "Drzewo"
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "Adres URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "Nie można komunikować się OSTree"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "Zaktualizuj i uruchom ponownie"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "Zaktualizowane"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "Aktualizowanie"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "Użycie zaufanego klucza GPG"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "Wersja"
+
+#: src/index.html:282
+msgid "When"
+msgstr "Kiedy"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr "Zapisywanie obiektów"
+
+#: src/index.html:186
+msgid "at"
+msgstr "w"
+
+#~ msgid " (shared with the OS)"
+#~ msgstr " (współdzielone z systemem operacyjnym)"
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"Usunąć poniższe węzły?"
+
+#~ msgid " or drag & drop."
+#~ msgstr " lub przeciągnąć."
+
+#~ msgid "\"http\" Key escrow"
+#~ msgstr "Klucz escrow „http”"
+
+#~ msgid "\"tang\" Binding server"
+#~ msgstr "Serwer dowiązania „tang”"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "Urządzenie blokowe $0"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "Rozmiar bloku: $0"
+
+#~ msgid "$0 Disks"
+#~ msgstr "Dyski: $0"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "$0 File System"
+#~ msgstr "System plików $0"
+
+#~ msgid ""
+#~ "$0 Only users with local credentials will be able to log into this "
+#~ "machine. This may also effect other services as DNS resolution settings "
+#~ "and the list of trusted CAs may change."
+#~ msgstr ""
+#~ "$0 Tylko użytkownicy z lokalnymi danymi uwierzytelniania będą mogli "
+#~ "zalogować się do tego komputera. Może to mieć wpływ także na inne usługi, "
+#~ "ponieważ ustawienia rozwiązywania DNS i listy zaufanych CA mogą ulec "
+#~ "zmianie."
+
+#~ msgid "$0 Template"
+#~ msgstr "Szablon $0"
+
+#~ msgid "$0 bit"
+#~ msgid_plural "$0 bits"
+#~ msgstr[0] "$0 bit"
+#~ msgstr[1] "$0 bity"
+#~ msgstr[2] "$0 bitów"
+
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 bajt"
+#~ msgstr[1] "$0 bajty"
+#~ msgstr[2] "$0 bajtów"
+
+#~ msgctxt "memory"
+#~ msgid "$0 byte"
+#~ msgid_plural "$0 bytes"
+#~ msgstr[0] "$0 bajt"
+#~ msgstr[1] "$0 bajty"
+#~ msgstr[2] "$0 bajtów"
+
+#~ msgid "$0 data + $1 overhead used of $2 ($3)"
+#~ msgstr "$0 danych + $1 nadwyżki użyto z $2 ($3)"
+
+#~ msgid "$0 day"
+#~ msgid_plural "$0 days"
+#~ msgstr[0] "$0 dzień"
+#~ msgstr[1] "$0 dni"
+#~ msgstr[2] "$0 dni"
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "Brak $0 dysku"
+#~ msgstr[1] "Brak $0 dysków"
+#~ msgstr[2] "Brak $0 dysków"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "Brak $0 dysku"
+#~ msgstr[1] "Brak $0 dysków"
+#~ msgstr[2] "Brak $0 dysków"
+
+#~ msgid "$0 error"
+#~ msgstr "błąd $0"
+
+#~ msgid "$0 exited with code $1"
+#~ msgstr "$0 zakończyło działanie z kodem $1"
+
+#~ msgid "$0 failed"
+#~ msgstr "$0 się nie powiodło"
+
+#~ msgid "$0 filesystems can not be made larger."
+#~ msgstr "Systemy plików $0 nie mogą być powiększane."
+
+#~ msgid "$0 filesystems can not be made smaller."
+#~ msgstr "Systemy plików $0 nie mogą być zmniejszane."
+
+#~ msgid "$0 filesystems can not be resized here."
+#~ msgstr "Nie można tutaj zmieniać rozmiaru systemów plików $0."
+
+#~ msgid "$0 hour"
+#~ msgid_plural "$0 hours"
+#~ msgstr[0] "$0 godzina"
+#~ msgstr[1] "$0 godziny"
+#~ msgstr[2] "$0 godzin"
+
+#~ msgid ""
+#~ "$0 is available for most operating systems. To install it, search for it "
+#~ "in GNOME Software or run the following:"
+#~ msgstr ""
+#~ "$0 jest dostępne dla większości systemów operacyjnych. Aby zainstalować, "
+#~ "należy wyszukać w Menedżerze oprogramowania GNOME lub wykonać polecenie:"
+
+#~ msgid "$0 is in active use"
+#~ msgstr "$0 jest obecnie używane"
+
+#~ msgid "$0 is not available from any repository."
+#~ msgstr "$0 nie jest dostępne w żadnym repozytorium."
+
+#~ msgid "$0 killed with signal $1"
+#~ msgstr "$0 zostało zakończone z sygnałem $1"
+
+#~ msgid "$0 minute"
+#~ msgid_plural "$0 minutes"
+#~ msgstr[0] "$0 minuta"
+#~ msgstr[1] "$0 minuty"
+#~ msgstr[2] "$0 minut"
+
+#~ msgid "$0 month"
+#~ msgid_plural "$0 months"
+#~ msgstr[0] "$0 miesiąc"
+#~ msgstr[1] "$0 miesiące"
+#~ msgstr[2] "$0 miesięcy"
+
+#~ msgid "$0 occurrence"
+#~ msgid_plural "$1 occurrences"
+#~ msgstr[0] "$0 wystąpienie"
+#~ msgstr[1] "$0 wystąpienia"
+#~ msgstr[2] "$0 wystąpień"
+
+#~ msgid "$0 of $1"
+#~ msgstr "$0 z $1"
+
+#~ msgid "$0 shares"
+#~ msgstr "Udziały: $0"
+
+#~ msgid "$0 update"
+#~ msgid_plural "$0 updates"
+#~ msgstr[0] "$0 aktualizacja"
+#~ msgstr[1] "$0 aktualizacje"
+#~ msgstr[2] "$0 aktualizacji"
+
+#~ msgid "$0 used of $1 ($2 saved)"
+#~ msgstr "$0 używanych z $1 ($2 zapisano)"
+
+#~ msgid "$0 week"
+#~ msgid_plural "$0 weeks"
+#~ msgstr[0] "$0 tydzień"
+#~ msgstr[1] "$0 tygodnie"
+#~ msgstr[2] "$0 tygodni"
+
+#~ msgid "$0 will be installed."
+#~ msgstr "$0 zostanie zainstalowane."
+
+#~ msgid "$0 year"
+#~ msgid_plural "$0 years"
+#~ msgstr[0] "$0 rok"
+#~ msgstr[1] "$0 lata"
+#~ msgstr[2] "$0 lat"
+
+#~ msgid "$0% Free"
+#~ msgid_plural "$0% Free"
+#~ msgstr[0] "$0% wolny"
+#~ msgstr[1] "$0% wolne"
+#~ msgstr[2] "$0% wolnych"
+
+#~ msgid "$0% Used"
+#~ msgid_plural "$0% Used"
+#~ msgstr[0] "$0% używany"
+#~ msgstr[1] "$0% używane"
+#~ msgstr[2] "$0% używanych"
+
+#~ msgid "$0, $1 free"
+#~ msgstr "$0, wolne: $1"
+
+#~ msgid "$1 security fix"
+#~ msgid_plural "$1 security fixes"
+#~ msgstr[0] "$1 poprawka zabezpieczeń"
+#~ msgstr[1] "$1 poprawki zabezpieczeń"
+#~ msgstr[2] "$1 poprawek zabezpieczeń"
+
+#~ msgid "$mtu"
+#~ msgstr "$mtu"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name (z $host)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} → $cport"
+
+#~ msgid "${size} ${desc}"
+#~ msgstr "${size} ${desc}"
+
+#~ msgid "'Organization' required to register."
+#~ msgstr "„Organization” jest wymagane do rejestracji."
+
+#~ msgid "'Organization' required when using activation keys."
+#~ msgstr "„Organization” jest wymagane podczas używania kluczy aktywacji."
+
+#~ msgid "(default)"
+#~ msgstr "(domyślnie)"
+
+#~ msgid "(none)"
+#~ msgstr "(brak)"
+
+#~ msgid ", including $1 security fix"
+#~ msgid_plural ", including $1 security fixes"
+#~ msgstr[0] ", w tym $1 poprawka zabezpieczeń"
+#~ msgstr[1] ", w tym $1 poprawki zabezpieczeń"
+#~ msgstr[2] ", w tym $1 poprawek zabezpieczeń"
+
+#~ msgid "--"
+#~ msgstr "—"
+
+#~ msgid "1 MiB"
+#~ msgstr "1 MiB"
+
+#~ msgid "1 Minute"
+#~ msgstr "1 minuta"
+
+#~ msgid "1 day"
+#~ msgstr "1 dzień"
+
+#~ msgid "1 hour"
+#~ msgstr "1 godzina"
+
+#~ msgid "1 min"
+#~ msgstr "1 minuta"
+
+#~ msgid "1 week"
+#~ msgstr "1 tydzień"
+
+#~ msgid "10th"
+#~ msgstr "10."
+
+#~ msgid "11th"
+#~ msgstr "11."
+
+#~ msgid "128 KiB"
+#~ msgstr "128 KiB"
+
+#~ msgid "12th"
+#~ msgstr "12."
+
+#~ msgid "13th"
+#~ msgstr "13."
+
+#~ msgid "14th"
+#~ msgstr "14."
+
+#~ msgid "15th"
+#~ msgstr "15."
+
+#~ msgid "16 KiB"
+#~ msgstr "16 KiB"
+
+#~ msgid "16th"
+#~ msgstr "16."
+
+#~ msgid "17th"
+#~ msgstr "17."
+
+#~ msgid "18th"
+#~ msgstr "18."
+
+#~ msgid "19th"
+#~ msgstr "19."
+
+#~ msgid "1st"
+#~ msgstr "1."
+
+#~ msgid "2 MiB"
+#~ msgstr "2 MiB"
+
+#~ msgid "2 min"
+#~ msgstr "2 minuty"
+
+#~ msgid "20 Minutes"
+#~ msgstr "20 minut"
+
+#~ msgid "20th"
+#~ msgstr "20."
+
+#~ msgid "21st"
+#~ msgstr "21."
+
+#~ msgid "22nd"
+#~ msgstr "22."
+
+#~ msgid "23rd"
+#~ msgstr "23."
+
+#~ msgid "24th"
+#~ msgstr "24."
+
+#~ msgid "25th"
+#~ msgstr "25."
+
+#~ msgid "26th"
+#~ msgstr "26."
+
+#~ msgid "27th"
+#~ msgstr "27."
+
+#~ msgid "28th"
+#~ msgstr "28."
+
+#~ msgid "29th"
+#~ msgstr "29."
+
+#~ msgid "2nd"
+#~ msgstr "2."
+
+#~ msgid "3 min"
+#~ msgstr "3 minuty"
+
+#~ msgid "30th"
+#~ msgstr "30."
+
+#~ msgid "31st"
+#~ msgstr "31."
+
+#~ msgid "32 KiB"
+#~ msgstr "32 KiB"
+
+#~ msgid "3rd"
+#~ msgstr "3."
+
+#~ msgid "4 KiB"
+#~ msgstr "4 KiB"
+
+#~ msgid "4 min"
+#~ msgstr "4 minuty"
+
+#~ msgid "40 Minutes"
+#~ msgstr "40 minut"
+
+#~ msgid "4th"
+#~ msgstr "4."
+
+#~ msgid "5 Minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "5 min"
+#~ msgstr "5 minut"
+
+#~ msgid "5 minutes"
+#~ msgstr "5 minut"
+
+#~ msgid "512 KiB"
+#~ msgstr "512 KiB"
+
+#~ msgid "5th"
+#~ msgstr "5."
+
+#~ msgid "6 hours"
+#~ msgstr "6 godzin"
+
+#~ msgid "60 Minutes"
+#~ msgstr "Godzina"
+
+#~ msgid "64 KiB"
+#~ msgstr "64 KiB"
+
+#~ msgid "6th"
+#~ msgstr "6."
+
+#~ msgid "7th"
+#~ msgstr "7."
+
+#~ msgid "8 KiB"
+#~ msgstr "8 KiB"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "802.3ad LACP"
+#~ msgstr "LACP 802.3ad"
+
+#~ msgid "8th"
+#~ msgstr "8."
+
+#~ msgid "9th"
+#~ msgstr "9."
+
+#~ msgid ""
+#~ "A compatible version of Cockpit is not installed on {{#strong}}{{host}}{{/"
+#~ "strong}}."
+#~ msgstr ""
+#~ "Na {{#strong}}{{host}}{{/strong}} nie zainstalowano zgodnej wersji "
+#~ "Cockpit."
+
+#~ msgid "A disk is needed."
+#~ msgstr "Wymagany jest dysk."
+
+#~ msgid ""
+#~ "A spare disk needs to be added first before this disk can be removed."
+#~ msgstr "Przed usunięciem tego dysku należy najpierw dodać dysk zapasowy."
+
+#~ msgid "A user interface for GNU/Linux servers"
+#~ msgstr "Interfejs użytkownika dla serwerów GNU/Linux"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "Monitorowanie ARP"
+
+#~ msgid "ARP Ping"
+#~ msgstr "Ping ARP"
+
+#~ msgid "AWS Elastic Block Store"
+#~ msgstr "Elastyczna przechowalnia blokowa AWS"
+
+#~ msgid "About Cockpit"
+#~ msgstr "O programie Cockpit"
+
+#~ msgid "Access"
+#~ msgstr "Dostęp"
+
+#~ msgid "Access Modes"
+#~ msgstr "Tryby dostępu"
+
+#~ msgid "Access Policy"
+#~ msgstr "Polityka dostępu"
+
+#~ msgid "Access denied"
+#~ msgstr "Odmowa dostępu"
+
+#~ msgid "Account Expiration"
+#~ msgstr "Wygasanie konta"
+
+#~ msgid "Account Settings"
+#~ msgstr "Ustawienia konta"
+
+#~ msgid "Account not available or cannot be edited."
+#~ msgstr "Konto jest niedostępne lub nie może być modyfikowane."
+
+#~ msgid "Accounts"
+#~ msgstr "Konta"
+
+#~ msgctxt "page-title"
+#~ msgid "Accounts"
+#~ msgstr "Konta"
+
+#~ msgid "Action"
+#~ msgstr "Działanie"
+
+#~ msgid "Activate"
+#~ msgstr "Aktywuj"
+
+#~ msgid "Activating $target"
+#~ msgstr "Aktywowanie $target"
+
+#~ msgid "Activation Key"
+#~ msgstr "Klucz aktywacji"
+
+#~ msgid "Active"
+#~ msgstr "Aktywne"
+
+#~ msgid "Active Backup"
+#~ msgstr "Aktywna kopia zapasowa"
+
+#~ msgid "Active Pages"
+#~ msgstr "Aktywne strony"
+
+#~ msgid "Active since"
+#~ msgstr "Aktywne od"
+
+#~ msgid "Actual"
+#~ msgstr "Rzeczywisty"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "Adaptacyjne równoważenie obciążenia"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "Adaptacyjne równoważenie obciążenia przesyłu"
+
+#~ msgid "Add $0"
+#~ msgstr "Dodaj $0"
+
+#~ msgid "Add Additional Storage"
+#~ msgstr "Dodaj dodatkowe urządzenia do przechowywania danych"
+
+#~ msgid "Add Bond"
+#~ msgstr "Dodaj węzeł"
+
+#~ msgid "Add Bridge"
+#~ msgstr "Dodaj mostek"
+
+#~ msgid "Add Cluster Node"
+#~ msgstr "Dodaj węzeł klastra"
+
+#~ msgid "Add Disks"
+#~ msgstr "Dodaj dyski"
+
+#~ msgid "Add Group"
+#~ msgstr "Dodaj grupę"
+
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Dodaj węzeł Kubernetes"
+
+#~ msgid "Add Machine to Dashboard"
+#~ msgstr "Dodaj komputer do panelu kontrolnego"
+
+#~ msgid "Add Member"
+#~ msgstr "Dodaj element"
+
+#~ msgid "Add Membership"
+#~ msgstr "Dodaj członkostwo"
+
+#~ msgid "Add New Cluster"
+#~ msgstr "Dodaj nowy klaster"
+
+#~ msgid "Add New User"
+#~ msgstr "Dodaj nowego użytkownika"
+
+#~ msgid "Add Role"
+#~ msgstr "Dodaj rolę"
+
+#~ msgid "Add Services"
+#~ msgstr "Dodaj usługi"
+
+#~ msgid "Add Services…"
+#~ msgstr "Dodaj usługi…"
+
+#~ msgid "Add Storage"
+#~ msgstr "Dodaj urządzenia do przechowywania danych"
+
+#~ msgid "Add Team"
+#~ msgstr "Dodaj zespół"
+
+#~ msgid "Add User"
+#~ msgstr "Dodaj użytkownika"
+
+#~ msgid "Add VLAN"
+#~ msgstr "Dodaj VLAN"
+
+#~ msgid "Add iSCSI Portal"
+#~ msgstr "Dodaj portal iSCSI"
+
+#~ msgid "Add key"
+#~ msgstr "Dodaj klucz"
+
+#~ msgid "Add membership"
+#~ msgstr "Dodaj członkostwo"
+
+#~ msgid "Add network key"
+#~ msgstr "Dodaj klucz sieciowy"
+
+#~ msgid "Add public key"
+#~ msgstr "Dodaj klucz publiczny"
+
+#~ msgid ""
+#~ "Adding <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Dodanie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi korzystanie "
+#~ "z interfejsu administracji."
+
+#~ msgid "Adding key"
+#~ msgstr "Dodawanie klucza"
+
+#~ msgid "Adding physical volume to $target"
+#~ msgstr "Dodawanie woluminu fizycznego do $target"
+
+#~ msgid "Additional"
+#~ msgstr "Dodatkowe"
+
+#~ msgid "Additional DNS $val"
+#~ msgstr "Dodatkowy DNS $val"
+
+#~ msgid "Additional DNS Search Domains $val"
+#~ msgstr "Dodatkowe domeny wyszukiwania DNS $val"
+
+#~ msgid "Additional Storage"
+#~ msgstr "Dodatkowe urządzenia do przechowywania danych"
+
+#~ msgid "Additional address $val"
+#~ msgstr "Dodatkowy adres $val"
+
+#~ msgid "Additional packages:"
+#~ msgstr "Dodatkowe pakiety:"
+
+#~ msgid "Address"
+#~ msgstr "Adres"
+
+#~ msgid "Address $val"
+#~ msgstr "Adres $val"
+
+#~ msgid "Address:"
+#~ msgstr "Adres:"
+
+#~ msgid "Addresses"
+#~ msgstr "Adresy"
+
+#~ msgid "Adjust"
+#~ msgstr "Dostosuj"
+
+#~ msgid "Adjust Persistent Volume '{{ item.metadata.name }}'"
+#~ msgstr "Dostosuj trwały wolumin „{{ item.metadata.name }}”"
+
+#~ msgid "Adjust Replication Controller {{ item.metadata.name }}"
+#~ msgstr "Dostosuj kontroler replikacji {{ item.metadata.name }}"
+
+#~ msgid "Adjust Route"
+#~ msgstr "Dostosuj trasę"
+
+#~ msgid "Adjust Service"
+#~ msgstr "Dostosuj usługę"
+
+#~ msgid "Admin"
+#~ msgstr "Administrator"
+
+#~ msgid "Administrator Password"
+#~ msgstr "Hasło administratora"
+
+#~ msgid "Advanced TCA"
+#~ msgstr "Zaawansowane TCA"
+
+#~ msgid "After"
+#~ msgstr "Po"
+
+#~ msgid "After system boot"
+#~ msgstr "Po uruchomieniu systemu"
+
+#~ msgid "Alert and above"
+#~ msgstr "Alarmy i powyżej"
+
+#~ msgid "All In One"
+#~ msgstr "Zintegrowane"
+
+#~ msgid "All Projects"
+#~ msgstr "Wszystkie projekty"
+
+#~ msgid "All Types"
+#~ msgstr "Wszystkie typy"
+
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Wszystkie dane na wybranych dyskach zostaną usunięte, a dyski zostaną "
+#~ "dodane do puli urządzeń do przechowywania danych."
+
+#~ msgid "All healthy"
+#~ msgstr "Wszystko jest zdrowe"
+
+#~ msgid "All images"
+#~ msgstr "Wszystkie obrazy"
+
+#~ msgid "All in use"
+#~ msgstr "Wszystko jest używane"
+
+#~ msgid "All running"
+#~ msgstr "Wszystko działa"
+
+#~ msgid "All running virtual machines will be turned off."
+#~ msgstr "Wszystkie uruchomione maszyny wirtualne zostaną wyłączone."
+
+#~ msgid "Allow \"http://\" URL"
+#~ msgstr "Zezwolenie na adresy URL „http://”"
+
+#~ msgid "Allowed Services"
+#~ msgstr "Dozwolone usługi"
+
+#~ msgid "Always"
+#~ msgstr "Zawsze"
+
+#~ msgid "Annotations"
+#~ msgstr "Adnotacje"
+
+#~ msgid "Anonymous: Allow all unauthenticated users to pull images"
+#~ msgstr ""
+#~ "Anonimowo: umożliwia pobieranie obrazów wszystkim nieuwierzytelnionym "
+#~ "użytkownikom"
+
+#~ msgid "Applications"
+#~ msgstr "Aplikacje"
+
+#~ msgid "Apply all updates"
+#~ msgstr "Zastosuj wszystkie aktualizacje"
+
+#~ msgid "Apply security updates"
+#~ msgstr "Zastosuj aktualizacje zabezpieczeń"
+
+#~ msgid "Apply this solution"
+#~ msgstr "Zastosuj to rozwiązanie"
+
+#~ msgid "Applying solution..."
+#~ msgstr "Zastosowywanie rozwiązania…"
+
+#~ msgid "Applying updates"
+#~ msgstr "Zastosowywanie aktualizacji"
+
+#~ msgid "Applying updates failed"
+#~ msgstr "Zastosowanie aktualizacji się nie powiodło"
+
+#~ msgid "Architecture"
+#~ msgstr "Architektura"
+
+#~ msgid "Are you sure you want to delete this image?"
+#~ msgstr "Na pewno usunąć ten obraz?"
+
+#~ msgid "Are you sure you want to leave the '$0' domain?"
+#~ msgstr "Na pewno opuścić domenę „$0”?"
+
+#~ msgid "Are you sure you want to leave this domain?"
+#~ msgstr "Na pewno opuścić tę domenę?"
+
+#~ msgid "Asset Tag"
+#~ msgstr "Etykieta zasobu"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Wymagane są co najmniej $0 dyski."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Wymagany jest co najmniej jeden dysk."
+
+#~ msgid "At specific time"
+#~ msgstr "O podanym czasie"
+
+#~ msgid "Audit log"
+#~ msgstr "Dziennik audytu"
+
+#~ msgid "Authenticating"
+#~ msgstr "Uwierzytelnianie"
+
+#~ msgid "Authentication"
+#~ msgstr "Uwierzytelnienie"
+
+#~ msgid "Authentication Failed"
+#~ msgstr "Uwierzytelnienie się nie powiodło"
+
+#~ msgid "Authentication Failed: Server closed connection"
+#~ msgstr "Uwierzytelnienie się nie powiodło: serwer zamknął połączenie"
+
+#~ msgid "Authentication failed"
+#~ msgstr "Uwierzytelnienie się nie powiodło"
+
+#~ msgid "Authentication required"
+#~ msgstr "Wymagane jest uwierzytelnienie"
+
+#~ msgid "Author"
+#~ msgstr "Autor"
+
+#~ msgid "Authorized Public SSH Keys"
+#~ msgstr "Upoważnione publiczne klucze SSH"
+
+#~ msgid "Automatic"
+#~ msgstr "Automatyczne"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "Automatyczne (tylko DHCP)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "Automatyczne (DHCP)"
+
+#~ msgid "Automatic Updates"
+#~ msgstr "Automatyczne aktualizacje"
+
+#~ msgid "Automatically selected host"
+#~ msgstr "Automatycznie wybrany gospodarz"
+
+#~ msgid "Automatically start libvirt on boot"
+#~ msgstr "Automatyczne włączanie usługi libvirt podczas uruchamiania"
+
+#~ msgid "Automatically using NTP"
+#~ msgstr "Automatycznie za pomocą NTP"
+
+#~ msgid "Automatically using specific NTP servers"
+#~ msgstr "Automatycznie za pomocą podanych serwerów NTP"
+
+#~ msgid "Autostart:"
+#~ msgstr "Automatyczne uruchamianie:"
+
+#~ msgid "Available Updates"
+#~ msgstr "Dostępne aktualizacje"
+
+#~ msgid "Available targets on $0"
+#~ msgstr "Dostępne cele w $0"
+
+#~ msgid "Avatar"
+#~ msgstr "Awatar"
+
+#~ msgid "Azure"
+#~ msgstr "Azure"
+
+#~ msgid "BIOS"
+#~ msgstr "BIOS"
+
+#~ msgid "BIOS date"
+#~ msgstr "Data BIOS-u"
+
+#~ msgid "BIOS version"
+#~ msgstr "Wersja BIOS-u"
+
+#~ msgid "Back to Accounts"
+#~ msgstr "Wróć do kont"
+
+#~ msgid "Backing Device"
+#~ msgstr "Urządzenie podstawowe"
+
+#~ msgid "Bad data passed for passwd1 mechanism"
+#~ msgstr "Przekazano błędne dane dla mechanizmu passwd1"
+
+#~ msgid "Balancer"
+#~ msgstr "Równoważenie"
+
+#~ msgid "Base Template"
+#~ msgstr "Podstawowy szablon"
+
+#~ msgid "Base template"
+#~ msgstr "Podstawowy szablon"
+
+#~ msgid "Base template:"
+#~ msgstr "Podstawowy szablon:"
+
+#~ msgid "Before"
+#~ msgstr "Przed"
+
+#~ msgid "Binds To"
+#~ msgstr "Dowiązuje do"
+
+#~ msgid "Blade"
+#~ msgstr "Kasetowy"
+
+#~ msgid "Blade enclosure"
+#~ msgstr "Obudowa kasetowa"
+
+#~ msgid "Block"
+#~ msgstr "Zablokuj"
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Urządzenie blokowe dla systemów plików"
+
+#~ msgid "Blocked"
+#~ msgstr "Zablokowane"
+
+#~ msgid "Bond"
+#~ msgstr "Wiązanie"
+
+#~ msgid "Bond Settings"
+#~ msgstr "Ustawienia węzła"
+
+#~ msgid "Boot ID"
+#~ msgstr "Identyfikator uruchomienia"
+
+#~ msgid "Boot Order:"
+#~ msgstr "Kolejność uruchamiania:"
+
+#~ msgid "Bound By"
+#~ msgstr "Dowiązane przez"
+
+#~ msgid "Bridge"
+#~ msgstr "Mostek"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "Ustawienia portu mostku"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "Ustawienia mostka"
+
+#~ msgid "Bridge port"
+#~ msgstr "Port mostku"
+
+#~ msgid "Broadcast"
+#~ msgstr "Broadcast"
+
+#~ msgid "Broken configuration"
+#~ msgstr "Uszkodzona konfiguracja"
+
+#~ msgid "Bug Fix Updates Available"
+#~ msgstr "Dostępne są aktualizacje naprawiające błędy"
+
+#~ msgid "Bugs:"
+#~ msgstr "Błędy:"
+
+#~ msgid "Built"
+#~ msgstr "Zbudowane"
+
+#~ msgid "Bus"
+#~ msgstr "Magistrala"
+
+#~ msgid "Bus Expansion Chassis"
+#~ msgstr "Obudowa rozszerzenia magistrali"
+
+#~ msgid "CHANGE NETWORK STATE action failed"
+#~ msgstr "Działanie CHANGE NETWORK STATE się nie powiodło"
+
+#~ msgid "CPU"
+#~ msgstr "Procesor"
+
+#~ msgctxt "page-title"
+#~ msgid "CPU Status"
+#~ msgstr "Stan procesora"
+
+#~ msgid "CPU Type:"
+#~ msgstr "Typ procesora:"
+
+#~ msgid "CPU Utilization: $0%"
+#~ msgstr "Użycie procesora: $0%"
+
+#~ msgid "CPU priority"
+#~ msgstr "Priorytet procesora"
+
+#~ msgid "CPU usage:"
+#~ msgstr "Użycie procesora:"
+
+#~ msgid "CREATE VM action failed"
+#~ msgstr "Działanie CREATE VM się nie powiodło"
+
+#~ msgid "Cached"
+#~ msgstr "W pamięci podręcznej"
+
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Nie można połączyć z Dockerem"
+
+#~ msgid "Can't delete while unlocked"
+#~ msgstr "Nie można usunąć, kiedy jest odblokowane"
+
+#~ msgid "Can't load image"
+#~ msgstr "Nie można wczytać obrazu"
+
+#~ msgid "Cannot connect to an unknown machine"
+#~ msgstr "Nie można połączyć z nieznanym komputerem"
+
+#~ msgid "Cannot decrypt PEM-encoded private key"
+#~ msgstr "Nie można odszyfrować klucza prywatnego zakodowanego jako PEM"
+
+#~ msgid "Cannot forward login credentials"
+#~ msgstr "Nie można przekazać danych uwierzytelniania logowania"
+
+#~ msgid "Cannot join a domain because realmd is not available on this system"
+#~ msgstr ""
+#~ "Nie można dołączyć do domeny, ponieważ usługa realmd nie jest dostępna "
+#~ "w systemie"
+
+#~ msgid "Cannot schedule event in the past"
+#~ msgstr "Nie można planować zdarzeń w przeszłości"
+
+#~ msgid "Capacity"
+#~ msgstr "Pojemność"
+
+#~ msgid "Carrier"
+#~ msgstr "Operator"
+
+#~ msgid "Ceph Filesystem Mount"
+#~ msgstr "Punkt montowania systemu plików Ceph"
+
+#~ msgid "Ceph Monitors"
+#~ msgstr "Monitory Ceph"
+
+#~ msgid "Change"
+#~ msgstr "Zmień"
+
+#~ msgid "Change Host Name"
+#~ msgstr "Zmień nazwę komputera"
+
+#~ msgid "Change Password"
+#~ msgstr "Zmień hasło"
+
+#~ msgid "Change Performance Profile"
+#~ msgstr "Zmień profil wydajności"
+
+#~ msgid "Change Profile"
+#~ msgstr "Zmień profil"
+
+#~ msgid "Change System Time"
+#~ msgstr "Zmień czas systemu"
+
+#~ msgid "Change User"
+#~ msgstr "Zmień użytkownika"
+
+#~ msgid "Change iSCSI Initiator Name"
+#~ msgstr "Zmień nazwę inicjatora iSCSI"
+
+#~ msgid "Change image stream"
+#~ msgstr "Zmień strumień obrazu"
+
+#~ msgid "Change project"
+#~ msgstr "Zmień projekt"
+
+#~ msgid "Change resource limits"
+#~ msgstr "Zmień ograniczenia zasobów"
+
+#~ msgid "Change resources limits"
+#~ msgstr "Zmień ograniczenia zasobów"
+
+#~ msgid "Change the settings"
+#~ msgstr "Zmień ustawienia"
+
+#~ msgid ""
+#~ "Changing the settings will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Zmiana ustawień zerwie połączenie z serwerem i uniemożliwi korzystanie "
+#~ "z interfejsu administracji."
+
+#~ msgid "Checking $target"
+#~ msgstr "Sprawdzanie $target"
+
+#~ msgid "Checking IP"
+#~ msgstr "Sprawdzanie IP"
+
+#~ msgid "Checking RAID Device $target"
+#~ msgstr "Sprawdzanie urządzenia RAID $target"
+
+#~ msgid "Checking and Repairing RAID Device $target"
+#~ msgstr "Sprawdzanie i naprawianie urządzenia RAID $target"
+
+#~ msgid "Checking for new applications"
+#~ msgstr "Wyszukiwanie nowych aplikacji"
+
+#~ msgid "Checking for public keys"
+#~ msgstr "Wyszukiwanie kluczy publicznych"
+
+#~ msgid "Checking for updates…"
+#~ msgstr "Wyszukiwanie aktualizacji…"
+
+#~ msgid "Checking installed software"
+#~ msgstr "Sprawdzanie zainstalowanego oprogramowania"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "Proszę wybrać język używany w aplikacji"
+
+#~ msgid "Chunk Size"
+#~ msgstr "Rozmiar bloku"
+
+#~ msgid "Cinder"
+#~ msgstr "Cinder"
+
+#~ msgid "Claim"
+#~ msgstr "Zadeklaruj"
+
+#~ msgid "Claim Name"
+#~ msgstr "Nazwa deklaracji"
+
+#~ msgid "Class"
+#~ msgstr "Klasa"
+
+#~ msgid "Cleaning up for $target"
+#~ msgstr "Czyszczenie dla $target"
+
+#~ msgid "Click to see system hardware information"
+#~ msgstr "Kliknięcie wyświetli informacje o sprzęcie komputera"
+
+#~ msgid ""
+#~ "Clicking \"Launch Remote Viewer\" will download a .vv file and launch $0."
+#~ msgstr ""
+#~ "Kliknięcie „Uruchom zdalną przeglądarkę” pobierze plik .vv i uruchomi $0."
+
+#~ msgid "Client Certificate"
+#~ msgstr "Certyfikat klienta"
+
+#~ msgid "Close"
+#~ msgstr "Zamknij"
+
+#~ msgid "Close Selected Pages"
+#~ msgstr "Zamknij zaznaczone strony"
+
+#~ msgid "Cluster"
+#~ msgstr "Klaster"
+
+#~ msgid "Cluster Templates"
+#~ msgstr "Szablony klastrów"
+
+#~ msgid "Cluster Virtual Machines"
+#~ msgstr "Maszyny wirtualne klastrów"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Cockpit authentication is configured incorrectly."
+#~ msgstr "Uwierzytelnianie Cockpit jest niepoprawnie skonfigurowane."
+
+#~ msgid ""
+#~ "Cockpit could not contact the given host $0. Make sure it has ssh running "
+#~ "on port $1, or specify another port in the address."
+#~ msgstr ""
+#~ "Cockpit nie może skontaktować się z podanym komputerem $0. Proszę się "
+#~ "upewnić, że ma on uruchomioną usługę ssh na porcie $1 lub podać inny port "
+#~ "w adresie."
+
+#~ msgid "Cockpit could not contact the given host."
+#~ msgstr "Cockpit nie może skontaktować się z podanym komputerem."
+
+#~ msgid ""
+#~ "Cockpit had an unexpected internal error. <br/><br/>You can try "
+#~ "restarting Cockpit by pressing refresh in your browser. The javascript "
+#~ "console contains details about this error (<b>Ctrl-Shift-J</b> in most "
+#~ "browsers)."
+#~ msgstr ""
+#~ "Wystąpił nieoczekiwany wewnętrzny błąd w programie Cockpit. <br/><br/"
+#~ ">Można spróbować ponownie uruchomić program Cockpit przez odświeżenie "
+#~ "strony w przeglądarce. Konsola języka JavaScript zawiera informacje o tym "
+#~ "błędzie (<b>Ctrl-Shift-J</b> w większości przeglądarek)."
+
+#~ msgid ""
+#~ "Cockpit is a server manager that makes it easy to administer your Linux "
+#~ "servers via a web browser. Jumping between the terminal and the web tool "
+#~ "is no problem. A service started via Cockpit can be stopped via the "
+#~ "terminal. Likewise, if an error occurs in the terminal, it can be seen in "
+#~ "the Cockpit journal interface."
+#~ msgstr ""
+#~ "Cockpit to menedżer serwerów ułatwiający administrowanie serwerów Linux "
+#~ "przez przeglądarkę WWW. Można z łatwością przechodzić między terminalem "
+#~ "a narzędziami WWW. Usługa uruchomiona za pomocą Cockpit może zostać "
+#~ "zatrzymana za pomocą terminala. Jeśli błąd wystąpi w terminalu, to można "
+#~ "go zobaczyć w interfejsie dziennika Cockpit."
+
+#~ msgid "Cockpit is an interactive Linux server admin interface."
+#~ msgstr ""
+#~ "Cockpit to interaktywny interfejs do administrowania serwerami Linux."
+
+#~ msgid "Cockpit is not compatible with the software on the system."
+#~ msgstr "Cockpit nie jest zgodny z oprogramowaniem w systemie."
+
+#~ msgid "Cockpit is not installed"
+#~ msgstr "Cockpit nie jest zainstalowany"
+
+#~ msgid "Cockpit is not installed on the system."
+#~ msgstr "Cockpit nie jest zainstalowany w systemie."
+
+#~ msgid ""
+#~ "Cockpit is perfect for new sysadmins, allowing them to easily perform "
+#~ "simple tasks such as storage administration, inspecting journals and "
+#~ "starting and stopping services. You can monitor and administer several "
+#~ "servers at the same time. Just add them with a single click and your "
+#~ "machines will look after its buddies."
+#~ msgstr ""
+#~ "Cockpit jest idealny dla nowych administratorów, umożliwiając łatwe "
+#~ "wykonywanie prostych zadań, takich jak administracja urządzeniami do "
+#~ "przechowywania danych, badanie dzienników oraz uruchamianie "
+#~ "i zatrzymywanie usług. Można monitorować i administrować wiele serwerów "
+#~ "w tym samym czasie. Wystarczy dodać je pojedynczym kliknięciem."
+
+#~ msgid "Cockpit was unable to contact {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit nie może skontaktować się z {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log in to {{#strong}}{{host}}{{/strong}}. "
+#~ "{{#can_sync}}You may want to try to {{#sync_link}}synchronize users{{/"
+#~ "sync_link}}.{{/can_sync}} For more authentication options and "
+#~ "troubleshooting support please upgrade cockpit-ws to a newer version."
+#~ msgstr ""
+#~ "Cockpit nie może zalogować do {{#strong}}{{host}}{{/strong}}. "
+#~ "{{#can_sync}}Można spróbować {{#sync_link}}synchronizować użytkowników{{/"
+#~ "sync_link}}.{{/can_sync}} Zaktualizowanie cockpit-ws do nowszej wersji "
+#~ "udostępni więcej opcji uwierzytelniania i pomocy w rozwiązywaniu "
+#~ "problemów."
+
+#~ msgid "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}."
+#~ msgstr "Cockpit nie może zalogować się do {{#strong}}{{host}}{{/strong}}."
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. To use "
+#~ "this machine with cockpit you will need to enable one of the following "
+#~ "authentication methods in the sshd config on {{#strong}}{{host}}{{/"
+#~ "strong}}:"
+#~ msgstr ""
+#~ "Cockpit nie może zalogować się do {{#strong}}{{host}}{{/strong}}. Aby "
+#~ "używać tego komputera za pomocą programu Cockpit, należy włączyć jedną "
+#~ "z poniższych metod uwierzytelniania w konfiguracji usługi sshd "
+#~ "w {{#strong}}{{host}}{{/strong}}:"
+
+#~ msgid ""
+#~ "Cockpit was unable to log into {{#strong}}{{host}}{{/strong}}. You can "
+#~ "change your authentication credentials below. {{#can_sync}}You may prefer "
+#~ "to {{#sync_link}}synchronize accounts and passwords{{/sync_link}}.{{/"
+#~ "can_sync}}"
+#~ msgstr ""
+#~ "Cockpit nie może zalogować się do {{#strong}}{{host}}{{/strong}}. Poniżej "
+#~ "można zmienić dane uwierzytelniające. {{#can_sync}}Można też "
+#~ "{{#sync_link}}synchronizować konta i hasła{{/sync_link}}.{{/can_sync}}"
+
+#~ msgid "Color"
+#~ msgstr "Kolor"
+
+#~ msgid "Combined memory usage"
+#~ msgstr "Łączne użycie pamięci"
+
+#~ msgid "Combined usage of $0 CPU core"
+#~ msgid_plural "Combined usage of $0 CPU cores"
+#~ msgstr[0] "Łączne użycie $0 rdzenia procesora"
+#~ msgstr[1] "Łączne użycie $0 rdzeni procesora"
+#~ msgstr[2] "Łączne użycie $0 rdzeni procesora"
+
+#~ msgid "Command"
+#~ msgstr "Polecenie"
+
+#~ msgid "Command can't be empty"
+#~ msgstr "Polecenie nie może być puste"
+
+#~ msgid "Command:"
+#~ msgstr "Polecenie:"
+
+#~ msgid "Comment"
+#~ msgstr "Komentarz"
+
+#~ msgid "Commit"
+#~ msgstr "Zatwierdź"
+
+#~ msgid "Commit Image"
+#~ msgstr "Zatwierdź obraz"
+
+#~ msgid "Communication with tuned has failed"
+#~ msgstr "Komunikacja z tuned się nie powiodła"
+
+#~ msgid "Compact PCI"
+#~ msgstr "Kompaktowe PCI"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "Zgodne ze wszystkimi systemami i urządzeniami (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Zgodne z nowoczesnymi systemami i dyskami twardymi > 2 TB (GPT)"
+
+#~ msgid "Compress crash dumps to save space"
+#~ msgstr "Kompresowanie zrzutów awarii, aby oszczędzać miejsce"
+
+#~ msgid "Compression"
+#~ msgstr "Kompresja"
+
+#~ msgid "Computer OU"
+#~ msgstr "OU komputera"
+
+#~ msgid "Condition $0=$1 was not met"
+#~ msgstr "Warunek $0=$1 nie został spełniony"
+
+#~ msgid "Condition failed"
+#~ msgstr "Warunek się nie powiódł"
+
+#~ msgid "Configuration"
+#~ msgstr "Konfiguracja"
+
+#~ msgid "Configure"
+#~ msgstr "Skonfiguruj"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Skonfiguruj sieć Flannel"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Skonfiguruj Kubernetes i pośrednika"
+
+#~ msgid "Configure storage..."
+#~ msgstr "Skonfiguruj urządzenia do przechowywania danych…"
+
+#~ msgid "Configuring"
+#~ msgstr "Konfigurowanie"
+
+#~ msgid "Configuring IP"
+#~ msgstr "Konfigurowanie IP"
+
+#~ msgid "Confirm"
+#~ msgstr "Potwierdź"
+
+#~ msgid "Confirm New Password"
+#~ msgstr "Potwierdź nowe hasło"
+
+#~ msgid "Confirm deletion of $0"
+#~ msgstr "Proszę potwierdzić usunięcie $0"
+
+#~ msgid "Confirm migration"
+#~ msgstr "Potwierdź migrację"
+
+#~ msgid "Confirm passphrase"
+#~ msgstr "Potwierdź hasło"
+
+#~ msgid "Confirm reload:"
+#~ msgstr "Potwierdzenie ponownego wczytania:"
+
+#~ msgid "Confirm save:"
+#~ msgstr "Potwierdzenie zapisu:"
+
+#~ msgid "Conflicted By"
+#~ msgstr "W konflikcie z"
+
+#~ msgid "Conflicts"
+#~ msgstr "Powoduje konflikt z"
+
+#~ msgid "Connect"
+#~ msgstr "Połącz"
+
+#~ msgid "Connect automatically"
+#~ msgstr "Łączenie automatyczne"
+
+#~ msgid "Connect to"
+#~ msgstr "Połącz z"
+
+#~ msgid "Connect to oVirt Engine"
+#~ msgstr "Połącz z mechanizmem oVirt"
+
+#~ msgid "Connect with any $0 viewer application."
+#~ msgstr "Połącz z dowolną przeglądarką $0."
+
+#~ msgid "Connect with any SPICE or VNC viewer application."
+#~ msgstr "Połącz z dowolną przeglądarką SPICE lub VNC."
+
+#~ msgid ""
+#~ "Connecting simultaneously to more than {{ limit }} machines is "
+#~ "unsupported."
+#~ msgstr ""
+#~ "Jednoczesne łączenie z więcej niż {{ limit }} komputerami jest "
+#~ "nieobsługiwane."
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Łączenie z Dockerem"
+
+#~ msgid "Connecting to SETroubleshoot daemon..."
+#~ msgstr "Łączenie z usługą SETroubleshoot…"
+
+#~ msgid "Connecting to Virtualization Service"
+#~ msgstr "Łączenie z usługą wirtualizacji"
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "Łączenie z komputerem"
+
+#~ msgid "Connecting..."
+#~ msgstr "Łączenie…"
+
+#~ msgid "Connection"
+#~ msgstr "Połączenie"
+
+#~ msgid "Connection Error"
+#~ msgstr "Błąd połączenia"
+
+#~ msgid "Connection Error: $0"
+#~ msgstr "Błąd połączenia: $0"
+
+#~ msgid "Connection Settings"
+#~ msgstr "Ustawienia połączenia"
+
+#~ msgid "Connection has timed out."
+#~ msgstr "Połączenie przekroczyło czas oczekiwania."
+
+#~ msgid "Connection will be lost"
+#~ msgstr "Połączenie zostanie utracone"
+
+#~ msgid "Consists Of"
+#~ msgstr "Składa się z"
+
+#~ msgid "Console Type"
+#~ msgstr "Typ konsoli"
+
+#~ msgid "Consoles"
+#~ msgstr "Konsole"
+
+#~ msgid "Container"
+#~ msgstr "Kontener"
+
+#~ msgid "Container Administrator"
+#~ msgstr "Administrator kontenera"
+
+#~ msgid "Container ID"
+#~ msgstr "Identyfikator kontenera"
+
+#~ msgid "Container Name"
+#~ msgstr "Nazwa kontenera"
+
+#~ msgid "Container Runtime Version"
+#~ msgstr "Wersja środowiska wykonawczego kontenera"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "Kontener jest obecnie oznaczony jako działający, ale zwykłe zatrzymanie "
+#~ "się nie powiodło."
+
+#~ msgid "Container is currently running."
+#~ msgstr "Kontener jest obecnie uruchomiony."
+
+#~ msgid "Container:"
+#~ msgstr "Kontener:"
+
+#~ msgid "Containers"
+#~ msgstr "Kontenery"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "Kontenery"
+
+#~ msgid "Content"
+#~ msgstr "Zawartość"
+
+#~ msgid "Control"
+#~ msgstr "Sterowanie"
+
+#~ msgctxt "key"
+#~ msgid "Control"
+#~ msgstr "Sterowanie"
+
+#~ msgid "Convertible"
+#~ msgstr "2 w jednym"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "Nie można dodać wszystkich dysków"
+
+#~ msgid "Could not contact {{host}}"
+#~ msgstr "Nie można skontaktować się z {{host}}"
+
+#~ msgid "Could not list services"
+#~ msgstr "Nie można wyświetlić listy usług"
+
+#~ msgid "Could not parse PEM-encoded certificate"
+#~ msgstr "Nie można przetworzyć certyfikatu zakodowanego jako PEM"
+
+#~ msgid "Could not parse PEM-encoded private key"
+#~ msgstr "Nie można przetworzyć klucza prywatnego zakodowanego jako PEM"
+
+#~ msgid "Could not reset the storage pool"
+#~ msgstr "Nie można przywrócić puli urządzeń do przechowywania danych"
+
+#~ msgid "Couldn't change user groups"
+#~ msgstr "Nie można zmienić grup użytkownika"
+
+#~ msgid "Couldn't change user password"
+#~ msgstr "Nie można zmienić hasła użytkownika"
+
+#~ msgid "Couldn't connect to server"
+#~ msgstr "Nie można połączyć z serwerem"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "Nie można połączyć z komputerem"
+
+#~ msgid "Couldn't create new users"
+#~ msgstr "Nie można utworzyć nowych użytkowników"
+
+#~ msgid "Couldn't find running API server"
+#~ msgstr "Nie można odnaleźć uruchomionego serwera API"
+
+#~ msgid ""
+#~ "Couldn't get system subscription status. Please ensure subscription-"
+#~ "manager is installed."
+#~ msgstr ""
+#~ "Nie można pobrać stanu subskrypcji komputera. Proszę się upewnić, że "
+#~ "program subscription-manager jest zainstalowany."
+
+#~ msgid "Couldn't list local users"
+#~ msgstr "Nie można wyświetlić listy lokalnych użytkowników"
+
+#~ msgid "Couldn't list users"
+#~ msgstr "Nie można wyświetlić listy użytkowników"
+
+#~ msgid "Couldn't load user data"
+#~ msgstr "Nie można wczytać danych użytkownika"
+
+#~ msgid "Count:"
+#~ msgstr "Liczba:"
+
+#~ msgid "Crash dump location"
+#~ msgstr "Położenie zrzutu awarii"
+
+#~ msgid "Crash system"
+#~ msgstr "System awarii"
+
+#~ msgid "Create"
+#~ msgstr "Utwórz"
+
+#~ msgid "Create Logical Volume"
+#~ msgstr "Utwórz wolumin logiczny"
+
+#~ msgid "Create New Account"
+#~ msgstr "Utwórz nowe konto"
+
+#~ msgid "Create New VM"
+#~ msgstr "Utwórz nową maszynę wirtualną"
+
+#~ msgid "Create New Virtual Machine"
+#~ msgstr "Utwórz nową maszynę wirtualną"
+
+#~ msgid "Create Partition"
+#~ msgstr "Utwórz partycję"
+
+#~ msgid "Create RAID Device"
+#~ msgstr "Utwórz urządzenie RAID"
+
+#~ msgid "Create Report"
+#~ msgstr "Utwórz raport"
+
+#~ msgid "Create Snapshot"
+#~ msgstr "Utwórz migawkę"
+
+#~ msgid "Create Thin Volume"
+#~ msgstr "Utwórz cienki wolumin"
+
+#~ msgid "Create Timer"
+#~ msgstr "Utwórz licznik"
+
+#~ msgid "Create Timers"
+#~ msgstr "Utwórz liczniki"
+
+#~ msgid "Create VDO Device"
+#~ msgstr "Utwórz urządzenie VDO"
+
+#~ msgid "Create VM"
+#~ msgstr "Utwórz maszynę wirtualną"
+
+#~ msgid "Create Virtual Machine"
+#~ msgstr "Utwórz maszynę wirtualną"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "Utwórz grupę woluminów"
+
+#~ msgid "Create diagnostic report"
+#~ msgstr "Utwórz raport diagnostyczny"
+
+#~ msgid "Create empty image stream"
+#~ msgstr "Utwórz pusty strumień obrazu"
+
+#~ msgid "Create image stream"
+#~ msgstr "Utwórz strumień obrazu"
+
+#~ msgid "Create it"
+#~ msgstr "Utwórz"
+
+#~ msgid "Create new Logical Volume"
+#~ msgstr "Utworzono:"
+
+#~ msgid "Create partition"
+#~ msgstr "Utwórz partycję"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "Utwórz partycję w $0"
+
+#~ msgid "Create partition table"
+#~ msgstr "Utwórz tablicę partycji"
+
+#~ msgid "Created"
+#~ msgstr "Utworzono"
+
+#~ msgid "Created:"
+#~ msgstr "Utworzono:"
+
+#~ msgid "Creating RAID Device $target"
+#~ msgstr "Tworzenie urządzenia RAID $target"
+
+#~ msgid "Creating filesystem on $target"
+#~ msgstr "Tworzenie systemu plików w $target"
+
+#~ msgid "Creating logical volume $target"
+#~ msgstr "Tworzenie woluminu logicznego $target"
+
+#~ msgid "Creating partition $target"
+#~ msgstr "Tworzenie partycji $target"
+
+#~ msgid "Creating snapshot of $target"
+#~ msgstr "Tworzenie migawki $target"
+
+#~ msgid ""
+#~ "Creating this VLAN will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Utworzenie tej sieci VLAN zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Creating this bond will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Utworzenie tego wiązania zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Creating this bridge will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Utworzenie tego mostka zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Creating this team will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Utworzenie tego zespołu zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid "Creating volume group $target"
+#~ msgstr "Tworzenie grupy woluminów $target"
+
+#~ msgid "Creation of vm $0 failed"
+#~ msgstr "Utworzenie maszyny wirtualnej $0 się nie powiodło"
+
+#~ msgid "Critical and above"
+#~ msgstr "Krytyczne i powyżej"
+
+#~ msgid "Current boot"
+#~ msgstr "Obecne uruchomienie"
+
+#~ msgid "Custom"
+#~ msgstr "Niestandardowe"
+
+#~ msgid "Custom (Enter filesystem type)"
+#~ msgstr "Niestandardowe (podanie typu systemu plików)"
+
+#~ msgid "Custom URL"
+#~ msgstr "Niestandardowy adres URL"
+
+#~ msgid "Custom encryption options"
+#~ msgstr "Niestandardowe opcje szyfrowania"
+
+#~ msgid "Custom mount option"
+#~ msgstr "Niestandardowa opcja montowania"
+
+#~ msgid "Custom mount options"
+#~ msgstr "Niestandardowe opcje montowania"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "NA DYSKU WYSTĘPUJĄ BŁĘDY"
+
+#~ msgid "DNS"
+#~ msgstr "DNS"
+
+#~ msgid "DNS $val"
+#~ msgstr "DNS $val"
+
+#~ msgid "DNS Policy"
+#~ msgstr "Polityka DNS"
+
+#~ msgid "DNS Search Domains"
+#~ msgstr "Domeny wyszukiwania DNS"
+
+#~ msgid "DNS Search Domains $val"
+#~ msgstr "Domeny wyszukiwania DNS $val"
+
+#~ msgid "Dashboard"
+#~ msgstr "Panel kontrolny"
+
+#~ msgid "Data Used"
+#~ msgstr "Użyte dane"
+
+#~ msgid "Deactivate"
+#~ msgstr "Dezaktywuj"
+
+#~ msgid "Deactivating"
+#~ msgstr "Dezaktywowanie"
+
+#~ msgid "Deactivating $target"
+#~ msgstr "Dezaktywowanie $target"
+
+#~ msgid "Debug and above"
+#~ msgstr "Debugowania i powyżej"
+
+#~ msgid "Deduplication"
+#~ msgstr "Deduplikacja"
+
+#~ msgid "Delay"
+#~ msgstr "Opóźnienie"
+
+#~ msgid "Delete $0"
+#~ msgstr "Usuń $0"
+
+#~ msgid "Delete '{{ name }}'"
+#~ msgstr "Usuń „{{ name }}”"
+
+#~ msgid "Delete Files"
+#~ msgstr "Usuń pliki"
+
+#~ msgid "Delete Node"
+#~ msgstr "Usuń węzeł"
+
+#~ msgid "Delete Persistent Volume"
+#~ msgstr "Usuń trwały wolumin"
+
+#~ msgid "Delete Persistent Volume Claim"
+#~ msgstr "Usuń deklarację trwałego woluminu"
+
+#~ msgid "Delete Project"
+#~ msgstr "Usuń projekt"
+
+#~ msgid "Delete Selected"
+#~ msgstr "Usuń zaznaczone"
+
+#~ msgid "Delete associated storage files:"
+#~ msgstr "Usunięcie powiązanych plików urządzeń do przechowywania danych:"
+
+#~ msgid "Delete image stream"
+#~ msgstr "Usuń strumień obrazu"
+
+#~ msgid "Delete {{ item.kind }}"
+#~ msgstr "Usuń {{ item.kind }}"
+
+#~ msgid "Deleting $target"
+#~ msgstr "Usuwanie $target"
+
+#~ msgid ""
+#~ "Deleting <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Usunięcie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Deleting a Pod will kill all associated containers. Pods may be "
+#~ "automatically created again in some cases."
+#~ msgstr ""
+#~ "Usunięcie pojemnika zakończy wszystkie powiązane kontenery. W niektórych "
+#~ "przypadkach pojemniki mogą być automatycznie tworzone ponownie."
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr ""
+#~ "Usunięcie urządzenia RAID usunie wszystkie znajdujące się na nim dane."
+
+#~ msgid "Deleting a VDO device will erase all data on it."
+#~ msgstr ""
+#~ "Usunięcie urządzenia VDO usunie wszystkie znajdujące się na nim dane."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr "Usunięcie kontenera usunie wszystkie znajdujące się w nim dane."
+
+#~ msgid "Deleting a logical volume will delete all data in it."
+#~ msgstr ""
+#~ "Usunięcie woluminu logicznego usunie wszystkie znajdujące się na nim dane."
+
+#~ msgid "Deleting a partition will delete all data in it."
+#~ msgstr "Usunięcie partycji usunie wszystkie znajdujące się na niej dane."
+
+#~ msgid "Deleting a volume group will erase all data on it."
+#~ msgstr ""
+#~ "Usunięcie grupy woluminów usunie wszystkie znajdujące się w niej dane."
+
+#~ msgid ""
+#~ "Deleting an image will delete it, but you can probably download it again "
+#~ "if you need it later.  Unless this image has never been pushed to a "
+#~ "repository, that is, in which case you probably can't download it again."
+#~ msgstr ""
+#~ "Usunięcie obrazu spowoduje jego usunięcie, ale prawdopodobnie można go "
+#~ "pobrać ponownie w razie potrzeby. Wyjątkiem jest sytuacja, w której tego "
+#~ "obrazu nigdy nie wysłano do repozytorium."
+
+#~ msgid "Deleting volume group $target"
+#~ msgstr "Usuwanie grupy woluminów $target"
+
+#~ msgid "Deploy"
+#~ msgstr "Wdroż"
+
+#~ msgid "Deploy Application"
+#~ msgstr "Wdroż aplikację"
+
+#~ msgid "Deployment Causes"
+#~ msgstr "Przyczyny wdrażania"
+
+#~ msgid "Deployment Config"
+#~ msgstr "Konfiguracja wdrażania"
+
+#~ msgid "Deployment Configs"
+#~ msgstr "Konfiguracje wdrożeń"
+
+#~ msgid "Description"
+#~ msgstr "Opis"
+
+#~ msgid "Description:"
+#~ msgstr "Opis:"
+
+#~ msgid "Desktop"
+#~ msgstr "Komputer stacjonarny"
+
+#~ msgid "Detachable"
+#~ msgstr "Odłączalny"
+
+#~ msgid "Details"
+#~ msgstr "Szczegóły"
+
+#~ msgid "Device"
+#~ msgstr "Urządzenie"
+
+#~ msgid "Device File"
+#~ msgstr "Plik urządzenia"
+
+#~ msgid "Device is read-only"
+#~ msgstr "Urządzenie jest tylko do odczytu"
+
+#~ msgid "Diagnostic reports"
+#~ msgstr "Raporty diagnostyczne"
+
+#~ msgid "Digest"
+#~ msgstr "Przegląd"
+
+#~ msgid "Directory"
+#~ msgstr "Katalog"
+
+#~ msgid "Directory $0 isn't writable or doesn't exist."
+#~ msgstr "Katalog $0 nie jest zapisywalny lub nie istnieje."
+
+#~ msgid "Disable"
+#~ msgstr "Wyłącz"
+
+#~ msgid "Disable tuned"
+#~ msgstr "Wyłącz tuned"
+
+#~ msgid "Disabled"
+#~ msgstr "Wyłączone"
+
+#~ msgid "Disconnect"
+#~ msgstr "Rozłącz"
+
+#~ msgid "Disconnected"
+#~ msgstr "Rozłączono"
+
+#~ msgid "Disconnected from serial console. Click the Reconnect button."
+#~ msgstr ""
+#~ "Rozłączono z konsoli szeregowej. Proszę kliknąć przycisk „Połącz "
+#~ "ponownie”."
+
+#~ msgid "Disk"
+#~ msgstr "Dysk"
+
+#~ msgid "Disk I/O"
+#~ msgstr "Wejście/wyjście dysku"
+
+#~ msgid "Disk Utilization: $0%"
+#~ msgstr "Użycie dysku: $0%"
+
+#~ msgid "Disk is OK"
+#~ msgstr "Dysk jest OK"
+
+#~ msgid "Disks"
+#~ msgstr "Dyski"
+
+#~ msgid "Display Language"
+#~ msgstr "Język"
+
+#~ msgid "Display name"
+#~ msgstr "Wyświetlana nazwa"
+
+#~ msgid "Do you want to add the role '{{ fields.displayRole }}'?"
+#~ msgstr "Dodać rolę „{{ fields.displayRole }}”?"
+
+#~ msgid ""
+#~ "Do you want to delete the '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}' image stream?"
+#~ msgstr ""
+#~ "Usunąć strumień obrazu „{{stream.metadata.namespace}}/{{stream.metadata."
+#~ "name}}”?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume '{{item.metadata.name}}'?"
+#~ msgstr "Usunąć trwały wolumin „{{item.metadata.name}}”?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume Claim '{{item.metadata."
+#~ "name}}'?"
+#~ msgstr "Usunąć deklarację trwałego woluminu „{{item.metadata.name}}”?"
+
+#~ msgid "Do you want to delete the {{ item.kind }} '{{item.metadata.name}}'?"
+#~ msgstr "Usunąć {{ item.kind }} „{{item.metadata.name}}”?"
+
+#~ msgid "Do you want to delete this Node?"
+#~ msgstr "Usunąć ten węzeł?"
+
+#~ msgid ""
+#~ "Do you want to remove the image tagged as '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+#~ msgstr ""
+#~ "Usunąć obraz z etykietą „{{stream.metadata.namespace}}/{{stream.metadata."
+#~ "name}}:{{tag.tag}}”?"
+
+#~ msgid ""
+#~ "Do you want to remove the role '{{ fields.displayRole }}' from member "
+#~ "{{ fields.member.metadata.name }}?"
+#~ msgstr ""
+#~ "Usunąć rolę „{{ fields.displayRole }}” z elementu {{ fields.member."
+#~ "metadata.name }}?"
+
+#~ msgid "Docker Version"
+#~ msgstr "Wersja Dockera"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "Docker nie jest zainstalowany lub aktywowany w tym systemie"
+
+#~ msgid "Docking Station"
+#~ msgstr "Stacja dokująca"
+
+#~ msgid "Domain"
+#~ msgstr "Domena"
+
+#~ msgid "Domain $0 could not be contacted"
+#~ msgstr "Nie można skontaktować się z domeną $0"
+
+#~ msgid "Domain $0 is not supported"
+#~ msgstr "Domena $0 jest nieobsługiwana"
+
+#~ msgid "Domain Address"
+#~ msgstr "Adres domeny"
+
+#~ msgid "Domain Administrator Name"
+#~ msgstr "Nazwa administratora domeny"
+
+#~ msgid "Domain Administrator Password"
+#~ msgstr "Hasło administratora domeny"
+
+#~ msgid "Don't Repeat"
+#~ msgstr "Bez powtarzania"
+
+#~ msgid "Don't overwrite existing data"
+#~ msgstr "Nie zastępuj istniejących danych"
+
+#~ msgid "Don't pull images automatically"
+#~ msgstr "Bez automatycznego pobierania obrazów"
+
+#~ msgid "Done!"
+#~ msgstr "Gotowe."
+
+#~ msgid "Download"
+#~ msgstr "Pobierz"
+
+#~ msgid "Download report"
+#~ msgstr "Pobierz raport"
+
+#~ msgid "Download the MSI from $0"
+#~ msgstr "Pobierz plik MSI z $0"
+
+#~ msgid "Downloaded"
+#~ msgstr "Pobrano"
+
+#~ msgid "Downloading"
+#~ msgstr "Pobieranie"
+
+#~ msgid "Downloading $0"
+#~ msgstr "Pobieranie $0"
+
+#~ msgid "Drive"
+#~ msgstr "Napęd"
+
+#~ msgctxt "storage"
+#~ msgid "Drive"
+#~ msgstr "Napęd"
+
+#~ msgid "Driver"
+#~ msgstr "Sterownik"
+
+#~ msgid "Drives"
+#~ msgstr "Napędy"
+
+#~ msgid "Drop file here to upload."
+#~ msgstr "Proszę przeciągnąć tutaj plik, aby go wysłać."
+
+#~ msgid "Duplicate alias"
+#~ msgstr "Podwójny alias"
+
+#~ msgid "Duplicate port"
+#~ msgstr "Podwójny port"
+
+#~ msgid "Edit"
+#~ msgstr "Modyfikuj"
+
+#~ msgid "Edit Server"
+#~ msgstr "Modyfikuj serwer"
+
+#~ msgid "Edit image stream"
+#~ msgstr "Modyfikuj strumień obrazu"
+
+#~ msgid "Edit the vdsm.conf"
+#~ msgstr "Modyfikuj plik vdsm.conf"
+
+#~ msgid "Ejecting $target"
+#~ msgstr "Wysuwanie $target"
+
+#~ msgid "Embedded PC"
+#~ msgstr "Komputer osadzony"
+
+#~ msgid "Empty"
+#~ msgstr "Puste"
+
+#~ msgctxt "verb"
+#~ msgid "Empty"
+#~ msgstr "Puste"
+
+#~ msgid "Empty Directory"
+#~ msgstr "Pusty katalog"
+
+#~ msgid "Emptying $target"
+#~ msgstr "Opróżnianie $target"
+
+#~ msgid "Emulated Machine:"
+#~ msgstr "Emulowany komputer:"
+
+#~ msgid "Enable"
+#~ msgstr "Włącz"
+
+#~ msgid "Enable Forcefully"
+#~ msgstr "Wymuś włączenie"
+
+#~ msgid "Enabled"
+#~ msgstr "Włączone"
+
+#~ msgid "Encrypted $0"
+#~ msgstr "Zaszyfrowane $0"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "Szyfrowane EXT4 (LUKS)"
+
+#~ msgid "Encrypted Logical Volume of $0"
+#~ msgstr "Zaszyfrowany wolumin logiczny $0"
+
+#~ msgid "Encrypted Partition of $0"
+#~ msgstr "Zaszyfrowana partycja $0"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "Szyfrowane XFS (LUKS)"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Encrypted data"
+#~ msgstr "Zaszyfrowane dane"
+
+#~ msgid "Encrypted volumes can not be resized here."
+#~ msgstr "Nie można tutaj zmieniać rozmiaru zaszyfrowanych woluminów."
+
+#~ msgid "Encrypted volumes need to be unlocked before they can be resized."
+#~ msgstr ""
+#~ "Zaszyfrowane woluminy muszą zostać odblokowane przed zmianą rozmiaru."
+
+#~ msgid "Encryption"
+#~ msgstr "Szyfrowanie"
+
+#~ msgid "Encryption Options"
+#~ msgstr "Opcje szyfrowania"
+
+#~ msgid "Endpoint"
+#~ msgstr "Punkt końcowy"
+
+#~ msgid "Endpoint Name"
+#~ msgstr "Nazwa punktu końcowego"
+
+#~ msgid "Endpoints"
+#~ msgstr "Punkty końcowe"
+
+#~ msgid "Ends"
+#~ msgstr "Kończy się"
+
+#~ msgid "Enforce policy:"
+#~ msgstr "Wymuszanie polityki:"
+
+#~ msgid "Enhancement Updates Available"
+#~ msgstr "Dostępne są aktualizacje z ulepszeniami"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "Adres IP lub nazwa komputera"
+
+#~ msgid "Enter New VM name"
+#~ msgstr "Nazwa nowej maszyny wirtualnej"
+
+#~ msgid ""
+#~ "Entering a different password here means you will need to retype it every "
+#~ "time you reconnect to this machine"
+#~ msgstr ""
+#~ "Wpisanie tutaj innego hasła oznacza, że będzie wymagane jego wpisanie za "
+#~ "każdym połączeniem do tej maszyny"
+
+#~ msgid "Entry"
+#~ msgstr "Wpis"
+
+#~ msgid "Entrypoint"
+#~ msgstr "Punkt wejścia"
+
+#~ msgid "Environment"
+#~ msgstr "Środowisko"
+
+#~ msgid "Erase"
+#~ msgstr "Wymaż"
+
+#~ msgid "Erase containers and reset storage pool"
+#~ msgstr "Usuń kontenery i przywróć pulę urządzeń do przechowywania danych"
+
+#~ msgid "Erasing $target"
+#~ msgstr "Czyszczenie $target"
+
+#~ msgid "Errata:"
+#~ msgstr "Poprawka:"
+
+#~ msgid "Error"
+#~ msgstr "Błąd"
+
+#~ msgid "Error and above"
+#~ msgstr "Błędy i powyżej"
+
+#~ msgid "Error getting certificate details: $0"
+#~ msgstr "Błąd podczas uzyskiwania informacji o certyfikacie: $0"
+
+#~ msgid "Error loading users: {{perm_failed}}"
+#~ msgstr "Błąd podczas wczytywania użytkowników: {{perm_failed}}"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Komunikat o błędzie Dockera:"
+
+#~ msgid "Error saving authorized keys: "
+#~ msgstr "Błąd podczas zapisywania upoważnionych kluczy: "
+
+#~ msgid "Error while deleting alert: $0"
+#~ msgstr "Błąd podczas usuwania alarmu: $0"
+
+#~ msgid "Error while setting SELinux mode: '$0'"
+#~ msgstr "Błąd podczas ustawiania trybu SELinuksa: „$0”"
+
+#~ msgid "Error writing kubectl config"
+#~ msgstr "Błąd podczas zapisywania konfiguracji kubectl"
+
+#~ msgid "Ethernet MAC"
+#~ msgstr "MAC ethernetu"
+
+#~ msgid "Ethernet MTU"
+#~ msgstr "MTU ethernetu"
+
+#~ msgid "Ethtool"
+#~ msgstr "ethtool"
+
+#~ msgid "Everything"
+#~ msgstr "Wszystko"
+
+#~ msgid "Excellent password"
+#~ msgstr "Doskonałe hasło"
+
+#~ msgid "Existing passphrase"
+#~ msgstr "Istniejące hasło"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "Zakończono $ExitCode"
+
+#~ msgid "Expansion Chassis"
+#~ msgstr "Obudowa rozszerzenia"
+
+#~ msgid "Expose container ports"
+#~ msgstr "Uwidocznij porty kontenera"
+
+#~ msgid "Extended Partition"
+#~ msgstr "Rozszerzona partycja"
+
+#~ msgid "FAILED"
+#~ msgstr "NIEPOWODZENIE"
+
+#~ msgid "FQDN"
+#~ msgstr "FQDN"
+
+#~ msgid "Failed to add machine: $0"
+#~ msgstr "Dodanie komputera się nie powiodło: $0"
+
+#~ msgid "Failed to change password"
+#~ msgstr "Zmiana hasła się nie powiodła"
+
+#~ msgid "Failed to delete alert: $0"
+#~ msgstr "Usunięcie alarmu się nie powiodło: $0"
+
+#~ msgid "Failed to disable tuned"
+#~ msgstr "Wyłączenie tuned się nie powiodło"
+
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr "Wyłączenie profilu tuned się nie powiodło"
+
+#~ msgid "Failed to edit machine: $0"
+#~ msgstr "Modyfikacja komputera się nie powiodła: $0"
+
+#~ msgid "Failed to enable tuned"
+#~ msgstr "Włączenie tuned się nie powiodło"
+
+#~ msgid "Failed to load authorized keys."
+#~ msgstr "Wczytanie upoważnionych kluczy się nie powiodło."
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr "Uruchomienie Dockera się nie powiodło: $0"
+
+#~ msgid "Failed to stop Docker scope: $0"
+#~ msgstr "Zatrzymanie zakresu Dockera się nie powiodło: $0"
+
+#~ msgid "Failed to switch profile"
+#~ msgstr "Przełączenie profilu się nie powiodło"
+
+#~ msgid "Fibre Channel"
+#~ msgstr "Fibre Channel"
+
+#~ msgid "File"
+#~ msgstr "Plik"
+
+#~ msgid "Filesystem"
+#~ msgstr "System plików"
+
+#~ msgid "Filesystem Mounting"
+#~ msgstr "Montowanie systemu plików"
+
+#~ msgid "Filesystem Name"
+#~ msgstr "Nazwa systemu plików"
+
+#~ msgid "Filesystem Type"
+#~ msgstr "Typ systemu plików"
+
+#~ msgid "Filesystem type"
+#~ msgstr "Typ systemu plików"
+
+#~ msgid "Filesystems"
+#~ msgstr "Systemy plików"
+
+#~ msgid "Filter Services"
+#~ msgstr "Filtrowanie usług"
+
+#~ msgid "Fingerprint"
+#~ msgstr "Odcisk"
+
+#~ msgid "Firewall"
+#~ msgstr "Zapora sieciowa"
+
+#~ msgid "Firewall is not available"
+#~ msgstr "Zapora sieciowa jest niedostępna"
+
+#~ msgid "Flex"
+#~ msgstr "Flex"
+
+#~ msgid "Flocker"
+#~ msgstr "Flocker"
+
+#~ msgid "Flocker Dataset Name"
+#~ msgstr "Nazwa zestawu danych Flocker"
+
+#~ msgid "Follows docker repo"
+#~ msgstr "Obserwuje repozytorium Dockera"
+
+#~ msgid "Force Change"
+#~ msgstr "Wymuś zmianę"
+
+#~ msgid "Force Delete"
+#~ msgstr "Wymuś usunięcie"
+
+#~ msgid "Force Restart"
+#~ msgstr "Wymuś ponowne uruchomienie"
+
+#~ msgid "Force Shut Down"
+#~ msgstr "Wymuś wyłączenie"
+
+#~ msgid "Force password change"
+#~ msgstr "Wymuszenie zmiany hasła"
+
+#~ msgid "Format"
+#~ msgstr "Sformatuj"
+
+#~ msgid "Format $0"
+#~ msgstr "Sformatuj $0"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Sformatuj dysk $0"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "Sformatowanie dysku usunie wszystkie znajdujące się na nim dane."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr ""
+#~ "Sformatowanie urządzenia do przechowywania danych usunie wszystkie "
+#~ "znajdujące się na nim dane."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "Opóźnienie w przód $forward_delay"
+
+#~ msgid "Free"
+#~ msgstr "Wolne"
+
+#~ msgid "Free Space"
+#~ msgstr "Wolne miejsce"
+
+#~ msgid "Friday"
+#~ msgstr "piątek"
+
+#~ msgid "From"
+#~ msgstr "Z"
+
+#~ msgid "Full Name"
+#~ msgstr "Imię i nazwisko"
+
+#~ msgid "GCE Persistent Disk"
+#~ msgstr "Trwały dysk GCE"
+
+#~ msgid "Gateway:"
+#~ msgstr "Brama:"
+
+#~ msgid "General"
+#~ msgstr "Ogólne"
+
+#~ msgid "Generating report"
+#~ msgstr "Tworzenie raportu"
+
+#~ msgid "Get new image"
+#~ msgstr "Pobierz nowy obraz"
+
+#~ msgid "GiB"
+#~ msgstr "GiB"
+
+#~ msgid "Git Repository"
+#~ msgstr "Repozytorium git"
+
+#~ msgid "Gluster FS"
+#~ msgstr "GlusterFS"
+
+#~ msgid "GlusterFS"
+#~ msgstr "GlusterFS"
+
+#~ msgid "Go to"
+#~ msgstr "Przejdź do"
+
+#~ msgid "Go to Application"
+#~ msgstr "Przejdź do aplikacji"
+
+#~ msgid "Go to now"
+#~ msgstr "Przejdź teraz"
+
+#~ msgid "Grant additional push or admin access to specific members below."
+#~ msgstr ""
+#~ "Poniżej można nadać dodatkowe uprawnienia wysyłania i administratora "
+#~ "konkretnym elementom."
+
+#~ msgid "Graphics Console (VNC)"
+#~ msgstr "Konsola graficzna (VNC)"
+
+#~ msgid "Graphics Console in Desktop Viewer"
+#~ msgstr "Konsola graficzna w przeglądarce pulpitu"
+
+#~ msgid "Group Members"
+#~ msgstr "Elementy grupy"
+
+#~ msgid "Group or Project"
+#~ msgstr "Grupa lub projekt"
+
+#~ msgid "Groups"
+#~ msgstr "Grupy"
+
+#~ msgid "Grow"
+#~ msgstr "Powiększ"
+
+#~ msgid "Grow Logical Volume"
+#~ msgstr "Powiększ wolumin logiczny"
+
+#~ msgid "Grow logical size of $0"
+#~ msgstr "Powiększ rozmiar logiczny $0"
+
+#~ msgid "Grow to take all space"
+#~ msgstr "Powiększ do użycia całego miejsca"
+
+#~ msgid "HA"
+#~ msgstr "HA"
+
+#~ msgid "HA:"
+#~ msgstr "HA:"
+
+#~ msgid "HTTP method"
+#~ msgstr "Metoda HTTP"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Tryb Hairpin"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Tryb Hairpin"
+
+#~ msgid "Hand Held"
+#~ msgstr "Przenośny"
+
+#~ msgid "Hard Disk"
+#~ msgstr "Dysk twardy"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Dysk twardy"
+
+#~ msgid "Hardware"
+#~ msgstr "Sprzęt"
+
+#~ msgid "Hardware Information"
+#~ msgstr "Informacje o sprzęcie"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Czas powitania $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "Gospodarz"
+
+#~ msgid "Host Name"
+#~ msgstr "Nazwa komputera"
+
+#~ msgid "Host Path"
+#~ msgstr "Ścieżka gospodarza"
+
+#~ msgid "Host key is incorrect"
+#~ msgstr "Klucz komputera jest niepoprawny"
+
+#~ msgid "Host to Maintenance"
+#~ msgstr "Gospodarz do konserwacji"
+
+#~ msgid "Hour : Minute"
+#~ msgstr "Godzina : Minuta"
+
+#~ msgid "Hour needs to be a number between 0-23"
+#~ msgstr "Godzina musi być liczbą między 0 a 23"
+
+#~ msgid "Hours"
+#~ msgstr "Godziny"
+
+#~ msgid "I/O Wait"
+#~ msgstr "Oczekiwanie wejścia/wyjścia"
+
+#~ msgid "INSTALL VM action failed"
+#~ msgstr "Działanie INSTALL VM się nie powiodło"
+
+#~ msgid "IP"
+#~ msgstr "IP"
+
+#~ msgid "IP Address"
+#~ msgstr "Adres IP"
+
+#~ msgid "IP Address:"
+#~ msgstr "Adres IP:"
+
+#~ msgid "IP Prefix Length:"
+#~ msgstr "Długość przedrostka IP:"
+
+#~ msgid "IP Settings"
+#~ msgstr "Ustawienia IP"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv4 Settings"
+#~ msgstr "Ustawienia IPv4"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "IPv6 Settings"
+#~ msgstr "Ustawienia IPv6"
+
+#~ msgid "ISCSI"
+#~ msgstr "iSCSI"
+
+#~ msgid "Id"
+#~ msgstr "Identyfikator"
+
+#~ msgid "Id $id"
+#~ msgstr "Identyfikator $id"
+
+#~ msgid "Id:"
+#~ msgstr "Identyfikator:"
+
+#~ msgid "Identifier"
+#~ msgstr "Identyfikator"
+
+#~ msgid "Identities"
+#~ msgstr "Tożsamości"
+
+#~ msgid "Identity"
+#~ msgstr "Tożsamość"
+
+#~ msgid "Ignore"
+#~ msgstr "Ignorowanie"
+
+#~ msgid "Image"
+#~ msgstr "Obraz"
+
+#~ msgid "Image $0"
+#~ msgstr "Obraz $0"
+
+#~ msgid "Image ID"
+#~ msgstr "Identyfikator obrazu"
+
+#~ msgid "Image Name"
+#~ msgstr "Nazwa obrazu"
+
+#~ msgid "Image Registry"
+#~ msgstr "Rejestr obrazów"
+
+#~ msgid "Image Search"
+#~ msgstr "Wyszukiwanie obrazów"
+
+#~ msgid "Image Stream"
+#~ msgstr "Strumień obrazu"
+
+#~ msgid "Image commands"
+#~ msgstr "Polecenia obrazu"
+
+#~ msgid "Image count"
+#~ msgstr "Liczba obrazów"
+
+#~ msgid "Image stream"
+#~ msgstr "Strumień obrazu"
+
+#~ msgid "Image:"
+#~ msgstr "Obraz:"
+
+#~ msgid "Images"
+#~ msgstr "Obrazy"
+
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "Obrazy"
+
+#~ msgid "Images and running containers"
+#~ msgstr "Obrazy i uruchomione kontenery"
+
+#~ msgid "Images by project"
+#~ msgstr "Obrazy według projektu"
+
+#~ msgid "Images may be pulled by anonymous users"
+#~ msgstr "Obrazy mogą być pobierane przez anonimowych użytkowników"
+
+#~ msgid "Images may be pulled by any authenticated user or group"
+#~ msgstr ""
+#~ "Obrazy mogą być pobierane przez wszystkich uwierzytelnionych użytkowników "
+#~ "i grupy"
+
+#~ msgid "Images may only be pulled by specific users or groups"
+#~ msgstr "Obrazy mogą być pobierane tylko przez podanych użytkowników i grupy"
+
+#~ msgid "Images pushed recently"
+#~ msgstr "Ostatnio wysłane obrazy"
+
+#~ msgid "Immediately Start VM"
+#~ msgstr "Od razu uruchom maszynę wirtualną"
+
+#~ msgid "In Sync"
+#~ msgstr "Zsynchronizowane"
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, use the commands below."
+#~ msgstr ""
+#~ "Aby zacząć wysyłać obrazy do rejestru, należy użyć poniższych poleceń."
+
+#~ msgid ""
+#~ "In order to begin pushing images to the registry, you need to create a "
+#~ "project."
+#~ msgstr "Aby zacząć wysyłać obrazy do rejestru, należy utworzyć projekt."
+
+#~ msgid ""
+#~ "In order to synchronize users, you need to log in to {{#strong}}{{host}}"
+#~ "{{/strong}}."
+#~ msgstr ""
+#~ "Aby synchronizować użytkowników, należy się zalogować w {{#strong}}"
+#~ "{{host}}{{/strong}}."
+
+#~ msgid "Inactive"
+#~ msgstr "Nieaktywne"
+
+#~ msgid "Inactive volume"
+#~ msgstr "Nieaktywny wolumin"
+
+#~ msgid "Incorrect Host Key"
+#~ msgstr "Niepoprawny klucz komputera"
+
+#~ msgid "Index Memory"
+#~ msgstr "Pamięć indeksu"
+
+#~ msgid "Info and above"
+#~ msgstr "Informacje i powyżej"
+
+#~ msgid "Information about the Docker storage pool is not available."
+#~ msgstr ""
+#~ "Informacje o puli urządzeń do przechowywania danych Docker są niedostępne."
+
+#~ msgid "Initializing..."
+#~ msgstr "Inicjowanie…"
+
+#~ msgid "Install"
+#~ msgstr "Zainstaluj"
+
+#~ msgid "Install All Updates"
+#~ msgstr "Zainstaluj wszystkie aktualizacje"
+
+#~ msgid "Install NFS Support"
+#~ msgstr "Zainstaluj obsługę NFS"
+
+#~ msgid "Install Security Updates"
+#~ msgstr "Zainstaluj aktualizacje zabezpieczeń"
+
+#~ msgid "Install Software"
+#~ msgstr "Zainstaluj oprogramowanie"
+
+#~ msgid "Install setroubleshoot-server to troubleshoot SELinux events."
+#~ msgstr ""
+#~ "Należy zainstalować setroubleshoot-server, aby rozwiązywać problemy ze "
+#~ "zdarzeniami SELinuksa."
+
+#~ msgid "Installation Source"
+#~ msgstr "Źródło instalacji"
+
+#~ msgid "Installation Source Type"
+#~ msgstr "Typ źródła instalacji"
+
+#~ msgid "Installation Source should not be empty"
+#~ msgstr "Źródło instalacji nie może być puste"
+
+#~ msgid "Installed"
+#~ msgstr "Zainstalowano"
+
+#~ msgid "Installed products"
+#~ msgstr "Zainstalowane produkty"
+
+#~ msgid "Installing"
+#~ msgstr "Instalowanie"
+
+#~ msgid "Installing $0"
+#~ msgstr "Instalowanie $0"
+
+#~ msgid "Instantiate"
+#~ msgstr "Wystąpienie"
+
+#~ msgid "Interface"
+#~ msgstr "Interfejs"
+
+#~ msgid "Interfaces"
+#~ msgstr "Interfejsy"
+
+#~ msgid "Internal Error: Invalid challenge header"
+#~ msgstr "Wewnętrzny błąd: nieprawidłowy nagłówek wyzwania"
+
+#~ msgid "Internal error"
+#~ msgstr "Wewnętrzny błąd"
+
+#~ msgid "Invalid address $0"
+#~ msgstr "Nieprawidłowy adres $0"
+
+#~ msgid "Invalid credentials"
+#~ msgstr "Nieprawidłowe dane uwierzytelniania"
+
+#~ msgid "Invalid date format"
+#~ msgstr "Nieprawidłowy format daty"
+
+#~ msgid "Invalid date format and invalid time format"
+#~ msgstr "Nieprawidłowy format daty i nieprawidłowy format czasu"
+
+#~ msgid "Invalid date format."
+#~ msgstr "Nieprawidłowy format daty."
+
+#~ msgid "Invalid expiration date"
+#~ msgstr "Nieprawidłowa data wygaśnięcia"
+
+#~ msgid "Invalid file permissions"
+#~ msgstr "Nieprawidłowe uprawnienia pliku"
+
+#~ msgid "Invalid filename"
+#~ msgstr "Nieprawidłowa nazwa pliku"
+
+#~ msgid "Invalid key"
+#~ msgstr "Nieprawidłowy klucz"
+
+#~ msgid "Invalid metric $0"
+#~ msgstr "Nieprawidłowe parametry $0"
+
+#~ msgid "Invalid number of days"
+#~ msgstr "Nieprawidłowa liczba dni"
+
+#~ msgid "Invalid number."
+#~ msgstr "Nieprawidłowy numer."
+
+#~ msgid "Invalid port"
+#~ msgstr "Nieprawidłowy port"
+
+#~ msgid "Invalid prefix $0"
+#~ msgstr "Nieprawidłowy przedrostek $0"
+
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "Nieprawidłowy przedrostek lub maska sieci $0"
+
+#~ msgid "Invalid time format"
+#~ msgstr "Nieprawidłowy format czasu"
+
+#~ msgid "Invalid time zone"
+#~ msgstr "Nieprawidłowa strefa czasowa"
+
+#~ msgid "Invalid username or password"
+#~ msgstr "Nieprawidłowa nazwa użytkownika lub hasło"
+
+#~ msgid "IoT Gateway"
+#~ msgstr "Brama IoT"
+
+#~ msgid "Is sshd running on a different port?"
+#~ msgstr "Czy sshd jest uruchomione na innym porcie?"
+
+#~ msgid "Jobs"
+#~ msgstr "Zadania"
+
+#~ msgid "Join"
+#~ msgstr "Dołącz"
+
+#~ msgid "Join Domain"
+#~ msgstr "Dołącz do domeny"
+
+#~ msgid "Join a Domain"
+#~ msgstr "Dołącz do domeny"
+
+#~ msgid "Joining this domain is not supported"
+#~ msgstr "Dołączenie do tej domeny jest nieobsługiwane"
+
+#~ msgid "Joins Namespace Of"
+#~ msgstr "Dołącza do przestrzeni nazw"
+
+#~ msgid "Journal"
+#~ msgstr "Dziennik"
+
+#~ msgid "Journal entry"
+#~ msgstr "Wpis dziennika"
+
+#~ msgid "Journal entry not found"
+#~ msgstr "Nie odnaleziono wpisu dziennika"
+
+#~ msgid ""
+#~ "Kdump service not installed. Please ensure package kexec-tools is "
+#~ "installed."
+#~ msgstr ""
+#~ "Usługa Kdump nie jest zainstalowana. Proszę się upewnić, że pakiet kexec-"
+#~ "tools jest zainstalowany."
+
+#~ msgid "Keep connection"
+#~ msgstr "Utrzymywanie połączenia"
+
+#~ msgid "Kerberos Based SSO"
+#~ msgstr "SSO oparte na Kerberos"
+
+#~ msgid "Kerberos Ticket"
+#~ msgstr "Zgłoszenie Kerberos"
+
+#~ msgid "Kernel"
+#~ msgstr "Jądro"
+
+#~ msgid "Kernel Dump"
+#~ msgstr "Zrzut jądra"
+
+#~ msgid "Kernel Version"
+#~ msgstr "Wersja jądra"
+
+#~ msgid "Key Ring Path"
+#~ msgstr "Ścieżka do bazy kluczy"
+
+#~ msgid "Key can't be retrieved"
+#~ msgstr "Nie można pobrać klucza"
+
+#~ msgid "Key does not work"
+#~ msgstr "Klucz nie działa"
+
+#~ msgid "Key is obsolete"
+#~ msgstr "Klucz jest przestarzały"
+
+#~ msgid "Key is okay"
+#~ msgstr "Klucz jest w porządku"
+
+#~ msgid "Key server address"
+#~ msgstr "Adres serwera kluczy"
+
+#~ msgid "Kubelet Version"
+#~ msgstr "Wersja Kubelet"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Klaster Kubernetes"
+
+#~ msgid "LACP Key"
+#~ msgstr "Klucz LACP"
+
+#~ msgid "Labels"
+#~ msgstr "Etykiety"
+
+#~ msgid "Labels:"
+#~ msgstr "Etykiety:"
+
+#~ msgid "Laptop"
+#~ msgstr "Laptop"
+
+#~ msgid "Last 24 hours"
+#~ msgstr "Ostatni dzień"
+
+#~ msgid "Last 7 days"
+#~ msgstr "Ostatni tydzień"
+
+#~ msgid "Last Heartbeat"
+#~ msgstr "Ostatnie bicie serca"
+
+#~ msgid "Last Login"
+#~ msgstr "Ostatnie logowanie"
+
+#~ msgid "Last Status Change"
+#~ msgstr "Ostatnia zmiana stanu"
+
+#~ msgid "Last Trigger"
+#~ msgstr "Ostatnio wyzwolono"
+
+#~ msgid "Last Updated"
+#~ msgstr "Ostatnio zaktualizowano"
+
+#~ msgid "Last checked: $0 ago"
+#~ msgstr "Ostatnio wyszukano: $0 temu"
+
+#~ msgid "Latest Version"
+#~ msgstr "Najnowsza wersja"
+
+#~ msgid "Launch Remote Viewer"
+#~ msgstr "Uruchom zdalną przeglądarkę"
+
+#~ msgid "Leave"
+#~ msgstr "Opuść"
+
+#~ msgid "Leave Domain"
+#~ msgstr "Opuść domenę"
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in user. "
+#~ "If you enter a different username, that user will always be used when "
+#~ "connecting to this machine."
+#~ msgstr ""
+#~ "Pozostawienie pustego pola spowoduje łączenie z tą maszyną jako obecnie "
+#~ "zalogowany użytkownik. Jeśli zostanie podana inna nazwa użytkownika, to "
+#~ "będzie ona zawsze używana podczas łączenia z tą maszyną."
+
+#~ msgid ""
+#~ "Leave blank to connect to this machine as the currently logged in "
+#~ "user{{#default_user}} ({{default_user}}){{/default_user}}. If you enter a "
+#~ "different username, that user will always be used connecting to this "
+#~ "machine."
+#~ msgstr ""
+#~ "Pozostawienie pustego pola spowoduje łączenie z tą maszyną jako obecnie "
+#~ "zalogowany użytkownik {{#default_user}}({{default_user}}){{/"
+#~ "default_user}}. Jeśli zostanie podana inna nazwa użytkownika, to będzie "
+#~ "ona zawsze używana podczas łączenia z tą maszyną."
+
+#~ msgid "Licensed under:"
+#~ msgstr "Na warunkach licencji:"
+
+#~ msgid "Link Monitoring"
+#~ msgstr "Monitorowanie łącza"
+
+#~ msgid "Link Watch"
+#~ msgstr "Obserwacja łącza"
+
+#~ msgid "Link down delay"
+#~ msgstr "Opóźnienie łącza w dół"
+
+#~ msgid "Link local"
+#~ msgstr "Link-local"
+
+#~ msgid "Link to another container"
+#~ msgstr "Odnośnik do innego kontenera"
+
+#~ msgid "Link up delay"
+#~ msgstr "Opóźnienie łącza w górę"
+
+#~ msgid "Links"
+#~ msgstr "Łącza"
+
+#~ msgid "Links:"
+#~ msgstr "Odnośniki:"
+
+#~ msgid "Load Balancing"
+#~ msgstr "Równoważenie obciążenia"
+
+#~ msgid "Load earlier entries"
+#~ msgstr "Wczytaj wcześniejsze wpisy"
+
+#~ msgid "Loading ..."
+#~ msgstr "Wczytywanie…"
+
+#~ msgid "Loading available updates failed"
+#~ msgstr "Wczytanie dostępnych aktualizacji się nie powiodło"
+
+#~ msgid "Loading available updates, please wait..."
+#~ msgstr "Wczytywanie dostępnych aktualizacji, proszę czekać…"
+
+#~ msgid "Loading data ..."
+#~ msgstr "Wczytywanie danych…"
+
+#~ msgid "Loading..."
+#~ msgstr "Wczytywanie…"
+
+#~ msgid "Local Accounts"
+#~ msgstr "Lokalne konta"
+
+#~ msgid "Local Disks"
+#~ msgstr "Lokalne dyski"
+
+#~ msgid "Local Filesystem"
+#~ msgstr "Lokalny system plików"
+
+#~ msgid "Local Mount Point"
+#~ msgstr "Lokalny punkt montowania"
+
+#~ msgid "Location"
+#~ msgstr "Położenie"
+
+#~ msgid "Lock"
+#~ msgstr "Zablokuj"
+
+#~ msgid "Lock Account"
+#~ msgstr "Zablokuj konto"
+
+#~ msgid "Lock account on $0"
+#~ msgstr "Zablokowanie konta w dniu $0"
+
+#~ msgid "Lock to prevent privileged tasks"
+#~ msgstr "Zablokuj, aby uniemożliwić zdania wymagające uprawnień"
+
+#~ msgid "Locked"
+#~ msgstr "Zablokowano"
+
+#~ msgid "Locking $target"
+#~ msgstr "Blokowanie $target"
+
+#~ msgid "Log In"
+#~ msgstr "Zaloguj"
+
+#~ msgid "Log Out"
+#~ msgstr "Wyloguj"
+
+#~ msgid "Log in again"
+#~ msgstr "Zaloguj ponownie"
+
+#~ msgid "Log in to {{host}}"
+#~ msgstr "Zaloguj do {{host}}"
+
+#~ msgid "Log in with your server user account."
+#~ msgstr "Logowanie za pomocą konta użytkownika serwera."
+
+#~ msgid "Log into OpenShift command line tools:"
+#~ msgstr "Logowanie do narzędzi wiersza poleceń OpenShift:"
+
+#~ msgid "Log into the registry:"
+#~ msgstr "Logowanie do rejestru:"
+
+#~ msgid "Log messages"
+#~ msgstr "Komunikaty dziennika"
+
+#~ msgid "Logged In"
+#~ msgstr "Zalogowano"
+
+#~ msgid "Logical"
+#~ msgstr "Logiczny"
+
+#~ msgid "Logical Size"
+#~ msgstr "Rozmiar logiczny"
+
+#~ msgid "Logical Unit Number"
+#~ msgstr "Numer jednostki logicznej"
+
+#~ msgid "Logical Volume"
+#~ msgstr "Wolumin logiczny"
+
+#~ msgid "Logical Volume (Snapshot)"
+#~ msgstr "Wolumin logiczny (migawka)"
+
+#~ msgid "Logical Volume of $0"
+#~ msgstr "Wolumin logiczny $0"
+
+#~ msgid "Login"
+#~ msgstr "Login"
+
+#~ msgid "Login Again"
+#~ msgstr "Zaloguj ponownie"
+
+#~ msgid "Login Password"
+#~ msgstr "Hasło logowania"
+
+#~ msgid "Login commands"
+#~ msgstr "Polecenia logowania"
+
+#~ msgid "Login failed"
+#~ msgstr "Logowanie się nie powiodło"
+
+#~ msgid "Login/password or activation key required to register."
+#~ msgstr "Do rejestracji wymagany jest login/hasło lub klucz aktywacji."
+
+#~ msgid "Logout Successful"
+#~ msgstr "Pomyślnie wylogowano"
+
+#~ msgid "Logs"
+#~ msgstr "Dzienniki"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "Utracono połączenie. Próbowanie ponownego połączenia"
+
+#~ msgid "Low Profile Desktop"
+#~ msgstr "Komputer stacjonarny o mniejszym rozmiarze"
+
+#~ msgid "Lunch Box"
+#~ msgstr "Lunch Box"
+
+#~ msgid "MAC"
+#~ msgstr "MAC"
+
+#~ msgid "MAC Address"
+#~ msgstr "Adres MAC"
+
+#~ msgid "MAC Address:"
+#~ msgstr "Adres MAC:"
+
+#~ msgid "MIGRATE action failed"
+#~ msgstr "Działanie MIGRATE się nie powiodło"
+
+#~ msgid "MII (Recommended)"
+#~ msgstr "MII (zalecane)"
+
+#~ msgid "MTU"
+#~ msgstr "MTU"
+
+#~ msgid "MTU must be a positive number"
+#~ msgstr "MTU musi być liczbą dodatnią"
+
+#~ msgid "Machine ID"
+#~ msgstr "Identyfikator komputera"
+
+#~ msgid "Machine SSH Key Fingerprints"
+#~ msgstr "Odciski kluczy SSH komputera"
+
+#~ msgid "Machines"
+#~ msgstr "Komputery"
+
+#~ msgid "Main Server Chassis"
+#~ msgstr "Główna obudowa serwera"
+
+#~ msgid "Managed"
+#~ msgstr "Zarządzane"
+
+#~ msgid "Manifest"
+#~ msgstr "Manifest"
+
+#~ msgid "Manual"
+#~ msgstr "Ręczne"
+
+#~ msgid "Manual Connection"
+#~ msgstr "Ręczne połączenie"
+
+#~ msgid "Manually"
+#~ msgstr "Ręcznie"
+
+#~ msgid "Manually verify the key on the server: "
+#~ msgstr "Ręczne sprawdzanie poprawności klucza na serwerze:"
+
+#~ msgid "Marking $target as faulty"
+#~ msgstr "Oznaczanie $target jako wadliwe"
+
+#~ msgid "Mask"
+#~ msgstr "Maskuj"
+
+#~ msgid "Mask Forcefully"
+#~ msgstr "Wymuś maskowanie"
+
+#~ msgid "Master"
+#~ msgstr "Główne"
+
+#~ msgid "Maximum message age $max_age"
+#~ msgstr "Maksymalny wiek komunikatu $max_age"
+
+#~ msgid "Medium"
+#~ msgstr "Nośnik"
+
+#~ msgid "Member of"
+#~ msgstr "Element"
+
+#~ msgid "Member of RAID Device"
+#~ msgstr "Element urządzenia RAID"
+
+#~ msgid "Member of RAID Device $0"
+#~ msgstr "Element urządzenia RAID $0"
+
+#~ msgid "Members"
+#~ msgstr "Elementy"
+
+#~ msgid "Membership"
+#~ msgstr "Członkostwo"
+
+#~ msgid "Memory"
+#~ msgstr "Pamięć"
+
+#~ msgctxt "page-title"
+#~ msgid "Memory"
+#~ msgstr "Pamięć"
+
+#~ msgid "Memory Utilization: $0%"
+#~ msgstr "Użycie pamięci: $0%"
+
+#~ msgid "Memory limit"
+#~ msgstr "Ograniczenie pamięci"
+
+#~ msgid "Memory should be positive number"
+#~ msgstr "Pamięć musi być liczbą dodatnią"
+
+#~ msgid "Memory usage:"
+#~ msgstr "Użycie pamięci:"
+
+#~ msgid "Memory:"
+#~ msgstr "Pamięć:"
+
+#~ msgid "Message"
+#~ msgstr "Komunikat"
+
+#~ msgid "Message to logged in users"
+#~ msgstr "Wiadomość do zalogowanych użytkowników"
+
+#~ msgid "Metadata"
+#~ msgstr "Metadane"
+
+#~ msgid "Metadata Used"
+#~ msgstr "Użyte metadane"
+
+#~ msgid "Method"
+#~ msgstr "Metoda"
+
+#~ msgid "MiB"
+#~ msgstr "MiB"
+
+#~ msgid "Migrate To:"
+#~ msgstr "Migracja do:"
+
+#~ msgid "Mini PC"
+#~ msgstr "Mini PC"
+
+#~ msgid "Mini Tower"
+#~ msgstr "Mini Tower"
+
+#~ msgid "Minute needs to be a number between 0-59"
+#~ msgstr "Minuta musi być liczbą między 0 a 59"
+
+#~ msgid "Minutes"
+#~ msgstr "Minuty"
+
+#~ msgid "Mode"
+#~ msgstr "Tryb"
+
+#~ msgid "Model"
+#~ msgstr "Model"
+
+#~ msgid "Model type"
+#~ msgstr "Typ modelu"
+
+#~ msgid "Modify"
+#~ msgstr "Modyfikuj"
+
+#~ msgid "Modifying $target"
+#~ msgstr "Modyfikowanie $target"
+
+#~ msgid "Monday"
+#~ msgstr "poniedziałek"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "Odstęp monitorowania"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "Cele monitorowania"
+
+#~ msgid "Monitors"
+#~ msgstr "Monitory"
+
+#~ msgid "More"
+#~ msgstr "Więcej"
+
+#~ msgid "More Information"
+#~ msgstr "Więcej informacji"
+
+#~ msgid "More details"
+#~ msgstr "Więcej informacji"
+
+#~ msgid "Mount"
+#~ msgstr "Zamontuj"
+
+#~ msgid "Mount Location"
+#~ msgstr "Położenie punktu montowania"
+
+#~ msgid "Mount Options"
+#~ msgstr "Opcje montowania"
+
+#~ msgid "Mount Point"
+#~ msgstr "Punkt montowania"
+
+#~ msgid "Mount at boot"
+#~ msgstr "Montowanie podczas uruchamiania"
+
+#~ msgid "Mount container volumes"
+#~ msgstr "Zamontuj woluminy kontenera"
+
+#~ msgid "Mount options"
+#~ msgstr "Opcje montowania"
+
+#~ msgid "Mount point can not be empty"
+#~ msgstr "Punkt montowania nie może być pusty"
+
+#~ msgid "Mount point cannot be empty."
+#~ msgstr "Punkt montowania nie może być pusty."
+
+#~ msgid "Mount point must start with \"/\"."
+#~ msgstr "Punkt montowania musi zaczynać się od „/”."
+
+#~ msgid "Mount read only"
+#~ msgstr "Montowanie tylko do odczytu"
+
+#~ msgid "Mounted At"
+#~ msgstr "Zamontowano w"
+
+#~ msgid "Mounting"
+#~ msgstr "Montowanie"
+
+#~ msgid "Mounting $target"
+#~ msgstr "Montowanie $target"
+
+#~ msgid "Multi-system Chassis"
+#~ msgstr "Obudowa dla wielu komputerów"
+
+#~ msgid "N/A"
+#~ msgstr "Nie dotyczy"
+
+#~ msgid "NFS"
+#~ msgstr "NFS"
+
+#~ msgid "NFS Mount"
+#~ msgstr "Punkt montowania NFS"
+
+#~ msgid "NFS Mounts"
+#~ msgstr "Punkty montowania NFS"
+
+#~ msgid "NFS Support not installed"
+#~ msgstr "Obsługa NFS nie jest zainstalowana"
+
+#~ msgid "NSNA Ping"
+#~ msgstr "Ping NSNA"
+
+#~ msgid "NTFS - Compatible with most systems"
+#~ msgstr "NTFS — zgodne z większością systemów"
+
+#~ msgid "NTP Server"
+#~ msgstr "Serwer NTP"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "Nazwa nie może być pusta."
+
+#~ msgid "Name cannot be empty."
+#~ msgstr "Nazwa nie może być pusta."
+
+#~ msgid "Name cannot be longer than 127 characters."
+#~ msgstr "Nazwa nie może być dłuższa niż 127 znaków."
+
+#~ msgid "Name cannot contain the character '$0'."
+#~ msgstr "Nazwa nie może zawierać znaku „$0”."
+
+#~ msgid "Name cannot contain whitespace."
+#~ msgstr "Nazwa nie może zawierać spacji."
+
+#~ msgid "Name should not be empty"
+#~ msgstr "Nazwa nie może być pusta"
+
+#~ msgid "Name should not consist of empty characters only"
+#~ msgstr "Nazwa nie może składać się tylko z pustych znaków"
+
+#~ msgid "Namespace"
+#~ msgstr "Przestrzeń nazw"
+
+#~ msgid "Namespace cannot be empty."
+#~ msgstr "Przestrzeń nazw nie może być pusta."
+
+#~ msgid "Need at least one NTP server"
+#~ msgstr "Wymagany jest co najmniej jeden serwer NTP"
+
+#~ msgid "Network"
+#~ msgstr "Sieć"
+
+#~ msgid "Network Traffic"
+#~ msgstr "Ruch sieciowy"
+
+#~ msgid "Network keys"
+#~ msgstr "Klucze sieciowe"
+
+#~ msgid "Networking"
+#~ msgstr "Sieć"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "Sieć"
+
+#~ msgid "Networking Logs"
+#~ msgstr "Dzienniki sieci"
+
+#~ msgid "Networks"
+#~ msgstr "Sieci"
+
+#~ msgid "Never"
+#~ msgstr "Nigdy"
+
+#~ msgid "Never expire password"
+#~ msgstr "Bez wygasania hasła"
+
+#~ msgid "Never lock account"
+#~ msgstr "Bez blokowania konta"
+
+#~ msgid "New Group"
+#~ msgstr "Nowa grupa"
+
+#~ msgid "New NFS Mount"
+#~ msgstr "Nowy punkt montowania NFS"
+
+#~ msgid "New Password"
+#~ msgstr "Nowe hasło"
+
+#~ msgid "New Project"
+#~ msgstr "Nowy projekt"
+
+#~ msgid "New image stream"
+#~ msgstr "Nowy strumień obrazu"
+
+#~ msgid "New password was not accepted"
+#~ msgstr "Nie przyjęto nowego hasła"
+
+#~ msgid "New project"
+#~ msgstr "Nowy projekt"
+
+#~ msgid "Next"
+#~ msgstr "Dalej"
+
+#~ msgid "Next Run"
+#~ msgstr "Następne uruchomienie"
+
+#~ msgid "Nice"
+#~ msgstr "Nice"
+
+#~ msgid "No"
+#~ msgstr "Nie"
+
+#~ msgid "No Delay"
+#~ msgstr "Brak opóźnienia"
+
+#~ msgid "No Filesystem"
+#~ msgstr "Brak systemu plików"
+
+#~ msgid "No Logical Volumes"
+#~ msgstr "Brak woluminów logicznych"
+
+#~ msgid "No NFS mounts set up"
+#~ msgstr "Nie ustawiono żadnych punktów montowania NFS"
+
+#~ msgid "No PEM-encoded certificate found"
+#~ msgstr "Nie odnaleziono certyfikatu zakodowanego jako PEM"
+
+#~ msgid "No PEM-encoded private key found"
+#~ msgstr "Nie odnaleziono klucza prywatnego zakodowanego jako PEM"
+
+#~ msgid "No Pods are using this claim"
+#~ msgstr "Żaden pojemnik nie używa tej deklaracji"
+
+#~ msgid "No SELinux alerts."
+#~ msgstr "Brak alarmów SELinuksa."
+
+#~ msgid "No VM found in oVirt."
+#~ msgstr "Nie odnaleziono maszyn wirtualnych w oprogramowaniu oVirt."
+
+#~ msgid "No VM is running or defined on this host"
+#~ msgstr ""
+#~ "Brak uruchomionych lub określonych maszyn wirtualnych na tym gospodarzu"
+
+#~ msgid "No Volume Bound"
+#~ msgstr "Żaden wolumin nie został przypisany"
+
+#~ msgid "No additional local storage found."
+#~ msgstr ""
+#~ "Nie odnaleziono dodatkowych lokalnych urządzeń do przechowywania danych."
+
+#~ msgid "No alias specified"
+#~ msgstr "Nie podano aliasu"
+
+#~ msgid "No applications installed or available"
+#~ msgstr "Brak zainstalowanych lub dostępnych aplikacji"
+
+#~ msgid "No archive has been created."
+#~ msgstr "Nie utworzono archiwum."
+
+#~ msgid "No boot device found"
+#~ msgstr "Nie odnaleziono żadnego urządzenia startowego"
+
+#~ msgid "No carrier"
+#~ msgstr "Brak operatora"
+
+#~ msgid "No configuration found"
+#~ msgstr "Nie odnaleziono konfiguracji"
+
+#~ msgid "No console defined for this virtual machine."
+#~ msgstr "Dla tej maszyny wirtualnej nie określono żadnej konsoli."
+
+#~ msgid "No container specified"
+#~ msgstr "Nie podano kontenera"
+
+#~ msgid "No containers"
+#~ msgstr "Brak kontenerów"
+
+#~ msgid "No containers that match the current filter"
+#~ msgstr "Brak kontenerów pasujących do obecnego filtru"
+
+#~ msgid "No description provided."
+#~ msgstr "Nie podano opisu."
+
+#~ msgid "No disks are available."
+#~ msgstr "Brak dostępnych dysków."
+
+#~ msgid "No disks defined for this VM"
+#~ msgstr "Nie określono dysków dla tej maszyny wirtualnej"
+
+#~ msgid "No drives attached"
+#~ msgstr "Nie dołączono dysków"
+
+#~ msgid "No free space"
+#~ msgstr "Brak wolnego miejsca"
+
+#~ msgid "No groups are present."
+#~ msgstr "Brak grup."
+
+#~ msgid "No host keys found."
+#~ msgstr "Nie odnaleziono kluczy komputera."
+
+#~ msgid "No iSCSI targets set up"
+#~ msgstr "Nie ustawiono żadnych celów iSCSI"
+
+#~ msgid "No image streams are present."
+#~ msgstr "Żadne strumienie obrazów nie są obecne."
+
+#~ msgid "No images"
+#~ msgstr "Brak obrazów"
+
+#~ msgid "No images pushed"
+#~ msgstr "Nie wysłano obrazów"
+
+#~ msgid "No images that match the current filter"
+#~ msgstr "Brak obrazów pasujących do obecnego filtru"
+
+#~ msgid "No installation package found for this application."
+#~ msgstr "Nie odnaleziono pakietu instalacji dla tego programu."
+
+#~ msgid "No installed products on the system."
+#~ msgstr "Brak zainstalowanych produktów w systemie."
+
+#~ msgid "No matching files found"
+#~ msgstr "Nie odnaleziono pasujących plików"
+
+#~ msgid "No media inserted"
+#~ msgstr "Nie włożono żadnego nośnika"
+
+#~ msgid ""
+#~ "No memory reserved. Append a crashkernel option to the kernel command "
+#~ "line (e.g. in /etc/default/grub) to reserve memory at boot time. Example: "
+#~ "crashkernel=512M"
+#~ msgstr ""
+#~ "Brak zastrzeżonej pamięci. Proszę dodać opcję crashkernel do wiersza "
+#~ "poleceń jądra (tzn. w /etc/default/grub), aby zastrzec pamięć w czasie "
+#~ "uruchamiania. Przykład: crashkernel=512M"
+
+#~ msgid ""
+#~ "No metadata file was selected. Please select a Kubernetes metadata file."
+#~ msgstr ""
+#~ "Nie wybrano żadnego pliku metadanych. Proszę wybrać plik metadanych "
+#~ "Kubernetes."
+
+#~ msgid "No network interfaces defined for this VM"
+#~ msgstr "Nie określono interfejsów sieciowych dla tej maszyny wirtualnej"
+
+#~ msgid "No nodes in cluster"
+#~ msgstr "Brak węzłów w klastrze"
+
+#~ msgid "No oVirt connection"
+#~ msgstr "Brak połączenia oVirt"
+
+#~ msgid "No open ports"
+#~ msgstr "Brak otwartych portów"
+
+#~ msgid "No partitioning"
+#~ msgstr "Brak partycjonowania"
+
+#~ msgid "No pods deployed"
+#~ msgstr "Brak wdrożonych pojemników"
+
+#~ msgid "No pods replicated"
+#~ msgstr "Nie utworzono kopii żadnych pojemników"
+
+#~ msgid "No pods scheduled"
+#~ msgstr "Nie zaplanowano żadnych pojemników"
+
+#~ msgid "No pods selected"
+#~ msgstr "Nie wybrano żadnego pojemnika"
+
+#~ msgid "No projects are present."
+#~ msgstr "Brak projektów."
+
+#~ msgid "No real name specified"
+#~ msgstr "Nie podano nazwy obszaru"
+
+#~ msgid "No results for $0"
+#~ msgstr "Brak wyników dla $0"
+
+#~ msgid "No running containers"
+#~ msgstr "Brak uruchomionych kontenerów"
+
+#~ msgid "No running containers that match the current filter"
+#~ msgstr "Brak uruchomionych kontenerów pasujących do obecnego filtru"
+
+#~ msgid "No storage set up as RAID"
+#~ msgstr "Nie ustawiono żadnego urządzenia do przechowywania danych jako RAID"
+
+#~ msgid "No storage set up as VDO"
+#~ msgstr "Nie ustawiono żadnego urządzenia do przechowywania danych jako VDO"
+
+#~ msgid "No such file or directory"
+#~ msgstr "Nie ma takiego pliku lub katalogu"
+
+#~ msgid "No tags are present."
+#~ msgstr "Brak etykiet."
+
+#~ msgid "No updates pending"
+#~ msgstr "Brak oczekujących aktualizacji"
+
+#~ msgid "No user name specified"
+#~ msgstr "Nie podano nazwy użytkownika"
+
+#~ msgid "No users are present."
+#~ msgstr "Brak użytkowników."
+
+#~ msgid "No virtual machines"
+#~ msgstr "Brak maszyn wirtualnych"
+
+#~ msgid "No volume groups created"
+#~ msgstr "Nie utworzono grup woluminów"
+
+#~ msgid "No volumes are present."
+#~ msgstr "Brak woluminów."
+
+#~ msgid "No volumes in use"
+#~ msgstr "Żadne woluminy nie są używane"
+
+#~ msgid "Node"
+#~ msgstr "Węzeł"
+
+#~ msgid "Node:"
+#~ msgstr "Węzeł:"
+
+#~ msgid "Nodes"
+#~ msgstr "Węzły"
+
+#~ msgid "Nodes are the machines that run your containers."
+#~ msgstr "Węzły to komputery, na których działają kontenery."
+
+#~ msgid "None"
+#~ msgstr "Brak"
+
+#~ msgid "Not Available"
+#~ msgstr "Niedostępne"
+
+#~ msgid "Not Ready"
+#~ msgstr "Niegotowe"
+
+#~ msgid "Not a valid number of replicas"
+#~ msgstr "Nie jest prawidłowym liczbą replik"
+
+#~ msgid "Not a valid private key"
+#~ msgstr "Nieprawidłowy klucz prywatny"
+
+#~ msgid "Not a valid value for Host"
+#~ msgstr "Nieprawidłowa wartość dla gospodarza"
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "Brak upoważnienia do łączenia z Dockerem w tym systemie"
+
+#~ msgid "Not authorized to upload-report"
+#~ msgstr "Brak upoważnienia do „upload-report”"
+
+#~ msgid "Not available"
+#~ msgstr "Niedostępne"
+
+#~ msgid "Not connected"
+#~ msgstr "Nie połączono"
+
+#~ msgid "Not deployed"
+#~ msgstr "Nie wdrożono"
+
+#~ msgid "Not found"
+#~ msgstr "Nie odnaleziono"
+
+#~ msgid "Not mounted"
+#~ msgstr "Niezamontowane"
+
+#~ msgid "Not permitted to perform this action."
+#~ msgstr "Brak uprawnień do wykonania tego działania."
+
+#~ msgid "Not running"
+#~ msgstr "Niedziałające"
+
+#~ msgid "Not synchronized"
+#~ msgstr "Niesynchronizowane"
+
+#~ msgid "Not yet synced"
+#~ msgstr "Jeszcze nie zsynchronizowano"
+
+#~ msgid "Note"
+#~ msgstr "Uwaga"
+
+#~ msgid "Notebook"
+#~ msgstr "Notebook"
+
+#~ msgid "Notice and above"
+#~ msgstr "Uwagi i powyżej"
+
+#~ msgid "OK"
+#~ msgstr "OK"
+
+#~ msgid "OS"
+#~ msgstr "System operacyjny"
+
+#~ msgid "OS Type:"
+#~ msgstr "Typ systemu operacyjnego:"
+
+#~ msgid "OS Vendor"
+#~ msgstr "Producent systemu operacyjnego"
+
+#~ msgid "OS Versions"
+#~ msgstr "Wersje systemu operacyjnego"
+
+#~ msgid "Occurred $0"
+#~ msgstr "Wystąpiło $0"
+
+#~ msgid "Occurred between $0 and $1"
+#~ msgstr "Wystąpiło między $0 a $1"
+
+#~ msgid "Off"
+#~ msgstr "Wyłączone"
+
+#~ msgid "Ok"
+#~ msgstr "OK"
+
+#~ msgid "Old Password"
+#~ msgstr "Poprzednie hasło"
+
+#~ msgid "Old password not accepted"
+#~ msgstr "Nie przyjęto poprzedniego hasła"
+
+#~ msgid "On"
+#~ msgstr "Włączone"
+
+#~ msgid "On Build"
+#~ msgstr "Podczas budowania"
+
+#~ msgid "On Failure"
+#~ msgstr "Podczas niepowodzenia"
+
+#~ msgid "On a mounted device"
+#~ msgstr "Na zamontowanym urządzeniu"
+
+#~ msgid "On failure, retry $0 time"
+#~ msgid_plural "On failure, retry $0 times"
+#~ msgstr[0] "Po niepowodzeniu próbowanie ponownie $0 raz"
+#~ msgstr[1] "Po niepowodzeniu próbowanie ponownie $0 razy"
+#~ msgstr[2] "Po niepowodzeniu próbowanie ponownie $0 razy"
+
+#~ msgid "One Time Password"
+#~ msgstr "Hasło jednorazowe"
+
+#~ msgid "Only $0 of $1 are used."
+#~ msgstr "Tylko $0 z $1 jest używane."
+
+#~ msgid "Only Emergency"
+#~ msgstr "Tylko awaryjne"
+
+#~ msgid "Only alphabets, numbers, : , _ , . , @ , - are allowed."
+#~ msgstr "Dozwolone są tylko litery, liczby i znaki „:”, „_”, „.”, „@”, „-”."
+
+#~ msgid "Only files of size $0 MiB and less are supported"
+#~ msgstr "Obsługiwane są tylko pliki o rozmiarze $0 MiB lub mniejszym"
+
+#~ msgid "Ooops!"
+#~ msgstr "Ups!"
+
+#~ msgid "Operation '$operation' on $target"
+#~ msgstr "Działanie „$operation” na $target"
+
+#~ msgctxt "storage"
+#~ msgid "Optical Drive"
+#~ msgstr "Napęd optyczny"
+
+#~ msgid "Optimized for:"
+#~ msgstr "Optymalizacja dla:"
+
+#~ msgid "Options"
+#~ msgstr "Opcje"
+
+#~ msgid "Organization"
+#~ msgstr "Organizacja"
+
+#~ msgid "Other"
+#~ msgstr "Inne"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Other Data"
+#~ msgstr "Inne dane"
+
+#~ msgid "Other Devices"
+#~ msgstr "Inne urządzenia"
+
+#~ msgid "Other Options"
+#~ msgstr "Inne opcje"
+
+#~ msgid "Overview"
+#~ msgstr "Przegląd"
+
+#~ msgid "Overwrite existing data with zeros"
+#~ msgstr "Zastąp istniejące dane zerami"
+
+#~ msgid "PCI"
+#~ msgstr "PCI"
+
+#~ msgid "PD Name"
+#~ msgstr "Nazwa PD"
+
+#~ msgid "Package information"
+#~ msgstr "Informacje o pakiecie"
+
+#~ msgid "PackageKit crashed"
+#~ msgstr "Usługa PackageKit uległa awarii"
+
+#~ msgid "PackageKit is not installed"
+#~ msgstr "Usługa PackageKit nie jest zainstalowana"
+
+#~ msgid "PackageKit reported error code $0"
+#~ msgstr "Usługa PackageKit zgłosiła kod błędu $0"
+
+#~ msgid "Parent"
+#~ msgstr "Nadrzędne"
+
+#~ msgid "Parent $parent"
+#~ msgstr "Nadrzędne $parent"
+
+#~ msgid "Part Of"
+#~ msgstr "Część"
+
+#~ msgid "Part of "
+#~ msgstr "Część "
+
+#~ msgid "Partition"
+#~ msgstr "Partycja"
+
+#~ msgid "Partition of $0"
+#~ msgstr "Partycja $0"
+
+#~ msgid "Partitioning"
+#~ msgstr "Partycjonowanie"
+
+#~ msgid "Passive"
+#~ msgstr "Pasywnie"
+
+#~ msgid "Passphrase"
+#~ msgstr "Hasło"
+
+#~ msgid "Passphrase cannot be empty"
+#~ msgstr "Hasło nie może być puste"
+
+#~ msgid "Passphrases do not match"
+#~ msgstr "Hasła się nie zgadzają"
+
+#~ msgid "Password"
+#~ msgstr "Hasło"
+
+#~ msgid "Password Expiration"
+#~ msgstr "Wygasanie hasła"
+
+#~ msgid "Password is not acceptable"
+#~ msgstr "Hasło jest do przyjęcia"
+
+#~ msgid "Password is too weak"
+#~ msgstr "Hasło jest za słabe"
+
+#~ msgid "Password must be changed"
+#~ msgstr "Należy zmienić hasło"
+
+#~ msgid "Password not accepted"
+#~ msgstr "Nie przyjęto hasła"
+
+#~ msgid ""
+#~ "Password not usable for privileged tasks or to connect to other machines"
+#~ msgstr ""
+#~ "Hasło nieodpowiednie dla zadań wymagających uprawnień lub do łączenia "
+#~ "z innymi komputerami"
+
+#~ msgid "Paste JSON below, "
+#~ msgstr "Proszę wkleić plik JSON poniżej "
+
+#~ msgid "Paste the contents of your public SSH key file here"
+#~ msgstr "Proszę tutaj wkleić zawartość pliku publicznego klucza SSH"
+
+#~ msgid "Path"
+#~ msgstr "Ścieżka"
+
+#~ msgid "Path cost"
+#~ msgstr "Koszt ścieżki"
+
+#~ msgid "Path cost $path_cost"
+#~ msgstr "Koszt ścieżki $path_cost"
+
+#~ msgid "Path on Server"
+#~ msgstr "Ścieżka na serwerze"
+
+#~ msgid "Path on server cannot be empty."
+#~ msgstr "Ścieżka na serwerze nie może być pusta."
+
+#~ msgid "Path on server must start with \"/\"."
+#~ msgstr "Ścieżka na serwerze musi zaczynać się od „/”."
+
+#~ msgid "Path to ISO file on host's file system"
+#~ msgstr "Ścieżka do pliku ISO w systemie plików gospodarza"
+
+#~ msgid "Path to file"
+#~ msgstr "Ścieżka do pliku"
+
+#~ msgid "Paths"
+#~ msgstr "Ścieżki"
+
+#~ msgid "Pending Volume Claims"
+#~ msgstr "Oczekujące deklaracje woluminów"
+
+#~ msgid "Performance Profile"
+#~ msgstr "Profil wydajności"
+
+#~ msgid "Peripheral Chassis"
+#~ msgstr "Obudowa peryferyjna"
+
+#~ msgid "Permanent"
+#~ msgstr "Trwałe"
+
+#~ msgid "Permission denied"
+#~ msgstr "Odmowa dostępu"
+
+#~ msgid "Persistent Volumes"
+#~ msgstr "Trwałe woluminy"
+
+#~ msgid "Phase"
+#~ msgstr "Faza"
+
+#~ msgid "Physical"
+#~ msgstr "Fizyczny"
+
+#~ msgid "Physical Volume"
+#~ msgstr "Wolumin fizyczny"
+
+#~ msgid "Physical Volumes"
+#~ msgstr "Woluminy fizyczne"
+
+#~ msgid "Physical volume of $0"
+#~ msgstr "Wolumin fizyczny $0"
+
+#~ msgid "Physical volumes can not be resized here."
+#~ msgstr "Nie można tutaj zmieniać rozmiaru woluminów fizycznych."
+
+#~ msgid "Ping Interval"
+#~ msgstr "Odstęp między pingami"
+
+#~ msgid "Ping Target"
+#~ msgstr "Cel pingu"
+
+#~ msgid "Pizza Box"
+#~ msgstr "Pizza Box"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "Proszę potwierdzić usunięcie $0"
+
+#~ msgid "Please confirm forced deletion of $0"
+#~ msgstr "Proszę potwierdzić wymuszenie usunięcia $0"
+
+#~ msgid "Please confirm network key removal"
+#~ msgstr "Proszę potwierdzić usunięcie klucza sieciowego"
+
+#~ msgid "Please confirm stopping of $0"
+#~ msgstr "Proszę potwierdzić zatrzymanie $0"
+
+#~ msgid "Please confirm, the host shall be switched to maintenance mode."
+#~ msgstr ""
+#~ "Proszę potwierdzić, gospodarz zostanie przełączony do trybu konserwacji."
+
+#~ msgid "Please create another namespace for $0 \"$1\""
+#~ msgstr "Proszę dodać następną przestrzeń nazw dla $0 „$1”"
+
+#~ msgid "Please install the {0} package"
+#~ msgstr "Proszę zainstalować pakiet {0}"
+
+#~ msgid "Please provide a GlusterFS volume name"
+#~ msgstr "Proszę podać prawidłową nazwę woluminu GlusterFS"
+
+#~ msgid "Please provide a username"
+#~ msgstr "Proszę podać nazwę użytkownika"
+
+#~ msgid "Please provide a valid NFS server"
+#~ msgstr "Proszę podać prawidłowy serwer NFS"
+
+#~ msgid "Please provide a valid address"
+#~ msgstr "Proszę podać prawidłowy adres"
+
+#~ msgid "Please provide a valid filesystem type"
+#~ msgstr "Proszę podać prawidłowy typ systemu plików"
+
+#~ msgid "Please provide a valid interface"
+#~ msgstr "Proszę podać prawidłowy interfejs"
+
+#~ msgid "Please provide a valid logical unit number"
+#~ msgstr "Proszę podać prawidłowy numer jednostki logicznej"
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "Proszę podać prawidłową przestrzeń nazw."
+
+#~ msgid "Please provide a valid path"
+#~ msgstr "Proszę podać prawidłową ścieżkę"
+
+#~ msgid "Please provide a valid qualified name"
+#~ msgstr "Proszę podać prawidłową nazwę kwalifikowaną"
+
+#~ msgid "Please provide a valid storage capacity."
+#~ msgstr ""
+#~ "Proszę podać prawidłową pojemność urządzenia do przechowywania danych."
+
+#~ msgid "Please provide a valid target"
+#~ msgstr "Proszę podać prawidłowy cel"
+
+#~ msgid ""
+#~ "Please provide fully qualified domain name and port of the oVirt engine."
+#~ msgstr ""
+#~ "Proszę podać w pełni kwalifikowaną nazwę domeny i port mechanizmu oVirt."
+
+#~ msgid ""
+#~ "Please provide valid oVirt engine fully qualified domain name (FQDN) and "
+#~ "port (443 by default)"
+#~ msgstr ""
+#~ "Proszę podać prawidłową w pełni kwalifikowaną nazwę domeny mechanizmu "
+#~ "oVirt (FQDN) i port (domyślnie 443)"
+
+#~ msgid ""
+#~ "Please refer to oVirt's $0 for more information about Remote Viewer setup."
+#~ msgstr ""
+#~ "$0 oprogramowania oVirt zawiera więcej informacji o ustawianiu zdalnej "
+#~ "przeglądarki."
+
+#~ msgid "Please select a valid access mode"
+#~ msgstr "Proszę wybrać prawidłowy tryb dostępu"
+
+#~ msgid "Please select a valid endpoint"
+#~ msgstr "Proszę wybrać prawidłowy punkt końcowy"
+
+#~ msgid "Please select a valid policy option."
+#~ msgstr "Proszę wybrać prawidłową opcję polityki."
+
+#~ msgid "Please specify an expiration date"
+#~ msgstr "Proszę podać datę wygaśnięcia"
+
+#~ msgid "Please specify the host to connect to"
+#~ msgstr "Proszę podać komputer, z którym się połączyć"
+
+#~ msgid "Please start the virtual machine to access its console."
+#~ msgstr ""
+#~ "Proszę uruchomić maszynę wirtualną, aby uzyskać dostęp do jej konsoli."
+
+#~ msgid "Please try another term"
+#~ msgstr "Proszę spróbować innego terminu"
+
+#~ msgid "Please type an address"
+#~ msgstr "Proszę wpisać adres"
+
+#~ msgid "Please wait till VMs list is loaded from the server."
+#~ msgstr "Proszę poczekać na wczytanie listy maszyn wirtualnych z serwera."
+
+#~ msgid "Please wait till list of templates is loaded from the server."
+#~ msgstr "Proszę poczekać na wczytanie listy szablonów z serwera."
+
+#~ msgid "Plug"
+#~ msgstr "Podłącz"
+
+#~ msgid "Pod"
+#~ msgstr "Pojemnik"
+
+#~ msgid "Pod Address"
+#~ msgstr "Adres pojemnika"
+
+#~ msgid "Pod Endpoints"
+#~ msgstr "Punkty końcowe pojemnika"
+
+#~ msgid "Pod Replicated"
+#~ msgstr "Utworzono kopię pojemnika"
+
+#~ msgid "Pod Selector"
+#~ msgstr "Wybór pojemnika"
+
+#~ msgid "Pod:"
+#~ msgstr "Pojemnik:"
+
+#~ msgid "Pods"
+#~ msgstr "Pojemniki"
+
+#~ msgid ""
+#~ "Pods contain one or more containers that run together on a node, "
+#~ "containing your application code."
+#~ msgstr ""
+#~ "Pojemniki zawierają jeden lub więcej kontenerów działających razem na "
+#~ "węźle, zawierających kod aplikacji."
+
+#~ msgid "Pool"
+#~ msgstr "Pula"
+
+#~ msgid "Pool Name"
+#~ msgstr "Nazwa puli"
+
+#~ msgid "Pool for Thin Logical Volumes"
+#~ msgstr "Pula dla cienkich woluminów logicznych"
+
+#~ msgid "Pool for Thin Volumes"
+#~ msgstr "Pula dla cienkich woluminów"
+
+#~ msgid "Pool for thinly provisioned volumes"
+#~ msgstr "Pula dla cienko nadzorowanych woluminów"
+
+#~ msgid "Populate"
+#~ msgstr "Wypełnij"
+
+#~ msgid "Port"
+#~ msgstr "Port"
+
+#~ msgid "Portable"
+#~ msgstr "Przenośne"
+
+#~ msgid "Portgroup"
+#~ msgstr "Grupa portów"
+
+#~ msgid "Ports"
+#~ msgstr "Porty"
+
+#~ msgid "Ports:"
+#~ msgstr "Porty:"
+
+#~ msgid "Power Options"
+#~ msgstr "Opcje zasilania"
+
+#~ msgid "Prefix length"
+#~ msgstr "Długość przedrostka"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "Długość przedrostka lub maska sieci"
+
+#~ msgid "Preparing"
+#~ msgstr "Przygotowywanie"
+
+#~ msgid "Preparing for Maintenance"
+#~ msgstr "Przygotowywanie do konserwacji"
+
+#~ msgid "Preserve"
+#~ msgstr "Zachowaj"
+
+#~ msgid "Preset"
+#~ msgstr "Ustaw wstępnie"
+
+#~ msgid "Preset Forcefully"
+#~ msgstr "Wymuś ustawienie wstępne"
+
+#~ msgid "Pretty Host Name"
+#~ msgstr "Czytelna nazwa komputera"
+
+#~ msgid "Primary"
+#~ msgstr "Główne"
+
+#~ msgid "Priority"
+#~ msgstr "Priorytet"
+
+#~ msgid "Priority $priority"
+#~ msgstr "Priorytet $priority"
+
+#~ msgid "Private: Allow only specific users or groups to pull images"
+#~ msgstr "Prywatne: tylko podani użytkownicy lub grupy mogą pobierać obrazy"
+
+#~ msgid "Privileged tasks not available"
+#~ msgstr "Zadania wymagające uprawnień są niedostępne"
+
+#~ msgid "Problem details"
+#~ msgstr "Informacje o problemie"
+
+#~ msgid "Problem info"
+#~ msgstr "Informacje o problemie"
+
+#~ msgid "Problems"
+#~ msgstr "Problemy"
+
+#~ msgid "Process"
+#~ msgstr "Proces"
+
+#~ msgid "Product ID"
+#~ msgstr "Identyfikator produktu"
+
+#~ msgid "Product name"
+#~ msgstr "Nazwa produktu"
+
+#~ msgid "Project"
+#~ msgstr "Projekt"
+
+#~ msgid "Project Members"
+#~ msgstr "Elementy projektu"
+
+#~ msgid "Project access policy allows anonymous users to pull images."
+#~ msgstr ""
+#~ "Polityka dostępu projektu umożliwia pobieranie obrazów anonimowym "
+#~ "użytkownikom."
+
+#~ msgid "Project access policy allows any authenticated user to pull images."
+#~ msgstr ""
+#~ "Polityka dostępu projektu umożliwia pobieranie obrazów wszystkim "
+#~ "uwierzytelnionym użytkownikom."
+
+#~ msgid "Project access policy only allows specific members to access images."
+#~ msgstr ""
+#~ "Polityka dostępu projektu umożliwia dostęp do obrazów tylko konkretnym "
+#~ "członkom."
+
+#~ msgid "Project website"
+#~ msgstr "Strona projektu"
+
+#~ msgid "Project:"
+#~ msgstr "Projekt:"
+
+#~ msgid "Projects"
+#~ msgstr "Projekty"
+
+#~ msgid "Prompting via passwd timed out"
+#~ msgstr "Pytanie przez passwd przekroczyło czas oczekiwania"
+
+#~ msgid "Prompting via ssh-add timed out"
+#~ msgstr "Pytanie przez ssh-add przekroczyło czas oczekiwania"
+
+#~ msgid "Prompting via ssh-keygen timed out"
+#~ msgstr "Pytanie przez ssh-keygen przekroczyło czas oczekiwania"
+
+#~ msgid "Propagates Reload To"
+#~ msgstr "Wysyła ponowne wczytanie do"
+
+#~ msgid "Protocol"
+#~ msgstr "Protokół"
+
+#~ msgid "Proxy"
+#~ msgstr "Pośrednik"
+
+#~ msgid "Proxy Version"
+#~ msgstr "Wersja pośrednika"
+
+#~ msgid "Public Key"
+#~ msgstr "Klucz publiczny"
+
+#~ msgid "Public pulling repo"
+#~ msgstr "Publiczne repozytorium do pobierania"
+
+#~ msgid "Pull an image:"
+#~ msgstr "Pobranie obrazu:"
+
+#~ msgid "Pull from"
+#~ msgstr "Pobierz z"
+
+#~ msgid "Pull specific tags from another image repository"
+#~ msgstr "Pobierz podane etykiety z innego repozytorium obrazów"
+
+#~ msgid "Purpose"
+#~ msgstr "Zastosowanie"
+
+#~ msgid "Push an image:"
+#~ msgstr "Wysłanie obrazu:"
+
+#~ msgid "Qualified Name"
+#~ msgstr "Nazwa kwalifikowana"
+
+#~ msgid "RAID ($0)"
+#~ msgstr "RAID ($0)"
+
+#~ msgid "RAID 0"
+#~ msgstr "RAID 0"
+
+#~ msgid "RAID 0 (Stripe)"
+#~ msgstr "RAID 0 (Striping)"
+
+#~ msgid "RAID 1"
+#~ msgstr "RAID 1"
+
+#~ msgid "RAID 1 (Mirror)"
+#~ msgstr "RAID 1 (Lustrzany)"
+
+#~ msgid "RAID 10"
+#~ msgstr "RAID 10"
+
+#~ msgid "RAID 10 (Stripe of Mirrors)"
+#~ msgstr "RID 10 (Striping lustrzany)"
+
+#~ msgid "RAID 4"
+#~ msgstr "RAID 4"
+
+#~ msgid "RAID 4 (Dedicated Parity)"
+#~ msgstr "RAID 4 (Dedykowana parzystość)"
+
+#~ msgid "RAID 5"
+#~ msgstr "RAID 5"
+
+#~ msgid "RAID 5 (Distributed Parity)"
+#~ msgstr "RAID 5 (Rozproszona parzystość)"
+
+#~ msgid "RAID 6"
+#~ msgstr "RAID 6"
+
+#~ msgid "RAID 6 (Double Distributed Parity)"
+#~ msgstr "RAID 6 (Podwójna rozproszona parzystość)"
+
+#~ msgid "RAID Chassis"
+#~ msgstr "Obudowa RAID"
+
+#~ msgid "RAID Device"
+#~ msgstr "Urządzenie RAID"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "Urządzenie RAID $0"
+
+#~ msgid "RAID Devices"
+#~ msgstr "Urządzenia RAID"
+
+#~ msgid "RAID Level"
+#~ msgstr "Poziom macierzy RAID"
+
+#~ msgid "RAID Member"
+#~ msgstr "Element macierzy RAID"
+
+#~ msgid "REBOOT action failed"
+#~ msgstr "Działanie REBOOT się nie powiodło"
+
+#~ msgid "Rack Mount Chassis"
+#~ msgstr "Obudowa do montowania w szafie"
+
+#~ msgid "Rados Block Device"
+#~ msgstr "Urządzenie blokowe Rados"
+
+#~ msgid "Random"
+#~ msgstr "Losowo"
+
+#~ msgid "Raw to a device"
+#~ msgstr "Surowe do urządzenia"
+
+#~ msgid "Read Only"
+#~ msgstr "Tylko do odczytu"
+
+#~ msgid "Read and write from a single node"
+#~ msgstr "Odczyt i zapis z jednego węzła"
+
+#~ msgid "Read and write from multiple nodes"
+#~ msgstr "Odczyt i zapis z wielu węzłów"
+
+#~ msgid "Read only from multiple nodes"
+#~ msgstr "Tylko odczyt z wielu węzłów"
+
+#~ msgid "ReadOnly"
+#~ msgstr "Tylko do odczytu"
+
+#~ msgid "ReadWrite"
+#~ msgstr "Odczyt i zapis"
+
+#~ msgid "Reading"
+#~ msgstr "Odczytywanie"
+
+#~ msgid "Reading..."
+#~ msgstr "Odczytywanie…"
+
+#~ msgid "Readonly"
+#~ msgstr "Tylko do odczytu"
+
+#~ msgid "Ready"
+#~ msgstr "Gotowe"
+
+#~ msgctxt "verb"
+#~ msgid "Ready"
+#~ msgstr "Gotowe"
+
+#~ msgid "Real Host Name"
+#~ msgstr "Prawdziwa nazwa komputera"
+
+#~ msgid ""
+#~ "Real host name can only contain lower-case characters, digits, dashes, "
+#~ "and periods (with populated subdomains)"
+#~ msgstr ""
+#~ "Prawdziwa nazwa komputera może zawierać tylko małe litery, cyfry, "
+#~ "myślniki i kropki (z zaludnionymi poddomenami)"
+
+#~ msgid "Real host name must be 64 characters or less"
+#~ msgstr "Prawdziwa nazwa komputera może mieć co najwyżej 64 znaki"
+
+#~ msgid "Reason"
+#~ msgstr "Przyczyna"
+
+#~ msgid "Reboot"
+#~ msgstr "Uruchom ponownie"
+
+#~ msgid "Receiving"
+#~ msgstr "Odbieranie"
+
+#~ msgid "Recent"
+#~ msgstr "Ostatnie"
+
+#~ msgid "Reclaim Policy"
+#~ msgstr "Polityka odzyskiwania"
+
+#~ msgid "Recovering"
+#~ msgstr "Odzyskiwanie"
+
+#~ msgid "Recovering RAID Device $target"
+#~ msgstr "Przywracanie urządzenia RAID $target"
+
+#~ msgid "Recycle"
+#~ msgstr "Użyj ponownie"
+
+#~ msgid "Reformat and add disks"
+#~ msgstr "Sformatuj ponownie i dodaj dyski"
+
+#~ msgid "Refreshing package information"
+#~ msgstr "Odświeżanie informacji o pakietach"
+
+#~ msgid "Refusing to connect. Host is unknown"
+#~ msgstr "Odmowa połączenia. Komputer jest nieznany"
+
+#~ msgid "Refusing to connect. Hostkey does not match"
+#~ msgstr "Odmowa połączenia. Klucze komputera się nie zgadzają"
+
+#~ msgid "Refusing to connect. Hostkey is unknown"
+#~ msgstr "Odmowa połączenia. Klucz komputera jest nieznany"
+
+#~ msgid "Register"
+#~ msgstr "Zarejestruj"
+
+#~ msgid "Register New Volume"
+#~ msgstr "Zarejestruj nowy wolumin"
+
+#~ msgid "Register Persistent Volume"
+#~ msgstr "Zarejestruj trwały wolumin"
+
+#~ msgid "Register oVirt"
+#~ msgstr "Zarejestruj oprogramowanie oVirt"
+
+#~ msgid "Register system"
+#~ msgstr "Zarejestruj system"
+
+#~ msgid "Registering oVirt to Cockpit"
+#~ msgstr "Rejestrowanie oprogramowania oVirt w programie Cockpit"
+
+#~ msgid "Register…"
+#~ msgstr "Zarejestruj…"
+
+#~ msgid "Reload"
+#~ msgstr "Wczytaj ponownie"
+
+#~ msgid "Reload Propagated From"
+#~ msgstr "Odebrano ponowne wczytanie z"
+
+#~ msgid "Remote URL"
+#~ msgstr "Zdalny adres URL"
+
+#~ msgid "Remote over NFS"
+#~ msgstr "Zdalnie przez NFS"
+
+#~ msgid "Remote over SSH"
+#~ msgstr "Zdalnie przez SSH"
+
+#~ msgid "Remote registry is insecure"
+#~ msgstr "Zdalny rejestr jest niezabezpieczony"
+
+#~ msgid "Remote;Administration;"
+#~ msgstr "Zdalna;Administracja;"
+
+#~ msgctxt "storage"
+#~ msgid "Removable Drive"
+#~ msgstr "Dysk wymienny"
+
+#~ msgid "Removals:"
+#~ msgstr "Usuwane:"
+
+#~ msgid "Remove"
+#~ msgstr "Usuń"
+
+#~ msgid "Remove $0"
+#~ msgstr "Usuń $0"
+
+#~ msgid "Remove Group"
+#~ msgstr "Usuń grupę"
+
+#~ msgid "Remove Member"
+#~ msgstr "Usuń element"
+
+#~ msgid "Remove Role"
+#~ msgstr "Usuń rolę"
+
+#~ msgid "Remove User"
+#~ msgstr "Usuń użytkownika"
+
+#~ msgid "Remove device"
+#~ msgstr "Usuń urządzenie"
+
+#~ msgid "Remove image tag"
+#~ msgstr "Usuń etykietę obrazu"
+
+#~ msgid "Remove key"
+#~ msgstr "Usuń klucz"
+
+#~ msgid "Remove membership"
+#~ msgstr "Usuń członkostwo"
+
+#~ msgid "Removing"
+#~ msgstr "Usuwanie"
+
+#~ msgid "Removing $0"
+#~ msgstr "Usuwanie $0"
+
+#~ msgid "Removing $target from RAID Device"
+#~ msgstr "Usuwanie $target z urządzenia RAID"
+
+#~ msgid ""
+#~ "Removing <b>$0</b> will break the connection to the server, and will make "
+#~ "the administration UI unavailable."
+#~ msgstr ""
+#~ "Usunięcie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid "Removing network keys might prevent unattended booting."
+#~ msgstr ""
+#~ "Usunięcie kluczy sieciowych może uniemożliwić uruchamianie bez nadzoru."
+
+#~ msgid "Removing physical volume from $target"
+#~ msgstr "Usuwanie woluminu fizycznego z $target"
+
+#~ msgid "Rename"
+#~ msgstr "Zmień nazwę"
+
+#~ msgid "Rename Logical Volume"
+#~ msgstr "Zmiana nazwy woluminu logicznego"
+
+#~ msgid "Rename Volume Group"
+#~ msgstr "Zmień nazwę grupy woluminów"
+
+#~ msgid "Renaming $target"
+#~ msgstr "Zmienianie nazwy $target"
+
+#~ msgid "Repairing $target"
+#~ msgstr "Naprawianie $target"
+
+#~ msgid "Repeat Daily"
+#~ msgstr "Powtarzanie codziennie"
+
+#~ msgid "Repeat Hourly"
+#~ msgstr "Powtarzanie co godzinę"
+
+#~ msgid "Repeat Monthly"
+#~ msgstr "Powtarzanie co miesiąc"
+
+#~ msgid "Repeat Weekly"
+#~ msgstr "Powtarzanie co tydzień"
+
+#~ msgid "Repeat Yearly"
+#~ msgstr "Powtarzanie co roku"
+
+#~ msgid "Replicas"
+#~ msgstr "Repliki"
+
+#~ msgid "Replication Controller"
+#~ msgstr "Kontroler replikacji"
+
+#~ msgid "Replication Controllers"
+#~ msgstr "Kontrolery replikacji"
+
+#~ msgid ""
+#~ "Replication controllers dynamically create instances of pods from "
+#~ "templates, and remove pods when necessary."
+#~ msgstr ""
+#~ "Kontrolery replikacji dynamicznie tworzą wystąpienia pojemników "
+#~ "z szablonów, i usuwają je w razie potrzeby."
+
+#~ msgid "Report"
+#~ msgstr "Zgłoś"
+
+#~ msgid "Reported"
+#~ msgstr "Zgłoszono"
+
+#~ msgid "Reporter 'reporter-ureport' not found."
+#~ msgstr "Nie odnaleziono modułu zgłaszania „reporter-ureport”."
+
+#~ msgid "Reporting was unsucessful. Try running `reporter-ureport -d "
+#~ msgstr "Zgłoszenie się nie powiodło. Proszę wykonać „reporter-ureport -d "
+
+#~ msgid "Repository"
+#~ msgstr "Repozytorium"
+
+#~ msgid "Repository URL"
+#~ msgstr "Adres URL repozytorium"
+
+#~ msgid "Requested"
+#~ msgstr "Żądany"
+
+#~ msgid "Requests"
+#~ msgstr "Żądania"
+
+#~ msgid "Require password change every $0 days"
+#~ msgstr "Wymaganie zmiany hasła co $0 dni"
+
+#~ msgid "Require password change on $0"
+#~ msgstr "Wymaganie zmiany hasła w dniu $0"
+
+#~ msgid "Required By"
+#~ msgstr "Wymagane przez"
+
+#~ msgid "Requires"
+#~ msgstr "Wymaga"
+
+#~ msgid "Requires Authentication"
+#~ msgstr "Wymaga uwierzytelnienia"
+
+#~ msgid "Requisite"
+#~ msgstr "Potrzebne"
+
+#~ msgid "Requisite Of"
+#~ msgstr "Potrzebne dla"
+
+#~ msgid "Reserved memory"
+#~ msgstr "Zastrzeżona pamięć"
+
+#~ msgid "Reset"
+#~ msgstr "Przywróć"
+
+#~ msgid "Reset Storage Pool"
+#~ msgstr "Przywróć pulę urządzeń do przechowywania danych"
+
+#~ msgid ""
+#~ "Resetting the storage pool will erase all containers and release disks in "
+#~ "the pool."
+#~ msgstr ""
+#~ "Przywrócenie puli urządzeń do przechowywania danych usunie wszystkie "
+#~ "kontenery i zwolni dyski w puli."
+
+#~ msgid "Resizing $target"
+#~ msgstr "Zmienianie rozmiaru $target"
+
+#~ msgid "Resolve above errors to continue"
+#~ msgstr "Należy rozwiązać powyższe błędy, aby kontynuować"
+
+#~ msgid "Restart"
+#~ msgstr "Uruchom ponownie"
+
+#~ msgid "Restart Count"
+#~ msgstr "Liczba ponownych uruchomień"
+
+#~ msgid "Restart Now"
+#~ msgstr "Uruchom ponownie teraz"
+
+#~ msgid "Restart Policy"
+#~ msgstr "Polityka ponownego uruchamiania"
+
+#~ msgid "Restart Policy:"
+#~ msgstr "Polityka ponownego uruchamiania:"
+
+#~ msgid "Restart Recommended"
+#~ msgstr "Ponowne uruchomienie jest zalecane"
+
+#~ msgid "Restarting"
+#~ msgstr "Ponowne uruchamianie"
+
+#~ msgid "Restoring connection"
+#~ msgstr "Przywracanie połączenia"
+
+#~ msgid "Retain"
+#~ msgstr "Zachowaj"
+
+#~ msgid "Retries:"
+#~ msgstr "Próby:"
+
+#~ msgid "Retrieving subscription status..."
+#~ msgstr "Pobieranie stanu subskrypcji…"
+
+#~ msgid "Retrieving the key from $0 has failed: $1."
+#~ msgstr "Pobranie klucza z $0 się nie powiodło: $1."
+
+#~ msgid "Reuse my password for privileged tasks"
+#~ msgstr "Użycie istniejącego hasła do zadań wymagających uprawnień"
+
+#~ msgid ""
+#~ "Reuse my password for privileged tasks and to connect to other machines"
+#~ msgstr ""
+#~ "Użycie istniejącego hasła do zadań wymagających uprawnień i łączenia "
+#~ "z innymi komputerami"
+
+#~ msgid "Revision"
+#~ msgstr "Wersja"
+
+#~ msgid "Role"
+#~ msgstr "Rola"
+
+#~ msgid "Roles"
+#~ msgstr "Role"
+
+#~ msgid "Round Robin"
+#~ msgstr "Round Robin"
+
+#~ msgid "Route"
+#~ msgstr "Trasa"
+
+#~ msgid "Routes"
+#~ msgstr "Trasy"
+
+#~ msgid "Run"
+#~ msgstr "Uruchom"
+
+#~ msgid "Run Here"
+#~ msgstr "Uruchom tutaj"
+
+#~ msgid "Run Image"
+#~ msgstr "Uruchom obraz"
+
+#~ msgid "Run as"
+#~ msgstr "Działanie jako"
+
+#~ msgid "Runner"
+#~ msgstr "Uruchamianie"
+
+#~ msgid "Running Since:"
+#~ msgstr "Działa od:"
+
+#~ msgid "SELinux Access Control Errors"
+#~ msgstr "Błędy kontroli dostępu SELinuksa"
+
+#~ msgid "SELinux Policy"
+#~ msgstr "Polityka SELinuksa"
+
+#~ msgid "SELinux Troubleshoot"
+#~ msgstr "Rozwiązywanie problemów z SELinuksem"
+
+#~ msgid "SELinux is disabled on the system"
+#~ msgstr "SELinux jest wyłączony w systemie"
+
+#~ msgid "SELinux is disabled on the system."
+#~ msgstr "SELinux jest wyłączony w systemie."
+
+#~ msgid "SELinux system status is unknown."
+#~ msgstr "Stan SELinuksa systemu jest nieznany."
+
+#~ msgid "SHUTDOWN action failed"
+#~ msgstr "Działanie SHUTDOWN się nie powiodło"
+
+#~ msgid "SMART self-test of $target"
+#~ msgstr "Test SMART $target"
+
+#~ msgid "SPICE"
+#~ msgstr "SPICE"
+
+#~ msgid "SPICE Address:"
+#~ msgstr "Adres SPICE:"
+
+#~ msgid "SPICE Port:"
+#~ msgstr "Port SPICE:"
+
+#~ msgid "SPICE TLS Port:"
+#~ msgstr "Port TLS SPICE:"
+
+#~ msgid "START action failed"
+#~ msgstr "Działanie START się nie powiodło"
+
+#~ msgid "STP Forward delay"
+#~ msgstr "Opóźnienie w przód STP"
+
+#~ msgid "STP Hello time"
+#~ msgstr "Czas powitania STP"
+
+#~ msgid "STP Maximum message age"
+#~ msgstr "Maksymalny wiek komunikatu STP"
+
+#~ msgid "STP Priority"
+#~ msgstr "Priorytet STP"
+
+#~ msgid "SUSPEND action failed"
+#~ msgstr "Działanie SUSPEND się nie powiodło"
+
+#~ msgid "Saturday"
+#~ msgstr "sobota"
+
+#~ msgid "Save"
+#~ msgstr "Zapisz"
+
+#~ msgid "Scheduled Pods"
+#~ msgstr "Zaplanowane pojemniki"
+
+#~ msgid "Scheduling Disabled"
+#~ msgstr "Wyłączono planowanie"
+
+#~ msgid "Sealed-case PC"
+#~ msgstr "Sealed-case PC"
+
+#~ msgid "Seconds"
+#~ msgstr "Sekundy"
+
+#~ msgid "Secret"
+#~ msgstr "Sekret"
+
+#~ msgid "Secret File"
+#~ msgstr "Tajny plik"
+
+#~ msgid "Secret Name"
+#~ msgstr "Tajna nazwa"
+
+#~ msgid "Secret Volume"
+#~ msgstr "Tajny wolumin"
+
+#~ msgid "Secure Shell Keys"
+#~ msgstr "Klucze SSH"
+
+#~ msgid "Securely erasing $target"
+#~ msgstr "Bezpieczne usuwanie zawartości $target"
+
+#~ msgid "Security"
+#~ msgstr "Zabezpieczenia"
+
+#~ msgid "Security Updates Available"
+#~ msgstr "Dostępne są aktualizacje bezpieczeństwa"
+
+#~ msgid "Select"
+#~ msgstr "Wybierz"
+
+#~ msgid "Select Manifest File..."
+#~ msgstr "Wybierz plik manifestu…"
+
+#~ msgid "Select an object to see more details."
+#~ msgstr "Wybranie obiektu wyświetli więcej informacji."
+
+#~ msgid ""
+#~ "Select the users that you would like to be synchronized with {{#strong}}"
+#~ "{{host}}{{/strong}}"
+#~ msgstr ""
+#~ "Proszę wybrać użytkowników do synchronizacji z {{#strong}}{{host}}{{/"
+#~ "strong}}"
+
+#~ msgid "Send Non-Maskable Interrupt"
+#~ msgstr "Wyślij niemaskowalne przerwanie"
+
+#~ msgid "Send shortcut"
+#~ msgstr "Wyślij skrót"
+
+#~ msgid "Sending"
+#~ msgstr "Wysyłanie"
+
+#~ msgid "Serial Console"
+#~ msgstr "Konsola szeregowa"
+
+#~ msgid "Server"
+#~ msgstr "Serwer"
+
+#~ msgid "Server Address"
+#~ msgstr "Adres serwera"
+
+#~ msgid "Server Administrator"
+#~ msgstr "Administrator serwera"
+
+#~ msgid "Server address cannot be empty"
+#~ msgstr "Adres serwera nie może być pusty"
+
+#~ msgid "Server address cannot be empty."
+#~ msgstr "Adres serwera nie może być pusty."
+
+#~ msgid "Server can't be reached"
+#~ msgstr "Nie można połączyć z serwerem"
+
+#~ msgid "Server cannot be empty."
+#~ msgstr "Serwer nie może być pusty."
+
+#~ msgid "Server has closed the connection."
+#~ msgstr "Serwer zamknął połączenie."
+
+#~ msgid "Servers"
+#~ msgstr "Serwery"
+
+#~ msgid "Service"
+#~ msgstr "Usługa"
+
+#~ msgid "Service Account"
+#~ msgstr "Konto usługi"
+
+#~ msgid "Service Logs"
+#~ msgstr "Dzienniki serwera"
+
+#~ msgid "Service has an error"
+#~ msgstr "Usługa ma błąd"
+
+#~ msgid "Service is running"
+#~ msgstr "Usługa jest uruchomiona"
+
+#~ msgid "Service is starting"
+#~ msgstr "Usługa jest uruchamiana"
+
+#~ msgid "Service is stopped"
+#~ msgstr "Usługa jest zatrzymana"
+
+#~ msgid "Service is stopping"
+#~ msgstr "Usługa jest zatrzymywana"
+
+#~ msgid "Service name"
+#~ msgstr "Nazwa usługi"
+
+#~ msgid "Services"
+#~ msgstr "Usługi"
+
+#~ msgid ""
+#~ "Services group pods and provide a common DNS name and an optional, load-"
+#~ "balanced IP address to access them."
+#~ msgstr ""
+#~ "Usługi grupują pojemniki i dostarczają wspólną nazwę DNS oraz opcjonalny, "
+#~ "zrównoważony adres IP do uzyskiwania do nich dostępu."
+
+#~ msgid "Session"
+#~ msgstr "Sesja"
+
+#~ msgid "Session Affinity"
+#~ msgstr "Pokrewieństwo procesora"
+
+#~ msgid "Set"
+#~ msgstr "Ustaw"
+
+#~ msgid "Set Host name"
+#~ msgstr "Ustaw nazwę komputera"
+
+#~ msgid "Set Password"
+#~ msgstr "Ustaw hasło"
+
+#~ msgid "Set Time"
+#~ msgstr "Ustaw czas"
+
+#~ msgid "Set container environment variables"
+#~ msgstr "Ustaw zmienne środowiskowe kontenera"
+
+#~ msgid "Set to"
+#~ msgstr "Ustaw na"
+
+#~ msgid "Set up"
+#~ msgstr "Ustaw"
+
+#~ msgid ""
+#~ "Setting deviates from the configured state and will revert on the next "
+#~ "boot."
+#~ msgstr ""
+#~ "Ustawienie odbiega od skonfigurowanego stanu i zostanie przywrócone po "
+#~ "następnym uruchomieniu."
+
+#~ msgid "Setting up"
+#~ msgstr "Ustawianie"
+
+#~ msgid "Setting up loop device $target"
+#~ msgstr "Ustawianie urządzenia zwrotnego $target"
+
+#~ msgid "Severity"
+#~ msgstr "Ważność"
+
+#~ msgid "Severity:"
+#~ msgstr "Ważność:"
+
+#~ msgid "Share Name"
+#~ msgstr "Nazwa udziału"
+
+#~ msgid "Shared"
+#~ msgstr "Współdzielone"
+
+#~ msgid "Shared: Allow any authenticated user to pull images"
+#~ msgstr ""
+#~ "Współdzielone: umożliwia pobieranie obrazów wszystkim uwierzytelnionym "
+#~ "użytkownikom"
+
+#~ msgid "Shell"
+#~ msgstr "Powłoka"
+
+#~ msgid "Show all Containers"
+#~ msgstr "Wyświetl wszystkie kontenery"
+
+#~ msgid "Show all Deployment Configs"
+#~ msgstr "Wyświetl wszystkie konfiguracje wdrożeń"
+
+#~ msgid "Show all Nodes"
+#~ msgstr "Wyświetl wszystkie węzły"
+
+#~ msgid "Show all Persistent Volumes"
+#~ msgstr "Wyświetl wszystkie trwałe woluminy"
+
+#~ msgid "Show all Pod Containers"
+#~ msgstr "Wyświetl wszystkie kontenery pojemników"
+
+#~ msgid "Show all Pods"
+#~ msgstr "Wyświetl wszystkie pojemniki"
+
+#~ msgid "Show all Projects"
+#~ msgstr "Wyświetl wszystkie projekty"
+
+#~ msgid "Show all Replication Controllers"
+#~ msgstr "Wyświetl wszystkie kontrolery replikacji"
+
+#~ msgid "Show all Routes"
+#~ msgstr "Wyświetl wszystkie trasy"
+
+#~ msgid "Show all Services"
+#~ msgstr "Wyświetl wszystkie usługi"
+
+#~ msgid "Show all containers"
+#~ msgstr "Wyświetl wszystkie kontenery"
+
+#~ msgid "Show all image streams"
+#~ msgstr "Wyświetl wszystkie strumienie obrazów"
+
+#~ msgid "Show all images"
+#~ msgstr "Wyświetl wszystkie obrazy"
+
+#~ msgid "Show fingerprints"
+#~ msgstr "Wyświetl odciski"
+
+#~ msgid "Shrink"
+#~ msgstr "Zmniejsz"
+
+#~ msgid "Shrink Logical Volume"
+#~ msgstr "Zmniejsz wolumin logiczny"
+
+#~ msgid "Shut Down"
+#~ msgstr "Wyłącz"
+
+#~ msgid "Since"
+#~ msgstr "Od"
+
+#~ msgid "Since $0"
+#~ msgstr "Od $0"
+
+#~ msgid "Size"
+#~ msgstr "Rozmiar"
+
+#~ msgid "Size cannot be negative"
+#~ msgstr "Rozmiar nie może być ujemny"
+
+#~ msgid "Size cannot be zero"
+#~ msgstr "Rozmiar nie może wynosić zero"
+
+#~ msgid "Size is too large"
+#~ msgstr "Rozmiar jest za duży"
+
+#~ msgid "Size must be a number"
+#~ msgstr "Rozmiar musi być liczbą"
+
+#~ msgid "Size must be at least $0"
+#~ msgstr "Rozmiar musi wynosić co najmniej $0"
+
+#~ msgid "Skip Certificate Verification"
+#~ msgstr "Pomiń sprawdzanie poprawności certyfikatu"
+
+#~ msgid "Slot"
+#~ msgstr "Gniazdo"
+
+#~ msgid "Sockets"
+#~ msgstr "Gniazda"
+
+#~ msgid "Solid-State Disk"
+#~ msgstr "Dysk SSD"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "Dysk SSD"
+
+#~ msgid "Solution applied successfully"
+#~ msgstr "Pomyślnie zastosowano rozwiązanie"
+
+#~ msgid "Solution failed"
+#~ msgstr "Rozwiązanie się nie powiodło"
+
+#~ msgid "Solutions"
+#~ msgstr "Rozwiązania"
+
+#~ msgid ""
+#~ "Some other program is currently using the package manager, please wait..."
+#~ msgstr "Inny program obecnie używa menedżera pakietów, proszę czekać…"
+
+#~ msgid "Sorry, I don't know how to modify this volume"
+#~ msgstr "Nie wiadomo, jak zmodyfikować ten wolumin"
+
+#~ msgid "Source"
+#~ msgstr "Źródło"
+
+#~ msgid "Source URL"
+#~ msgstr "Źródłowy adres URL"
+
+#~ msgid "Source should start with http, ftp or nfs protocol"
+#~ msgstr "Źródło musi zaczynać się od protokołu http, ftp lub nfs"
+
+#~ msgid "Space-saving Computer"
+#~ msgstr "Komputer oszczędzający miejsce"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "Protokół STP"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "Protokół STP"
+
+#~ msgid "Spare"
+#~ msgstr "Zapasowe"
+
+#~ msgid "Specific Time"
+#~ msgstr "Podany czas"
+
+#~ msgid "Stable"
+#~ msgstr "Stabilna"
+
+#~ msgid "Start"
+#~ msgstr "Rozpocznij"
+
+#~ msgid "Start Docker"
+#~ msgstr "Uruchom Dockera"
+
+#~ msgid "Start Multipath"
+#~ msgstr "Uruchom urządzenie wielościeżkowe"
+
+#~ msgid "Start libvirt"
+#~ msgstr "Uruchom usługę libvirt"
+
+#~ msgid "Start the VM to see disk statistics."
+#~ msgstr ""
+#~ "Należy uruchomić maszynę wirtualną, aby wyświetlić statystyki dysku."
+
+#~ msgid "Starting RAID Device $target"
+#~ msgstr "Uruchamianie urządzenia RAID $target"
+
+#~ msgid "Starting swapspace $target"
+#~ msgstr "Uruchamianie przestrzeni wymiany $target"
+
+#~ msgid "Starts"
+#~ msgstr "Zaczyna się"
+
+#~ msgid "State"
+#~ msgstr "Stan"
+
+#~ msgid "State:"
+#~ msgstr "Stan:"
+
+#~ msgid "Stateless"
+#~ msgstr "Bez stanu"
+
+#~ msgid "Stateless:"
+#~ msgstr "Bez stanu:"
+
+#~ msgid "Static"
+#~ msgstr "Statyczne"
+
+#~ msgid "Status: $0"
+#~ msgstr "Stan: $0"
+
+#~ msgid "Status: System isn't registered"
+#~ msgstr "Stan: system nie jest zarejestrowany"
+
+#~ msgid "Stick PC"
+#~ msgstr "Stick PC"
+
+#~ msgid "Sticky"
+#~ msgstr "Lepkie"
+
+#~ msgid "Stop"
+#~ msgstr "Zatrzymaj"
+
+#~ msgid "Stop Device"
+#~ msgstr "Zatrzymaj urządzenie"
+
+#~ msgid "Stop and Unmount"
+#~ msgstr "Zatrzymaj i odmontuj"
+
+#~ msgid "Stop and remove"
+#~ msgstr "Zatrzymaj i usuń"
+
+#~ msgid "Stop with"
+#~ msgstr "Zatrzymanie za pomocą"
+
+#~ msgid "Stopped"
+#~ msgstr "Zatrzymano"
+
+#~ msgid "Stopping RAID Device $target"
+#~ msgstr "Zatrzymywanie urządzenia RAID $target"
+
+#~ msgid "Stopping swapspace $target"
+#~ msgstr "Zatrzymywanie przestrzeni wymiany $target"
+
+#~ msgid "Storage"
+#~ msgstr "Przechowywanie danych"
+
+#~ msgid "Storage Logs"
+#~ msgstr "Dzienniki urządzeń do przechowywania danych"
+
+#~ msgid "Storage Size"
+#~ msgstr "Rozmiar urządzenia do przechowywania danych"
+
+#~ msgid "Storage Size should not be negative number"
+#~ msgstr ""
+#~ "Rozmiar urządzenia do przechowywania danych nie może być liczbą ujemną"
+
+#~ msgid "Storage pool"
+#~ msgstr "Pula urządzeń do przechowywania danych"
+
+#~ msgid "Store Performance Data"
+#~ msgstr "Przechowywanie danych wydajności"
+
+#~ msgid "Store passphrase"
+#~ msgstr "Przechowaj hasło"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "Zachowane hasło"
+
+#~ msgid "Stored passphrase"
+#~ msgstr "Zachowane hasło"
+
+#~ msgid "Strategy"
+#~ msgstr "Strategia"
+
+#~ msgid "Sub Chassis"
+#~ msgstr "Obudowa podrzędna"
+
+#~ msgid "Sub Notebook"
+#~ msgstr "Sub Notebook"
+
+#~ msgid "Subscriptions"
+#~ msgstr "Subskrypcje"
+
+#~ msgid "Summary"
+#~ msgstr "Podsumowanie"
+
+#~ msgid "Sunday"
+#~ msgstr "niedziela"
+
+#~ msgid "Support is installed."
+#~ msgstr "Obsługa jest zainstalowana."
+
+#~ msgid "Suspend"
+#~ msgstr "Uśpij"
+
+#~ msgid "Swap"
+#~ msgstr "Partycja wymiany"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Swap Space"
+#~ msgstr "Przestrzeń wymiany"
+
+#~ msgid "Swap Used"
+#~ msgstr "Używana przestrzeń wymiany"
+
+#~ msgid "Switch Host to Maintenance"
+#~ msgstr "Przełącz gospodarza do konserwacji"
+
+#~ msgid "Switch off $0"
+#~ msgstr "Wyłącz $0"
+
+#~ msgid "Switch on $0"
+#~ msgstr "Włącz $0"
+
+#~ msgid "Switching host to maintenance mode failed. Received error: "
+#~ msgstr ""
+#~ "Przełączenie gospodarza do trybu konserwacji się nie powiodło. Otrzymany "
+#~ "błąd:"
+
+#~ msgid "Switching host to maintenance mode in progress ..."
+#~ msgstr "Trwa przełączanie gospodarza do trybu konserwacji…"
+
+#~ msgid ""
+#~ "Switching off <b>$0</b>  will break the connection to the server, and "
+#~ "will make the administration UI unavailable."
+#~ msgstr ""
+#~ "Wyłączenie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Switching off <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Wyłączenie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid ""
+#~ "Switching on <b>$0</b> will break the connection to the server, and will "
+#~ "make the administration UI unavailable."
+#~ msgstr ""
+#~ "Włączenie <b>$0</b> zerwie połączenie z serwerem i uniemożliwi "
+#~ "korzystanie z interfejsu administracji."
+
+#~ msgid "Sync all tags from a remote image repository"
+#~ msgstr "Zsynchronizuj wszystkie etykiety ze zdalnego repozytorium obrazów"
+
+#~ msgid "Synchronize"
+#~ msgstr "Zsynchronizuj"
+
+#~ msgid "Synchronize users"
+#~ msgstr "Zsynchronizuj użytkowników"
+
+#~ msgid "Synchronized"
+#~ msgstr "Synchronizowane"
+
+#~ msgid "Synchronized with {{Server}}"
+#~ msgstr "Synchronizowane z {{Server}}"
+
+#~ msgid "Synchronizing RAID Device $target"
+#~ msgstr "Synchronizowanie urządzenia RAID $target"
+
+#~ msgid "System"
+#~ msgstr "System"
+
+#~ msgid "System Information"
+#~ msgstr "Informacje o systemie"
+
+#~ msgid "System Not Registered"
+#~ msgstr "System nie jest zarejestrowany"
+
+#~ msgid "System Services"
+#~ msgstr "Usługi systemowe"
+
+#~ msgid "System Time"
+#~ msgstr "Czas systemowy"
+
+#~ msgid "System Up To Date"
+#~ msgstr "System jest aktualny"
+
+#~ msgid "System is up to date"
+#~ msgstr "System jest aktualny"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "TLS Termination"
+#~ msgstr "Zakończenie TLS"
+
+#~ msgid "Tablet"
+#~ msgstr "Tablet"
+
+#~ msgid "Tag"
+#~ msgstr "Etykieta"
+
+#~ msgid "Tags"
+#~ msgstr "Etykiety"
+
+#~ msgid "Target"
+#~ msgstr "Cel"
+
+#~ msgid "Target Portal"
+#~ msgstr "Portal docelowy"
+
+#~ msgid "Target World Wide Names"
+#~ msgstr "Docelowe WWN"
+
+#~ msgid "Targets"
+#~ msgstr "Cele"
+
+#~ msgid "Team"
+#~ msgstr "Zespół"
+
+#~ msgid "Team Port"
+#~ msgstr "Port zespołu"
+
+#~ msgid "Team Port Settings"
+#~ msgstr "Ustawienia portu zespołu"
+
+#~ msgid "Team Settings"
+#~ msgstr "Ustawienia zespołu"
+
+#~ msgid "Template"
+#~ msgstr "Szablon"
+
+#~ msgid "Templates"
+#~ msgstr "Szablony"
+
+#~ msgid "Templates of $0 cluster"
+#~ msgstr "Szablony klastra $0"
+
+#~ msgid "Terminal"
+#~ msgstr "Terminal"
+
+#~ msgid "Terminate Session"
+#~ msgstr "Zakończ sesję"
+
+#~ msgid "Test Configuration"
+#~ msgstr "Przetestuj konfigurację"
+
+#~ msgid "Test is only available while the kdump service is running."
+#~ msgstr "Test jest dostępny tylko, jeśli usługa kdump jest uruchomiona."
+
+#~ msgid "Test kdump settings"
+#~ msgstr "Przetestuj ustawienia kdump"
+
+#~ msgid "Testing connection"
+#~ msgstr "Testowanie połączenia"
+
+#~ msgid "The \"storaged\" API is not available on this system."
+#~ msgstr "API „storaged” nie jest dostępne w tym systemie."
+
+#~ msgid "The Docker storage pool cannot be managed on this system."
+#~ msgstr ""
+#~ "Pula urządzeń do przechowywania danych Docker nie może być zarządzana na "
+#~ "tym systemie."
+
+#~ msgid "The IP address or host name cannot contain whitespace."
+#~ msgstr "Adres IP lub nazwa komputera nie może zawierać spacji."
+
+#~ msgid "The RAID Array is in a degraded state"
+#~ msgstr "Macierz RAID jest w stanie zdegradowanym"
+
+#~ msgid "The RAID device must be running in order to add spare disks."
+#~ msgstr "Urządzenie RAID musi być uruchomione, aby dodać zapasowe dyski."
+
+#~ msgid "The RAID device must be running in order to remove disks."
+#~ msgstr "Urządzenie RAID musi być uruchomione, aby usunąć dyski."
+
+#~ msgid "The VM crashed."
+#~ msgstr "Maszyna wirtualna uległa awarii."
+
+#~ msgid "The VM is down."
+#~ msgstr "Maszyna wirtualna jest wyłączona."
+
+#~ msgid "The VM is going down."
+#~ msgstr "Maszyna wirtualna jest wyłączana."
+
+#~ msgid "The VM is idle."
+#~ msgstr "Maszyna wirtualna jest bezczynna."
+
+#~ msgid "The VM is in process of dying (shut down or crash is not completed)."
+#~ msgstr ""
+#~ "Maszyna wirtualna jest w trakcie umierania (wyłączanie lub nie ukończono "
+#~ "awarii)."
+
+#~ msgid "The VM is paused."
+#~ msgstr "Maszyna wirtualna jest wstrzymana."
+
+#~ msgid "The VM is running and will be forced off before deletion."
+#~ msgstr ""
+#~ "Maszyna wirtualna jest uruchomiona i przed jej usunięciem zostanie "
+#~ "wymuszone jej wyłączenie."
+
+#~ msgid "The VM is running."
+#~ msgstr "Maszyna wirtualna jest uruchomiona."
+
+#~ msgid "The VM is suspended by guest power management."
+#~ msgstr "Maszyna wirtualna jest uśpiona przez zarządzanie zasilaniem."
+
+#~ msgid ""
+#~ "The account '$0' will be forced to change their password on next login"
+#~ msgstr ""
+#~ "Konto „$0” będzie zmuszone do zmiany hasła podczas następnego logowania"
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "Adres zawiera nieprawidłowe znaki"
+
+#~ msgid ""
+#~ "The authenticity of host {{#strong}}{{host}}{{/strong}} can't be "
+#~ "established. Are you sure you want to continue connecting?"
+#~ msgstr ""
+#~ "Nie można ustalić autentyczności komputera {{#strong}}{{host}}{{/"
+#~ "strong}}. Na pewno kontynuować łączenie?"
+
+#~ msgid "The collected information will be stored locally on the system."
+#~ msgstr "Zebrane informacje będą przechowywane lokalnie w systemie."
+
+#~ msgid "The configured state is unknown, it might change on the next boot."
+#~ msgstr ""
+#~ "Nieznany stan konfiguracji, może zostać zmieniony po następnych "
+#~ "uruchomieniu."
+
+#~ msgid "The container '{{ target }}' does not exist."
+#~ msgstr "Kontener „{{ target }}” nie istnieje."
+
+#~ msgid ""
+#~ "The creation of this VDO device did not finish and the device can't be "
+#~ "used."
+#~ msgstr ""
+#~ "Utworzenie tego urządzenia VDO nie zostało ukończone, więc nie można go "
+#~ "używać."
+
+#~ msgid "The current user isn't allowed to access system subscription status."
+#~ msgstr "Obecny użytkownik nie ma dostępu do stanu subskrypcji komputera."
+
+#~ msgid "The deployment config '{{ target }}' does not exist."
+#~ msgstr "Konfiguracja wdrożenia „{{ target }}” nie istnieje."
+
+#~ msgid ""
+#~ "The filesystem is in use by login sessions and system "
+#~ "services.                Proceeding will stop these."
+#~ msgstr ""
+#~ "System plików jest używany przez sesje logowania i usługi "
+#~ "systemowe.                Kontynuacja je zatrzyma."
+
+#~ msgid ""
+#~ "The filesystem is in use by login sessions.                Proceeding "
+#~ "will stop these."
+#~ msgstr ""
+#~ "System plików jest używany przez sesje logowania.                "
+#~ "Kontynuacja je zatrzyma."
+
+#~ msgid ""
+#~ "The filesystem is in use by system services.                Proceeding "
+#~ "will stop these."
+#~ msgstr ""
+#~ "System plików jest używany przez usługi systemowe.                "
+#~ "Kontynuacja je zatrzyma."
+
+#~ msgid "The following packages were recently updated:"
+#~ msgstr "Poniższe pakiety zostały niedawno zaktualizowane:"
+
+#~ msgid "The following packages were updated $0:"
+#~ msgstr "Poniższe pakiety zostały zaktualizowane $0:"
+
+#~ msgid ""
+#~ "The generated archive contains data considered sensitive and its content "
+#~ "should be reviewed by the originating organization before being passed to "
+#~ "any third party."
+#~ msgstr ""
+#~ "Utworzone archiwum zawiera dane uważane za prywatne, więc jego zawartość "
+#~ "powinna zostać przejrzana przez pierwotną organizację, zanim zostanie ono "
+#~ "przekazane jakiejkolwiek stronie trzeciej."
+
+#~ msgid "The group '{{ groupName }}' does not exist."
+#~ msgstr "Grupa „{{ groupName }}” nie istnieje."
+
+#~ msgid "The key of $0 will be removed."
+#~ msgstr "Klucz $0 zostanie usunięty"
+
+#~ msgid ""
+#~ "The key of {{#strong}}{{host}}{{/strong}} does not match the key "
+#~ "previously in use. Unless this machine was recently replaced, it is "
+#~ "likely that someone is trying to attack your connection to this machine."
+#~ msgstr ""
+#~ "Klucz {{#strong}}{{host}}{{/strong}} nie pasuje do poprzednio używanego "
+#~ "klucza. Jeśli ten komputer nie został niedawno wymieniany, może to "
+#~ "oznaczać próbę ataku na połączenie z tym komputerem."
+
+#~ msgid ""
+#~ "The key server at $0 can not be reached.  This network key can not unlock "
+#~ "the encrypted data right now, but it might be able to when the server "
+#~ "becomes reachable again."
+#~ msgstr ""
+#~ "Nie można połączyć z serwerem kluczy pod adresem $0. Ten klucz sieciowy "
+#~ "nie może teraz odblokować zaszyfrowanych danych, ale może być w stanie to "
+#~ "zrobić, kiedy serwer stanie się dostępny."
+
+#~ msgid "The key you provided was not valid."
+#~ msgstr "Podany klucz jest nieprawidłowy."
+
+#~ msgid "The last disk of a RAID device cannot be removed."
+#~ msgstr "Nie można usuwać ostatniego dysku urządzenia RAID."
+
+#~ msgid "The last physical volume of a volume group cannot be removed."
+#~ msgstr "Nie można usunąć ostatniego woluminu fizycznego grupy woluminów."
+
+#~ msgid "The machine is restarting"
+#~ msgstr "Komputer jest ponownie uruchamiany"
+
+#~ msgid "The maximum number of replicas is 128"
+#~ msgstr "Maksymalna liczna replik to 128"
+
+#~ msgid "The name contains invalid characters"
+#~ msgstr "Nazwa zawiera nieprawidłowe znaki"
+
+#~ msgid "The node '{{ target }}' does not exist."
+#~ msgstr "Węzeł „{{ target }}” nie istnieje."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "Węzeł ma za mało miejsca na dysku"
+
+#~ msgid "The node doesn't have enough free memory"
+#~ msgstr "Węzeł ma za mało wolnej pamięci"
+
+#~ msgid "The output should match this text: "
+#~ msgstr "Wyjście powinno pasować do tego tekstu:"
+
+#~ msgid "The passwords do not match"
+#~ msgstr "Hasła się nie zgadzają"
+
+#~ msgid "The passwords do not match."
+#~ msgstr "Hasła się nie zgadzają."
+
+#~ msgid "The persistent volume '{{ target }}' does not exist."
+#~ msgstr "Trwały wolumin „{{ target }}” nie istnieje."
+
+#~ msgid "The pod '{{ target }}' does not exist."
+#~ msgstr "Pojemnik „{{ target }}” nie istnieje."
+
+#~ msgid "The project '{{ projName }}' does not exist."
+#~ msgstr "Projekt „{{ projName }}” nie istnieje."
+
+#~ msgid "The replication controller '{{ target }}' does not exist."
+#~ msgstr "Kontroler replikacji „{{ target }}” nie istnieje."
+
+#~ msgid "The route '{{ target }}' does not exist."
+#~ msgstr "Trasa „{{ target }}” nie istnieje."
+
+#~ msgid "The scan from $time ($type) found no vulnerabilities."
+#~ msgstr "Wyszukiwanie z $time ($type) nie zwróciło żadnych zagrożeń."
+
+#~ msgid "The scan from $time ($type) was not successful."
+#~ msgstr "Wyszukiwanie z $time ($type) się nie powiodło."
+
+#~ msgid "The selected file is not a valid Kubernetes application manifest."
+#~ msgstr "Wybrany plik nie jest prawidłowym manifestem aplikacji Kubernetes."
+
+#~ msgid "The server has returned a key that doesn't work."
+#~ msgstr "Serwer zwrócił klucz, który nie działa."
+
+#~ msgid ""
+#~ "The server refused to authenticate '$0' using password authentication, "
+#~ "and no other supported authentication methods are available."
+#~ msgstr ""
+#~ "Serwer odmówił uwierzytelnienia „$0” za pomocą hasła, a żadne inne "
+#~ "obsługiwane metody uwierzytelniania nie są dostępne."
+
+#~ msgid "The server refused to authenticate using any supported methods."
+#~ msgstr ""
+#~ "Serwer odmówił uwierzytelnienia za pomocą wszystkich obsługiwanych metod."
+
+#~ msgid "The server uses a certificate signed by an unknown authority."
+#~ msgstr "Serwer używa certyfikatu podpisanego przez nieznany ośrodek."
+
+#~ msgid "The service '{{ target }}' does not exist."
+#~ msgstr "Usługa „{{ target }}” nie istnieje."
+
+#~ msgid "The user '{{ userName }}' does not exist."
+#~ msgstr "Użytkownik „{{ userName }}” nie istnieje."
+
+#~ msgid "The user <b>$0</b> does not have permissions for creating timers"
+#~ msgstr "Użytkownik <b>$0</b> nie ma uprawnień do tworzenia liczników"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr "Użytkownik <b>$0</b> nie ma zezwolenia na zarządzanie serwerami"
+
+#~ msgid "The user <b>$0</b> is not permitted to manage storage"
+#~ msgstr ""
+#~ "Użytkownik <b>$0</b> nie ma zezwolenia na zarządzanie urządzeniami do "
+#~ "przechowywania danych"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify accounts"
+#~ msgstr "Użytkownik <b>$0</b> nie ma zezwolenia na modyfikowanie kont"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify hostnames"
+#~ msgstr ""
+#~ "Użytkownik <b>$0</b> nie ma zezwolenia na modyfikowanie nazw komputerów"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr ""
+#~ "Użytkownik <b>$0</b> nie ma zezwolenia na modyfikowanie ustawień sieci"
+
+#~ msgid "The user <b>$0</b> is not permitted to modify realms"
+#~ msgstr "Użytkownik <b>$0</b> nie ma zezwolenia na modyfikowanie obszarów"
+
+#~ msgid ""
+#~ "The user <b>$0</b> is not permitted to shutdown or restart this server"
+#~ msgstr ""
+#~ "Użytkownik <b>$0</b> nie może wyłączać ani ponownie uruchamiać tego "
+#~ "serwera"
+
+#~ msgid ""
+#~ "The user name can only consist of letters from a-z, digits, dots, dashes "
+#~ "and underscores."
+#~ msgstr ""
+#~ "Nazwa użytkownika może składać się tylko z liter od A do Z, cyfr, kropek, "
+#~ "myślników i podkreślników."
+
+#~ msgid ""
+#~ "The web browser configuration prevents Cockpit from running (inaccessible "
+#~ "$0)"
+#~ msgstr ""
+#~ "Konfiguracja przeglądarki uniemożliwia działanie programu Cockpit ($0 "
+#~ "jest niedostępne)"
+
+#~ msgid "There are currently no active pages"
+#~ msgstr "Obecnie nie ma aktywnych stron"
+
+#~ msgid ""
+#~ "There are devices with multiple paths on the system, but the multipath "
+#~ "service is not running."
+#~ msgstr ""
+#~ "W systemie obecne są urządzenia z wieloma ścieżkami, ale usługa urządzeń "
+#~ "wielościeżkowych nie jest uruchomiona."
+
+#~ msgid "There are no authorized public keys for this account."
+#~ msgstr "Brak upoważnionych publicznych kluczy dla tego konta."
+
+#~ msgid ""
+#~ "There is not enough free space elsewhere to remove this physical volume. "
+#~ "At least $0 more free space is needed."
+#~ msgstr ""
+#~ "Za mało wolnego miejsca, aby usunąć ten wolumin fizyczny. Wymagane jest "
+#~ "co najmniej $0 wolnego miejsca więcej."
+
+#~ msgid "Thin Logical Volume"
+#~ msgstr "Cienki wolumin logiczny"
+
+#~ msgid "This NFS mount is in use and only its options can be changed."
+#~ msgstr ""
+#~ "Ten punkt montowania NFS jest używany. Można zmieniać tylko jego opcje."
+
+#~ msgid "This VDO device does not use all of its backing device."
+#~ msgstr ""
+#~ "To urządzenie VDO nie używa całości swojego urządzenia podstawowego."
+
+#~ msgid ""
+#~ "This box must be checked to confirm that the key will be transported "
+#~ "without HTTPS"
+#~ msgstr ""
+#~ "To pole musi być zaznaczone, aby potwierdzić, że klucz będzie przesyłany "
+#~ "bez HTTPS"
+
+#~ msgid ""
+#~ "This claim is in use. Deleting it may cause issues with the following pod:"
+#~ msgstr ""
+#~ "Ta deklaracja jest używana. Usunięcie może spowodować problemy "
+#~ "z poniższym pojemnikiem:"
+
+#~ msgid ""
+#~ "This day doesn't exist in all months.<br> The timer will only be executed "
+#~ "in months that have 31st."
+#~ msgstr ""
+#~ "Ten dzień nie istnieje we wszystkich miesiącach.<br> Licznik będzie "
+#~ "wykonywany tylko w miesiącach z 31. dniem."
+
+#~ msgid "This device cannot be managed here."
+#~ msgstr "Tutaj nie można zarządzać tym urządzeniem."
+
+#~ msgid ""
+#~ "This device has filesystems that are currently in use.                "
+#~ "Proceeding will unmount all filesystems on it."
+#~ msgstr ""
+#~ "To urządzenie ma obecnie używane systemy plików.                "
+#~ "Kontynuacja odmontuje wszystkie jego systemy plików."
+
+#~ msgid "This device is currently used for RAID devices."
+#~ msgstr "To urządzenie jest obecnie używane dla urządzeń RAID."
+
+#~ msgid ""
+#~ "This device is currently used for RAID devices.                Proceeding "
+#~ "will remove it from its RAID devices."
+#~ msgstr ""
+#~ "To urządzenie jest obecnie używane dla urządzeń RAID.                "
+#~ "Kontynuacja usunie je z jego urządzeń RAID."
+
+#~ msgid "This device is currently used for VDO devices."
+#~ msgstr "To urządzenie jest obecnie używane dla urządzeń VDO."
+
+#~ msgid "This device is currently used for volume groups."
+#~ msgstr "To urządzenie jest obecnie używane dla grup woluminów."
+
+#~ msgid ""
+#~ "This device is currently used for volume groups.                "
+#~ "Proceeding will remove it from its volume groups."
+#~ msgstr ""
+#~ "To urządzenie jest obecnie używane dla grup woluminów.                "
+#~ "Kontynuacja usunie je z jego grup woluminów."
+
+#~ msgid "This disk cannot be removed while the device is recovering."
+#~ msgstr "Ten dysk nie może zostać usunięty podczas przywracania urządzenia."
+
+#~ msgid "This field cannot be empty."
+#~ msgstr "To pole nie może być puste."
+
+#~ msgid ""
+#~ "This host is managed by a virtualization manager, so creation of new VMs "
+#~ "from the host is not possible."
+#~ msgstr ""
+#~ "Ten gospodarz jest zarządzany przez menedżera wirtualizacji, więc "
+#~ "tworzenie nowych maszyn wirtualnych z gospodarza nie jest możliwe."
+
+#~ msgid "This image does not exist."
+#~ msgstr "Ten obraz nie istnieje."
+
+#~ msgid "This machine has already been added."
+#~ msgstr "Ten komputer został już dodany."
+
+#~ msgid "This may take a while"
+#~ msgstr "Może to chwilę zająć"
+
+#~ msgid "This network key is not recognized anymore by the server."
+#~ msgstr "Ten klucz sieciowy nie jest już rozpoznawany przez serwer."
+
+#~ msgid ""
+#~ "This network key is obsolete. It is still functional but it should be "
+#~ "replaced. A new key has been retrieved from the server."
+#~ msgstr ""
+#~ "Ten klucz sieciowy jest przestarzały. Nadal działa, ale powinien zostać "
+#~ "zastąpiony. Nowy klucz został pobrany z serwera."
+
+#~ msgid ""
+#~ "This network key is obsolete. It is still functional but it should be "
+#~ "replaced. A new key has been securely retrieved from the server."
+#~ msgstr ""
+#~ "Ten klucz sieciowy jest przestarzały. Nadal działa, ale powinien zostać "
+#~ "zastąpiony. Nowy klucz został bezpiecznie pobrany z serwera."
+
+#~ msgid ""
+#~ "This network key works fine right now and the encrypted data can be "
+#~ "unlocked with it."
+#~ msgstr ""
+#~ "Ten klucz sieciowy działa w tej chwili bez problemu i można za jego "
+#~ "pomocą odblokować zaszyfrowane dane."
+
+#~ msgid ""
+#~ "This option is for single node testing only – local storage will not work "
+#~ "in a multi-node cluster"
+#~ msgstr ""
+#~ "Ta opcja jest tylko do testowania jednego węzła — lokalne urządzenia do "
+#~ "przechowywania danych nie będą działały w klastrze wielowęzłowym"
+
+#~ msgid "This package is not compatible with this version of Cockpit"
+#~ msgstr "Ten pakiet nie jest zgodny z tą wersją Cockpit"
+
+#~ msgid "This package requires Cockpit version %s or later"
+#~ msgstr "Ten pakiet wymaga Cockpit w wersji %s lub nowszej"
+
+#~ msgid "This system is not registered"
+#~ msgstr "Ten system nie jest zarejestrowany"
+
+#~ msgid "This system is using a custom profile"
+#~ msgstr "Ten system używa niestandardowego profilu"
+
+#~ msgid "This system is using the recommended profile"
+#~ msgstr "Ten system używa zalecanego profilu"
+
+#~ msgid ""
+#~ "This tool will collect system configuration and diagnostic information "
+#~ "from this system for use with diagnosing problems with the system."
+#~ msgstr ""
+#~ "To narzędzie zbierze konfigurację systemu i informacje diagnostyczne "
+#~ "z tego systemu do użycia w diagnozowaniu problemów z systemem."
+
+#~ msgid "This unit is an instance of the $0 template."
+#~ msgstr "Ta jednostka jest wystąpieniem szablonu $0."
+
+#~ msgid "This unit is not designed to be enabled explicitly."
+#~ msgstr ""
+#~ "Ta jednostka nie została zaprojektowana do bezpośredniego włączania."
+
+#~ msgid "This user name already exists"
+#~ msgstr "Ta nazwa użytkownika już istnieje"
+
+#~ msgid ""
+#~ "This version of cockpit-ws does not support connecting to a host with an "
+#~ "alternate user or port"
+#~ msgstr ""
+#~ "Ta wersja cockpit-ws nie obsługuje łączenia z komputerem z alternatywnym "
+#~ "użytkownikiem lub portem"
+
+#~ msgid "This virtual machine is not managed by oVirt"
+#~ msgstr "Ta maszyna wirtualna nie jest zarządzana przez oprogramowanie oVirt"
+
+#~ msgid ""
+#~ "This volume has been claimed by {{ item.item.spec.claimRef.namespace }} / "
+#~ "{{ item.item.spec.claimRef.name }}. Deleting it will break that claim and "
+#~ "may cause issues with any pods depending on it."
+#~ msgstr ""
+#~ "Ten wolumin został zadeklarowany przez {{ item.item.spec.claimRef."
+#~ "namespace }}/{{ item.item.spec.claimRef.name }}. Usunięcie uszkodzi tę "
+#~ "deklarację i może spowodować problemy z pojemnikami od niej zależnymi."
+
+#~ msgid "This volume has not been claimed"
+#~ msgstr "Ten wolumin nie został zadeklarowany"
+
+#~ msgid "This volume needs to be activated before it can be resized."
+#~ msgstr "Ten wolumin musi zostać aktywowany przed zmianą rozmiaru."
+
+#~ msgid "This web browser is too old to run Cockpit (missing $0)"
+#~ msgstr "Ta przeglądarka jest za stara, aby uruchomić Cockpit (brak $0)"
+
+#~ msgid "This web console will be updated."
+#~ msgstr "Ta konsola internetowa zostanie zaktualizowana."
+
+#~ msgid ""
+#~ "This will test kdump settings by crashing the kernel and thereby the "
+#~ "system. Depending on the settings, the system may not automatically "
+#~ "reboot and the process may take a while."
+#~ msgstr ""
+#~ "Przetestuje to ustawienia kdump przez zawieszenie jądra, a razem z tym "
+#~ "komputera. W zależności od ustawień, komputer może nie zostać "
+#~ "automatycznie włączony ponownie, a cały proces może chwilę zająć."
+
+#~ msgid "This will test the kdump configuration by crashing the kernel."
+#~ msgstr "Przetestuje to konfigurację kdump przez zawieszenie jądra."
+
+#~ msgid "Thursday"
+#~ msgstr "czwartek"
+
+#~ msgid "Time Zone"
+#~ msgstr "Strefa czasowa"
+
+#~ msgid "Timers"
+#~ msgstr "Liczniki"
+
+#~ msgid ""
+#~ "Tip: Make your key password match your login password to automatically "
+#~ "authenticate against other systems."
+#~ msgstr ""
+#~ "Wskazówka: ustawienie hasła klucza na takie samo, jak hasło logowania "
+#~ "automatycznie uwierzytelni w innych systemach."
+
+#~ msgid ""
+#~ "To get software updates, this system needs to be registered with Red Hat, "
+#~ "either using the Red Hat Customer Portal or a local subscription server."
+#~ msgstr ""
+#~ "Aby otrzymywać aktualizacje oprogramowania, ten system musi zostać "
+#~ "zarejestrowany w firmie Red Hat za pomocą serwisu Red Hat Customer Portal "
+#~ "lub lokalnego serwera subskrypcji."
+
+#~ msgid "To pull this image:"
+#~ msgstr "Aby pobrać ten obraz:"
+
+#~ msgid "To push an image to this image stream:"
+#~ msgstr "Aby wysłać obraz do tego potoku obrazów:"
+
+#~ msgid ""
+#~ "To try a different port you will need to upgrade cockpit-ws to a newer "
+#~ "version."
+#~ msgstr ""
+#~ "Należy zaktualizować cockpit-ws do nowszej wersji, aby spróbować innego "
+#~ "portu."
+
+#~ msgid "Token"
+#~ msgstr "Token"
+
+#~ msgid "Too many files found"
+#~ msgstr "Odnaleziono za dużo plików"
+
+#~ msgid "Too much data"
+#~ msgstr "Za dużo danych"
+
+#~ msgid "Topology"
+#~ msgstr "Topologia"
+
+#~ msgid "Total"
+#~ msgstr "Razem"
+
+#~ msgid "Total size: $0"
+#~ msgstr "Całkowity rozmiar: $0"
+
+#~ msgid "Tower"
+#~ msgstr "Tower"
+
+#~ msgid "Triggered By"
+#~ msgstr "Wyzwalane przez"
+
+#~ msgid "Triggers"
+#~ msgstr "Wyzwalacze"
+
+#~ msgid "Troubleshoot"
+#~ msgstr "Rozwiązywanie problemów"
+
+#~ msgid "Trust Key"
+#~ msgstr "Zaufaj kluczowi"
+
+#~ msgid "Trust new key"
+#~ msgstr "Zaufaj nowemu kluczowi"
+
+#~ msgid "Trust this certificate for this connection"
+#~ msgstr "Zaufaj temu certyfikatowi w tym połączeniu"
+
+#~ msgid "Try Again"
+#~ msgstr "Spróbuj ponownie"
+
+#~ msgid "Try again"
+#~ msgstr "Spróbuj ponownie"
+
+#~ msgid "Try to reconnect"
+#~ msgstr "Spróbuj połączyć ponownie"
+
+#~ msgid "Trying to synchronize with {{Server}}"
+#~ msgstr "Próbowanie synchronizacji z {{Server}}"
+
+#~ msgid "Tuesday"
+#~ msgstr "wtorek"
+
+#~ msgid "Tuned has failed to start"
+#~ msgstr "Uruchomienie tuned się nie powiodło"
+
+#~ msgid "Tuned is not available"
+#~ msgstr "tuned jest niedostępne"
+
+#~ msgid "Tuned is not running"
+#~ msgstr "tuned nie jest uruchomione"
+
+#~ msgid "Tuned is off"
+#~ msgstr "tuned jest wyłączone"
+
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgid "Type a password"
+#~ msgstr "Proszę wpisać hasło"
+
+#~ msgid "Type to filter…"
+#~ msgstr "Filtrowanie…"
+
+#~ msgid "Type:"
+#~ msgstr "Typ:"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "URL cannot be empty"
+#~ msgstr "Adres URL nie może być pusty"
+
+#~ msgid "URL must start with either \"http:\" or \"https:\""
+#~ msgstr "Adres URL musi zaczynać się od „http:” lub „https:”"
+
+#~ msgid "UUID"
+#~ msgstr "UUID"
+
+#~ msgid "Unable to apply settings: $0"
+#~ msgstr "Nie można zastosować ustawień: $0"
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "Nie można automatycznie zastosować tego rozwiązania"
+
+#~ msgid "Unable to connect"
+#~ msgstr "Nie można połączyć"
+
+#~ msgid "Unable to connect to that address"
+#~ msgstr "Nie można połączyć z tym adresem"
+
+#~ msgid "Unable to decode Kubernetes application manifest."
+#~ msgstr "Nie można dekodować manifestu aplikacji Kubernetes."
+
+#~ msgid "Unable to delete root account"
+#~ msgstr "Nie można usunąć konta roota"
+
+#~ msgid "Unable to get alert details."
+#~ msgstr "Nie można pobrać informacji o alarmie."
+
+#~ msgid "Unable to get alert: $0"
+#~ msgstr "Nie można pobrać alarmu: $0"
+
+#~ msgid "Unable to reach server"
+#~ msgstr "Nie można połączyć się z serwerem"
+
+#~ msgid "Unable to read the Kubernetes application manifest. Code $0."
+#~ msgstr "Nie można odczytać manifestu aplikacji Kubernetes. Kod $0."
+
+#~ msgid "Unable to remove mount"
+#~ msgstr "Nie można usunąć punktu montowania"
+
+#~ msgid "Unable to rename root account"
+#~ msgstr "Nie można zmienić nazwy konta roota"
+
+#~ msgid "Unable to resolve"
+#~ msgstr "Nie można rozwiązać"
+
+#~ msgid "Unable to run fix: %0"
+#~ msgstr "Nie można wykonać poprawki: %0"
+
+#~ msgid "Unable to start setroubleshootd"
+#~ msgstr "Nie można uruchomić usługi setroubleshootd"
+
+#~ msgid "Unable to unmount filesystem"
+#~ msgstr "Nie można odmontować systemu plików"
+
+#~ msgid "Unavailable"
+#~ msgstr "Niedostępne"
+
+#~ msgid "Unexpected error"
+#~ msgstr "Nieoczekiwany błąd"
+
+#~ msgid "Unit"
+#~ msgstr "Jednostka"
+
+#~ msgid "Unknown"
+#~ msgstr "Nieznane"
+
+#~ msgid "Unknown \"$0\""
+#~ msgstr "Nieznane „$0”"
+
+#~ msgid "Unknown ($0)"
+#~ msgstr "Nieznane ($0)"
+
+#~ msgid "Unknown Application"
+#~ msgstr "Nieznana aplikacja"
+
+#~ msgid "Unknown Host Key"
+#~ msgstr "Nieznany klucz komputera"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "Nieznana konfiguracja"
+
+#~ msgid "Unknown host name"
+#~ msgstr "Nieznana nazwa komputera"
+
+#~ msgid "Unless Stopped"
+#~ msgstr "Do zatrzymania"
+
+#~ msgid "Unlock"
+#~ msgstr "Odblokuj"
+
+#~ msgid "Unlock Key"
+#~ msgstr "Odblokuj klucz"
+
+#~ msgid "Unlock at boot"
+#~ msgstr "Odblokowywanie podczas uruchamiania"
+
+#~ msgid "Unlock read only"
+#~ msgstr "Odblokowywanie tylko do odczytu"
+
+#~ msgid "Unlocked"
+#~ msgstr "Odblokowano"
+
+#~ msgid "Unlocking $target"
+#~ msgstr "Odblokowywanie $target"
+
+#~ msgid "Unmanaged Interfaces"
+#~ msgstr "Niezarządzane interfejsy"
+
+#~ msgid "Unmask"
+#~ msgstr "Anuluj maskowanie"
+
+#~ msgid "Unmount"
+#~ msgstr "Odmontuj"
+
+#~ msgid "Unmounting $target"
+#~ msgstr "Odmontowywanie $target"
+
+#~ msgid "Unnamed"
+#~ msgstr "Bez nazwy"
+
+#~ msgid "Unplug"
+#~ msgstr "Odłącz"
+
+#~ msgid "Unrecognized Data"
+#~ msgstr "Nierozpoznane dane"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Unrecognized Data"
+#~ msgstr "Nierozpoznane dane"
+
+#~ msgid "Unrecognized data can not be made smaller here."
+#~ msgstr "Nie można tutaj zmniejszać nieznanych danych."
+
+#~ msgid "Unregister"
+#~ msgstr "Wyrejestruj"
+
+#~ msgid "Unregistered System"
+#~ msgstr "Niezarejestrowany system"
+
+#~ msgid "Unregistering system..."
+#~ msgstr "Wyrejestrowywanie systemu…"
+
+#~ msgid "Unresolved"
+#~ msgstr "Nierozwiązane"
+
+#~ msgid "Unsupported setup mechanism"
+#~ msgstr "Nieobsługiwany mechanizm ustawiania"
+
+#~ msgid "Unsupported volume"
+#~ msgstr "Nieobsługiwany wolumin"
+
+#~ msgid "Untrusted host"
+#~ msgstr "Niezaufany komputer"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "Działa od $StartedAt"
+
+#~ msgid "Update"
+#~ msgstr "Zaktualizuj"
+
+#~ msgid "Update History"
+#~ msgstr "Historia aktualizacji"
+
+#~ msgid "Update Log"
+#~ msgstr "Dziennik aktualizacji"
+
+#~ msgid "Updated"
+#~ msgstr "Zaktualizowano"
+
+#~ msgid "Updated packages may require a restart to take effect."
+#~ msgstr "Zaktualizowane pakiety mogą wymagać ponownego uruchomienia."
+
+#~ msgid "Updates Available"
+#~ msgstr "Dostępne są aktualizacje"
+
+#~ msgid "Updates are disabled."
+#~ msgstr "Aktualizacje są wyłączone."
+
+#~ msgid "Updating $0..."
+#~ msgstr "Aktualizowanie $0…"
+
+#~ msgid "Upgrade to a more recent version of libvirt to view disk statistics"
+#~ msgstr ""
+#~ "Należy zaktualizować do nowszej wersji biblioteki libvirt, aby przeglądać "
+#~ "statystyki dysku"
+
+#~ msgid "Usage"
+#~ msgstr "Użycie"
+
+#~ msgid "Usage of $0 CPU core"
+#~ msgid_plural "Usage of $0 CPU cores"
+#~ msgstr[0] "Użycie $0 rdzenia procesora"
+#~ msgstr[1] "Użycie $0 rdzeni procesora"
+#~ msgstr[2] "Użycie $0 rdzeni procesora"
+
+#~ msgid "Use 512 Byte emulation"
+#~ msgstr "Użycie emulacji 512 bajtów"
+
+#~ msgid "Use new key"
+#~ msgstr "Użyj nowego klucza"
+
+#~ msgid "Use proxy server"
+#~ msgstr "Użycie serwera pośrednika"
+
+#~ msgid "Use the following keys to authenticate against other systems"
+#~ msgstr "Użycie poniższych kluczy do uwierzytelniania w innych systemach"
+
+#~ msgid "Use the setting in /etc/kdump.conf"
+#~ msgstr "Użycie ustawień z /etc/kdump.conf"
+
+#~ msgid "Used"
+#~ msgstr "Używane"
+
+#~ msgid "Used by Containers"
+#~ msgstr "Używane przez kontenery"
+
+#~ msgid "User"
+#~ msgstr "Użytkownik"
+
+#~ msgid "User Name"
+#~ msgstr "Nazwa użytkownika"
+
+#~ msgid "User Password"
+#~ msgstr "Hasło użytkownika"
+
+#~ msgid "User interface for Linux servers"
+#~ msgstr "Interfejs użytkownika dla serwerów Linux"
+
+#~ msgid "User name"
+#~ msgstr "Nazwa użytkownika"
+
+#~ msgid "User name cannot be empty"
+#~ msgstr "Nazwa użytkownika nie może być pusta"
+
+#~ msgid "User or Group"
+#~ msgstr "Użytkownik lub grupa"
+
+#~ msgid "Username"
+#~ msgstr "Nazwa użytkownika"
+
+#~ msgid "Users"
+#~ msgstr "Użytkownicy"
+
+#~ msgid "Using available credentials"
+#~ msgstr "Używanie dostępnych danych uwierzytelniania"
+
+#~ msgid "VDO Backing"
+#~ msgstr "Podstawa VDO"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "VDO Backing"
+#~ msgstr "Podstawa VDO"
+
+#~ msgid "VDO Device"
+#~ msgstr "Urządzenie VDO"
+
+#~ msgid "VDO Device $0"
+#~ msgstr "Urządzenie VDO $0"
+
+#~ msgid "VDO Devices"
+#~ msgstr "Urządzenia VDO"
+
+#~ msgid "VDO backing devices can not be made smaller"
+#~ msgstr "Urządzenia mechanizmu VDO nie mogą być zmniejszane"
+
+#~ msgid "VDSM"
+#~ msgstr "VDSM"
+
+#~ msgid "VDSM Service Management"
+#~ msgstr "Zarządzanie usługami VDSM"
+
+#~ msgid "VFAT - Compatible with all systems and devices"
+#~ msgstr "VFAT — zgodne ze wszystkimi systemami i urządzeniami"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "Identyfikator VLAN"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "Ustawienia VLAN"
+
+#~ msgid "VM DELETE failed."
+#~ msgstr "VM DELETE się nie powiodło."
+
+#~ msgid "VM FORCE OFF action failed"
+#~ msgstr "Działanie VM FORCE OFF się nie powiodło"
+
+#~ msgid "VM FORCE REBOOT action failed"
+#~ msgstr "Działanie VM FORCE REBOOT się nie powiodło"
+
+#~ msgid "VM REBOOT action failed"
+#~ msgstr "Działanie VM REBOOT się nie powiodło"
+
+#~ msgid "VM SEND Non-Maskable Interrrupt action failed"
+#~ msgstr "Działanie VM SEND niemaskowalnego przerwania się nie powiodło"
+
+#~ msgid "VM SHUT DOWN action failed"
+#~ msgstr "Działanie VM SHUT DOWN się nie powiodło"
+
+#~ msgid "VM START action failed"
+#~ msgstr "Działanie VM START się nie powiodło"
+
+#~ msgid "VM definition is not a valid JSON."
+#~ msgstr "Definicja maszyny wirtualnej nie jest prawidłowym kodem JSON."
+
+#~ msgid "VM definition is required."
+#~ msgstr "Wymagana jest definicja maszyny wirtualnej."
+
+#~ msgid "VM definition must be an object."
+#~ msgstr "Definicja maszyny wirtualnej musi być obiektem."
+
+#~ msgid "VM icon"
+#~ msgstr "Ikona maszyny wirtualnej"
+
+#~ msgid "VNC"
+#~ msgstr "VNC"
+
+#~ msgid "VNC Address:"
+#~ msgstr "Adres VNC:"
+
+#~ msgid "VNC Port:"
+#~ msgstr "Port VNC:"
+
+#~ msgid "VNC TLS Port:"
+#~ msgstr "Port TLS VNC:"
+
+#~ msgid "Validating authentication token"
+#~ msgstr "Sprawdzanie poprawności tokenu uwierzytelniania"
+
+#~ msgid "Validating key"
+#~ msgstr "Sprawdzanie poprawności klucza"
+
+#~ msgid "Vendor"
+#~ msgstr "Producent"
+
+#~ msgid "Verified"
+#~ msgstr "Sprawdzono poprawność"
+
+#~ msgid "Verify Key"
+#~ msgstr "Sprawdź poprawność klucza"
+
+#~ msgid "Verifying"
+#~ msgstr "Sprawdzanie poprawności"
+
+#~ msgid "Version num"
+#~ msgstr "Numer wersji"
+
+#~ msgid "Very securely erasing $target"
+#~ msgstr "Bardzo bezpieczne usuwanie zawartości $target"
+
+#~ msgid "View Registration Details"
+#~ msgstr "Wyświetl informacje o rejestracji"
+
+#~ msgid "Virtual Machines"
+#~ msgstr "Maszyny wirtualne"
+
+#~ msgid "Virtual Machines of $0 cluster"
+#~ msgstr "Maszyny wirtualne klastra $0"
+
+#~ msgid "Virtualization Service (libvirt) is Not Active"
+#~ msgstr "Usługa wirtualizacji (libvirt) nie jest aktywna"
+
+#~ msgid "Virtualization Service is Available"
+#~ msgstr "Usługa wirtualizacji jest dostępna"
+
+#~ msgid "Virtualport"
+#~ msgstr "Port wirtualny"
+
+#~ msgid "Volume"
+#~ msgstr "Wolumin"
+
+#~ msgid "Volume Group"
+#~ msgstr "Grupa woluminów"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "Grupa woluminów $0"
+
+#~ msgid "Volume Groups"
+#~ msgstr "Grupy woluminów"
+
+#~ msgid "Volume ID"
+#~ msgstr "Identyfikator woluminu"
+
+#~ msgid "Volume Name"
+#~ msgstr "Nazwa woluminu"
+
+#~ msgid "Volume Type"
+#~ msgstr "Typ woluminu"
+
+#~ msgid "Volumes"
+#~ msgstr "Woluminy"
+
+#~ msgid "Waiting"
+#~ msgstr "Oczekiwanie"
+
+#~ msgid "Waiting for details..."
+#~ msgstr "Oczekiwanie na informacje…"
+
+#~ msgid "Waiting for other programs to finish using the package manager..."
+#~ msgstr ""
+#~ "Oczekiwanie, aż inne programy skończą korzystać z menedżera pakietów…"
+
+#~ msgid "Waiting for other software management operations to finish"
+#~ msgstr ""
+#~ "Oczekiwanie na ukończenie pozostałych działań zarządzania oprogramowaniem"
+
+#~ msgid "Wanted By"
+#~ msgstr "Chciane przez"
+
+#~ msgid "Wants"
+#~ msgstr "Chce"
+
+#~ msgid "Warning and above"
+#~ msgstr "Ostrzeżenia i powyżej"
+
+#~ msgid "Warning:"
+#~ msgstr "Ostrzeżenie:"
+
+#~ msgid "Wednesday"
+#~ msgstr "środa"
+
+#~ msgid "Weeks"
+#~ msgstr "Tygodnie"
+
+#~ msgid "Welcome to the Image Registry"
+#~ msgstr "Witamy w rejestrze obrazów"
+
+#~ msgid "With terminal"
+#~ msgstr "Z terminalem"
+
+#~ msgid "Write-mostly"
+#~ msgstr "Głównie zapisywane"
+
+#~ msgid "Writing"
+#~ msgstr "Zapisywanie"
+
+#~ msgid "Wrong user name or password"
+#~ msgstr "Błędna nazwa użytkownika lub hasło"
+
+#~ msgid "XFS - Red Hat Enterprise Linux 7 default"
+#~ msgstr "XFS — domyślne w systemie Red Hat Enterprise Linux 7"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "Tak"
+
+#~ msgid ""
+#~ "You are connected to {{#strong}}{{host}}{{/strong}}, however in order to "
+#~ "synchronize users, a user with superuser privileges is required."
+#~ msgstr ""
+#~ "Połączono z {{#strong}}{{host}}{{/strong}}, jednakże do synchronizacji "
+#~ "użytkowników wymagane są uprawnienia superużytkownika."
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr "Obecnie połączono bezpośrednio z tym serwerem. Nie można go usunąć."
+
+#~ msgid "You are not authorized to modify the firewall."
+#~ msgstr "Brak upoważnienia do modyfikacji zapory sieciowej."
+
+#~ msgid ""
+#~ "You can bypass the certificate check, but any data you send to the server "
+#~ "could be intercepted by others."
+#~ msgstr ""
+#~ "Można obejść sprawdzanie certyfikatu, ale wszystkie dane przesyłane do "
+#~ "serwera mogą zostać przechwycone przez innych."
+
+#~ msgid "You can deploy an application to your cluster."
+#~ msgstr "Można wdrożyć aplikację w klastrze."
+
+#~ msgid ""
+#~ "You can remove the previously stored key by running the following command"
+#~ msgstr ""
+#~ "Można usunąć poprzednio przechowywany klucz wykonując następujące "
+#~ "polecenie"
+
+#~ msgid ""
+#~ "You do not have permission to view the authorized public keys for this "
+#~ "account."
+#~ msgstr ""
+#~ "Brak uprawnienia do wyświetlania upoważnionych publicznych kluczy dla "
+#~ "tego konta."
+
+#~ msgid "You don't have permission to manage the Docker storage pool."
+#~ msgstr ""
+#~ "Brak uprawnień do zrządzania pulą urządzeń do przechowywania danych "
+#~ "Docker."
+
+#~ msgid "You might want to remove it."
+#~ msgstr "Prawdopodobnie lepiej to usunąć."
+
+#~ msgid "You need to re-subscribe this system."
+#~ msgstr "Należy ponownie subskrybować ten system."
+
+#~ msgid "Your browser does not support iframes."
+#~ msgstr "Przeglądarka nie obsługuje „iframe”."
+
+#~ msgid ""
+#~ "Your browser will disconnect, but this does not affect the update "
+#~ "process. You can reconnect in a few moments to continue watching the "
+#~ "progress."
+#~ msgstr ""
+#~ "Przeglądarka się rozłączy, ale nie wpłynie to na proces aktualizacji. "
+#~ "Można połączyć się ponownie za kilka chwil, aby kontynuować obserwację "
+#~ "procesu."
+
+#~ msgid ""
+#~ "Your login credentials do not give you access to use the docker registry "
+#~ "from the command line."
+#~ msgstr ""
+#~ "Dane uwierzytelniające logowania nie daję dostępu do używania rejestru "
+#~ "Dockera z wiersza poleceń."
+
+#~ msgid ""
+#~ "Your server will close the connection soon. You can reconnect after it "
+#~ "has restarted."
+#~ msgstr ""
+#~ "Serwer niedługo zamknie połączenie. Można połączyć jeszcze raz po jego "
+#~ "ponownym uruchomieniu."
+
+#~ msgid "Your session has been terminated."
+#~ msgstr "Sesja została zakończona."
+
+#~ msgid "Your session has expired. Please log in again."
+#~ msgstr "Sesja wygasła. Proszę zalogować się ponownie."
+
+#~ msgid "[$0 bytes of binary data]"
+#~ msgstr "[$0 B danych binarnych]"
+
+#~ msgid "[binary data]"
+#~ msgstr "[dane binarne]"
+
+#~ msgid "[no data]"
+#~ msgstr "[brak danych]"
+
+#~ msgid "active"
+#~ msgstr "aktywne"
+
+#~ msgid "alias"
+#~ msgstr "alias"
+
+#~ msgid "and restart the machine automatically."
+#~ msgstr "i automatycznie uruchom komputer ponownie."
+
+#~ msgid "bridge"
+#~ msgstr "mostek"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "B"
+
+#~ msgid "cdrom"
+#~ msgstr "CD-ROM"
+
+#~ msgid "connecting"
+#~ msgstr "łączenie"
+
+#~ msgid "cores"
+#~ msgstr "rdzenie"
+
+#~ msgid "crashed"
+#~ msgstr "uległo awarii"
+
+#~ msgid "custom"
+#~ msgstr "niestandardowe"
+
+#~ msgid "default"
+#~ msgstr "domyślnie"
+
+#~ msgid "direct"
+#~ msgstr "bezpośrednie"
+
+#~ msgid "disabled"
+#~ msgstr "wyłączone"
+
+#~ msgid "disk"
+#~ msgstr "dysk"
+
+#~ msgid "down"
+#~ msgstr "w dół"
+
+#~ msgid "dying"
+#~ msgstr "w trakcie umierania"
+
+#~ msgid "e.g. \"$0\""
+#~ msgstr "np. „$0”"
+
+#~ msgid "eg: my-image-stream"
+#~ msgstr "np. strumień-obrazu"
+
+#~ msgid "enabled"
+#~ msgstr "włączone"
+
+#~ msgid "error"
+#~ msgstr "błąd"
+
+#~ msgid "ethernet"
+#~ msgstr "Ethernet"
+
+#~ msgid "every day"
+#~ msgstr "codziennie"
+
+#~ msgid "ext4 - Red Hat Enterprise Linux 6 default"
+#~ msgstr "ext4 — domyślne w systemie Red Hat Enterprise Linux 6"
+
+#~ msgid "failed to list ssh host keys: $0"
+#~ msgstr "wyświetlenie listy kluczy SSH komputera się nie powiodło: $0"
+
+#~ msgid "host"
+#~ msgstr "gospodarz"
+
+#~ msgid "hostdev"
+#~ msgstr "urządzenie gospodarza"
+
+#~ msgid "iSCSI"
+#~ msgstr "iSCSI"
+
+#~ msgid "iSCSI Targets"
+#~ msgstr "Cele iSCSI"
+
+#~ msgid "idle"
+#~ msgstr "bezczynne"
+
+#~ msgid "initializing"
+#~ msgstr "inicjowanie"
+
+#~ msgid "installation failed"
+#~ msgstr "instalacja się nie powiodła"
+
+#~ msgid "installing OS"
+#~ msgstr "instalowanie systemu operacyjnego"
+
+#~ msgid "invalid: multiple targets defined"
+#~ msgstr "nieprawidłowe: podano wiele celów"
+
+#~ msgid "kdump status"
+#~ msgstr "stan kdump"
+
+#~ msgid "kdumping"
+#~ msgstr "zrzucanie kdump"
+
+#~ msgid "key"
+#~ msgstr "klucz"
+
+#~ msgid "locally in $0"
+#~ msgstr "lokalnie w $0"
+
+#~ msgid "maintenance"
+#~ msgstr "konserwacja"
+
+#~ msgid "mcast"
+#~ msgstr "multicast"
+
+#~ msgid "n/a"
+#~ msgstr "nie dotyczy"
+
+#~ msgid "network"
+#~ msgstr "sieć"
+
+#~ msgid "no"
+#~ msgstr "nie"
+
+#~ msgid "non operational"
+#~ msgstr "nie działa"
+
+#~ msgid "non responsive"
+#~ msgstr "nie odpowiada"
+
+#~ msgid "none"
+#~ msgstr "brak"
+
+#~ msgid "oVirt"
+#~ msgstr "oVirt"
+
+#~ msgid "oVirt Host State:"
+#~ msgstr "Stan gospodarza oVirt:"
+
+#~ msgid "oVirt Provider installation script failed due to missing arguments."
+#~ msgstr ""
+#~ "Skrypt instalacji dostawcy oVirt się nie powiódł z powodu brakujących "
+#~ "parametrów."
+
+#~ msgid ""
+#~ "oVirt Provider installation script failed: Can't write to /etc/cockpit/"
+#~ "machines-ovirt.config, try as root."
+#~ msgstr ""
+#~ "Skrypt instalacji dostawcy oVirt się nie powiódł: nie można zapisać do "
+#~ "pliku /etc/cockpit/machines-ovirt.config, próbowanie jako root."
+
+#~ msgid "oVirt installation script failed with following output: "
+#~ msgstr "Skrypt instalacji oVirt się nie powiódł, jego wyjście:"
+
+#~ msgid "oVirt login in progress"
+#~ msgstr "Trwa logowanie oprogramowania oVirt"
+
+#~ msgid "of $0 CPU core"
+#~ msgid_plural "of $0 CPU cores"
+#~ msgstr[0] "$0 rdzenia procesora"
+#~ msgstr[1] "$0 rdzeni procesora"
+#~ msgstr[2] "$0 rdzeni procesora"
+
+#~ msgid "on Fridays"
+#~ msgstr "w piątki"
+
+#~ msgid "on Mondays"
+#~ msgstr "w poniedziałki"
+
+#~ msgid "on Saturdays"
+#~ msgstr "w soboty"
+
+#~ msgid "on Sundays"
+#~ msgstr "w niedziele"
+
+#~ msgid "on Thursdays"
+#~ msgstr "w czwartki"
+
+#~ msgid "on Tuesdays"
+#~ msgstr "we wtorki"
+
+#~ msgid "on Wednesdays"
+#~ msgstr "w środy"
+
+#~ msgid "other"
+#~ msgstr "inne"
+
+#~ msgid "paused"
+#~ msgstr "wstrzymane"
+
+#~ msgid "pending approval"
+#~ msgstr "oczekuje na akceptację"
+
+#~ msgid "pending volume claims"
+#~ msgstr "oczekujące deklaracje woluminów"
+
+#~ msgid "reboot"
+#~ msgstr "uruchom ponownie"
+
+#~ msgid "recommended"
+#~ msgstr "zalecane"
+
+#~ msgid "running"
+#~ msgstr "działanie"
+
+#~ msgid "search by name, namespace or description"
+#~ msgstr "wyszukiwanie według nazwy, przestrzeni nazw lub opisu"
+
+#~ msgid "select container"
+#~ msgstr "wybierz kontener"
+
+#~ msgid "server"
+#~ msgstr "serwer"
+
+#~ msgid "shares"
+#~ msgstr "udziały"
+
+#~ msgid "show less"
+#~ msgstr "wyświetl mniej"
+
+#~ msgid "show more"
+#~ msgstr "wyświetl więcej"
+
+#~ msgid "shut off"
+#~ msgstr "wyłącz"
+
+#~ msgid "shutdown"
+#~ msgstr "wyłączenie"
+
+#~ msgid "sockets"
+#~ msgstr "gniazda"
+
+#~ msgid "solution details"
+#~ msgstr "informacje o rozwiązaniu"
+
+#~ msgid "ssh key"
+#~ msgstr "klucz SSH"
+
+#~ msgid "suspended (PM)"
+#~ msgstr "uśpione (PM)"
+
+#~ msgid "threads"
+#~ msgstr "wątki"
+
+#~ msgid "to host path"
+#~ msgstr "do ścieżki gospodarza"
+
+#~ msgid "to host port"
+#~ msgstr "do portu gospodarza"
+
+#~ msgid "udp"
+#~ msgstr "UDP"
+
+#~ msgid "unassigned"
+#~ msgstr "nieprzydzielone"
+
+#~ msgid "undefined"
+#~ msgstr "nieokreślone"
+
+#~ msgid "unknown"
+#~ msgstr "nieznane"
+
+#~ msgid "unknown target"
+#~ msgstr "nieznany cel"
+
+#~ msgid "unpartitioned space on $0"
+#~ msgstr "nieprzydzielone miejsce na $0"
+
+#~ msgid "up"
+#~ msgstr "w górę"
+
+#~ msgid "upload a JSON file"
+#~ msgstr "wysłać plik JSON"
+
+#~ msgid "user"
+#~ msgstr "użytkownik"
+
+#~ msgid "vCPUs"
+#~ msgstr "Wirtualne procesory"
+
+#~ msgid "vCPUs:"
+#~ msgstr "Wirtualne procesory:"
+
+#~ msgid "value"
+#~ msgstr "wartość"
+
+#~ msgid "vhostuser"
+#~ msgstr "użytkownik gospodarza wirtualizacji"
+
+#~ msgid "yes"
+#~ msgstr "tak"
+
+#~ msgid ""
+#~ "{{ condition.message }}. Timestamp: {{ condition.lastTransitionTime }} "
+#~ "Error count: {{ condition.generation }}"
+#~ msgstr ""
+#~ "{{ condition.message }}. Czas: {{ condition.lastTransitionTime }} Liczba "
+#~ "błędów: {{ condition.generation }}"

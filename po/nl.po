@@ -1,0 +1,515 @@
+# Toon van Gerwen <translation@vgerwen.nl>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"PO-Revision-Date: 2017-08-23 04:21+0000\n"
+"Last-Translator: Toon van Gerwen <translation@vgerwen.nl>\n"
+"Language-Team: Dutch\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+
+#: src/client.js:484
+msgid "$0 key ID"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 package"
+msgstr ""
+
+#: src/app.js:459
+msgid "$0 packages"
+msgstr ""
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr ""
+
+#: src/index.html:90
+msgid "Add"
+msgstr ""
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr ""
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr ""
+
+#: src/index.html:39
+msgid "Apply"
+msgstr ""
+
+#: src/index.html:255
+msgid "Available"
+msgstr ""
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Begins with '-----BEGIN PGP PUBLIEK SLEUTEL BLOK-----'"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr ""
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr ""
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr ""
+
+#: src/app.js:303
+msgid "Checking for updates"
+msgstr ""
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr ""
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr ""
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr ""
+
+#: src/index.html:253
+msgid "Default"
+msgstr ""
+
+#: src/index.html:38
+msgid "Delete"
+msgstr ""
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr ""
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr ""
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr ""
+
+#: src/index.html:258
+msgid "Failed"
+msgstr ""
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr ""
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr ""
+
+#: src/index.html:99
+msgid "Name"
+msgstr ""
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr ""
+
+#: src/app.js:104
+msgid "No OSTree deployments found"
+msgstr ""
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr ""
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr ""
+
+#: src/app.js:83
+msgid "Not authorized to update software on this system"
+msgstr ""
+
+#: src/client.js:585 src/client.js:681
+msgid "OS $0 not found"
+msgstr ""
+
+#: src/app.js:85
+msgid "OSTree is not available on this system"
+msgstr ""
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr ""
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr ""
+
+#: src/index.html:307
+msgid "Origin"
+msgstr ""
+
+#: src/index.html:266
+msgid "Packages"
+msgstr ""
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr ""
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr ""
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr ""
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr ""
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr ""
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr ""
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr ""
+
+#: src/index.html:305
+msgid "Released"
+msgstr ""
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr ""
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr ""
+
+#: src/index.html:251
+msgid "Running"
+msgstr ""
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr ""
+
+#: src/index.html:267
+msgid "Signature"
+msgstr ""
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr ""
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr ""
+
+#: src/index.html:288
+msgid "Status"
+msgstr ""
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+
+#: src/index.html:265
+msgid "Tree"
+msgstr ""
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr ""
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr ""
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr ""
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr ""
+
+#: src/index.html:262
+msgid "Updating"
+msgstr ""
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr ""
+
+#: src/index.html:303
+msgid "Version"
+msgstr ""
+
+#: src/index.html:282
+msgid "When"
+msgstr ""
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr ""
+
+#: src/index.html:186
+msgid "at"
+msgstr ""
+
+#~ msgid " 1\"Do you want to delete the following Nodes?"
+#~ msgstr " 1\"Wil je de volgenden Nodes verwijderen?"
+
+#~ msgid "$0 Block Device"
+#~ msgstr "$0 Blok apparaat"
+
+#~ msgid "$0 Chunk Size"
+#~ msgstr "$0 Brok grote"
+
+#~ msgid "$0 Disks"
+#~ msgstr "$0 Schijven"
+
+#~ msgid ""
+#~ "$0 Only users with local credentials will be able to log into this "
+#~ "machine. This may also effect other services as DNS resolution settings "
+#~ "and the list of trusted CAs may change."
+#~ msgstr ""
+#~ "$ 0 Alleen gebruikers met lokale referenties kunnen inloggen op deze "
+#~ "machine. Dit kan ook invloed hebben op andere diensten als DNS-resolutie "
+#~ "instellingen en de lijst met vertrouwde CA's kan veranderen."
+
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 schijf ontbreekt"
+#~ msgstr[1] "$0 schijven ontbreken"
+
+#~ msgctxt "disk-non-rotational"
+#~ msgid "$0 disk is missing"
+#~ msgid_plural "$0 disks are missing"
+#~ msgstr[0] "$0 schijf ontbreekt"
+#~ msgstr[1] "$0 schijven ontbreken"
+
+#~ msgid "9th"
+#~ msgstr "9de"
+
+#~ msgid ""
+#~ "A spare disk needs to be added first before this disk can be removed."
+#~ msgstr ""
+#~ "Een extra schijf dient toegevoegd te worden voordat deze schijf kan "
+#~ "worden verwijderd."
+
+#~ msgid "AWS Elastic Block Store"
+#~ msgstr "AWS Elastic blok opslag"
+
+#~ msgid "Add Disks"
+#~ msgstr "Schijven toevoegen"
+
+#~ msgid ""
+#~ "All data on selected disks will be erased and disks will be added to the "
+#~ "storage pool."
+#~ msgstr ""
+#~ "Alle gegevens op de geselecteerde schijven worden verwijderd en de "
+#~ "schijven worden toegevoegd aan de opslagruimte."
+
+#~ msgid "Apply this solution"
+#~ msgstr "Deze oplossing toepassen"
+
+#~ msgid "Applying solution..."
+#~ msgstr "Oplossing toepassen..."
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "Minimaal $0 schijven zijn noodzakelijk."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "Minimaal een schijf is noodzakelijk."
+
+#~ msgid "Block device for filesystems"
+#~ msgstr "Blok apparaat voor bestandsystemen"
+
+#~ msgid "Blocked"
+#~ msgstr "Geblokkeerd"
+
+#~ msgid "Chunk Size"
+#~ msgstr "Brok grote"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "Verenigbaar met moderne systemen en harde schijven > 2TB (GPT)"
+
+#~ msgid "Could not add all disks"
+#~ msgstr "Niet alle schijven konden worden toegevoegd"
+
+#~ msgid "DISK IS FAILING"
+#~ msgstr "SCHIJF SCHIET TE KORT"
+
+#~ msgid "Disk"
+#~ msgstr "Schijf"
+
+#~ msgid "Disk I/O"
+#~ msgstr "Schijf I/O"
+
+#~ msgid "Disk Utilization: $0%"
+#~ msgstr "Schijfbenutting: $0%"
+
+#~ msgid "Disk is OK"
+#~ msgstr "Schijf is OK"
+
+#~ msgid "Disks"
+#~ msgstr "Schijven"
+
+#~ msgid "Do you want to add the role '{{ fields.displayRole }}'?"
+#~ msgstr "Wil je de role '{{ fields.displayRole }}' toevoegen?"
+
+#~ msgid ""
+#~ "Do you want to delete the '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}' image stream?"
+#~ msgstr ""
+#~ "Wil je de image stream '{{stream.metadata.namespace}}/{{stream.metadata."
+#~ "name}}' verwijderen?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume '{{item.metadata.name}}'?"
+#~ msgstr "Wil je de Persistent Volume '{{item.metadata.name}}' verwijderen?"
+
+#~ msgid ""
+#~ "Do you want to delete the Persistent Volume Claim '{{item.metadata."
+#~ "name}}'?"
+#~ msgstr ""
+#~ "Wil je de Persistent Volume Claim '{{item.metadata.name}}' verwijderen?"
+
+#~ msgid "Do you want to delete the {{ item.kind }} '{{item.metadata.name}}'?"
+#~ msgstr "Wil je de {{ item.kind }} '{{item.metadata.name}}' verwijderen?"
+
+#~ msgid "Do you want to delete this Node?"
+#~ msgstr "Wil je deze Node verwijderen?"
+
+#~ msgid ""
+#~ "Do you want to remove the image tagged as '{{stream.metadata.namespace}}/"
+#~ "{{stream.metadata.name}}:{{tag.tag}}'?"
+#~ msgstr ""
+#~ "Wil je de image tagged als '{{stream.metadata.namespace}}/{{stream."
+#~ "metadata.name}}:{{tag.tag}}' verwijderen?"
+
+#~ msgid ""
+#~ "Do you want to remove the role '{{ fields.displayRole }}' from member "
+#~ "{{ fields.member.metadata.name }}?"
+#~ msgstr ""
+#~ "Wil je de role '{{ fields.displayRole }}' van lid {{ fields.member."
+#~ "metadata.name }} verwijderen?"
+
+#~ msgid "Encrypted $0"
+#~ msgstr "$0 versleuteld"
+
+#~ msgid "Encrypted EXT4 (LUKS)"
+#~ msgstr "EXT4 versleuteld (LUKS)"
+
+#~ msgid "Encrypted Logical Volume of $0"
+#~ msgstr "Versleutelde logische volume van $0"
+
+#~ msgid "Encrypted Partition of $0"
+#~ msgstr "Versleutelde partitie van $0"
+
+#~ msgid "Encrypted XFS (LUKS)"
+#~ msgstr "XFS Versleuteld (LUKS)"
+
+#~ msgctxt "storage-id-desc"
+#~ msgid "Encrypted data"
+#~ msgstr "Versleutelde gegevens"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "Schijf $0 formateren"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "Het formateren van een schijf zal alle gegevens verwijderen."
+
+#~ msgid "GCE Persistent Disk"
+#~ msgstr "GCE aanhoudende schijf"
+
+#~ msgid "Hard Disk"
+#~ msgstr "Harde schijf"
+
+#~ msgctxt "storage"
+#~ msgid "Hard Disk"
+#~ msgstr "Harde schijf"
+
+#~ msgid "Local Disks"
+#~ msgstr "Lokale schijven"
+
+#~ msgid "No disks are available."
+#~ msgstr "Geen schijven beschikbaar."
+
+#~ msgid "No disks defined for this VM"
+#~ msgstr "Geen schijven bepaald voor deze VM"
+
+#~ msgid "Rados Block Device"
+#~ msgstr "Rados blok apparaat"
+
+#~ msgid "Reformat and add disks"
+#~ msgstr "Formatteer en voeg de schijven toe"
+
+#~ msgid "Solid-State Disk"
+#~ msgstr "Solid-State schijf"
+
+#~ msgctxt "storage"
+#~ msgid "Solid-State Disk"
+#~ msgstr "Solid-State schijf"
+
+#~ msgid "Solution applied successfully"
+#~ msgstr "Oplossing succesvol toegepast"
+
+#~ msgid "Solution failed"
+#~ msgstr "Oplossing mislukt"
+
+#~ msgid "Solutions"
+#~ msgstr "Oplossingen"
+
+#~ msgid "The RAID device must be running in order to add spare disks."
+#~ msgstr ""
+#~ "Het RAID apparaat dient te draaien om een extra schijf toe te kunnen "
+#~ "voegen."
+
+#~ msgid "The RAID device must be running in order to remove disks."
+#~ msgstr ""
+#~ "Het RAID apparaat dient te draaien om een extra schijf toe te kunnen "
+#~ "verwijderen."
+
+#~ msgid "The last disk of a RAID device cannot be removed."
+#~ msgstr "De laatste schijf van een RAID apparaat kan niet worden verwijderd."
+
+#~ msgid "The node doesn't have enough disk space"
+#~ msgstr "De node heeft niet genoeg schijfruimte"
+
+#~ msgid "This disk cannot be removed while the device is recovering."
+#~ msgstr ""
+#~ "Deze schijf kan niet worden verwijderd gedurende de herstel periode."
+
+#~ msgid "Unable to apply this solution automatically"
+#~ msgstr "Kan deze oplossing niet automatisch toepassen"
+
+#~ msgid "Upgrade to a more recent version of libvirt to view disk statistics"
+#~ msgstr ""
+#~ "Waardeer libvirt op naar een recente versie van om schijf statistieken "
+#~ "weer te geven"
+
+#~ msgid "disk"
+#~ msgstr "schijf"
+
+#~ msgid "solution details"
+#~ msgstr "Oplossing details"
