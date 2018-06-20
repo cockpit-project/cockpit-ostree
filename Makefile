@@ -115,7 +115,7 @@ rpm: dist-gzip $(PACKAGE_NAME).spec
 
 # build a VM with locally built rpm installed
 $(VM_IMAGE): rpm bots
-	bots/image-customize -v -r 'rpm -e $(PACKAGE_NAME) || true' -i cockpit -i `pwd`/$(PACKAGE_NAME)-*.noarch.rpm -s $(CURDIR)/test/vm.install $(TEST_OS)
+	bots/image-customize -v --upload $$(ls $(PACKAGE_NAME)-*.noarch.rpm):/tmp/ --script $(CURDIR)/test/vm.install $(TEST_OS)
 
 # convenience target for the above
 vm: $(VM_IMAGE)
@@ -123,7 +123,7 @@ vm: $(VM_IMAGE)
 
 # run the browser integration tests; skip check for SELinux denials
 check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common
-	TEST_AUDIT_NO_SELINUX=1 test/check-application
+	TEST_AUDIT_NO_SELINUX=1 test/check-ostree
 
 # checkout Cockpit's bots/ directory for standard test VM images and API to launch them
 # must be from cockpit's master, as only that has current and existing images; but testvm.py API is stable

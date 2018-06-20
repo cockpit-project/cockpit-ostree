@@ -1,12 +1,16 @@
 #!/bin/sh
-# image-customize script to enable cockpit in test VMs
-# The application RPM will be installed separately
+# image-customize script to install cockpit/ws container and the locally built RPM
 set -eu
 
+# Install cockpit
+atomic install cockpit/ws
 # don't force https:// (self-signed cert)
 printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
+atomic run cockpit/ws
 
-if type firewall-cmd >/dev/null 2>&1; then
+# Install RPM into OSTree
+rpm-ostree override replace /tmp/*.rpm
+
+if firewall-cmd --state >/dev/null 2>&1; then
     firewall-cmd --add-service=cockpit --permanent
 fi
-systemctl enable cockpit.socket
