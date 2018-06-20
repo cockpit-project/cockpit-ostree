@@ -1,7 +1,7 @@
 *~
 *.retry
 *.tar.gz
-*.rpm
+/*.rpm
 node_modules/
 dist/
 /*.spec
