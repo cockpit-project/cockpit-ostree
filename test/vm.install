@@ -1,6 +1,6 @@
 #!/bin/sh
 # image-customize script to install cockpit/ws container and the locally built RPM
-set -eu
+set -eux
 
 # Install cockpit
 atomic install cockpit/ws
@@ -8,8 +8,15 @@ atomic install cockpit/ws
 printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
 atomic run cockpit/ws
 
-# Install RPM into OSTree
-rpm-ostree override replace /tmp/*.rpm
+# create a local repository for tests
+mkdir -p /var/local-repo
+ostree init --repo /var/local-repo --mode archive-z2
+branch=$(rpm-ostree status --booted | sed -n '/ostree:/ { s/^.*://; p}')
+ostree commit -s "cockpit-tree" --repo /var/local-repo --add-metadata-string version=cockpit-base.1  --tree=dir=/var/local-tree  -b $branch
+ostree remote add local file:///var/local-repo --no-gpg-verify
+rpm-ostree rebase local:$branch
+
+rpm-ostree status
 
 if firewall-cmd --state >/dev/null 2>&1; then
     firewall-cmd --add-service=cockpit --permanent

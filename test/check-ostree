@@ -31,8 +31,8 @@ from testlib import *
 
 INSTALL_RPMS = [
     "empty-1-0.noarch",
-    "cockpit-ostree-wip-0.1.noarch",
-    "cockpit-machines-99999-2.noarch",
+    "chrony-0.1-2.noarch",
+    "cockpit-networkmanager-99999-2.noarch",
 ]
 
 REPO_LOCATION = "/var/local-repo"
@@ -49,15 +49,15 @@ def get_os_name(m):
         return "fedora-atomic"
 
 def ensure_remote_http_port (m, remote="local"):
-    remote_spec = m.execute(["ostree", "remote", "show-url", remote])
+    remote_spec = m.execute("ostree remote show-url %s || true" % remote)
     if remote_spec.startswith("http"):
         parts = remote_spec.strip().split(":")
         port = parts[-1]
     else:
-        m.execute(["ostree", "remote", "delete", remote])
+        if remote_spec:
+            m.execute(["ostree", "remote", "delete", remote])
         m.execute(["ostree", "remote", "add", remote,
                    "http://127.0.0.1:12345", "--no-gpg-verify"])
-        m.execute("printf '\nmin-free-space-percent=0\n' >> /var/local-repo/config")
         try:
             m.execute(["rpm-ostree reload"])
         except subprocess.CalledProcessError:
@@ -85,7 +85,7 @@ def generate_new_commit(m, pkg_to_remove):
     # Make one change of each type to a new rpm tree
     branch = m.execute("ostree refs --repo={0}".format(REPO_LOCATION))
 
-    m.upload(["verify/files/{0}.rpm".format(k) for k in INSTALL_RPMS],
+    m.upload(["files/{0}.rpm".format(k) for k in INSTALL_RPMS],
               "/home/admin/")
 
     # move /usr/etc to /etc, makes rpm installs easier
@@ -95,7 +95,7 @@ def generate_new_commit(m, pkg_to_remove):
 
     # Remove a package
     rpm_args = [CHECKOUT_LOCATION, RPM_LOCATION, pkg_to_remove]
-    m.execute("rpm -e --root {0} --dbpath {1} {2}".format(*rpm_args))
+    m.execute("rpm -e --verbose --root {0} --dbpath {1} {2}".format(*rpm_args))
 
     # Install our dummy packages, dbonly
     rpm_args[-1] = ' '.join(["{0}.rpm".format(os.path.join("/home/admin", x)) \
@@ -106,8 +106,8 @@ def generate_new_commit(m, pkg_to_remove):
     m.execute("mv {0} {1}".format(rpm_etc, usr_etc))
 
     # Upload a signing key
-    m.upload(["verify/files/secring.gpg",
-              "verify/files/pubring.gpg"], "/root/")
+    m.upload(["files/secring.gpg",
+              "files/pubring.gpg"], "/root/")
 
     commit_args = [REPO_LOCATION, branch.strip(), CHECKOUT_LOCATION, KEY_ID]
     command = "ostree commit -s cockpit-tree2 --repo {0} -b {1} --add-metadata-string version=cockpit-base.2 --tree=dir={2} --gpg-sign={3} --gpg-homedir=/root/"
@@ -135,10 +135,13 @@ class OstreeRestartCase(MachineCase):
             b.wait_present("{0} div.packages dl.{1}".format(sel, c))
 
     def check_change_counts(self, b, sel):
-        for k in ['adds', 'removes', 'updates', 'downgrades']:
+        for k in ['adds', 'removes', 'updates']:
             b.wait_present("{0} dd.{1}".format(sel, k))
             b.wait_text("{0} dd.{1}".format(sel, k),
                         "1 package")
+        b.wait_present("{0} dd.downgrades".format(sel))
+        # 1 or 2, in some scenarios cockpit-ostree gets downgraded as well
+        b.wait_in_text("{0} dd.downgrades".format(sel, k), "package")
 
     def check_sig(self, b, sel):
         b.wait_not_visible("{0} div.signatures".format(sel))
@@ -162,8 +165,8 @@ class OstreeRestartCase(MachineCase):
 
         rhsmcertd_hack(m)
 
-        cockpit_shell = m.execute("rpm -qa | grep cockpit-ostree").strip()
-        cockpit_machines = m.execute("rpm -qa | grep cockpit-machines | grep -v cockpit-machines-ovirt").strip()
+        chrony = m.execute("rpm -qa | grep chrony").strip()
+        cockpit_nm = m.execute("rpm -qa | grep cockpit-networkmanager").strip()
 
         self.login_and_go("/updates")
         b.enter_page("/updates")
@@ -233,7 +236,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_present("table.listing-ct tbody:nth-child(2) div.listing-ct-actions button.enabled")
         b.wait_in_text("table.listing-ct tbody:nth-child(2) div.alert-warning", "trusted keyring")
 
-        m.upload(["verify/files/publickey.asc"], "/root/")
+        m.upload(["files/publickey.asc"], "/root/")
         m.execute("ostree remote gpg-import local -k /root/publickey.asc")
 
         # Check again have update data
@@ -253,8 +256,8 @@ class OstreeRestartCase(MachineCase):
                                 ['upgrades', 'downgrades',
                                  'additions', 'removals'])
 
-        b.wait_text("table.listing-ct tbody:nth-child(3) dl.upgrades dd", "cockpit-machines-99999-2.noarch")
-        b.wait_text("table.listing-ct tbody:nth-child(3) dl.downgrades dd", "cockpit-ostree-wip-0.1.noarch")
+        b.wait_text("table.listing-ct tbody:nth-child(3) dl.upgrades dd", "cockpit-networkmanager-99999-2.noarch")
+        b.wait_in_text("table.listing-ct tbody:nth-child(3) dl.downgrades", "chrony-0.1-2.noarch")
         b.wait_text("table.listing-ct tbody:nth-child(3) dl.additions dd", "empty-1-0.noarch")
         b.wait_text("table.listing-ct tbody:nth-child(3) dl.removals dd", docker_pkg)
 
@@ -313,8 +316,8 @@ class OstreeRestartCase(MachineCase):
                                 ['upgrades', 'downgrades',
                                  'additions', 'removals'])
 
-        b.wait_text("table.listing-ct tbody:nth-child(4) dl.upgrades dd", cockpit_shell)
-        b.wait_text("table.listing-ct tbody:nth-child(4) dl.downgrades dd", cockpit_machines)
+        b.wait_in_text("table.listing-ct tbody:nth-child(4) dl.upgrades dd", chrony)
+        b.wait_text("table.listing-ct tbody:nth-child(4) dl.downgrades dd", cockpit_nm)
         b.wait_text("table.listing-ct tbody:nth-child(4) dl.additions dd", docker_pkg)
         b.wait_text("table.listing-ct tbody:nth-child(4) dl.removals dd", "empty-1-0.noarch")
 
@@ -409,7 +412,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_present('table.listing-ct tbody:nth-child(3) ul')
         b.click('table.listing-ct tbody:nth-child(3) ul li a:contains("Packages")')
         b.wait_visible("table.listing-ct tbody:nth-child(3) div.packages")
-        b.wait_in_text("table.listing-ct tbody:nth-child(3) div.packages", "contains the same packages as your currently booted")
+        b.wait_in_text("table.listing-ct tbody:nth-child(3) div.packages", "cockpit-ostree")
 
         # Apply update
         b.wait_present("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button") # wait to be rendered
@@ -579,7 +582,7 @@ class OstreeCase(MachineCase):
         b.click("modal-dialog .group-buttons button.btn-primary")
         b.wait_present("modal-dialog .group-buttons div.dialog-error")
 
-        with open(os.path.join(TEST_DIR, "verify", "files", "publickey.asc"), 'rb') as fp:
+        with open(os.path.join(TEST_DIR, "files", "publickey.asc"), 'rb') as fp:
             gpg_data = fp.read()
 
         b.set_val("modal-dialog #gpg-data", gpg_data)
