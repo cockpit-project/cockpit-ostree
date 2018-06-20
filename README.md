@@ -37,7 +37,7 @@ your browser.
 # Automated Testing
 
 Run `make check` to build an RPM, install it into a standard Cockpit test VM
-(fedora-atomic by default), and run the test/check-application integration test on
+(fedora-atomic by default), and run the test/check-ostree integration test on
 it. This uses Cockpit's Chrome DevTools Protocol based browser tests, through a
 Python API abstraction. Note that this API is not guaranteed to be stable, so
 if you run into failures and don't want to adjust tests, consider checking out
@@ -48,7 +48,7 @@ After the test VM is prepared, you can manually run the test without rebuilding
 the VM, possibly with extra options for tracing and halting on test failures
 (for interactive debugging):
 
-    TEST_OS=fedora-atomic test/check-application -tvs
+    TEST_OS=fedora-atomic test/check-ostree -tvs
 
 You can also run the test against a different Cockpit image, for example:
 
