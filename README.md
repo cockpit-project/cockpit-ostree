@@ -1,6 +1,6 @@
 # cockpit-ostree
 
-[Cockpit](http://www.cockpit-project.org) component for managing software
+[Cockpit](http://www.cockpit-project.org) page for managing software
 updates for [OSTree](https://ostree.readthedocs.io/) based systems.
 
 # Getting and building the source
