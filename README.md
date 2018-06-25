@@ -24,7 +24,8 @@ automatically minified and compressed. Set `NODE_ENV=production` if you want to
 duplicate this behavior.
 
 For development, you usually want to run your module straight out of the git
-tree. To do that, link that to the location were `cockpit-bridge` looks for packages:
+tree. To do that, link that to the location were `cockpit-bridge` looks for
+packages:
 
 ```
 mkdir -p ~/.local/share/cockpit
