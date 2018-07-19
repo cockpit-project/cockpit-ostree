@@ -10,6 +10,7 @@ RELEASE_SPEC="cockpit-ostree.spec"
 RELEASE_SRPM="_release/srpm"
 
 job release-source
-job release-srpm
+# Spec file already has released Version: instead of 0, use -V
+job release-srpm -V
 job release-github
 job release-copr @cockpit/cockpit-preview
