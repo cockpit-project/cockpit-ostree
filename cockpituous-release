@@ -6,11 +6,10 @@
 # order to complete its work.
 
 RELEASE_SOURCE="_release/source"
-RELEASE_SPEC="cockpit-starter-kit.spec"
+RELEASE_SPEC="cockpit-ostree.spec"
 RELEASE_SRPM="_release/srpm"
 
 job release-source
 job release-srpm
-# job release-github
-# job release-copr @myorg/myrepo
-# check cockpituous documentation for available release targets
+job release-github
+job release-copr @cockpit/cockpit-preview
