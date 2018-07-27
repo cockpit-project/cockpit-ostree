@@ -177,14 +177,9 @@ class OstreeRestartCase(MachineCase):
         # Check current and rollback target
         b.wait_present('table.listing-ct')
         b.wait_present('table.listing-ct tbody')
-        if m.image in ["rhel-atomic"]:
-            sel_cur = 'table.listing-ct tbody:nth-child(4)'
-            sel_prev = 'table.listing-ct tbody:nth-child(5)'
-            sel_nonexist = 'table.listing-ct tbody:nth-child(6)'
-        else:
-            sel_cur = 'table.listing-ct tbody:nth-child(3)'
-            sel_prev = 'table.listing-ct tbody:nth-child(4)'
-            sel_nonexist = 'table.listing-ct tbody:nth-child(5)'
+        sel_cur = 'table.listing-ct tbody:nth-child(3)'
+        sel_prev = 'table.listing-ct tbody:nth-child(4)'
+        sel_nonexist = 'table.listing-ct tbody:nth-child(5)'
         b.wait_text(sel_cur + ' div.listing-ct-head h3', name + " cockpit-base.1")
         b.wait_present(sel_cur + ' i.fa-check-circle-o')
         b.wait_present(sel_cur + '.active')
@@ -345,7 +340,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_present('table.listing-ct')
         b.wait_present('table.listing-ct tbody')
 
-        if m.image in ["fedora-atomic"]:
+        if m.image in ["rhel-atomic", "fedora-atomic"]:
             # newer rpm-ostree flips back and forth between the two latest releases with rollback
             b.wait_present('table.listing-ct tbody:nth-child(3) i.fa-check-circle-o')
             b.wait_text('table.listing-ct tbody:nth-child(3) div.listing-ct-head h3', name + " cockpit-base.1")
@@ -442,10 +437,7 @@ class OstreeRestartCase(MachineCase):
         # After reboot, check commit
         b.wait_present('table.listing-ct')
         b.wait_present('table.listing-ct tbody')
-        if m.image in ["rhel-atomic"]:
-            sel = 'table.listing-ct tbody:nth-child(4)'
-        else:
-            sel = 'table.listing-ct tbody:nth-child(3)'
+        sel = 'table.listing-ct tbody:nth-child(3)'
         b.wait_text(sel + ' div.listing-ct-head h3', name + " branch-version")
         b.wait_present(sel + ' i.fa-check-circle-o')
         b.wait_present(sel + ' div.listing-ct-panel,active')
