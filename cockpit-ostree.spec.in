@@ -9,6 +9,7 @@ Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
 Requires: /usr/libexec/rpm-ostreed
 
+# Download from https://github.com/cockpit-project/cockpit-ostree/releases
 Source: cockpit-ostree-%{version}.tar.gz
 
 %description
