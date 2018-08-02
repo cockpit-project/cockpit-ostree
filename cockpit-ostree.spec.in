@@ -22,6 +22,6 @@ Cockpit component for managing software updates for ostree based systems.
 %make_install
 
 %files
-/usr/share/cockpit/*
+%{_datadir}/cockpit/*
 
 %changelog
