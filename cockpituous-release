@@ -9,8 +9,19 @@ RELEASE_SOURCE="_release/source"
 RELEASE_SPEC="cockpit-ostree.spec"
 RELEASE_SRPM="_release/srpm"
 
+# Authenticate for pushing into Fedora dist-git
+cat ~/.fedora-password | kinit cockpit@FEDORAPROJECT.ORG
+
 job release-source
 # Spec file already has released Version: instead of 0, use -V
 job release-srpm -V
+
+# Do fedora builds for the tag, using tarball
+job release-koji -k master
+job release-koji f28
+job release-koji f29
+job release-bodhi F28
+job release-bodhi F29
+
 job release-github
 job release-copr @cockpit/cockpit-preview
