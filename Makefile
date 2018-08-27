@@ -1,4 +1,4 @@
-PACKAGE_NAME := $(shell python3 -c "import json; print(json.load(open('package.json'))['name'])")
+PACKAGE_NAME := cockpit-ostree
 VERSION := $(shell git describe 2>/dev/null || echo 1)
 ifeq ($(TEST_OS),)
 TEST_OS = fedora-atomic

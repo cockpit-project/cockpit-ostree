@@ -2,7 +2,6 @@ Name: cockpit-ostree
 Version: @VERSION@
 Release: 1%{?dist}
 BuildArch: noarch
-BuildRequires: /usr/bin/python3
 Summary: Cockpit user interface for rpm-ostree
 License: LGPLv2.1+
 Requires: cockpit-bridge >= 125
