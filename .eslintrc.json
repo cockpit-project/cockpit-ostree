@@ -3,7 +3,8 @@
         "browser": true,
         "es6": true
     },
-    "extends": "eslint:recommended",
+    "extends": ["eslint:recommended", "standard"],
+    "parser": "babel-eslint",
     "parserOptions": {
         "ecmaFeatures": {
             "experimentalObjectRestSpread": true,
@@ -12,8 +13,24 @@
         "sourceType": "module"
     },
     "rules": {
+        "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
+        "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
+        "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
+        "semi": ["error", "always", { "omitLastInOneLineBlock": true }],
+
+        "camelcase": "off",
+        "comma-dangle": "off",
+        "curly": "off",
+        "indent": "off",
+        "key-spacing": "off",
         "no-console": "off",
-        "no-undef": "error"
+        "quotes": "off",
+        "space-before-function-paren": "off",
+        "standard/no-callback-literal": "off",
+
+        "eqeqeq": "off",
+        "import/no-webpack-loader-syntax": "off",
+        "object-property-newline": "off"
     },
     "globals": {
         "require": false,

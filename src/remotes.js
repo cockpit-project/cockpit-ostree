@@ -38,8 +38,8 @@ angular.module('ostree.remotes', [
     function($q, $timeout, config) {
         function listRemotes() {
             return cockpit.spawn(["ostree", "remote", "list"],
-                                 { "superuser" : "try", "err" : "message"}).
-                then(function(data) {
+                                 { "superuser" : "try", "err" : "message" })
+                .then(function(data) {
                     var d = [];
                     angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
                         if (v)
@@ -52,8 +52,8 @@ angular.module('ostree.remotes', [
         function listBranches(remote) {
             return client.reload().then(function () {
                 return cockpit.spawn(["ostree", "remote", "refs", remote],
-                                     { "superuser" : "try", "err" : "message"}).
-                    then(function(data) {
+                                     { "superuser" : "try", "err" : "message" })
+                    .then(function(data) {
                         var d = [];
                         angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
                             var parts = v.split(":");
@@ -68,31 +68,31 @@ angular.module('ostree.remotes', [
         }
 
         function addRemote(name, url, gpg) {
-            var cmd = ["ostree", "remote", "add" ];
+            var cmd = ["ostree", "remote", "add"];
             if (gpg)
                 cmd.push("--set=gpg-verify=true");
             else
                 cmd.push("--set=gpg-verify=false");
             cmd.push(name, url);
 
-            return cockpit.spawn(cmd, { "superuser" : "try", "err" : "message"});
+            return cockpit.spawn(cmd, { "superuser" : "try", "err" : "message" });
         }
 
         function deleteRemote(name) {
             return cockpit.spawn(["ostree", "remote", "delete", name],
-                                 { "superuser" : "try", "err" : "message"});
+                                 { "superuser" : "try", "err" : "message" });
         }
 
         function importGPGKey(name, key) {
             var process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
-                                        { "superuser" : "try", "err" : "message"});
+                                        { "superuser" : "try", "err" : "message" });
             process.input(key);
             return process;
         }
 
         function getRemoteSettingsFile(name) {
             return cockpit.file("/etc/ostree/remotes.d/" + name + ".conf",
-                                { "superuser" : "try"});
+                                { "superuser" : "try" });
         }
 
         function getSectionName(name) {
@@ -127,7 +127,7 @@ angular.module('ostree.remotes', [
             var d = $q.defer();
 
             function mutate(content) {
-                return config.changeData (content, section, options);
+                return config.changeData(content, section, options);
             }
 
             file.modify(mutate)
@@ -244,7 +244,7 @@ angular.module('ostree.remotes', [
                 function validate() {
                     var errors = [];
                     var ex;
-                    var name_re = /^[a-z0-9_\.\-]+$/i;
+                    var name_re = /^[a-z0-9_.-]+$/i;
                     var space_re = /\s/;
 
                     $scope.fields.name = $scope.fields.name ? $scope.fields.name.trim() : null;
@@ -354,7 +354,6 @@ angular.module('ostree.remotes', [
 
             $scope.editing = remote;
             $scope.adding = false;
-
         };
 
         $scope.toggleSelected = function (remote) {

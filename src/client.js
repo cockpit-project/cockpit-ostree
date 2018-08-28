@@ -56,7 +56,7 @@ function build_progress_line(progress_arg) {
             line = _("Receiving delta parts");
         } else if (outstanding_metadata_fetches) {
             line = _("Receiving metadata objects");
-        }  else {
+        } else {
             var percent = (fetched / requested) * 100;
             line = cockpit.format(_("Receiving objects: $0%"), percent.toFixed(2));
         }
@@ -120,8 +120,8 @@ function process_rpm_list(result) {
         half = half + 1;
 
     return {
-        rpms1: data.slice(0, half+1),
-        rpms2: data.slice(half+1),
+        rpms1: data.slice(0, half + 1),
+        rpms2: data.slice(half + 1),
     };
 }
 
@@ -200,12 +200,12 @@ function RPMOSTreeDBusClient() {
     });
 
     function resolve_nested(obj, path) {
-        return path.split('.').reduce( function( prev, curr ) {
+        return path.split('.').reduce(function(prev, curr) {
             if (prev !== undefined)
                 return prev[curr];
             else
                 return prev;
-        }, obj || {} );
+        }, obj || {});
     }
 
     function trigger_changed() {
@@ -221,7 +221,6 @@ function RPMOSTreeDBusClient() {
             skipped = true;
         }
     }
-
 
     function get_client() {
         if (!client) {
@@ -277,9 +276,6 @@ function RPMOSTreeDBusClient() {
                     waits.resolve();
                 }
             });
-
-
-
        }
        return client;
     }
@@ -576,7 +572,7 @@ function RPMOSTreeDBusClient() {
                     if (item)
                         dp.resolve(item);
                     else
-                        dp.reject({ "problem" : "protocol-error"});
+                        dp.reject({ "problem" : "protocol-error" });
                 })
                 .fail(function (ex) {
                     dp.reject(ex);
@@ -620,7 +616,7 @@ function RPMOSTreeDBusClient() {
         if (sysroot && sysroot.ReloadConfig) {
             sysroot.ReloadConfig()
                 .fail(function (ex) {
-                    console.warn ("Error reloading config:", ex);
+                    console.warn("Error reloading config:", ex);
                 })
                 .always(function () {
                     dp.resolve();

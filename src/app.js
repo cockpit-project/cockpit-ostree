@@ -68,7 +68,6 @@
         .controller('mainController', [
             '$scope',
             function($scope) {
-
                 function set_curtains(curtains) {
                     $scope.$applyAsync(function() {
                         $scope.curtains = curtains;
@@ -199,8 +198,8 @@
                     });
                 }
 
-                client.connect().
-                    done(function () {
+                client.connect()
+                    .done(function () {
                         client.addEventListener("changed", on_changed);
                         on_changed();
                     });
@@ -213,7 +212,6 @@
         /* Override the default angularjs exception handler */
         .factory('$exceptionHandler', ['$log', function($log) {
             return function() {
-
                 /* Displays an oops if we're running in cockpit */
                 cockpit.oops();
 

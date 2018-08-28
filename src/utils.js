@@ -27,7 +27,7 @@ angular.module('ostree.utils', [])
             /* section headers, ei: [section] */
             section: /^\s*\[\s*([^\]]*)\s*\]\s*$/,
             /* parameters, ei: key=value */
-            param: /^\s*([\w\.\-\_]+)\s*=\s*(.*?)\s*$/,
+            param: /^\s*([\w._-]+)\s*=\s*(.*?)\s*$/,
             /* new lines, used to split config data */
             lines: /\r\n|\r|\n/
         };

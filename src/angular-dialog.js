@@ -42,7 +42,6 @@
                 transclude: true,
                 template: '<modal-group><ng-transclude></ng-transclude></modal-group>',
                 link: function(scope) {
-
                     scope.cancel = function() {
                         scope.$dismiss();
                     };
@@ -164,8 +163,12 @@
     ]);
 
     function queryAll(element, selector) {
-        var list, result = [];
-        var j, i, jlen, len = element.length;
+        var list;
+        var result = [];
+        var i;
+        var j;
+        var jlen;
+        var len = element.length;
         for (i = 0; i < len; i++) {
             list = element[i].querySelectorAll(selector);
             if (list) {
@@ -178,7 +181,8 @@
 
     function queryFirst(element, selector) {
         var result = null;
-        var i, len = element.length;
+        var i;
+        var len = element.length;
         for (i = 0; !result && i < len; i++)
             result = element[i].querySelector(selector);
         return angular.element(result);
@@ -240,7 +244,6 @@
             state = value;
             if (cancelled) {
                 scope.cancel();
-                return;
             } else if (state === null) {
                 clearErrors();
                 displayWait();
@@ -369,7 +372,7 @@
             function disable(el) {
                 var control = angular.element(el);
                 if (control.attr("disabled") ||
-                    promise.cancel && control.hasClass("btn-cancel"))
+                    (promise.cancel && control.hasClass("btn-cancel")))
                     return;
                 disabled.push(control);
                 control.attr("disabled", "disabled");
@@ -382,5 +385,4 @@
             queryFirst(element, ".btn-cancel").on("click", handleCancel);
         }
     }
-
 }());
