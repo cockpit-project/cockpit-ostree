@@ -118,13 +118,13 @@ module.exports = {
             {
                 enforce: 'pre',
                 exclude: /node_modules/,
-                loader: 'jshint-loader',
+                loader: 'eslint-loader',
                 test: /\.js$/
             },
             {
                 enforce: 'pre',
                 exclude: /node_modules/,
-                loader: 'jshint-loader?esversion=6',
+                loader: 'eslint-loader',
                 test: /\.es6$/
             },
             {
