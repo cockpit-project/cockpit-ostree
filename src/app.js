@@ -42,7 +42,7 @@
                     scope.error = cockpit.format(cockpit.message(ex));
                 });
             })
-            .always(function(ex) {
+            .always(function() {
                 scope.$applyAsync(function() {
                     scope.progressMsg = null;
                 });
@@ -67,8 +67,7 @@
 
         .controller('mainController', [
             '$scope',
-            '$timeout',
-            function($scope, $timeout) {
+            function($scope) {
 
                 function set_curtains(curtains) {
                     $scope.$applyAsync(function() {
@@ -123,7 +122,7 @@
                             window.clearTimeout(timeout);
                             timeout = null;
                         })
-                        .done(function(connection) {
+                        .done(function() {
                             timeout = window.setTimeout(check_empty, 1000);
                         })
                         .fail(show_failure);
@@ -213,7 +212,7 @@
 
         /* Override the default angularjs exception handler */
         .factory('$exceptionHandler', ['$log', function($log) {
-            return function(exception, cause) {
+            return function() {
 
                 /* Displays an oops if we're running in cockpit */
                 cockpit.oops();
@@ -235,7 +234,7 @@
                         runningMethod: "=",
                         currentOrigin: "="
                     },
-                    link: function(scope, element, attrs) {
+                    link: function(scope) {
                         scope.error = null;
                         scope.progressMsg = null;
                         scope.isRunning = false;
@@ -357,7 +356,7 @@
                         item: "=",
                         runningMethod: "="
                     },
-                    link: function(scope, element, attrs) {
+                    link: function(scope) {
                         function set_running() {
                             var expected = "";
                             if (client.item_matches(scope.item, "CachedUpdate"))

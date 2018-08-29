@@ -36,13 +36,12 @@
      * is called.
      */
     .directive('modalDialog', [
-        "$q",
-        function($q) {
+        function() {
             return {
                 restrict: 'E',
                 transclude: true,
                 template: '<modal-group><ng-transclude></ng-transclude></modal-group>',
-                link: function(scope, element, attrs) {
+                link: function(scope) {
 
                     scope.cancel = function() {
                         scope.$dismiss();
@@ -105,7 +104,7 @@
                 restrict: 'E',
                 transclude: true,
                 template: '<ng-transclude></ng-transclude>',
-                link: function(scope, element, attrs) {
+                link: function(scope, element) {
                     var state = null;
 
                     function detach() {
@@ -311,7 +310,6 @@
 
         function handleClear(ev) {
             var target = ev.target;
-            /* jshint validthis:true */
             while (target !== this) {
                 clearError(angular.element(target));
                 target = target.parentNode;
