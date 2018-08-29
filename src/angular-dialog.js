@@ -349,7 +349,7 @@
 
         function clearWait() {
             var control;
-            while (true) {
+            for (;;) {
                 control = disabled.pop();
                 if (!control)
                     break;
