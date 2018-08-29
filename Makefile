@@ -1,5 +1,5 @@
 PACKAGE_NAME := cockpit-ostree
-VERSION := $(shell git describe 2>/dev/null || echo 1)
+VERSION := $(shell T=$$(git describe 2>/dev/null) || T=1; echo $$T | tr '-' '.')
 ifeq ($(TEST_OS),)
 TEST_OS = fedora-atomic
 endif
