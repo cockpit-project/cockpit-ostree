@@ -649,7 +649,7 @@ function RPMOSTreeDBusClient() {
             }
         }
 
-        function cleanup(ex) {
+        function cleanup() {
             local_running = null;
             if (transaction_client) {
                 if (subscription)

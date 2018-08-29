@@ -41,7 +41,7 @@ angular.module('ostree.remotes', [
                                  { "superuser" : "try", "err" : "message"}).
                 then(function(data) {
                     var d = [];
-                    angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v, k) {
+                    angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
                         if (v)
                             d.push(v);
                     });
@@ -55,7 +55,7 @@ angular.module('ostree.remotes', [
                                      { "superuser" : "try", "err" : "message"}).
                     then(function(data) {
                         var d = [];
-                        angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v, k) {
+                        angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
                             var parts = v.split(":");
                             if (parts.length > 1)
                                 d.push(parts.slice(1).join(":"));
@@ -104,7 +104,7 @@ angular.module('ostree.remotes', [
             var section = getSectionName(name);
             var d = $q.defer();
             file.read()
-                .done(function (content, tag) {
+                .done(function (content) {
                     var data = config.parseData(content);
                     if (data[section])
                         d.resolve(data[section]);
@@ -131,7 +131,7 @@ angular.module('ostree.remotes', [
             }
 
             file.modify(mutate)
-                .done(function (content, tag) {
+                .done(function () {
                     d.resolve();
                 })
                 .fail(function (ex) {
@@ -165,7 +165,7 @@ angular.module('ostree.remotes', [
             scope: {
                 remote: '=remote'
             },
-            link: function($scope, element, attrs) {
+            link: function($scope) {
                 $scope.fields = null;
                 $scope.showGpgData = false;
                 $scope.modalGroupButtonSel = ".group-buttons";
@@ -186,7 +186,7 @@ angular.module('ostree.remotes', [
                     $scope.$emit("formFinished");
                 };
 
-                $scope.result = function (success, result) {
+                $scope.result = function (success) {
                     $scope.$emit("formFinished", success);
                 };
 
@@ -236,12 +236,12 @@ angular.module('ostree.remotes', [
         return {
             restrict: "E",
             scope: true,
-            link: function($scope, element, attrs) {
+            link: function($scope) {
                 $scope.fields = {};
                 $scope.modalGroupButtonSel = ".group-buttons";
                 $scope.modalGroupErrorAfter = true;
 
-                function validate(fields) {
+                function validate() {
                     var errors = [];
                     var ex;
                     var name_re = /^[a-z0-9_\.\-]+$/i;
@@ -274,7 +274,7 @@ angular.module('ostree.remotes', [
                     });
                 }
 
-                $scope.add = function add(cluster) {
+                $scope.add = function add() {
                     $scope.$emit("formRunning");
                     return validate().then(function(data) {
                         return remoteActions.addRemote(data.name,
@@ -287,7 +287,7 @@ angular.module('ostree.remotes', [
                     $scope.$emit("formFinished");
                 };
 
-                $scope.result = function (success, result) {
+                $scope.result = function (success) {
                     $scope.$emit("formFinished", success);
                 };
             },
@@ -332,7 +332,7 @@ angular.module('ostree.remotes', [
                 });
         }
 
-        $scope.$on("formRunning", function (ev) {
+        $scope.$on("formRunning", function () {
             $scope.running = true;
         });
 
