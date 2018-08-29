@@ -11,9 +11,7 @@
         },
         "sourceType": "module"
     },
-    "plugins": ["react"],
     "rules": {
-        "react/jsx-uses-vars": "error",
         "no-console": "off",
         "no-undef": "error"
     },

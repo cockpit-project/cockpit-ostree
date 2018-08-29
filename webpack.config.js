@@ -113,11 +113,6 @@ module.exports = {
     externals: externals,
     output: output,
     devtool: "source-map",
-    resolve: {
-        alias: {
-            "react$": path.resolve(nodedir, "react-lite/dist/react-lite.js")
-        }
-    },
     module: {
         rules: [
             {
@@ -129,12 +124,6 @@ module.exports = {
             {
                 enforce: 'pre',
                 exclude: /node_modules/,
-                loader: 'eslint-loader',
-                test: /\.jsx$/
-            },
-            {
-                enforce: 'pre',
-                exclude: /node_modules/,
                 loader: 'jshint-loader?esversion=6',
                 test: /\.es6$/
             },
@@ -142,11 +131,6 @@ module.exports = {
                 exclude: /node_modules/,
                 loader: 'babel-loader',
                 test: /\.js$/
-            },
-            {
-                exclude: /node_modules/,
-                loader: 'babel-loader',
-                test: /\.jsx$/
             },
             {
                 exclude: /node_modules/,
