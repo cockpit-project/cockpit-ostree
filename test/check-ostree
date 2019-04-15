@@ -270,6 +270,7 @@ class OstreeRestartCase(MachineCase):
         # Force an error
         stop_trivial_httpd(m, server_pid)
         b.wait_not_present('table.listing-ct tbody:nth-child(3) div.listing-ct-error')
+        b.wait_not_present("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button.disabled")
         b.click("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button")
         b.wait_present("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button.disabled")
         b.wait_present("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button.enabled")
