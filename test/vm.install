@@ -2,6 +2,9 @@
 # image-customize script to install cockpit/ws container and the locally built RPM
 set -eux
 
+# HACK: https://github.com/projectatomic/atomic/issues/1258
+mkdir -p /var/lib/atomic
+
 # Install cockpit
 atomic install cockpit/ws
 # don't force https:// (self-signed cert)
