@@ -101,7 +101,7 @@ function process_rpm_list(result) {
     result.split("\n").forEach(function(v) {
         if (v) {
             data.push({
-                'name': v,
+                name: v,
             });
         }
     });
@@ -246,8 +246,8 @@ function RPMOSTreeDBusClient() {
                     trigger_changed();
             });
 
-            client = cockpit.dbus(DEST, { "superuser" : true,
-                                         "capabilities" : ["address"] });
+            client = cockpit.dbus(DEST, { superuser : true,
+                                         capabilities : ["address"] });
 
             /* Watch before listening for close because watch fires first */
             client.watch(PATH).fail(tear_down);
@@ -431,7 +431,7 @@ function RPMOSTreeDBusClient() {
         if (origin) {
             parts = origin.split(':');
             if (parts.length > 1) {
-                origin = { "remote": parts[0] };
+                origin = { remote: parts[0] };
                 parts.shift();
                 origin.branch = parts.join(':');
             }
@@ -476,12 +476,12 @@ function RPMOSTreeDBusClient() {
             by = by ? cockpit.format("$0 <$1>", signature.v[10], by) : signature.v[10];
 
         return {
-            'fp' : signature.v[5],
-            'fp_name' : signature.v[8] ? cockpit.format(_("$0 key ID"), signature.v[8]) : null,
-            'expired' : signature.v[1] || signature.v[2],
-            'valid' : signature.v[0],
-            'timestamp' : signature.v[6],
-            'by' : by
+            fp : signature.v[5],
+            fp_name : signature.v[8] ? cockpit.format(_("$0 key ID"), signature.v[8]) : null,
+            expired : signature.v[1] || signature.v[2],
+            valid : signature.v[0],
+            timestamp : signature.v[6],
+            by : by
         };
     };
 
@@ -572,7 +572,7 @@ function RPMOSTreeDBusClient() {
                     if (item)
                         dp.resolve(item);
                     else
-                        dp.reject({ "problem" : "protocol-error" });
+                        dp.reject({ problem : "protocol-error" });
                 })
                 .fail(function (ex) {
                     dp.reject(ex);
@@ -681,9 +681,9 @@ function RPMOSTreeDBusClient() {
                         .fail(fail)
                         .done(function(result) {
                             var connect_args = {
-                                "superuser" : true,
-                                "address": result[0],
-                                "bus": "none"
+                                superuser : true,
+                                address: result[0],
+                                bus: "none"
                             };
 
                             if (reboot)
@@ -692,7 +692,7 @@ function RPMOSTreeDBusClient() {
                             transaction_client = cockpit.dbus(null, connect_args);
                             transaction_client.addEventListener("close", on_close);
 
-                            subscription = transaction_client.subscribe({ 'path' : "/", },
+                            subscription = transaction_client.subscribe({ path : "/", },
                                 function(path, iface, signal, args) {
                                     if (signal == "DownloadProgress") {
                                         var line = build_progress_line(args);
@@ -710,7 +710,7 @@ function RPMOSTreeDBusClient() {
                                             }
                                         } else {
                                             console.warn("Unexpected transaction response", args);
-                                            fail({ "problem": "protocol-error" });
+                                            fail({ problem: "protocol-error" });
                                         }
                                     }
                                 });

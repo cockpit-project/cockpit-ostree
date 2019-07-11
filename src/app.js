@@ -97,9 +97,9 @@ angular.module('ostree', [
                 timeout = null;
                 if (client.os_list && client.os_list.length === 0) {
                     set_curtains({
-                        "state" : "empty",
-                        "message" : _("No OSTree deployments found"),
-                        "failure" : true
+                        state : "empty",
+                        message : _("No OSTree deployments found"),
+                        failure : true
                     });
                 } else if ($scope.curtains !== null) {
                     set_curtains(null);
@@ -170,8 +170,8 @@ angular.module('ostree', [
             $scope.$on("changeOrigin", function (ev, remote, branch) {
                 $scope.$applyAsync(function() {
                     var origin = {
-                        "remote": remote,
-                        "branch": branch,
+                        remote: remote,
+                        branch: branch,
                     };
 
                     var defaultOrigin = client.get_default_origin($scope.os) || {};
@@ -324,9 +324,9 @@ angular.module('ostree', [
                                 dialogData: function() {
                                     var origin = scope.currentOrigin || {};
                                     return {
-                                        "remote": origin.remote,
-                                        "branch": origin.branch,
-                                        "os": scope.os
+                                        remote: origin.remote,
+                                        branch: origin.branch,
+                                        os: scope.os
                                     };
                                 }
                             },
@@ -421,7 +421,7 @@ angular.module('ostree', [
                     scope.doRollback = function(os) {
                         scope.error = null;
                         var args = {
-                            "reboot" : cockpit.variant("b", true)
+                            reboot : cockpit.variant("b", true)
                         };
                         var promise = client.run_transaction("Rollback", [args], os);
                         notify_result(promise, scope);
@@ -430,7 +430,7 @@ angular.module('ostree', [
                     scope.doUpgrade = function(os, hash) {
                         scope.error = null;
                         var args = {
-                            "reboot" : cockpit.variant("b", true)
+                            reboot : cockpit.variant("b", true)
                         };
                         var promise = client.run_transaction("Deploy", [hash, args], os);
                         notify_result(promise, scope);
@@ -439,8 +439,8 @@ angular.module('ostree', [
                     scope.doRebase = function(os, origin, hash) {
                         scope.error = null;
                         var args = {
-                            "reboot" : cockpit.variant("b", true),
-                            "revision" : cockpit.variant("s", hash),
+                            reboot : cockpit.variant("b", true),
+                            revision : cockpit.variant("s", hash),
                         };
                         var promise = client.run_transaction("Rebase", [args, origin, []], os);
                         notify_result(promise, scope);
