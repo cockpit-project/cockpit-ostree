@@ -1,14 +1,14 @@
-var cockpit = require('cockpit');
-var _ = cockpit.gettext;
+import cockpit from 'cockpit';
+const _ = cockpit.gettext;
 
-var DEST = 'org.projectatomic.rpmostree1';
-var PATH = '/org/projectatomic/rpmostree1';
+const DEST = 'org.projectatomic.rpmostree1';
+const PATH = '/org/projectatomic/rpmostree1';
 
-var SYSROOT = 'org.projectatomic.rpmostree1.Sysroot';
-var SYSROOT_PATH = '/org/projectatomic/rpmostree1/Sysroot';
+const SYSROOT = 'org.projectatomic.rpmostree1.Sysroot';
+const SYSROOT_PATH = '/org/projectatomic/rpmostree1/Sysroot';
 
-var OS = 'org.projectatomic.rpmostree1.OS';
-var TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
+const OS = 'org.projectatomic.rpmostree1.OS';
+const TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
 
 /*
  * Breaks down progress messages into
@@ -724,4 +724,4 @@ function RPMOSTreeDBusClient() {
 }
 
 /* singleton client instance */
-module.exports = new RPMOSTreeDBusClient();
+export default new RPMOSTreeDBusClient();

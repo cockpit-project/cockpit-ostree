@@ -19,8 +19,8 @@
 
 "use strict";
 
-var angular = require('angular');
-require('angular-bootstrap-npm/dist/angular-bootstrap.js');
+import angular from 'angular';
+import 'angular-bootstrap-npm/dist/angular-bootstrap.js';
 
 angular.module('ui.cockpit', [
     'ui.bootstrap',

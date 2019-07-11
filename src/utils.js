@@ -17,7 +17,7 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-var angular = require('angular');
+import angular from 'angular';
 
 angular.module('ostree.utils', [])
 
