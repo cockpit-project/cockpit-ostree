@@ -45,14 +45,14 @@ function suite() {
         "config",
         function (config) {
             var expected = {
-              "key": "value",
-              "section": {
-                "indented": "commas, or spaces",
-                "key": "section",
+              key: "value",
+              section: {
+                indented: "commas, or spaces",
+                key: "section",
               },
-              "section2": {
-                "key": "section2",
-                "another": "value"
+              section2: {
+                key: "section2",
+                another: "value"
               }
             };
 
@@ -68,25 +68,25 @@ function suite() {
         "config",
         function(config) {
             assert.deepEqual(config.changeData(null, "section", {
-                                "key": "value2",
-                                "bool1": true,
-                                "bool2": false,
+                                key: "value2",
+                                bool1: true,
+                                bool2: false,
                              }),
                              "\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
                              "new file");
             assert.deepEqual(config.changeData("[other-section]\ndata=data\nline", "section", {
-                                "key": "value2",
-                                "bool1": true,
-                                "bool2": false,
+                                key: "value2",
+                                bool1: true,
+                                bool2: false,
                              }),
                              "[other-section]\ndata=data\nline\n\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
                              "new section");
             assert.deepEqual(config.changeData("[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = old\ntodelete=value\nbool1 = true\nbool2 = false\n[more]\nkey=value", "section", {
-                                "key": "value2",
-                                "todelete": null,
-                                "bool1": false,
-                                "bool2": true,
-                                "new": "new"
+                                key: "value2",
+                                todelete: null,
+                                bool1: false,
+                                bool2: true,
+                                new: "new"
                              }),
                              "[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = value2\nbool1 = false\nbool2 = true\nnew = new\n\n[more]\nkey=value",
                              "change section");

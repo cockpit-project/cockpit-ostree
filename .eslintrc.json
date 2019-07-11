@@ -29,7 +29,6 @@
         "key-spacing": "off",
         "no-console": "off",
         "quotes": "off",
-        "quote-props": "off",
         "space-before-function-paren": "off",
         "standard/no-callback-literal": "off",
 
