@@ -246,8 +246,8 @@ function RPMOSTreeDBusClient() {
                     trigger_changed();
             });
 
-            client = cockpit.dbus(DEST, {"superuser" : true,
-                                         "capabilities" : ["address"]});
+            client = cockpit.dbus(DEST, { "superuser" : true,
+                                         "capabilities" : ["address"] });
 
             /* Watch before listening for close because watch fires first */
             client.watch(PATH).fail(tear_down);
@@ -297,7 +297,7 @@ function RPMOSTreeDBusClient() {
 
     function closing(event, ex) {
         tear_down(ex);
-        self.dispatchEvent("connectionLost", [ ex ]);
+        self.dispatchEvent("connectionLost", [ex]);
     }
 
     /* The order of deployments indicates

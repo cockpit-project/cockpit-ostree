@@ -6,13 +6,17 @@
     "extends": ["eslint:recommended", "standard"],
     "parser": "babel-eslint",
     "parserOptions": {
-        "ecmaFeatures": {
-            "experimentalObjectRestSpread": true,
-            "jsx": true
-        },
+        "ecmaVersion": "7",
         "sourceType": "module"
     },
     "rules": {
+        "indent": ["error", 4,
+            {
+                "ObjectExpression": "first",
+                "CallExpression": {"arguments": "first"},
+                "MemberExpression": 2,
+                "ignoredNodes": [ "JSXAttribute" ]
+            }],
         "newline-per-chained-call": ["error", { "ignoreChainWithDepth": 2 }],
         "lines-between-class-members": ["error", "always", { "exceptAfterSingleLine": true }],
         "prefer-promise-reject-errors": ["error", { "allowEmptyReject": true }],
@@ -25,6 +29,7 @@
         "key-spacing": "off",
         "no-console": "off",
         "quotes": "off",
+        "quote-props": "off",
         "space-before-function-paren": "off",
         "standard/no-callback-literal": "off",
 
