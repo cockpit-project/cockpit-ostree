@@ -1,18 +1,18 @@
 "use strict";
 
-var cockpit = require('cockpit');
-var moment = require('moment');
+import cockpit from 'cockpit';
+import moment from 'moment';
 
-var angular = require('angular');
-require('./angular-dialog.js');
-require('angular-route');
-require('angular-gettext/dist/angular-gettext.js');
-require('angular-bootstrap-npm/dist/angular-bootstrap.js');
+import angular from 'angular';
+import './angular-dialog.js';
+import 'angular-route';
+import 'angular-gettext/dist/angular-gettext.js';
+import 'angular-bootstrap-npm/dist/angular-bootstrap.js';
 
-var client = require('./client');
-require('./remotes');
+import client from './client';
+import './remotes';
 
-var _ = cockpit.gettext;
+const _ = cockpit.gettext;
 cockpit.translate();
 
 function track_id(item) {

@@ -17,14 +17,14 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-var cockpit = require('cockpit');
-var angular = require('angular');
+import cockpit from 'cockpit';
+import angular from 'angular';
+import client from './client';
 
-require('./angular-dialog.js');
-require('./utils');
+import './angular-dialog.js';
+import './utils';
 
-var _ = cockpit.gettext;
-var client = require('./client');
+const _ = cockpit.gettext;
 
 angular.module('ostree.remotes', [
     'ui.cockpit',
