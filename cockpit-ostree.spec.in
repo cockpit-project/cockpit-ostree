@@ -6,7 +6,12 @@ Summary: Cockpit user interface for rpm-ostree
 License: LGPLv2+
 Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
-Requires: /usr/libexec/rpm-ostreed
+# On RHEL Atomic 7, the package name is different (curiously not on CentOS Atomic)
+%if 0%{?rhel} == 7
+Requires: rpm-ostree-client
+%else
+Requires: rpm-ostree
+%endif
 
 # Download from https://github.com/cockpit-project/cockpit-ostree/releases
 Source: cockpit-ostree-%{version}.tar.gz
