@@ -10,6 +10,10 @@ NODE_MODULES_TEST=node_modules/po2json
 # one example file in dist/ from webpack to check if that already ran
 WEBPACK_TEST=dist/index.html
 
+ifeq ($(TEST_OS), rhel-atomic)
+MACRO_RHEL = --define "rhel 7"
+endif
+
 all: $(WEBPACK_TEST)
 
 #
@@ -108,6 +112,7 @@ rpm: dist-gzip $(PACKAGE_NAME).spec
 	  --define "_srcrpmdir `pwd`" \
 	  --define "_rpmdir `pwd`/output" \
 	  --define "_buildrootdir `pwd`/build" \
+	  $(MACRO_RHEL) \
 	  $(PACKAGE_NAME).spec
 	find `pwd`/output -name '*.rpm' -printf '%f\n' -exec mv {} . \;
 	rm -r "`pwd`/rpmbuild"
