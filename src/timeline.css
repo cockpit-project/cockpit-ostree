@@ -18,7 +18,7 @@ div.timeline-ct .timeline-ct-point {
     height: 27px;
     display: block;
     line-height: 21px;
-    background-color: white;
+    background-color: var(--pf-global--BackgroundColor--light-200);
     padding: 3px 0px;
     color: #ccc;
 }
