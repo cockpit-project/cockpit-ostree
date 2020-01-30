@@ -149,6 +149,8 @@ test/common:
 	git reset test/common
 
 $(NODE_MODULES_TEST): package.json
+	# if it exists already, npm install won't update it; force that so that we always get up-to-date packages
+	rm -f package-lock.json
 	# unset NODE_ENV, skips devDependencies otherwise
 	env -u NODE_ENV npm install
 	env -u NODE_ENV npm prune
