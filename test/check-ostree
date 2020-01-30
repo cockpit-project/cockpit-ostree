@@ -68,7 +68,11 @@ def ensure_remote_http_port (m, remote="local"):
 
 def start_trivial_httpd(m, remote="local", location=REPO_LOCATION):
     port = ensure_remote_http_port (m, remote)
-    script = "export PYTHONUNBUFFERED=1\ncd {0}\nexec python -m SimpleHTTPServer {1}".format(location, port)
+    # listen on localhost only, which SimpleHTTPRequestHandler.__main__ can't do
+    script = """export PYTHONUNBUFFERED=1
+                cd {0}
+                exec python -c "import BaseHTTPServer, SimpleHTTPServer; BaseHTTPServer.HTTPServer((\\"localhost\\", {1}), SimpleHTTPServer.SimpleHTTPRequestHandler).serve_forever()"
+                """.format(location, port)
     m.execute("echo '{}' > /tmp/trivial-httpd".format(script))
     m.execute("chmod +x /tmp/trivial-httpd")
     pid = m.spawn("/tmp/trivial-httpd", "trivial-httpd")
@@ -122,10 +126,6 @@ def rhsmcertd_hack(m):
 
 @skipImage("No OSTree available", "centos-7", "debian-stable", "debian-testing", "fedora-27", "fedora-28", "fedora-testing", "fedora-i386", "rhel-7", "rhel-7-5", "rhel-x", "ubuntu-1604", "ubuntu-stable")
 class OstreeRestartCase(MachineCase):
-    provision = {
-        "machine1": { "address": "10.111.113.2/20", "dns": "10.111.113.2" }
-    }
-
     def switch_to_packages(self, b, sel, required_classes):
         b.wait_not_visible("{0} div.packages".format(sel))
         b.click('{0} ul li a:contains("Packages")'.format(sel))
@@ -433,10 +433,6 @@ class OstreeRestartCase(MachineCase):
 
 @skipImage("No OSTree available", "centos-7", "debian-stable", "debian-testing", "fedora-27", "fedora-28", "fedora-testing", "fedora-i386", "rhel-7", "rhel-7-5", "rhel-x", "ubuntu-1604", "ubuntu-stable")
 class OstreeCase(MachineCase):
-    provision = {
-        "machine1": { "address": "10.111.113.2/20", "dns": "10.111.113.2" }
-    }
-
     def testRemoteManagement(self):
         m = self.machine
         b = self.browser
