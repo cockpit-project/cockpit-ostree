@@ -121,6 +121,7 @@ rpm: dist-gzip $(PACKAGE_NAME).spec
 # build a VM with locally built rpm installed, cockpit/ws container, and local
 # ostree for testing
 $(VM_IMAGE): rpm bots
+	rm -f $(VM_IMAGE) $(VM_IMAGE).qcow2
 	bots/image-customize -v --upload $$(ls $(PACKAGE_NAME)-*.noarch.rpm):/tmp/ --run-command 'rpm-ostree override replace /tmp/*.rpm' $(TEST_OS)
 	# building the local tree needs the modified tree from above booted already
 	bots/image-customize -v --script $(CURDIR)/test/vm.install $(TEST_OS)
