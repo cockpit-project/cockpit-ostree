@@ -149,6 +149,8 @@ test/common:
 	git reset test/common
 
 $(NODE_MODULES_TEST): package.json
-	npm install
+	# unset NODE_ENV, skips devDependencies otherwise
+	env -u NODE_ENV npm install
+	env -u NODE_ENV npm prune
 
 .PHONY: all clean install devel-install dist-gzip srpm rpm check vm update-po
