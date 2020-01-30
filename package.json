@@ -42,7 +42,7 @@
     "@babel/polyfill": "7.8.3",
     "angular": "1.7.9",
     "angular-bootstrap-npm": "0.13.4",
-    "angular-gettext": "2.3.11",
+    "angular-gettext": "2.4.1",
     "angular-route": "1.3.20",
     "bootstrap": "3.4.1",
     "moment": "2.24.0",
