@@ -150,7 +150,10 @@ class OstreeRestartCase(MachineCase):
         # Delete local remote so we start clean, without a file based remote
         ensure_remote_http_port (m)
 
-        docker_pkg = m.execute("rpm -qa | grep cockpit-docker").strip()
+        if m.image in ["fedora-coreos"]:
+            remove_pkg = m.execute("rpm -qa | grep socat").strip()
+        else:
+            remove_pkg = m.execute("rpm -qa | grep cockpit-docker").strip()
 
         rhsmcertd_hack(m)
 
@@ -176,7 +179,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text(sel_cur + " dd.os", name)
         b.wait_in_text(sel_cur + " dd.version", "cockpit-base.1")
         self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
-        b.wait_in_text(sel_cur + " div.packages", docker_pkg)
+        b.wait_in_text(sel_cur + " div.packages", remove_pkg)
         for pkg in INSTALL_RPMS:
             b.wait_not_in_text(sel_cur + " div.packages", pkg)
 
@@ -216,7 +219,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_present("table.listing-ct tbody:nth-child(2) div.listing-ct-actions button.enabled")
 
         # Generate new commit
-        generate_new_commit(m, docker_pkg)
+        generate_new_commit(m, remove_pkg)
 
         # Check again not trusted
         b.click("table.listing-ct tbody:nth-child(2) div.listing-ct-actions button")
@@ -246,7 +249,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text("table.listing-ct tbody:nth-child(3) dl.upgrades", "tzdata-99999-2.noarch")
         b.wait_in_text("table.listing-ct tbody:nth-child(3) dl.downgrades", "chrony-0.1-2.noarch")
         b.wait_text("table.listing-ct tbody:nth-child(3) dl.additions dd", "empty-1-0.noarch")
-        b.wait_text("table.listing-ct tbody:nth-child(3) dl.removals dd", docker_pkg)
+        b.wait_text("table.listing-ct tbody:nth-child(3) dl.removals dd", remove_pkg)
 
         # Check signatures
         self.check_sig (b, "table.listing-ct tbody:nth-child(3)")
@@ -284,7 +287,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text(sel_cur + ' div.listing-ct-status', "Running")
         b.wait_not_present(sel_cur + " div.listing-ct-actions button")
         self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
-        b.wait_not_in_text(sel_cur + " div.packages", docker_pkg)
+        b.wait_not_in_text(sel_cur + " div.packages", remove_pkg)
         for pkg in INSTALL_RPMS:
             b.wait_in_text(sel_cur + " div.packages", pkg)
 
@@ -304,7 +307,7 @@ class OstreeRestartCase(MachineCase):
 
         b.wait_in_text(sel_prev + " dl.upgrades dd", chrony)
         b.wait_text(sel_prev + " dl.downgrades dd", tzdata)
-        b.wait_text(sel_prev + " dl.additions dd", docker_pkg)
+        b.wait_text(sel_prev + " dl.additions dd", remove_pkg)
         b.wait_text(sel_prev + " dl.removals dd", "empty-1-0.noarch")
 
         # Rollback
