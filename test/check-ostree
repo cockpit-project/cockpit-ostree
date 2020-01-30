@@ -43,6 +43,8 @@ KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 def get_os_name(m):
     if m.image == "rhel-atomic":
         return "rhel-atomic-host"
+    elif m.image == "fedora-coreos":
+        return "fedora-coreos"
     elif 'continuous' in m.image:
         return 'centos-atomic-host'
     else:
@@ -326,7 +328,7 @@ class OstreeRestartCase(MachineCase):
         b.login_and_go("/updates")
         b.wait_present('table.listing-ct tbody')
 
-        if m.image in ["rhel-atomic", "fedora-atomic"]:
+        if m.image in ["rhel-atomic", "fedora-atomic", "fedora-coreos"]:
             # newer rpm-ostree flips back and forth between the two latest releases with rollback
             b.wait_present('table.listing-ct tbody:nth-child(3) i.fa-check-circle-o')
             b.wait_text('table.listing-ct tbody:nth-child(3) div.listing-ct-head h3', name + " cockpit-base.1")
@@ -399,7 +401,9 @@ class OstreeRestartCase(MachineCase):
         b.wait_not_visible("table.listing-ct tbody:nth-child(3) div.packages")
         b.click('table.listing-ct tbody:nth-child(3) ul li a:contains("Packages")')
         b.wait_visible("table.listing-ct tbody:nth-child(3) div.packages")
-        b.wait_in_text("table.listing-ct tbody:nth-child(3) div.packages", "cockpit-ostree")
+        # Atomics have cockpit-ostree preinstalled, FCOS doesn't
+        if m.image not in ["fedora-coreos"]:
+            b.wait_in_text("table.listing-ct tbody:nth-child(3) div.packages", "cockpit-ostree")
 
         # Apply update
         b.click("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button")
