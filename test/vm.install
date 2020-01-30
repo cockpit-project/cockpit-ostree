@@ -11,6 +11,8 @@ atomic install cockpit/ws
 printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
 atomic --ignore run cockpit/ws
 
+podman pull nginx
+
 # create a local repository for tests
 mkdir -p /var/local-repo
 ostree init --repo /var/local-repo --mode archive-z2

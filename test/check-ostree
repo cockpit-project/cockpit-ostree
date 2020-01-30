@@ -68,14 +68,7 @@ def ensure_remote_http_port (m, remote="local"):
 
 def start_trivial_httpd(m, remote="local", location=REPO_LOCATION):
     port = ensure_remote_http_port (m, remote)
-    # listen on localhost only, which SimpleHTTPRequestHandler.__main__ can't do
-    script = """export PYTHONUNBUFFERED=1
-                cd {0}
-                exec python -c "import BaseHTTPServer, SimpleHTTPServer; BaseHTTPServer.HTTPServer((\\"localhost\\", {1}), SimpleHTTPServer.SimpleHTTPRequestHandler).serve_forever()"
-                """.format(location, port)
-    m.execute("echo '{}' > /tmp/trivial-httpd".format(script))
-    m.execute("chmod +x /tmp/trivial-httpd")
-    pid = m.spawn("/tmp/trivial-httpd", "trivial-httpd")
+    pid = m.spawn("podman run -v {0}:/usr/share/nginx/html:ro,z -p {1}:80 nginx".format(location, port), "httpd")
 
     m.execute(["ostree", "summary", "--repo={}".format(location), "-u"])
     m.wait_for_cockpit_running(port=port)
