@@ -39,6 +39,7 @@ import {
     DataToolbar, DataToolbarItem, DataToolbarContent,
 } from '@patternfly/react-core/dist/esm/experimental';
 import moment from 'moment';
+import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
 
@@ -64,6 +65,44 @@ function track_id(item) {
 
     return key;
 }
+
+function format_version(deployment) {
+    var formated = "";
+    if (!deployment || !deployment.osname)
+        return;
+
+    if (deployment.version)
+        formated = deployment.version.v;
+
+    return cockpit.format("$0 $1", deployment.osname.v, formated);
+}
+
+// https://github.com/cockpit-project/cockpit/blob/master/pkg/lib/notifications.js
+function set_page_status(status) {
+    cockpit.transport.control("notify", { page_status: status });
+}
+
+/* client.changed often happens several times at the start, avoid flickering */
+const set_update_status = debounce(1000, versions => {
+    if (versions && versions.length > 0) {
+        /* if the latest version is booted, we are current */
+        if (versions[0].booted && versions[0].booted.v) {
+            set_page_status({
+                title: _("System is up to date"),
+                details: { icon: "fa fa-check-circle-o" }
+            });
+        } else {
+            /* report the available update */
+            set_page_status({
+                title: cockpit.format(_("Update available: $0"), format_version(versions[0])),
+                type: "warning",
+            });
+        }
+    } else {
+        console.warn("got invalid client.known_versions_for() result:", JSON.stringify(versions));
+        set_page_status(null);
+    }
+});
 
 /**
  * Empty state for connecting and errors
@@ -414,13 +453,26 @@ class Application extends React.Component {
             }
 
             this.setState({ curtain: { state: 'failed', failure: true, message, final } });
+            set_page_status(null);
         };
 
         client.addEventListener("connectionLost", (event, ex) => show_failure(ex));
         client.addEventListener("changed", () => this.forceUpdate());
 
         client.connect()
-            .then(() => { timeout = window.setTimeout(check_empty, 1000) })
+            .then(() => {
+                timeout = window.setTimeout(check_empty, 1000);
+
+                /* notify overview card */
+                set_page_status({
+                    type: null,
+                    title: _("Checking for package updates..."),
+                    details: {
+                        link: false,
+                        icon: "spinner spinner-xs",
+                    },
+                });
+            })
             .fail(ex => {
                 window.clearTimeout(timeout);
                 show_failure(ex);
@@ -495,8 +547,10 @@ class Application extends React.Component {
         /* TODO: support more than one OS */
 
         /* successful, deployments are available */
-        const items = client.known_versions_for(this.state.os, this.state.origin.remote, this.state.origin.branch)
-                          .map(item => {
+        const versions = client.known_versions_for(this.state.os, this.state.origin.remote, this.state.origin.branch);
+        set_update_status(versions);
+
+        const items = versions.map(item => {
                               const packages = client.packages(item);
                               if (packages)
                                   packages.addEventListener("changed", () => this.setState({})); // re-render
