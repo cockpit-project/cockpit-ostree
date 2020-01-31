@@ -28,7 +28,7 @@ po/POTFILES.js.in:
 
 po/$(PACKAGE_NAME).js.pot: po/POTFILES.js.in
 	xgettext --default-domain=cockpit --output=$@ --language=C --keyword= \
-		--keyword=_:1,1t --keyword=_:1c,2,1t --keyword=C_:1c,2 \
+		--keyword=_:1,1t --keyword=_:1c,2,2t --keyword=C_:1c,2 \
 		--keyword=N_ --keyword=NC_:1c,2 \
 		--keyword=gettext:1,1t --keyword=gettext:1c,2,2t \
 		--keyword=ngettext:1,2,3t --keyword=ngettext:1c,2,3,4t \
