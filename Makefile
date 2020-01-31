@@ -21,6 +21,9 @@ all: $(WEBPACK_TEST)
 #
 
 LINGUAS=$(basename $(notdir $(wildcard po/*.po)))
+WEBLATE_REPO=tmp/weblate-repo
+WEBLATE_REPO_URL=https://github.com/cockpit-project/cockpit-ostree-weblate.git
+WEBLATE_REPO_BRANCH=master
 
 po/POTFILES.js.in:
 	mkdir -p $(dir $@)
@@ -58,6 +61,20 @@ dist/po.%.js: po/%.po $(NODE_MODULES_TEST)
 	mkdir -p $(dir $@)
 	po/po2json -m po/po.empty.js -o $@.js.tmp $<
 	mv $@.js.tmp $@
+
+$(WEBLATE_REPO):
+	git clone --depth=1 -b $(WEBLATE_REPO_BRANCH) $(WEBLATE_REPO_URL) $(WEBLATE_REPO)
+
+upload-pot: po/$(PACKAGE_NAME).pot $(WEBLATE_REPO)
+	cp ./po/$(PACKAGE_NAME).pot $(WEBLATE_REPO)
+	git -C $(WEBLATE_REPO) commit -m "Update source file" -- $(PACKAGE_NAME).pot
+	git -C $(WEBLATE_REPO) push
+
+clean-po:
+	rm ./po/*.po
+
+download-po: $(WEBLATE_REPO)
+	cp $(WEBLATE_REPO)/*.po ./po/
 
 #
 # Build/Install/dist
