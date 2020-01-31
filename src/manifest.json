@@ -6,9 +6,10 @@
     },
 
     "tools": {
-        "ostree": {
-            "label": "Software Updates",
-            "path": "index.html"
+        "index": {
+            "label": "Software Updates"
         }
-    }
+    },
+
+    "preload": [ "index" ]
 }

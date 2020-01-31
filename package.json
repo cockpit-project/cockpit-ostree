@@ -52,6 +52,7 @@
     "@patternfly/react-core": "^3.153.3",
     "moment": "2.27.0",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "throttle-debounce": "2.2.1"
   }
 }
