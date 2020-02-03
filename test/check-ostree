@@ -21,6 +21,7 @@
 import os
 import sys
 import subprocess
+import time
 
 # import Cockpit's machinery for test VMs and its browser test API
 TEST_DIR = os.path.dirname(__file__)
@@ -404,6 +405,11 @@ class OstreeRestartCase(MachineCase):
         # Atomics have cockpit-ostree preinstalled, FCOS doesn't
         if m.image not in ["fedora-coreos"]:
             b.wait_in_text("table.listing-ct tbody:nth-child(3) div.packages", "cockpit-ostree")
+
+        # wait until the button has stabilized
+        for retry in range(3):
+            b.wait_present("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button:not([disabled])")
+            time.sleep(1)
 
         # Apply update
         b.click("table.listing-ct tbody:nth-child(3) div.listing-ct-actions button")
