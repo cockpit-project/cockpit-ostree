@@ -9,19 +9,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2018-02-27 04:55+0000\n"
-"Last-Translator: Zdenek <chmelarz@gmail.com>\n"
-"Language-Team: Czech\n"
+"PO-Revision-Date: 2020-02-03 07:25+0000\n"
+"Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.4.5\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #: src/client.js:484
 msgid "$0 key ID"
-msgstr "ID klíče $0"
+msgstr "Identif. klíče $0"
 
 #: src/app.js:459
 msgid "$0 package"
@@ -46,7 +47,7 @@ msgstr "Přidat další klíč"
 
 #: src/index.html:313 src/index.html:331
 msgid "Additions"
-msgstr ""
+msgstr "Doplňky"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/index.html:39
@@ -60,11 +61,11 @@ msgstr "Dostupný"
 
 #: src/index.html:68
 msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Začíná textem '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "Začíná textem „-----BEGIN PGP PUBLIC KEY BLOCK-----“"
 
 #: src/index.html:164
 msgid "Cancel"
-msgstr "Zrušit"
+msgstr "Storno"
 
 #: src/index.html:134
 msgid "Change Repository"
@@ -72,23 +73,23 @@ msgstr "Změnit repozitář"
 
 #: src/index.html:210
 msgid "Check for Updates"
-msgstr "Zkontrolovat aktualizace"
+msgstr "Zjistit dostupnost případných aktualizací"
 
 #: src/app.js:303
 msgid "Checking for updates"
-msgstr "Hledám aktualizace"
+msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
 
 #: src/index.html:418
 msgid "Connecting to OSTree"
-msgstr ""
+msgstr "Připojování se k OSTree"
 
 #: src/remotes.js:181
 msgid "Couldn't load settings for '$0': $1"
-msgstr ""
+msgstr "Nedaří se načíst nastavení pro „$0“: $1"
 
 #: src/index.html:184
 msgid "Currently using:"
-msgstr ""
+msgstr "V tuto chvíli je používáno:"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/index.html:253
@@ -102,15 +103,15 @@ msgstr "Smazat"
 
 #: src/index.html:319 src/index.html:349
 msgid "Downgrades"
-msgstr ""
+msgstr "Návraty zpět k předchozím verzím"
 
 #: src/remotes.js:327
 msgid "Error loading remotes: $0"
-msgstr ""
+msgstr "Chyba při načítání vzdálených: $0"
 
 #: src/index.html:290
 msgid "Expired Signature"
-msgstr ""
+msgstr "Platnost podpisu skončila"
 
 # auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
 #: src/index.html:258
@@ -119,11 +120,11 @@ msgstr "Neúspěšný"
 
 #: src/index.html:289
 msgid "Good Signature"
-msgstr ""
+msgstr "Podpis v pořádku"
 
 #: src/index.html:291
 msgid "Invalid Signature"
-msgstr ""
+msgstr "Neplatný podpis"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
 #: src/index.html:99
@@ -132,39 +133,39 @@ msgstr "Název"
 
 #: src/index.html:420
 msgid "No Deployments"
-msgstr ""
+msgstr "Žádná nasazení"
 
 #: src/app.js:104
 msgid "No OSTree deployments found"
-msgstr ""
+msgstr "Nenalezena žádná nasazení OSTree"
 
 #: src/remotes.js:112
 msgid "No configuration data found"
-msgstr ""
+msgstr "Nenalezena žádná data nastavení"
 
 #: src/index.html:294
 msgid "No signature avaliable"
-msgstr ""
+msgstr "Není k dispozici žádný podpis"
 
 #: src/app.js:83
 msgid "Not authorized to update software on this system"
-msgstr ""
+msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
 #: src/client.js:585 src/client.js:681
 msgid "OS $0 not found"
-msgstr ""
+msgstr "Operační systém $0 nenalezen"
 
 #: src/app.js:85
 msgid "OSTree is not available on this system"
-msgstr ""
+msgstr "OSTree není na tomto systému k dispozici"
 
 #: src/index.html:301
 msgid "Operating System"
-msgstr ""
+msgstr "Operační systém"
 
 #: src/index.html:375
 msgid "Operating System Updates"
-msgstr ""
+msgstr "Aktualizace operačního systému"
 
 # auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
 #: src/index.html:307
@@ -178,64 +179,64 @@ msgstr "Balíčky"
 
 #: src/remotes.js:261
 msgid "Please provide a valid URL"
-msgstr ""
+msgstr "Zadejte platnou URL adresu"
 
 #: src/remotes.js:254
 msgid "Please provide a valid name"
-msgstr ""
+msgstr "Zadejte platný název"
 
 #: src/index.html:241
 msgid "Rebase and Reboot"
-msgstr ""
+msgstr "Znovu ustavit a restartovat"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
-msgstr ""
+msgstr "Obdržují se přírůstkové části"
 
 #: src/client.js:58
 msgid "Receiving metadata objects"
-msgstr ""
+msgstr "Obdržují se objekty metadat"
 
 #: src/client.js:61
 msgid "Receiving objects: $0%"
-msgstr ""
+msgstr "Obdržují se objekty: $0%"
 
 #: src/index.html:423
 msgid "Reconnect"
-msgstr ""
+msgstr "Znovu připojit"
 
 #: src/index.html:305
 msgid "Released"
-msgstr ""
+msgstr "Vydáno"
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
-msgstr ""
+msgstr "Odebrání"
 
 #: src/index.html:237
 msgid "Roll Back and Reboot"
-msgstr ""
+msgstr "Vrátit zpět do původního stavu a restartovat"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
 #: src/index.html:251
 msgid "Running"
-msgstr "Běží"
+msgstr "Spuštěné"
 
 #: src/client.js:66
 msgid "Scanning metadata"
-msgstr ""
+msgstr "Skenování metadat"
 
 #: src/index.html:267
 msgid "Signature"
-msgstr ""
+msgstr "Podpis"
 
 #: src/index.html:279
 msgid "Signed by"
-msgstr ""
+msgstr "Podepsal"
 
 #: src/index.html:23 src/manifest.json
 msgid "Software Updates"
-msgstr ""
+msgstr "Aktualizace software"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/index.html:288
@@ -246,10 +247,11 @@ msgstr "Stav"
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
+"Toto nasazení obsahuje stejné balíčky, jako systém, který máte nyní spuštěný"
 
 #: src/index.html:265
 msgid "Tree"
-msgstr ""
+msgstr "Strom"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/index.html:48 src/index.html:109
@@ -258,11 +260,11 @@ msgstr "URL"
 
 #: src/index.html:419
 msgid "Unable to communicate with OSTree"
-msgstr ""
+msgstr "Nedaří se komunikovat s OSTree"
 
 #: src/index.html:233
 msgid "Update and Reboot"
-msgstr ""
+msgstr "Aktualizovat a restartovat"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
 #: src/index.html:317 src/index.html:343
@@ -271,11 +273,11 @@ msgstr "Aktualizace"
 
 #: src/index.html:262
 msgid "Updating"
-msgstr ""
+msgstr "Aktualizuje se"
 
 #: src/index.html:59 src/index.html:121
 msgid "Use trusted GPG key"
-msgstr ""
+msgstr "Použít důvěryhodný GPG klíč"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/index.html:303
@@ -284,15 +286,15 @@ msgstr "Verze"
 
 #: src/index.html:282
 msgid "When"
-msgstr ""
+msgstr "Kdy"
 
 #: src/client.js:64
 msgid "Writing objects"
-msgstr ""
+msgstr "Zapisují se objekty"
 
 #: src/index.html:186
 msgid "at"
-msgstr ""
+msgstr "v"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr "(sdíleno s OS)"

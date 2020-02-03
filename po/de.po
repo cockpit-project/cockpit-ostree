@@ -12,15 +12,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2017-05-03 04:58+0000\n"
-"Last-Translator: Paul Ritter <paul-ritter@gmx.net>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
+"PO-Revision-Date: 2020-02-03 07:25+0000\n"
+"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
+"Language-Team: German <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Zanata 4.4.5\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #: src/client.js:484
 msgid "$0 key ID"
@@ -43,13 +44,12 @@ msgid "Add"
 msgstr "Hinzufügen"
 
 #: src/index.html:75
-#, fuzzy
 msgid "Add Another Key"
 msgstr "Einen weiteren Schlüssel hinzufügen"
 
 #: src/index.html:313 src/index.html:331
 msgid "Additions"
-msgstr ""
+msgstr "Neue Pakete"
 
 #: src/index.html:39
 msgid "Apply"
@@ -57,7 +57,7 @@ msgstr "Anwenden"
 
 #: src/index.html:255
 msgid "Available"
-msgstr ""
+msgstr "Verfügbar"
 
 #: src/index.html:68
 msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
@@ -84,13 +84,12 @@ msgid "Connecting to OSTree"
 msgstr "Verbinde zu OSTree"
 
 #: src/remotes.js:181
-#, fuzzy
 msgid "Couldn't load settings for '$0': $1"
-msgstr "Benutzerdaten konnten nicht geladen werden"
+msgstr "Konnte Einstellungen für '$0' nicht laden: $1"
 
 #: src/index.html:184
 msgid "Currently using:"
-msgstr ""
+msgstr "Aktuell verwendet:"
 
 #: src/index.html:253
 msgid "Default"
@@ -105,13 +104,12 @@ msgid "Downgrades"
 msgstr ""
 
 #: src/remotes.js:327
-#, fuzzy
 msgid "Error loading remotes: $0"
-msgstr "Fehler beim Speichern der autorisierten Schlüssel:"
+msgstr "Fehler beim Laden der Remotes: $0"
 
 #: src/index.html:290
 msgid "Expired Signature"
-msgstr ""
+msgstr "Abgelaufene Signatur"
 
 #: src/index.html:258
 msgid "Failed"
@@ -119,11 +117,11 @@ msgstr "Fehlgeschlagen"
 
 #: src/index.html:289
 msgid "Good Signature"
-msgstr ""
+msgstr "Korrekte Signatur"
 
 #: src/index.html:291
 msgid "Invalid Signature"
-msgstr ""
+msgstr "Ungültige Signatur"
 
 #: src/index.html:99
 msgid "Name"
@@ -138,17 +136,16 @@ msgid "No OSTree deployments found"
 msgstr ""
 
 #: src/remotes.js:112
-#, fuzzy
 msgid "No configuration data found"
-msgstr "Unbekannte Konfiguration"
+msgstr "Keine Konfigurationsdaten gefunden"
 
 #: src/index.html:294
 msgid "No signature avaliable"
-msgstr ""
+msgstr "Keine Signatur verfügbar"
 
 #: src/app.js:83
 msgid "Not authorized to update software on this system"
-msgstr ""
+msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 
 #: src/client.js:585 src/client.js:681
 msgid "OS $0 not found"
@@ -156,36 +153,35 @@ msgstr "OS $0 nicht gefunden"
 
 #: src/app.js:85
 msgid "OSTree is not available on this system"
-msgstr ""
+msgstr "OSTree ist auf diesem System nicht verfügbar"
 
 #: src/index.html:301
 msgid "Operating System"
-msgstr ""
+msgstr "Betriebssystem"
 
 #: src/index.html:375
 msgid "Operating System Updates"
-msgstr ""
+msgstr "Betriebssystem-Aktualisierungen"
 
 #: src/index.html:307
 msgid "Origin"
-msgstr ""
+msgstr "Ursprung"
 
 #: src/index.html:266
 msgid "Packages"
-msgstr ""
+msgstr "Pakete"
 
 #: src/remotes.js:261
-#, fuzzy
 msgid "Please provide a valid URL"
-msgstr "Bitte geben Sie einen gültigen Namespace an."
+msgstr "Bitte geben Sie eine gültige URL an"
 
 #: src/remotes.js:254
 msgid "Please provide a valid name"
-msgstr ""
+msgstr "Bitte geben Sie einen gültigen Namen an"
 
 #: src/index.html:241
 msgid "Rebase and Reboot"
-msgstr ""
+msgstr "Rebase und Neustart"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
@@ -209,7 +205,7 @@ msgstr ""
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
-msgstr ""
+msgstr "Entfernte Pakete"
 
 #: src/index.html:237
 msgid "Roll Back and Reboot"
@@ -246,7 +242,7 @@ msgstr ""
 
 #: src/index.html:265
 msgid "Tree"
-msgstr ""
+msgstr "Baum"
 
 #: src/index.html:48 src/index.html:109
 msgid "URL"
@@ -278,7 +274,7 @@ msgstr "Version"
 
 #: src/index.html:282
 msgid "When"
-msgstr ""
+msgstr "Wenn"
 
 #: src/client.js:64
 msgid "Writing objects"
@@ -286,7 +282,7 @@ msgstr "Schreibe Objekte"
 
 #: src/index.html:186
 msgid "at"
-msgstr ""
+msgstr "Um"
 
 #~ msgid " 1\"Do you want to delete the following Nodes?"
 #~ msgstr "1\"Sind Sie sicher, dass Sie die folgenden Nodes löschen möchten?"

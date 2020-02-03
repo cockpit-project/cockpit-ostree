@@ -10,19 +10,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2017-08-30 02:07+0000\n"
-"Last-Translator: Jean-Baptiste Holcroft <jean-baptiste@holcroft.fr>\n"
-"Language-Team: French\n"
+"PO-Revision-Date: 2020-02-03 07:25+0000\n"
+"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.4.5\n"
-"Plural-Forms: nplurals=2; plural=(n > 1)\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #: src/client.js:484
 msgid "$0 key ID"
-msgstr ""
+msgstr "$0 ID clé"
 
 #: src/app.js:459
 msgid "$0 package"
@@ -33,9 +34,8 @@ msgid "$0 packages"
 msgstr "$0 paquets"
 
 #: src/index.html:92
-#, fuzzy
 msgid "- Add New Repository"
-msgstr "Dépôt"
+msgstr "- Ajouter un nouveau dépôt"
 
 #: src/index.html:90
 msgid "Add"
@@ -47,7 +47,7 @@ msgstr "Ajouter une autre clé"
 
 #: src/index.html:313 src/index.html:331
 msgid "Additions"
-msgstr ""
+msgstr "Compléments"
 
 #: src/index.html:39
 msgid "Apply"
@@ -55,41 +55,39 @@ msgstr "Appliquer"
 
 #: src/index.html:255
 msgid "Available"
-msgstr ""
+msgstr "Disponible"
 
 #: src/index.html:68
 msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr ""
+msgstr "Commence par « -----BEGIN PGP PUBLIC KEY BLOCK----- »"
 
 #: src/index.html:164
 msgid "Cancel"
 msgstr "Annuler"
 
 #: src/index.html:134
-#, fuzzy
 msgid "Change Repository"
-msgstr "Dépôt"
+msgstr "Modifier dépôt"
 
 #: src/index.html:210
 msgid "Check for Updates"
-msgstr ""
+msgstr "Vérifier les mises à jour"
 
 #: src/app.js:303
 msgid "Checking for updates"
-msgstr ""
+msgstr "Recherche de mises à jour"
 
 #: src/index.html:418
 msgid "Connecting to OSTree"
-msgstr ""
+msgstr "Connexion à OSTree"
 
 #: src/remotes.js:181
-#, fuzzy
 msgid "Couldn't load settings for '$0': $1"
-msgstr "Impossible de charger les données utilisateur"
+msgstr "Impossible de charger les paramètres pour « $0 » : $1"
 
 #: src/index.html:184
 msgid "Currently using:"
-msgstr ""
+msgstr "Actuellement utilisé :"
 
 #: src/index.html:253
 msgid "Default"
@@ -101,16 +99,15 @@ msgstr "Supprimer"
 
 #: src/index.html:319 src/index.html:349
 msgid "Downgrades"
-msgstr ""
+msgstr "Rétrogradation"
 
 #: src/remotes.js:327
-#, fuzzy
 msgid "Error loading remotes: $0"
-msgstr "Erreur pendant l'enregistrement du fichier authorized_keys :"
+msgstr "Erreur pendant le chargement des remotes : $0"
 
 #: src/index.html:290
 msgid "Expired Signature"
-msgstr ""
+msgstr "Signatures expirées"
 
 #: src/index.html:258
 msgid "Failed"
@@ -118,11 +115,11 @@ msgstr "Échec"
 
 #: src/index.html:289
 msgid "Good Signature"
-msgstr ""
+msgstr "Bonnes signatures"
 
 #: src/index.html:291
 msgid "Invalid Signature"
-msgstr ""
+msgstr "Signatures invalides"
 
 #: src/index.html:99
 msgid "Name"
@@ -130,73 +127,71 @@ msgstr "Nom"
 
 #: src/index.html:420
 msgid "No Deployments"
-msgstr ""
+msgstr "Aucun déploiement"
 
 #: src/app.js:104
 msgid "No OSTree deployments found"
-msgstr ""
+msgstr "Aucun déploiement OSTree trouvé"
 
 #: src/remotes.js:112
-#, fuzzy
 msgid "No configuration data found"
-msgstr "Configuration inconnue"
+msgstr "Aucune configuration de donnée trouvée"
 
 #: src/index.html:294
 msgid "No signature avaliable"
-msgstr ""
+msgstr "Aucune signature disponible"
 
 #: src/app.js:83
 msgid "Not authorized to update software on this system"
-msgstr ""
+msgstr "Pas autorisé à mettre à jour les logiciels sur ce système"
 
 #: src/client.js:585 src/client.js:681
 msgid "OS $0 not found"
-msgstr ""
+msgstr "OS $0 non trouvé"
 
 #: src/app.js:85
 msgid "OSTree is not available on this system"
-msgstr ""
+msgstr "OSTree non disponible sur ce système"
 
 #: src/index.html:301
 msgid "Operating System"
-msgstr ""
+msgstr "Système d’exploitation"
 
 #: src/index.html:375
 msgid "Operating System Updates"
-msgstr ""
+msgstr "Mises à jour du système d’exploitation"
 
 #: src/index.html:307
 msgid "Origin"
-msgstr ""
+msgstr "Origine"
 
 #: src/index.html:266
 msgid "Packages"
-msgstr ""
+msgstr "Paquets"
 
 #: src/remotes.js:261
-#, fuzzy
 msgid "Please provide a valid URL"
-msgstr "Merci d'indiquer un espace de nommage valide."
+msgstr "Merci d’indiquer une URL valide"
 
 #: src/remotes.js:254
 msgid "Please provide a valid name"
-msgstr ""
+msgstr "Veuillez indiquer un nom valide"
 
 #: src/index.html:241
 msgid "Rebase and Reboot"
-msgstr ""
+msgstr "Rebaser et redémarrer"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
-msgstr ""
+msgstr "Recevoir les parties delta"
 
 #: src/client.js:58
 msgid "Receiving metadata objects"
-msgstr ""
+msgstr "Recevoir les objets métadonnées"
 
 #: src/client.js:61
 msgid "Receiving objects: $0%"
-msgstr ""
+msgstr "Réception des objets : $0%"
 
 #: src/index.html:423
 msgid "Reconnect"
@@ -204,15 +199,15 @@ msgstr "Reconnecter"
 
 #: src/index.html:305
 msgid "Released"
-msgstr ""
+msgstr "Publiés"
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
-msgstr ""
+msgstr "Supprimés"
 
 #: src/index.html:237
 msgid "Roll Back and Reboot"
-msgstr ""
+msgstr "Rétrograder et redémarrer"
 
 #: src/index.html:251
 msgid "Running"
@@ -220,19 +215,19 @@ msgstr "En fonctionnement"
 
 #: src/client.js:66
 msgid "Scanning metadata"
-msgstr ""
+msgstr "Scan des métadonnées"
 
 #: src/index.html:267
 msgid "Signature"
-msgstr ""
+msgstr "Signature"
 
 #: src/index.html:279
 msgid "Signed by"
-msgstr ""
+msgstr "Signé par"
 
 #: src/index.html:23 src/manifest.json
 msgid "Software Updates"
-msgstr ""
+msgstr "Mises à jour de logiciel"
 
 #: src/index.html:288
 msgid "Status"
@@ -242,34 +237,36 @@ msgstr "État"
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
+"Ce déploiement contient les mêmes logiciels que votre système démarré "
+"actuellement"
 
 #: src/index.html:265
 msgid "Tree"
-msgstr ""
+msgstr "Arbre"
 
 #: src/index.html:48 src/index.html:109
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/index.html:419
 msgid "Unable to communicate with OSTree"
-msgstr ""
+msgstr "Impossible de communiquer avec OSTree"
 
 #: src/index.html:233
 msgid "Update and Reboot"
-msgstr ""
+msgstr "Mettre à jour et redémarrer"
 
 #: src/index.html:317 src/index.html:343
 msgid "Updates"
-msgstr ""
+msgstr "Mises à jour"
 
 #: src/index.html:262
 msgid "Updating"
-msgstr ""
+msgstr "Mise à jour"
 
 #: src/index.html:59 src/index.html:121
 msgid "Use trusted GPG key"
-msgstr ""
+msgstr "Utiliser des clés GPG de confiance"
 
 #: src/index.html:303
 msgid "Version"
@@ -277,15 +274,15 @@ msgstr "Version"
 
 #: src/index.html:282
 msgid "When"
-msgstr ""
+msgstr "Quand"
 
 #: src/client.js:64
 msgid "Writing objects"
-msgstr ""
+msgstr "Écriture des objets"
 
 #: src/index.html:186
 msgid "at"
-msgstr ""
+msgstr "à"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (partagé avec le système d'exploitation)"
