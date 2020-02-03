@@ -4,51 +4,52 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2017-08-23 04:21+0000\n"
-"Last-Translator: Toon van Gerwen <translation@vgerwen.nl>\n"
-"Language-Team: Dutch\n"
+"PO-Revision-Date: 2020-02-03 07:25+0000\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"Language-Team: Dutch <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.4.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 3.10.3\n"
 
 #: src/client.js:484
 msgid "$0 key ID"
-msgstr ""
+msgstr "$0 sleutel-ID"
 
 #: src/app.js:459
 msgid "$0 package"
-msgstr ""
+msgstr "$0 pakket"
 
 #: src/app.js:459
 msgid "$0 packages"
-msgstr ""
+msgstr "$0 pakketten"
 
 #: src/index.html:92
 msgid "- Add New Repository"
-msgstr ""
+msgstr "- Voeg nieuwe repository toe"
 
 #: src/index.html:90
 msgid "Add"
-msgstr ""
+msgstr "Toevoegen"
 
 #: src/index.html:75
 msgid "Add Another Key"
-msgstr ""
+msgstr "Nog een sleutel toevoegen"
 
 #: src/index.html:313 src/index.html:331
 msgid "Additions"
-msgstr ""
+msgstr "Toevoegingen"
 
 #: src/index.html:39
 msgid "Apply"
-msgstr ""
+msgstr "Toepassen"
 
 #: src/index.html:255
 msgid "Available"
-msgstr ""
+msgstr "Beschikbaar"
 
 #: src/index.html:68
 msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
@@ -56,224 +57,225 @@ msgstr "Begins with '-----BEGIN PGP PUBLIEK SLEUTEL BLOK-----'"
 
 #: src/index.html:164
 msgid "Cancel"
-msgstr ""
+msgstr "Annuleren"
 
 #: src/index.html:134
 msgid "Change Repository"
-msgstr ""
+msgstr "Wijzig repository"
 
 #: src/index.html:210
 msgid "Check for Updates"
-msgstr ""
+msgstr "Controleer op updates"
 
 #: src/app.js:303
 msgid "Checking for updates"
-msgstr ""
+msgstr "Controleren op updates"
 
 #: src/index.html:418
 msgid "Connecting to OSTree"
-msgstr ""
+msgstr "Verbinden met OSTree"
 
 #: src/remotes.js:181
 msgid "Couldn't load settings for '$0': $1"
-msgstr ""
+msgstr "Kan instellingen voor '$0' niet laden: $1"
 
 #: src/index.html:184
 msgid "Currently using:"
-msgstr ""
+msgstr "Momenteel gebruikt:"
 
 #: src/index.html:253
 msgid "Default"
-msgstr ""
+msgstr "Standaard"
 
 #: src/index.html:38
 msgid "Delete"
-msgstr ""
+msgstr "Verwijderen"
 
 #: src/index.html:319 src/index.html:349
 msgid "Downgrades"
-msgstr ""
+msgstr "Degraderen"
 
 #: src/remotes.js:327
 msgid "Error loading remotes: $0"
-msgstr ""
+msgstr "Fout bij het laden van remotes: $0"
 
 #: src/index.html:290
 msgid "Expired Signature"
-msgstr ""
+msgstr "Verlopen handtekening"
 
 #: src/index.html:258
 msgid "Failed"
-msgstr ""
+msgstr "Mislukt"
 
 #: src/index.html:289
 msgid "Good Signature"
-msgstr ""
+msgstr "Goede handtekening"
 
 #: src/index.html:291
 msgid "Invalid Signature"
-msgstr ""
+msgstr "Ongeldige handtekening"
 
 #: src/index.html:99
 msgid "Name"
-msgstr ""
+msgstr "Naam"
 
 #: src/index.html:420
 msgid "No Deployments"
-msgstr ""
+msgstr "Geen implementaties"
 
 #: src/app.js:104
 msgid "No OSTree deployments found"
-msgstr ""
+msgstr "Geen OSTree-implementaties gevonden"
 
 #: src/remotes.js:112
 msgid "No configuration data found"
-msgstr ""
+msgstr "Geen configuratiedata gevonden"
 
 #: src/index.html:294
 msgid "No signature avaliable"
-msgstr ""
+msgstr "Geen handtekening beschikbaar"
 
 #: src/app.js:83
 msgid "Not authorized to update software on this system"
-msgstr ""
+msgstr "Niet geautoriseerd om software op dit systeem bij te werken"
 
 #: src/client.js:585 src/client.js:681
 msgid "OS $0 not found"
-msgstr ""
+msgstr "OS $0 niet gevonden"
 
 #: src/app.js:85
 msgid "OSTree is not available on this system"
-msgstr ""
+msgstr "OSTree is niet beschikbaar op dit systeem"
 
 #: src/index.html:301
 msgid "Operating System"
-msgstr ""
+msgstr "Besturingssysteem"
 
 #: src/index.html:375
 msgid "Operating System Updates"
-msgstr ""
+msgstr "Updates van het besturingssysteem"
 
 #: src/index.html:307
 msgid "Origin"
-msgstr ""
+msgstr "Oorsprong"
 
 #: src/index.html:266
 msgid "Packages"
-msgstr ""
+msgstr "Pakketten"
 
 #: src/remotes.js:261
 msgid "Please provide a valid URL"
-msgstr ""
+msgstr "Geef een geldige URL op"
 
 #: src/remotes.js:254
 msgid "Please provide a valid name"
-msgstr ""
+msgstr "Geef een geldige naam op"
 
 #: src/index.html:241
 msgid "Rebase and Reboot"
-msgstr ""
+msgstr "Wisselen en opnieuw opstarten"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
-msgstr ""
+msgstr "Deltaonderdelen ontvangen"
 
 #: src/client.js:58
 msgid "Receiving metadata objects"
-msgstr ""
+msgstr "Metadata-objecten ontvangen"
 
 #: src/client.js:61
 msgid "Receiving objects: $0%"
-msgstr ""
+msgstr "Objecten ontvangen: $0%"
 
 #: src/index.html:423
 msgid "Reconnect"
-msgstr ""
+msgstr "Opnieuw verbinden"
 
 #: src/index.html:305
 msgid "Released"
-msgstr ""
+msgstr "Vrijgegeven"
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
-msgstr ""
+msgstr "Verwijderingen"
 
 #: src/index.html:237
 msgid "Roll Back and Reboot"
-msgstr ""
+msgstr "Terugdraaien en opnieuw opstarten"
 
 #: src/index.html:251
 msgid "Running"
-msgstr ""
+msgstr "In uitvoering"
 
 #: src/client.js:66
 msgid "Scanning metadata"
-msgstr ""
+msgstr "Metadata scannen"
 
 #: src/index.html:267
 msgid "Signature"
-msgstr ""
+msgstr "Handtekening"
 
 #: src/index.html:279
 msgid "Signed by"
-msgstr ""
+msgstr "Ondertekend door"
 
 #: src/index.html:23 src/manifest.json
 msgid "Software Updates"
-msgstr ""
+msgstr "Software updates"
 
 #: src/index.html:288
 msgid "Status"
-msgstr ""
+msgstr "Status"
 
 #: src/index.html:327
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
+"Deze implementatie bevat dezelfde pakketten als je huidig opgestarte systeem"
 
 #: src/index.html:265
 msgid "Tree"
-msgstr ""
+msgstr "Boom"
 
 #: src/index.html:48 src/index.html:109
 msgid "URL"
-msgstr ""
+msgstr "URL"
 
 #: src/index.html:419
 msgid "Unable to communicate with OSTree"
-msgstr ""
+msgstr "Kan niet communiceren met OSTree"
 
 #: src/index.html:233
 msgid "Update and Reboot"
-msgstr ""
+msgstr "Updaten en opnieuw opstarten"
 
 #: src/index.html:317 src/index.html:343
 msgid "Updates"
-msgstr ""
+msgstr "Updates"
 
 #: src/index.html:262
 msgid "Updating"
-msgstr ""
+msgstr "Vernieuwen"
 
 #: src/index.html:59 src/index.html:121
 msgid "Use trusted GPG key"
-msgstr ""
+msgstr "Gebruik vertrouwde GPG-sleutel"
 
 #: src/index.html:303
 msgid "Version"
-msgstr ""
+msgstr "Versie"
 
 #: src/index.html:282
 msgid "When"
-msgstr ""
+msgstr "Wanneer"
 
 #: src/client.js:64
 msgid "Writing objects"
-msgstr ""
+msgstr "Objecten schrijven"
 
 #: src/index.html:186
 msgid "at"
-msgstr ""
+msgstr "op"
 
 #~ msgid " 1\"Do you want to delete the following Nodes?"
 #~ msgstr " 1\"Wil je de volgenden Nodes verwijderen?"
