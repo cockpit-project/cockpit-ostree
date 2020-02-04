@@ -40,6 +40,7 @@
   },
   "dependencies": {
     "@babel/polyfill": "7.8.3",
+    "@patternfly/react-styles": "3.6.26",
     "angular": "1.7.9",
     "angular-bootstrap-npm": "0.13.4",
     "angular-gettext": "2.4.1",
