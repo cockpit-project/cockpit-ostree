@@ -79,7 +79,7 @@ function changeData(string, section, options) {
                 break;
             m = line.match(configRegex.section);
             k = m[1].trim();
-            in_section = section == k;
+            in_section = section === k;
         } else if (in_section && configRegex.param.test(line)) {
             m = line.match(configRegex.param);
             k = m[1];

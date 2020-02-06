@@ -30,9 +30,7 @@
         "no-console": "off",
         "quotes": "off",
         "space-before-function-paren": "off",
-        "standard/no-callback-literal": "off",
-
-        "eqeqeq": "off"
+        "standard/no-callback-literal": "off"
     },
     "globals": {
         "require": false,

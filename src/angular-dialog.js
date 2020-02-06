@@ -343,7 +343,7 @@ function DialogState(element, btnSel, errorAfter, promise, scope) {
 
     function notifyWait(data) {
         var message = data.message || data;
-        if (typeof message == "string" || typeof message == "number")
+        if (typeof message === "string" || typeof message === "number")
             notify.text(message);
         else if (!message)
             notify.text("");
