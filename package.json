@@ -8,6 +8,7 @@
   "license": "LGPL-2.1",
   "scripts": {
     "build": "webpack",
+    "test": "qunit src/test-*.js",
     "eslint": "eslint src/",
     "eslint:fix": "eslint --fix src/"
   },
@@ -33,6 +34,7 @@
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
     "po2json": "^0.4.5",
+    "qunit": "^2.9.3",
     "sizzle": "^2.3.3",
     "stdio": "^0.2.7",
     "webpack": "^4.35.3",
