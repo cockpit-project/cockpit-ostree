@@ -149,8 +149,12 @@ $(VM_IMAGE): rpm bots
 vm: $(VM_IMAGE)
 	echo $(VM_IMAGE)
 
+# run the QUnit tests
+check-unit: $(NODE_MODULES_TEST)
+	npm run test
+
 # run the browser integration tests; skip check for SELinux denials
-check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common
+check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common check-unit
 	TEST_AUDIT_NO_SELINUX=1 test/check-ostree
 
 # checkout Cockpit's bots for standard test VM images and API to launch them
@@ -175,4 +179,4 @@ $(NODE_MODULES_TEST): package.json
 	env -u NODE_ENV npm install
 	env -u NODE_ENV npm prune
 
-.PHONY: all clean install devel-install dist-gzip srpm rpm check vm update-po
+.PHONY: all clean install devel-install dist-gzip srpm rpm check check-unit vm update-po

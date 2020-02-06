@@ -17,100 +17,64 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-var angular = require("angular");
-var QUnit = require("qunit-tests");
+const QUnit = require("qunit");
+const utils = require("./utils");
 
-require("./utils");
-var sample_config = require("raw-loader!./sample.conf");
+const sample_config = `
+key = value
 
-function suite() {
-    "use strict";
+[section]
+key=section
+ indented = commas, or spaces     
 
-    /* Filled in with a function */
-    var inject;
-    var assert = QUnit;
+[ section2 ]
+key = section2
+not a value
+another=value
+`;
 
-    var module = angular.module("ostree.utils.tests", [
-        "ostree.utils",
-    ]);
+QUnit.test("parseData", assert => {
+    const expected = {
+      key: "value",
+      section: {
+        indented: "commas, or spaces",
+        key: "section",
+      },
+      section2: {
+        key: "section2",
+        another: "value"
+      }
+    };
 
-    function utilsTest(name, count, func) {
-        QUnit.test(name, function() {
-            assert.expect(count);
-            inject(func);
-        });
-    }
+    assert.deepEqual(utils.parseData(""), {}, "empty string");
+    assert.deepEqual(utils.parseData(null), {}, "null string");
+    assert.deepEqual(utils.parseData(), {}, "undefined string");
+    assert.deepEqual(utils.parseData("invalid"), {}, "invalid config");
+    assert.deepEqual(utils.parseData(sample_config), expected, "parse sample config");
+});
 
-    utilsTest("parseData", 5, [
-        "config",
-        function (config) {
-            var expected = {
-              key: "value",
-              section: {
-                indented: "commas, or spaces",
-                key: "section",
-              },
-              section2: {
-                key: "section2",
-                another: "value"
-              }
-            };
-
-            assert.deepEqual(config.parseData(""), {}, "empty string");
-            assert.deepEqual(config.parseData(null), {}, "null string");
-            assert.deepEqual(config.parseData(), {}, "undefined string");
-            assert.deepEqual(config.parseData("invalid"), {}, "invalid config");
-            assert.deepEqual(config.parseData(sample_config), expected, "parse sample config");
-        }
-    ]);
-
-    utilsTest("changeData", 3, [
-        "config",
-        function(config) {
-            assert.deepEqual(config.changeData(null, "section", {
-                                key: "value2",
-                                bool1: true,
-                                bool2: false,
-                             }),
-                             "\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
-                             "new file");
-            assert.deepEqual(config.changeData("[other-section]\ndata=data\nline", "section", {
-                                key: "value2",
-                                bool1: true,
-                                bool2: false,
-                             }),
-                             "[other-section]\ndata=data\nline\n\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
-                             "new section");
-            assert.deepEqual(config.changeData("[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = old\ntodelete=value\nbool1 = true\nbool2 = false\n[more]\nkey=value", "section", {
-                                key: "value2",
-                                todelete: null,
-                                bool1: false,
-                                bool2: true,
-                                new: "new"
-                             }),
-                             "[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = value2\nbool1 = false\nbool2 = true\nnew = new\n\n[more]\nkey=value",
-                             "change section");
-        }
-    ]);
-
-    angular.module('exceptionOverride', []).factory('$exceptionHandler', function() {
-        return function(exception, cause) {
-            exception.message += ' (caused by "' + cause + '")';
-            throw exception;
-        };
-    });
-
-    module.run([
-        '$injector',
-        function($injector) {
-            inject = function inject(func) {
-                return $injector.invoke(func);
-            };
-            QUnit.start();
-        }
-    ]);
-
-    angular.bootstrap(document, ['ostree.utils.tests']);
-}
-
-suite();
+QUnit.test("changeData", assert => {
+        assert.deepEqual(utils.changeData(null, "section", {
+                            key: "value2",
+                            bool1: true,
+                            bool2: false,
+                         }),
+                         "\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
+                         "new file");
+        assert.deepEqual(utils.changeData("[other-section]\ndata=data\nline", "section", {
+                            key: "value2",
+                            bool1: true,
+                            bool2: false,
+                         }),
+                         "[other-section]\ndata=data\nline\n\n[section]\nkey = value2\nbool1 = true\nbool2 = false\n\n",
+                         "new section");
+        assert.deepEqual(utils.changeData("[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = old\ntodelete=value\nbool1 = true\nbool2 = false\n[more]\nkey=value", "section", {
+                            key: "value2",
+                            todelete: null,
+                            bool1: false,
+                            bool2: true,
+                            new: "new"
+                         }),
+                         "[other-section]\ndata=data\nline\nsome line\nmore lines\n[section]\nkey = value2\nbool1 = false\nbool2 = true\nnew = new\n\n[more]\nkey=value",
+                         "change section");
+});
