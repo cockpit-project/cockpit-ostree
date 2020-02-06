@@ -20,22 +20,20 @@
 import cockpit from 'cockpit';
 import angular from 'angular';
 import client from './client';
+import { parseData, changeData } from './utils';
 
 import './angular-dialog.js';
-import './utils';
 
 const _ = cockpit.gettext;
 
 angular.module('ostree.remotes', [
     'ui.cockpit',
-    'ostree.utils',
 ])
 
 .factory("remoteActions", [
     "$q",
     "$timeout",
-    "config",
-    function($q, $timeout, config) {
+    function($q, $timeout) {
         function listRemotes() {
             return cockpit.spawn(["ostree", "remote", "list"],
                                  { superuser : "try", err : "message" })
@@ -105,7 +103,7 @@ angular.module('ostree.remotes', [
             var d = $q.defer();
             file.read()
                 .done(function (content) {
-                    var data = config.parseData(content);
+                    var data = parseData(content);
                     if (data[section])
                         d.resolve(data[section]);
                     else
@@ -127,7 +125,7 @@ angular.module('ostree.remotes', [
             var d = $q.defer();
 
             function mutate(content) {
-                return config.changeData(content, section, options);
+                return changeData(content, section, options);
             }
 
             file.modify(mutate)
