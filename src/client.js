@@ -243,7 +243,7 @@ class RPMOSTreeDBusClient {
                     this.trigger_changed();
             });
 
-            this.client = cockpit.dbus(DEST, { superuser : true, capabilities : ["address"] });
+            this.client = cockpit.dbus(DEST, { superuser: true, capabilities: ["address"] });
 
             /* Watch before listening for close because watch fires first */
             this.client.watch(PATH).fail(this.tear_down);
@@ -469,12 +469,12 @@ class RPMOSTreeDBusClient {
             by = by ? cockpit.format("$0 <$1>", signature.v[10], by) : signature.v[10];
 
         return {
-            fp : signature.v[5],
-            fp_name : signature.v[8] ? cockpit.format(_("$0 key ID"), signature.v[8]) : null,
-            expired : signature.v[1] || signature.v[2],
-            valid : signature.v[0],
-            timestamp : signature.v[6],
-            by : by
+            fp: signature.v[5],
+            fp_name: signature.v[8] ? cockpit.format(_("$0 key ID"), signature.v[8]) : null,
+            expired: signature.v[1] || signature.v[2],
+            valid: signature.v[0],
+            timestamp: signature.v[6],
+            by: by
         };
     }
 
@@ -565,7 +565,7 @@ class RPMOSTreeDBusClient {
                     if (item)
                         dp.resolve(item);
                     else
-                        dp.reject({ problem : "protocol-error" });
+                        dp.reject({ problem: "protocol-error" });
                 })
                 .fail(ex => dp.reject(ex));
         } else {
@@ -666,7 +666,7 @@ class RPMOSTreeDBusClient {
                         .fail(fail)
                         .done(result => {
                             const connect_args = {
-                                superuser : true,
+                                superuser: true,
                                 address: result[0],
                                 bus: "none"
                             };
@@ -677,7 +677,7 @@ class RPMOSTreeDBusClient {
                             transaction_client = cockpit.dbus(null, connect_args);
                             transaction_client.addEventListener("close", on_close);
 
-                            subscription = transaction_client.subscribe({ path : "/", },
+                            subscription = transaction_client.subscribe({ path: "/", },
                                 (path, iface, signal, args) => {
                                     if (signal == "DownloadProgress") {
                                         const line = build_progress_line(args);
