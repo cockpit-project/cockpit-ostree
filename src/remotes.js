@@ -173,7 +173,7 @@ angular.module('ostree.remotes', [
                     .then(function (fields) {
                         var verify = fields['gpg-verify'] ? fields['gpg-verify'].toLowerCase() : "";
                         $scope.fields = fields;
-                        $scope.fields.gpgVerify = verify == 'true' || verify == '1';
+                        $scope.fields.gpgVerify = verify === 'true' || verify === '1';
                         $scope.$applyAsync();
                     }, function (ex) {
                         $scope.failure(cockpit.format(_("Couldn't load settings for '$0': $1"),
@@ -360,7 +360,7 @@ angular.module('ostree.remotes', [
 
             $scope.adding = false;
             $scope.remote = remote;
-            if ($scope.editing != remote)
+            if ($scope.editing !== remote)
                 $scope.editing = null;
         };
 

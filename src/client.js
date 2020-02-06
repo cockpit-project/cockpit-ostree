@@ -32,10 +32,10 @@ const TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
  */
 
 function build_progress_line(progress_arg) {
-    if (!progress_arg || progress_arg.length != 6 ||
-        progress_arg[0].length != 2 || progress_arg[1].length != 2 ||
-        progress_arg[2].length != 3 || progress_arg[3].length != 4 ||
-        progress_arg[4].length != 2 || progress_arg[5].length != 2) {
+    if (!progress_arg || progress_arg.length !== 6 ||
+        progress_arg[0].length !== 2 || progress_arg[1].length !== 2 ||
+        progress_arg[2].length !== 3 || progress_arg[3].length !== 4 ||
+        progress_arg[4].length !== 2 || progress_arg[5].length !== 2) {
             console.warn("Unknown progress data", progress_arg);
             return;
     }
@@ -349,7 +349,7 @@ class RPMOSTreeDBusClient {
         if (!branch && current_origin)
             branch = current_origin.branch;
 
-        if (current_origin && current_origin.branch == branch && current_origin.remote == remote)
+        if (current_origin && current_origin.branch === branch && current_origin.remote === remote)
             return;
 
         if (!remote || !branch)
@@ -397,7 +397,7 @@ class RPMOSTreeDBusClient {
             const deployment = deployments[i];
             const checksum = this.resolve_nested(deployment, "checksum.v");
 
-            if (deployment.id && this.resolve_nested(deployment, "osname.v") != os_name)
+            if (deployment.id && this.resolve_nested(deployment, "osname.v") !== os_name)
                 continue;
 
             // always show the default deployment,
@@ -555,7 +555,7 @@ class RPMOSTreeDBusClient {
             proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
                 .done(data => {
                     let item;
-                    if (data && data.length == 2 && this.resolve_nested(data[1], "checksum.v")) {
+                    if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
                         item = data[1];
                         this.update_cache[refspec] = item;
                         this.packages_cache[item.checksum.v] = new Packages(cockpit.when([data[0]]),
@@ -679,13 +679,13 @@ class RPMOSTreeDBusClient {
 
                             subscription = transaction_client.subscribe({ path: "/", },
                                 (path, iface, signal, args) => {
-                                    if (signal == "DownloadProgress") {
+                                    if (signal === "DownloadProgress") {
                                         const line = build_progress_line(args);
                                         if (line)
                                             dp.notify(line);
-                                    } else if (signal == "Message") {
+                                    } else if (signal === "Message") {
                                         dp.notify(args[0]);
-                                    } else if (signal == "Finished") {
+                                    } else if (signal === "Finished") {
                                         if (args) {
                                             if (args[0]) {
                                                 dp.resolve(args[1]);
