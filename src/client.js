@@ -98,17 +98,16 @@ function process_diff_list(result) {
 
 function process_rpm_list(result) {
     var data = [];
-    result.split("\n").forEach(function(v) {
+    result.split("\n").forEach(v => {
         if (v) {
             data.push({
                 name: v,
             });
         }
     });
-    data.sort(function(a, b) {
-        var n1 = a.name ? a.name : "";
-        var n2 = b.name ? b.name : "";
-
+    data.sort((a, b) => {
+        const n1 = a.name || "";
+        const n2 = b.name || "";
         return n1.toLowerCase().localeCompare(n2.toLowerCase());
     });
 
@@ -126,81 +125,79 @@ function process_rpm_list(result) {
 }
 
 function Packages(promise, transform) {
-    var self = this;
-    self.error = null;
-    self.ready = false;
-    self.empty = false;
+    this.error = null;
+    this.ready = false;
+    this.empty = false;
 
-    cockpit.event_target(self);
+    cockpit.event_target(this);
 
     promise
-        .done(function(result) {
+        .then(result => {
             var empty = true;
             if (transform)
                 result = transform(result);
 
             for (var k in result) {
-                self[k] = result[k];
+                this[k] = result[k];
                 empty = false;
             }
 
-            self.empty = empty;
-            self.valid = true;
+            this.empty = empty;
+            this.valid = true;
         })
-        .fail(function(ex) {
-            self.error = cockpit.message(ex);
+        .catch(ex => {
+            this.error = cockpit.message(ex);
         })
-        .always(function() {
-            self.ready = true;
-            self.dispatchEvent("changed");
+        .always(() => {
+            this.ready = true;
+            this.dispatchEvent("changed");
         });
 }
 
-function RPMOSTreeDBusClient() {
-    var self = this;
+class RPMOSTreeDBusClient {
+    constructor() {
+        cockpit.event_target(this);
 
-    cockpit.event_target(self);
+        this.connection_error = null;
+        this.os_list = [];
 
-    self.connection_error = null;
-    self.os_list = [];
+        this.sysroot = null;
+        this.os_proxies = {};
+        this.os_proxies_added = null;
 
-    var sysroot = null;
-    var os_proxies = {};
-    var os_proxies_added = null;
+        this.os_names = {};
+        this.packages_cache = {};
+        this.update_cache = {};
 
-    var os_names = {};
-    var packages_cache = {};
-    var update_cache = {};
+        this.local_running = null;
+        this.booted_id = null;
 
-    var local_running = null;
-    var booted_id = null;
+        this.client = null;
+        this.waits = null;
+        this.timer = null;
+        this.skipped = false;
 
-    var client = null;
-    var waits = null;
-    var timer = null;
-    var skipped = false;
+        this.on_sysroot_changed = this.on_sysroot_changed.bind(this);
+    }
 
-    Object.defineProperty(this, "running_method", {
-        enumerable: false,
-        get: function() {
-            if (local_running) {
-                return local_running;
-            } else if (sysroot && sysroot.ActiveTransaction) {
-                var active = sysroot.ActiveTransaction[0];
-                var proxy = os_proxies[sysroot.ActiveTransaction[2]];
+    get running_method() {
+        if (this.local_running) {
+            return this.local_running;
+        } else if (this.sysroot && this.sysroot.ActiveTransaction) {
+            var active = this.sysroot.ActiveTransaction[0];
+            var proxy = this.os_proxies[this.sysroot.ActiveTransaction[2]];
 
-                if (proxy && active)
-                    active = active + ":" + proxy.Name;
+            if (proxy && active)
+                active = active + ":" + proxy.Name;
 
-                return active;
-            } else {
-                return null;
-            }
+            return active;
+        } else {
+            return null;
         }
-    });
+    }
 
-    function resolve_nested(obj, path) {
-        return path.split('.').reduce(function(prev, curr) {
+    resolve_nested(obj, path) {
+        return path.split('.').reduce((prev, curr) => {
             if (prev !== undefined)
                 return prev[curr];
             else
@@ -208,110 +205,106 @@ function RPMOSTreeDBusClient() {
         }, obj || {});
     }
 
-    function trigger_changed() {
-        if (!timer) {
-            self.dispatchEvent("changed");
-            timer = window.setTimeout(function() {
-                timer = null;
-                if (skipped)
-                    self.dispatchEvent("changed");
-                skipped = false;
+    trigger_changed() {
+        if (!this.timer) {
+            this.dispatchEvent("changed");
+            this.timer = window.setTimeout(() => {
+                this.timer = null;
+                if (this.skipped)
+                    this.dispatchEvent("changed");
+                this.skipped = false;
             }, 300);
         } else {
-            skipped = true;
+            this.skipped = true;
         }
     }
 
-    function get_client() {
-        if (!client) {
-            self.connection_error = null;
-            self.os_list = [];
+    get_client() {
+        if (!this.client) {
+            this.connection_error = null;
+            this.os_list = [];
 
-            sysroot = null;
-            os_proxies = {};
-            os_proxies_added = null;
+            this.sysroot = null;
+            this.os_proxies = {};
+            this.os_proxies_added = null;
 
-            os_names = {};
-            packages_cache = {};
-            update_cache = {};
+            this.os_names = {};
+            this.packages_cache = {};
+            this.update_cache = {};
 
-            local_running = null;
-            booted_id = null;
+            this.local_running = null;
+            this.booted_id = null;
 
-            waits = cockpit.defer();
-            waits.promise.done(function () {
-                if (sysroot && sysroot.valid)
-                    build_os_list(sysroot.Deployments);
+            this.waits = cockpit.defer();
+            this.waits.promise.then(() => {
+                if (this.sysroot && this.sysroot.valid)
+                    this.build_os_list(this.sysroot.Deployments);
                 else
-                    trigger_changed();
+                    this.trigger_changed();
             });
 
-            client = cockpit.dbus(DEST, { superuser : true,
-                                         capabilities : ["address"] });
+            this.client = cockpit.dbus(DEST, { superuser : true, capabilities : ["address"] });
 
             /* Watch before listening for close because watch fires first */
-            client.watch(PATH).fail(tear_down);
-            client.addEventListener("close", closing);
+            this.client.watch(PATH).fail(this.tear_down);
+            this.client.addEventListener("close", (event, ex) => {
+                this.tear_down(ex);
+                this.dispatchEvent("connectionLost", [ex]);
+            });
 
-            sysroot = client.proxy(SYSROOT, SYSROOT_PATH);
-            sysroot.addEventListener("changed", on_sysroot_changed);
-            sysroot.wait(function() {
-                if (client) {
-                    os_proxies = client.proxies(OS, PATH);
-                    os_proxies_added = function(event, proxy) {
+            this.sysroot = this.client.proxy(SYSROOT, SYSROOT_PATH);
+            this.sysroot.addEventListener("changed", this.on_sysroot_changed);
+            this.sysroot.wait(() => {
+                if (this.client) {
+                    this.os_proxies = this.client.proxies(OS, PATH);
+                    this.os_proxies_added = (event, proxy) => {
                         if (proxy.Name)
-                            os_names[proxy.Name] = proxy.path;
+                            this.os_names[proxy.Name] = proxy.path;
                     };
-                    os_proxies.addEventListener("changed", trigger_changed);
-                    os_proxies.addEventListener("added", os_proxies_added);
+                    this.os_proxies.addEventListener("changed", this.trigger_changed.bind(this));
+                    this.os_proxies_added = this.os_proxies_added.bind(this);
+                    this.os_proxies.addEventListener("added", this.os_proxies_added);
 
-                    os_proxies.wait(function() {
-                        for (var path in os_proxies) {
-                            var proxy = os_proxies[path];
-                            os_names[proxy.Name] = path;
+                    this.os_proxies.wait(() => {
+                        let path;
+                        for (path in this.os_proxies) {
+                            const proxy = this.os_proxies[path];
+                            this.os_names[proxy.Name] = path;
                         }
-                        waits.resolve();
+                        this.waits.resolve();
                     });
                 } else {
-                    waits.resolve();
+                    this.waits.resolve();
                 }
             });
        }
-       return client;
+       return this.client;
     }
 
-    function tear_down(ex) {
-        client = null;
-        self.connection_error = ex;
-        if (sysroot) {
-            sysroot.removeEventListener("changed", on_sysroot_changed);
-            sysroot = null;
+    tear_down(ex) {
+        this.client = null;
+        this.connection_error = ex;
+        if (this.sysroot) {
+            this.sysroot.removeEventListener("changed", this.on_sysroot_changed);
+            this.sysroot = null;
         }
-        if (os_proxies) {
-            if (os_proxies_added)
-                os_proxies.removeEventListener("added", os_proxies_added);
-            os_proxies_added = null;
-            os_proxies = {};
+        if (this.os_proxies) {
+            if (this.os_proxies_added)
+                this.os_proxies.removeEventListener("added", this.os_proxies_added);
+            this.os_proxies_added = null;
+            this.os_proxies = {};
         }
     }
 
-    function closing(event, ex) {
-        tear_down(ex);
-        self.dispatchEvent("connectionLost", [ex]);
-    }
-
-    /* The order of deployments indicates
-     * the order the OS names should be in.
-     */
-    function build_os_list(data) {
-        var seen = {};
-        var os_list = [];
-        var i;
+    // The order of deployments indicates the order the OS names should be in
+    build_os_list(data) {
+        const seen = {};
+        const os_list = [];
 
         if (data) {
-            for (i = 0; i < data.length; i++) {
-                var deployment = data[i];
-                var os = deployment.osname.v;
+            for (let i = 0; i < data.length; i++) {
+                const deployment = data[i];
+                const os = deployment.osname.v;
 
                 if (!seen[os])
                     os_list.push(os);
@@ -319,36 +312,36 @@ function RPMOSTreeDBusClient() {
             }
         }
 
-        self.os_list = os_list;
-        trigger_changed();
+        this.os_list = os_list;
+        this.trigger_changed();
     }
 
-    function on_sysroot_changed(ev, data) {
+    on_sysroot_changed(ev, data) {
         if (data["Deployments"]) {
-            build_os_list(data["Deployments"]);
+            this.build_os_list(data["Deployments"]);
         } else if ("ActiveTransaction" in data) {
-            trigger_changed();
+            this.trigger_changed();
         }
     }
 
-    function get_os_origin (os) {
-        var origin;
-        var proxy = self.get_os_proxy(os);
+    get_os_origin (os) {
+        let origin;
+        let proxy = this.get_os_proxy(os);
 
-        if (!proxy && sysroot)
-            proxy = os_proxies[sysroot.Booted];
+        if (!proxy && this.sysroot)
+            proxy = this.os_proxies[this.sysroot.Booted];
 
         if (proxy) {
-            origin = resolve_nested(proxy, "BootedDeployment.origin.v");
+            origin = this.resolve_nested(proxy, "BootedDeployment.origin.v");
             if (!origin)
-                origin = resolve_nested(proxy, "DefaultDeployment.origin.v");
+                origin = this.resolve_nested(proxy, "DefaultDeployment.origin.v");
         }
 
         return origin;
     }
 
-    function build_change_refspec(os, remote, branch) {
-        var current_origin = self.get_default_origin(os);
+    build_change_refspec(os, remote, branch) {
+        const current_origin = this.get_default_origin(os);
 
         if (!remote && current_origin)
             remote = current_origin.remote;
@@ -365,68 +358,68 @@ function RPMOSTreeDBusClient() {
         return remote + ":" + branch;
     }
 
-    self.connect = function() {
-        var dp = cockpit.defer();
-        get_client();
-        waits.promise.done(function() {
-            if (self.connection_error)
-                dp.reject(self.connection_error);
+    connect() {
+        const dp = cockpit.defer();
+        this.get_client();
+        this.waits.promise.done(() => {
+            if (this.connection_error)
+                dp.reject(this.connection_error);
             else
-                dp.resolve(client);
+                dp.resolve(this.client);
         });
         return dp.promise;
-    };
+    }
 
-    self.known_versions_for = function(os_name, remote, branch) {
+    known_versions_for(os_name, remote, branch) {
         /* The number of deployments should always be a small
          * number. If that turns out to not be the case we
          * can cache this on a local property.
          */
-        var deployments = sysroot ? sysroot.Deployments : [];
-        var list = [];
-        var upgrade_checksum;
-        var update, cached_origin;
-        var alt_refspec = build_change_refspec(os_name, remote, branch);
+        const deployments = this.sysroot ? this.sysroot.Deployments : [];
+        const list = [];
+        let upgrade_checksum;
+        let cached_origin;
+        const alt_refspec = this.build_change_refspec(os_name, remote, branch);
 
-        var proxy = self.get_os_proxy(os_name);
+        const proxy = this.get_os_proxy(os_name);
         if (proxy) {
-            cached_origin = resolve_nested(proxy, "CachedUpdate.origin.v");
+            cached_origin = this.resolve_nested(proxy, "CachedUpdate.origin.v");
             if (cached_origin)
-                update_cache[cached_origin] = proxy.CachedUpdate;
+                this.update_cache[cached_origin] = proxy.CachedUpdate;
         }
 
-        update = alt_refspec ? update_cache[alt_refspec] : update_cache[cached_origin];
+        const update = alt_refspec ? this.update_cache[alt_refspec] : this.update_cache[cached_origin];
 
         if (update)
-            upgrade_checksum = resolve_nested(update, "checksum.v");
+            upgrade_checksum = this.resolve_nested(update, "checksum.v");
 
-        for (var i = 0; i < deployments.length; i++) {
-            var deployment = deployments[i];
-            var checksum = resolve_nested(deployment, "checksum.v");
+        for (let i = 0; i < deployments.length; i++) {
+            const deployment = deployments[i];
+            const checksum = this.resolve_nested(deployment, "checksum.v");
 
-            if (deployment.id && resolve_nested(deployment, "osname.v") != os_name)
+            if (deployment.id && this.resolve_nested(deployment, "osname.v") != os_name)
                 continue;
 
             // always show the default deployment,
             // skip showing the upgrade if it is the
             // same as the default.
-            if (self.item_matches(deployment, "DefaultDeployment")) {
+            if (this.item_matches(deployment, "DefaultDeployment")) {
                 if (upgrade_checksum && checksum !== upgrade_checksum)
                     list.push(update);
                 list.push(deployment);
 
             // skip other deployments if it is the same as the upgrade
-            } else if (resolve_nested(deployment, "checksum.v") !== upgrade_checksum) {
+            } else if (this.resolve_nested(deployment, "checksum.v") !== upgrade_checksum) {
                 list.push(deployment);
             }
         }
 
         return list;
-    };
+    }
 
-    self.get_default_origin = function (os) {
-        var parts;
-        var origin = get_os_origin(os);
+    get_default_origin(os) {
+        let parts;
+        let origin = this.get_os_origin(os);
 
         if (origin) {
             parts = origin.split(':');
@@ -438,15 +431,15 @@ function RPMOSTreeDBusClient() {
         }
 
         return origin;
-    };
+    }
 
-    self.get_os_proxy = function(os_name) {
-        var path = os_names[os_name];
-        var proxy = null;
+    get_os_proxy(os_name) {
+        const path = this.os_names[os_name];
+        let proxy = null;
         if (path)
-            proxy = os_proxies[path];
+            proxy = this.os_proxies[path];
         return proxy;
-    };
+    }
 
     /* This is a little fragile because the
      * the dbus varient is simply 'av'.
@@ -467,11 +460,11 @@ function RPMOSTreeDBusClient() {
      * - str key user name
      * - str key user email
      */
-    self.signature_obj = function(signature) {
+    signature_obj(signature) {
         if (!signature.v)
             return;
 
-        var by = signature.v[11];
+        let by = signature.v[11];
         if (signature.v[10])
             by = by ? cockpit.format("$0 <$1>", signature.v[10], by) : signature.v[10];
 
@@ -483,7 +476,7 @@ function RPMOSTreeDBusClient() {
             timestamp : signature.v[6],
             by : by
         };
-    };
+    }
 
     /* Because all our deployment package diffs can only
      * change when the machine is rebooted we
@@ -492,81 +485,81 @@ function RPMOSTreeDBusClient() {
      * Pending updates are tracked by checksum since those
      * can change.
      */
-    self.packages = function(item) {
-        var id = resolve_nested(item, "id.v");
-        var checksum = resolve_nested(item, "checksum.v");
-        var key = id;
+    packages(item) {
+        const id = this.resolve_nested(item, "id.v");
+        const checksum = this.resolve_nested(item, "checksum.v");
+        let key = id;
 
         if (!id && checksum)
             key = checksum;
 
-        if (!booted_id) {
-            var root_proxy = os_proxies[sysroot.Booted];
+        if (!this.booted_id) {
+            var root_proxy = this.os_proxies[this.sysroot.Booted];
             if (root_proxy)
-                booted_id = root_proxy.BootedDeployment.id.v;
+                this.booted_id = root_proxy.BootedDeployment.id.v;
             else
                 return;
         }
 
-        if (key && !packages_cache[key]) {
-            var proxy = self.get_os_proxy(item.osname.v);
+        if (key && !this.packages_cache[key]) {
+            var proxy = this.get_os_proxy(item.osname.v);
             var packages;
             var promise;
             if (proxy) {
-                if (id === booted_id) {
+                if (id === this.booted_id) {
                     promise = cockpit.spawn(['rpm', '-qa']);
                     packages = new Packages(promise,
                                             process_rpm_list);
                 } else if (id) {
                     promise = proxy.call("GetDeploymentsRpmDiff",
-                                             [booted_id, id]);
+                                             [this.booted_id, id]);
                     packages = new Packages(promise,
                                             process_diff_list);
-                } else if (item.origin.v === get_os_origin(proxy.Name)) {
+                } else if (item.origin.v === this.get_os_origin(proxy.Name)) {
                     promise = proxy.call("GetCachedUpdateRpmDiff", [""]);
                     packages = new Packages(promise,
                                             process_diff_list);
                 }
-                packages_cache[key] = packages;
+                this.packages_cache[key] = packages;
             }
         }
-        return packages_cache[key];
-    };
+        return this.packages_cache[key];
+    }
 
-    self.item_matches = function(item, proxy_attr, attr) {
-        var os_name = resolve_nested(item, "osname.v");
-        var proxy = null;
-        var item2 = null;
+    item_matches(item, proxy_attr, attr) {
+        const os_name = this.resolve_nested(item, "osname.v");
+        let proxy = null;
+        let item2 = null;
 
         if (!os_name)
             return false;
 
-        proxy = self.get_os_proxy(os_name);
-        item2 = resolve_nested(proxy, proxy_attr);
+        proxy = this.get_os_proxy(os_name);
+        item2 = this.resolve_nested(proxy, proxy_attr);
 
         if (!attr)
             attr = "checksum";
         attr = attr + ".v";
-        return resolve_nested(item, attr) === resolve_nested(item2, attr);
-    };
+        return this.resolve_nested(item, attr) === this.resolve_nested(item2, attr);
+    }
 
-    self.cache_update_for = function(os, remote, branch) {
-        var dp = cockpit.defer();
-        var refspec = build_change_refspec(os, remote, branch);
-        var proxy = self.get_os_proxy(os);
+    cache_update_for(os, remote, branch) {
+        const dp = cockpit.defer();
+        const refspec = this.build_change_refspec(os, remote, branch);
+        const proxy = this.get_os_proxy(os);
 
         if (proxy) {
             if (!refspec)
                 return cockpit.when(proxy.CachedUpdate);
 
             proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
-                .done(function (data) {
-                    var item;
-                    if (data && data.length == 2 && resolve_nested(data[1], "checksum.v")) {
+                .done(data => {
+                    let item;
+                    if (data && data.length == 2 && this.resolve_nested(data[1], "checksum.v")) {
                         item = data[1];
-                        update_cache[refspec] = item;
-                        packages_cache[item.checksum.v] = new Packages(cockpit.when([data[0]]),
-                                                                       process_diff_list);
+                        this.update_cache[refspec] = item;
+                        this.packages_cache[item.checksum.v] = new Packages(cockpit.when([data[0]]),
+                                                                            process_diff_list);
                     }
 
                     if (item)
@@ -574,70 +567,62 @@ function RPMOSTreeDBusClient() {
                     else
                         dp.reject({ problem : "protocol-error" });
                 })
-                .fail(function (ex) {
-                    dp.reject(ex);
-                });
+                .fail(ex => dp.reject(ex));
         } else {
             dp.reject(cockpit.format(_("OS $0 not found"), os));
         }
 
         return dp.promise();
-    };
+    }
 
-    self.check_for_updates = function(os, remote, branch) {
-        var promise;
-        var refspec = build_change_refspec(os, remote, branch);
+    check_for_updates(os, remote, branch) {
+        let promise;
+        const refspec = this.build_change_refspec(os, remote, branch);
         if (refspec) {
-            promise = self.run_transaction("DownloadRebaseRpmDiff",
-                                             [refspec, []], os)
-                        .then(function () {
+            promise = this.run_transaction("DownloadRebaseRpmDiff", [refspec, []], os)
+                        .then(() => {
                             // Need to get and store the cached data.
                             // Make it like this is part of the download
                             // call.
-                            local_running = "DownloadRebaseRpmDiff" + ":" + os;
-                            return self.cache_update_for(os, remote, branch)
-                                        .always(function () {
-                                            local_running = null;
-                                            trigger_changed();
+                            this.local_running = "DownloadRebaseRpmDiff" + ":" + os;
+                            return this.cache_update_for(os, remote, branch)
+                                        .always(() => {
+                                            this.local_running = null;
+                                            this.trigger_changed();
                                         });
                         });
         } else {
-            promise = self.run_transaction("DownloadUpdateRpmDiff",
-                                             null, os);
+            promise = this.run_transaction("DownloadUpdateRpmDiff", null, os);
         }
         return promise;
-    };
+    }
 
-    self.reload = function () {
-        var dp = cockpit.defer();
+    reload() {
+        const dp = cockpit.defer();
         /* Not all Systems support this so just skip if not
          * known.
          */
-        if (sysroot && sysroot.ReloadConfig) {
-            sysroot.ReloadConfig()
-                .fail(function (ex) {
-                    console.warn("Error reloading config:", ex);
-                })
-                .always(function () {
-                    dp.resolve();
-                });
+        if (this.sysroot && this.sysroot.ReloadConfig) {
+            this.sysroot.ReloadConfig()
+                .fail(ex => console.warn("Error reloading config:", ex))
+                .always(() => dp.resolve());
         } else {
             dp.resolve();
         }
         return dp.promise();
-    };
+    }
 
-    self.run_transaction = function(method, method_args, os) {
-        local_running = method + ":" + os;
-        var transaction_client = null;
-        var subscription = null;
-        var dp = cockpit.defer();
-        var i;
-        var reboot = false;
+    run_transaction(method, method_args, os) {
+        this.local_running = method + ":" + os;
+        let transaction_client = null;
+        let subscription = null;
+        const dp = cockpit.defer();
+        let i;
+        let reboot = false;
 
         if (Array.isArray(method_args)) {
             for (i = 0; i < method_args.length; i++) {
-                var val = method_args[i];
+                const val = method_args[i];
                 if (val !== null && typeof val === 'object' && "reboot" in val) {
                     reboot = method_args[i].reboot;
                     break;
@@ -645,8 +630,8 @@ function RPMOSTreeDBusClient() {
             }
         }
 
-        function cleanup() {
-            local_running = null;
+        const cleanup = () => {
+            this.local_running = null;
             if (transaction_client) {
                 if (subscription)
                     subscription.remove();
@@ -656,31 +641,31 @@ function RPMOSTreeDBusClient() {
             }
             transaction_client = null;
             subscription = null;
-            trigger_changed();
-        }
+            this.trigger_changed();
+        };
 
-        function fail(ex) {
+        const fail = ex => {
             dp.reject(ex);
             cleanup();
-        }
+        };
 
-        function on_close(event, ex) {
+        const on_close = (event, ex) => {
             fail(ex);
-        }
+        };
 
-        self.connect()
+        this.connect()
             .fail(fail)
-            .done(function () {
-                var proxy = self.get_os_proxy(os);
+            .done(() => {
+                const proxy = this.get_os_proxy(os);
 
                 if (!proxy)
                     return fail(cockpit.format(_("OS $0 not found"), os));
 
-                self.reload().done(function () {
+                this.reload().done(() => {
                     proxy.call(method, method_args)
                         .fail(fail)
-                        .done(function(result) {
-                            var connect_args = {
+                        .done(result => {
+                            const connect_args = {
                                 superuser : true,
                                 address: result[0],
                                 bus: "none"
@@ -693,9 +678,9 @@ function RPMOSTreeDBusClient() {
                             transaction_client.addEventListener("close", on_close);
 
                             subscription = transaction_client.subscribe({ path : "/", },
-                                function(path, iface, signal, args) {
+                                (path, iface, signal, args) => {
                                     if (signal == "DownloadProgress") {
-                                        var line = build_progress_line(args);
+                                        const line = build_progress_line(args);
                                         if (line)
                                             dp.notify(line);
                                     } else if (signal == "Message") {
@@ -720,7 +705,7 @@ function RPMOSTreeDBusClient() {
             });
 
         return dp.promise();
-    };
+    }
 }
 
 /* singleton client instance */
