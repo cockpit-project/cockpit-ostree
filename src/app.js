@@ -10,7 +10,7 @@ import 'angular-gettext/dist/angular-gettext.js';
 import 'angular-bootstrap-npm/dist/angular-bootstrap.js';
 
 import client from './client';
-import './remotes';
+import * as remotes from './remotes';
 
 const _ = cockpit.gettext;
 cockpit.translate();
@@ -47,6 +47,273 @@ function notify_result(promise, scope) {
             });
         });
 }
+
+/***********************
+ *
+ * remotes module
+ *
+ ***********************/
+
+angular.module('ostree.remotes', [
+    'ui.cockpit',
+])
+
+.directive("editRemote", [
+    "$q",
+    function($q) {
+        return {
+            restrict: "E",
+            scope: {
+                remote: '=remote'
+            },
+            link: function($scope) {
+                $scope.fields = null;
+                $scope.showGpgData = false;
+                $scope.modalGroupButtonSel = ".group-buttons";
+                $scope.modalGroupErrorAfter = true;
+
+                remotes.loadRemoteSettings($scope.remote)
+                    .then(function (fields) {
+                        var verify = fields['gpg-verify'] ? fields['gpg-verify'].toLowerCase() : "";
+                        $scope.fields = fields;
+                        $scope.fields.gpgVerify = verify === 'true' || verify === '1';
+                        $scope.$applyAsync();
+                    }, function (ex) {
+                        $scope.failure(cockpit.format(_("Couldn't load settings for '$0': $1"),
+                                       $scope.remote, cockpit.message(ex)));
+                    });
+
+                $scope.cancel = function () {
+                    $scope.$emit("formFinished");
+                };
+
+                $scope.result = function (success) {
+                    $scope.$emit("formFinished", success);
+                };
+
+                $scope.update = function() {
+                    if (!$scope.fields)
+                        return;
+
+                    $scope.$emit("formRunning");
+
+                    /* Currently we only touch the gpgVerify field */
+                    var verify = !!$scope.fields.gpgVerify;
+                    var p = $q.when([]);
+                    if (verify && $scope.fields.gpgData) {
+                        p = $q.when(remotes.importGPGKey($scope.remote, $scope.fields.gpgData));
+                    }
+
+                    return p.then(function () {
+                        return remotes.updateRemoteSettings($scope.remote, { "gpg-verify": verify });
+                    });
+                };
+
+                $scope.delete = function() {
+                    $scope.$emit("formRunning");
+                    return remotes.deleteRemote($scope.remote);
+                };
+
+                $scope.toggleGpgData = function() {
+                    if (!$scope.fields)
+                        return;
+
+                    $scope.showGpgData = !$scope.showGpgData;
+                    if ($scope.showGpgData)
+                        $scope.fields.gpgVerify = true;
+                };
+            },
+            templateUrl: "edit-remote.html"
+        };
+    }
+])
+
+.directive("addRemote", [
+    "$q",
+    function($q) {
+        return {
+            restrict: "E",
+            scope: true,
+            link: function($scope) {
+                $scope.fields = {};
+                $scope.modalGroupButtonSel = ".group-buttons";
+                $scope.modalGroupErrorAfter = true;
+
+                function validate() {
+                    var errors = [];
+                    var ex;
+                    var name_re = /^[a-z0-9_.-]+$/i;
+                    var space_re = /\s/;
+
+                    $scope.fields.name = $scope.fields.name ? $scope.fields.name.trim() : null;
+                    $scope.fields.url = $scope.fields.url ? $scope.fields.url.trim() : null;
+
+                    if (!$scope.fields.name || !name_re.test($scope.fields.name.toLowerCase())) {
+                        ex = new Error(_("Please provide a valid name"));
+                        ex.target = "#remote-name";
+                        errors.push(ex);
+                        ex = null;
+                    }
+
+                    if (!$scope.fields.url || space_re.test($scope.fields.url)) {
+                        ex = new Error(_("Please provide a valid URL"));
+                        ex.target = "#remote-url";
+                        errors.push(ex);
+                        ex = null;
+                    }
+
+                    if (errors.length > 0)
+                        return $q.reject(errors);
+
+                    return $q.when({
+                        name: $scope.fields.name,
+                        url: $scope.fields.url,
+                        verify: !!$scope.fields['gpgVerify']
+                    });
+                }
+
+                $scope.add = function add() {
+                    $scope.$emit("formRunning");
+                    return validate().then(function(data) {
+                        return remotes.addRemote(data.name, data.url, data.verify);
+                    });
+                };
+
+                $scope.cancel = function () {
+                    $scope.$emit("formFinished");
+                };
+
+                $scope.result = function (success) {
+                    $scope.$emit("formFinished", success);
+                };
+            },
+            templateUrl: "add-remote.html"
+        };
+    }
+])
+
+.controller("ChangeRepositoryCtrl", [
+    "$q",
+    "$scope",
+    "$modalInstance",
+    "dialogData",
+    function($q, $scope, instance, dialogData) {
+        angular.extend($scope, dialogData);
+
+        $scope.loading = true;
+        $scope.loading_error = null;
+        $scope.adding = false;
+        $scope.editing = null;
+        $scope.running = false;
+
+        function refreshRemotes() {
+            var tmp = $scope.remote;
+            $scope.loading = true;
+            $scope.remote = null;
+            remotes.listRemotes()
+                .done(function (l) {
+                    $scope.remotes = l;
+                    if (tmp && l && l.indexOf(tmp) > -1)
+                        $scope.remote = tmp;
+                })
+                .fail(function (ex) {
+                    console.warn(ex);
+                    $scope.remote = null;
+                    $scope.loading_error = cockpit.format(_("Error loading remotes: $0"), cockpit.message(ex));
+                })
+                .always(function () {
+                    $scope.loading = false;
+                    $scope.$applyAsync();
+                });
+        }
+
+        $scope.$on("formRunning", function () {
+            $scope.running = true;
+        });
+
+        $scope.$on("formFinished", function (ev, success) {
+            $scope.running = false;
+            if (success) {
+                $scope.adding = false;
+                $scope.editing = false;
+                refreshRemotes();
+            }
+        });
+
+        $scope.toggleEdit = function (remote, $event) {
+            $event.stopPropagation();
+            $event.preventDefault();
+
+            if ($scope.running)
+                return;
+
+            $scope.editing = remote;
+            $scope.adding = false;
+        };
+
+        $scope.toggleSelected = function (remote) {
+            if ($scope.running)
+                return;
+
+            $scope.adding = false;
+            $scope.remote = remote;
+            if ($scope.editing !== remote)
+                $scope.editing = null;
+        };
+
+        $scope.openAdd = function () {
+            if ($scope.running)
+                return;
+
+            $scope.adding = true;
+            $scope.editing = null;
+        };
+
+        $scope.canSubmit = function () {
+            return $scope.remote && !$scope.editing && !$scope.adding;
+        };
+
+        $scope.update = function () {
+            var result = {
+                remote: $scope.remote,
+                branch: $scope.branch,
+                branches: {
+                    remote: $scope.remote
+                }
+            };
+
+            return remotes.listBranches(result.remote)
+                .then(function (data) {
+                    result.branches.list = data;
+                    // Current branch doesn't exist change
+                    // to the first listed branch
+                    if (data.indexOf(result.branch) < 0)
+                        result.branch = data[0];
+                }, function (ex) {
+                    // Can't list branches use default branch
+                    result.branches.error = cockpit.message(ex);
+                    result.branch = null;
+                })
+                .then(function () {
+                    return client.cache_update_for($scope.os, result.remote,
+                                                   result.branch)
+                                .then(function () {
+                                    return result;
+                                }, function () {
+                                    return result;
+                                });
+                });
+        };
+
+        refreshRemotes();
+    }
+]);
+
+/***********************
+ *
+ * main ostree module
+ *
+ ***********************/
 
 angular.module('ostree', [
         'ngRoute',
@@ -221,8 +488,7 @@ angular.module('ostree', [
 
     .directive('ostreeCheck', [
         '$modal',
-        "remoteActions",
-        function($modal, remoteActions) {
+        function($modal) {
             return {
                 restrict: 'E',
                 templateUrl: "ostree-check.html",
@@ -272,7 +538,7 @@ angular.module('ostree', [
                             return;
 
                         scope.isRunning = true;
-                        remoteActions.listBranches(newValue)
+                        remotes.listBranches(newValue)
                             .then(function (data) {
                                 branches.list = data;
                             }, function (ex) {
