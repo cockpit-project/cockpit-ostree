@@ -18,374 +18,95 @@
  */
 
 import cockpit from 'cockpit';
-import angular from 'angular';
 import client from './client';
 import { parseData, changeData } from './utils';
 
-import './angular-dialog.js';
-
 const _ = cockpit.gettext;
 
-angular.module('ostree.remotes', [
-    'ui.cockpit',
-])
+export function listRemotes() {
+    return cockpit.spawn(["ostree", "remote", "list"],
+                         { superuser: "try", err: "message" })
+        .then(output => {
+            const d = [];
+            output.trim().split(/\r\n|\r|\n/)
+                .forEach(v => { if (v) d.push(v); });
+            return d.sort();
+        });
+}
 
-.factory("remoteActions", [
-    function() {
-        function listRemotes() {
-            return cockpit.spawn(["ostree", "remote", "list"],
-                                 { superuser: "try", err: "message" })
-                .then(output => {
-                    const d = [];
-                    output.trim().split(/\r\n|\r|\n/)
-                        .forEach(v => { if (v) d.push(v); });
-                    return d.sort();
-                });
-        }
-
-        function listBranches(remote) {
-            return client.reload().then(function () {
-                return cockpit.spawn(["ostree", "remote", "refs", remote],
-                                     { superuser: "try", err: "message" })
-                    .then(output => {
-                        const d = [];
-                        output.trim().split(/\r\n|\r|\n/)
-                            .forEach(v => {
-                                const parts = v.split(":");
-                                if (parts.length > 1)
-                                    d.push(parts.slice(1).join(":"));
-                                else if (v)
-                                    d.push(v);
-                            });
-                        return d.sort();
+export function listBranches(remote) {
+    return client.reload().then(function () {
+        return cockpit.spawn(["ostree", "remote", "refs", remote],
+                             { superuser: "try", err: "message" })
+            .then(output => {
+                const d = [];
+                output.trim().split(/\r\n|\r|\n/)
+                    .forEach(v => {
+                        const parts = v.split(":");
+                        if (parts.length > 1)
+                            d.push(parts.slice(1).join(":"));
+                        else if (v)
+                            d.push(v);
                     });
-                });
-        }
-
-        function addRemote(name, url, gpg) {
-            var cmd = ["ostree", "remote", "add"];
-            if (gpg)
-                cmd.push("--set=gpg-verify=true");
-            else
-                cmd.push("--set=gpg-verify=false");
-            cmd.push(name, url);
-
-            return cockpit.spawn(cmd, { superuser: "try", err: "message" });
-        }
-
-        function deleteRemote(name) {
-            return cockpit.spawn(["ostree", "remote", "delete", name],
-                                 { superuser: "try", err: "message" });
-        }
-
-        function importGPGKey(name, key) {
-            var process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
-                                        { superuser: "try", err: "message" });
-            process.input(key);
-            return process;
-        }
-
-        function getRemoteSettingsFile(name) {
-            return cockpit.file("/etc/ostree/remotes.d/" + name + ".conf",
-                                { superuser: "try" });
-        }
-
-        function getSectionName(name) {
-            return 'remote "' + name + '"';
-        }
-
-        function loadRemoteSettings(name) {
-            const file = getRemoteSettingsFile(name);
-            const section = getSectionName(name);
-            return new Promise((resolve, reject) => {
-                file.read()
-                    .then(content => {
-                        const data = parseData(content);
-                        if (data[section])
-                            resolve(data[section]);
-                        else
-                            reject(_("No configuration data found"));
-                    })
-                    .fail(reject)
-                    .always(file.close);
+                return d.sort();
             });
-        }
-
-        function updateRemoteSettings(name, options) {
-            const file = getRemoteSettingsFile(name);
-            const section = getSectionName(name);
-
-            const promise = file.modify(content => changeData(content, section, options));
-            promise.always(file.close);
-            return promise;
-        }
-
-        return {
-            listRemotes: listRemotes,
-            listBranches: listBranches,
-            loadRemoteSettings: loadRemoteSettings,
-            updateRemoteSettings: updateRemoteSettings,
-            addRemote: addRemote,
-            deleteRemote: deleteRemote,
-            importGPGKey: importGPGKey,
-        };
-    }
-])
-
-.directive("editRemote", [
-    "$q",
-    "remoteActions",
-    function($q, remoteActions) {
-        return {
-            restrict: "E",
-            scope: {
-                remote: '=remote'
-            },
-            link: function($scope) {
-                $scope.fields = null;
-                $scope.showGpgData = false;
-                $scope.modalGroupButtonSel = ".group-buttons";
-                $scope.modalGroupErrorAfter = true;
-
-                remoteActions.loadRemoteSettings($scope.remote)
-                    .then(function (fields) {
-                        var verify = fields['gpg-verify'] ? fields['gpg-verify'].toLowerCase() : "";
-                        $scope.fields = fields;
-                        $scope.fields.gpgVerify = verify === 'true' || verify === '1';
-                        $scope.$applyAsync();
-                    }, function (ex) {
-                        $scope.failure(cockpit.format(_("Couldn't load settings for '$0': $1"),
-                                       $scope.remote, cockpit.message(ex)));
-                    });
-
-                $scope.cancel = function () {
-                    $scope.$emit("formFinished");
-                };
-
-                $scope.result = function (success) {
-                    $scope.$emit("formFinished", success);
-                };
-
-                $scope.update = function() {
-                    if (!$scope.fields)
-                        return;
-
-                    $scope.$emit("formRunning");
-
-                    /* Currently we only touch the gpgVerify field */
-                    var verify = !!$scope.fields.gpgVerify;
-                    var p = $q.when([]);
-                    if (verify && $scope.fields.gpgData) {
-                        p = $q.when(remoteActions.importGPGKey($scope.remote,
-                                                               $scope.fields.gpgData));
-                    }
-
-                    return p.then(function () {
-                        return remoteActions.updateRemoteSettings($scope.remote,
-                                                                  { "gpg-verify": verify });
-                    });
-                };
-
-                $scope.delete = function() {
-                    $scope.$emit("formRunning");
-                    return remoteActions.deleteRemote($scope.remote);
-                };
-
-                $scope.toggleGpgData = function() {
-                    if (!$scope.fields)
-                        return;
-
-                    $scope.showGpgData = !$scope.showGpgData;
-                    if ($scope.showGpgData)
-                        $scope.fields.gpgVerify = true;
-                };
-            },
-            templateUrl: "edit-remote.html"
-        };
-    }
-])
-
-.directive("addRemote", [
-    "$q",
-    "remoteActions",
-    function($q, remoteActions) {
-        return {
-            restrict: "E",
-            scope: true,
-            link: function($scope) {
-                $scope.fields = {};
-                $scope.modalGroupButtonSel = ".group-buttons";
-                $scope.modalGroupErrorAfter = true;
-
-                function validate() {
-                    var errors = [];
-                    var ex;
-                    var name_re = /^[a-z0-9_.-]+$/i;
-                    var space_re = /\s/;
-
-                    $scope.fields.name = $scope.fields.name ? $scope.fields.name.trim() : null;
-                    $scope.fields.url = $scope.fields.url ? $scope.fields.url.trim() : null;
-
-                    if (!$scope.fields.name || !name_re.test($scope.fields.name.toLowerCase())) {
-                        ex = new Error(_("Please provide a valid name"));
-                        ex.target = "#remote-name";
-                        errors.push(ex);
-                        ex = null;
-                    }
-
-                    if (!$scope.fields.url || space_re.test($scope.fields.url)) {
-                        ex = new Error(_("Please provide a valid URL"));
-                        ex.target = "#remote-url";
-                        errors.push(ex);
-                        ex = null;
-                    }
-
-                    if (errors.length > 0)
-                        return $q.reject(errors);
-
-                    return $q.when({
-                        name: $scope.fields.name,
-                        url: $scope.fields.url,
-                        verify: !!$scope.fields['gpgVerify']
-                    });
-                }
-
-                $scope.add = function add() {
-                    $scope.$emit("formRunning");
-                    return validate().then(function(data) {
-                        return remoteActions.addRemote(data.name,
-                                                       data.url,
-                                                       data.verify);
-                    });
-                };
-
-                $scope.cancel = function () {
-                    $scope.$emit("formFinished");
-                };
-
-                $scope.result = function (success) {
-                    $scope.$emit("formFinished", success);
-                };
-            },
-            templateUrl: "add-remote.html"
-        };
-    }
-])
-
-.controller("ChangeRepositoryCtrl", [
-    "$q",
-    "$scope",
-    "$modalInstance",
-    "dialogData",
-    "remoteActions",
-    function($q, $scope, instance, dialogData, remoteActions) {
-        angular.extend($scope, dialogData);
-
-        $scope.loading = true;
-        $scope.loading_error = null;
-        $scope.adding = false;
-        $scope.editing = null;
-        $scope.running = false;
-
-        function refreshRemotes() {
-            var tmp = $scope.remote;
-            $scope.loading = true;
-            $scope.remote = null;
-            remoteActions.listRemotes()
-                .done(function (l) {
-                    $scope.remotes = l;
-                    if (tmp && l && l.indexOf(tmp) > -1)
-                        $scope.remote = tmp;
-                })
-                .fail(function (ex) {
-                    console.warn(ex);
-                    $scope.remote = null;
-                    $scope.loading_error = cockpit.format(_("Error loading remotes: $0"), cockpit.message(ex));
-                })
-                .always(function () {
-                    $scope.loading = false;
-                    $scope.$applyAsync();
-                });
-        }
-
-        $scope.$on("formRunning", function () {
-            $scope.running = true;
         });
+}
 
-        $scope.$on("formFinished", function (ev, success) {
-            $scope.running = false;
-            if (success) {
-                $scope.adding = false;
-                $scope.editing = false;
-                refreshRemotes();
-            }
-        });
+export function addRemote(name, url, gpg) {
+    var cmd = ["ostree", "remote", "add"];
+    if (gpg)
+        cmd.push("--set=gpg-verify=true");
+    else
+        cmd.push("--set=gpg-verify=false");
+    cmd.push(name, url);
 
-        $scope.toggleEdit = function (remote, $event) {
-            $event.stopPropagation();
-            $event.preventDefault();
+    return cockpit.spawn(cmd, { superuser: "try", err: "message" });
+}
 
-            if ($scope.running)
-                return;
+export function deleteRemote(name) {
+    return cockpit.spawn(["ostree", "remote", "delete", name],
+                         { superuser: "try", err: "message" });
+}
 
-            $scope.editing = remote;
-            $scope.adding = false;
-        };
+export function importGPGKey(name, key) {
+    var process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
+                                { superuser: "try", err: "message" });
+    process.input(key);
+    return process;
+}
 
-        $scope.toggleSelected = function (remote) {
-            if ($scope.running)
-                return;
+function getRemoteSettingsFile(name) {
+    return cockpit.file("/etc/ostree/remotes.d/" + name + ".conf",
+                        { superuser: "try" });
+}
 
-            $scope.adding = false;
-            $scope.remote = remote;
-            if ($scope.editing !== remote)
-                $scope.editing = null;
-        };
+function getSectionName(name) {
+    return 'remote "' + name + '"';
+}
 
-        $scope.openAdd = function () {
-            if ($scope.running)
-                return;
+export function loadRemoteSettings(name) {
+    const file = getRemoteSettingsFile(name);
+    const section = getSectionName(name);
+    return new Promise((resolve, reject) => {
+        file.read()
+            .then(content => {
+                const data = parseData(content);
+                if (data[section])
+                    resolve(data[section]);
+                else
+                    reject(_("No configuration data found"));
+            })
+            .fail(reject)
+            .always(file.close);
+    });
+}
 
-            $scope.adding = true;
-            $scope.editing = null;
-        };
+export function updateRemoteSettings(name, options) {
+    const file = getRemoteSettingsFile(name);
+    const section = getSectionName(name);
 
-        $scope.canSubmit = function () {
-            return $scope.remote && !$scope.editing && !$scope.adding;
-        };
-
-        $scope.update = function () {
-            var result = {
-                remote: $scope.remote,
-                branch: $scope.branch,
-                branches: {
-                    remote: $scope.remote
-                }
-            };
-
-            return remoteActions.listBranches(result.remote)
-                .then(function (data) {
-                    result.branches.list = data;
-                    // Current branch doesn't exist change
-                    // to the first listed branch
-                    if (data.indexOf(result.branch) < 0)
-                        result.branch = data[0];
-                }, function (ex) {
-                    // Can't list branches use default branch
-                    result.branches.error = cockpit.message(ex);
-                    result.branch = null;
-                })
-                .then(function () {
-                    return client.cache_update_for($scope.os, result.remote,
-                                                   result.branch)
-                                .then(function () {
-                                    return result;
-                                }, function () {
-                                    return result;
-                                });
-                });
-        };
-
-        refreshRemotes();
-    }
-]);
+    const promise = file.modify(content => changeData(content, section, options));
+    promise.always(file.close);
+    return promise;
+}
