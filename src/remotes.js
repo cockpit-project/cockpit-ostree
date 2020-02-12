@@ -37,12 +37,10 @@ angular.module('ostree.remotes', [
         function listRemotes() {
             return cockpit.spawn(["ostree", "remote", "list"],
                                  { superuser: "try", err: "message" })
-                .then(function(data) {
-                    var d = [];
-                    angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
-                        if (v)
-                            d.push(v);
-                    });
+                .then(output => {
+                    const d = [];
+                    output.trim().split(/\r\n|\r|\n/)
+                        .forEach(v => { if (v) d.push(v); });
                     return d.sort();
                 });
         }
@@ -51,15 +49,16 @@ angular.module('ostree.remotes', [
             return client.reload().then(function () {
                 return cockpit.spawn(["ostree", "remote", "refs", remote],
                                      { superuser: "try", err: "message" })
-                    .then(function(data) {
-                        var d = [];
-                        angular.forEach(data.trim().split(/\r\n|\r|\n/), function (v) {
-                            var parts = v.split(":");
-                            if (parts.length > 1)
-                                d.push(parts.slice(1).join(":"));
-                            else if (v)
-                                d.push(v);
-                        });
+                    .then(output => {
+                        const d = [];
+                        output.trim().split(/\r\n|\r|\n/)
+                            .forEach(v => {
+                                const parts = v.split(":");
+                                if (parts.length > 1)
+                                    d.push(parts.slice(1).join(":"));
+                                else if (v)
+                                    d.push(v);
+                            });
                         return d.sort();
                     });
                 });
