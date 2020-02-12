@@ -31,9 +31,7 @@ angular.module('ostree.remotes', [
 ])
 
 .factory("remoteActions", [
-    "$q",
-    "$timeout",
-    function($q, $timeout) {
+    function() {
         function listRemotes() {
             return cockpit.spawn(["ostree", "remote", "list"],
                                  { superuser: "try", err: "message" })
@@ -97,48 +95,29 @@ angular.module('ostree.remotes', [
         }
 
         function loadRemoteSettings(name) {
-            var file = getRemoteSettingsFile(name);
-            var section = getSectionName(name);
-            var d = $q.defer();
-            file.read()
-                .done(function (content) {
-                    var data = parseData(content);
-                    if (data[section])
-                        d.resolve(data[section]);
-                    else
-                        d.reject(_("No configuration data found"));
-                })
-                .fail(function (ex) {
-                    d.reject(ex);
-                })
-                .always(function () {
-                    file.close();
-                });
-
-            return d.promise;
+            const file = getRemoteSettingsFile(name);
+            const section = getSectionName(name);
+            return new Promise((resolve, reject) => {
+                file.read()
+                    .then(content => {
+                        const data = parseData(content);
+                        if (data[section])
+                            resolve(data[section]);
+                        else
+                            reject(_("No configuration data found"));
+                    })
+                    .fail(reject)
+                    .always(file.close);
+            });
         }
 
         function updateRemoteSettings(name, options) {
-            var file = getRemoteSettingsFile(name);
-            var section = getSectionName(name);
-            var d = $q.defer();
+            const file = getRemoteSettingsFile(name);
+            const section = getSectionName(name);
 
-            function mutate(content) {
-                return changeData(content, section, options);
-            }
-
-            file.modify(mutate)
-                .done(function () {
-                    d.resolve();
-                })
-                .fail(function (ex) {
-                    d.reject(ex);
-                })
-                .always(function () {
-                    file.close();
-                });
-
-            return d.promise;
+            const promise = file.modify(content => changeData(content, section, options));
+            promise.always(file.close);
+            return promise;
         }
 
         return {
