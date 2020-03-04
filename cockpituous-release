@@ -18,10 +18,10 @@ job release-srpm -V
 
 # Do fedora builds for the tag, using tarball
 job release-koji -k master
-job release-koji f30
 job release-koji f31
-job release-bodhi F30
+job release-koji f32
 job release-bodhi F31
+job release-bodhi F32
 
 job release-github
 job release-copr @cockpit/cockpit-preview
