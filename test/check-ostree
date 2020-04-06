@@ -227,7 +227,10 @@ class OstreeRestartCase(MachineCase):
         # Check again not trusted
         b.click("table.listing-ct tbody:nth-child(2) div.listing-ct-actions button")
         b.wait_present("table.listing-ct tbody:nth-child(2) div.listing-ct-actions button.enabled")
-        b.wait_in_text("table.listing-ct tbody:nth-child(2) div.alert-warning", "trusted keyring")
+        # newer Fedora CoreOS says "public key not found", older RHEL/CentOS says "[sig exists], but none are in trusted keyring"
+        sel = "table.listing-ct tbody:nth-child(2) div.alert-warning"
+        b.wait_present(sel)
+        b.wait_js_cond("ph_in_text('{0}', 'none are in trusted keyring') || ph_in_text('{0}', 'public key not found')".format(sel))
 
         m.upload(["files/publickey.asc"], "/root/")
         m.execute("ostree remote gpg-import local -k /root/publickey.asc")
