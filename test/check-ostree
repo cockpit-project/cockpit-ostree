@@ -356,6 +356,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_not_present(sel_nonexist)
 
         self.allow_restart_journal_messages()
+        self.allow_authorize_journal_messages()
 
     def testRebase(self):
         m = self.machine
@@ -438,6 +439,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text(sel + ' dd.origin', "local:znew-branch")
 
         self.allow_restart_journal_messages()
+        self.allow_authorize_journal_messages()
 
 class OstreeCase(MachineCase):
     def testRemoteManagement(self):
@@ -688,6 +690,8 @@ class OstreeCase(MachineCase):
         b.wait_text('table.listing-ct tbody:nth-child(3) div.listing-ct-head h3', name + " bad-version")
         b.wait_present('table.listing-ct tbody:nth-child(3) i.fa-circle')
         b.wait_in_text("table.listing-ct tbody:nth-child(3) dd.origin", "local:{}".format(branch))
+
+        self.allow_authorize_journal_messages()
 
     def testPermission(self):
         m = self.machine
