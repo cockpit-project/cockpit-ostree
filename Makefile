@@ -10,10 +10,6 @@ NODE_MODULES_TEST=package-lock.json
 # one example file in dist/ from webpack to check if that already ran
 WEBPACK_TEST=dist/index.html
 
-ifeq ($(TEST_OS), rhel-atomic)
-MACRO_RHEL = --define "rhel 7"
-endif
-
 all: $(WEBPACK_TEST)
 
 #
@@ -119,21 +115,16 @@ srpm: dist-gzip $(PACKAGE_NAME).spec
 	  --define "_srcrpmdir `pwd`" \
 	  $(PACKAGE_NAME).spec
 
-rpm: dist-gzip $(PACKAGE_NAME).spec
-	mkdir -p "`pwd`/output"
-	mkdir -p "`pwd`/rpmbuild"
-	rpmbuild -bb \
-	  --define "_sourcedir `pwd`" \
-	  --define "_specdir `pwd`" \
-	  --define "_builddir `pwd`/rpmbuild" \
-	  --define "_srcrpmdir `pwd`" \
-	  --define "_rpmdir `pwd`/output" \
-	  --define "_buildrootdir `pwd`/build" \
-	  $(MACRO_RHEL) \
-	  $(PACKAGE_NAME).spec
-	find `pwd`/output -name '*.rpm' -printf '%f\n' -exec mv {} . \;
-	rm -r "`pwd`/rpmbuild"
-	rm -r "`pwd`/output" "`pwd`/build"
+# this is a noarch build, so local rpm build works fine mostly; the exception
+# is continuous-atomic, which does not get along with rpms build on Fedora ≥ 31
+rpm: srpm bots
+	set -e; srpm=`ls *.src.rpm | head -n1`; \
+	if [ "$$TEST_OS" = continuous-atomic ]; then \
+	    bots/image-download centos-7; \
+	    test/rpmbuild-vm "$$srpm" centos-7; \
+	else \
+	    test/rpmbuild-local "$$srpm"; \
+	fi
 
 # build a VM with locally built rpm installed, cockpit/ws container, and local
 # ostree for testing
