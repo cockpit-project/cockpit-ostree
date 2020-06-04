@@ -1,6 +1,6 @@
 const path = require("path");
 const copy = require("copy-webpack-plugin");
-const extract = require("extract-text-webpack-plugin");
+const extract = require("mini-css-extract-plugin");
 const fs = require("fs");
 const webpack = require("webpack");
 const CompressionPlugin = require("compression-webpack-plugin");
@@ -80,7 +80,7 @@ info.files = files;
 
 var plugins = [
     new copy(info.files),
-    new extract("[name].css")
+    new extract({filename: "[name].css"})
 ];
 
 /* Only minimize when in production mode */
@@ -116,6 +116,9 @@ var babel_loader = {
 module.exports = {
     mode: production ? 'production' : 'development',
     entry: info.entries,
+    resolve: {
+        alias: { 'font-awesome': path.resolve(nodedir, 'font-awesome-sass/assets/stylesheets') },
+    },
     externals: externals,
     output: output,
     devtool: "source-map",
@@ -133,9 +136,69 @@ module.exports = {
                 test: /\.js$/
             },
             {
-                exclude: /node_modules/,
                 test: /\.less$/,
-                loader: extract.extract('css-loader!less-loader')
+                exclude: /node_modules/,
+                use: [
+                    extract.loader,
+                    'css-loader',
+                    'less-loader',
+                ]
+            },
+            /* HACK: remove unwanted fonts from PatternFly's css */
+            {
+                test: /patternfly-cockpit.scss$/,
+                use: [
+                    extract.loader,
+                    {
+                        loader: 'css-loader',
+                        options: {
+                            sourceMap: true,
+                            url: false,
+                        },
+                    },
+                    {
+                        loader: 'string-replace-loader',
+                        options: {
+                            multiple: [
+                                {
+                                    search: /src:url[(]"patternfly-icons-fake-path\/glyphicons-halflings-regular[^}]*/g,
+                                    replace: 'font-display:block; src:url("../base1/fonts/glyphicons.woff") format("woff");',
+                                },
+                                {
+                                    search: /src:url[(]"patternfly-fonts-fake-path\/PatternFlyIcons[^}]*/g,
+                                    replace: 'src:url("../base1/fonts/patternfly.woff") format("woff");',
+                                },
+                                {
+                                    search: /src:url[(]"patternfly-fonts-fake-path\/fontawesome[^}]*/,
+                                    replace: 'font-display:block; src:url("../base1/fonts/fontawesome.woff?v=4.2.0") format("woff");',
+                                },
+                                {
+                                    search: /src:url\("patternfly-icons-fake-path\/pficon[^}]*/g,
+                                    replace: 'src:url("../base1/fonts/patternfly.woff") format("woff");',
+                                },
+                                {
+                                    search: /@font-face[^}]*patternfly-fonts-fake-path[^}]*}/g,
+                                    replace: '',
+                                },
+                            ]
+                        },
+                    },
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sassOptions: {
+                                includePaths: [
+                                    // Teach webpack to resolve these references in order to build PF3 scss
+                                    path.resolve(nodedir, 'font-awesome-sass', 'assets', 'stylesheets'),
+                                    path.resolve(nodedir, 'patternfly', 'dist', 'sass'),
+                                    path.resolve(nodedir, 'bootstrap-sass', 'assets', 'stylesheets'),
+                                ],
+                                outputStyle: 'compressed',
+                            },
+                            sourceMap: true,
+                        },
+                    },
+                ]
             }
         ]
     },
