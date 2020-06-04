@@ -119,8 +119,8 @@ function process_rpm_list(result) {
         half = half + 1;
 
     return {
-        rpms1: data.slice(0, half + 1),
-        rpms2: data.slice(half + 1),
+        'rpms-col1': data.slice(0, half + 1),
+        'rpms-col2': data.slice(half + 1),
     };
 }
 
