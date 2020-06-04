@@ -1,0 +1,104 @@
+/*
+ * This file is part of Cockpit.
+ *
+ * Copyright (C) 2020 Red Hat, Inc.
+ *
+ * Cockpit is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU Lesser General Public License as published by
+ * the Free Software Foundation; either version 2.1 of the License, or
+ * (at your option) any later version.
+ *
+ * Cockpit is distributed in the hope that it will be useful, but
+ * WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
+ * Lesser General Public License for more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/* ---------------------------------------------------------------------------------------------------- */
+
+@import "./patternfly-4-overrides.scss";
+
+// Rely on the padding between the toolbar items
+#change-repo {
+    padding: 0;
+}
+
+#check-for-updates-btn {
+    min-width: 10rem;
+}
+
+.pf-c-data-list__expandable-content div.pf-c-data-list__expandable-content-body {
+    padding: 0;
+}
+.available-deployments-nav-content {
+    padding: var(--pf-c-data-list__expandable-content-body--PaddingTop);
+}
+
+// Data list items should not expand horizontally to the whole page
+.available-deployments li.pf-c-data-list__item {
+    margin: 2rem;
+    max-width: 60rem;
+}
+
+// PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
+.pf-c-modal-box {
+    max-height: calc(100vh - var(--pf-global--spacer--2xl));
+}
+
+// Create space between the remote name and the edit action
+.remote-select .pf-c-simple-list__item-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.simple-list-form-header {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+}
+
+.simple-list-form-actions > .pf-c-button {
+    margin-left: .3em;
+    margin-right: .3em;
+}
+
+.pf-c-form.pf-m-horizontal {
+    width: 100%;
+}
+
+// Add a border line bellow the navigatin
+.available-deployments .pf-c-nav {
+    background: linear-gradient(0deg,var(--pf-global--BorderColor--100) 0,var(--pf-global--BorderColor--100) 1px,transparent 0);
+
+    .pf-c-nav__tertiary-list {
+        .pf-c-nav__item {
+            margin: 0;
+            padding: 0;
+        }
+
+        .pf-c-nav__link {
+            padding: 0.5rem 1rem;
+        }
+    }
+}
+
+.deployment-name {
+    font-weight: 700;
+}
+
+.packages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-gap: 1rem;
+
+    dt {
+        font-weight: 600;
+    }
+}
+
+.deployment-error svg {
+    margin-right: .5rem;
+}
