@@ -115,11 +115,11 @@ srpm: dist-gzip $(PACKAGE_NAME).spec
 	  --define "_srcrpmdir `pwd`" \
 	  $(PACKAGE_NAME).spec
 
-# this is a noarch build, so local rpm build works fine mostly; the exception
-# is continuous-atomic, which does not get along with rpms build on Fedora ≥ 31
+# this is a noarch build, so local rpm build works fine for recent OSes; but
+# RHEL/CentOS Atomic don't get along with rpms built on Fedora ≥ 31
 rpm: srpm bots
 	set -e; srpm=`ls *.src.rpm | head -n1`; \
-	if [ "$$TEST_OS" = continuous-atomic ]; then \
+	if [ "$${TEST_OS%-atomic}" != "$$TEST_OS" ]; then \
 	    bots/image-download centos-7; \
 	    test/rpmbuild-vm "$$srpm" centos-7; \
 	else \
