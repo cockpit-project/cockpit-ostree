@@ -1,5 +1,7 @@
 "use strict";
 
+import '../lib/patternfly/patternfly-cockpit.scss';
+
 import cockpit from 'cockpit';
 import moment from 'moment';
 
