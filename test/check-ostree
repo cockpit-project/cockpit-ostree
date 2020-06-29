@@ -324,7 +324,6 @@ class OstreeRestartCase(MachineCase):
         m.start_cockpit()
         b.reload()
         b.login_and_go("/updates")
-        b.wait_present(".available-deployments")
 
         b.wait_text(sel_cur + " .deployment-name", name + " cockpit-base.1")
         b.wait_in_text(sel_cur + " .deployment-status", "Running")
@@ -357,9 +356,7 @@ class OstreeRestartCase(MachineCase):
         self.login_and_go("/updates")
         b.enter_page("/updates")
 
-        b.wait_present('#change-repo')
         b.wait_text("#change-repo", "local")
-        b.wait_present("#change-branch")
         b.wait_in_text("#change-branch", branch)
         # open the branches menu to see the entries
         b.click("#change-branch")
@@ -373,7 +370,6 @@ class OstreeRestartCase(MachineCase):
 
         b.wait_in_text("#check-for-updates-btn", "Check for Updates")
         b.click("#check-for-updates-btn")
-        b.wait_present("#check-for-updates-btn:not(disabled)")
 
         b.wait_text('{0} .deployment-name'.format(get_list_item(1)), name + " branch-version")
         b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
@@ -409,7 +405,6 @@ class OstreeRestartCase(MachineCase):
         b.login_and_go("/updates")
 
         # After reboot, check commit
-        b.wait_present('.available-deployments')
         sel = get_list_item(1)
         b.wait_text(sel + ' .deployment-name', name + " branch-version")
         b.wait_in_text(sel + ' .deployment-status', "Running")
@@ -436,7 +431,6 @@ class OstreeCase(MachineCase):
         b.wait_in_text("#change-branch", branch)
         # open the branches menu to see the entries
         b.click("#change-branch")
-        b.wait_present("#change-branch + ul li")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
         b.wait_in_text("#change-branch + ul li", branch)
@@ -447,8 +441,6 @@ class OstreeCase(MachineCase):
         b.wait_in_text(".pf-c-modal-box h1", "Change Repository")
         b.wait_in_text(".pf-c-modal-box .pf-c-simple-list .pf-m-current", "local")
         b.wait_in_text(".pf-c-modal-box li:last", "Add New Repository")
-
-        b.wait_present(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
 
         b.click(".pf-c-modal-box li:last button")
         b.click(".pf-c-modal-box #new-gpg-verify")
@@ -512,7 +504,6 @@ class OstreeCase(MachineCase):
 
         # Edit
         b.click("#change-repo")
-        b.wait_present(".pf-c-modal-box .pf-c-simple-list")
         b.click(".pf-c-modal-box li:contains('zremote-test1') button.pf-m-secondary.edit-remote")
         b.wait_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
         b.wait_present(".pf-c-modal-box #edit-remote-url[value='http://localhost:12344']")
@@ -606,7 +597,6 @@ class OstreeCase(MachineCase):
 
         # delete
         b.click("#change-repo")
-        b.wait_present(".pf-c-modal-box .pf-c-simple-list")
         b.wait_in_text(".pf-c-modal-box #zremote-test1", "zremote-test1")
         b.click(".pf-c-modal-box #zremote-test1 .edit-remote")
         b.wait_present(".pf-c-modal-box button.pf-m-danger")
@@ -617,7 +607,6 @@ class OstreeCase(MachineCase):
         b.click(".pf-c-modal-box button.pf-m-danger")
         b.wait_not_present(".pf-c-modal-box .pf-c-form")
 
-        b.wait_present(".pf-c-modal-box .pf-c-simple-list")
         b.wait_not_in_text(".pf-c-modal-box .pf-c-simple-list", "zremote-test1")
         b.wait_in_text(".pf-c-modal-box .pf-c-simple-list", "local")
         b.wait_not_present(".pf-c-modal-box .pf-c-simple-list .pf-m-current")
