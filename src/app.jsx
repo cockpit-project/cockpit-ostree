@@ -25,17 +25,19 @@ import PropTypes from "prop-types";
 
 import '../lib/patternfly/patternfly-4-cockpit.scss';
 
-import { Title, Button, Alert,
-         EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
-         DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent, /* DataListAction, */
-         Select, SelectOption,
-         Page, PageSection, PageSectionVariants,
-         Nav, NavList, NavItem, NavVariants,
-       } from '@patternfly/react-core';
+import {
+    Title, Button, Alert,
+    EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
+    DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent, /* DataListAction, */
+    Select, SelectOption,
+    Page, PageSection, PageSectionVariants,
+    Nav, NavList, NavItem, NavVariants,
+} from '@patternfly/react-core';
 import { ExclamationCircleIcon, OutlinedCheckCircleIcon } from '@patternfly/react-icons';
-import { Spinner,
-         DataToolbar, DataToolbarItem, DataToolbarContent,
-       } from '@patternfly/react-core/dist/esm/experimental';
+import {
+    Spinner,
+    DataToolbar, DataToolbarItem, DataToolbarContent,
+} from '@patternfly/react-core/dist/esm/experimental';
 import moment from 'moment';
 
 import cockpit from 'cockpit';

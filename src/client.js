@@ -84,11 +84,11 @@ function process_diff_list(result) {
         };
 
         if (obj.type === 1) {
-            obj.version = list[i][2]["PreviousPackage"]["v"][1];
-            obj.arch = list[i][2]["PreviousPackage"]["v"][2];
+            obj.version = list[i][2].PreviousPackage.v[1];
+            obj.arch = list[i][2].PreviousPackage.v[2];
         } else {
-            obj.version = list[i][2]["NewPackage"]["v"][1];
-            obj.arch = list[i][2]["NewPackage"]["v"][2];
+            obj.version = list[i][2].NewPackage.v[1];
+            obj.arch = list[i][2].NewPackage.v[2];
         }
 
         diffs[key].push(obj);
@@ -317,8 +317,8 @@ class RPMOSTreeDBusClient {
     }
 
     on_sysroot_changed(ev, data) {
-        if (data["Deployments"]) {
-            this.build_os_list(data["Deployments"]);
+        if (data.Deployments) {
+            this.build_os_list(data.Deployments);
         } else if ("ActiveTransaction" in data) {
             this.trigger_changed();
         }
