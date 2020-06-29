@@ -87,6 +87,26 @@ function process_manifest(manifest) {
         process_menu(manifest.tools);
 }
 
+function process_keywords(keywords) {
+    keywords.forEach(v => {
+        v.matches.forEach(keyword =>
+            push({
+                msgid: keyword,
+                locations: [ filename ]
+            })
+        );
+    });
+}
+
+function process_docs(docs) {
+    docs.forEach(doc => {
+        push({
+            msgid: doc.label,
+            locations: [ filename ]
+        })
+    });
+}
+
 function process_menu(menu) {
     for (var m in menu) {
         if (menu[m].label) {
@@ -95,6 +115,10 @@ function process_menu(menu) {
                 locations: [ filename ]
             });
         }
+        if (menu[m].keywords)
+            process_keywords(menu[m].keywords);
+        if (menu[m].docs)
+            process_docs(menu[m].docs);
     }
 }
 

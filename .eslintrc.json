@@ -13,7 +13,7 @@
         },
         "sourceType": "module"
     },
-    "plugins": ["react"],
+    "plugins": ["flowtype", "react", "react-hooks"],
     "rules": {
         "indent": ["error", 4,
             {
@@ -33,6 +33,10 @@
         "curly": "off",
         "indent": "off",
         "jsx-quotes": "off",
+
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error",
+
         "no-console": "off",
         "quotes": "off",
         "react/jsx-curly-spacing": "off",

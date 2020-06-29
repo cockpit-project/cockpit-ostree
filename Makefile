@@ -1,9 +1,13 @@
-PACKAGE_NAME := cockpit-ostree
+# extract name from package.json
+PACKAGE_NAME := $(shell awk '/"name":/ {gsub(/[",]/, "", $$2); print $$2}' package.json)
 VERSION := $(shell T=$$(git describe 2>/dev/null) || T=1; echo $$T | tr '-' '.')
 ifeq ($(TEST_OS),)
 TEST_OS = continuous-atomic
 endif
 export TEST_OS
+TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.gz
+RPMFILE=$(shell rpmspec -D"VERSION $(VERSION)" -q $(PACKAGE_NAME).spec.in).rpm
+SRPMFILE=$(subst noarch,src,$(RPMFILE))
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 # stamp file to check if/when npm install ran
 NODE_MODULES_TEST=package-lock.json
@@ -77,10 +81,13 @@ download-po: $(WEBLATE_REPO)
 #
 
 %.spec: %.spec.in
-	sed -e 's/@VERSION@/$(VERSION)/g' $< > $@
+	sed -e 's/%{VERSION}/$(VERSION)/g' $< > $@
 
 $(WEBPACK_TEST): $(NODE_MODULES_TEST) $(shell find src/ -type f) package.json webpack.config.js $(patsubst %,dist/po.%.js,$(LINGUAS))
 	NODE_ENV=$(NODE_ENV) npm run build
+
+watch:
+	NODE_ENV=$(NODE_ENV) npm run watch
 
 clean:
 	rm -rf dist/
@@ -95,12 +102,14 @@ devel-install: $(WEBPACK_TEST)
 	mkdir -p ~/.local/share/cockpit
 	ln -s `pwd`/dist ~/.local/share/cockpit/$(PACKAGE_NAME)
 
+dist-gzip: $(TARFILE)
+
 # when building a distribution tarball, call webpack with a 'production' environment
 # we don't ship node_modules for license and compactness reasons; we ship a
 # pre-built dist/ (so it's not necessary) and ship packge-lock.json (so that
 # node_modules/ can be reconstructed if necessary)
-dist-gzip: NODE_ENV=production
-dist-gzip: all $(PACKAGE_NAME).spec
+$(TARFILE): NODE_ENV=production
+$(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	mv node_modules node_modules.release
 	touch -r package.json $(NODE_MODULES_TEST)
 	touch dist/*
@@ -109,15 +118,19 @@ dist-gzip: all $(PACKAGE_NAME).spec
 		$$(git ls-files) package-lock.json $(PACKAGE_NAME).spec dist/
 	mv node_modules.release node_modules
 
-srpm: dist-gzip $(PACKAGE_NAME).spec
+srpm: $(SRPMFILE)
+
+$(SRPMFILE): $(TARFILE) $(PACKAGE_NAME).spec
 	rpmbuild -bs \
 	  --define "_sourcedir `pwd`" \
 	  --define "_srcrpmdir `pwd`" \
 	  $(PACKAGE_NAME).spec
 
+rpm: $(RPMFILE)
+
 # this is a noarch build, so local rpm build works fine for recent OSes; but
 # RHEL/CentOS Atomic don't get along with rpms built on Fedora ≥ 31
-rpm: srpm bots
+$(RPMFILE): $(SRPMFILE) bots
 	set -e; srpm=`ls *.src.rpm | head -n1`; \
 	if [ "$${TEST_OS%-atomic}" != "$$TEST_OS" ]; then \
 	    bots/image-download centos-7; \
@@ -145,8 +158,9 @@ check-unit: $(NODE_MODULES_TEST)
 	npm run test
 
 # run the browser integration tests; skip check for SELinux denials
+# this will run all tests/check-* and format them as TAP
 check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common check-unit
-	TEST_AUDIT_NO_SELINUX=1 test/check-ostree
+	TEST_AUDIT_NO_SELINUX=1 test/common/run-tests
 
 # checkout Cockpit's bots for standard test VM images and API to launch them
 # must be from master, as only that has current and existing images; but testvm.py API is stable
@@ -157,9 +171,9 @@ bots:
 	@echo "checked out bots/ ref $$(git -C bots rev-parse HEAD)"
 
 # checkout Cockpit's test API; this has no API stability guarantee, so check out a stable tag
-# when you start a new project, use the latest relese, and update it from time to time
+# when you start a new project, use the latest release, and update it from time to time
 test/common:
-	git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 211
+	git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 220
 	git checkout --force FETCH_HEAD -- test/common
 	git reset test/common
 
