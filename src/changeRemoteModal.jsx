@@ -22,13 +22,14 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types";
 
-import { Title, Button, Alert, AlertActionCloseButton,
-         Form, FormGroup, ActionGroup,
-         TextInput, TextArea,
-         Checkbox,
-         SimpleList, SimpleListItem,
-         Modal,
-       } from '@patternfly/react-core';
+import {
+    Title, Button, Alert, AlertActionCloseButton,
+    Form, FormGroup, ActionGroup,
+    TextInput, TextArea,
+    Checkbox,
+    SimpleList, SimpleListItem,
+    Modal,
+} from '@patternfly/react-core';
 import { PencilAltIcon, AddCircleOIcon } from '@patternfly/react-icons';
 
 import * as remotes from './remotes';
