@@ -43,7 +43,11 @@
         "react/jsx-curly-newline": "off",
         "react/jsx-handler-names": "off",
         "space-before-function-paren": "off",
-        "standard/no-callback-literal": "off"
+        "standard/no-callback-literal": "off",
+
+        "eqeqeq": "off",
+        "react/jsx-no-bind": "off",
+        "react/prop-types": "off"
     },
     "globals": {
         "require": false,
