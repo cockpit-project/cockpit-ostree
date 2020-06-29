@@ -108,25 +108,28 @@ var babel_loader = {
                     "edge": "16",
                     "opera": "44"
                 }
-            }]
+            }],
+            "@babel/preset-react"
         ]
     }
 }
 
 module.exports = {
     mode: production ? 'production' : 'development',
+    resolve: {
+        modules: [ nodedir ],
+    },
     entry: info.entries,
     externals: externals,
     output: output,
     devtool: "source-map",
-
     module: {
         rules: [
             {
                 enforce: 'pre',
                 exclude: /node_modules/,
                 loader: 'eslint-loader',
-                test: /\.(jsx|js)$/
+                test: /\.(js|jsx)$/
             },
             {
                 exclude: /node_modules/,
@@ -135,15 +138,15 @@ module.exports = {
             },
             /* HACK: remove unwanted fonts from PatternFly's css */
             {
-                test: /patternfly-cockpit.scss$/,
+                test: /patternfly-4-cockpit.scss$/,
                 use: [
                     extract.loader,
                     {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            url: false,
-                        },
+                            url: false
+                        }
                     },
                     {
                         loader: 'string-replace-loader',
@@ -151,7 +154,7 @@ module.exports = {
                             multiple: [
                                 {
                                     search: /src:url\("patternfly-icons-fake-path\/pficon[^}]*/g,
-                                    replace: 'src:url("../base1/fonts/patternfly.woff") format("woff");',
+                                    replace: "src:url('fonts/patternfly.woff')format('woff');",
                                 },
                                 {
                                     search: /@font-face[^}]*patternfly-fonts-fake-path[^}]*}/g,
@@ -173,7 +176,7 @@ module.exports = {
             },
             {
                 test: /\.s?css$/,
-                exclude: /patternfly-cockpit.scss/,
+                exclude: /patternfly-4-cockpit.scss/,
                 use: [
                     extract.loader,
                     {
@@ -186,11 +189,11 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            sourceMap: true,
                             sassOptions: {
                                 outputStyle: 'compressed',
-                            }
-                        }
+                            },
+                            sourceMap: true,
+                        },
                     },
                 ]
             },

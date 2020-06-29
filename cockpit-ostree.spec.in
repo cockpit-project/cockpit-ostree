@@ -1,5 +1,5 @@
 Name: cockpit-ostree
-Version: @VERSION@
+Version: %{VERSION}
 Release: 1%{?dist}
 BuildArch: noarch
 Summary: Cockpit user interface for rpm-ostree
@@ -15,6 +15,8 @@ Requires: rpm-ostree
 
 # Download from https://github.com/cockpit-project/cockpit-ostree/releases
 Source: cockpit-ostree-%{version}.tar.gz
+
+%define debug_package %{nil}
 
 %description
 Cockpit component for managing software updates for ostree based systems.
