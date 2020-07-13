@@ -473,7 +473,7 @@ class Application extends React.Component {
                     },
                 });
             })
-            .fail(ex => {
+            .catch(ex => {
                 window.clearTimeout(timeout);
                 show_failure(ex);
             });
