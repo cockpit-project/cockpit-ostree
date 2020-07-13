@@ -148,7 +148,7 @@ function Packages(promise, transform) {
         .catch(ex => {
             this.error = cockpit.message(ex);
         })
-        .always(() => {
+        .finally(() => {
             this.ready = true;
             this.dispatchEvent("changed");
         });
@@ -550,7 +550,7 @@ class RPMOSTreeDBusClient {
 
         if (proxy) {
             if (!refspec)
-                return cockpit.when(proxy.CachedUpdate);
+                return Promise.resolve(proxy.CachedUpdate);
 
             proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
                 .done(data => {
@@ -558,7 +558,7 @@ class RPMOSTreeDBusClient {
                     if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
                         item = data[1];
                         this.update_cache[refspec] = item;
-                        this.packages_cache[item.checksum.v] = new Packages(cockpit.when([data[0]]),
+                        this.packages_cache[item.checksum.v] = new Packages(Promise.resolve([data[0]]),
                                                                             process_diff_list);
                     }
 
@@ -586,7 +586,7 @@ class RPMOSTreeDBusClient {
                             // call.
                             this.local_running = "DownloadRebaseRpmDiff" + ":" + os;
                             return this.cache_update_for(os, remote, branch)
-                                        .always(() => {
+                                        .finally(() => {
                                             this.local_running = null;
                                             this.trigger_changed();
                                         });
@@ -598,18 +598,16 @@ class RPMOSTreeDBusClient {
     }
 
     reload() {
-        const dp = cockpit.defer();
-        /* Not all Systems support this so just skip if not
-         * known.
-         */
-        if (this.sysroot && this.sysroot.ReloadConfig) {
-            this.sysroot.ReloadConfig()
-                .fail(ex => console.warn("Error reloading config:", ex))
-                .always(() => dp.resolve());
-        } else {
-            dp.resolve();
-        }
-        return dp.promise();
+        return new Promise((resolve, reject) => {
+            // Not all Systems support this so just skip if not known
+            if (this.sysroot && this.sysroot.ReloadConfig) {
+                this.sysroot.ReloadConfig()
+                    .catch(ex => console.warn("Error reloading config:", ex))
+                    .finally(() => resolve());
+            } else {
+                resolve();
+            }
+        });
     }
 
     run_transaction(method, method_args, os) {
@@ -654,17 +652,15 @@ class RPMOSTreeDBusClient {
         };
 
         this.connect()
-            .fail(fail)
-            .done(() => {
+            .then(() => {
                 const proxy = this.get_os_proxy(os);
 
                 if (!proxy)
                     return fail(cockpit.format(_("OS $0 not found"), os));
 
-                this.reload().done(() => {
+                this.reload().then(() => {
                     proxy.call(method, method_args)
-                        .fail(fail)
-                        .done(result => {
+                        .then(result => {
                             const connect_args = {
                                 superuser: true,
                                 address: result[0],
@@ -700,9 +696,11 @@ class RPMOSTreeDBusClient {
                                     }
                                 });
                             transaction_client.call("/", TRANSACTION, "Start");
-                        });
+                        })
+                        .catch(fail);
                 });
-            });
+            })
+            .catch(fail);
 
         return dp.promise();
     }
