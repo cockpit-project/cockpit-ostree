@@ -97,8 +97,8 @@ export function loadRemoteSettings(name) {
                 else
                     reject(_("No configuration data found"));
             })
-            .fail(reject)
-            .always(file.close);
+            .catch(reject)
+            .finally(file.close);
     });
 }
 
@@ -107,6 +107,6 @@ export function updateRemoteSettings(name, options) {
     const section = getSectionName(name);
 
     const promise = file.modify(content => changeData(content, section, options));
-    promise.always(file.close);
+    promise.finally(file.close);
     return promise;
 }
