@@ -53,6 +53,6 @@
     "moment": "2.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "throttle-debounce": "2.2.1"
+    "throttle-debounce": "2.3.0"
   }
 }
