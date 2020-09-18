@@ -41,6 +41,12 @@ CHECKOUT_LOCATION = "/var/local-tree"
 RPM_LOCATION = "/usr/share/rpm"
 KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
+# old cockpit/ws container on rhel-atomic still has "[ ] Reuse my password for privileged tasks"
+login_opts = {}
+if os.environ.get("TEST_OS") == "rhel-atomic":
+    login_opts["legacy_authorized"] = True
+
+
 def get_list_item(index):
     # there are more <li> inside the item tables, so only count direct children
     return ".available-deployments > li:nth-child({0})".format(index)
@@ -166,7 +172,8 @@ class OstreeRestartCase(MachineCase):
         chrony = m.execute("rpm -qa | grep chrony").strip()
         tzdata = m.execute("rpm -qa | grep tzdata").strip()
 
-        self.login_and_go("/updates")
+        m.start_cockpit()
+        b.login_and_go("/updates", **login_opts)
         b.enter_page("/updates")
 
         name = get_os_name(m)
@@ -280,7 +287,7 @@ class OstreeRestartCase(MachineCase):
         m.wait_reboot()
         m.start_cockpit()
         b.reload()
-        b.login_and_go("/updates")
+        b.login_and_go("/updates", **login_opts)
 
         # After reboot, check commit
         b.wait_present('.available-deployments')
@@ -323,7 +330,7 @@ class OstreeRestartCase(MachineCase):
         m.wait_reboot()
         m.start_cockpit()
         b.reload()
-        b.login_and_go("/updates")
+        b.login_and_go("/updates", **login_opts)
 
         b.wait_text(sel_cur + " .deployment-name", name + " cockpit-base.1")
         b.wait_in_text(sel_cur + " .deployment-status", "Running")
@@ -353,7 +360,8 @@ class OstreeRestartCase(MachineCase):
         m.execute(["ostree", "summary", "--repo={}".format(REPO_LOCATION), "-u"])
 
         rhsmcertd_hack(m)
-        self.login_and_go("/updates")
+        m.start_cockpit()
+        b.login_and_go("/updates", **login_opts)
         b.enter_page("/updates")
 
         b.wait_text("#change-repo", "local")
@@ -402,7 +410,7 @@ class OstreeRestartCase(MachineCase):
         m.wait_reboot()
         m.start_cockpit()
         b.reload()
-        b.login_and_go("/updates")
+        b.login_and_go("/updates", **login_opts)
 
         # After reboot, check commit
         sel = get_list_item(1)
@@ -424,7 +432,8 @@ class OstreeCase(MachineCase):
         branch = m.execute("ostree refs --repo={0}".format(REPO_LOCATION)).strip()
 
         rhsmcertd_hack(m)
-        self.login_and_go("/updates")
+        m.start_cockpit()
+        b.login_and_go("/updates", **login_opts)
         b.enter_page("/updates")
 
         b.wait_not_present('#app .pf-c-alert.pf-m-warning')
@@ -659,7 +668,8 @@ class OstreeCase(MachineCase):
         rhsmcertd_hack(m)
 
         # preloading works, no updates available
-        self.login_and_go("/system")
+        m.start_cockpit()
+        b.login_and_go("/system", **login_opts)
         b.wait_text("#page_status_notification_updates", "System is up to date")
         self.assertEqual(b.attr("#page_status_notification_updates span:first-child", "class"),
                          "fa fa-check-circle-o")
@@ -685,7 +695,7 @@ class OstreeCase(MachineCase):
 
         # check with new session
         b.logout()
-        self.login_and_go("/system")
+        b.login_and_go("/system", **login_opts)
         b.wait_in_text("#page_status_notification_updates", "Update available:")
         b.wait_in_text("#page_status_notification_updates", "cockpit-base.2")
 
