@@ -96,6 +96,10 @@ starter-kit includes an example [cockpitous release script](./cockpituous-releas
 that builds an upstream release tarball and source RPM. Please see the above
 cockpituous documentation for details.
 
+Automatic releases are triggered through the [release.yml](.github/workflows/release.yml)
+[GitHub action](https://github.com/features/actions) workflow. This uses the
+[cockpit-project organization secrets](https://github.com/organizations/cockpit-project/settings/secrets).
+
 # Further reading
 
  * [Cockpit Deployment and Developer documentation](http://cockpit-project.org/guide/latest/)
