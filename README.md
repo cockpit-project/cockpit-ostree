@@ -100,6 +100,14 @@ Automatic releases are triggered through the [release.yml](.github/workflows/rel
 [GitHub action](https://github.com/features/actions) workflow. This uses the
 [cockpit-project organization secrets](https://github.com/organizations/cockpit-project/settings/secrets).
 
+# Automated maintenance
+
+It is important to keep your [NPM modules](./package.json) up to date, to keep
+up with security updates and bug fixes. This is done with the
+[npm-update bot script](https://github.com/cockpit-project/bots/blob/master/npm-update)
+which is run weekly or upon [manual request](https://github.com/cockpit-project/cockpit-ostree/actions) through the
+[npm-update.yml](.github/workflows/npm-update.yml) [GitHub action](https://github.com/features/actions).
+
 # Further reading
 
  * [Cockpit Deployment and Developer documentation](http://cockpit-project.org/guide/latest/)
