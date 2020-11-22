@@ -12,7 +12,7 @@ VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 # stamp file to check if/when npm install ran
 NODE_MODULES_TEST=package-lock.json
 # one example file in dist/ from webpack to check if that already ran
-WEBPACK_TEST=dist/index.html
+WEBPACK_TEST=dist/manifest.json
 
 all: $(WEBPACK_TEST)
 
