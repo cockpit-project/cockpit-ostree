@@ -21,7 +21,8 @@ if [ ! -d /var/local-tree ]; then
     ostree checkout "$checkout" /var/local-tree
 fi
 
-podman pull nginx
+# originally docker.io/nginx, but that quickly runs into rate limits; use quay.io mirror
+podman pull quay.io/app-sre/nginx
 
 # create a local repository for tests
 mkdir -p /var/local-repo
