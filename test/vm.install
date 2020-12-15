@@ -22,7 +22,7 @@ if [ ! -d /var/local-tree ]; then
 fi
 
 # originally docker.io/nginx, but that quickly runs into rate limits; use quay.io mirror
-podman pull quay.io/app-sre/nginx
+podman pull quay.io/bitnami/nginx
 
 # create a local repository for tests
 mkdir -p /var/local-repo
