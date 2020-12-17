@@ -86,7 +86,7 @@ module.exports = {
                         loader: 'css-loader',
                         options: {
                             sourceMap: true,
-                            url: false
+                            url: false,
                         }
                     },
                     {
@@ -95,7 +95,7 @@ module.exports = {
                             multiple: [
                                 {
                                     search: /src:url\("patternfly-icons-fake-path\/pficon[^}]*/g,
-                                    replace: "src:url('fonts/patternfly.woff')format('woff');",
+                                    replace: 'src:url("../base1/fonts/patternfly.woff") format("woff");',
                                 },
                                 {
                                     search: /@font-face[^}]*patternfly-fonts-fake-path[^}]*}/g,
