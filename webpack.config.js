@@ -6,7 +6,7 @@ const extract = require("mini-css-extract-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
-const CockpitPoPlugin = require("./lib/cockpit-po-plugin");
+const CockpitPoPlugin = require("./src/lib/cockpit-po-plugin");
 
 const webpack = require("webpack");
 
@@ -69,10 +69,10 @@ try {
 module.exports = {
     mode: production ? 'production' : 'development',
     resolve: {
-        modules: [ nodedir ],
+        modules: [ nodedir, path.resolve(__dirname, 'src/lib') ],
     },
     resolveLoader: {
-        modules: [ nodedir, path.resolve(__dirname, 'lib') ],
+        modules: [ nodedir, path.resolve(__dirname, 'src/lib') ],
     },
     watchOptions: {
         ignored: /node_modules/,
