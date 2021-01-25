@@ -13,6 +13,8 @@ VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 NODE_MODULES_TEST=package-lock.json
 # one example file in dist/ from webpack to check if that already ran
 WEBPACK_TEST=dist/manifest.json
+# one example file in src/lib to check if it was already checked out
+LIB_TEST=src/lib/cockpit-po-plugin.js
 
 all: $(WEBPACK_TEST)
 
@@ -70,7 +72,7 @@ download-po: $(WEBLATE_REPO)
 %.spec: %.spec.in
 	sed -e 's/%{VERSION}/$(VERSION)/g' $< > $@
 
-$(WEBPACK_TEST): $(NODE_MODULES_TEST) lib/patternfly/_fonts.scss $(shell find src/ -type f) package.json webpack.config.js
+$(WEBPACK_TEST): $(NODE_MODULES_TEST) $(LIB_TEST) $(shell find src/ -type f) package.json webpack.config.js
 	NODE_ENV=$(NODE_ENV) npm run build
 
 watch:
@@ -103,7 +105,7 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	touch dist/*
 	tar czf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
 		--exclude $(PACKAGE_NAME).spec.in \
-		$$(git ls-files) lib/patternfly/*.scss package-lock.json $(PACKAGE_NAME).spec dist/
+		$$(git ls-files) $(LIB_TEST) src/lib/patternfly/*.scss package-lock.json $(PACKAGE_NAME).spec dist/
 	mv node_modules.release node_modules
 
 srpm: $(SRPMFILE)
@@ -166,13 +168,13 @@ test/common:
 	    git checkout --force FETCH_HEAD -- test/common; \
 	    git reset test/common'
 
-lib/patternfly/_fonts.scss:
+# checkout Cockpit's PF/React/build library; again this has no API stability guarantee, so check out a stable tag
+$(LIB_TEST):
 	flock Makefile sh -ec '\
-	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 234; \
-	    mkdir -p pkg/lib/patternfly && git add pkg/lib/patternfly; \
-	    git checkout --force FETCH_HEAD -- pkg/lib/patternfly; \
-	    git reset -- pkg/lib/patternfly'
-	mkdir -p lib && mv pkg/lib/patternfly lib/patternfly && rmdir -p pkg/lib
+	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 236; \
+	    git checkout --force FETCH_HEAD -- pkg/lib; \
+	    git reset -- pkg/lib'
+	mv pkg/lib src/ && rmdir -p pkg
 
 $(NODE_MODULES_TEST): package.json
 	# if it exists already, npm install won't update it; force that so that we always get up-to-date packages

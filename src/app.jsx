@@ -23,7 +23,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 
-import '../lib/patternfly/patternfly-4-cockpit.scss';
+import './lib/patternfly/patternfly-4-cockpit.scss';
 
 import {
     Title, Button, Alert,
@@ -48,7 +48,7 @@ import * as remotes from './remotes';
 import { ChangeRemoteModal } from './changeRemoteModal.jsx';
 
 import './ostree.scss';
-import './form-layout.scss';
+import './lib/form-layout.scss';
 
 const _ = cockpit.gettext;
 
