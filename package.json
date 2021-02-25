@@ -1,6 +1,5 @@
 {
   "name": "cockpit-ostree",
-  "version": "0.1.0",
   "description": "Manage software updates for ostree based systems in Cockpit",
   "main": "index.js",
   "repository": "git@github.com:cockpit-project/cockpit-ostree.git",
