@@ -1,5 +1,4 @@
 {
-    "version": "170",
     "name": "updates",
     "requires": {
         "cockpit": "125"
