@@ -29,15 +29,13 @@ import {
     Title, Button, Alert,
     EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
     DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent, /* DataListAction, */
-    Select, SelectOption,
     Page, PageSection, PageSectionVariants,
-    Nav, NavList, NavItem, NavVariants,
+    Select, SelectOption,
+    Spinner,
+    Toolbar, ToolbarItem, ToolbarContent,
+    Nav, NavList, NavItem,
 } from '@patternfly/react-core';
 import { ExclamationCircleIcon, OutlinedCheckCircleIcon } from '@patternfly/react-icons';
-import {
-    Spinner,
-    DataToolbar, DataToolbarItem, DataToolbarContent,
-} from '@patternfly/react-core/dist/esm/experimental';
 import moment from 'moment';
 import { debounce } from 'throttle-debounce';
 
@@ -165,16 +163,16 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
 
     return (
         <>
-            <DataToolbar id="repo-remote-toolbar">
-                <DataToolbarContent>
-                    <DataToolbarItem variant="label">{ _("Repository") }</DataToolbarItem>
-                    <DataToolbarItem><Button id="change-repo" variant="link" onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></DataToolbarItem>
+            <Toolbar id="repo-remote-toolbar">
+                <ToolbarContent>
+                    <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
+                    <ToolbarItem><Button id="change-repo" variant="link" onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
 
-                    <DataToolbarItem variant="label" id="branch-select-label">{ _("Branch")}</DataToolbarItem>
-                    <DataToolbarItem>
+                    <ToolbarItem variant="label" id="branch-select-label">{ _("Branch")}</ToolbarItem>
+                    <ToolbarItem>
                         <Select aria-label={ _("Select branch") } ariaLabelledBy="branch-select-label"
                                 toggleId="change-branch"
-                                isExpanded={branchSelectExpanded}
+                                isOpen={branchSelectExpanded}
                                 selections={currentBranch}
                                 onToggle={exp => setBranchSelectExpanded(exp) }
                                 onSelect={(event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
@@ -183,18 +181,18 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
                                 : (branches || []).map(branch => <SelectOption key={branch} value={branch} />)
                             }
                         </Select>
-                    </DataToolbarItem>
-                    <DataToolbarItem variant="separator" />
-                    <DataToolbarItem>
+                    </ToolbarItem>
+                    <ToolbarItem variant="separator" />
+                    <ToolbarItem>
                         <Button variant="secondary"
                                 id="check-for-updates-btn"
                                 isDisabled={!!client.local_running || !!progressMsg}
                                 onClick={checkForUpgrades}>
                             {!(!!client.local_running || !!progressMsg) ? _("Check for Updates") : <Spinner size="sm" />}
                         </Button>
-                    </DataToolbarItem>
-                </DataToolbarContent>
-            </DataToolbar>
+                    </ToolbarItem>
+                </ToolbarContent>
+            </Toolbar>
             {branchLoadError && <Alert variant="warning" isInline title={branchLoadError} />}
             {error && <Alert className="upgrade-error" variant="warning" isInline title={error} />}
         </>
@@ -366,8 +364,8 @@ const DeploymentVersion = ({ info, packages }) => {
                 ]} />
             </DataListItemRow>
             <DataListContent aria-label={cockpit.format("$0 Details", name)} id="available-deployments-expanded-content">
-                <Nav onSelect={result => setActiveTabKey(result.itemId)}>
-                    <NavList variant={NavVariants.tertiary}>
+                <Nav variant="tertiary" onSelect={result => setActiveTabKey(result.itemId)}>
+                    <NavList>
                         <NavItem isActive={activeTabKey === "tree"} itemId="tree">{ _("Tree") }</NavItem>
                         <NavItem isActive={activeTabKey === "packages"} itemId="packages">{ _("Packages") }</NavItem>
                         <NavItem isActive={activeTabKey === "signatures"} itemId="signatures">{ _("Signatures") }</NavItem>
