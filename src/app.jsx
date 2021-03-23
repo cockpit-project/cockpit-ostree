@@ -111,7 +111,7 @@ const Curtain = ({ state, failure, message, reconnect }) => {
 
     let icon = null;
     if (state === 'connecting')
-        icon = <Spinner size="xl" />;
+        icon = <Spinner isSVG size="xl" />;
     else if (failure)
         icon = <EmptyStateIcon icon={ExclamationCircleIcon} />;
 
@@ -186,9 +186,10 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
                     <ToolbarItem>
                         <Button variant="secondary"
                                 id="check-for-updates-btn"
+                                isLoading={!!client.local_running || !!progressMsg}
                                 isDisabled={!!client.local_running || !!progressMsg}
                                 onClick={checkForUpgrades}>
-                            {!(!!client.local_running || !!progressMsg) ? _("Check for Updates") : <Spinner size="sm" />}
+                            {_("Check for Updates")}
                         </Button>
                     </ToolbarItem>
                 </ToolbarContent>
