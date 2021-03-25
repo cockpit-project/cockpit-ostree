@@ -28,7 +28,8 @@ import './lib/patternfly/patternfly-4-cockpit.scss';
 import {
     Title, Button, Alert,
     EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
-    DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent, /* DataListAction, */
+    DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent,
+    DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription,
     Page, PageSection, PageSectionVariants,
     Select, SelectOption,
     Spinner,
@@ -46,7 +47,6 @@ import * as remotes from './remotes';
 import { ChangeRemoteModal } from './changeRemoteModal.jsx';
 
 import './ostree.scss';
-import './lib/form-layout.scss';
 
 const _ = cockpit.gettext;
 
@@ -318,13 +318,25 @@ const DeploymentVersion = ({ info, packages }) => {
         state = _("Available");
 
     const treeTab = (
-        <div className="ct-form">
-            <label className="control-label" htmlFor="osname">{ _("Operating System") }</label> <div className="os" id="osname">{info.osname.v}</div>
-            <label className="control-label" htmlFor="osversion">{ _("Version") }</label> <div className="version" id="osversion">{info.version.v}</div>
-            <label className="control-label" htmlFor="osrelease">{ _("Released") }</label> <div className="timestamp" id="osrelease">{moment.unix(info.timestamp.v).fromNow()}</div>
-            <label className="control-label" htmlFor="osorigin">{ _("Origin") }</label> <div className="origin" id="osorigin">{info.origin.v}</div>
-
-        </div>);
+        <DescriptionList isHorizontal>
+            <DescriptionListGroup>
+                <DescriptionListTerm>{ _("Operating System") }</DescriptionListTerm>
+                <DescriptionListDescription className="os" id="osname">{info.osname.v}</DescriptionListDescription>
+            </DescriptionListGroup>
+            <DescriptionListGroup>
+                <DescriptionListTerm>{ _("Version") }</DescriptionListTerm>
+                <DescriptionListDescription className="version" id="osversion">{info.version.v}</DescriptionListDescription>
+            </DescriptionListGroup>
+            <DescriptionListGroup>
+                <DescriptionListTerm>{ _("Released") }</DescriptionListTerm>
+                <DescriptionListDescription className="timestamp" id="osrelease">{moment.unix(info.timestamp.v).fromNow()}</DescriptionListDescription>
+            </DescriptionListGroup>
+            <DescriptionListGroup>
+                <DescriptionListTerm>{ _("Origin") }</DescriptionListTerm>
+                <DescriptionListDescription className="origin" id="osorigin">{info.origin.v}</DescriptionListDescription>
+            </DescriptionListGroup>
+        </DescriptionList>
+    );
 
     let signaturesTab;
     if (info.signatures && info.signatures.v.length > 0) {
@@ -334,12 +346,25 @@ const DeploymentVersion = ({ info, packages }) => {
             const validity = sig.valid ? _("Good Signature") : (sig.expired ? _("Expired Signature") : _("Invalid Signature"));
 
             return (
-                <div className="ct-form .signatures" key={index}>
-                    <label className="control-label" htmlFor="signature-signed-by">{ _("Signed by") }</label> <span id="signature-signed-by">{sig.by}</span>
-                    <label className="control-label" htmlFor="signature-when">{ _("When") }</label> <span id="signature-when">{when}</span>
-                    <label className="control-label" htmlFor="signature-name">{ sig.fp_name }</label> <span id="signature-name">{sig.fp}</span>
-                    <label className="control-label" htmlFor="signature-valid">{ _("Validity") }</label> <span id="signature-valid">{validity}</span>
-                </div>);
+                <DescriptionList isHorizontal key={index}>
+                    <DescriptionListGroup>
+                        <DescriptionListTerm>{ _("Signed by") }</DescriptionListTerm>
+                        <DescriptionListDescription id="signature-signed-by">{sig.by}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                    <DescriptionListGroup>
+                        <DescriptionListTerm>{ _("When") }</DescriptionListTerm>
+                        <DescriptionListDescription id="signature-when">{when}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                    <DescriptionListGroup>
+                        <DescriptionListTerm>{ sig.fp_name }</DescriptionListTerm>
+                        <DescriptionListDescription id="signature-name">{sig.fp}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                    <DescriptionListGroup>
+                        <DescriptionListTerm>{ _("Validity") }</DescriptionListTerm>
+                        <DescriptionListDescription id="signature-valid">{validity}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                </DescriptionList>
+            );
         })];
     } else {
         signaturesTab = <p>{ _("No signature available") }</p>;
