@@ -37,10 +37,16 @@
     padding: var(--pf-c-data-list__expandable-content-body--PaddingTop);
 }
 
+.available-deployments {
+    // Remove data-list border - items are seperated by margin
+    border: none;
+    // Set up max width for the data list
+    max-width: 60rem;
+}
+
 // Data list items should not expand horizontally to the whole page
 .available-deployments li.pf-c-data-list__item {
-    margin: 2rem;
-    max-width: 60rem;
+    margin-bottom: 2rem;
 }
 
 // PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
