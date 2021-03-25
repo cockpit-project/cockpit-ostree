@@ -166,7 +166,7 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
             <Toolbar id="repo-remote-toolbar">
                 <ToolbarContent>
                     <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
-                    <ToolbarItem><Button id="change-repo" variant="link" onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
+                    <ToolbarItem><Button id="change-repo" variant="link" isInline onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
 
                     <ToolbarItem variant="label" id="branch-select-label">{ _("Branch")}</ToolbarItem>
                     <ToolbarItem>
