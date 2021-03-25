@@ -564,7 +564,8 @@ class Application extends React.Component {
                                    refreshRemotes={this.refreshRemotes}
                                    onChangeRemoteOrigin={this.onChangeRemoteOrigin}
                                    remotesList={this.state.remotes} />
-                <PageSection variant={PageSectionVariants.light} type='nav'>
+                <PageSection variant={PageSectionVariants.light}
+                             padding={{ default: 'noPadding' }}>
                     <OriginSelector os={this.state.os} remotes={this.state.remotes}
                                     branches={this.state.branches} branchLoadError={this.state.branchLoadError}
                                     currentRemote={this.state.origin.remote} currentBranch={this.state.origin.branch}
