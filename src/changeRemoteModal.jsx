@@ -60,11 +60,11 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
 
     return (
         <Modal title={_("Change Repository")}
-               width='50%'
+               position="top"
+               variant="medium"
                appendTo={document.body}
                isOpen={isModalOpen}
                onClose={() => setIsModalOpen(false)}
-               isFooterLeftAligned
                footer={footer}>
             <>
                 {error && <Alert variant="danger" isInline title={error} />}
