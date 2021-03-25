@@ -364,7 +364,7 @@ const DeploymentVersion = ({ info, packages }) => {
                     </DataListCell>,
                 ]} />
             </DataListItemRow>
-            <DataListContent aria-label={cockpit.format("$0 Details", name)} id="available-deployments-expanded-content">
+            <DataListContent aria-label={cockpit.format("$0 Details", name)} hasNoPadding id="available-deployments-expanded-content">
                 <Nav variant="tertiary" onSelect={result => setActiveTabKey(result.itemId)}>
                     <NavList>
                         <NavItem isActive={activeTabKey === "tree"} itemId="tree">{ _("Tree") }</NavItem>
