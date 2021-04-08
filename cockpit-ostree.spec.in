@@ -7,12 +7,7 @@ License: LGPLv2+
 BuildRequires: make
 Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
-# On RHEL Atomic 7, the package name is different (curiously not on CentOS Atomic)
-%if 0%{?rhel} == 7
-Requires: rpm-ostree-client
-%else
 Requires: rpm-ostree
-%endif
 
 # Download from https://github.com/cockpit-project/cockpit-ostree/releases
 Source: cockpit-ostree-%{version}.tar.gz
