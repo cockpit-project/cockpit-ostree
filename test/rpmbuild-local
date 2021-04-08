@@ -4,10 +4,6 @@ set -eux
 
 SRPM="$1"
 
-if [ "${TEST_OS:-}" = rhel-atomic ]; then
-    MACRO_RHEL=7
-fi
-
 mkdir -p "`pwd`/output"
 mkdir -p "`pwd`/rpmbuild"
 rpmbuild --rebuild \
@@ -17,7 +13,6 @@ rpmbuild --rebuild \
   --define "_srcrpmdir `pwd`" \
   --define "_rpmdir `pwd`/output" \
   --define "_buildrootdir `pwd`/build" \
-  ${MACRO_RHEL:+--define "rhel $MACRO_RHEL"} \
   "$SRPM"
 find `pwd`/output -name '*.rpm' -printf '%f\n' -exec mv {} . \;
 rm -r "`pwd`/rpmbuild"

@@ -15,7 +15,7 @@ else
     podman container runlabel INSTALL cockpit/ws
 fi
 
-# cockpit's {rhel,continuous}-atomic images already have this checkout, fedora-coreos does not
+# fedora-coreos does not have this checkout
 if [ ! -d /var/local-tree ]; then
     checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
     ostree checkout "$checkout" /var/local-tree
