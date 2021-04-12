@@ -66,6 +66,10 @@
 // Add a border line bellow the navigatin
 .available-deployments .pf-c-nav {
     background: linear-gradient(0deg,var(--pf-global--BorderColor--100) 0,var(--pf-global--BorderColor--100) 1px,transparent 0);
+
+    .pf-c-nav__list {
+        margin-left: var(--pf-global--spacer--sm);
+    }
 }
 
 .deployment-name {
