@@ -163,7 +163,7 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
 
     return (
         <>
-            <Toolbar id="repo-remote-toolbar">
+            <Toolbar id="repo-remote-toolbar" className="pf-m-page-insets">
                 <ToolbarContent>
                     <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
                     <ToolbarItem><Button id="change-repo" variant="link" isInline onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
