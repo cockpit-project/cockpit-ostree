@@ -555,6 +555,7 @@ class OstreeCase(MachineCase):
         b.wait_in_text("{0} .packages".format(get_list_item(1)), "contains the same packages as your currently booted")
 
         # Switching back shows pulled
+        b.click("#change-branch")
         b.wait_in_text("#change-branch + ul li:first button", "zremote-branch1")
         b.click("#change-branch + ul li:first button")
         b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos zremote-branch1.1")
