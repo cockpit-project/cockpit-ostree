@@ -1,10 +1,9 @@
 const path = require("path");
-const childProcess = require('child_process');
 
 const copy = require("copy-webpack-plugin");
 const extract = require("mini-css-extract-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
-const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
+const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const CockpitPoPlugin = require("./src/lib/cockpit-po-plugin");
 
@@ -54,18 +53,6 @@ const babel_loader = {
     }
 }
 
-/* check if sassc is available, to avoid unintelligible error messages */
-try {
-    childProcess.execFileSync('sassc', ['--version'], { stdio: ['pipe', 'inherit', 'inherit'] });
-} catch (e) {
-    if (e.code === 'ENOENT') {
-        console.error("ERROR: You need to install the 'sassc' package to build this project.");
-        process.exit(1);
-    } else {
-        throw e;
-    }
-}
-
 module.exports = {
     mode: production ? 'production' : 'development',
     resolve: {
@@ -87,7 +74,18 @@ module.exports = {
 
     optimization: {
         minimize: production,
-        minimizer: [new TerserJSPlugin({}), new OptimizeCSSAssetsPlugin({})],
+        minimizer: [
+            new TerserJSPlugin({
+                extractComments: {
+                    condition: true,
+                    filename: `[file].LICENSE.txt?query=[query]&filebase=[base]`,
+                    banner(licenseFile) {
+                        return `License information can be found in ${licenseFile}`;
+                    },
+                },
+            }),
+            new CssMinimizerPlugin({})
+        ],
     },
 
     module: {
@@ -130,7 +128,15 @@ module.exports = {
                             ]
                         },
                     },
-                    'sassc-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: !production,
+                            sassOptions: {
+                                outputStyle: production ? 'compressed' : undefined,
+                            },
+                        },
+                    },
                 ]
             },
             {
@@ -145,7 +151,15 @@ module.exports = {
                             url: false
                         }
                     },
-                    'sassc-loader',
+                    {
+                        loader: 'sass-loader',
+                        options: {
+                            sourceMap: !production,
+                            sassOptions: {
+                                outputStyle: production ? 'compressed' : undefined,
+                            },
+                        },
+                    },
                 ]
             },
         ]

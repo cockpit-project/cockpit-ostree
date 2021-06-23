@@ -23,10 +23,9 @@ Cockpit component for managing software updates for ostree based systems.
 %install
 %make_install
 
-# drop source maps, they are large and just for debugging
-find %{buildroot}%{_datadir}/cockpit/ -name '*.map' | xargs rm --verbose
-
 %files
+%doc README.md
+%license LICENSE dist/ostree.js.LICENSE.txt.gz
 %{_datadir}/cockpit/*
 
 %changelog
