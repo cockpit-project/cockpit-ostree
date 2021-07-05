@@ -75,7 +75,7 @@ function format_version(deployment) {
     return cockpit.format("$0 $1", deployment.osname.v, formated);
 }
 
-// https://github.com/cockpit-project/cockpit/blob/master/pkg/lib/notifications.js
+// https://github.com/cockpit-project/cockpit/blob/main/pkg/lib/notifications.js
 function set_page_status(status) {
     cockpit.transport.control("notify", { page_status: status });
 }
