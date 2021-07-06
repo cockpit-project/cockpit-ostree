@@ -1,4 +1,5 @@
 Name: cockpit-ostree
+Epoch: 1
 Version: %{VERSION}
 Release: 1%{?dist}
 BuildArch: noarch
