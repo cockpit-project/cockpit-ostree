@@ -25,7 +25,7 @@ all: $(WEBPACK_TEST)
 LINGUAS=$(basename $(notdir $(wildcard po/*.po)))
 WEBLATE_REPO=tmp/weblate-repo
 WEBLATE_REPO_URL=https://github.com/cockpit-project/cockpit-ostree-weblate.git
-WEBLATE_REPO_BRANCH=master
+WEBLATE_REPO_BRANCH=main
 
 po/$(PACKAGE_NAME).js.pot:
 	xgettext --default-domain=cockpit --output=$@ --language=C --keyword= \
