@@ -37,10 +37,11 @@ import {
     Nav, NavList, NavItem,
 } from '@patternfly/react-core';
 import { ExclamationCircleIcon, OutlinedCheckCircleIcon } from '@patternfly/react-icons';
-import moment from 'moment';
 import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
+
+import * as timeformat from 'timeformat';
 
 import client from './client';
 import * as remotes from './remotes';
@@ -329,7 +330,7 @@ const DeploymentVersion = ({ info, packages }) => {
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Released") }</DescriptionListTerm>
-                <DescriptionListDescription className="timestamp" id="osrelease">{moment.unix(info.timestamp.v).fromNow()}</DescriptionListDescription>
+                <DescriptionListDescription className="timestamp" id="osrelease">{timeformat.distanceToNow(info.timestamp.v * 1000, true)}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Origin") }</DescriptionListTerm>
