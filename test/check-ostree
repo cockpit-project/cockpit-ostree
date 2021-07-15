@@ -635,7 +635,6 @@ class OstreeCase(MachineCase):
         b.wait_in_text(".pf-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-c-empty-state button"))
         self.allow_journal_messages("cannot reauthorize identity.*")
-        self.allow_failed_sudo_journal_messages()
 
     def testPageStatus(self):
         m = self.machine
