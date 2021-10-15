@@ -9,8 +9,6 @@ const CockpitPoPlugin = require("./src/lib/cockpit-po-plugin");
 
 const webpack = require("webpack");
 
-const nodedir = path.resolve((process.env.SRCDIR || __dirname), "node_modules");
-
 /* A standard nodejs and webpack pattern */
 const production = process.env.NODE_ENV === 'production';
 
@@ -56,10 +54,10 @@ const babel_loader = {
 module.exports = {
     mode: production ? 'production' : 'development',
     resolve: {
-        modules: [ nodedir, path.resolve(__dirname, 'src/lib') ],
+        modules: [ "node_modules", path.resolve(__dirname, 'src/lib') ],
     },
     resolveLoader: {
-        modules: [ nodedir, path.resolve(__dirname, 'src/lib') ],
+        modules: [ "node_modules", path.resolve(__dirname, 'src/lib') ],
     },
     watchOptions: {
         ignored: /node_modules/,
