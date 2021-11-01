@@ -465,6 +465,9 @@ class Application extends React.Component {
         };
 
         const show_failure = ex => {
+            if (Array.isArray(ex) && ex.length >= 1) {
+              ex = ex[0];
+            }
             let message = null;
             let final = false;
 
