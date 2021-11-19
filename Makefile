@@ -6,6 +6,7 @@ TEST_OS = fedora-coreos
 endif
 export TEST_OS
 TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.xz
+NODE_CACHE=cockpit-$(PACKAGE_NAME)-node-$(VERSION).tar.xz
 RPMFILE=$(shell rpmspec -D"VERSION $(VERSION)" -q $(PACKAGE_NAME).spec.in).rpm
 SRPMFILE=$(subst noarch,src,$(RPMFILE))
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
@@ -80,6 +81,11 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
 		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules \
 		$$(git ls-files) src/lib package-lock.json $(PACKAGE_NAME).spec dist/
+
+$(NODE_CACHE): $(NODE_MODULES_TEST)
+	tar --xz -cf $@ node_modules
+
+node-cache: $(NODE_CACHE)
 
 srpm: $(SRPMFILE)
 
@@ -156,4 +162,4 @@ $(NODE_MODULES_TEST): package.json
 	env -u NODE_ENV npm install
 	env -u NODE_ENV npm prune
 
-.PHONY: all clean install devel-install dist srpm rpm check check-unit vm
+.PHONY: all clean install devel-install dist node-cache srpm rpm check check-unit vm
