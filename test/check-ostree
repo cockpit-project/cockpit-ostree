@@ -622,6 +622,10 @@ class OstreeCase(MachineCase):
         b.wait_in_text(".pf-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-c-empty-state button"))
 
+        b.become_superuser()
+        b.switch_to_frame("cockpit1:localhost/updates")
+        b.wait_visible('.available-deployments')
+
     def testPageStatus(self):
         m = self.machine
         b = self.browser
