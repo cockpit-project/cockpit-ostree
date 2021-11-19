@@ -611,30 +611,16 @@ class OstreeCase(MachineCase):
         b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
         b.wait_in_text("{0} .origin".format(get_list_item(1)), "local:{}".format(branch))
 
+    @nondestructive
     def testPermission(self):
         m = self.machine
         b = self.browser
 
         rhsmcertd_hack(m)
 
-        # Create a user
-        m.execute("useradd user -c 'User' || true")
-        m.execute("echo foobar | passwd --stdin user")
-
-        # login
-        m.start_cockpit()
-        b.open("/updates")
-        b.wait_visible("#login")
-        b.set_val("#login-user-input", "user")
-        b.set_val("#login-password-input", "foobar")
-        b.click('#login-button')
-        b.expect_load()
-
-        b.enter_page("/updates")
-
+        self.login_and_go("/updates", superuser=False)
         b.wait_in_text(".pf-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-c-empty-state button"))
-        self.allow_journal_messages("cannot reauthorize identity.*")
 
     def testPageStatus(self):
         m = self.machine
