@@ -164,14 +164,14 @@ bots:
 # when you start a new project, use the latest release, and update it from time to time
 test/common:
 	flock Makefile sh -ec '\
-	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 248; \
+	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 257; \
 	    git checkout --force FETCH_HEAD -- test/common; \
 	    git reset test/common'
 
 # checkout Cockpit's PF/React/build library; again this has no API stability guarantee, so check out a stable tag
 $(LIB_TEST):
 	flock Makefile sh -ec '\
-	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 80c9e57cdafaf0d6e4be6f907b6951a9854dcd7a; \
+	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 257; \
 	    git checkout --force FETCH_HEAD -- pkg/lib; \
 	    git reset -- pkg/lib'
 	mv pkg/lib src/ && rmdir -p pkg
