@@ -79,7 +79,7 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	touch dist/*
 	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
 		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules \
-		$$(git ls-files) $(LIB_TEST) src/lib/patternfly/*.scss package-lock.json $(PACKAGE_NAME).spec dist/
+		$$(git ls-files) src/lib package-lock.json $(PACKAGE_NAME).spec dist/
 
 srpm: $(SRPMFILE)
 
