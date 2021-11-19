@@ -42,6 +42,7 @@ import { debounce } from 'throttle-debounce';
 import cockpit from 'cockpit';
 
 import * as timeformat from 'timeformat';
+import { superuser } from 'superuser';
 
 import client from './client';
 import * as remotes from './remotes';
@@ -50,6 +51,8 @@ import { ChangeRemoteModal } from './changeRemoteModal.jsx';
 import './ostree.scss';
 
 const _ = cockpit.gettext;
+
+superuser.reload_page_on_change();
 
 function track_id(item) {
     if (!item)
