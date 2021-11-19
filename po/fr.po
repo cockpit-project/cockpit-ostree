@@ -9,27 +9,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
 "PO-Revision-Date: 2020-02-03 07:25+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
-"Language-Team: French <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/fr/>\n"
+"Language-Team: French <https://translate.fedoraproject.org/projects/cockpit-"
+"ostree/master/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"Plural-Forms: nplurals=2; plural=n > 1\n"
 "X-Generator: Weblate 3.10.3\n"
 
-#: src/client.js:484
+#: src/client.js:480
 msgid "$0 key ID"
 msgstr "$0 ID clé"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 package"
 msgstr "$0 paquet"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 packages"
 msgstr "$0 paquets"
 
@@ -73,7 +73,7 @@ msgstr "Modifier dépôt"
 msgid "Check for Updates"
 msgstr "Vérifier les mises à jour"
 
-#: src/app.js:303
+#: src/app.js:299
 msgid "Checking for updates"
 msgstr "Recherche de mises à jour"
 
@@ -129,7 +129,7 @@ msgstr "Nom"
 msgid "No Deployments"
 msgstr "Aucun déploiement"
 
-#: src/app.js:104
+#: src/app.js:101
 msgid "No OSTree deployments found"
 msgstr "Aucun déploiement OSTree trouvé"
 
@@ -141,15 +141,15 @@ msgstr "Aucune configuration de donnée trouvée"
 msgid "No signature avaliable"
 msgstr "Aucune signature disponible"
 
-#: src/app.js:83
+#: src/app.js:80
 msgid "Not authorized to update software on this system"
 msgstr "Pas autorisé à mettre à jour les logiciels sur ce système"
 
-#: src/client.js:585 src/client.js:681
+#: src/client.js:581 src/client.js:677
 msgid "OS $0 not found"
 msgstr "OS $0 non trouvé"
 
-#: src/app.js:85
+#: src/app.js:82
 msgid "OSTree is not available on this system"
 msgstr "OSTree non disponible sur ce système"
 
