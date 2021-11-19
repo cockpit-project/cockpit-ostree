@@ -6,7 +6,7 @@ TEST_OS = fedora-coreos
 endif
 export TEST_OS
 TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.xz
-NODE_CACHE=cockpit-$(PACKAGE_NAME)-node-$(VERSION).tar.xz
+NODE_CACHE=$(PACKAGE_NAME)-node-$(VERSION).tar.xz
 RPMFILE=$(shell rpmspec -D"VERSION $(VERSION)" -q $(PACKAGE_NAME).spec.in).rpm
 SRPMFILE=$(subst noarch,src,$(RPMFILE))
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
