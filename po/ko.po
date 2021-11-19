@@ -1,0 +1,1368 @@
+# MinWoo Joh <igtzhsou@naver.com>, 2015. #zanata
+# MinWoo Joh <igtzhsou@naver.com>, 2016. #zanata
+# cockpit <cockpituous@gmail.com>, 2016. #zanata
+# cockpit <cockpituous@gmail.com>, 2017. #zanata
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"PO-Revision-Date: 2021-04-22 05:02+0000\n"
+"Last-Translator: simmon <simmon@nplob.com>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/ko/>\n"
+"Language: ko\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"X-Generator: Weblate 4.6\n"
+
+#: src/client.js:480
+msgid "$0 key ID"
+msgstr "$0 키 ID"
+
+#: src/app.js:455
+msgid "$0 package"
+msgstr "$0 꾸러미(package)"
+
+#: src/app.js:455
+msgid "$0 packages"
+msgstr "$0 꾸러미(package)"
+
+#: src/index.html:92
+msgid "- Add New Repository"
+msgstr "- 신규 저장소 추가"
+
+#: src/index.html:90
+msgid "Add"
+msgstr "추가"
+
+#: src/index.html:75
+msgid "Add Another Key"
+msgstr "다른 키를 추가합니다"
+
+#: src/index.html:313 src/index.html:331
+msgid "Additions"
+msgstr "추가"
+
+#: src/index.html:39
+msgid "Apply"
+msgstr "적용"
+
+#: src/index.html:255
+msgid "Available"
+msgstr "사용 할 수 있는"
+
+#: src/index.html:68
+msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+msgstr "'-----PGP 공개 키 블록 시작-----' 함께 시작합니다"
+
+#: src/index.html:164
+msgid "Cancel"
+msgstr "취소"
+
+#: src/index.html:134
+msgid "Change Repository"
+msgstr "저장소 변경"
+
+#: src/index.html:210
+msgid "Check for Updates"
+msgstr "최신화를 위한 점검"
+
+#: src/app.js:299
+msgid "Checking for updates"
+msgstr "최신화를 위한 점검하기"
+
+#: src/index.html:418
+msgid "Connecting to OSTree"
+msgstr "OSTree에 연걸"
+
+#: src/remotes.js:181
+msgid "Couldn't load settings for '$0': $1"
+msgstr "'$0': $1 을 위해 적재 설정 할 수 없습니다"
+
+#: src/index.html:184
+msgid "Currently using:"
+msgstr "현재 사용하기:"
+
+#: src/index.html:253
+msgid "Default"
+msgstr "기본"
+
+#: src/index.html:38
+msgid "Delete"
+msgstr "삭제"
+
+#: src/index.html:319 src/index.html:349
+msgid "Downgrades"
+msgstr "하향설치"
+
+#: src/remotes.js:327
+msgid "Error loading remotes: $0"
+msgstr "원격적재 오류: $0"
+
+#: src/index.html:290
+msgid "Expired Signature"
+msgstr "만료된 서명"
+
+#: src/index.html:258
+msgid "Failed"
+msgstr "실패하였습니다"
+
+#: src/index.html:289
+msgid "Good Signature"
+msgstr "양호한 서명"
+
+#: src/index.html:291
+msgid "Invalid Signature"
+msgstr "유효하지 않은 서명"
+
+#: src/index.html:99
+msgid "Name"
+msgstr "이름"
+
+#: src/index.html:420
+msgid "No Deployments"
+msgstr "배포 없음"
+
+#: src/app.js:101
+msgid "No OSTree deployments found"
+msgstr "OSTree 배포를 찾을 수 없습니다"
+
+#: src/remotes.js:112
+msgid "No configuration data found"
+msgstr "설정 자료를 찾을 수 없습니다"
+
+#: src/index.html:294
+msgid "No signature avaliable"
+msgstr "이용 가능한 서명이 없습니다"
+
+#: src/app.js:80
+msgid "Not authorized to update software on this system"
+msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
+
+#: src/client.js:581 src/client.js:677
+msgid "OS $0 not found"
+msgstr "OS $0 찾을 수 없습니다"
+
+#: src/app.js:82
+msgid "OSTree is not available on this system"
+msgstr "OSTree는 이 시스템에 이용 할 수 없습니다"
+
+#: src/index.html:301
+msgid "Operating System"
+msgstr "운영 체제"
+
+#: src/index.html:375
+msgid "Operating System Updates"
+msgstr "운영체제 시스템 최신화"
+
+#: src/index.html:307
+msgid "Origin"
+msgstr "근원(출발점)"
+
+#: src/index.html:266
+msgid "Packages"
+msgstr "꾸러미(packages)"
+
+#: src/remotes.js:261
+msgid "Please provide a valid URL"
+msgstr "유효한 URL을 제공해야 합니다"
+
+#: src/remotes.js:254
+msgid "Please provide a valid name"
+msgstr "유효한 이름을 제공해야 합니다"
+
+#: src/index.html:241
+msgid "Rebase and Reboot"
+msgstr "재배치와 재시작"
+
+#: src/client.js:56
+msgid "Receiving delta parts"
+msgstr "델타 부분 받기"
+
+#: src/client.js:58
+msgid "Receiving metadata objects"
+msgstr "메타자료 대상 받기"
+
+#: src/client.js:61
+msgid "Receiving objects: $0%"
+msgstr "대상 받기: $0%"
+
+#: src/index.html:423
+msgid "Reconnect"
+msgstr "재연결"
+
+#: src/index.html:305
+msgid "Released"
+msgstr "출시됨"
+
+#: src/index.html:315 src/index.html:337
+msgid "Removals"
+msgstr "제거됨"
+
+#: src/index.html:237
+msgid "Roll Back and Reboot"
+msgstr "되돌리기와 재시작"
+
+#: src/index.html:251
+msgid "Running"
+msgstr "작동중"
+
+#: src/client.js:66
+msgid "Scanning metadata"
+msgstr "메타자료 검색하기"
+
+#: src/index.html:267
+msgid "Signature"
+msgstr "서명"
+
+#: src/index.html:279
+msgid "Signed by"
+msgstr "서명되었습니다"
+
+#: src/index.html:23 src/manifest.json
+msgid "Software Updates"
+msgstr "소프트웨어 최신화"
+
+#: src/index.html:288
+msgid "Status"
+msgstr "상태"
+
+#: src/index.html:327
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr "이 배포는 현재 동작하는 시스템에 동일한 꾸러미(package)가 포함되었습니다"
+
+#: src/index.html:265
+msgid "Tree"
+msgstr "나무"
+
+#: src/index.html:48 src/index.html:109
+msgid "URL"
+msgstr "URL"
+
+#: src/index.html:419
+msgid "Unable to communicate with OSTree"
+msgstr "OSTree와 함께 통신 할 수 없습니다"
+
+#: src/index.html:233
+msgid "Update and Reboot"
+msgstr "최신화 및 재시작"
+
+#: src/index.html:317 src/index.html:343
+msgid "Updates"
+msgstr "최신화"
+
+#: src/index.html:262
+msgid "Updating"
+msgstr "최신화 중"
+
+#: src/index.html:59 src/index.html:121
+msgid "Use trusted GPG key"
+msgstr "신뢰하는 GPG 키를 사용합니다"
+
+#: src/index.html:303
+msgid "Version"
+msgstr "버전"
+
+#: src/index.html:282
+msgid "When"
+msgstr "언제"
+
+#: src/client.js:64
+msgid "Writing objects"
+msgstr "대상에 쓰기"
+
+#: src/index.html:186
+msgid "at"
+msgstr "에서"
+
+#~ msgid "$0 shares"
+#~ msgstr "$0 공유"
+
+#~ msgid "$name (from $host)"
+#~ msgstr "$name ($host에서)"
+
+#~ msgid "${hip}:${hport} -> $cport"
+#~ msgstr "${hip}:${hport} -> $cport"
+
+#~ msgid "1 day"
+#~ msgstr "1 일"
+
+#~ msgid "1 hour"
+#~ msgstr "1 시간"
+
+#~ msgid "1 week"
+#~ msgstr "1 주"
+
+#~ msgid "5 minutes"
+#~ msgstr "5분"
+
+#~ msgid "6 hours"
+#~ msgstr "6 시간"
+
+#~ msgid "802.3ad"
+#~ msgstr "802.3ad"
+
+#~ msgid "ARP"
+#~ msgstr "ARP"
+
+#~ msgid "ARP Monitoring"
+#~ msgstr "ARP 모니터링"
+
+#~ msgid "About Cockpit"
+#~ msgstr "Cockpit에 대하여"
+
+#~ msgid "Account Settings"
+#~ msgstr "계정 설정"
+
+#~ msgid "Active"
+#~ msgstr "활성"
+
+#~ msgid "Active Backup"
+#~ msgstr "활성화된 백업"
+
+#~ msgid "Adaptive load balancing"
+#~ msgstr "적응형 로드 밸런싱"
+
+#~ msgid "Adaptive transmit load balancing"
+#~ msgstr "적응형 전송 로드 밸런싱"
+
+#~ msgid "Add Bond"
+#~ msgstr "본드 추가"
+
+#~ msgid "Add Bridge"
+#~ msgstr "브릿지 추가"
+
+#~ msgid "Add Disks"
+#~ msgstr "디스크 추가"
+
+#, fuzzy
+#~ msgid "Add Kubernetes Node"
+#~ msgstr "Kubernetes 클러스터"
+
+#, fuzzy
+#~ msgid "Add Membership"
+#~ msgstr "맴버"
+
+#, fuzzy
+#~ msgid "Add Role"
+#~ msgstr "본드 추가"
+
+#~ msgid "Add VLAN"
+#~ msgstr "VLAN 추가"
+
+#~ msgid "Address"
+#~ msgstr "주소"
+
+#~ msgid "Adjust"
+#~ msgstr "조정"
+
+#~ msgid "Adjust Service"
+#~ msgstr "서비스 조정"
+
+#, fuzzy
+#~ msgid "All running"
+#~ msgstr "작동중"
+
+#~ msgid "At least $0 disks are needed."
+#~ msgstr "최소 $0 개의 디스크가 필요합니다."
+
+#~ msgid "At least one disk is needed."
+#~ msgstr "최소 1개의 디스크가 필요합니다."
+
+#~ msgid "Authenticating"
+#~ msgstr "인증 중입니다"
+
+#~ msgid "Author"
+#~ msgstr "작성자"
+
+#~ msgid "Automatic"
+#~ msgstr "자동"
+
+#~ msgid "Automatic (DHCP only)"
+#~ msgstr "자동(DHCP only)"
+
+#~ msgid "Automatic (DHCP)"
+#~ msgstr "자동(DHCP)"
+
+#~ msgid "Bond"
+#~ msgstr "본드"
+
+#~ msgid "Bond Settings"
+#~ msgstr "본드 설정"
+
+#~ msgid "Bridge"
+#~ msgstr "브릿지"
+
+#~ msgid "Bridge Port Settings"
+#~ msgstr "브릿지 포트 설정"
+
+#~ msgid "Bridge Settings"
+#~ msgstr "브릿지 설정"
+
+#~ msgid "Bridge port"
+#~ msgstr "브릿지 포트"
+
+#~ msgid "Broadcast"
+#~ msgstr "브로트캐스트"
+
+#~ msgid "CPU"
+#~ msgstr "CPU"
+
+#~ msgid "CPU priority"
+#~ msgstr "CPU 우선순위"
+
+#, fuzzy
+#~ msgid "Can&rsquo;t connect to Docker"
+#~ msgstr "Docker에 연결할 수 없습니다."
+
+#~ msgid "Carrier"
+#~ msgstr "캐리어"
+
+#, fuzzy
+#~ msgid "Ceph Filesystem Mount"
+#~ msgstr "파일 시스템 옵션"
+
+#, fuzzy
+#~ msgid "Ceph Monitors"
+#~ msgstr "리포지터리 "
+
+#~ msgid "Checking IP"
+#~ msgstr "IP확인 중입니다"
+
+#~ msgid "Choose the language to be used in the application"
+#~ msgstr "사용하실 언어를 선택해주세요"
+
+#, fuzzy
+#~ msgid "Claim Name"
+#~ msgstr "컨테이너 이름"
+
+#~ msgid "Close"
+#~ msgstr "닫기"
+
+#, fuzzy
+#~ msgid "Cluster"
+#~ msgstr "마스터"
+
+#~ msgid "Cockpit"
+#~ msgstr "Cockpit"
+
+#~ msgid "Command"
+#~ msgstr "명령"
+
+#~ msgid "Compatible with all systems and devices (MBR)"
+#~ msgstr "모든 시스템과 장치와 호환됩니다 (MBR)"
+
+#~ msgid "Compatible with modern system and hard disks > 2TB (GPT)"
+#~ msgstr "최신 시스템과 2TB 이상의 하드 디스크와 호환됩니다 (GPT)"
+
+#~ msgid "Configure"
+#~ msgstr "설정"
+
+#~ msgid "Configure Flannel networking"
+#~ msgstr "Flannel 네트워킹 설정"
+
+#~ msgid "Configure Kubelet and Proxy"
+#~ msgstr "Kubelet 과 프록시 설정"
+
+#~ msgid "Configuring"
+#~ msgstr "설정 중입니다"
+
+#~ msgid "Configuring IP"
+#~ msgstr "IP 인증 중입니다"
+
+#~ msgid "Connect automatically"
+#~ msgstr "자동으로 연결"
+
+#~ msgid "Connecting to Docker"
+#~ msgstr "Docker에 연결중입니다."
+
+#~ msgid "Connecting to the machine"
+#~ msgstr "장치에 연결 중입니다"
+
+#, fuzzy
+#~ msgid "Connection"
+#~ msgstr "Docker에 연결중입니다."
+
+#, fuzzy
+#~ msgid "Connection Error"
+#~ msgstr "Docker에 연결중입니다."
+
+#, fuzzy
+#~ msgid "Connection Error: $0"
+#~ msgstr "Docker에 연결중입니다."
+
+#, fuzzy
+#~ msgid "Connection Settings"
+#~ msgstr "본드 설정"
+
+#~ msgid "Container"
+#~ msgstr "컨테이너 "
+
+#~ msgid "Container Name"
+#~ msgstr "컨테이너 이름"
+
+#~ msgid ""
+#~ "Container is currently marked as not running, but regular stopping failed."
+#~ msgstr ""
+#~ "컨테이너는 현재 실행중이지 않은 것으로 보이지만, 정상적인 종료가 되지 않았"
+#~ "습니다."
+
+#~ msgid "Container is currently running."
+#~ msgstr "컨테이너가 현재 실행중입니다."
+
+#~ msgid "Containers"
+#~ msgstr "컨테이너들"
+
+#~ msgctxt "page-title"
+#~ msgid "Containers"
+#~ msgstr "컨테이너"
+
+#~ msgid "Couldn't connect to the machine"
+#~ msgstr "장치에 연결할 수 없습니다"
+
+#~ msgid "Create"
+#~ msgstr "생성"
+
+#, fuzzy
+#~ msgid "Create Logical Volume"
+#~ msgstr "논리 볼륨 이름 바꾸기"
+
+#~ msgid "Create Volume Group"
+#~ msgstr "볼륨 그룹 생성"
+
+#~ msgid "Create partition"
+#~ msgstr "파티션 생성"
+
+#~ msgid "Create partition on $0"
+#~ msgstr "$0에 파티션 만들기"
+
+#~ msgid "Custom"
+#~ msgstr "사용자 지정"
+
+#~ msgid "Deactivating"
+#~ msgstr "비활성화 중 입니다"
+
+#, fuzzy
+#~ msgid "Delete Node"
+#~ msgstr "삭제"
+
+#, fuzzy
+#~ msgid "Delete Project"
+#~ msgstr "프로젝트"
+
+#~ msgid "Deleting a RAID device will erase all data on it."
+#~ msgstr "RAID 장치를 제거하면 내부의 모든 데이터를 지우게 됩니다."
+
+#~ msgid "Deleting a container will erase all data in it."
+#~ msgstr "컨테이너를 삭제하시면, 내부의 모든 데이터도 함께 삭제됩니다. "
+
+#~ msgid ""
+#~ "Deleting an image will delete it, but you can probably download it again "
+#~ "if you need it later.  Unless this image has never been pushed to a "
+#~ "repository, that is, in which case you probably can't download it again."
+#~ msgstr ""
+#~ "이미지를 삭제하시면 실제 파일이 삭제되지만, 필요할 때 다시 다운로드 하실 "
+#~ "수 있습니다. 만일 이미지가 리포지터리에 한번도 푸쉬되지 않았다면, 다시 다"
+#~ "운로드 하실 수 없습니다."
+
+#~ msgid "Deploy Application"
+#~ msgstr "어플리케이션 사용"
+
+#~ msgid "Disabled"
+#~ msgstr "사용 안함"
+
+#~ msgid "Disconnected"
+#~ msgstr "연결 해제됨"
+
+#, fuzzy
+#~ msgid "Disk"
+#~ msgstr "디스크 추가"
+
+#~ msgid "Display Language"
+#~ msgstr "표시 언어"
+
+#, fuzzy
+#~ msgid "Docker Version"
+#~ msgstr "버전"
+
+#~ msgid "Docker is not installed or activated on the system"
+#~ msgstr "본 시스템에 Docker가 설치되어 있지 않거나 활성화되어 있지 않습니다."
+
+#~ msgid "Duplicate alias"
+#~ msgstr "alias 복제"
+
+#~ msgid "Duplicate port"
+#~ msgstr "포트 복제"
+
+#~ msgid "Enter IP address or host name"
+#~ msgstr "IP 주소 또는 호스트 명을 입력하세요"
+
+#~ msgid "Error message from Docker:"
+#~ msgstr "Docker로 부터의 오류 메세지:"
+
+#~ msgid "Exited $ExitCode"
+#~ msgstr "$ExitCode 로 종료"
+
+#, fuzzy
+#~ msgid "Failed to disable tuned"
+#~ msgstr " Docker 실행을 실패하였습니다: $0"
+
+#, fuzzy
+#~ msgid "Failed to disable tuned profile"
+#~ msgstr " Docker 실행을 실패하였습니다: $0"
+
+#~ msgid "Failed to start Docker: $0"
+#~ msgstr " Docker 실행을 실패하였습니다: $0"
+
+#~ msgid "Failed to stop Docker scope: $0"
+#~ msgstr "Docker Scope를 정지하지 못했습니다: $0"
+
+#, fuzzy
+#~ msgid "Failed to switch profile"
+#~ msgstr " Docker 실행을 실패하였습니다: $0"
+
+#, fuzzy
+#~ msgid "Filesystem Type"
+#~ msgstr "파일 시스템 옵션"
+
+#, fuzzy
+#~ msgid "Flocker"
+#~ msgstr "잠금 해제"
+
+#~ msgid "Force Delete"
+#~ msgstr "강제 삭제"
+
+#~ msgid "Format"
+#~ msgstr "포멧"
+
+#~ msgid "Format Disk $0"
+#~ msgstr "디스크 $0 포멧"
+
+#~ msgid "Formatting a disk will erase all data on it."
+#~ msgstr "디스크를 포멧하면 내부의 모든 데이터를 지우게 됩니다."
+
+#~ msgid "Formatting a storage device will erase all data on it."
+#~ msgstr "장치를 포멧하면 내부의 모든 데이터를 지우게 됩니다."
+
+#~ msgid "Forward delay $forward_delay"
+#~ msgstr "포워드 딜레이 $forward_delay"
+
+#~ msgid "General"
+#~ msgstr "일반"
+
+#, fuzzy
+#~ msgid "Git Repository"
+#~ msgstr "리포지터리 "
+
+#~ msgid "Go to now"
+#~ msgstr "지금 바로 가기"
+
+#, fuzzy
+#~ msgid "Group Members"
+#~ msgstr "맴버"
+
+#~ msgid "Hair Pin mode"
+#~ msgstr "Hair Pin 모드"
+
+#~ msgid "Hairpin mode"
+#~ msgstr "Hairpin 모드"
+
+#~ msgid "Hello time $hello_time"
+#~ msgstr "Hello 시간 $hello_time"
+
+#~ msgid "Host"
+#~ msgstr "호스트"
+
+#, fuzzy
+#~ msgid "Host Path"
+#~ msgstr "호스트"
+
+#~ msgid "IP Address"
+#~ msgstr "IP 주소"
+
+#, fuzzy
+#~ msgid "IP Address:"
+#~ msgstr "IP 주소"
+
+#, fuzzy
+#~ msgid "IP Prefix Length:"
+#~ msgstr "접두 길이"
+
+#~ msgid "IP Settings"
+#~ msgstr "IP 설정"
+
+#~ msgid "IPv4"
+#~ msgstr "IPv4"
+
+#~ msgid "IPv6"
+#~ msgstr "IPv6"
+
+#~ msgid "Id $id"
+#~ msgstr "Id $id"
+
+#~ msgid "Ignore"
+#~ msgstr "무시"
+
+#~ msgid "Image"
+#~ msgstr "이미지"
+
+#~ msgid "Image $0"
+#~ msgstr "이미지 $0"
+
+#, fuzzy
+#~ msgid "Image Name"
+#~ msgstr "이미지 $0"
+
+#, fuzzy
+#~ msgid "Image count"
+#~ msgstr "이미지 $0"
+
+#, fuzzy
+#~ msgctxt "page-title"
+#~ msgid "Images"
+#~ msgstr "이미지"
+
+#~ msgid "Inactive"
+#~ msgstr "비활성"
+
+#, fuzzy
+#~ msgid "Interface"
+#~ msgstr "인터페이스"
+
+#~ msgid "Interfaces"
+#~ msgstr "인터페이스"
+
+#, fuzzy
+#~ msgid "Invalid address $0"
+#~ msgstr "잘못된 포트"
+
+#, fuzzy
+#~ msgid "Invalid metric $0"
+#~ msgstr "잘못된 포트"
+
+#~ msgid "Invalid port"
+#~ msgstr "잘못된 포트"
+
+#, fuzzy
+#~ msgid "Invalid prefix $0"
+#~ msgstr "잘못된 포트"
+
+#, fuzzy
+#~ msgid "Invalid prefix or netmask $0"
+#~ msgstr "잘못된 포트"
+
+#, fuzzy
+#~ msgid "Kernel Version"
+#~ msgstr "버전"
+
+#~ msgid "Kubernetes Cluster"
+#~ msgstr "Kubernetes 클러스터"
+
+#~ msgid "Link Monitoring"
+#~ msgstr "링크 모니터링"
+
+#~ msgid "Link down delay"
+#~ msgstr "링크 다운 딜레이"
+
+#~ msgid "Link local"
+#~ msgstr "로컬 링크"
+
+#~ msgid "Link up delay"
+#~ msgstr "링크 업 딜레이"
+
+#~ msgid "Links"
+#~ msgstr "링크"
+
+#, fuzzy
+#~ msgid "Local Filesystem"
+#~ msgstr "파티션 크기 조저"
+
+#, fuzzy
+#~ msgid "Location"
+#~ msgstr "마운트 옵션"
+
+#, fuzzy
+#~ msgid "Logical Unit Number"
+#~ msgstr "논리 볼륨"
+
+#~ msgid "Logical Volume"
+#~ msgstr "논리 볼륨"
+
+#~ msgid "Logical Volume (Snapshot)"
+#~ msgstr "논리 볼륨 (스냅샷)"
+
+#~ msgid "Lost connection. Trying to reconnect"
+#~ msgstr "연결이 끓어졌습니다. 다시 시도 하는 중입니다."
+
+#, fuzzy
+#~ msgid "MAC Address:"
+#~ msgstr "주소"
+
+#~ msgid "MII (Recommended)"
+#~ msgstr "MII (권장 사항)"
+
+#~ msgid "Machines"
+#~ msgstr "장치들"
+
+#~ msgid "Manual"
+#~ msgstr "수동"
+
+#, fuzzy
+#~ msgid "Manually"
+#~ msgstr "수동"
+
+#~ msgid "Master"
+#~ msgstr "마스터"
+
+#~ msgid "Maximum message age $max_age"
+#~ msgstr "최대 메세지 수명 $max_age"
+
+#~ msgid "Members"
+#~ msgstr "맴버"
+
+#~ msgid "Memory"
+#~ msgstr "메모리"
+
+#~ msgid "Memory limit"
+#~ msgstr "메모리 제한"
+
+#~ msgid "Mode"
+#~ msgstr "모드"
+
+#~ msgid "Monitoring Interval"
+#~ msgstr "모니터링 주기"
+
+#~ msgid "Monitoring Targets"
+#~ msgstr "모니터링 대상"
+
+#, fuzzy
+#~ msgid "Monitors"
+#~ msgstr "ARP 모니터링"
+
+#, fuzzy
+#~ msgid "Mount Location"
+#~ msgstr "마운트 옵션"
+
+#~ msgid "Mount Options"
+#~ msgstr "마운트 옵션"
+
+#~ msgid "Mount Point"
+#~ msgstr "마운트 포인트"
+
+#~ msgid "Mounting"
+#~ msgstr "마운트"
+
+#~ msgid "Name can not be empty."
+#~ msgstr "이름을 입력하셔야 합니다."
+
+#~ msgid "Namespace"
+#~ msgstr "네임스페이스"
+
+#~ msgid "Namespace cannot be empty."
+#~ msgstr "네임스페이스를 입력하셔야 합니다."
+
+#~ msgid "Network"
+#~ msgstr "네트워크"
+
+#~ msgid "Networking"
+#~ msgstr "네트워킹"
+
+#~ msgctxt "page-title"
+#~ msgid "Networking"
+#~ msgstr "네트워킹"
+
+#~ msgid "Networking Logs"
+#~ msgstr "네트워킹 로그"
+
+#~ msgid "Next"
+#~ msgstr "다음"
+
+#, fuzzy
+#~ msgid "Next Run"
+#~ msgstr "다음"
+
+#~ msgid "No"
+#~ msgstr "아니오"
+
+#, fuzzy
+#~ msgid "No Volume Bound"
+#~ msgstr "볼륨 그룹 $0"
+
+#~ msgid "No alias specified"
+#~ msgstr "alias가 지정되지 않았습니다"
+
+#~ msgid "No carrier"
+#~ msgstr "캐리어가 없습니다"
+
+#, fuzzy
+#~ msgid "No configuration found"
+#~ msgstr "알 수 없는 설정"
+
+#~ msgid "No container specified"
+#~ msgstr "컨테이너가 지정되지 않았습니다."
+
+#, fuzzy
+#~ msgid "No host keys found."
+#~ msgstr "찾을 수 없습니다."
+
+#~ msgid ""
+#~ "No metadata file was selected. Please select a Kubernetes metadata file."
+#~ msgstr ""
+#~ "메타데이터 파일이 선택되지 않았습니다. Kubernetes 메타데이터 파일을 선택하"
+#~ "세요."
+
+#~ msgid "No partitioning"
+#~ msgstr "파티션 설정하지 않음"
+
+#~ msgid "Not Ready"
+#~ msgstr "준비되지 않음"
+
+#~ msgid "Not a valid number of replicas"
+#~ msgstr "올바른 replica 숫자가 아닙니다."
+
+#~ msgid "Not authorized to access Docker on this system"
+#~ msgstr "본 시스템 상의 Docker에 대한 접근 권한이 없습니다."
+
+#~ msgid "Not available"
+#~ msgstr "사용할 수 없습니다"
+
+#, fuzzy
+#~ msgid "Not connected"
+#~ msgstr "연결 해제됨"
+
+#~ msgid "Not found"
+#~ msgstr "찾을 수 없습니다."
+
+#, fuzzy
+#~ msgid "OS Versions"
+#~ msgstr "버전"
+
+#~ msgid "Off"
+#~ msgstr "비활성"
+
+#~ msgid "On"
+#~ msgstr "활성"
+
+#, fuzzy
+#~ msgid "On Failure"
+#~ msgstr "실패하였습니다"
+
+#~ msgid "Ooops!"
+#~ msgstr "어머나!"
+
+#~ msgid "Options"
+#~ msgstr "옵션"
+
+#, fuzzy
+#~ msgid "PD Name"
+#~ msgstr "이름"
+
+#~ msgid "Parent"
+#~ msgstr "부모"
+
+#~ msgid "Parent $parent"
+#~ msgstr "부모 $parent"
+
+#~ msgid "Part of "
+#~ msgstr "일부분"
+
+#~ msgid "Partitioning"
+#~ msgstr "파티션"
+
+#~ msgid "Password"
+#~ msgstr "암호"
+
+#, fuzzy
+#~ msgid "Path"
+#~ msgstr "Path cost"
+
+#~ msgid "Path cost"
+#~ msgstr "Path cost"
+
+#~ msgid "Path cost $path_cost"
+#~ msgstr "Path cost $path_cost"
+
+#~ msgid "Please confirm deletion of $0"
+#~ msgstr "$0 삭제를 확인해주세요"
+
+#~ msgid "Please confirm forced deletion of $0"
+#~ msgstr "$0 강제 삭제를 확인해주세요"
+
+#~ msgid "Please create another namespace for $0 \"$1\""
+#~ msgstr " $0 \"$1\"을 위한 다른 네임스페이스를 생성하세요"
+
+#, fuzzy
+#~ msgid "Please provide a GlusterFS volume name"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a username"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid NFS server"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid address"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid filesystem type"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid interface"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid logical unit number"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#~ msgid "Please provide a valid namespace."
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid path"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid qualified name"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid storage capacity."
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please provide a valid target"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please select a valid access mode"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#, fuzzy
+#~ msgid "Please select a valid endpoint"
+#~ msgstr "올바른 네임스페이스를 입력하세요."
+
+#~ msgid "Please type an address"
+#~ msgstr "주소를 입력해주세요"
+
+#, fuzzy
+#~ msgid "Pool Name"
+#~ msgstr "이름"
+
+#~ msgid "Pool for Thin Logical Volumes"
+#~ msgstr "Thin 논리 볼륨을 위한 풀"
+
+#, fuzzy
+#~ msgid "Pool for thinly provisioned volumes"
+#~ msgstr "Thin 논리 볼륨을 위한 풀"
+
+#~ msgid "Ports"
+#~ msgstr "포트"
+
+#~ msgid "Prefix length"
+#~ msgstr "접두 길이"
+
+#~ msgid "Prefix length or Netmask"
+#~ msgstr "접두 길이 또는 넷마스크"
+
+#~ msgid "Preparing"
+#~ msgstr "준비 중입니다"
+
+#~ msgid "Primary"
+#~ msgstr "주"
+
+#~ msgid "Priority"
+#~ msgstr "우선순위"
+
+#~ msgid "Priority $priority"
+#~ msgstr "우선순위 $priority"
+
+#~ msgid "Project"
+#~ msgstr "프로젝트"
+
+#~ msgid "RAID Device $0"
+#~ msgstr "RAID 장치 $0"
+
+#, fuzzy
+#~ msgid "Read Only"
+#~ msgstr "준비됨"
+
+#, fuzzy
+#~ msgid "ReadOnly"
+#~ msgstr "준비됨"
+
+#~ msgid "Ready"
+#~ msgstr "준비됨"
+
+#~ msgid "Receiving"
+#~ msgstr "수신 중입니다"
+
+#, fuzzy
+#~ msgid "Register New Volume"
+#~ msgstr "논리 볼륨 크기 조정"
+
+#, fuzzy
+#~ msgid "Remove Member"
+#~ msgstr "맴버"
+
+#~ msgid "Replicas"
+#~ msgstr "Replicas"
+
+#~ msgid "Repository"
+#~ msgstr "리포지터리 "
+
+#, fuzzy
+#~ msgid "Repository URL"
+#~ msgstr "리포지터리 "
+
+#, fuzzy
+#~ msgid "Requires Authentication"
+#~ msgstr "인증 중입니다"
+
+#, fuzzy
+#~ msgid "Restoring connection"
+#~ msgstr "재연결"
+
+#, fuzzy
+#~ msgid "Revision"
+#~ msgstr "버전"
+
+#~ msgid "Round Robin"
+#~ msgstr "Round Robin"
+
+#~ msgid "STP Forward delay"
+#~ msgstr "STP Forward delay"
+
+#~ msgid "STP Hello time"
+#~ msgstr "STP Hello time"
+
+#~ msgid "STP Maximum message age"
+#~ msgstr "STP Maximum message age"
+
+#~ msgid "STP Priority"
+#~ msgstr "STP 우선순위"
+
+#, fuzzy
+#~ msgid "Secret Name"
+#~ msgstr "사용자 이름"
+
+#, fuzzy
+#~ msgid "Secret Volume"
+#~ msgstr "볼륨 그룹 생성"
+
+#~ msgid "Select Manifest File..."
+#~ msgstr "manifest을 선택하세요..."
+
+#~ msgid "Sending"
+#~ msgstr "전송 중입니다"
+
+#, fuzzy
+#~ msgid "Service is starting"
+#~ msgstr "장치가 재시동되고 있습니다"
+
+#, fuzzy
+#~ msgid "Session"
+#~ msgstr "버전"
+
+#, fuzzy
+#~ msgid "Share Name"
+#~ msgstr "사용자 이름"
+
+#~ msgid "Shared"
+#~ msgstr "공유됨"
+
+#, fuzzy
+#~ msgid "Show all Containers"
+#~ msgstr "컨테이너들"
+
+#, fuzzy
+#~ msgid "Show all Pod Containers"
+#~ msgstr "컨테이너들"
+
+#~ msgid "Spanning Tree Protocol"
+#~ msgstr "Spanning Tree Protocol"
+
+#~ msgid "Spanning Tree Protocol (STP)"
+#~ msgstr "Spanning Tree Protocol (STP)"
+
+#~ msgid "Start Docker"
+#~ msgstr "Docker 시작"
+
+#~ msgid "Stopped"
+#~ msgstr "정지됨"
+
+#~ msgid "Stored Passphrase"
+#~ msgstr "저장된 암호"
+
+#~ msgid "TCP"
+#~ msgstr "TCP"
+
+#~ msgid "Tag"
+#~ msgstr "태그"
+
+#, fuzzy
+#~ msgid "Test Configuration"
+#~ msgstr "설정 중입니다"
+
+#~ msgid "The address contains invalid characters"
+#~ msgstr "주소에 잘못된 문자가 있습니다 "
+
+#~ msgid "The machine is restarting"
+#~ msgstr "장치가 재시동되고 있습니다"
+
+#~ msgid "The maximum number of replicas is 128"
+#~ msgstr "replica의 최대 수는 128개입니다."
+
+#~ msgid "The selected file is not a valid Kubernetes application manifest."
+#~ msgstr "선택한 파일은 올바른 Kubernetes 메타데이터 파일이 아닙니다."
+
+#~ msgid "The user <b>$0</b> is not permitted to manage servers"
+#~ msgstr "사용자 <b>$0</b> 는 서버 관리 권한이 없습니다."
+
+#~ msgid "The user <b>$0</b> is not permitted to modify network settings"
+#~ msgstr "사용자 <b>$0</b> 는 네트워크 설정 권한이 없습니다"
+
+#~ msgid "Thin Logical Volume"
+#~ msgstr "Thin 논리 볼륨"
+
+#~ msgid "Try again"
+#~ msgstr "다시 시도"
+
+#~ msgid "UDP"
+#~ msgstr "UDP"
+
+#~ msgid "Unable to read the Kubernetes application manifest. Code $0."
+#~ msgstr "Kubernetes 어플리케이션  manifest를 읽을 수 없습니다. 코드 $0."
+
+#, fuzzy
+#~ msgid "Unavailable"
+#~ msgstr "사용할 수 없습니다"
+
+#~ msgid "Unexpected error"
+#~ msgstr "예상치 못한 오류"
+
+#~ msgid "Unknown"
+#~ msgstr "알 수 없음"
+
+#~ msgid "Unknown configuration"
+#~ msgstr "알 수 없는 설정"
+
+#, fuzzy
+#~ msgid "Unless Stopped"
+#~ msgstr "정지됨"
+
+#~ msgid "Unlock"
+#~ msgstr "잠금 해제"
+
+#~ msgid "Up since $StartedAt"
+#~ msgstr "$StartedAt 부터 켜져있음"
+
+#~ msgid "Updating $0..."
+#~ msgstr "$0 업데이트 중..."
+
+#, fuzzy
+#~ msgid "Used by Containers"
+#~ msgstr "컨테이너들"
+
+#~ msgid "User Name"
+#~ msgstr "사용자 이름"
+
+#, fuzzy
+#~ msgid "Username"
+#~ msgstr "사용자 이름"
+
+#~ msgid "VLAN"
+#~ msgstr "VLAN"
+
+#~ msgid "VLAN Id"
+#~ msgstr "VLAN ID"
+
+#~ msgid "VLAN Settings"
+#~ msgstr "VLAN 설정"
+
+#, fuzzy
+#~ msgid "Volume"
+#~ msgstr "논리 볼륨"
+
+#~ msgid "Volume Group $0"
+#~ msgstr "볼륨 그룹 $0"
+
+#, fuzzy
+#~ msgid "Volume Name"
+#~ msgstr "사용자 이름"
+
+#, fuzzy
+#~ msgid "Volume Type"
+#~ msgstr "볼륨 그룹 $0"
+
+#~ msgid "Waiting"
+#~ msgstr "대기 중입니다"
+
+#, fuzzy
+#~ msgid "Warning:"
+#~ msgstr "파티션"
+
+#~ msgid "With terminal"
+#~ msgstr "터미널 실행"
+
+#~ msgid "XOR"
+#~ msgstr "XOR"
+
+#~ msgid "Yes"
+#~ msgstr "네"
+
+#~ msgid ""
+#~ "You are currently connected directly to this server. You cannot delete it."
+#~ msgstr "현재 직접적으로 이 서버에 연결되어 있습니다. 삭제하실 수 없습니다."
+
+#~ msgid "alias"
+#~ msgstr "alias"
+
+#~ msgctxt "format-bytes"
+#~ msgid "bytes"
+#~ msgstr "바이트"
+
+#~ msgid "default"
+#~ msgstr "기본"
+
+#, fuzzy
+#~ msgid "disabled"
+#~ msgstr "사용 안함"
+
+#, fuzzy
+#~ msgid "enabled"
+#~ msgstr "사용 안함"
+
+#, fuzzy
+#~ msgid "failed to list ssh host keys: $0"
+#~ msgstr " Docker 실행을 실패하였습니다: $0"
+
+#~ msgid "none"
+#~ msgstr "없음"
+
+#, fuzzy
+#~ msgid "running"
+#~ msgstr "작동중"
+
+#, fuzzy
+#~ msgid "shares"
+#~ msgstr "$0 공유"
+
+#, fuzzy
+#~ msgid "to host path"
+#~ msgstr "호스트 포트로"
+
+#~ msgid "to host port"
+#~ msgstr "호스트 포트로"
+
+#, fuzzy
+#~ msgid "unknown"
+#~ msgstr "알 수 없음"
