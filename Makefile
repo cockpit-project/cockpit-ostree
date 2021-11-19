@@ -49,10 +49,10 @@ po/$(PACKAGE_NAME).pot: po/$(PACKAGE_NAME).html.pot po/$(PACKAGE_NAME).js.pot po
 	sed -e 's/%{VERSION}/$(VERSION)/g' $< > $@
 
 $(WEBPACK_TEST): $(NODE_MODULES_TEST) $(LIB_TEST) $(shell find src/ -type f) package.json webpack.config.js
-	NODE_ENV=$(NODE_ENV) npm run build
+	NODE_ENV=$(NODE_ENV) node_modules/.bin/webpack
 
 watch:
-	NODE_ENV=$(NODE_ENV) npm run watch
+	NODE_ENV=$(NODE_ENV) node_modules/.bin/webpack --watch
 
 clean:
 	rm -rf dist/
