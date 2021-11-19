@@ -11,27 +11,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2020-02-03 07:25+0000\n"
-"Last-Translator: Martin Pitt <mpitt@redhat.com>\n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"PO-Revision-Date: 2021-11-08 00:48+0000\n"
+"Last-Translator: Jens Maucher <jensmaucher@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/de/>\n"
+"cockpit-ostree/main/de/>\n"
 "Language: de\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 3.10.3\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Generator: Weblate 4.8\n"
 
-#: src/client.js:484
+#: src/client.js:480
 msgid "$0 key ID"
 msgstr "$0 Schlüssel-ID"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 package"
 msgstr "$0 Paket"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 packages"
 msgstr "$0 Pakete"
 
@@ -75,7 +75,7 @@ msgstr "Repository ändern"
 msgid "Check for Updates"
 msgstr "Nach Aktualisierungen suchen"
 
-#: src/app.js:303
+#: src/app.js:299
 msgid "Checking for updates"
 msgstr "Suche nach Aktualisierungen"
 
@@ -101,7 +101,7 @@ msgstr "Löschen"
 
 #: src/index.html:319 src/index.html:349
 msgid "Downgrades"
-msgstr ""
+msgstr "Herabstufungen"
 
 #: src/remotes.js:327
 msgid "Error loading remotes: $0"
@@ -129,11 +129,11 @@ msgstr "Name"
 
 #: src/index.html:420
 msgid "No Deployments"
-msgstr ""
+msgstr "Keine Bereitstellungen"
 
-#: src/app.js:104
+#: src/app.js:101
 msgid "No OSTree deployments found"
-msgstr ""
+msgstr "Keine OSTree Bereitstellungen gefunden"
 
 #: src/remotes.js:112
 msgid "No configuration data found"
@@ -143,15 +143,15 @@ msgstr "Keine Konfigurationsdaten gefunden"
 msgid "No signature avaliable"
 msgstr "Keine Signatur verfügbar"
 
-#: src/app.js:83
+#: src/app.js:80
 msgid "Not authorized to update software on this system"
 msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 
-#: src/client.js:585 src/client.js:681
+#: src/client.js:581 src/client.js:677
 msgid "OS $0 not found"
 msgstr "OS $0 nicht gefunden"
 
-#: src/app.js:85
+#: src/app.js:82
 msgid "OSTree is not available on this system"
 msgstr "OSTree ist auf diesem System nicht verfügbar"
 
@@ -201,7 +201,7 @@ msgstr "Erneut verbinden"
 
 #: src/index.html:305
 msgid "Released"
-msgstr ""
+msgstr "Veröffentlicht"
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
@@ -239,6 +239,8 @@ msgstr "Status"
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
+"Diese Bereitstellung enthält dieselben Pakete wie Ihr aktuell gestartetes "
+"System"
 
 #: src/index.html:265
 msgid "Tree"
@@ -282,7 +284,7 @@ msgstr "Schreibe Objekte"
 
 #: src/index.html:186
 msgid "at"
-msgstr "Um"
+msgstr "von"
 
 #~ msgid " 1\"Do you want to delete the following Nodes?"
 #~ msgstr "1\"Sind Sie sicher, dass Sie die folgenden Nodes löschen möchten?"

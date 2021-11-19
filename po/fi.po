@@ -7,26 +7,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:50+0200\n"
-"PO-Revision-Date: 2018-05-12 02:24+0000\n"
-"Last-Translator: Jiri Grönroos <jiri.gronroos@iki.fi>\n"
-"Language-Team: Finnish\n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"PO-Revision-Date: 2020-11-25 16:35+0000\n"
+"Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/master/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.4.5\n"
-"Plural-Forms: nplurals=2; plural=(n != 1)\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Generator: Weblate 4.3.2\n"
 
-#: src/client.js:484
+#: src/client.js:480
 msgid "$0 key ID"
 msgstr "$0 avain ID"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 package"
 msgstr "$0 paketti"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 packages"
 msgstr "$0 paketit"
 
@@ -70,7 +71,7 @@ msgstr "Vaihda asennuslähde"
 msgid "Check for Updates"
 msgstr "Etsi päivityksiä"
 
-#: src/app.js:303
+#: src/app.js:299
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
@@ -96,7 +97,7 @@ msgstr "Poista"
 
 #: src/index.html:319 src/index.html:349
 msgid "Downgrades"
-msgstr ""
+msgstr "Aiemmat versiot"
 
 #: src/remotes.js:327
 msgid "Error loading remotes: $0"
@@ -124,31 +125,31 @@ msgstr "Nimi"
 
 #: src/index.html:420
 msgid "No Deployments"
-msgstr ""
+msgstr "Ei käyttöönottoja"
 
-#: src/app.js:104
+#: src/app.js:101
 msgid "No OSTree deployments found"
-msgstr ""
+msgstr "OSTree-käyttöönottoja ei löytynyt"
 
 #: src/remotes.js:112
 msgid "No configuration data found"
-msgstr ""
+msgstr "Konfigurointitietoja ei löytynyt"
 
 #: src/index.html:294
 msgid "No signature avaliable"
-msgstr ""
+msgstr "Allekirjoitusta ei ole saatavilla"
 
-#: src/app.js:83
+#: src/app.js:80
 msgid "Not authorized to update software on this system"
-msgstr ""
+msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
-#: src/client.js:585 src/client.js:681
+#: src/client.js:581 src/client.js:677
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 
-#: src/app.js:85
+#: src/app.js:82
 msgid "OSTree is not available on this system"
-msgstr ""
+msgstr "OSTree ei ole käytettävissä tässä järjestelmässä"
 
 #: src/index.html:301
 msgid "Operating System"
@@ -160,7 +161,7 @@ msgstr "Käyttöjärjestelmäpäivitykset"
 
 #: src/index.html:307
 msgid "Origin"
-msgstr ""
+msgstr "Alkuperä"
 
 #: src/index.html:266
 msgid "Packages"
@@ -176,7 +177,7 @@ msgstr "Anna kelvollinen nimi"
 
 #: src/index.html:241
 msgid "Rebase and Reboot"
-msgstr ""
+msgstr "Rebase ja käynnistä uudelleen"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
@@ -200,23 +201,23 @@ msgstr "Julkaistu"
 
 #: src/index.html:315 src/index.html:337
 msgid "Removals"
-msgstr ""
+msgstr "Poistot"
 
 #: src/index.html:237
 msgid "Roll Back and Reboot"
-msgstr ""
+msgstr "Pura asennus ja käynnistä uudelleen"
 
 #: src/index.html:251
 msgid "Running"
-msgstr ""
+msgstr "Käynnissä"
 
 #: src/client.js:66
 msgid "Scanning metadata"
-msgstr ""
+msgstr "Skannataan metatietoja"
 
 #: src/index.html:267
 msgid "Signature"
-msgstr ""
+msgstr "Allekirjoitus"
 
 #: src/index.html:279
 msgid "Signed by"
@@ -234,6 +235,8 @@ msgstr "Tila"
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
+"Tämä käyttöönotto sisältää samat paketit kuin nykyisin käynnissäoleva "
+"järjestelmä"
 
 #: src/index.html:265
 msgid "Tree"
@@ -273,11 +276,11 @@ msgstr "Kun"
 
 #: src/client.js:64
 msgid "Writing objects"
-msgstr ""
+msgstr "Kirjoitetaan objekteja"
 
 #: src/index.html:186
 msgid "at"
-msgstr ""
+msgstr "kello"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (jaettu OS:n kanssa)"

@@ -8,27 +8,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
 "PO-Revision-Date: 2020-02-03 07:25+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
-"Language-Team: Czech <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/cs/>\n"
+"Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
+"ostree/master/cs/>\n"
 "Language: cs\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Weblate 3.10.3\n"
 
-#: src/client.js:484
+#: src/client.js:480
 msgid "$0 key ID"
 msgstr "Identif. klíče $0"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 package"
 msgstr "$0 balíček"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 packages"
 msgstr "$0 balíčky"
 
@@ -75,7 +75,7 @@ msgstr "Změnit repozitář"
 msgid "Check for Updates"
 msgstr "Zjistit dostupnost případných aktualizací"
 
-#: src/app.js:303
+#: src/app.js:299
 msgid "Checking for updates"
 msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
 
@@ -135,7 +135,7 @@ msgstr "Název"
 msgid "No Deployments"
 msgstr "Žádná nasazení"
 
-#: src/app.js:104
+#: src/app.js:101
 msgid "No OSTree deployments found"
 msgstr "Nenalezena žádná nasazení OSTree"
 
@@ -147,15 +147,15 @@ msgstr "Nenalezena žádná data nastavení"
 msgid "No signature avaliable"
 msgstr "Není k dispozici žádný podpis"
 
-#: src/app.js:83
+#: src/app.js:80
 msgid "Not authorized to update software on this system"
 msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
-#: src/client.js:585 src/client.js:681
+#: src/client.js:581 src/client.js:677
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
 
-#: src/app.js:85
+#: src/app.js:82
 msgid "OSTree is not available on this system"
 msgstr "OSTree není na tomto systému k dispozici"
 

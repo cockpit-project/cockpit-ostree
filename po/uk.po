@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2018-06-19 17:50+0200\n"
+"POT-Creation-Date: 2020-02-03 07:56+0000\n"
 "PO-Revision-Date: 2018-05-24 05:50+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -19,15 +19,15 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
 "%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
 
-#: src/client.js:484
+#: src/client.js:480
 msgid "$0 key ID"
 msgstr "Ід. ключа $0"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 package"
 msgstr "$0 пакунок"
 
-#: src/app.js:459
+#: src/app.js:455
 msgid "$0 packages"
 msgstr "$0 пакунків"
 
@@ -71,7 +71,7 @@ msgstr "Змінити сховище"
 msgid "Check for Updates"
 msgstr "Перевірити наявність оновлень"
 
-#: src/app.js:303
+#: src/app.js:299
 msgid "Checking for updates"
 msgstr "Шукаємо оновлення"
 
@@ -127,7 +127,7 @@ msgstr "Назва"
 msgid "No Deployments"
 msgstr "Немає розгортань"
 
-#: src/app.js:104
+#: src/app.js:101
 msgid "No OSTree deployments found"
 msgstr "Не знайдено розгорнутих OSTree"
 
@@ -139,15 +139,15 @@ msgstr "Не знайдено даних налаштувань"
 msgid "No signature avaliable"
 msgstr "Підпис недоступний"
 
-#: src/app.js:83
+#: src/app.js:80
 msgid "Not authorized to update software on this system"
 msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
 
-#: src/client.js:585 src/client.js:681
+#: src/client.js:581 src/client.js:677
 msgid "OS $0 not found"
 msgstr "ОС $0 не знайдено"
 
-#: src/app.js:85
+#: src/app.js:82
 msgid "OSTree is not available on this system"
 msgstr "OSTree у цій системі недоступна"
 
