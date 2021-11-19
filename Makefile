@@ -22,11 +22,6 @@ all: $(WEBPACK_TEST)
 # i18n
 #
 
-LINGUAS=$(basename $(notdir $(wildcard po/*.po)))
-WEBLATE_REPO=tmp/weblate-repo
-WEBLATE_REPO_URL=https://github.com/cockpit-project/cockpit-ostree-weblate.git
-WEBLATE_REPO_BRANCH=main
-
 po/$(PACKAGE_NAME).js.pot:
 	xgettext --default-domain=cockpit --output=$@ --language=C --keyword= \
 		--keyword=_:1,1t --keyword=_:1c,2,2t --keyword=C_:1c,2 \
@@ -44,26 +39,6 @@ po/$(PACKAGE_NAME).manifest.pot: $(NODE_MODULES_TEST)
 
 po/$(PACKAGE_NAME).pot: po/$(PACKAGE_NAME).html.pot po/$(PACKAGE_NAME).js.pot po/$(PACKAGE_NAME).manifest.pot
 	msgcat --sort-output --output-file=$@ $^
-
-# Update translations against current PO template
-update-po: po/$(PACKAGE_NAME).pot
-	for lang in $(LINGUAS); do \
-		msgmerge --output-file=po/$$lang.po po/$$lang.po $<; \
-	done
-
-$(WEBLATE_REPO):
-	git clone --depth=1 -b $(WEBLATE_REPO_BRANCH) $(WEBLATE_REPO_URL) $(WEBLATE_REPO)
-
-upload-pot: po/$(PACKAGE_NAME).pot $(WEBLATE_REPO)
-	cp ./po/$(PACKAGE_NAME).pot $(WEBLATE_REPO)
-	git -C $(WEBLATE_REPO) commit -m "Update source file" -- $(PACKAGE_NAME).pot
-	git -C $(WEBLATE_REPO) push
-
-clean-po:
-	rm ./po/*.po
-
-download-po: $(WEBLATE_REPO)
-	cp $(WEBLATE_REPO)/*.po ./po/
 
 #
 # Build/Install/dist
@@ -183,4 +158,4 @@ $(NODE_MODULES_TEST): package.json
 	env -u NODE_ENV npm install
 	env -u NODE_ENV npm prune
 
-.PHONY: all clean install devel-install dist-gzip srpm rpm check check-unit vm update-po
+.PHONY: all clean install devel-install dist-gzip srpm rpm check check-unit vm
