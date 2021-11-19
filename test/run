@@ -6,3 +6,5 @@ set -eu
 
 [ -z "${TEST_SCENARIO:-}" ] || export TEST_BROWSER="$TEST_SCENARIO"
 make check
+
+make po/cockpit-ostree.pot
