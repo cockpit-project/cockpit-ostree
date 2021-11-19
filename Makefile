@@ -5,7 +5,7 @@ ifeq ($(TEST_OS),)
 TEST_OS = fedora-coreos
 endif
 export TEST_OS
-TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.gz
+TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.xz
 RPMFILE=$(shell rpmspec -D"VERSION $(VERSION)" -q $(PACKAGE_NAME).spec.in).rpm
 SRPMFILE=$(subst noarch,src,$(RPMFILE))
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
@@ -66,7 +66,7 @@ devel-install: $(WEBPACK_TEST)
 	mkdir -p ~/.local/share/cockpit
 	ln -s `pwd`/dist ~/.local/share/cockpit/$(PACKAGE_NAME)
 
-dist-gzip: $(TARFILE)
+dist: $(TARFILE)
 	@ls -1 $(TARFILE)
 
 # when building a distribution tarball, call webpack with a 'production' environment
@@ -78,7 +78,7 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	mv node_modules node_modules.release
 	touch -r package.json $(NODE_MODULES_TEST)
 	touch dist/*
-	tar czf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
+	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
 		--exclude $(PACKAGE_NAME).spec.in \
 		$$(git ls-files) $(LIB_TEST) src/lib/patternfly/*.scss package-lock.json $(PACKAGE_NAME).spec dist/
 	mv node_modules.release node_modules
@@ -158,4 +158,4 @@ $(NODE_MODULES_TEST): package.json
 	env -u NODE_ENV npm install
 	env -u NODE_ENV npm prune
 
-.PHONY: all clean install devel-install dist-gzip srpm rpm check check-unit vm
+.PHONY: all clean install devel-install dist srpm rpm check check-unit vm

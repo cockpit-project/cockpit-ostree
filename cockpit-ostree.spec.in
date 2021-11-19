@@ -11,7 +11,7 @@ Requires: cockpit-system >= 125
 Requires: rpm-ostree
 
 # Download from https://github.com/cockpit-project/cockpit-ostree/releases
-Source: cockpit-ostree-%{version}.tar.gz
+Source: cockpit-ostree-%{version}.tar.xz
 
 %define debug_package %{nil}
 
