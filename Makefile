@@ -75,13 +75,11 @@ dist: $(TARFILE)
 # node_modules/ can be reconstructed if necessary)
 $(TARFILE): NODE_ENV=production
 $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
-	mv node_modules node_modules.release
 	touch -r package.json $(NODE_MODULES_TEST)
 	touch dist/*
 	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
-		--exclude $(PACKAGE_NAME).spec.in \
+		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules \
 		$$(git ls-files) $(LIB_TEST) src/lib/patternfly/*.scss package-lock.json $(PACKAGE_NAME).spec dist/
-	mv node_modules.release node_modules
 
 srpm: $(SRPMFILE)
 
