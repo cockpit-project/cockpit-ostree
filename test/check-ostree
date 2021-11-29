@@ -44,10 +44,10 @@ KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
 def get_list_item(index):
     # there are more <li> inside the item tables, so only count direct children
-    return ".available-deployments > li:nth-child({0})".format(index)
+    return f".available-deployments > li:nth-child({index})"
 
 def ensure_remote_http_port (m, remote="local"):
-    remote_spec = m.execute("ostree remote show-url %s || true" % remote)
+    remote_spec = m.execute(f"ostree remote show-url {remote} || true")
     if remote_spec.startswith("http"):
         parts = remote_spec.strip().split(":")
         port = parts[-1]
@@ -66,9 +66,9 @@ def ensure_remote_http_port (m, remote="local"):
 
 def start_trivial_httpd(m, remote="local", location=REPO_LOCATION):
     port = ensure_remote_http_port (m, remote)
-    pid = m.spawn("podman run -v {0}:/app:ro,z -p {1}:8080 nginx".format(location, port), "httpd")
+    pid = m.spawn(f"podman run -v {location}:/app:ro,z -p {port}:8080 nginx", "httpd")
 
-    m.execute(["ostree", "summary", "--repo={}".format(location), "-u"])
+    m.execute(["ostree", "summary", f"--repo={location}", "-u"])
     m.wait_for_cockpit_running(port=port)
     return pid
 
@@ -78,27 +78,27 @@ def stop_trivial_httpd(m, pid):
 
 def generate_new_commit(m, pkg_to_remove):
     # Make one change of each type to a new rpm tree
-    branch = m.execute("ostree refs --repo={0}".format(REPO_LOCATION))
+    branch = m.execute(f"ostree refs --repo={REPO_LOCATION}")
 
-    m.upload(["files/{0}.rpm".format(k) for k in INSTALL_RPMS],
+    m.upload([f"files/{k}.rpm" for k in INSTALL_RPMS],
               "/home/admin/")
 
     # move /usr/etc to /etc, makes rpm installs easier
     rpm_etc = os.path.join(CHECKOUT_LOCATION, "etc")
     usr_etc = os.path.join(CHECKOUT_LOCATION, "usr", "etc")
-    m.execute("mv {0} {1}".format(usr_etc, rpm_etc))
+    m.execute(f"mv {usr_etc} {rpm_etc}")
 
     # Remove a package
     rpm_args = [CHECKOUT_LOCATION, RPM_LOCATION, pkg_to_remove]
     m.execute("rpm -e --verbose --root {0} --dbpath {1} {2}".format(*rpm_args))
 
     # Install our dummy packages, dbonly
-    rpm_args[-1] = ' '.join(["{0}.rpm".format(os.path.join("/home/admin", x)) \
+    rpm_args[-1] = ' '.join([f"{os.path.join('/home/admin', x)}.rpm" \
                                 for x in INSTALL_RPMS])
     m.execute("rpm -U --oldpackage --root {0} --dbpath {1} --justdb {2}".format(*rpm_args))
 
     # move /etc back to /usr/etc to
-    m.execute("mv {0} {1}".format(rpm_etc, usr_etc))
+    m.execute(f"mv {rpm_etc} {usr_etc}")
 
     # Upload a signing key
     m.upload(["files/secring.gpg",
@@ -107,7 +107,7 @@ def generate_new_commit(m, pkg_to_remove):
     commit_args = [REPO_LOCATION, branch.strip(), CHECKOUT_LOCATION, KEY_ID]
     command = "ostree commit -s cockpit-tree2 --repo {0} -b {1} --add-metadata-string version=cockpit-base.2 --tree=dir={2} --gpg-sign={3} --gpg-homedir=/root/"
     m.execute(command.format(*commit_args), timeout=600)
-    m.execute(["ostree", "summary", "--repo={}".format(REPO_LOCATION), "-u"])
+    m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
 def rhsmcertd_hack(m):
     # HACK: https://github.com/candlepin/subscription-manager/issues/1404
@@ -117,28 +117,28 @@ def rhsmcertd_hack(m):
 
 class OstreeRestartCase(MachineCase):
     def switch_to_packages(self, b, sel, required_classes):
-        b.wait_not_present("{0} div.packages".format(sel))
-        b.click('{0} ul li a:contains("Packages")'.format(sel))
-        b.wait_visible("{0} div.packages".format(sel))
+        b.wait_not_present(f"{sel} div.packages")
+        b.click(f'{sel} ul li a:contains("Packages")')
+        b.wait_visible(f"{sel} div.packages")
         for c in required_classes:
-            b.wait_visible("{0} div.packages dl.{1}".format(sel, c))
+            b.wait_visible(f"{sel} div.packages dl.{c}")
 
     def check_change_counts(self, b, sel):
         for k in ['adds', 'removes']:
-            b.call_js_func("ph_count_check", "{0} dl.{1} dd".format(sel, k),  1)
+            b.call_js_func("ph_count_check", f"{sel} dl.{k} dd",  1)
         # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
-        self.assertIn(b.call_js_func("ph_count", "{0} dl.{1} dd".format(sel, 'up')), [1, 2])
-        self.assertIn(b.call_js_func("ph_count", "{0} dl.{1} dd".format(sel, 'down')), [1, 2])
+        self.assertIn(b.call_js_func("ph_count", f"{sel} dl.up dd"), [1, 2])
+        self.assertIn(b.call_js_func("ph_count", f"{sel} dl.down dd"), [1, 2])
 
     def check_sig(self, b, sel):
-        b.wait_not_present("{0} div.signatures".format(sel))
-        b.click('{0} ul li a:contains("Signature")'.format(sel))
-        b.wait_visible("{0} div.signatures".format(sel))
-        b.wait_in_text("{0} div.signatures".format(sel), KEY_ID)
-        b.wait_in_text("{0} div.signatures".format(sel), "RSA")
-        b.wait_in_text("{0} div.signatures".format(sel), "Cockpit Tester <do-not-reply@cockpit-project.org>")
-        b.wait_in_text("{0} div.signatures".format(sel), "Good Signature")
-        b.wait_in_text("{0} div.signatures".format(sel), "When")
+        b.wait_not_present(f"{sel} div.signatures")
+        b.click(f'{sel} ul li a:contains("Signature")')
+        b.wait_visible(f"{sel} div.signatures")
+        b.wait_in_text(f"{sel} div.signatures", KEY_ID)
+        b.wait_in_text(f"{sel} div.signatures", "RSA")
+        b.wait_in_text(f"{sel} div.signatures", "Cockpit Tester <do-not-reply@cockpit-project.org>")
+        b.wait_in_text(f"{sel} div.signatures", "Good Signature")
+        b.wait_in_text(f"{sel} div.signatures", "When")
 
     def testOstree(self):
         b = self.browser
@@ -224,42 +224,42 @@ class OstreeRestartCase(MachineCase):
 
         # Check again have update data
         b.click("#check-for-updates-btn")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
-        b.wait_in_text("{0} button.pf-m-secondary".format(get_list_item(1)), "Update")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(2)), "Running")
+        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
+        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Update")
+        b.wait_in_text(f'{get_list_item(2)} .deployment-status', "Running")
 
         # Check update data
-        b.wait_visible("{0} div.tree".format(get_list_item(1)))
-        b.wait_in_text("{0} .os".format(get_list_item(1)), "fedora-coreos")
-        b.wait_in_text("{0} .version".format(get_list_item(1)), "cockpit-base.2")
+        b.wait_visible(f"{get_list_item(1)} div.tree")
+        b.wait_in_text(f"{get_list_item(1)} .os", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} .version", "cockpit-base.2")
 
         self.switch_to_packages(b, ".available-deployments li:nth-child(1)",
                                 ['up', 'down',
                                  'adds', 'removes'])
         self.check_change_counts(b, ".available-deployments li:nth-child(1)")
 
-        b.wait_in_text("{0} dl.up dd".format(get_list_item(1)), "tzdata-99999-2.noarch")
-        b.wait_in_text("{0} dl.down dd:first-of-type".format(get_list_item(1)), "chrony-0.1-2.noarch")
-        b.wait_text("{0} dl.adds dd".format(get_list_item(1)), "empty-1-0.noarch")
-        b.wait_text("{0} dl.removes dd".format(get_list_item(1)), remove_pkg)
+        b.wait_in_text(f"{get_list_item(1)} dl.up dd", "tzdata-99999-2.noarch")
+        b.wait_in_text(f"{get_list_item(1)} dl.down dd:first-of-type", "chrony-0.1-2.noarch")
+        b.wait_text(f"{get_list_item(1)} dl.adds dd", "empty-1-0.noarch")
+        b.wait_text(f"{get_list_item(1)} dl.removes dd", remove_pkg)
 
         # Check signatures
         self.check_sig (b, ".available-deployments li:nth-child(1)")
 
         # Force an error
         stop_trivial_httpd(m, server_pid)
-        b.wait_not_present('{0} .deployment-error'.format(get_list_item(1)))
-        b.wait_not_present("{0} button.pf-m-secondary:disabled".format(get_list_item(1)))
-        b.click("{0} button.pf-m-secondary".format(get_list_item(1)))
-        b.wait_visible("{0} button.pf-m-secondary:disabled".format(get_list_item(1)))
-        b.wait_visible("{0} button.pf-m-secondary:not(disabled)".format(get_list_item(1)))
-        b.wait_visible('{0} .deployment-error'.format(get_list_item(1)))
+        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
+        b.wait_not_present(f"{get_list_item(1)} button.pf-m-secondary:disabled")
+        b.click(f"{get_list_item(1)} button.pf-m-secondary")
+        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:disabled")
+        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:not(disabled)")
+        b.wait_visible(f'{get_list_item(1)} .deployment-error')
         server_pid = start_trivial_httpd(m)
 
         # Apply update
-        b.click("{0} button.pf-m-secondary".format(get_list_item(1)))
-        b.wait_in_text("{0} .deployment-status".format(get_list_item(1)), "Updating")
-        b.wait_not_present('{0} .deployment-error'.format(get_list_item(1)))
+        b.click(f"{get_list_item(1)} button.pf-m-secondary")
+        b.wait_in_text(f"{get_list_item(1)} .deployment-status", "Updating")
+        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -331,13 +331,13 @@ class OstreeRestartCase(MachineCase):
         b = self.browser
 
         start_trivial_httpd(m)
-        branch = m.execute("ostree refs --repo={0}".format(REPO_LOCATION)).strip()
+        branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
         # Add a new branch to the default repo
-        m.execute(["ostree", "commit", "--repo={}".format(REPO_LOCATION),
-                   "-b", "znew-branch", "--tree=ref={}".format(branch),
+        m.execute(["ostree", "commit", f"--repo={REPO_LOCATION}",
+                   "-b", "znew-branch", f"--tree=ref={branch}",
                    "--add-metadata-string", "version=branch-version"], timeout=600)
-        m.execute(["ostree", "summary", "--repo={}".format(REPO_LOCATION), "-u"])
+        m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
         rhsmcertd_hack(m)
         m.start_cockpit()
@@ -352,35 +352,35 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text("#change-branch + ul li:last", "znew-branch")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
         b.click("#change-branch + ul li:last button")
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos cockpit-base.1")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Running")
-        b.wait_in_text("{0} .origin".format(get_list_item(1)), "local:{}".format(branch))
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Running")
+        b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
 
         b.wait_in_text("#check-for-updates-btn", "Check for Updates")
         b.click("#check-for-updates-btn")
 
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos branch-version")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
-        b.wait_in_text("{0} button.pf-m-secondary".format(get_list_item(1)), "Rebase")
-        b.wait_in_text("{0} .os".format(get_list_item(1)), "fedora-coreos")
-        b.wait_in_text("{0} .origin".format(get_list_item(1)), "local:znew-branch")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos branch-version")
+        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
+        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
+        b.wait_in_text(f"{get_list_item(1)} .os", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} .origin", "local:znew-branch")
 
-        b.wait_not_present("{0} div.packages".format(get_list_item(1)))
-        b.click('{0} ul li a:contains("Packages")'.format(get_list_item(1)))
-        b.wait_visible("{0} div.packages".format(get_list_item(1)))
+        b.wait_not_present(f"{get_list_item(1)} div.packages")
+        b.click(f'{get_list_item(1)} ul li a:contains("Packages")')
+        b.wait_visible(f"{get_list_item(1)} div.packages")
         # Atomics have cockpit-ostree preinstalled, FCOS doesn't
         if m.image not in ["fedora-coreos"]:
-            b.wait_in_text("{0} div.packages".format(get_list_item(1)), "cockpit-ostree")
+            b.wait_in_text(f"{get_list_item(1)} div.packages", "cockpit-ostree")
 
         # wait until the button has stabilized
         for retry in range(3):
-            b.wait_visible("{0} button.pf-m-secondary:not([disabled])".format(get_list_item(1)))
+            b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:not([disabled])")
             time.sleep(1)
 
         # Apply update
-        b.click("{0} button.pf-m-secondary".format(get_list_item(1)))
-        b.wait_in_text("{0} .deployment-status".format(get_list_item(1)), "Updating")
-        b.wait_not_present('{0} .deployment-error'.format(get_list_item(1)))
+        b.click(f"{get_list_item(1)} button.pf-m-secondary")
+        b.wait_in_text(f"{get_list_item(1)} .deployment-status", "Updating")
+        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -406,7 +406,7 @@ class OstreeCase(MachineCase):
         b = self.browser
 
         start_trivial_httpd(m)
-        branch = m.execute("ostree refs --repo={0}".format(REPO_LOCATION)).strip()
+        branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
         rhsmcertd_hack(m)
         m.start_cockpit()
@@ -470,23 +470,23 @@ class OstreeCase(MachineCase):
 
         # Create a new remote with commits, just use the rpm dir
         zrepo = "/var/zrepo"
-        m.execute("mkdir -p {}".format(zrepo))
+        m.execute(f"mkdir -p {zrepo}")
         m.execute("mkdir -p /tmp/rpm-data/usr/share")
         m.execute("cp -r /usr/share/rpm /tmp/rpm-data/usr/share/")
         m.execute(["ostree", "init", "--repo", zrepo, "--mode", "archive-z2"])
-        m.execute(["ostree", "commit", "--repo={}".format(zrepo),
+        m.execute(["ostree", "commit", f"--repo={zrepo}",
                    "-b", "zremote-branch1", "--orphan", "--tree=dir=/tmp/rpm-data",
                    "--add-metadata-string", "version=zremote-branch1.1"], timeout=600)
-        m.execute(["ostree", "commit", "--repo={}".format(zrepo),
+        m.execute(["ostree", "commit", f"--repo={zrepo}",
                    "-b", "zremote-branch2", "--orphan", "--tree=dir=/tmp/rpm-data",
                    "--add-metadata-string", "version=zremote-branch2.1"], timeout=600)
         start_trivial_httpd(m, remote="zremote-test1", location=zrepo)
 
         # Add a new branch to the default repo
-        m.execute(["ostree", "commit", "--repo={}".format(REPO_LOCATION),
-                   "-b", branch, "--tree=ref={}".format(branch),
+        m.execute(["ostree", "commit", f"--repo={REPO_LOCATION}",
+                   "-b", branch, f"--tree=ref={branch}",
                    "--add-metadata-string", "version=bad-version"], timeout=600)
-        m.execute(["ostree", "summary", "--repo={}".format(REPO_LOCATION), "-u"])
+        m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
         # Edit
         b.click("#change-repo")
@@ -538,35 +538,35 @@ class OstreeCase(MachineCase):
                          '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify = false')
 
         # Check updates display
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos cockpit-base.1")
-        b.wait_in_text("{0} #osorigin".format(get_list_item(1)), "local:{}".format(branch))
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_in_text(f"{get_list_item(1)} #osorigin", f"local:{branch}")
 
 
         b.click("#check-for-updates-btn")
 
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos zremote-branch1.1")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
-        b.wait_in_text("{0} button.pf-m-secondary".format(get_list_item(1)), "Rebase")
-        b.wait_in_text("{0} #osname".format(get_list_item(1)), "fedora-coreos")
-        b.wait_in_text("{0} #osorigin".format(get_list_item(1)), "zremote-test1:zremote-branch1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
+        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
+        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
+        b.wait_in_text(f"{get_list_item(1)} #osname", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} #osorigin", "zremote-test1:zremote-branch1")
 
-        b.wait_not_present("{0} .packages".format(get_list_item(1)))
-        b.click('{0} li.pf-c-nav__item a:contains("Packages")'.format(get_list_item(1)))
-        b.wait_in_text("{0} .packages".format(get_list_item(1)), "contains the same packages as your currently booted")
+        b.wait_not_present(f"{get_list_item(1)} .packages")
+        b.click(f'{get_list_item(1)} li.pf-c-nav__item a:contains("Packages")')
+        b.wait_in_text(f"{get_list_item(1)} .packages", "contains the same packages as your currently booted")
 
         # Switching back shows pulled
         b.click("#change-branch")
         b.wait_in_text("#change-branch + ul li:first button", "zremote-branch1")
         b.click("#change-branch + ul li:first button")
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos zremote-branch1.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
 
         # Refresh, back to local, pull in update
         b.reload()
         b.enter_page("/updates")
         b.wait_in_text("#change-branch", branch)
         b.click("#check-for-updates-btn")
-        b.wait_visible("{0} button.pf-m-secondary".format(get_list_item(1)))
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos bad-version")
+        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
 
         # Switching to branch shows pulled
         b.wait_text("#change-repo", "local")
@@ -578,9 +578,9 @@ class OstreeCase(MachineCase):
 
         b.wait_text("#change-repo", "zremote-test1")
         b.wait_in_text("#change-branch", "zremote-branch1")
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos zremote-branch1.1")
-        b.wait_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
-        b.wait_not_in_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos bad-version")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-status', "Available")
+        b.wait_not_in_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
 
         # delete
         b.click("#change-repo")
@@ -607,9 +607,9 @@ class OstreeCase(MachineCase):
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
-        b.wait_text('{0} .deployment-name'.format(get_list_item(1)), "fedora-coreos bad-version")
-        b.wait_in_text('{0} .deployment-status'.format(get_list_item(1)), "Available")
-        b.wait_in_text("{0} .origin".format(get_list_item(1)), "local:{}".format(branch))
+        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
+        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
+        b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
 
     @nondestructive
     def testPermission(self):
