@@ -55,7 +55,7 @@
     "@patternfly/react-core": "4.175.4",
     "@patternfly/react-icons": "4.26.4",
     "@patternfly/react-styles": "4.25.4",
-    "date-fns": "2.26.0",
+    "date-fns": "2.27.0",
     "react": "16.14.0",
     "react-dom": "16.14.0",
     "throttle-debounce": "2.3.0"
