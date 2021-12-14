@@ -13,7 +13,7 @@ const TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
 /*
  * Breaks down progress messages into
  * a string that can be displayed
- * Similar to the cli output but simplier.
+ * Similar to the cli output but simpler.
  * We don't display object counts or bytes/s.
  * Percentages are only possible when
  * we actually know what is going to be pulled.
@@ -28,7 +28,7 @@ const TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
  * delta data (uuut): (total parts, fetched parts,
  *                     total super blocks, total size)
  * content objects (uu): (fetched objects, requested objects)
- * transfer data (tt): (bytes transfered, bytes/s)
+ * transfer data (tt): (bytes transferred, bytes/s)
  */
 
 function build_progress_line(progress_arg) {
@@ -442,7 +442,7 @@ class RPMOSTreeDBusClient {
     }
 
     /* This is a little fragile because the
-     * the dbus varient is simply 'av'.
+     * the dbus variant is simply 'av'.
      * Ostree promises to not remove or change the
      * order of any of these attributes.
      *  https://github.com/ostreedev/ostree/commit/4a2733f9e7e2ca127ff27433c045c977000ca346#diff-c38f32cb7112030f3326b43e305f2accR424
