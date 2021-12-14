@@ -69,14 +69,14 @@ function track_id(item) {
 }
 
 function format_version(deployment) {
-    var formated = "";
+    var formatted = "";
     if (!deployment || !deployment.osname)
         return;
 
     if (deployment.version)
-        formated = deployment.version.v;
+        formatted = deployment.version.v;
 
-    return cockpit.format("$0 $1", deployment.osname.v, formated);
+    return cockpit.format("$0 $1", deployment.osname.v, formatted);
 }
 
 // https://github.com/cockpit-project/cockpit/blob/main/pkg/lib/notifications.js

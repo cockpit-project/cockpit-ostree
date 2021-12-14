@@ -26,7 +26,7 @@
 }
 
 .available-deployments {
-    // Remove data-list border - items are seperated by margin
+    // Remove data-list border - items are separated by margin
     border: none;
     // Set up max width for the data list
     max-width: 60rem;
@@ -63,7 +63,7 @@
     width: 100%;
 }
 
-// Add a border line bellow the navigatin
+// Add a border line below the navigatin
 .available-deployments .pf-c-nav {
     background: linear-gradient(0deg,var(--pf-global--BorderColor--100) 0,var(--pf-global--BorderColor--100) 1px,transparent 0);
 
