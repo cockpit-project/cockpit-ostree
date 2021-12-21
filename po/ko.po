@@ -6,175 +6,168 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
-"PO-Revision-Date: 2021-04-22 05:02+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
+"PO-Revision-Date: 2021-12-17 17:16+0000\n"
 "Last-Translator: simmon <simmon@nplob.com>\n"
-"Language-Team: Korean <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/ko/>\n"
+"Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
+"ostree/main/ko/>\n"
 "Language: ko\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 4.6\n"
+"X-Generator: Weblate 4.9.1\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 키 ID"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 꾸러미(package)"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 꾸러미(package)"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- 신규 저장소 추가"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "추가"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "다른 키를 추가합니다"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+msgid "Add New Repository"
+msgstr "신규 저장소 추가"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "추가"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "적용"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "사용 할 수 있는"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "'-----PGP 공개 키 블록 시작-----' 함께 시작합니다"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr "$0부터 시작합니다"
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr "분기"
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "취소"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "저장소 변경"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "최신화를 위한 점검"
 
-#: src/app.js:299
+#: src/app.jsx:500
+msgid "Checking for package updates..."
+msgstr "꾸러미 최신화를 위해 점검하기..."
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "OSTree에 연걸"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "'$0': $1 을 위해 적재 설정 할 수 없습니다"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "현재 사용하기:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "기본"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "삭제"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "원격적재 오류: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "만료된 서명"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "실패하였습니다"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+msgid "GPG Public Key"
+msgstr "GPG 공개키"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "양호한 서명"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "유효하지 않은 서명"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "이름"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "배포 없음"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "OSTree 배포를 찾을 수 없습니다"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "설정 자료를 찾을 수 없습니다"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+msgid "No configured remotes"
+msgstr "구성된 원격이 없습니다"
+
+#: src/app.jsx:374
+msgid "No signature available"
 msgstr "이용 가능한 서명이 없습니다"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "OS $0 찾을 수 없습니다"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree는 이 시스템에 이용 할 수 없습니다"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "운영 체제"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "운영체제 시스템 최신화"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "근원(출발점)"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "꾸러미(packages)"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "유효한 URL을 제공해야 합니다"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "유효한 이름을 제공해야 합니다"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "재배치와 재시작"
 
@@ -190,23 +183,27 @@ msgstr "메타자료 대상 받기"
 msgid "Receiving objects: $0%"
 msgstr "대상 받기: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "재연결"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "출시됨"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "제거됨"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "저장소"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "되돌리기와 재시작"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "작동중"
 
@@ -214,60 +211,73 @@ msgstr "작동중"
 msgid "Scanning metadata"
 msgstr "메타자료 검색하기"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+msgid "Select branch"
+msgstr "분기 선택"
+
+#: src/app.jsx:401
+msgid "Signatures"
 msgstr "서명"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "서명되었습니다"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "소프트웨어 최신화"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "상태"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "시스템이 최신 상태입니다"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
-msgstr "이 배포는 현재 동작하는 시스템에 동일한 꾸러미(package)가 포함되었습니다"
+msgstr ""
+"이 배포는 현재 동작하는 시스템에 동일한 꾸러미(package)가 포함되었습니다"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "나무"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree와 함께 통신 할 수 없습니다"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "최신화 및 재시작"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+msgid "Update available: $0"
+msgstr "최신화 할 수 있습니다: $0"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "최신화"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "최신화 중"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "신뢰하는 GPG 키를 사용합니다"
 
-#: src/index.html:303
+#: src/app.jsx:367
+msgid "Validity"
+msgstr "유효성"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "버전"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "언제"
 
@@ -275,9 +285,36 @@ msgstr "언제"
 msgid "Writing objects"
 msgstr "대상에 쓰기"
 
-#: src/index.html:186
-msgid "at"
-msgstr "에서"
+#: src/app.jsx:609
+msgid "available deployments"
+msgstr "사용 가능한 배포"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 꾸러미(package)"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 꾸러미(package)"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "'-----PGP 공개 키 블록 시작-----' 함께 시작합니다"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "'$0': $1 을 위해 적재 설정 할 수 없습니다"
+
+#~ msgid "Currently using:"
+#~ msgstr "현재 사용하기:"
+
+#~ msgid "Default"
+#~ msgstr "기본"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "운영체제 시스템 최신화"
+
+#~ msgid "Status"
+#~ msgstr "상태"
+
+#~ msgid "at"
+#~ msgstr "에서"
 
 #~ msgid "$0 shares"
 #~ msgstr "$0 공유"
@@ -898,10 +935,6 @@ msgstr "에서"
 #~ msgid "No carrier"
 #~ msgstr "캐리어가 없습니다"
 
-#, fuzzy
-#~ msgid "No configuration found"
-#~ msgstr "알 수 없는 설정"
-
 #~ msgid "No container specified"
 #~ msgstr "컨테이너가 지정되지 않았습니다."
 
@@ -926,9 +959,6 @@ msgstr "에서"
 
 #~ msgid "Not authorized to access Docker on this system"
 #~ msgstr "본 시스템 상의 Docker에 대한 접근 권한이 없습니다."
-
-#~ msgid "Not available"
-#~ msgstr "사용할 수 없습니다"
 
 #, fuzzy
 #~ msgid "Not connected"
@@ -1115,9 +1145,6 @@ msgstr "에서"
 
 #~ msgid "Replicas"
 #~ msgstr "Replicas"
-
-#~ msgid "Repository"
-#~ msgstr "리포지터리 "
 
 #, fuzzy
 #~ msgid "Repository URL"

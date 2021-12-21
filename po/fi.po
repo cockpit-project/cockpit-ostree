@@ -7,175 +7,168 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
-"PO-Revision-Date: 2020-11-25 16:35+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
+"PO-Revision-Date: 2021-12-17 17:16+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
-"Language-Team: Finnish <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/fi/>\n"
+"Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
+"ostree/main/fi/>\n"
 "Language: fi\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 4.3.2\n"
+"X-Generator: Weblate 4.9.1\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 avain ID"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 paketti"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 paketit"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Lisää uusi asennuslähde"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Lisää"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Lisää uusi avain"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+msgid "Add New Repository"
+msgstr "Lisää uusi asennuslähde"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Lisäykset"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Toteuta"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Saatavilla"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Alkaa '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr "Alkaa $0"
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr "Haara"
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Vaihda asennuslähde"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Etsi päivityksiä"
 
-#: src/app.js:299
+#: src/app.jsx:500
+msgid "Checking for package updates..."
+msgstr "Tarkistetaan pakettipäivityksiä ..."
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "Yhdistetään OSTree:n"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "Ei voitu ladata asetuksia kohteelle '$0': $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "Tällä hetkellä käytössä:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "Oletus"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Poista"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Aiemmat versiot"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Virhe ladattaessa ohjaimia: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Vanhentunut allekirjoitus"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Epäonnistui"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+msgid "GPG Public Key"
+msgstr "GPG julkinen avain"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Hyvä allekirjoitus"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Nimi"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Ei käyttöönottoja"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "OSTree-käyttöönottoja ei löytynyt"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "Konfigurointitietoja ei löytynyt"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+msgid "No configured remotes"
+msgstr "Ei määritettyjä etäpisteitä"
+
+#: src/app.jsx:374
+msgid "No signature available"
 msgstr "Allekirjoitusta ei ole saatavilla"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree ei ole käytettävissä tässä järjestelmässä"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "Käyttöjärjestelmä"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "Käyttöjärjestelmäpäivitykset"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Alkuperä"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Paketit"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Anna kelvollinen URL"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Anna kelvollinen nimi"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "Rebase ja käynnistä uudelleen"
 
@@ -191,23 +184,27 @@ msgstr "Vastaanotetaan metadata-objekteja"
 msgid "Receiving objects: $0%"
 msgstr "Vastaanotetaan objekteja: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Yhdistä uudelleen"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Julkaistu"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Poistot"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Ohjelmistolähde"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "Pura asennus ja käynnistä uudelleen"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "Käynnissä"
 
@@ -215,62 +212,74 @@ msgstr "Käynnissä"
 msgid "Scanning metadata"
 msgstr "Skannataan metatietoja"
 
-#: src/index.html:267
-msgid "Signature"
-msgstr "Allekirjoitus"
+#: src/app.jsx:177
+msgid "Select branch"
+msgstr "Valitse haara"
 
-#: src/index.html:279
+#: src/app.jsx:401
+msgid "Signatures"
+msgstr "Allekirjoitukset"
+
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "Allekirjoittanut"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Ohjelmistopäivitykset"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "Tila"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "Järjestelmä on ajan tasalla"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Tämä käyttöönotto sisältää samat paketit kuin nykyisin käynnissäoleva "
 "järjestelmä"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Puu"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "Kommunikaatio OSTree:n kanssa epäonnistui"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Päivitä ja käynnistä uudelleen"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+msgid "Update available: $0"
+msgstr "Päivitys saatavilla: $0"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Päivitykset"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "Päivitetään"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Käytä luotettua GPG-avainta"
 
-#: src/index.html:303
+#: src/app.jsx:367
+msgid "Validity"
+msgstr "Oikeellisuus"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Versio"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Kun"
 
@@ -278,9 +287,36 @@ msgstr "Kun"
 msgid "Writing objects"
 msgstr "Kirjoitetaan objekteja"
 
-#: src/index.html:186
-msgid "at"
-msgstr "kello"
+#: src/app.jsx:609
+msgid "available deployments"
+msgstr "käytettävissä olevia käyttöönottoja"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 paketti"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 paketit"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "Alkaa '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "Ei voitu ladata asetuksia kohteelle '$0': $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "Tällä hetkellä käytössä:"
+
+#~ msgid "Default"
+#~ msgstr "Oletus"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "Käyttöjärjestelmäpäivitykset"
+
+#~ msgid "Status"
+#~ msgstr "Tila"
+
+#~ msgid "at"
+#~ msgstr "kello"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (jaettu OS:n kanssa)"
@@ -994,9 +1030,6 @@ msgstr "kello"
 
 #~ msgid "Autostart:"
 #~ msgstr "Autostart:"
-
-#~ msgid "Available Updates"
-#~ msgstr "Saatavilla olevat päivitykset"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "Käytettävät kohteet $0"
@@ -2298,9 +2331,6 @@ msgstr "kello"
 #~ msgid "GiB"
 #~ msgstr "GiB"
 
-#~ msgid "Git Repository"
-#~ msgstr "Git-tietovarasto"
-
 #~ msgid "Gluster FS"
 #~ msgstr "Gluster FS"
 
@@ -3486,9 +3516,6 @@ msgstr "kello"
 #~ msgid "Projects"
 #~ msgstr "Projektit"
 
-#~ msgid "Public Key"
-#~ msgstr "Julkinen avain"
-
 #~ msgid "RAID ($0)"
 #~ msgstr "RAID ($0)"
 
@@ -3751,9 +3778,6 @@ msgstr "kello"
 #~ msgid "Security Updates Available"
 #~ msgstr "Tietoturvapäivityksiä saatavilla"
 
-#~ msgid "Select"
-#~ msgstr "Valitse"
-
 #~ msgid "Sending"
 #~ msgstr "Lähetetään"
 
@@ -3984,9 +4008,6 @@ msgstr "kello"
 
 #~ msgid "System Up To Date"
 #~ msgstr "Järjestelmä ajan tasalla"
-
-#~ msgid "System is up to date"
-#~ msgstr "Järjestelmä on ajan tasalla"
 
 #~ msgid "TCP"
 #~ msgstr "TCP"
@@ -4374,9 +4395,6 @@ msgstr "kello"
 #~ "Päivitetyt paketit saattavat vaatia uudelleenkäynnistyksen, jotta "
 #~ "muutokset tulevat voimaan."
 
-#~ msgid "Updates Available"
-#~ msgstr "Päivityksiä saatavilla"
-
 #~ msgid "Updates are disabled."
 #~ msgstr "Päivitykset on poistettu käytöstä."
 
@@ -4496,9 +4514,6 @@ msgstr "kello"
 
 #~ msgid "VNC TLS Port:"
 #~ msgstr "VNC-TLS-portti:"
-
-#~ msgid "Validating key"
-#~ msgstr "Vahvistetaan avainta"
 
 #~ msgid "Vendor"
 #~ msgstr "Toimittaja"

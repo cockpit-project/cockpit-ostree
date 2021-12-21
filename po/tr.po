@@ -6,175 +6,168 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
-"PO-Revision-Date: 2020-10-20 09:15+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
+"PO-Revision-Date: 2021-12-17 17:16+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
-"Language-Team: Turkish <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/master/tr/>\n"
+"Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
+"ostree/main/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n>1)\n"
-"X-Generator: Weblate 4.3.1-dev\n"
+"X-Generator: Weblate 4.9.1\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 anahtar kimliği"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 paket"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 paket"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Yeni Depo Ekle"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Ekle"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Başka Anahtar Ekle"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+msgid "Add New Repository"
+msgstr "Yeni Depo Ekle"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Eklemeler"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Uygula"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Kullanılabilir"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "'-----BEGIN PGP PUBLIC KEY BLOCK-----' ile başlar"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr "$0 ile başlar"
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr "Dal"
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Depoyu Değiştir"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Güncellemeleri denetle"
 
-#: src/app.js:299
+#: src/app.jsx:500
+msgid "Checking for package updates..."
+msgstr "Paket güncellemeleri denetleniyor..."
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "OSTree'ye bağlanılıyor"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "'$0' için ayarlar yüklenemedi: $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "Şu anda kullanılan:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "Varsayılan"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Sil"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Uzak depolar yüklenirken hata oldu: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Süresi Dolmuş İmza"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Başarısız"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+msgid "GPG Public Key"
+msgstr "GPG Ortak Anahtar"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Geçerli İmza"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Geçersiz İmza"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Ad"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Dağıtımlar Yok"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "Bulunan OSTree dağıtımları yok"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "Bulunan yapılandırma verileri yok"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+msgid "No configured remotes"
+msgstr "Yapılandırılmış uzaklar yok"
+
+#: src/app.jsx:374
+msgid "No signature available"
 msgstr "Mevcut imza yok"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "$0 işletim sistemi bulunamadı"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree bu sistemde kullanılabilir değil"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "İşletim Sistemi"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "İşletim Sistemi Güncellemeleri"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Kaynak"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Paketler"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Lütfen geçerli bir URL girin"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Lütfen geçerli bir ad girin"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "Yeniden Konumla ve Yeniden Başlat"
 
@@ -190,23 +183,27 @@ msgstr "Üst veri nesneleri alınıyor"
 msgid "Receiving objects: $0%"
 msgstr "Nesneler alınıyor: %$0"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Yeniden bağlan"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Yayımlanma"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Kaldırılanlar"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Depo"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "Geri Al ve Yeniden Başlat"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "Çalışıyor"
 
@@ -214,60 +211,72 @@ msgstr "Çalışıyor"
 msgid "Scanning metadata"
 msgstr "Üst veriler taranıyor"
 
-#: src/index.html:267
-msgid "Signature"
-msgstr "İmza"
+#: src/app.jsx:177
+msgid "Select branch"
+msgstr "Dal seç"
 
-#: src/index.html:279
+#: src/app.jsx:401
+msgid "Signatures"
+msgstr "İmzalar"
+
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "İmzalayan"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Yazılım Güncellemeleri"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "Durum"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "Sistem güncel"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "Bu dağıtım, şu anda önyüklenmiş sisteminizle aynı paketleri içeriyor"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Ağaç"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree ile iletişim kurulamadı"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Güncelle ve Yeniden Başlat"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+msgid "Update available: $0"
+msgstr "Güncelleme mevcut: $0"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Güncellemeler"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "Güncelleniyor"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Güvenilir GPG anahtarı kullan"
 
-#: src/index.html:303
+#: src/app.jsx:367
+msgid "Validity"
+msgstr "Doğrulama"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Ne zaman"
 
@@ -275,9 +284,36 @@ msgstr "Ne zaman"
 msgid "Writing objects"
 msgstr "Nesneler yazılıyor"
 
-#: src/index.html:186
-msgid "at"
-msgstr "şurada"
+#: src/app.jsx:609
+msgid "available deployments"
+msgstr "mevcut dağıtımlar"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 paket"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 paket"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "'-----BEGIN PGP PUBLIC KEY BLOCK-----' ile başlar"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "'$0' için ayarlar yüklenemedi: $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "Şu anda kullanılan:"
+
+#~ msgid "Default"
+#~ msgstr "Varsayılan"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "İşletim Sistemi Güncellemeleri"
+
+#~ msgid "Status"
+#~ msgstr "Durum"
+
+#~ msgid "at"
+#~ msgstr "şurada"
 
 #~ msgid "$0 Block Device"
 #~ msgstr "$0 Blok Device"
@@ -376,9 +412,6 @@ msgstr "şurada"
 #, fuzzy
 #~ msgid "Add Role"
 #~ msgstr "Roller"
-
-#~ msgid "Add public key"
-#~ msgstr "Açık anahtar ekle"
 
 #~ msgid "Adding key"
 #~ msgstr "Anahtar ekleniyor"
@@ -1097,10 +1130,6 @@ msgstr "şurada"
 #~ msgstr "Taşıyıcı yok"
 
 #, fuzzy
-#~ msgid "No configuration found"
-#~ msgstr "Bilinmeyen konfigrasyon"
-
-#, fuzzy
 #~ msgid "No host keys found."
 #~ msgstr "Bulunamadı"
 
@@ -1373,9 +1402,6 @@ msgstr "şurada"
 
 #~ msgid "Replication Controllers"
 #~ msgstr "Replikasyon Kontrolörleri"
-
-#~ msgid "Repository"
-#~ msgstr "Depo"
 
 #, fuzzy
 #~ msgid "Repository URL"
@@ -1692,9 +1718,6 @@ msgstr "şurada"
 
 #~ msgid "VLAN Id"
 #~ msgstr "VLAN id"
-
-#~ msgid "Validating key"
-#~ msgstr "Anahtar doğrulanıyor"
 
 #, fuzzy
 #~ msgid "Volume"

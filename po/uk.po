@@ -7,175 +7,169 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
-"PO-Revision-Date: 2018-05-24 05:50+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
+"PO-Revision-Date: 2021-12-17 17:16+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
+"cockpit-ostree/main/uk/>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Zanata 4.4.5\n"
-"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
-"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2)\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 4.9.1\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "Ід. ключа $0"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 пакунок"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 пакунків"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Додати нове сховище"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Додати"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Додати ще один ключ"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+msgid "Add New Repository"
+msgstr "Додати нове сховище"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Додавання"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Застосувати"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Доступні"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Починається з '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr "Починається з $0"
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr "Гілка"
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Змінити сховище"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Перевірити наявність оновлень"
 
-#: src/app.js:299
+#: src/app.jsx:500
+msgid "Checking for package updates..."
+msgstr "Шукаємо оновлення пакунків…"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Шукаємо оновлення"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "Встановлюємо з’єднання з OSTree"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "Не вдалося завантажити параметри для «$0»: $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "Зараз використовуємо:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "Типовий"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Вилучити"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Зниження"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Застарілий підпис"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Помилка"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+msgid "GPG Public Key"
+msgstr "Відкритий ключ GPG"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Чинний підпис"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Некоректний підпис"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Назва"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Немає розгортань"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "Не знайдено розгорнутих OSTree"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "Не знайдено даних налаштувань"
 
-#: src/index.html:294
-msgid "No signature avaliable"
-msgstr "Підпис недоступний"
+#: src/app.jsx:166
+msgid "No configured remotes"
+msgstr "Немає налаштованих віддалених сховищ"
 
-#: src/app.js:80
+#: src/app.jsx:374
+msgid "No signature available"
+msgstr "Немає доступних підписів"
+
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "ОС $0 не знайдено"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree у цій системі недоступна"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "Операційна система"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "Оновлення операційної системи"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Походження"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Пакунки"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Будь ласка, вкажіть коректну адресу"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Будь ласка, вкажіть коректну назву"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "Перенести і перезавантажити"
 
@@ -191,23 +185,27 @@ msgstr "Отримуємо об’єкти метаданих"
 msgid "Receiving objects: $0%"
 msgstr "Отримуємо об’єкти: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Повторно з’єднатися"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Випущено"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Вилучення"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Сховище"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "Відкотити і перезавантажити"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "Працює"
 
@@ -215,62 +213,74 @@ msgstr "Працює"
 msgid "Scanning metadata"
 msgstr "Скануємо метадані"
 
-#: src/index.html:267
-msgid "Signature"
-msgstr "Підпис"
+#: src/app.jsx:177
+msgid "Select branch"
+msgstr "Виберіть гілку"
 
-#: src/index.html:279
+#: src/app.jsx:401
+msgid "Signatures"
+msgstr "Підписи"
+
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "Підписано"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Оновлення програм"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "Стан"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "Система не потребує оновлення"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "У цьому розгортанні містяться деякі пакунки, які є у поточній завантаженій "
 "системі"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Дерево"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "Адреса"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "Не вдалося обмінятися даними з OSTree"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Оновити і перезавантажити"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+msgid "Update available: $0"
+msgstr "Доступне оновлення: $0"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Оновлення"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "Оновлення"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Використовувати надійний ключ GPG"
 
-#: src/index.html:303
+#: src/app.jsx:367
+msgid "Validity"
+msgstr "Чинність"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Версія"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Умова"
 
@@ -278,9 +288,36 @@ msgstr "Умова"
 msgid "Writing objects"
 msgstr "Записуємо об’єкти"
 
-#: src/index.html:186
-msgid "at"
-msgstr "на"
+#: src/app.jsx:609
+msgid "available deployments"
+msgstr "доступні розгортання"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 пакунок"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 пакунків"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "Починається з '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "Не вдалося завантажити параметри для «$0»: $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "Зараз використовуємо:"
+
+#~ msgid "Default"
+#~ msgstr "Типовий"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "Оновлення операційної системи"
+
+#~ msgid "Status"
+#~ msgstr "Стан"
+
+#~ msgid "at"
+#~ msgstr "на"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (спільний із операційною системою)"
@@ -1068,9 +1105,6 @@ msgstr "на"
 
 #~ msgid "Autostart:"
 #~ msgstr "Автозапуск:"
-
-#~ msgid "Available Updates"
-#~ msgstr "Доступні оновлення"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "Доступні призначення на $0"
@@ -3675,9 +3709,6 @@ msgstr "на"
 #~ msgid "No carrier"
 #~ msgstr "Немає сигналу"
 
-#~ msgid "No configuration found"
-#~ msgstr "Не знайдено налаштувань"
-
 #~ msgid "No console defined for this virtual machine."
 #~ msgstr "Для цієї віртуальної машини консолей не визначено."
 
@@ -4445,9 +4476,6 @@ msgstr "на"
 #~ msgid "Proxy Version"
 #~ msgstr "Версія проксі"
 
-#~ msgid "Public Key"
-#~ msgstr "Відкритий ключ"
-
 #~ msgid "Public pulling repo"
 #~ msgstr "Відкрите сховище для отримання"
 
@@ -4787,9 +4815,6 @@ msgstr "на"
 #~ msgstr ""
 #~ "Не вдалося надіслати звіт. Спробуйте віддати команду «reporter-ureport -d "
 
-#~ msgid "Repository"
-#~ msgstr "Сховище"
-
 #~ msgid "Repository URL"
 #~ msgstr "Адреса сховища"
 
@@ -5018,9 +5043,6 @@ msgstr "на"
 
 #~ msgid "Security Updates Available"
 #~ msgstr "Доступні оновлення захисту"
-
-#~ msgid "Select"
-#~ msgstr "Вибрати"
 
 #~ msgid "Select Manifest File..."
 #~ msgstr "Вибір файла маніфесту…"
@@ -5514,9 +5536,6 @@ msgstr "на"
 #~ msgstr "Системний час"
 
 #~ msgid "System Up To Date"
-#~ msgstr "Система не потребує оновлення"
-
-#~ msgid "System is up to date"
 #~ msgstr "Система не потребує оновлення"
 
 #~ msgid "TCP"
@@ -6368,9 +6387,6 @@ msgstr "на"
 #~ msgid "Updated packages may require a restart to take effect."
 #~ msgstr "Використання оновлених пакунків може потребувати перезапуску."
 
-#~ msgid "Updates Available"
-#~ msgstr "Доступні оновлення"
-
 #~ msgid "Updates are disabled."
 #~ msgstr "Оновлення вимкнено."
 
@@ -6527,9 +6543,6 @@ msgstr "на"
 
 #~ msgid "Validating authentication token"
 #~ msgstr "Перевіряємо ключ розпізнавання"
-
-#~ msgid "Validating key"
-#~ msgstr "Перевірка ключа"
 
 #~ msgid "Vendor"
 #~ msgstr "Постачальник"
