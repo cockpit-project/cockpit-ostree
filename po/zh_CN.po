@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
 "PO-Revision-Date: 2020-07-23 07:28+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -20,163 +20,166 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 4.1.1\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 密钥编号"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 软件包"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 软件包"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "添加新的源"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "添加"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "添加另一个密钥"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#, fuzzy
+#| msgid "- Add New Repository"
+msgid "Add New Repository"
+msgstr "添加新的源"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "添加"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "应用"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "可用的"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "以 '-----BEGIN PGP PUBLIC KEY BLOCK-----' 开始"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr ""
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr ""
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "取消"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "变更源"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "检查更新"
 
-#: src/app.js:299
+#: src/app.jsx:500
+#, fuzzy
+#| msgid "Checking for updates"
+msgid "Checking for package updates..."
+msgstr "检查升级"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "连接到系统树"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "不能为 '$0': $1 加载设置"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "当前正在使用："
-
-#: src/index.html:253
-msgid "Default"
-msgstr "默认"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "删除"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "过期的签名"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "已失败"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+#, fuzzy
+#| msgid "Public Key"
+msgid "GPG Public Key"
+msgstr "公钥"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "正确的签名"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "无效的签名"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "名称"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "没有部署"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "没有找到 OSTree 部署"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "未找到配置数据"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+#, fuzzy
+#| msgid "No configuration found"
+msgid "No configured remotes"
+msgstr "未找到配置"
+
+#: src/app.jsx:374
+#, fuzzy
+#| msgid "No signature avaliable"
+msgid "No signature available"
 msgstr "没有可用的签名"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "未授权更新该系统上的软件"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "未找到操作系统 $0"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "操作系统"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "操作系统更新"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Origin"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "软件包"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "请提供有效的网址"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "请提供有效的名称"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "重构并重启"
 
@@ -192,23 +195,27 @@ msgstr "正在接收元数据对象"
 msgid "Receiving objects: $0%"
 msgstr "正在接收对象: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "重新连接"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "发布于"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "移除"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "存储库"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "回滚并重启"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "运行中"
 
@@ -216,60 +223,80 @@ msgstr "运行中"
 msgid "Scanning metadata"
 msgstr "正在扫描元数据"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+#, fuzzy
+#| msgid "Select"
+msgid "Select branch"
+msgstr "选择"
+
+#: src/app.jsx:401
+#, fuzzy
+#| msgid "Signature"
+msgid "Signatures"
 msgstr "签名"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "签名人"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "软件更新"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "状态"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "系统已更新到最新"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "该部署与当前启动的系统包含相同的软件包"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Tree"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "网址"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "无法与 OSTree 通信"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "更新并重启"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+#, fuzzy
+#| msgid "Not available"
+msgid "Update available: $0"
+msgstr "不可用"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "更新"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "更新"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 
-#: src/index.html:303
+#: src/app.jsx:367
+#, fuzzy
+#| msgid "Validating key"
+msgid "Validity"
+msgstr "验证 key"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "版本"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "当"
 
@@ -277,9 +304,38 @@ msgstr "当"
 msgid "Writing objects"
 msgstr "正在写对象"
 
-#: src/index.html:186
-msgid "at"
-msgstr "在"
+#: src/app.jsx:609
+#, fuzzy
+#| msgid "Available Updates"
+msgid "available deployments"
+msgstr "可用的更新"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 软件包"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 软件包"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "以 '-----BEGIN PGP PUBLIC KEY BLOCK-----' 开始"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "不能为 '$0': $1 加载设置"
+
+#~ msgid "Currently using:"
+#~ msgstr "当前正在使用："
+
+#~ msgid "Default"
+#~ msgstr "默认"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "操作系统更新"
+
+#~ msgid "Status"
+#~ msgstr "状态"
+
+#~ msgid "at"
+#~ msgstr "在"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (与操作系统共享)"
@@ -944,9 +1000,6 @@ msgstr "在"
 
 #~ msgid "Autostart:"
 #~ msgstr "自动启动："
-
-#~ msgid "Available Updates"
-#~ msgstr "可用的更新"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "$0 上可用的目标"
@@ -3096,9 +3149,6 @@ msgstr "在"
 #~ msgid "No carrier"
 #~ msgstr "无载体"
 
-#~ msgid "No configuration found"
-#~ msgstr "未找到配置"
-
 #~ msgid "No container specified"
 #~ msgstr "未指定容器"
 
@@ -3254,9 +3304,6 @@ msgstr "在"
 
 #~ msgid "Not authorized to upload-report"
 #~ msgstr "没有授权来上传报告"
-
-#~ msgid "Not available"
-#~ msgstr "不可用"
 
 #~ msgid "Not connected"
 #~ msgstr "未连接"
@@ -3710,9 +3757,6 @@ msgstr "在"
 #~ msgid "Proxy Version"
 #~ msgstr "代理版本"
 
-#~ msgid "Public Key"
-#~ msgstr "公钥"
-
 #~ msgid "Pull an image:"
 #~ msgstr "拉取镜像:"
 
@@ -4006,9 +4050,6 @@ msgstr "在"
 #~ msgid "Reporting was unsucessful. Try running `reporter-ureport -d "
 #~ msgstr "报告未执行成功。尝试运行`reporter-ureport -d "
 
-#~ msgid "Repository"
-#~ msgstr "存储库"
-
 #~ msgid "Repository URL"
 #~ msgstr "仓库网址"
 
@@ -4204,9 +4245,6 @@ msgstr "在"
 
 #~ msgid "Security"
 #~ msgstr "安全性"
-
-#~ msgid "Select"
-#~ msgstr "选择"
 
 #~ msgid "Select Manifest File..."
 #~ msgstr "选择 Manifest 文件..."
@@ -4600,9 +4638,6 @@ msgstr "在"
 
 #~ msgid "System Time"
 #~ msgstr "系统时间"
-
-#~ msgid "System is up to date"
-#~ msgstr "系统已更新到最新"
 
 #~ msgid "TCP"
 #~ msgstr "TCP"
@@ -5365,9 +5400,6 @@ msgstr "在"
 
 #~ msgid "Validating authentication token"
 #~ msgstr "正在校验认证口令"
-
-#~ msgid "Validating key"
-#~ msgstr "验证 key"
 
 #~ msgid "Verified"
 #~ msgstr "已验证"

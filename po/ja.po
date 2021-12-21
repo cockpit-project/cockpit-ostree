@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
 "PO-Revision-Date: 2018-02-22 05:00+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Japanese\n"
@@ -16,163 +16,166 @@ msgstr ""
 "X-Generator: Zanata 4.4.5\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 キー ID"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 パッケージ"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 パッケージ"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- 新規リポジトリーの追加"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "追加する"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "別の鍵の追加"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#, fuzzy
+#| msgid "- Add New Repository"
+msgid "Add New Repository"
+msgstr "- 新規リポジトリーの追加"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "追加"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "適用"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "利用可能"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "'-----BEGIN PGP PUBLIC KEY BLOCK-----' で始めます"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr ""
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr ""
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "取り消し"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "リポジトリーの変更"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "更新の確認"
 
-#: src/app.js:299
+#: src/app.jsx:500
+#, fuzzy
+#| msgid "Checking for updates"
+msgid "Checking for package updates..."
+msgstr "更新の確認"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "更新の確認"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "OSTree への接続"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "'$0' の設定をロードできませんでした: $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "現在使用中:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "デフォルト"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "削除"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "ダウングレード"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "リモートのロード中にエラーが発生しました: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "期限切れの署名"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "失敗"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+#, fuzzy
+#| msgid "Public Key"
+msgid "GPG Public Key"
+msgstr "公開鍵"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "優れた署名"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "無効な署名"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "名前"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "デプロイメントなし"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "OSTree デプロイメントが見つかりません"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "設定データが見つかりません"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+#, fuzzy
+#| msgid "No configuration found"
+msgid "No configured remotes"
+msgstr "設定が見つかりません"
+
+#: src/app.jsx:374
+#, fuzzy
+#| msgid "No signature avaliable"
+msgid "No signature available"
 msgstr "署名が利用できません"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "このシステム上のソフトウェアを更新する権限がありません"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "OS $0 が見つかりません"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "このシステムでは OSTree は利用できません"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "オペレーティングシステム"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "オペレーティングシステムの更新"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "生成"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "パッケージ"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "有効な URL を提供してください"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "有効な名前を提供してください"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "リベースおよび再起動"
 
@@ -188,23 +191,27 @@ msgstr "メタデータオブジェクトの受信"
 msgid "Receiving objects: $0%"
 msgstr "オブジェクトの受信: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "再接続"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "リリース済み"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "削除"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "リポジトリー"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "ロールバックおよび再起動"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "実行中"
 
@@ -212,62 +219,82 @@ msgstr "実行中"
 msgid "Scanning metadata"
 msgstr "メタデータのスキャン"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+#, fuzzy
+#| msgid "Select"
+msgid "Select branch"
+msgstr "選択"
+
+#: src/app.jsx:401
+#, fuzzy
+#| msgid "Signature"
+msgid "Signatures"
 msgstr "署名"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "署名者"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "ソフトウェア更新"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "状態"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "システムは最新の状態です"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "このデプロイメントには、現在起動されているシステムと同じパッケージが含まれて"
 "います"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "ツリー"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree と通信できません"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "更新および再起動"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+#, fuzzy
+#| msgid "Not available"
+msgid "Update available: $0"
+msgstr "利用できません"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "更新"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "更新中"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "信頼済み GPG 鍵の使用"
 
-#: src/index.html:303
+#: src/app.jsx:367
+#, fuzzy
+#| msgid "Validating key"
+msgid "Validity"
+msgstr "鍵の検証"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "バージョン"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "日付"
 
@@ -275,9 +302,38 @@ msgstr "日付"
 msgid "Writing objects"
 msgstr "オブジェクトの書き込み"
 
-#: src/index.html:186
-msgid "at"
-msgstr "時間: "
+#: src/app.jsx:609
+#, fuzzy
+#| msgid "Available Updates"
+msgid "available deployments"
+msgstr "利用可能なアップデート"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 パッケージ"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 パッケージ"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "'-----BEGIN PGP PUBLIC KEY BLOCK-----' で始めます"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "'$0' の設定をロードできませんでした: $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "現在使用中:"
+
+#~ msgid "Default"
+#~ msgstr "デフォルト"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "オペレーティングシステムの更新"
+
+#~ msgid "Status"
+#~ msgstr "状態"
+
+#~ msgid "at"
+#~ msgstr "時間: "
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (OS と共有)"
@@ -983,9 +1039,6 @@ msgstr "時間: "
 
 #~ msgid "Autostart:"
 #~ msgstr "自動起動:"
-
-#~ msgid "Available Updates"
-#~ msgstr "利用可能なアップデート"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "$0 で利用可能なターゲット"
@@ -3454,9 +3507,6 @@ msgstr "時間: "
 #~ msgid "No carrier"
 #~ msgstr "キャリアなし"
 
-#~ msgid "No configuration found"
-#~ msgstr "設定が見つかりません"
-
 #~ msgid "No console defined for this virtual machine."
 #~ msgstr "この仮想マシンにはコンソールが定義されていません"
 
@@ -3637,9 +3687,6 @@ msgstr "時間: "
 
 #~ msgid "Not authorized to upload-report"
 #~ msgstr "upload-report の権限がありません"
-
-#~ msgid "Not available"
-#~ msgstr "利用できません"
 
 #~ msgid "Not connected"
 #~ msgstr "接続していません"
@@ -4181,9 +4228,6 @@ msgstr "時間: "
 #~ msgid "Proxy Version"
 #~ msgstr "プロキシーバージョン"
 
-#~ msgid "Public Key"
-#~ msgstr "公開鍵"
-
 #~ msgid "Public pulling repo"
 #~ msgstr "パブリックのプルリポジトリ－"
 
@@ -4508,9 +4552,6 @@ msgstr "時間: "
 #~ msgstr ""
 #~ "レポートは成功しませんでした。次を試してください: `reporter-ureport -d"
 
-#~ msgid "Repository"
-#~ msgstr "リポジトリー"
-
 #~ msgid "Repository URL"
 #~ msgstr "リポジトリー URL"
 
@@ -4717,9 +4758,6 @@ msgstr "時間: "
 
 #~ msgid "Security"
 #~ msgstr "Security"
-
-#~ msgid "Select"
-#~ msgstr "選択"
 
 #~ msgid "Select Manifest File..."
 #~ msgstr "マニフェストファイルの選択 ..."
@@ -5191,9 +5229,6 @@ msgstr "時間: "
 
 #~ msgid "System Time"
 #~ msgstr "システム時間"
-
-#~ msgid "System is up to date"
-#~ msgstr "システムは最新の状態です"
 
 #~ msgid "TCP"
 #~ msgstr "TCP"
@@ -6083,9 +6118,6 @@ msgstr "時間: "
 
 #~ msgid "Validating authentication token"
 #~ msgstr "認証トークンの検証"
-
-#~ msgid "Validating key"
-#~ msgstr "鍵の検証"
 
 #~ msgid "Vendor"
 #~ msgstr "ベンダー"

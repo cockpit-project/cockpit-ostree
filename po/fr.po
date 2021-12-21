@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
 "PO-Revision-Date: 2020-02-03 07:25+0000\n"
 "Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/cockpit-"
@@ -21,163 +21,163 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1\n"
 "X-Generator: Weblate 3.10.3\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "$0 ID clé"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 paquet"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 paquets"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Ajouter un nouveau dépôt"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Ajouter"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Ajouter une autre clé"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#, fuzzy
+#| msgid "- Add New Repository"
+msgid "Add New Repository"
+msgstr "- Ajouter un nouveau dépôt"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Compléments"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Appliquer"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Disponible"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Commence par « -----BEGIN PGP PUBLIC KEY BLOCK----- »"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr ""
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr ""
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "Annuler"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Modifier dépôt"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Vérifier les mises à jour"
 
-#: src/app.js:299
+#: src/app.jsx:500
+#, fuzzy
+#| msgid "Checking for updates"
+msgid "Checking for package updates..."
+msgstr "Recherche de mises à jour"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Recherche de mises à jour"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "Connexion à OSTree"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "Impossible de charger les paramètres pour « $0 » : $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "Actuellement utilisé :"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "Par défaut"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Supprimer"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Rétrogradation"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Erreur pendant le chargement des remotes : $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Signatures expirées"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Échec"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+msgid "GPG Public Key"
+msgstr ""
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Bonnes signatures"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Signatures invalides"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Nom"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Aucun déploiement"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "Aucun déploiement OSTree trouvé"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "Aucune configuration de donnée trouvée"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+#, fuzzy
+msgid "No configured remotes"
+msgstr "Configuration inconnue"
+
+#: src/app.jsx:374
+#, fuzzy
+#| msgid "No signature avaliable"
+msgid "No signature available"
 msgstr "Aucune signature disponible"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "Pas autorisé à mettre à jour les logiciels sur ce système"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "OS $0 non trouvé"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree non disponible sur ce système"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "Système d’exploitation"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "Mises à jour du système d’exploitation"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Origine"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Paquets"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Merci d’indiquer une URL valide"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Veuillez indiquer un nom valide"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "Rebaser et redémarrer"
 
@@ -193,23 +193,27 @@ msgstr "Recevoir les objets métadonnées"
 msgid "Receiving objects: $0%"
 msgstr "Réception des objets : $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Reconnecter"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Publiés"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Supprimés"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Dépôt"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "Rétrograder et redémarrer"
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "En fonctionnement"
 
@@ -217,62 +221,80 @@ msgstr "En fonctionnement"
 msgid "Scanning metadata"
 msgstr "Scan des métadonnées"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+msgid "Select branch"
+msgstr ""
+
+#: src/app.jsx:401
+#, fuzzy
+#| msgid "Signature"
+msgid "Signatures"
 msgstr "Signature"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "Signé par"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Mises à jour de logiciel"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "État"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr ""
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Ce déploiement contient les mêmes logiciels que votre système démarré "
 "actuellement"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Arbre"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "Impossible de communiquer avec OSTree"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Mettre à jour et redémarrer"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+#, fuzzy
+#| msgid "Not available"
+msgid "Update available: $0"
+msgstr "Indisponible"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Mises à jour"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "Mise à jour"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Utiliser des clés GPG de confiance"
 
-#: src/index.html:303
+#: src/app.jsx:367
+#, fuzzy
+#| msgid "Validating key"
+msgid "Validity"
+msgstr "Validation de la clé"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Version"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Quand"
 
@@ -280,9 +302,38 @@ msgstr "Quand"
 msgid "Writing objects"
 msgstr "Écriture des objets"
 
-#: src/index.html:186
-msgid "at"
-msgstr "à"
+#: src/app.jsx:609
+#, fuzzy
+#| msgid "No Deployments"
+msgid "available deployments"
+msgstr "Aucun déploiement"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 paquet"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 paquets"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "Commence par « -----BEGIN PGP PUBLIC KEY BLOCK----- »"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "Impossible de charger les paramètres pour « $0 » : $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "Actuellement utilisé :"
+
+#~ msgid "Default"
+#~ msgstr "Par défaut"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "Mises à jour du système d’exploitation"
+
+#~ msgid "Status"
+#~ msgstr "État"
+
+#~ msgid "at"
+#~ msgstr "à"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (partagé avec le système d'exploitation)"
@@ -1453,10 +1504,6 @@ msgstr "à"
 #~ msgid "No carrier"
 #~ msgstr "Pas de porteuse"
 
-#, fuzzy
-#~ msgid "No configuration found"
-#~ msgstr "Configuration inconnue"
-
 #~ msgid "No container specified"
 #~ msgstr "Aucun conteneur indiqué"
 
@@ -1495,9 +1542,6 @@ msgstr "à"
 
 #~ msgid "Not authorized to access Docker on this system"
 #~ msgstr "Vous n'êtes pas autorisé à accéder à Docker sur ce système"
-
-#~ msgid "Not available"
-#~ msgstr "Indisponible"
 
 #~ msgid "Not connected"
 #~ msgstr "Non connecté"
@@ -1719,9 +1763,6 @@ msgstr "à"
 
 #~ msgid "Replicas"
 #~ msgstr "Répliques"
-
-#~ msgid "Repository"
-#~ msgstr "Dépôt"
 
 #~ msgid "Restart"
 #~ msgstr "Redémarrer"
@@ -2002,9 +2043,6 @@ msgstr "à"
 
 #~ msgid "VLAN Settings"
 #~ msgstr "Réglages VLAN"
-
-#~ msgid "Validating key"
-#~ msgstr "Validation de la clé"
 
 #~ msgid "Volume Group $0"
 #~ msgstr "Groupe de volumes $0"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
 "PO-Revision-Date: 2018-05-03 04:56+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan\n"
@@ -18,163 +18,166 @@ msgstr ""
 "X-Generator: Zanata 4.4.5\n"
 "Plural-Forms: nplurals=2; plural=(n != 1)\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr ""
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 paquet"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 paquets"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Afegeix un dipòsit nou"
-
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Afegeix"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Afegeix una altra clau"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#, fuzzy
+#| msgid "- Add New Repository"
+msgid "Add New Repository"
+msgstr "- Afegeix un dipòsit nou"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Addicions"
 
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Aplica"
 
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Disponible"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Comença amb '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr ""
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr ""
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Canvia de dipòsit"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Comprova si hi ha actualitzacions"
 
-#: src/app.js:299
+#: src/app.jsx:500
+#, fuzzy
+#| msgid "Checking for updates"
+msgid "Checking for package updates..."
+msgstr "Comprovació per si hi ha actualitzacions"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Comprovació per si hi ha actualitzacions"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "S'està connectant a OSTree"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "No s'ha pogut carregar els ajusts per a '$0': $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "En ús actualment:"
-
-#: src/index.html:253
-msgid "Default"
-msgstr "Predeterminat"
-
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Suprimeix"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Reversions"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Error en carregar els remots: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Signatura vençuda"
 
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Ha fallat"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+#, fuzzy
+#| msgid "Public Key"
+msgid "GPG Public Key"
+msgstr "Clau pública"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Bona signatura"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Signatura no vàlida"
 
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Nom"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Sense desplegaments"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "No s'ha trobat desplegaments OSTree"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "No s'ha trobat cap dada de configuració"
 
-#: src/index.html:294
-msgid "No signature avaliable"
-msgstr ""
+#: src/app.jsx:166
+#, fuzzy
+#| msgid "No configuration found"
+msgid "No configured remotes"
+msgstr "No s'ha trobat cap configuració"
 
-#: src/app.js:80
+#: src/app.jsx:374
+#, fuzzy
+#| msgid "No disks are available."
+msgid "No signature available"
+msgstr "No hi ha disponible cap disc."
+
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "No autoritzat per actualitzar el programari en aquest sistema"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "SO $0 no trobat"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree no està disponible en aquest sistema"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "Sistema operatiu"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "Actualitzacions del sistema operatiu"
-
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Origen"
 
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Paquets"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Si us plau, proporcioneu un URL vàlid"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Si us plau, proporcioneu un nom vàlid"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr ""
 
@@ -190,23 +193,27 @@ msgstr "S'estan rebent els objectes de metadades"
 msgid "Receiving objects: $0%"
 msgstr "S'estan rebent objectes: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Torna a connectar"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Llançat"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Supressions"
 
-#: src/index.html:237
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Dipòsit"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr ""
 
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "En execució"
 
@@ -214,62 +221,82 @@ msgstr "En execució"
 msgid "Scanning metadata"
 msgstr "S'estan escanejant les metadades"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+#, fuzzy
+#| msgid "Select"
+msgid "Select branch"
+msgstr "Selecciona"
+
+#: src/app.jsx:401
+#, fuzzy
+#| msgid "Signature"
+msgid "Signatures"
 msgstr "Signatura"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "Signat per"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Actualitzacions"
 
-#: src/index.html:288
-msgid "Status"
-msgstr "Estat"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr "El sistema està al dia"
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Aquest desplegament conté els mateixos paquets que el vostre sistema "
 "arrencat actualment"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Arbre"
 
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "No es pot comunicar amb OSTree"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Actualitza i reinicia"
 
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+#, fuzzy
+#| msgid "Updates Available"
+msgid "Update available: $0"
+msgstr "Actualitzacions disponibles"
+
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Actualitzacions"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "S'està actualitzant"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Utilitza una clau GPG de confiança"
 
-#: src/index.html:303
+#: src/app.jsx:367
+#, fuzzy
+#| msgid "Validating key"
+msgid "Validity"
+msgstr "S'està validant la clau"
+
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Versió"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Quan"
 
@@ -277,10 +304,39 @@ msgstr "Quan"
 msgid "Writing objects"
 msgstr "S'estan escrivint els objectes"
 
-#: src/index.html:186
+#: src/app.jsx:609
 #, fuzzy
-msgid "at"
-msgstr "Camí"
+#| msgid "Available Updates"
+msgid "available deployments"
+msgstr "Actualitzacions disponibles"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 paquet"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 paquets"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "Comença amb '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "No s'ha pogut carregar els ajusts per a '$0': $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "En ús actualment:"
+
+#~ msgid "Default"
+#~ msgstr "Predeterminat"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "Actualitzacions del sistema operatiu"
+
+#~ msgid "Status"
+#~ msgstr "Estat"
+
+#, fuzzy
+#~ msgid "at"
+#~ msgstr "Camí"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr " (compartit amb el SO)"
@@ -961,9 +1017,6 @@ msgstr "Camí"
 
 #~ msgid "Autostart:"
 #~ msgstr "Inici automàtic:"
-
-#~ msgid "Available Updates"
-#~ msgstr "Actualitzacions disponibles"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "Objectius disponibles en $0"
@@ -3189,9 +3242,6 @@ msgstr "Camí"
 #~ msgid "No carrier"
 #~ msgstr "Sense portadora"
 
-#~ msgid "No configuration found"
-#~ msgstr "No s'ha trobat cap configuració"
-
 #~ msgid "No container specified"
 #~ msgstr "Sense especificar el contenidor"
 
@@ -3200,9 +3250,6 @@ msgstr "Camí"
 
 #~ msgid "No description provided."
 #~ msgstr "No s'ha proporcionat cap descripció."
-
-#~ msgid "No disks are available."
-#~ msgstr "No hi ha disponible cap disc."
 
 #~ msgid "No disks defined for this VM"
 #~ msgstr "No hi ha definit cap disc per a aquesta MV"
@@ -3808,9 +3855,6 @@ msgstr "Camí"
 #~ msgid "Proxy Version"
 #~ msgstr "Versió del servidor intermediari"
 
-#~ msgid "Public Key"
-#~ msgstr "Clau pública"
-
 #~ msgid "Pull an image:"
 #~ msgstr "Recupera una imatge:"
 
@@ -4080,9 +4124,6 @@ msgstr "Camí"
 #~ msgid "Reported"
 #~ msgstr "Informat"
 
-#~ msgid "Repository"
-#~ msgstr "Dipòsit"
-
 #~ msgid "Repository URL"
 #~ msgstr "URl del dipòsit"
 
@@ -4268,9 +4309,6 @@ msgstr "Camí"
 
 #~ msgid "Security"
 #~ msgstr "Seguretat"
-
-#~ msgid "Select"
-#~ msgstr "Selecciona"
 
 #~ msgid "Select Manifest File..."
 #~ msgstr "Selecciona el fitxer del manifest..."
@@ -4664,9 +4702,6 @@ msgstr "Camí"
 
 #~ msgid "System Up To Date"
 #~ msgstr "El sistema està actualitzat"
-
-#~ msgid "System is up to date"
-#~ msgstr "El sistema està al dia"
 
 #~ msgid "TCP"
 #~ msgstr "TCP"
@@ -5306,9 +5341,6 @@ msgstr "Camí"
 #~ msgstr ""
 #~ "Els paquets actualitzats poden requerir un reinici perquè tinguin efecte."
 
-#~ msgid "Updates Available"
-#~ msgstr "Actualitzacions disponibles"
-
 #~ msgid "Updates are disabled."
 #~ msgstr "Les actualitzacions estan inhabilitades."
 
@@ -5438,9 +5470,6 @@ msgstr "Camí"
 
 #~ msgid "Validating authentication token"
 #~ msgstr "Validació del testimoni d'autenticació"
-
-#~ msgid "Validating key"
-#~ msgstr "S'està validant la clau"
 
 #~ msgid "Vendor"
 #~ msgstr "Fabricant"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2020-02-03 07:56+0000\n"
+"POT-Creation-Date: 2021-12-18 03:02+0000\n"
 "PO-Revision-Date: 2020-02-03 07:25+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -20,172 +20,172 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Weblate 3.10.3\n"
 
-#: src/client.js:480
+#: src/client.js:473
 msgid "$0 key ID"
 msgstr "Identif. klíče $0"
 
-#: src/app.js:455
-msgid "$0 package"
-msgstr "$0 balíček"
-
-#: src/app.js:455
-msgid "$0 packages"
-msgstr "$0 balíčky"
-
-#: src/index.html:92
-msgid "- Add New Repository"
-msgstr "- Přidat nový repozitář"
-
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:90
+#: src/changeRemoteModal.jsx:190
 msgid "Add"
 msgstr "Přidat"
 
-#: src/index.html:75
+#: src/changeRemoteModal.jsx:245
 msgid "Add Another Key"
 msgstr "Přidat další klíč"
 
-#: src/index.html:313 src/index.html:331
+#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#, fuzzy
+#| msgid "- Add New Repository"
+msgid "Add New Repository"
+msgstr "- Přidat nový repozitář"
+
+#: src/app.jsx:244
 msgid "Additions"
 msgstr "Doplňky"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:39
+#: src/changeRemoteModal.jsx:252
 msgid "Apply"
 msgstr "Použít"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:255
+#: src/app.jsx:322
 msgid "Available"
 msgstr "Dostupný"
 
-#: src/index.html:68
-msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
-msgstr "Začíná textem „-----BEGIN PGP PUBLIC KEY BLOCK-----“"
+#: src/changeRemoteModal.jsx:247
+msgid "Begins with $0"
+msgstr ""
 
-#: src/index.html:164
+#: src/app.jsx:175
+msgid "Branch"
+msgstr ""
+
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
+#: src/changeRemoteModal.jsx:253
 msgid "Cancel"
 msgstr "Storno"
 
-#: src/index.html:134
+#: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
 msgstr "Změnit repozitář"
 
-#: src/index.html:210
+#: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Zjistit dostupnost případných aktualizací"
 
-#: src/app.js:299
+#: src/app.jsx:500
+#, fuzzy
+#| msgid "Checking for updates"
+msgid "Checking for package updates..."
+msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
+
+#: src/app.jsx:156
 msgid "Checking for updates"
 msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
 
-#: src/index.html:418
+#: src/app.jsx:124
 msgid "Connecting to OSTree"
 msgstr "Připojování se k OSTree"
 
-#: src/remotes.js:181
-msgid "Couldn't load settings for '$0': $1"
-msgstr "Nedaří se načíst nastavení pro „$0“: $1"
-
-#: src/index.html:184
-msgid "Currently using:"
-msgstr "V tuto chvíli je používáno:"
-
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:253
-msgid "Default"
-msgstr "Výchozí"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:38
+#: src/changeRemoteModal.jsx:251
 msgid "Delete"
 msgstr "Smazat"
 
-#: src/index.html:319 src/index.html:349
+#: src/app.jsx:247
 msgid "Downgrades"
 msgstr "Návraty zpět k předchozím verzím"
 
-#: src/remotes.js:327
+#: src/app.jsx:535
 msgid "Error loading remotes: $0"
 msgstr "Chyba při načítání vzdálených: $0"
 
-#: src/index.html:290
+#: src/app.jsx:350
 msgid "Expired Signature"
 msgstr "Platnost podpisu skončila"
 
 # auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
-#: src/index.html:258
+#: src/app.jsx:320
 msgid "Failed"
 msgstr "Neúspěšný"
 
-#: src/index.html:289
+#: src/changeRemoteModal.jsx:248
+#, fuzzy
+#| msgid "Add public key"
+msgid "GPG Public Key"
+msgstr "Přidat veřejný klíč"
+
+#: src/app.jsx:350
 msgid "Good Signature"
 msgstr "Podpis v pořádku"
 
-#: src/index.html:291
+#: src/app.jsx:350
 msgid "Invalid Signature"
 msgstr "Neplatný podpis"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/index.html:99
+#: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Název"
 
-#: src/index.html:420
+#: src/app.jsx:128
 msgid "No Deployments"
 msgstr "Žádná nasazení"
 
-#: src/app.js:101
+#: src/app.jsx:453
 msgid "No OSTree deployments found"
 msgstr "Nenalezena žádná nasazení OSTree"
 
-#: src/remotes.js:112
+#: src/remotes.js:98
 msgid "No configuration data found"
 msgstr "Nenalezena žádná data nastavení"
 
-#: src/index.html:294
-msgid "No signature avaliable"
+#: src/app.jsx:166
+msgid "No configured remotes"
+msgstr ""
+
+#: src/app.jsx:374
+#, fuzzy
+#| msgid "No signature avaliable"
+msgid "No signature available"
 msgstr "Není k dispozici žádný podpis"
 
-#: src/app.js:80
+#: src/app.jsx:478
 msgid "Not authorized to update software on this system"
 msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
-#: src/client.js:581 src/client.js:677
+#: src/client.js:572 src/client.js:659
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
 
-#: src/app.js:82
+#: src/app.jsx:480
 msgid "OSTree is not available on this system"
 msgstr "OSTree není na tomto systému k dispozici"
 
-#: src/index.html:301
+#: src/app.jsx:327
 msgid "Operating System"
 msgstr "Operační systém"
 
-#: src/index.html:375
-msgid "Operating System Updates"
-msgstr "Aktualizace operačního systému"
-
 # auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
-#: src/index.html:307
+#: src/app.jsx:339
 msgid "Origin"
 msgstr "Původ"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/index.html:266
+#: src/app.jsx:400
 msgid "Packages"
 msgstr "Balíčky"
 
-#: src/remotes.js:261
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid URL"
 msgstr "Zadejte platnou URL adresu"
 
-#: src/remotes.js:254
+#: src/changeRemoteModal.jsx:161
 msgid "Please provide a valid name"
 msgstr "Zadejte platný název"
 
-#: src/index.html:241
+#: src/app.jsx:392
 msgid "Rebase and Reboot"
 msgstr "Znovu ustavit a restartovat"
 
@@ -201,24 +201,29 @@ msgstr "Obdržují se objekty metadat"
 msgid "Receiving objects: $0%"
 msgstr "Obdržují se objekty: $0%"
 
-#: src/index.html:423
+#: src/app.jsx:135
 msgid "Reconnect"
 msgstr "Znovu připojit"
 
-#: src/index.html:305
+#: src/app.jsx:335
 msgid "Released"
 msgstr "Vydáno"
 
-#: src/index.html:315 src/index.html:337
+#: src/app.jsx:245
 msgid "Removals"
 msgstr "Odebrání"
 
-#: src/index.html:237
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#: src/app.jsx:172
+msgid "Repository"
+msgstr "Repozitář"
+
+#: src/app.jsx:389
 msgid "Roll Back and Reboot"
 msgstr "Vrátit zpět do původního stavu a restartovat"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/index.html:251
+#: src/app.jsx:318
 msgid "Running"
 msgstr "Spuštěné"
 
@@ -226,65 +231,85 @@ msgstr "Spuštěné"
 msgid "Scanning metadata"
 msgstr "Skenování metadat"
 
-#: src/index.html:267
-msgid "Signature"
+#: src/app.jsx:177
+#, fuzzy
+#| msgid "Select"
+msgid "Select branch"
+msgstr "Vybrat"
+
+#: src/app.jsx:401
+#, fuzzy
+#| msgid "Signature"
+msgid "Signatures"
 msgstr "Podpis"
 
-#: src/index.html:279
+#: src/app.jsx:355
 msgid "Signed by"
 msgstr "Podepsal"
 
-#: src/index.html:23 src/manifest.json
+#: src/index.html:22 src/manifest.json:0
 msgid "Software Updates"
 msgstr "Aktualizace software"
 
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:288
-msgid "Status"
-msgstr "Stav"
+#: src/app.jsx:93
+msgid "System is up to date"
+msgstr ""
 
-#: src/index.html:327
+#: src/app.jsx:227
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Toto nasazení obsahuje stejné balíčky, jako systém, který máte nyní spuštěný"
 
-#: src/index.html:265
+#: src/app.jsx:399
 msgid "Tree"
 msgstr "Strom"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:48 src/index.html:109
+#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
 msgid "URL"
 msgstr "URL"
 
-#: src/index.html:419
+#: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
 msgstr "Nedaří se komunikovat s OSTree"
 
-#: src/index.html:233
+#: src/app.jsx:386
 msgid "Update and Reboot"
 msgstr "Aktualizovat a restartovat"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/index.html:317 src/index.html:343
+#: src/app.jsx:99
+#, fuzzy
+#| msgid "Unavailable"
+msgid "Update available: $0"
+msgstr "Nedostupné"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#: src/app.jsx:246
 msgid "Updates"
 msgstr "Aktualizace"
 
-#: src/index.html:262
+#: src/app.jsx:316
 msgid "Updating"
 msgstr "Aktualizuje se"
 
-#: src/index.html:59 src/index.html:121
+#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
 msgid "Use trusted GPG key"
 msgstr "Použít důvěryhodný GPG klíč"
 
+#: src/app.jsx:367
+#, fuzzy
+#| msgid "Validating key"
+msgid "Validity"
+msgstr "Ověřovací klíč"
+
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/index.html:303
+#: src/app.jsx:331
 msgid "Version"
 msgstr "Verze"
 
-#: src/index.html:282
+#: src/app.jsx:359
 msgid "When"
 msgstr "Kdy"
 
@@ -292,9 +317,40 @@ msgstr "Kdy"
 msgid "Writing objects"
 msgstr "Zapisují se objekty"
 
-#: src/index.html:186
-msgid "at"
-msgstr "v"
+#: src/app.jsx:609
+#, fuzzy
+#| msgid "Available Updates"
+msgid "available deployments"
+msgstr "Dostupné aktualizace"
+
+#~ msgid "$0 package"
+#~ msgstr "$0 balíček"
+
+#~ msgid "$0 packages"
+#~ msgstr "$0 balíčky"
+
+#~ msgid "Begins with '-----BEGIN PGP PUBLIC KEY BLOCK-----'"
+#~ msgstr "Začíná textem „-----BEGIN PGP PUBLIC KEY BLOCK-----“"
+
+#~ msgid "Couldn't load settings for '$0': $1"
+#~ msgstr "Nedaří se načíst nastavení pro „$0“: $1"
+
+#~ msgid "Currently using:"
+#~ msgstr "V tuto chvíli je používáno:"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Default"
+#~ msgstr "Výchozí"
+
+#~ msgid "Operating System Updates"
+#~ msgstr "Aktualizace operačního systému"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#~ msgid "Status"
+#~ msgstr "Stav"
+
+#~ msgid "at"
+#~ msgstr "v"
 
 #~ msgid " (shared with the OS)"
 #~ msgstr "(sdíleno s OS)"
@@ -811,9 +867,6 @@ msgstr "v"
 #~ msgid "Add membership"
 #~ msgstr "Přidat členství"
 
-#~ msgid "Add public key"
-#~ msgstr "Přidat veřejný klíč"
-
 #~ msgid ""
 #~ "Adding <b>$0</b> will break the connection to the server, and will make "
 #~ "the administration UI unavailable."
@@ -1029,9 +1082,6 @@ msgstr "v"
 # auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
 #~ msgid "Autostart:"
 #~ msgstr "Automatické spuštění"
-
-#~ msgid "Available Updates"
-#~ msgstr "Dostupné aktualizace"
 
 #~ msgid "Available targets on $0"
 #~ msgstr "Dostupné cíle na $0"
@@ -2106,10 +2156,6 @@ msgstr "v"
 #~ msgid "Reported"
 #~ msgstr "Reportováno"
 
-# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#~ msgid "Repository"
-#~ msgstr "Repozitář"
-
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #~ msgid "Reset"
 #~ msgstr "Reset"
@@ -2144,9 +2190,6 @@ msgstr "v"
 # auto translated by TM merge from project: Fedora OpenSSH Guide, version: master, DocId: Security
 #~ msgid "Security"
 #~ msgstr "Bezpečnost"
-
-#~ msgid "Select"
-#~ msgstr "Vybrat"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #~ msgid "Server"
@@ -2288,10 +2331,6 @@ msgstr "v"
 #~ msgid "UUID"
 #~ msgstr "UUID:"
 
-# auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#~ msgid "Unavailable"
-#~ msgstr "Nedostupné"
-
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #~ msgid "Unknown"
 #~ msgstr "Neznámý"
@@ -2339,9 +2378,6 @@ msgstr "v"
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
 #~ msgid "VNC"
 #~ msgstr "VNC"
-
-#~ msgid "Validating key"
-#~ msgstr "Ověřovací klíč"
 
 # auto translated by TM merge from project: libosinfo, version: master, DocId: libosinfo
 #~ msgid "Vendor"
