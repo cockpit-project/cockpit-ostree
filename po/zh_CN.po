@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-12-18 03:02+0000\n"
-"PO-Revision-Date: 2020-07-23 07:28+0000\n"
+"POT-Creation-Date: 2022-01-06 03:04+0000\n"
+"PO-Revision-Date: 2022-01-06 08:16+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
-"projects/cockpit-ostree/master/zh_CN/>\n"
+"projects/cockpit-ostree/main/zh_CN/>\n"
 "Language: zh_CN\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 4.1.1\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -33,8 +33,6 @@ msgid "Add Another Key"
 msgstr "添加另一个密钥"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-#, fuzzy
-#| msgid "- Add New Repository"
 msgid "Add New Repository"
 msgstr "添加新的源"
 
@@ -52,11 +50,11 @@ msgstr "可用的"
 
 #: src/changeRemoteModal.jsx:247
 msgid "Begins with $0"
-msgstr ""
+msgstr "由 $0 开始"
 
 #: src/app.jsx:175
 msgid "Branch"
-msgstr ""
+msgstr "分支"
 
 #: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
 #: src/changeRemoteModal.jsx:253
@@ -72,10 +70,8 @@ msgid "Check for Updates"
 msgstr "检查更新"
 
 #: src/app.jsx:500
-#, fuzzy
-#| msgid "Checking for updates"
 msgid "Checking for package updates..."
-msgstr "检查升级"
+msgstr "正在检查软件包更新……"
 
 #: src/app.jsx:156
 msgid "Checking for updates"
@@ -106,10 +102,8 @@ msgid "Failed"
 msgstr "已失败"
 
 #: src/changeRemoteModal.jsx:248
-#, fuzzy
-#| msgid "Public Key"
 msgid "GPG Public Key"
-msgstr "公钥"
+msgstr "GPG 公钥"
 
 #: src/app.jsx:350
 msgid "Good Signature"
@@ -136,14 +130,10 @@ msgid "No configuration data found"
 msgstr "未找到配置数据"
 
 #: src/app.jsx:166
-#, fuzzy
-#| msgid "No configuration found"
 msgid "No configured remotes"
-msgstr "未找到配置"
+msgstr "没有已配置的远程"
 
 #: src/app.jsx:374
-#, fuzzy
-#| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "没有可用的签名"
 
@@ -224,14 +214,10 @@ msgid "Scanning metadata"
 msgstr "正在扫描元数据"
 
 #: src/app.jsx:177
-#, fuzzy
-#| msgid "Select"
 msgid "Select branch"
-msgstr "选择"
+msgstr "选择分支"
 
 #: src/app.jsx:401
-#, fuzzy
-#| msgid "Signature"
 msgid "Signatures"
 msgstr "签名"
 
@@ -269,10 +255,8 @@ msgid "Update and Reboot"
 msgstr "更新并重启"
 
 #: src/app.jsx:99
-#, fuzzy
-#| msgid "Not available"
 msgid "Update available: $0"
-msgstr "不可用"
+msgstr "更新可用：$0"
 
 #: src/app.jsx:246
 msgid "Updates"
@@ -287,10 +271,8 @@ msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 
 #: src/app.jsx:367
-#, fuzzy
-#| msgid "Validating key"
 msgid "Validity"
-msgstr "验证 key"
+msgstr "验证"
 
 #: src/app.jsx:331
 msgid "Version"
@@ -305,10 +287,8 @@ msgid "Writing objects"
 msgstr "正在写对象"
 
 #: src/app.jsx:609
-#, fuzzy
-#| msgid "Available Updates"
 msgid "available deployments"
-msgstr "可用的更新"
+msgstr "可用的部署"
 
 #~ msgid "$0 package"
 #~ msgstr "$0 软件包"
