@@ -636,8 +636,7 @@ class OstreeCase(MachineCase):
         m.start_cockpit()
         b.login_and_go("/system")
         b.wait_text("#page_status_notification_updates", "System is up to date")
-        self.assertEqual(b.attr("#page_status_notification_updates span:first-child", "class"),
-                         "fa fa-check-circle-o")
+        self.assertEqual(b.attr("#page_status_notification_updates svg", "data-pficon"), "check")
         # go to updates page
         b.click("#page_status_notification_updates a")
         b.enter_page("/updates")
