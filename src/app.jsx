@@ -91,7 +91,7 @@ const set_update_status = debounce(1000, versions => {
         if (versions[0].booted && versions[0].booted.v) {
             set_page_status({
                 title: _("System is up to date"),
-                details: { icon: "fa fa-check-circle-o" }
+                details: { pficon: "check" }
             });
         } else {
             /* report the available update */
@@ -500,7 +500,7 @@ class Application extends React.Component {
                     title: _("Checking for package updates..."),
                     details: {
                         link: false,
-                        icon: "spinner spinner-xs",
+                        pficon: "spinner",
                     },
                 });
             })
