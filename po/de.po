@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-02-02 02:53+0000\n"
-"PO-Revision-Date: 2021-11-08 00:48+0000\n"
-"Last-Translator: Jens Maucher <jensmaucher@gmail.com>\n"
+"POT-Creation-Date: 2022-02-14 02:52+0000\n"
+"PO-Revision-Date: 2022-02-14 13:16+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/de/>\n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 4.8\n"
+"X-Generator: Weblate 4.10.1\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -36,10 +36,8 @@ msgid "Add Another Key"
 msgstr "Einen weiteren Schlüssel hinzufügen"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-#, fuzzy
-#| msgid "- Add New Repository"
 msgid "Add New Repository"
-msgstr "- Neues Repository hinzufügen"
+msgstr "Neue Paketquelle hinzufügen"
 
 #: src/app.jsx:244
 msgid "Additions"
@@ -55,11 +53,11 @@ msgstr "Verfügbar"
 
 #: src/changeRemoteModal.jsx:247
 msgid "Begins with $0"
-msgstr ""
+msgstr "Beginnt mit $0"
 
 #: src/app.jsx:175
 msgid "Branch"
-msgstr ""
+msgstr "Zweig"
 
 #: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
 #: src/changeRemoteModal.jsx:253
@@ -75,14 +73,12 @@ msgid "Check for Updates"
 msgstr "Nach Aktualisierungen suchen"
 
 #: src/app.jsx:500
-#, fuzzy
-#| msgid "Checking for updates"
 msgid "Checking for package updates..."
-msgstr "Suche nach Aktualisierungen"
+msgstr "Auf Paketaktualisierungen wird geprüft ..."
 
 #: src/app.jsx:156
 msgid "Checking for updates"
-msgstr "Suche nach Aktualisierungen"
+msgstr "Auf Aktualisierungen wird geprüft"
 
 #: src/app.jsx:124
 msgid "Connecting to OSTree"
@@ -109,10 +105,8 @@ msgid "Failed"
 msgstr "Fehlgeschlagen"
 
 #: src/changeRemoteModal.jsx:248
-#, fuzzy
-#| msgid "Add public key"
 msgid "GPG Public Key"
-msgstr "Öffentlichen Schlüssel hinzufügen"
+msgstr "Öffentlicher GPG-Schlüssel"
 
 #: src/app.jsx:350
 msgid "Good Signature"
@@ -141,11 +135,9 @@ msgstr "Keine Konfigurationsdaten gefunden"
 #: src/app.jsx:166
 #, fuzzy
 msgid "No configured remotes"
-msgstr "Unbekannte Konfiguration"
+msgstr "Keine konfigurierten Remotes"
 
 #: src/app.jsx:374
-#, fuzzy
-#| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "Keine Signatur verfügbar"
 
@@ -211,7 +203,7 @@ msgstr "Entfernte Pakete"
 
 #: src/app.jsx:172
 msgid "Repository"
-msgstr "Repository"
+msgstr "Paketquelle"
 
 #: src/app.jsx:389
 msgid "Roll Back and Reboot"
@@ -227,13 +219,11 @@ msgstr "Untersuche Metadaten"
 
 #: src/app.jsx:177
 msgid "Select branch"
-msgstr ""
+msgstr "Zweig auswählen"
 
 #: src/app.jsx:401
-#, fuzzy
-#| msgid "Signature"
 msgid "Signatures"
-msgstr "Signatur"
+msgstr "Signaturen"
 
 #: src/app.jsx:355
 msgid "Signed by"
@@ -245,7 +235,7 @@ msgstr "Software Updates"
 
 #: src/app.jsx:93
 msgid "System is up to date"
-msgstr ""
+msgstr "System ist auf dem neuesten Stand"
 
 #: src/app.jsx:227
 msgid ""
@@ -271,10 +261,8 @@ msgid "Update and Reboot"
 msgstr "Aktualisieren und Neustarten"
 
 #: src/app.jsx:99
-#, fuzzy
-#| msgid "Not available"
 msgid "Update available: $0"
-msgstr "Nicht verfügbar"
+msgstr "Aktualisierung verfügbar: $0"
 
 #: src/app.jsx:246
 msgid "Updates"
@@ -289,10 +277,8 @@ msgid "Use trusted GPG key"
 msgstr "Benutze vertrauenswürdigen GPG-Schlüssel"
 
 #: src/app.jsx:367
-#, fuzzy
-#| msgid "Validating key"
 msgid "Validity"
-msgstr "Schlüssel wird überprüft"
+msgstr "Gültigkeit"
 
 #: src/app.jsx:331
 msgid "Version"
@@ -307,10 +293,8 @@ msgid "Writing objects"
 msgstr "Schreibe Objekte"
 
 #: src/app.jsx:609
-#, fuzzy
-#| msgid "No Deployments"
 msgid "available deployments"
-msgstr "Keine Bereitstellungen"
+msgstr "verfügbare Bereitstellungen"
 
 #~ msgid "$0 package"
 #~ msgstr "$0 Paket"
