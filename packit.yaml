@@ -1,6 +1,9 @@
 specfile_path: cockpit-ostree.spec
 upstream_package_name: cockpit-ostree
 downstream_package_name: cockpit-ostree
+srpm_build_deps:
+- make
+- npm
 actions:
   post-upstream-clone: make cockpit-ostree.spec
   # reduce memory consumption of webpack in sandcastle container
