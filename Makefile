@@ -79,7 +79,7 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	touch -r package.json $(NODE_MODULES_TEST)
 	touch dist/*
 	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
-		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules \
+		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules --exclude test/reference \
 		$$(git ls-files) src/lib package-lock.json $(PACKAGE_NAME).spec dist/
 
 $(NODE_CACHE): $(NODE_MODULES_TEST)
@@ -128,7 +128,7 @@ check-unit: $(NODE_MODULES_TEST)
 
 # run the browser integration tests; skip check for SELinux denials
 # this will run all tests/check-* and format them as TAP
-check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common check-unit
+check: $(NODE_MODULES_TEST) $(VM_IMAGE) test/common test/reference check-unit
 	TEST_AUDIT_NO_SELINUX=1 test/common/run-tests ${RUN_TESTS_OPTIONS}
 
 # checkout Cockpit's bots for standard test VM images and API to launch them
@@ -146,6 +146,9 @@ test/common:
 	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 267; \
 	    git checkout --force FETCH_HEAD -- test/common; \
 	    git reset test/common'
+
+test/reference: test/common
+	test/common/pixel-tests pull
 
 # checkout Cockpit's PF/React/build library; again this has no API stability guarantee, so check out a stable tag
 $(LIB_TEST):
