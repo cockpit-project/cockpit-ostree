@@ -172,6 +172,10 @@ class OstreeRestartCase(MachineCase):
         b.wait_visible(sel_cur + " div.tree")
         b.wait_in_text(sel_cur + " .os", "fedora-coreos")
         b.wait_in_text(sel_cur + " .version", "cockpit-base.1")
+
+        b.assert_pixels("#repo-remote-toolbar", "remote-toolbar")
+        b.assert_pixels(sel_cur, "deployment", ignore=[".timestamp"])
+
         self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
         b.wait_in_text(sel_cur + " div.packages", remove_pkg)
         for pkg in INSTALL_RPMS:
@@ -435,6 +439,8 @@ class OstreeCase(MachineCase):
         b.click(".pf-c-modal-box #add-remote-btn")
         b.wait_in_text(".pf-c-modal-box .pf-c-simple-list__item-link .pf-m-danger", "Invalid remote name")
         b.set_input_text(".pf-c-modal-box #new-remote-name", "zremote-test1")
+
+        b.assert_pixels(".pf-c-modal-box", "dialog-add-repository")
         b.click(".pf-c-modal-box #add-remote-btn")
 
         b.wait_not_present (".pf-c-modal-box #new-remote-name")
