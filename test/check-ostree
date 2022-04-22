@@ -46,7 +46,8 @@ def get_list_item(index):
     # there are more <li> inside the item tables, so only count direct children
     return f".available-deployments > li:nth-child({index})"
 
-def ensure_remote_http_port (m, remote="local"):
+
+def ensure_remote_http_port(m, remote="local"):
     remote_spec = m.execute(f"ostree remote show-url {remote} || true")
     if remote_spec.startswith("http"):
         parts = remote_spec.strip().split(":")
@@ -64,24 +65,27 @@ def ensure_remote_http_port (m, remote="local"):
 
     return port
 
+
 def start_trivial_httpd(m, remote="local", location=REPO_LOCATION):
-    port = ensure_remote_http_port (m, remote)
+    port = ensure_remote_http_port(m, remote)
     pid = m.spawn(f"podman run -v {location}:/usr/local/nginx/html:ro,z -p {port}:80 quay.io/jitesoft/nginx", "httpd")
 
     m.execute(["ostree", "summary", f"--repo={location}", "-u"])
     m.wait_for_cockpit_running(port=port)
     return pid
 
+
 def stop_trivial_httpd(m, pid):
     if pid:
         m.execute(["kill", str(pid)])
+
 
 def generate_new_commit(m, pkg_to_remove):
     # Make one change of each type to a new rpm tree
     branch = m.execute(f"ostree refs --repo={REPO_LOCATION}")
 
     m.upload([f"files/{k}.rpm" for k in INSTALL_RPMS],
-              "/home/admin/")
+             "/home/admin/")
 
     # move /usr/etc to /etc, makes rpm installs easier
     rpm_etc = os.path.join(CHECKOUT_LOCATION, "etc")
@@ -93,8 +97,8 @@ def generate_new_commit(m, pkg_to_remove):
     m.execute("rpm -e --verbose --root {0} --dbpath {1} {2}".format(*rpm_args))
 
     # Install our dummy packages, dbonly
-    rpm_args[-1] = ' '.join([f"{os.path.join('/home/admin', x)}.rpm" \
-                                for x in INSTALL_RPMS])
+    rpm_args[-1] = ' '.join([f"{os.path.join('/home/admin', x)}.rpm"
+                             for x in INSTALL_RPMS])
     m.execute("rpm -U --oldpackage --root {0} --dbpath {1} --justdb {2}".format(*rpm_args))
 
     # move /etc back to /usr/etc to
@@ -108,6 +112,7 @@ def generate_new_commit(m, pkg_to_remove):
     command = "ostree commit -s cockpit-tree2 --repo {0} -b {1} --add-metadata-string version=cockpit-base.2 --tree=dir={2} --gpg-sign={3} --gpg-homedir=/root/"
     m.execute(command.format(*commit_args), timeout=600)
     m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
+
 
 def rhsmcertd_hack(m):
     # HACK: https://github.com/candlepin/subscription-manager/issues/1404
@@ -145,7 +150,7 @@ class OstreeRestartCase(MachineCase):
         m = self.machine
 
         # Delete local remote so we start clean, without a file based remote
-        ensure_remote_http_port (m)
+        ensure_remote_http_port(m)
 
         if m.image in ["fedora-coreos"]:
             remove_pkg = m.execute("rpm -qa | grep socat").strip()
@@ -248,7 +253,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_text(f"{get_list_item(1)} dl.removes dd", remove_pkg)
 
         # Check signatures
-        self.check_sig (b, ".available-deployments li:nth-child(1)")
+        self.check_sig(b, ".available-deployments li:nth-child(1)")
 
         # Force an error
         stop_trivial_httpd(m, server_pid)
@@ -287,7 +292,7 @@ class OstreeRestartCase(MachineCase):
             b.wait_in_text(sel_cur + " div.packages", pkg)
 
         # Check signatures
-        self.check_sig (b, sel_cur)
+        self.check_sig(b, sel_cur)
 
         # Check rollback target
         b.wait_text(sel_prev + ' .deployment-name', "fedora-coreos cockpit-base.1")
@@ -305,7 +310,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_text(sel_prev + " dl.removes dd", "empty-1-0.noarch")
 
         # Rollback
-        b.wait_visible("button:contains('Roll Back')");
+        b.wait_visible("button:contains('Roll Back')")
         b.click(sel_prev + " button.pf-m-secondary")
         b.wait_visible(sel_prev + " .deployment-status")
 
@@ -404,6 +409,7 @@ class OstreeRestartCase(MachineCase):
 
         self.allow_restart_journal_messages()
 
+
 class OstreeCase(MachineCase):
     def testRemoteManagement(self):
         m = self.machine
@@ -443,7 +449,7 @@ class OstreeCase(MachineCase):
         b.assert_pixels(".pf-c-modal-box", "dialog-add-repository")
         b.click(".pf-c-modal-box #add-remote-btn")
 
-        b.wait_not_present (".pf-c-modal-box #new-remote-name")
+        b.wait_not_present(".pf-c-modal-box #new-remote-name")
         b.wait_not_present(".pf-c-modal-box #add-remote-btn")
         b.wait_not_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
         b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
@@ -464,7 +470,7 @@ class OstreeCase(MachineCase):
 
         # Config created
         self.assertEqual(m.execute("cat /etc/ostree/remotes.d/zremote-test1.conf").strip(),
-                        '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify=true')
+                         '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify=true')
         # No custom keyring
         self.assertFalse(m.execute("ls /sysroot/ostree/repo/zremote-test1.trustedkeys.gpg || true"))
 
@@ -513,7 +519,7 @@ class OstreeCase(MachineCase):
         b.set_val(".pf-c-modal-box #gpg-data", gpg_data)
         b.wait_val(".pf-c-modal-box #gpg-data", gpg_data)
         b.focus(".pf-c-modal-box #gpg-data")
-        b.key_press("\b") # Backspace
+        b.key_press("\b")  # Backspace
         b.click(".pf-c-modal-box .apply-btn")
         b.wait_not_present(".pf-c-modal-box #apply-btn")
         b.wait_not_present(".pf-c-modal-box .pf-c-form")
@@ -527,7 +533,7 @@ class OstreeCase(MachineCase):
         b.wait_visible(".pf-c-modal-box #gpg-verify:checked")
         b.click(".pf-c-modal-box #gpg-verify")
         b.click(".pf-c-modal-box .apply-btn")
-        b.wait_not_present (".pf-c-modal-box .pf-c-form")
+        b.wait_not_present(".pf-c-modal-box .pf-c-form")
         b.wait_not_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
         b.click(".pf-c-modal-box li:contains('zremote-test1')")
         b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
@@ -546,7 +552,6 @@ class OstreeCase(MachineCase):
         # Check updates display
         b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos cockpit-base.1")
         b.wait_in_text(f"{get_list_item(1)} #osorigin", f"local:{branch}")
-
 
         b.click("#check-for-updates-btn")
 
