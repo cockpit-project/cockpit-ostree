@@ -66,7 +66,7 @@ def ensure_remote_http_port (m, remote="local"):
 
 def start_trivial_httpd(m, remote="local", location=REPO_LOCATION):
     port = ensure_remote_http_port (m, remote)
-    pid = m.spawn(f"podman run -v {location}:/app:ro,z -p {port}:8080 nginx", "httpd")
+    pid = m.spawn(f"podman run -v {location}:/usr/local/nginx/html:ro,z -p {port}:80 quay.io/jitesoft/nginx", "httpd")
 
     m.execute(["ostree", "summary", f"--repo={location}", "-u"])
     m.wait_for_cockpit_running(port=port)
