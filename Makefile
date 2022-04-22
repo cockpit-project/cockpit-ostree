@@ -113,10 +113,11 @@ $(RPMFILE): $(SRPMFILE) bots
 $(VM_IMAGE): rpm bots
 	rm -f $(VM_IMAGE) $(VM_IMAGE).qcow2
 	bots/image-customize -v --upload $$(ls $(PACKAGE_NAME)-*.noarch.rpm):/tmp/ \
-		--run-command 'rpm -q cockpit-ostree && rpm-ostree override replace /tmp/*.rpm || rpm-ostree install /tmp/*.rpm' \
+		--no-network \
+		--run-command 'rpm -q cockpit-ostree && rpm-ostree --cache-only override replace /tmp/*.rpm || rpm-ostree --cache-only install /tmp/*.rpm' \
 		$(TEST_OS)
 	# building the local tree needs the modified tree from above booted already
-	bots/image-customize -v --script $(CURDIR)/test/vm.install $(TEST_OS)
+	bots/image-customize -v --no-network --script $(CURDIR)/test/vm.install $(TEST_OS)
 
 # convenience target for the above
 vm: $(VM_IMAGE)
