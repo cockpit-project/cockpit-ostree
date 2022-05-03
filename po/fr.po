@@ -9,17 +9,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-19 03:46+0000\n"
-"PO-Revision-Date: 2020-02-03 07:25+0000\n"
-"Last-Translator: Julien Humbert <julroy67@gmail.com>\n"
+"POT-Creation-Date: 2022-05-02 04:05+0000\n"
+"PO-Revision-Date: 2022-05-02 20:18+0000\n"
+"Last-Translator: Alain Nussbaumer <alain.nussbaumer@alleluia.ch>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/cockpit-"
-"ostree/master/fr/>\n"
+"ostree/main/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -34,10 +34,8 @@ msgid "Add Another Key"
 msgstr "Ajouter une autre clé"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-#, fuzzy
-#| msgid "- Add New Repository"
 msgid "Add New Repository"
-msgstr "- Ajouter un nouveau dépôt"
+msgstr "Ajouter un nouveau dépôt"
 
 #: src/app.jsx:244
 msgid "Additions"
@@ -53,11 +51,11 @@ msgstr "Disponible"
 
 #: src/changeRemoteModal.jsx:247
 msgid "Begins with $0"
-msgstr ""
+msgstr "Commence par $0"
 
 #: src/app.jsx:175
 msgid "Branch"
-msgstr ""
+msgstr "Branche"
 
 #: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
 #: src/changeRemoteModal.jsx:253
@@ -66,17 +64,15 @@ msgstr "Annuler"
 
 #: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
 msgid "Change Repository"
-msgstr "Modifier dépôt"
+msgstr "Modifier le dépôt"
 
 #: src/app.jsx:196
 msgid "Check for Updates"
 msgstr "Vérifier les mises à jour"
 
 #: src/app.jsx:500
-#, fuzzy
-#| msgid "Checking for updates"
 msgid "Checking for package updates..."
-msgstr "Recherche de mises à jour"
+msgstr "Recherche de mises à jour de paquets…"
 
 #: src/app.jsx:156
 msgid "Checking for updates"
@@ -92,7 +88,7 @@ msgstr "Supprimer"
 
 #: src/app.jsx:247
 msgid "Downgrades"
-msgstr "Rétrogradation"
+msgstr "Rétrogradations"
 
 #: src/app.jsx:535
 msgid "Error loading remotes: $0"
@@ -100,7 +96,7 @@ msgstr "Erreur pendant le chargement des remotes : $0"
 
 #: src/app.jsx:350
 msgid "Expired Signature"
-msgstr "Signatures expirées"
+msgstr "Signature expirée"
 
 #: src/app.jsx:320
 msgid "Failed"
@@ -108,7 +104,7 @@ msgstr "Échec"
 
 #: src/changeRemoteModal.jsx:248
 msgid "GPG Public Key"
-msgstr ""
+msgstr "Clé publique GPG"
 
 #: src/app.jsx:350
 msgid "Good Signature"
@@ -135,13 +131,10 @@ msgid "No configuration data found"
 msgstr "Aucune configuration de donnée trouvée"
 
 #: src/app.jsx:166
-#, fuzzy
 msgid "No configured remotes"
-msgstr "Configuration inconnue"
+msgstr "Pas d'hôtes distants configurés"
 
 #: src/app.jsx:374
-#, fuzzy
-#| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "Aucune signature disponible"
 
@@ -223,13 +216,11 @@ msgstr "Scan des métadonnées"
 
 #: src/app.jsx:177
 msgid "Select branch"
-msgstr ""
+msgstr "Sélectionnez une branche"
 
 #: src/app.jsx:401
-#, fuzzy
-#| msgid "Signature"
 msgid "Signatures"
-msgstr "Signature"
+msgstr "Signatures"
 
 #: src/app.jsx:355
 msgid "Signed by"
@@ -241,7 +232,7 @@ msgstr "Mises à jour de logiciel"
 
 #: src/app.jsx:93
 msgid "System is up to date"
-msgstr ""
+msgstr "Le système est à jour"
 
 #: src/app.jsx:227
 msgid ""
@@ -267,10 +258,8 @@ msgid "Update and Reboot"
 msgstr "Mettre à jour et redémarrer"
 
 #: src/app.jsx:99
-#, fuzzy
-#| msgid "Not available"
 msgid "Update available: $0"
-msgstr "Indisponible"
+msgstr "Mise à jour disponible : $0"
 
 #: src/app.jsx:246
 msgid "Updates"
@@ -285,10 +274,8 @@ msgid "Use trusted GPG key"
 msgstr "Utiliser des clés GPG de confiance"
 
 #: src/app.jsx:367
-#, fuzzy
-#| msgid "Validating key"
 msgid "Validity"
-msgstr "Validation de la clé"
+msgstr "Validité"
 
 #: src/app.jsx:331
 msgid "Version"
@@ -303,10 +290,8 @@ msgid "Writing objects"
 msgstr "Écriture des objets"
 
 #: src/app.jsx:609
-#, fuzzy
-#| msgid "No Deployments"
 msgid "available deployments"
-msgstr "Aucun déploiement"
+msgstr "Déploiements disponibles"
 
 #~ msgid "$0 package"
 #~ msgstr "$0 paquet"
