@@ -84,21 +84,19 @@ You can also run the test against a different Cockpit image, for example:
 
 # Automated release
 
-Once your cloned project is ready for a release, you should consider automating
-that.  [Cockpituous release](https://github.com/cockpit-project/cockpituous/tree/main/release)
-aims to fully automate project releases to GitHub, Fedora, Ubuntu, COPR, Docker
-Hub, and other places. The intention is that the only manual step for releasing
-a project is to create a signed tag for the version number; pushing the tag
-then triggers a GitHub webhook that calls a set of release scripts (on
-Cockpit's CI infrastructure).
+Releases are automated using [Cockpituous release](https://github.com/cockpit-project/cockpituous/tree/main/release)
+and [Packit](https://packit.dev/) which aim to fully automate project releases
+to GitHub, Fedora, Ubuntu, COPR, Docker Hub, and other places. The intention is
+that the only manual step for releasing a project is to create a signed tag for
+the version number.
 
-starter-kit includes an example [cockpitous release script](./cockpituous-release)
-that builds an upstream release tarball and source RPM. Please see the above
-cockpituous documentation for details.
+The release steps are controlled by the
+[cockpituous-release](./cockpituous-release) script and the [packit.yaml](./packit.yaml)
+control file.
 
-Automatic releases are triggered through the [release.yml](.github/workflows/release.yml)
+Pushing the release tag triggers the [release.yml](.github/workflows/release.yml)
 [GitHub action](https://github.com/features/actions) workflow. This uses the
-[cockpit-project organization secrets](https://github.com/organizations/cockpit-project/settings/secrets).
+[secrets from the release environment](https://github.com/cockpit-project/cockpit-ostree/settings/environments).
 
 # Automated maintenance
 

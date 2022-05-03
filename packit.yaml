@@ -11,8 +11,21 @@ actions:
   # https://medium.com/the-node-js-collection/node-js-memory-management-in-container-environments-7eb8409a74e8
   create-archive: make NODE_OPTIONS=--max-old-space-size=500 dist
 jobs:
-- job: copr_build
-  metadata:
-    targets:
-    - fedora-rawhide-x86_64
-  trigger: pull_request
+  - job: copr_build
+    metadata:
+      targets:
+      - fedora-rawhide-x86_64
+    trigger: pull_request
+
+  - job: copr_build
+    trigger: release
+    metadata:
+      owner: cockpit
+      project: cockpit-preview
+      preserve_project: True
+      targets:
+      - fedora-35
+      - fedora-36
+      - fedora-development
+      - centos-stream-8-x86_64
+      - centos-stream-9-x86_64
