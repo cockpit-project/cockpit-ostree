@@ -17,17 +17,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-05-02 04:05+0000\n"
-"PO-Revision-Date: 2020-05-10 09:40+0000\n"
-"Last-Translator: Álvaro Castillo <sincorchetes@gmail.com>\n"
+"POT-Creation-Date: 2022-05-10 03:15+0000\n"
+"PO-Revision-Date: 2022-05-10 10:18+0000\n"
+"Last-Translator: Pablo Munoz Alabau <pamual@posteo.es>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit-"
-"ostree/master/es/>\n"
+"ostree/main/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 4.0.4\n"
+"X-Generator: Weblate 4.12.1\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -42,10 +42,8 @@ msgid "Add Another Key"
 msgstr "Añadir otra clave"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-#, fuzzy
-#| msgid "- Add New Repository"
 msgid "Add New Repository"
-msgstr "- Añadir un repositorio nuevo"
+msgstr "Añadir un repositorio nuevo"
 
 #: src/app.jsx:244
 msgid "Additions"
@@ -61,11 +59,11 @@ msgstr "Disponible"
 
 #: src/changeRemoteModal.jsx:247
 msgid "Begins with $0"
-msgstr ""
+msgstr "Comienza por $0"
 
 #: src/app.jsx:175
 msgid "Branch"
-msgstr ""
+msgstr "Rama"
 
 #: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:191
 #: src/changeRemoteModal.jsx:253
@@ -81,10 +79,8 @@ msgid "Check for Updates"
 msgstr "Comprobar actualizaciones"
 
 #: src/app.jsx:500
-#, fuzzy
-#| msgid "Checking for updates"
 msgid "Checking for package updates..."
-msgstr "Comprobando actualizaciones"
+msgstr "Comprobando actualizaciones de paquetes..."
 
 #: src/app.jsx:156
 msgid "Checking for updates"
@@ -115,10 +111,8 @@ msgid "Failed"
 msgstr "Falló"
 
 #: src/changeRemoteModal.jsx:248
-#, fuzzy
-#| msgid "Public Key"
 msgid "GPG Public Key"
-msgstr "Llave pública"
+msgstr "Llave pública GPG"
 
 #: src/app.jsx:350
 msgid "Good Signature"
