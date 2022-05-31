@@ -84,19 +84,23 @@ You can also run the test against a different Cockpit image, for example:
 
 # Automated release
 
-Releases are automated using [Cockpituous release](https://github.com/cockpit-project/cockpituous/tree/main/release)
-and [Packit](https://packit.dev/) which aim to fully automate project releases
-to GitHub, Fedora, Ubuntu, COPR, Docker Hub, and other places. The intention is
-that the only manual step for releasing a project is to create a signed tag for
-the version number.
+The intention is that the only manual step for releasing a project is to create
+a signed tag for the version number, which includes a summary of the noteworthy
+changes:
 
-The release steps are controlled by the
-[cockpituous-release](./cockpituous-release) script and the [packit.yaml](./packit.yaml)
-control file.
+```
+123
+
+- this new feature
+- fix bug #123
+```
 
 Pushing the release tag triggers the [release.yml](.github/workflows/release.yml)
-[GitHub action](https://github.com/features/actions) workflow. This uses the
-[secrets from the release environment](https://github.com/cockpit-project/cockpit-ostree/settings/environments).
+[GitHub action](https://github.com/features/actions) workflow. This creates the
+official release tarball and publishes as upstream release to GitHub.
+
+The Fedora and COPR releases are done with [Packit](https://packit.dev/),
+see the [packit.yaml](./packit.yaml) control file.
 
 # Automated maintenance
 
