@@ -1,12 +1,18 @@
+upstream_project_url: https://github.com/cockpit-project/cockpit-ostree
 specfile_path: cockpit-ostree.spec
 upstream_package_name: cockpit-ostree
 downstream_package_name: cockpit-ostree
+# use the nicely formatted release description from our upstream release, instead of git shortlog
+copy_upstream_release_description: true
+
 srpm_build_deps:
 - make
 - npm
+
 actions:
   post-upstream-clone: make cockpit-ostree.spec
   create-archive: make dist
+
 jobs:
   - job: copr_build
     metadata:
@@ -33,3 +39,27 @@ jobs:
       create-archive:
         - sh -exc "curl -L -O https://github.com/cockpit-project/cockpit-ostree/releases/download/${PACKIT_PROJECT_VERSION}/${PACKIT_PROJECT_NAME_VERSION}.tar.xz"
         - sh -exc "ls ${PACKIT_PROJECT_NAME_VERSION}.tar.xz"
+
+  - job: propose_downstream
+    trigger: release
+    metadata:
+      dist_git_branches:
+        - fedora-development
+        - fedora-35
+        - fedora-36
+
+  - job: koji_build
+    trigger: commit
+    metadata:
+      dist_git_branches:
+        - fedora-development
+        - fedora-35
+        - fedora-36
+
+  - job: bodhi_update
+    trigger: commit
+    metadata:
+      dist_git_branches:
+        # rawhide updates are created automatically
+        - fedora-35
+        - fedora-36
