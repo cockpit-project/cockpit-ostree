@@ -10,8 +10,7 @@ Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
 Requires: rpm-ostree
 
-# Download from https://github.com/cockpit-project/cockpit-ostree/releases
-Source: cockpit-ostree-%{version}.tar.xz
+Source: https://github.com/cockpit-project/%{name}/releases/download/%{version}/cockpit-ostree-%{version}.tar.xz
 
 %define debug_package %{nil}
 
