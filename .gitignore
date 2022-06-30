@@ -15,4 +15,5 @@ test/images/
 *.mo
 *.pot
 POTFILES*
-tmp/weblate-repo
+tmp/
+/tools
