@@ -9,7 +9,7 @@ dist/
 package-lock.json
 Test*FAIL*
 bots/
-src/lib/
+pkg
 test/common/
 test/images/
 *.mo

@@ -24,7 +24,7 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
 
-import './lib/patternfly/patternfly-4-cockpit.scss';
+import 'patternfly/patternfly-4-cockpit.scss';
 
 import {
     Title, Button, Alert,
