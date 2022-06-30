@@ -17,8 +17,8 @@ VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 NODE_MODULES_TEST=package-lock.json
 # one example file in dist/ from webpack to check if that already ran
 WEBPACK_TEST=dist/manifest.json
-# one example file in src/lib to check if it was already checked out
-LIB_TEST=src/lib/cockpit-po-plugin.js
+# one example file in pkg/lib to check if it was already checked out
+LIB_TEST=pkg/lib/cockpit-po-plugin.js
 
 all: $(WEBPACK_TEST)
 
@@ -83,7 +83,7 @@ $(TARFILE): $(WEBPACK_TEST) $(PACKAGE_NAME).spec
 	touch dist/*
 	tar --xz -cf $(TARFILE) --transform 's,^,$(PACKAGE_NAME)/,' \
 		--exclude $(PACKAGE_NAME).spec.in --exclude node_modules --exclude test/reference \
-		$$(git ls-files) src/lib package-lock.json $(PACKAGE_NAME).spec dist/
+		$$(git ls-files) pkg/lib package-lock.json $(PACKAGE_NAME).spec dist/
 
 $(NODE_CACHE): $(NODE_MODULES_TEST)
 	tar --xz -cf $@ node_modules
@@ -154,7 +154,6 @@ $(LIB_TEST):
 	    git fetch --depth=1 https://github.com/cockpit-project/cockpit.git 282.1; \
 	    git checkout --force FETCH_HEAD -- pkg/lib; \
 	    git reset -- pkg/lib'
-	mv pkg/lib src/ && rmdir -p pkg
 
 $(NODE_MODULES_TEST): package.json
 	# if it exists already, npm install won't update it; force that so that we always get up-to-date packages

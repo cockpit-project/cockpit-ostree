@@ -5,7 +5,7 @@ const extract = require("mini-css-extract-plugin");
 const TerserJSPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
-const CockpitPoPlugin = require("./src/lib/cockpit-po-plugin");
+const CockpitPoPlugin = require("./pkg/lib/cockpit-po-plugin");
 
 const webpack = require("webpack");
 
@@ -54,10 +54,10 @@ const babel_loader = {
 module.exports = {
     mode: production ? 'production' : 'development',
     resolve: {
-        modules: [ "node_modules", path.resolve(__dirname, 'src/lib') ],
+        modules: [ "node_modules", path.resolve(__dirname, 'pkg/lib') ],
     },
     resolveLoader: {
-        modules: [ "node_modules", path.resolve(__dirname, 'src/lib') ],
+        modules: [ "node_modules", path.resolve(__dirname, 'pkg/lib') ],
     },
     watchOptions: {
         ignored: /node_modules/,

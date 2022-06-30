@@ -20,7 +20,7 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 @use "page.scss";
-@import "./lib/patternfly/patternfly-4-overrides.scss";
+@import "patternfly/patternfly-4-overrides.scss";
 
 .available-deployments-nav-content {
     padding: var(--pf-c-data-list__expandable-content-body--PaddingTop);
