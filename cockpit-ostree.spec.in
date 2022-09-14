@@ -21,7 +21,7 @@ Cockpit component for managing software updates for ostree based systems.
 %setup -n cockpit-ostree
 
 %install
-%make_install
+%make_install PREFIX=/usr
 
 %files
 %doc README.md
