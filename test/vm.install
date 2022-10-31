@@ -7,13 +7,7 @@ mkdir -p /etc/cockpit
 printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
 
 # Install cockpit and run it once to generate certificate; avoids slow startups during tests
-# different commands on Atomic and Fedora CoreOS
-if type atomic >/dev/null 2>&1; then
-    atomic install cockpit/ws
-    atomic --ignore run cockpit/ws
-else
-    podman container runlabel INSTALL cockpit/ws
-fi
+podman container runlabel INSTALL cockpit/ws
 
 # fedora-coreos does not have this checkout
 if [ ! -d /var/local-tree ]; then
