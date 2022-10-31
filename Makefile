@@ -98,16 +98,9 @@ $(SRPMFILE): $(TARFILE) $(PACKAGE_NAME).spec
 
 rpm: $(RPMFILE)
 
-# this is a noarch build, so local rpm build works fine for recent OSes; but
-# RHEL/CentOS Atomic don't get along with rpms built on Fedora ≥ 31
+# this is a noarch build, so local rpm build works fine for recent OSes
 $(RPMFILE): $(SRPMFILE) bots
-	set -e; srpm=`ls *.src.rpm | head -n1`; \
-	if [ "$${TEST_OS%-atomic}" != "$$TEST_OS" ]; then \
-	    bots/image-download centos-7; \
-	    test/rpmbuild-vm "$$srpm" centos-7; \
-	else \
-	    test/rpmbuild-local "$$srpm"; \
-	fi
+	test/rpmbuild-local $(SRPMFILE)
 
 # build a VM with locally built rpm installed, cockpit/ws container, and local
 # ostree for testing
