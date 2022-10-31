@@ -7,8 +7,10 @@ endif
 export TEST_OS
 TARFILE=$(PACKAGE_NAME)-$(VERSION).tar.xz
 NODE_CACHE=$(PACKAGE_NAME)-node-$(VERSION).tar.xz
-RPMFILE=$(shell rpmspec -D"VERSION $(VERSION)" -q $(PACKAGE_NAME).spec.in).rpm
-SRPMFILE=$(subst noarch,src,$(RPMFILE))
+# rpmspec -q behaves differently in Fedora ≥ 37
+RPMQUERY=$(shell rpmspec -D"VERSION $(VERSION)" -q --srpm $(PACKAGE_NAME).spec.in).rpm
+SRPMFILE=$(subst noarch,src,$(RPMQUERY))
+RPMFILE=$(subst src,noarch,$(RPMQUERY))
 PREFIX ?= /usr/local
 VM_IMAGE=$(CURDIR)/test/images/$(TEST_OS)
 # stamp file to check if/when npm install ran
