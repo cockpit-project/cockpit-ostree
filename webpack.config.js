@@ -65,8 +65,6 @@ module.exports = {
     entry: {
         ostree: [ "./src/app.jsx", "./src/ostree.scss" ],
     },
-    // cockpit.js gets included via <script>, everything else should be bundled
-    externals: { "cockpit": "cockpit" },
     devtool: "source-map",
     stats: "errors-warnings",
 
