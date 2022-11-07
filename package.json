@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "@patternfly/patternfly": "4.219.2",
-    "@patternfly/react-core": "4.258.3",
+    "@patternfly/react-core": "4.258.6",
     "@patternfly/react-icons": "4.92.10",
     "@patternfly/react-styles": "4.91.10",
     "date-fns": "2.28.0",
