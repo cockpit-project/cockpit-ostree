@@ -3,17 +3,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-11-30 03:13+0000\n"
-"PO-Revision-Date: 2020-02-03 07:25+0000\n"
-"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
+"POT-Creation-Date: 2022-12-08 03:03+0000\n"
+"PO-Revision-Date: 2022-12-08 14:20+0000\n"
+"Last-Translator: Vanhoorne Michael <michaeltjevanhoorne@gmail.com>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/cockpit-"
-"ostree/master/nl/>\n"
+"ostree/main/nl/>\n"
 "Language: nl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 3.10.3\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -28,8 +28,6 @@ msgid "Add Another Key"
 msgstr "Nog een sleutel toevoegen"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-#, fuzzy
-#| msgid "- Add New Repository"
 msgid "Add New Repository"
 msgstr "- Voeg nieuwe repository toe"
 
@@ -67,10 +65,8 @@ msgid "Check for Updates"
 msgstr "Controleer op updates"
 
 #: src/app.jsx:500
-#, fuzzy
-#| msgid "Checking for updates"
 msgid "Checking for package updates..."
-msgstr "Controleren op updates"
+msgstr "Controleren op updates..."
 
 #: src/app.jsx:156
 msgid "Checking for updates"
@@ -102,7 +98,7 @@ msgstr "Mislukt"
 
 #: src/changeRemoteModal.jsx:248
 msgid "GPG Public Key"
-msgstr ""
+msgstr "GPG Publieke sleutel"
 
 #: src/app.jsx:350
 msgid "Good Signature"
