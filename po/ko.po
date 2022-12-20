@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-12-08 03:03+0000\n"
-"PO-Revision-Date: 2022-11-03 04:19+0000\n"
+"POT-Creation-Date: 2022-12-15 03:05+0000\n"
+"PO-Revision-Date: 2022-12-15 07:20+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/ko/>\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 4.14.1\n"
+"X-Generator: Weblate 4.14.2\n"
 
 #: src/client.js:473
 msgid "$0 key ID"
@@ -145,7 +145,7 @@ msgstr "OS $0 찾을 수 없습니다"
 
 #: src/app.jsx:480
 msgid "OSTree is not available on this system"
-msgstr "OSTree는 이 시스템에 이용 할 수 없습니다"
+msgstr "OSTree는 이 시스템에서 사용 할 수 없습니다"
 
 #: src/app.jsx:327
 msgid "Operating System"
@@ -247,7 +247,7 @@ msgstr "URL"
 
 #: src/app.jsx:126
 msgid "Unable to communicate with OSTree"
-msgstr "OSTree와 함께 통신 할 수 없습니다"
+msgstr "OSTree와 통신 할 수 없습니다"
 
 #: src/app.jsx:386
 msgid "Update and Reboot"
