@@ -18,6 +18,7 @@
  */
 
 "use strict";
+import 'cockpit-dark-theme'; // once per page
 
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
