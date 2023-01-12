@@ -4,7 +4,7 @@ Version: %{VERSION}
 Release: 1%{?dist}
 BuildArch: noarch
 Summary: Cockpit user interface for rpm-ostree
-License: LGPLv2+
+License: LGPL-2.1-or-later
 BuildRequires: make
 Requires: cockpit-bridge >= 125
 Requires: cockpit-system >= 125
