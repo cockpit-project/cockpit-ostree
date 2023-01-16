@@ -50,8 +50,8 @@
     "webpack-cli": "^4.6.0"
   },
   "dependencies": {
-    "@patternfly/patternfly": "4.222.4",
-    "@patternfly/react-core": "4.267.14",
+    "@patternfly/patternfly": "4.223.0",
+    "@patternfly/react-core": "4.271.1",
     "@patternfly/react-icons": "4.93.3",
     "@patternfly/react-styles": "4.92.3",
     "date-fns": "2.28.0",
