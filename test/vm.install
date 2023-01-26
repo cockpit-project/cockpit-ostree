@@ -18,11 +18,11 @@ fi
 # create a local repository for tests
 mkdir -p /var/local-repo
 ostree init --repo /var/local-repo --mode archive-z2
-branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\):/ { s/^.*://; p; q }')
+branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\|rhel\):/ { s/^.*://; p; q }')
 ostree commit -s "cockpit-tree" --repo /var/local-repo --add-metadata-string version=cockpit-base.1  --tree=dir=/var/local-tree  -b $branch
 ostree remote add local file:///var/local-repo --no-gpg-verify
 # on fedora-coreos we use `rpm-ostree install`, which collides on rebase
-if [ "${branch%fedora*}" != "$branch" ]; then
+if [ "${branch%fedora*}" != "$branch" ] || [ "${branch%rhel*}" != "$branch" ]; then
     rpm-ostree rebase --uninstall=cockpit-ostree local:$branch
 else
     rpm-ostree rebase local:$branch
