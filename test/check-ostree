@@ -119,6 +119,11 @@ def rhsmcertd_hack(m):
     m.execute("systemctl disable rhsmcertd || true")
     m.execute("systemctl stop rhsmcertd || true")
 
+def get_name(self):
+    if self.image == "rhel4edge":
+        return "rhel"
+    return "fedora-coreos"
+
 
 class OstreeRestartCase(MachineCase):
     def switch_to_packages(self, b, sel, required_classes):
@@ -167,12 +172,12 @@ class OstreeRestartCase(MachineCase):
         sel_cur = get_list_item(1)
         sel_prev = get_list_item(2)
         sel_nonexist = get_list_item(3)
-        b.wait_text(sel_cur + ' .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_text(sel_cur + ' .deployment-name', f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(sel_cur + ' .deployment-status', "Running")
         b.wait_not_present(sel_cur + ' button.pf-m-secondary')
 
         b.wait_visible(sel_cur + " div.tree")
-        b.wait_in_text(sel_cur + " .os", "fedora-coreos")
+        b.wait_in_text(sel_cur + " .os", get_name(self))
         b.wait_in_text(sel_cur + " .version", "cockpit-base.1")
 
         b.assert_pixels("#repo-remote-toolbar", "remote-toolbar")
@@ -196,7 +201,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_not_in_text(sel_prev + ' .deployment-name', "cockpit")
         b.wait_in_text(sel_prev + ' .deployment-status', "Available")
         b.wait_in_text(sel_prev + " button.pf-m-secondary", "Roll Back")
-        b.wait_in_text(sel_prev + " .os", "fedora-coreos")
+        b.wait_in_text(sel_prev + " .os", get_name(self))
         b.wait_visible(sel_prev + " div.tree")
         b.wait_not_present(sel_prev + " div.packages")
 
@@ -236,7 +241,7 @@ class OstreeRestartCase(MachineCase):
 
         # Check update data
         b.wait_visible(f"{get_list_item(1)} div.tree")
-        b.wait_in_text(f"{get_list_item(1)} .os", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} .os", get_name(self))
         b.wait_in_text(f"{get_list_item(1)} .version", "cockpit-base.2")
 
         self.switch_to_packages(b, ".available-deployments li:nth-child(1)",
@@ -280,7 +285,7 @@ class OstreeRestartCase(MachineCase):
 
         # After reboot, check commit
         b.wait_visible('.available-deployments')
-        b.wait_text(sel_cur + ' .deployment-name', "fedora-coreos cockpit-base.2")
+        b.wait_text(sel_cur + ' .deployment-name', f"{get_name(self)} cockpit-base.2")
         b.wait_in_text(sel_cur + ' .deployment-status', "Running")
         b.wait_not_present(sel_cur + " button.pf-m-secondary")
         self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
@@ -292,10 +297,10 @@ class OstreeRestartCase(MachineCase):
         self.check_sig(b, sel_cur)
 
         # Check rollback target
-        b.wait_text(sel_prev + ' .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_text(sel_prev + ' .deployment-name', f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(sel_prev + ' .deployment-status', "Available")
         b.wait_in_text(sel_prev + ' button.pf-m-secondary', "Roll Back")
-        b.wait_in_text(sel_prev + ' .os', "fedora-coreos")
+        b.wait_in_text(sel_prev + ' .os', get_name(self))
         self.switch_to_packages(b, sel_prev,
                                 ['up', 'down',
                                  'adds', 'removes'])
@@ -321,11 +326,11 @@ class OstreeRestartCase(MachineCase):
         b.reload()
         b.login_and_go("/updates")
 
-        b.wait_text(sel_cur + " .deployment-name", "fedora-coreos cockpit-base.1")
+        b.wait_text(sel_cur + " .deployment-name", f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(sel_cur + " .deployment-status", "Running")
 
         b.wait_in_text(sel_prev + " .deployment-status", "Available")
-        b.wait_text(sel_prev + " .deployment-name", "fedora-coreos cockpit-base.2")
+        b.wait_text(sel_prev + " .deployment-name", f"{get_name(self)} cockpit-base.2")
         b.wait_in_text(sel_prev + " .pf-c-data-list__item-content button.pf-m-secondary", "Roll Back")
 
         b.wait_not_present(sel_nonexist)
@@ -358,17 +363,17 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text("#change-branch + ul li:last", "znew-branch")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
         b.click("#change-branch + ul li:last button")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Running")
         b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
 
         b.wait_in_text("#check-for-updates-btn", "Check for Updates")
         b.click("#check-for-updates-btn")
 
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos branch-version")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} branch-version")
         b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
         b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
-        b.wait_in_text(f"{get_list_item(1)} .os", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} .os", get_name(self))
         b.wait_in_text(f"{get_list_item(1)} .origin", "local:znew-branch")
 
         b.wait_not_present(f"{get_list_item(1)} div.packages")
@@ -397,7 +402,7 @@ class OstreeRestartCase(MachineCase):
 
         # After reboot, check commit
         sel = get_list_item(1)
-        b.wait_text(sel + ' .deployment-name', "fedora-coreos branch-version")
+        b.wait_text(sel + ' .deployment-name', f"{get_name(self)} branch-version")
         b.wait_in_text(sel + ' .deployment-status', "Running")
         b.wait_in_text(sel + ' .origin', "local:znew-branch")
 
@@ -544,15 +549,15 @@ class OstreeCase(MachineCase):
                          '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify = false')
 
         # Check updates display
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos cockpit-base.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(f"{get_list_item(1)} #osorigin", f"local:{branch}")
 
         b.click("#check-for-updates-btn")
 
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
         b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
         b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
-        b.wait_in_text(f"{get_list_item(1)} #osname", "fedora-coreos")
+        b.wait_in_text(f"{get_list_item(1)} #osname", get_name(self))
         b.wait_in_text(f"{get_list_item(1)} #osorigin", "zremote-test1:zremote-branch1")
 
         b.wait_not_present(f"{get_list_item(1)} .packages")
@@ -563,7 +568,7 @@ class OstreeCase(MachineCase):
         b.click("#change-branch")
         b.wait_in_text("#change-branch + ul li:first button", "zremote-branch1")
         b.click("#change-branch + ul li:first button")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
 
         # Refresh, back to local, pull in update
         b.reload()
@@ -571,7 +576,7 @@ class OstreeCase(MachineCase):
         b.wait_in_text("#change-branch", branch)
         b.click("#check-for-updates-btn")
         b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
 
         # Switching to branch shows pulled
         b.wait_text("#change-repo", "local")
@@ -583,9 +588,9 @@ class OstreeCase(MachineCase):
 
         b.wait_text("#change-repo", "zremote-test1")
         b.wait_in_text("#change-branch", "zremote-branch1")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos zremote-branch1.1")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
         b.wait_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_not_in_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
+        b.wait_not_in_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
 
         # delete
         b.click("#change-repo")
@@ -612,7 +617,7 @@ class OstreeCase(MachineCase):
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
-        b.wait_text(f'{get_list_item(1)} .deployment-name', "fedora-coreos bad-version")
+        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
         b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
         b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
 
