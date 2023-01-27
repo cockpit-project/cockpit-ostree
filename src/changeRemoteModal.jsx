@@ -51,7 +51,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                 onClick={() => {
             onChangeRemoteOrigin(selectedRemote).then(() => setIsModalOpen(false), ex => setError(ex.message));
         }}>
-            {_("Change Repository")}
+            {_("Change repository")}
         </Button>
         <Button key="cancel" variant="link" onClick={() => setIsModalOpen(false)}>
             {_("Cancel")}
@@ -59,7 +59,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
     </>;
 
     return (
-        <Modal title={_("Change Repository")}
+        <Modal title={_("Change repository")}
                position="top"
                variant="medium"
                appendTo={document.body}
@@ -110,7 +110,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                                    variant="link"
                                    icon={<AddCircleOIcon />}
                                    id="add-new-remote-btn"
-                                   iconPosition="left">{_("Add New Repository")}</Button>
+                                   iconPosition="left">{_("Add new repository")}</Button>
                         </SimpleListItem>
                         : <div key="add new" className="pf-c-simple-list__item-link">
                             <AddNewRepoForm refreshRemotes={refreshRemotes} setAddNewRepoDialogOpen={setAddNewRepoDialogOpen} />
@@ -153,7 +153,7 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
     return (
         <Form isHorizontal>
             <Title headingLevel="h3" size="l">
-                {_("Add New Repository")}
+                {_("Add new repository")}
             </Title>
             {addNewRepoError && <Alert variant="danger" isInline title={addNewRepoError} />}
             <FormGroup label={_("Name")}
@@ -242,10 +242,10 @@ const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes 
                           }} />
             </FormGroup>
             <FormGroup fieldId="add-another-key">
-                {!addAnotherKey ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add Another Key")}</Button>
+                {!addAnotherKey ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
                  : <TextArea id='gpg-data'
                              placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
-                             value={key} onChange={setKey} aria-label={_("GPG Public Key")} />}
+                             value={key} onChange={setKey} aria-label={_("GPG public key")} />}
             </FormGroup>
             <ActionGroup>
                 <Button isInline variant="danger" className="delete-btn" onClick={onDelete}>{_("Delete")}</Button>

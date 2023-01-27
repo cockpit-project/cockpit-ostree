@@ -147,7 +147,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text(f"{sel} div.signatures", KEY_ID)
         b.wait_in_text(f"{sel} div.signatures", "RSA")
         b.wait_in_text(f"{sel} div.signatures", "Cockpit Tester <do-not-reply@cockpit-project.org>")
-        b.wait_in_text(f"{sel} div.signatures", "Good Signature")
+        b.wait_in_text(f"{sel} div.signatures", "Good signature")
         b.wait_in_text(f"{sel} div.signatures", "When")
 
     def testOstree(self):
@@ -200,13 +200,13 @@ class OstreeRestartCase(MachineCase):
 
         b.wait_not_in_text(sel_prev + ' .deployment-name', "cockpit")
         b.wait_in_text(sel_prev + ' .deployment-status', "Available")
-        b.wait_in_text(sel_prev + " button.pf-m-secondary", "Roll Back")
+        b.wait_in_text(sel_prev + " button.pf-m-secondary", "Roll back")
         b.wait_in_text(sel_prev + " .os", get_name(self))
         b.wait_visible(sel_prev + " div.tree")
         b.wait_not_present(sel_prev + " div.packages")
 
         # Check for new commit, get error
-        b.wait_in_text("#check-for-updates-btn", "Check for Updates")
+        b.wait_in_text("#check-for-updates-btn", "Check for updates")
         b.click("#check-for-updates-btn")
         b.wait_visible('#app .pf-c-alert.pf-m-warning')
         b.wait_visible("#check-for-updates-btn:not(disabled)")
@@ -299,7 +299,7 @@ class OstreeRestartCase(MachineCase):
         # Check rollback target
         b.wait_text(sel_prev + ' .deployment-name', f"{get_name(self)} cockpit-base.1")
         b.wait_in_text(sel_prev + ' .deployment-status', "Available")
-        b.wait_in_text(sel_prev + ' button.pf-m-secondary', "Roll Back")
+        b.wait_in_text(sel_prev + ' button.pf-m-secondary', "Roll back")
         b.wait_in_text(sel_prev + ' .os', get_name(self))
         self.switch_to_packages(b, sel_prev,
                                 ['up', 'down',
@@ -312,7 +312,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_text(sel_prev + " dl.removes dd", "empty-1-0.noarch")
 
         # Rollback
-        b.wait_visible("button:contains('Roll Back')")
+        b.wait_visible("button:contains('Roll back')")
         b.click(sel_prev + " button.pf-m-secondary")
         b.wait_visible(sel_prev + " .deployment-status")
 
@@ -331,7 +331,7 @@ class OstreeRestartCase(MachineCase):
 
         b.wait_in_text(sel_prev + " .deployment-status", "Available")
         b.wait_text(sel_prev + " .deployment-name", f"{get_name(self)} cockpit-base.2")
-        b.wait_in_text(sel_prev + " .pf-c-data-list__item-content button.pf-m-secondary", "Roll Back")
+        b.wait_in_text(sel_prev + " .pf-c-data-list__item-content button.pf-m-secondary", "Roll back")
 
         b.wait_not_present(sel_nonexist)
 
@@ -367,7 +367,7 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Running")
         b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
 
-        b.wait_in_text("#check-for-updates-btn", "Check for Updates")
+        b.wait_in_text("#check-for-updates-btn", "Check for updates")
         b.click("#check-for-updates-btn")
 
         b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} branch-version")
@@ -433,9 +433,9 @@ class OstreeCase(MachineCase):
         b.wait_text("#change-repo", "local")
         b.click("#change-repo")
 
-        b.wait_in_text(".pf-c-modal-box h1", "Change Repository")
+        b.wait_in_text(".pf-c-modal-box h1", "Change repository")
         b.wait_in_text(".pf-c-modal-box .pf-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-c-modal-box li:last", "Add New Repository")
+        b.wait_in_text(".pf-c-modal-box li:last", "Add new repository")
 
         b.click(".pf-c-modal-box li:last button")
         b.click(".pf-c-modal-box #new-gpg-verify")
@@ -453,7 +453,7 @@ class OstreeCase(MachineCase):
         b.wait_not_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
         b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
         b.wait_in_text(".pf-c-modal-box .pf-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-c-modal-box li:last button", "Add New Repository")
+        b.wait_in_text(".pf-c-modal-box li:last button", "Add new repository")
         b.click(".pf-c-modal-box #zremote-test1 a")
 
         b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")

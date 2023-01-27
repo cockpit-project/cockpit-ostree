@@ -126,7 +126,7 @@ const Curtain = ({ state, failure, message, reconnect }) => {
     else if (state === 'failed')
         title = _("Unable to communicate with OSTree");
     else if (state === 'empty')
-        title = _("No Deployments");
+        title = _("No deployments");
 
     return (
         <EmptyState variant={EmptyStateVariant.full}>
@@ -194,7 +194,7 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
                                 isLoading={!!client.local_running || !!progressMsg}
                                 isDisabled={!!client.local_running || !!progressMsg}
                                 onClick={checkForUpgrades}>
-                            {_("Check for Updates")}
+                            {_("Check for updates")}
                         </Button>
                     </ToolbarItem>
                 </ToolbarContent>
@@ -325,7 +325,7 @@ const DeploymentVersion = ({ info, packages }) => {
     const treeTab = (
         <DescriptionList isHorizontal>
             <DescriptionListGroup>
-                <DescriptionListTerm>{ _("Operating System") }</DescriptionListTerm>
+                <DescriptionListTerm>{ _("Operating system") }</DescriptionListTerm>
                 <DescriptionListDescription className="os" id="osname">{info.osname.v}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
@@ -348,7 +348,7 @@ const DeploymentVersion = ({ info, packages }) => {
         signaturesTab = [info.signatures.v.map((raw, index) => {
             const sig = client.signature_obj(raw);
             const when = new Date(sig.timestamp * 1000).toString();
-            const validity = sig.valid ? _("Good Signature") : (sig.expired ? _("Expired Signature") : _("Invalid Signature"));
+            const validity = sig.valid ? _("Good signature") : (sig.expired ? _("Expired signature") : _("Invalid signature"));
 
             return (
                 <DescriptionList isHorizontal key={index}>
@@ -384,13 +384,13 @@ const DeploymentVersion = ({ info, packages }) => {
                     <DataListCell key="action" width={2}>
                         {isUpdate(info) && <Button variant="secondary"
                                                    onClick={() => doUpgrade(info.osname.v, info.checksum.v)}
-                                                   isDisabled={!!client.local_running}>{_("Update and Reboot")}</Button>}
+                                                   isDisabled={!!client.local_running}>{_("Update and reboot")}</Button>}
                         {isRollback(info) && <Button variant="secondary"
                                                      onClick={() => doRollback(info.osname.v)}
-                                                     isDisabled={!!client.local_running}>{_("Roll Back and Reboot")}</Button>}
+                                                     isDisabled={!!client.local_running}>{_("Roll back and reboot")}</Button>}
                         {isRebase(info) && <Button variant="secondary"
                                                    onClick={() => doRebase(info.osname.v, info.origin.v, info.checksum.v)}
-                                                   isDisabled={!!client.local_running}>{_("Rebase and Reboot")}</Button>}
+                                                   isDisabled={!!client.local_running}>{_("Rebase and reboot")}</Button>}
                     </DataListCell>,
                 ]} />
             </DataListItemRow>
