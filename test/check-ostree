@@ -121,7 +121,7 @@ def rhsmcertd_hack(m):
 
 def get_name(self):
     if self.image == "rhel4edge":
-        return "rhel"
+        return "rhel-edge"
     return "fedora-coreos"
 
 
@@ -632,7 +632,7 @@ class OstreeCase(MachineCase):
         b.wait_in_text(".pf-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-c-empty-state button"))
 
-        b.become_superuser()
+        b.become_superuser(passwordless=m.image == "rhel4edge")
         b.switch_to_frame("cockpit1:localhost/updates")
         b.wait_visible('.available-deployments')
 
