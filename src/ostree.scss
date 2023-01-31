@@ -19,6 +19,7 @@
 
 /* ---------------------------------------------------------------------------------------------------- */
 
+@use "page.scss";
 @import "./lib/patternfly/patternfly-4-overrides.scss";
 
 .available-deployments-nav-content {
