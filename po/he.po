@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 03:02+0000\n"
+"POT-Creation-Date: 2023-02-06 02:57+0000\n"
 "PO-Revision-Date: 2021-10-07 18:05+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -30,16 +30,18 @@ msgid "Add"
 msgstr "הוספה"
 
 #: src/changeRemoteModal.jsx:245
-msgid "Add Another Key"
+#, fuzzy
+#| msgid "Add Another Key"
+msgid "Add another key"
 msgstr "הוספת מפתח נוסף"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
 #, fuzzy
 #| msgid "- Add New Repository"
-msgid "Add New Repository"
+msgid "Add new repository"
 msgstr "- הוספת מאגר חדש"
 
-#: src/app.jsx:244
+#: src/app.jsx:245
 msgid "Additions"
 msgstr "תוספות"
 
@@ -47,7 +49,7 @@ msgstr "תוספות"
 msgid "Apply"
 msgstr "החלה"
 
-#: src/app.jsx:322
+#: src/app.jsx:323
 msgid "Available"
 msgstr "זמין"
 
@@ -55,7 +57,7 @@ msgstr "זמין"
 msgid "Begins with $0"
 msgstr ""
 
-#: src/app.jsx:175
+#: src/app.jsx:176
 msgid "Branch"
 msgstr ""
 
@@ -65,24 +67,28 @@ msgid "Cancel"
 msgstr "ביטול"
 
 #: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
-msgid "Change Repository"
+#, fuzzy
+#| msgid "Change Repository"
+msgid "Change repository"
 msgstr "החלפת מאגר"
 
-#: src/app.jsx:196
-msgid "Check for Updates"
+#: src/app.jsx:197
+#, fuzzy
+#| msgid "Check for Updates"
+msgid "Check for updates"
 msgstr "חיפוש עדכונים"
 
-#: src/app.jsx:500
+#: src/app.jsx:501
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/app.jsx:156
+#: src/app.jsx:157
 msgid "Checking for updates"
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/app.jsx:124
+#: src/app.jsx:125
 msgid "Connecting to OSTree"
 msgstr "מתבצעת התחברות ל־OSTree"
 
@@ -90,43 +96,45 @@ msgstr "מתבצעת התחברות ל־OSTree"
 msgid "Delete"
 msgstr "מחיקה"
 
-#: src/app.jsx:247
+#: src/app.jsx:248
 msgid "Downgrades"
 msgstr "משנמך"
 
-#: src/app.jsx:535
+#: src/app.jsx:536
 msgid "Error loading remotes: $0"
 msgstr "שגיאה בטעינת המרוחקים: $0"
 
-#: src/app.jsx:350
-msgid "Expired Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Expired Signature"
+msgid "Expired signature"
 msgstr "חתימה שתוקפה פג"
 
-#: src/app.jsx:320
+#: src/app.jsx:321
 msgid "Failed"
 msgstr "כשל"
 
 #: src/changeRemoteModal.jsx:248
-msgid "GPG Public Key"
+msgid "GPG public key"
 msgstr ""
 
-#: src/app.jsx:350
-msgid "Good Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Good Signature"
+msgid "Good signature"
 msgstr "חתימה טובה"
 
-#: src/app.jsx:350
-msgid "Invalid Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Invalid Signature"
+msgid "Invalid signature"
 msgstr "חתימה שגויה"
 
 #: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "שם"
 
-#: src/app.jsx:128
-msgid "No Deployments"
-msgstr "אין הטמעות"
-
-#: src/app.jsx:453
+#: src/app.jsx:454
 msgid "No OSTree deployments found"
 msgstr "לא נמצאו הטמעות OSTree"
 
@@ -134,17 +142,23 @@ msgstr "לא נמצאו הטמעות OSTree"
 msgid "No configuration data found"
 msgstr "לא נמצאו נתוני הגדרות"
 
-#: src/app.jsx:166
+#: src/app.jsx:167
 msgid "No configured remotes"
 msgstr ""
 
-#: src/app.jsx:374
+#: src/app.jsx:129
+#, fuzzy
+#| msgid "No Deployments"
+msgid "No deployments"
+msgstr "אין הטמעות"
+
+#: src/app.jsx:375
 #, fuzzy
 #| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "אין חתימה זמינה"
 
-#: src/app.jsx:478
+#: src/app.jsx:479
 msgid "Not authorized to update software on this system"
 msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 
@@ -152,19 +166,21 @@ msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 msgid "OS $0 not found"
 msgstr "מערכת ההפעלה $0 לא נמצאה"
 
-#: src/app.jsx:480
+#: src/app.jsx:481
 msgid "OSTree is not available on this system"
 msgstr "OSTree אינה זמינה במערכת הזאת"
 
-#: src/app.jsx:327
-msgid "Operating System"
+#: src/app.jsx:328
+#, fuzzy
+#| msgid "Operating System"
+msgid "Operating system"
 msgstr "מערכת הפעלה"
 
-#: src/app.jsx:339
+#: src/app.jsx:340
 msgid "Origin"
 msgstr "מקור"
 
-#: src/app.jsx:400
+#: src/app.jsx:401
 msgid "Packages"
 msgstr "חבילות"
 
@@ -176,8 +192,10 @@ msgstr "נא לספק כתובת תקפה"
 msgid "Please provide a valid name"
 msgstr "לא לספק שם תקף"
 
-#: src/app.jsx:392
-msgid "Rebase and Reboot"
+#: src/app.jsx:393
+#, fuzzy
+#| msgid "Rebase and Reboot"
+msgid "Rebase and reboot"
 msgstr "המרת הבסיס והפעלה מחדש"
 
 #: src/client.js:56
@@ -192,29 +210,31 @@ msgstr "פריטי נתוני העל מתקבלים"
 msgid "Receiving objects: $0%"
 msgstr "מתקבלים פריטים: $0%"
 
-#: src/app.jsx:135
+#: src/app.jsx:136
 msgid "Reconnect"
 msgstr "התחברות מחדש"
 
-#: src/app.jsx:335
+#: src/app.jsx:336
 msgid "Released"
 msgstr "שוחרר"
 
-#: src/app.jsx:245
+#: src/app.jsx:246
 msgid "Removals"
 msgstr "הסרות"
 
-#: src/app.jsx:172
+#: src/app.jsx:173
 #, fuzzy
 #| msgid "Change Repository"
 msgid "Repository"
 msgstr "החלפת מאגר"
 
-#: src/app.jsx:389
-msgid "Roll Back and Reboot"
+#: src/app.jsx:390
+#, fuzzy
+#| msgid "Roll Back and Reboot"
+msgid "Roll back and reboot"
 msgstr "שחזור והפעלה מחדש"
 
-#: src/app.jsx:318
+#: src/app.jsx:319
 msgid "Running"
 msgstr "פועל"
 
@@ -222,34 +242,36 @@ msgstr "פועל"
 msgid "Scanning metadata"
 msgstr "נתוני העל נסרקים"
 
-#: src/app.jsx:177
+#: src/app.jsx:178
 msgid "Select branch"
 msgstr ""
 
-#: src/app.jsx:401
+#: src/app.jsx:402
 #, fuzzy
 #| msgid "Signature"
 msgid "Signatures"
 msgstr "חתימה"
 
-#: src/app.jsx:355
+#: src/app.jsx:356
 msgid "Signed by"
 msgstr "נחתם על ידי"
 
 #: src/index.html:22 src/manifest.json:0
-msgid "Software Updates"
+#, fuzzy
+#| msgid "Software Updates"
+msgid "Software updates"
 msgstr "עדכוני תכנה"
 
-#: src/app.jsx:93
+#: src/app.jsx:94
 msgid "System is up to date"
 msgstr ""
 
-#: src/app.jsx:227
+#: src/app.jsx:228
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "הטמעה זו כוללת את אותן החבילות כמו המערכת שפועלת כרגע"
 
-#: src/app.jsx:399
+#: src/app.jsx:400
 msgid "Tree"
 msgstr "עץ"
 
@@ -257,23 +279,25 @@ msgstr "עץ"
 msgid "URL"
 msgstr "כתובת"
 
-#: src/app.jsx:126
+#: src/app.jsx:127
 msgid "Unable to communicate with OSTree"
 msgstr "לא ניתן ליצור קשר עם OSTree"
 
-#: src/app.jsx:386
-msgid "Update and Reboot"
+#: src/app.jsx:387
+#, fuzzy
+#| msgid "Update and Reboot"
+msgid "Update and reboot"
 msgstr "עדכון והפעלה מחדש"
 
-#: src/app.jsx:99
+#: src/app.jsx:100
 msgid "Update available: $0"
 msgstr ""
 
-#: src/app.jsx:246
+#: src/app.jsx:247
 msgid "Updates"
 msgstr "עדכונים"
 
-#: src/app.jsx:316
+#: src/app.jsx:317
 msgid "Updating"
 msgstr "מתבצע עדכון"
 
@@ -281,15 +305,15 @@ msgstr "מתבצע עדכון"
 msgid "Use trusted GPG key"
 msgstr "להשתמש במפתח GPG מהימן"
 
-#: src/app.jsx:367
+#: src/app.jsx:368
 msgid "Validity"
 msgstr ""
 
-#: src/app.jsx:331
+#: src/app.jsx:332
 msgid "Version"
 msgstr "גרסה"
 
-#: src/app.jsx:359
+#: src/app.jsx:360
 msgid "When"
 msgstr "מתי"
 
@@ -297,7 +321,7 @@ msgstr "מתי"
 msgid "Writing objects"
 msgstr "פריטים נכתבים"
 
-#: src/app.jsx:609
+#: src/app.jsx:610
 #, fuzzy
 #| msgid "No Deployments"
 msgid "available deployments"

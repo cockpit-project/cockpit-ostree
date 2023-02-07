@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 03:02+0000\n"
+"POT-Creation-Date: 2023-02-06 02:57+0000\n"
 "PO-Revision-Date: 2022-01-06 08:16+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -29,14 +29,18 @@ msgid "Add"
 msgstr "添加"
 
 #: src/changeRemoteModal.jsx:245
-msgid "Add Another Key"
+#, fuzzy
+#| msgid "Add Another Key"
+msgid "Add another key"
 msgstr "添加另一个密钥"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
-msgid "Add New Repository"
+#, fuzzy
+#| msgid "Add New Repository"
+msgid "Add new repository"
 msgstr "添加新的源"
 
-#: src/app.jsx:244
+#: src/app.jsx:245
 msgid "Additions"
 msgstr "添加"
 
@@ -44,7 +48,7 @@ msgstr "添加"
 msgid "Apply"
 msgstr "应用"
 
-#: src/app.jsx:322
+#: src/app.jsx:323
 msgid "Available"
 msgstr "可用的"
 
@@ -52,7 +56,7 @@ msgstr "可用的"
 msgid "Begins with $0"
 msgstr "由 $0 开始"
 
-#: src/app.jsx:175
+#: src/app.jsx:176
 msgid "Branch"
 msgstr "分支"
 
@@ -62,22 +66,26 @@ msgid "Cancel"
 msgstr "取消"
 
 #: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
-msgid "Change Repository"
+#, fuzzy
+#| msgid "Change Repository"
+msgid "Change repository"
 msgstr "变更源"
 
-#: src/app.jsx:196
-msgid "Check for Updates"
+#: src/app.jsx:197
+#, fuzzy
+#| msgid "Check for Updates"
+msgid "Check for updates"
 msgstr "检查更新"
 
-#: src/app.jsx:500
+#: src/app.jsx:501
 msgid "Checking for package updates..."
 msgstr "正在检查软件包更新……"
 
-#: src/app.jsx:156
+#: src/app.jsx:157
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/app.jsx:124
+#: src/app.jsx:125
 msgid "Connecting to OSTree"
 msgstr "连接到系统树"
 
@@ -85,43 +93,47 @@ msgstr "连接到系统树"
 msgid "Delete"
 msgstr "删除"
 
-#: src/app.jsx:247
+#: src/app.jsx:248
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/app.jsx:535
+#: src/app.jsx:536
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
-#: src/app.jsx:350
-msgid "Expired Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Expired Signature"
+msgid "Expired signature"
 msgstr "过期的签名"
 
-#: src/app.jsx:320
+#: src/app.jsx:321
 msgid "Failed"
 msgstr "已失败"
 
 #: src/changeRemoteModal.jsx:248
-msgid "GPG Public Key"
+#, fuzzy
+#| msgid "GPG Public Key"
+msgid "GPG public key"
 msgstr "GPG 公钥"
 
-#: src/app.jsx:350
-msgid "Good Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Good Signature"
+msgid "Good signature"
 msgstr "正确的签名"
 
-#: src/app.jsx:350
-msgid "Invalid Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Invalid Signature"
+msgid "Invalid signature"
 msgstr "无效的签名"
 
 #: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "名称"
 
-#: src/app.jsx:128
-msgid "No Deployments"
-msgstr "没有部署"
-
-#: src/app.jsx:453
+#: src/app.jsx:454
 msgid "No OSTree deployments found"
 msgstr "没有找到 OSTree 部署"
 
@@ -129,15 +141,21 @@ msgstr "没有找到 OSTree 部署"
 msgid "No configuration data found"
 msgstr "未找到配置数据"
 
-#: src/app.jsx:166
+#: src/app.jsx:167
 msgid "No configured remotes"
 msgstr "没有已配置的远程"
 
-#: src/app.jsx:374
+#: src/app.jsx:129
+#, fuzzy
+#| msgid "No Deployments"
+msgid "No deployments"
+msgstr "没有部署"
+
+#: src/app.jsx:375
 msgid "No signature available"
 msgstr "没有可用的签名"
 
-#: src/app.jsx:478
+#: src/app.jsx:479
 msgid "Not authorized to update software on this system"
 msgstr "未授权更新该系统上的软件"
 
@@ -145,19 +163,21 @@ msgstr "未授权更新该系统上的软件"
 msgid "OS $0 not found"
 msgstr "未找到操作系统 $0"
 
-#: src/app.jsx:480
+#: src/app.jsx:481
 msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
-#: src/app.jsx:327
-msgid "Operating System"
+#: src/app.jsx:328
+#, fuzzy
+#| msgid "Operating System"
+msgid "Operating system"
 msgstr "操作系统"
 
-#: src/app.jsx:339
+#: src/app.jsx:340
 msgid "Origin"
 msgstr "Origin"
 
-#: src/app.jsx:400
+#: src/app.jsx:401
 msgid "Packages"
 msgstr "软件包"
 
@@ -169,8 +189,10 @@ msgstr "请提供有效的网址"
 msgid "Please provide a valid name"
 msgstr "请提供有效的名称"
 
-#: src/app.jsx:392
-msgid "Rebase and Reboot"
+#: src/app.jsx:393
+#, fuzzy
+#| msgid "Rebase and Reboot"
+msgid "Rebase and reboot"
 msgstr "重构并重启"
 
 #: src/client.js:56
@@ -185,27 +207,29 @@ msgstr "正在接收元数据对象"
 msgid "Receiving objects: $0%"
 msgstr "正在接收对象: $0%"
 
-#: src/app.jsx:135
+#: src/app.jsx:136
 msgid "Reconnect"
 msgstr "重新连接"
 
-#: src/app.jsx:335
+#: src/app.jsx:336
 msgid "Released"
 msgstr "发布于"
 
-#: src/app.jsx:245
+#: src/app.jsx:246
 msgid "Removals"
 msgstr "移除"
 
-#: src/app.jsx:172
+#: src/app.jsx:173
 msgid "Repository"
 msgstr "存储库"
 
-#: src/app.jsx:389
-msgid "Roll Back and Reboot"
+#: src/app.jsx:390
+#, fuzzy
+#| msgid "Roll Back and Reboot"
+msgid "Roll back and reboot"
 msgstr "回滚并重启"
 
-#: src/app.jsx:318
+#: src/app.jsx:319
 msgid "Running"
 msgstr "运行中"
 
@@ -213,32 +237,34 @@ msgstr "运行中"
 msgid "Scanning metadata"
 msgstr "正在扫描元数据"
 
-#: src/app.jsx:177
+#: src/app.jsx:178
 msgid "Select branch"
 msgstr "选择分支"
 
-#: src/app.jsx:401
+#: src/app.jsx:402
 msgid "Signatures"
 msgstr "签名"
 
-#: src/app.jsx:355
+#: src/app.jsx:356
 msgid "Signed by"
 msgstr "签名人"
 
 #: src/index.html:22 src/manifest.json:0
-msgid "Software Updates"
+#, fuzzy
+#| msgid "Software Updates"
+msgid "Software updates"
 msgstr "软件更新"
 
-#: src/app.jsx:93
+#: src/app.jsx:94
 msgid "System is up to date"
 msgstr "系统已更新到最新"
 
-#: src/app.jsx:227
+#: src/app.jsx:228
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "该部署与当前启动的系统包含相同的软件包"
 
-#: src/app.jsx:399
+#: src/app.jsx:400
 msgid "Tree"
 msgstr "Tree"
 
@@ -246,23 +272,25 @@ msgstr "Tree"
 msgid "URL"
 msgstr "网址"
 
-#: src/app.jsx:126
+#: src/app.jsx:127
 msgid "Unable to communicate with OSTree"
 msgstr "无法与 OSTree 通信"
 
-#: src/app.jsx:386
-msgid "Update and Reboot"
+#: src/app.jsx:387
+#, fuzzy
+#| msgid "Update and Reboot"
+msgid "Update and reboot"
 msgstr "更新并重启"
 
-#: src/app.jsx:99
+#: src/app.jsx:100
 msgid "Update available: $0"
 msgstr "更新可用：$0"
 
-#: src/app.jsx:246
+#: src/app.jsx:247
 msgid "Updates"
 msgstr "更新"
 
-#: src/app.jsx:316
+#: src/app.jsx:317
 msgid "Updating"
 msgstr "更新"
 
@@ -270,15 +298,15 @@ msgstr "更新"
 msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 
-#: src/app.jsx:367
+#: src/app.jsx:368
 msgid "Validity"
 msgstr "验证"
 
-#: src/app.jsx:331
+#: src/app.jsx:332
 msgid "Version"
 msgstr "版本"
 
-#: src/app.jsx:359
+#: src/app.jsx:360
 msgid "When"
 msgstr "当"
 
@@ -286,7 +314,7 @@ msgstr "当"
 msgid "Writing objects"
 msgstr "正在写对象"
 
-#: src/app.jsx:609
+#: src/app.jsx:610
 msgid "available deployments"
 msgstr "可用的部署"
 
