@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-01-10 03:02+0000\n"
+"POT-Creation-Date: 2023-02-06 02:57+0000\n"
 "PO-Revision-Date: 2018-02-22 05:00+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Japanese\n"
@@ -25,16 +25,18 @@ msgid "Add"
 msgstr "追加する"
 
 #: src/changeRemoteModal.jsx:245
-msgid "Add Another Key"
+#, fuzzy
+#| msgid "Add Another Key"
+msgid "Add another key"
 msgstr "別の鍵の追加"
 
 #: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
 #, fuzzy
 #| msgid "- Add New Repository"
-msgid "Add New Repository"
+msgid "Add new repository"
 msgstr "- 新規リポジトリーの追加"
 
-#: src/app.jsx:244
+#: src/app.jsx:245
 msgid "Additions"
 msgstr "追加"
 
@@ -42,7 +44,7 @@ msgstr "追加"
 msgid "Apply"
 msgstr "適用"
 
-#: src/app.jsx:322
+#: src/app.jsx:323
 msgid "Available"
 msgstr "利用可能"
 
@@ -50,7 +52,7 @@ msgstr "利用可能"
 msgid "Begins with $0"
 msgstr ""
 
-#: src/app.jsx:175
+#: src/app.jsx:176
 msgid "Branch"
 msgstr ""
 
@@ -60,24 +62,28 @@ msgid "Cancel"
 msgstr "取り消し"
 
 #: src/changeRemoteModal.jsx:54 src/changeRemoteModal.jsx:62
-msgid "Change Repository"
+#, fuzzy
+#| msgid "Change Repository"
+msgid "Change repository"
 msgstr "リポジトリーの変更"
 
-#: src/app.jsx:196
-msgid "Check for Updates"
+#: src/app.jsx:197
+#, fuzzy
+#| msgid "Check for Updates"
+msgid "Check for updates"
 msgstr "更新の確認"
 
-#: src/app.jsx:500
+#: src/app.jsx:501
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "更新の確認"
 
-#: src/app.jsx:156
+#: src/app.jsx:157
 msgid "Checking for updates"
 msgstr "更新の確認"
 
-#: src/app.jsx:124
+#: src/app.jsx:125
 msgid "Connecting to OSTree"
 msgstr "OSTree への接続"
 
@@ -85,45 +91,47 @@ msgstr "OSTree への接続"
 msgid "Delete"
 msgstr "削除"
 
-#: src/app.jsx:247
+#: src/app.jsx:248
 msgid "Downgrades"
 msgstr "ダウングレード"
 
-#: src/app.jsx:535
+#: src/app.jsx:536
 msgid "Error loading remotes: $0"
 msgstr "リモートのロード中にエラーが発生しました: $0"
 
-#: src/app.jsx:350
-msgid "Expired Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Expired Signature"
+msgid "Expired signature"
 msgstr "期限切れの署名"
 
-#: src/app.jsx:320
+#: src/app.jsx:321
 msgid "Failed"
 msgstr "失敗"
 
 #: src/changeRemoteModal.jsx:248
 #, fuzzy
 #| msgid "Public Key"
-msgid "GPG Public Key"
+msgid "GPG public key"
 msgstr "公開鍵"
 
-#: src/app.jsx:350
-msgid "Good Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Good Signature"
+msgid "Good signature"
 msgstr "優れた署名"
 
-#: src/app.jsx:350
-msgid "Invalid Signature"
+#: src/app.jsx:351
+#, fuzzy
+#| msgid "Invalid Signature"
+msgid "Invalid signature"
 msgstr "無効な署名"
 
 #: src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "名前"
 
-#: src/app.jsx:128
-msgid "No Deployments"
-msgstr "デプロイメントなし"
-
-#: src/app.jsx:453
+#: src/app.jsx:454
 msgid "No OSTree deployments found"
 msgstr "OSTree デプロイメントが見つかりません"
 
@@ -131,19 +139,25 @@ msgstr "OSTree デプロイメントが見つかりません"
 msgid "No configuration data found"
 msgstr "設定データが見つかりません"
 
-#: src/app.jsx:166
+#: src/app.jsx:167
 #, fuzzy
 #| msgid "No configuration found"
 msgid "No configured remotes"
 msgstr "設定が見つかりません"
 
-#: src/app.jsx:374
+#: src/app.jsx:129
+#, fuzzy
+#| msgid "No Deployments"
+msgid "No deployments"
+msgstr "デプロイメントなし"
+
+#: src/app.jsx:375
 #, fuzzy
 #| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "署名が利用できません"
 
-#: src/app.jsx:478
+#: src/app.jsx:479
 msgid "Not authorized to update software on this system"
 msgstr "このシステム上のソフトウェアを更新する権限がありません"
 
@@ -151,19 +165,21 @@ msgstr "このシステム上のソフトウェアを更新する権限があり
 msgid "OS $0 not found"
 msgstr "OS $0 が見つかりません"
 
-#: src/app.jsx:480
+#: src/app.jsx:481
 msgid "OSTree is not available on this system"
 msgstr "このシステムでは OSTree は利用できません"
 
-#: src/app.jsx:327
-msgid "Operating System"
+#: src/app.jsx:328
+#, fuzzy
+#| msgid "Operating System"
+msgid "Operating system"
 msgstr "オペレーティングシステム"
 
-#: src/app.jsx:339
+#: src/app.jsx:340
 msgid "Origin"
 msgstr "生成"
 
-#: src/app.jsx:400
+#: src/app.jsx:401
 msgid "Packages"
 msgstr "パッケージ"
 
@@ -175,8 +191,10 @@ msgstr "有効な URL を提供してください"
 msgid "Please provide a valid name"
 msgstr "有効な名前を提供してください"
 
-#: src/app.jsx:392
-msgid "Rebase and Reboot"
+#: src/app.jsx:393
+#, fuzzy
+#| msgid "Rebase and Reboot"
+msgid "Rebase and reboot"
 msgstr "リベースおよび再起動"
 
 #: src/client.js:56
@@ -191,27 +209,29 @@ msgstr "メタデータオブジェクトの受信"
 msgid "Receiving objects: $0%"
 msgstr "オブジェクトの受信: $0%"
 
-#: src/app.jsx:135
+#: src/app.jsx:136
 msgid "Reconnect"
 msgstr "再接続"
 
-#: src/app.jsx:335
+#: src/app.jsx:336
 msgid "Released"
 msgstr "リリース済み"
 
-#: src/app.jsx:245
+#: src/app.jsx:246
 msgid "Removals"
 msgstr "削除"
 
-#: src/app.jsx:172
+#: src/app.jsx:173
 msgid "Repository"
 msgstr "リポジトリー"
 
-#: src/app.jsx:389
-msgid "Roll Back and Reboot"
+#: src/app.jsx:390
+#, fuzzy
+#| msgid "Roll Back and Reboot"
+msgid "Roll back and reboot"
 msgstr "ロールバックおよび再起動"
 
-#: src/app.jsx:318
+#: src/app.jsx:319
 msgid "Running"
 msgstr "実行中"
 
@@ -219,38 +239,40 @@ msgstr "実行中"
 msgid "Scanning metadata"
 msgstr "メタデータのスキャン"
 
-#: src/app.jsx:177
+#: src/app.jsx:178
 #, fuzzy
 #| msgid "Select"
 msgid "Select branch"
 msgstr "選択"
 
-#: src/app.jsx:401
+#: src/app.jsx:402
 #, fuzzy
 #| msgid "Signature"
 msgid "Signatures"
 msgstr "署名"
 
-#: src/app.jsx:355
+#: src/app.jsx:356
 msgid "Signed by"
 msgstr "署名者"
 
 #: src/index.html:22 src/manifest.json:0
-msgid "Software Updates"
+#, fuzzy
+#| msgid "Software Updates"
+msgid "Software updates"
 msgstr "ソフトウェア更新"
 
-#: src/app.jsx:93
+#: src/app.jsx:94
 msgid "System is up to date"
 msgstr "システムは最新の状態です"
 
-#: src/app.jsx:227
+#: src/app.jsx:228
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "このデプロイメントには、現在起動されているシステムと同じパッケージが含まれて"
 "います"
 
-#: src/app.jsx:399
+#: src/app.jsx:400
 msgid "Tree"
 msgstr "ツリー"
 
@@ -258,25 +280,27 @@ msgstr "ツリー"
 msgid "URL"
 msgstr "URL"
 
-#: src/app.jsx:126
+#: src/app.jsx:127
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree と通信できません"
 
-#: src/app.jsx:386
-msgid "Update and Reboot"
+#: src/app.jsx:387
+#, fuzzy
+#| msgid "Update and Reboot"
+msgid "Update and reboot"
 msgstr "更新および再起動"
 
-#: src/app.jsx:99
+#: src/app.jsx:100
 #, fuzzy
 #| msgid "Not available"
 msgid "Update available: $0"
 msgstr "利用できません"
 
-#: src/app.jsx:246
+#: src/app.jsx:247
 msgid "Updates"
 msgstr "更新"
 
-#: src/app.jsx:316
+#: src/app.jsx:317
 msgid "Updating"
 msgstr "更新中"
 
@@ -284,17 +308,17 @@ msgstr "更新中"
 msgid "Use trusted GPG key"
 msgstr "信頼済み GPG 鍵の使用"
 
-#: src/app.jsx:367
+#: src/app.jsx:368
 #, fuzzy
 #| msgid "Validating key"
 msgid "Validity"
 msgstr "鍵の検証"
 
-#: src/app.jsx:331
+#: src/app.jsx:332
 msgid "Version"
 msgstr "バージョン"
 
-#: src/app.jsx:359
+#: src/app.jsx:360
 msgid "When"
 msgstr "日付"
 
@@ -302,7 +326,7 @@ msgstr "日付"
 msgid "Writing objects"
 msgstr "オブジェクトの書き込み"
 
-#: src/app.jsx:609
+#: src/app.jsx:610
 #, fuzzy
 #| msgid "Available Updates"
 msgid "available deployments"
