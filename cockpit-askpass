@@ -1,0 +1,4 @@
+#!/usr/bin/python3
+import sys
+from cockpit._vendor.ferny.interaction_client import main
+sys.exit(main())

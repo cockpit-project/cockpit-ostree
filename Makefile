@@ -139,12 +139,36 @@ rpm: $(TARFILE) $(NODE_CACHE) $(SPEC)
 	rm -r "`pwd`/rpmbuild"
 	rm -r "`pwd`/output" "`pwd`/build"
 
+# pybridge scenario: build and install the python bridge from cockpit repo
+# this is a giant hack to test the pybridge in a scenario before it gets packaged into cockpit-bridge.rpm
+ifeq ("$(TEST_SCENARIO)","pybridge")
+COCKPIT_PYBRIDGE_REF = main
+
+tmp/pybridge:
+	# no pip on FCOS
+	rm -rf tmp/pybridge
+	git init tmp/pybridge
+	git -C tmp/pybridge remote add origin https://github.com/cockpit-project/cockpit
+	git -C tmp/pybridge fetch --depth=1 origin ${COCKPIT_PYBRIDGE_REF}
+	git -C tmp/pybridge reset --hard FETCH_HEAD
+	tmp/pybridge/modules/checkout
+
+VM_DEPENDS = tmp/pybridge
+VM_CUSTOMIZE_FLAGS = --upload tmp/pybridge/modules/systemd_ctypes/src/systemd_ctypes:/tmp/pymods \
+	--upload tmp/pybridge/modules/ferny/src/ferny:/tmp/pymods \
+	--upload tmp/pybridge/src/cockpit:/tmp/pymods \
+	--run-command 'P=$$(python3 -c "import sysconfig; print(sysconfig.get_path('"'"'purelib'"'"'))"); \
+	               mkdir -p $$P; cp -r /tmp/pymods/* $$P' \
+	--run-command 'echo "python3 -m cockpit.bridge \"\$$@\"" > /usr/local/bin/cockpit-bridge; chmod a+x /usr/local/bin/cockpit-bridge' \
+	--upload cockpit-askpass:/usr/local/bin/cockpit-askpass
+endif
+
 # build a VM with locally built rpm installed, cockpit/ws container, and local
 # ostree for testing
-$(VM_IMAGE): rpm bots
+$(VM_IMAGE): rpm bots $(VM_DEPENDS)
 	rm -f $(VM_IMAGE) $(VM_IMAGE).qcow2
 	bots/image-customize -v --upload $$(ls $(PACKAGE_NAME)-*.noarch.rpm):/tmp/ \
-		--no-network \
+		--no-network $(VM_CUSTOMIZE_FLAGS) \
 		--run-command 'rpm -q cockpit-ostree && rpm-ostree --cache-only override replace /tmp/*.rpm || rpm-ostree --cache-only install /tmp/*.rpm' \
 		$(TEST_OS)
 	# building the local tree needs the modified tree from above booted already
