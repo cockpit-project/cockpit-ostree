@@ -36,8 +36,8 @@ function build_progress_line(progress_arg) {
         progress_arg[0].length !== 2 || progress_arg[1].length !== 2 ||
         progress_arg[2].length !== 3 || progress_arg[3].length !== 4 ||
         progress_arg[4].length !== 2 || progress_arg[5].length !== 2) {
-            console.warn("Unknown progress data", progress_arg);
-            return;
+        console.warn("Unknown progress data", progress_arg);
+        return;
     }
 
     let line;
@@ -132,26 +132,26 @@ function Packages(promise, transform) {
     cockpit.event_target(this);
 
     promise
-        .then(result => {
-            let empty = true;
-            if (transform)
-                result = transform(result);
+            .then(result => {
+                let empty = true;
+                if (transform)
+                    result = transform(result);
 
-            for (const k in result) {
-                this[k] = result[k];
-                empty = false;
-            }
+                for (const k in result) {
+                    this[k] = result[k];
+                    empty = false;
+                }
 
-            this.empty = empty;
-            this.valid = true;
-        })
-        .catch(ex => {
-            this.error = cockpit.message(ex);
-        })
-        .finally(() => {
-            this.ready = true;
-            this.dispatchEvent("changed");
-        });
+                this.empty = empty;
+                this.valid = true;
+            })
+            .catch(ex => {
+                this.error = cockpit.message(ex);
+            })
+            .finally(() => {
+                this.ready = true;
+                this.dispatchEvent("changed");
+            });
 }
 
 class RPMOSTreeDBusClient {
@@ -277,8 +277,8 @@ class RPMOSTreeDBusClient {
                     this.waits.resolve();
                 }
             });
-       }
-       return this.client;
+        }
+        return this.client;
     }
 
     tear_down(ex) {
@@ -512,7 +512,7 @@ class RPMOSTreeDBusClient {
                                             process_rpm_list);
                 } else if (id) {
                     promise = proxy.call("GetDeploymentsRpmDiff",
-                                             [this.booted_id, id]);
+                                         [this.booted_id, id]);
                     packages = new Packages(promise,
                                             process_diff_list);
                 } else if (item.origin.v === this.get_os_origin(proxy.Name)) {
@@ -553,21 +553,21 @@ class RPMOSTreeDBusClient {
                 return Promise.resolve(proxy.CachedUpdate);
 
             proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
-                .done(data => {
-                    let item;
-                    if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
-                        item = data[1];
-                        this.update_cache[refspec] = item;
-                        this.packages_cache[item.checksum.v] = new Packages(Promise.resolve([data[0]]),
-                                                                            process_diff_list);
-                    }
+                    .done(data => {
+                        let item;
+                        if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
+                            item = data[1];
+                            this.update_cache[refspec] = item;
+                            this.packages_cache[item.checksum.v] = new Packages(Promise.resolve([data[0]]),
+                                                                                process_diff_list);
+                        }
 
-                    if (item)
-                        dp.resolve(item);
-                    else
-                        dp.reject({ problem: "protocol-error" });
-                })
-                .fail(ex => dp.reject(ex));
+                        if (item)
+                            dp.resolve(item);
+                        else
+                            dp.reject({ problem: "protocol-error" });
+                    })
+                    .fail(ex => dp.reject(ex));
         } else {
             dp.reject(cockpit.format(_("OS $0 not found"), os));
         }
@@ -580,17 +580,17 @@ class RPMOSTreeDBusClient {
         const refspec = this.build_change_refspec(os, remote, branch);
         if (refspec) {
             promise = this.run_transaction("DownloadRebaseRpmDiff", [refspec, []], os)
-                        .then(() => {
-                            // Need to get and store the cached data.
-                            // Make it like this is part of the download
-                            // call.
-                            this.local_running = "DownloadRebaseRpmDiff:" + os;
-                            return this.cache_update_for(os, remote, branch)
-                                        .finally(() => {
-                                            this.local_running = null;
-                                            this.trigger_changed();
-                                        });
-                        });
+                    .then(() => {
+                        // Need to get and store the cached data.
+                        // Make it like this is part of the download
+                        // call.
+                        this.local_running = "DownloadRebaseRpmDiff:" + os;
+                        return this.cache_update_for(os, remote, branch)
+                                .finally(() => {
+                                    this.local_running = null;
+                                    this.trigger_changed();
+                                });
+                    });
         } else {
             promise = this.run_transaction("DownloadUpdateRpmDiff", null, os);
         }
@@ -602,8 +602,8 @@ class RPMOSTreeDBusClient {
             // Not all Systems support this so just skip if not known
             if (this.sysroot && this.sysroot.ReloadConfig) {
                 this.sysroot.ReloadConfig()
-                    .catch(ex => console.warn("Error reloading config:", ex))
-                    .finally(() => resolve());
+                        .catch(ex => console.warn("Error reloading config:", ex))
+                        .finally(() => resolve());
             } else {
                 resolve();
             }
@@ -652,55 +652,55 @@ class RPMOSTreeDBusClient {
         };
 
         this.connect()
-            .then(() => {
-                const proxy = this.get_os_proxy(os);
+                .then(() => {
+                    const proxy = this.get_os_proxy(os);
 
-                if (!proxy)
-                    return fail(cockpit.format(_("OS $0 not found"), os));
+                    if (!proxy)
+                        return fail(cockpit.format(_("OS $0 not found"), os));
 
-                this.reload().then(() => {
-                    proxy.call(method, method_args)
-                        .then(result => {
-                            const connect_args = {
-                                superuser: true,
-                                address: result[0],
-                                bus: "none"
-                            };
+                    this.reload().then(() => {
+                        proxy.call(method, method_args)
+                                .then(result => {
+                                    const connect_args = {
+                                        superuser: true,
+                                        address: result[0],
+                                        bus: "none"
+                                    };
 
-                            if (reboot)
-                                cockpit.hint('restart');
+                                    if (reboot)
+                                        cockpit.hint('restart');
 
-                            transaction_client = cockpit.dbus(null, connect_args);
-                            transaction_client.addEventListener("close", on_close);
+                                    transaction_client = cockpit.dbus(null, connect_args);
+                                    transaction_client.addEventListener("close", on_close);
 
-                            subscription = transaction_client.subscribe({ path: "/", },
-                                (path, iface, signal, args) => {
-                                    if (signal === "DownloadProgress") {
-                                        const line = build_progress_line(args);
-                                        if (line)
-                                            dp.notify(line);
-                                    } else if (signal === "Message") {
-                                        dp.notify(args[0]);
-                                    } else if (signal === "Finished") {
-                                        if (args) {
-                                            if (args[0]) {
-                                                dp.resolve(args[1]);
-                                                cleanup();
-                                            } else {
-                                                fail(args[1]);
-                                            }
-                                        } else {
-                                            console.warn("Unexpected transaction response", args);
-                                            fail({ problem: "protocol-error" });
-                                        }
-                                    }
-                                });
-                            transaction_client.call("/", TRANSACTION, "Start");
-                        })
-                        .catch(fail);
-                });
-            })
-            .catch(fail);
+                                    subscription = transaction_client.subscribe({ path: "/", },
+                                                                                (path, iface, signal, args) => {
+                                                                                    if (signal === "DownloadProgress") {
+                                                                                        const line = build_progress_line(args);
+                                                                                        if (line)
+                                                                                            dp.notify(line);
+                                                                                    } else if (signal === "Message") {
+                                                                                        dp.notify(args[0]);
+                                                                                    } else if (signal === "Finished") {
+                                                                                        if (args) {
+                                                                                            if (args[0]) {
+                                                                                                dp.resolve(args[1]);
+                                                                                                cleanup();
+                                                                                            } else {
+                                                                                                fail(args[1]);
+                                                                                            }
+                                                                                        } else {
+                                                                                            console.warn("Unexpected transaction response", args);
+                                                                                            fail({ problem: "protocol-error" });
+                                                                                        }
+                                                                                    }
+                                                                                });
+                                    transaction_client.call("/", TRANSACTION, "Start");
+                                })
+                                .catch(fail);
+                    });
+                })
+                .catch(fail);
 
         return dp.promise();
     }

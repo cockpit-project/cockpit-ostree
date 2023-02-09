@@ -35,7 +35,6 @@
         "camelcase": "off",
         "comma-dangle": "off",
         "curly": "off",
-        "indent": "off",
         "jsx-quotes": "off",
         "key-spacing": "off",
         "no-console": "off",

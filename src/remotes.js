@@ -26,31 +26,31 @@ const _ = cockpit.gettext;
 export function listRemotes() {
     return cockpit.spawn(["ostree", "remote", "list"],
                          { superuser: "try", err: "message" })
-        .then(output => {
-            const d = [];
-            output.trim().split(/\r\n|\r|\n/)
-                .forEach(v => { if (v) d.push(v); });
-            return d.sort();
-        });
+            .then(output => {
+                const d = [];
+                output.trim().split(/\r\n|\r|\n/)
+                        .forEach(v => { if (v) d.push(v); });
+                return d.sort();
+            });
 }
 
 export function listBranches(remote) {
     return client.reload().then(function () {
         return cockpit.spawn(["ostree", "remote", "refs", remote],
                              { superuser: "try", err: "message" })
-            .then(output => {
-                const d = [];
-                output.trim().split(/\r\n|\r|\n/)
-                    .forEach(v => {
-                        const parts = v.split(":");
-                        if (parts.length > 1)
-                            d.push(parts.slice(1).join(":"));
-                        else if (v)
-                            d.push(v);
-                    });
-                return d.sort();
-            });
-        });
+                .then(output => {
+                    const d = [];
+                    output.trim().split(/\r\n|\r|\n/)
+                            .forEach(v => {
+                                const parts = v.split(":");
+                                if (parts.length > 1)
+                                    d.push(parts.slice(1).join(":"));
+                                else if (v)
+                                    d.push(v);
+                            });
+                    return d.sort();
+                });
+    });
 }
 
 export function addRemote(name, url, gpg) {
@@ -71,7 +71,7 @@ export function deleteRemote(name) {
 
 export function importGPGKey(name, key) {
     const process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
-                                { superuser: "try", err: "message" });
+                                  { superuser: "try", err: "message" });
     process.input(key);
     return process;
 }
@@ -90,15 +90,15 @@ export function loadRemoteSettings(name) {
     const section = getSectionName(name);
     return new Promise((resolve, reject) => {
         file.read()
-            .then(content => {
-                const data = parseData(content);
-                if (data[section])
-                    resolve(data[section]);
-                else
-                    reject(_("No configuration data found"));
-            })
-            .catch(reject)
-            .finally(file.close);
+                .then(content => {
+                    const data = parseData(content);
+                    if (data[section])
+                        resolve(data[section]);
+                    else
+                        reject(_("No configuration data found"));
+                })
+                .catch(reject)
+                .finally(file.close);
     });
 }
 
