@@ -6,11 +6,13 @@ const TerserJSPlugin = require('terser-webpack-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const CompressionPlugin = require("compression-webpack-plugin");
 const CockpitPoPlugin = require("./pkg/lib/cockpit-po-plugin");
-
-const webpack = require("webpack");
+const ESLintPlugin = require('eslint-webpack-plugin');
 
 /* A standard nodejs and webpack pattern */
 const production = process.env.NODE_ENV === 'production';
+
+/* development options for faster iteration */
+const eslint = process.env.ESLINT !== '0';
 
 // Non-JS files which are copied verbatim to dist/
 const copy_files = [
@@ -23,6 +25,10 @@ const plugins = [
     new extract({filename: "[name].css"}),
     new CockpitPoPlugin(),
 ];
+
+if (eslint) {
+    plugins.push(new ESLintPlugin({ extensions: ["js", "jsx"], failOnWarning: true, }));
+}
 
 /* Only minimize when in production mode */
 if (production) {
@@ -86,12 +92,6 @@ module.exports = {
 
     module: {
         rules: [
-            {
-                enforce: 'pre',
-                exclude: /node_modules/,
-                loader: 'eslint-loader',
-                test: /\.(js|jsx)$/
-            },
             {
                 exclude: /node_modules/,
                 use: babel_loader,
