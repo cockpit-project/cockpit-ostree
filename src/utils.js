@@ -72,7 +72,7 @@ function changeData(string, section, options) {
     /* Find the section and set any existing options */
     for (i = 0; i < lines.length; i++) {
         let line = lines[i];
-        var m, k;
+        let m, k;
         if (configRegex.section.test(line)) {
             /* Leaving section stop processing */
             if (in_section)
