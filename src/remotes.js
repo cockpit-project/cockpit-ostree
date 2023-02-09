@@ -54,7 +54,7 @@ export function listBranches(remote) {
 }
 
 export function addRemote(name, url, gpg) {
-    var cmd = ["ostree", "remote", "add"];
+    const cmd = ["ostree", "remote", "add"];
     if (gpg)
         cmd.push("--set=gpg-verify=true");
     else
@@ -70,7 +70,7 @@ export function deleteRemote(name) {
 }
 
 export function importGPGKey(name, key) {
-    var process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
+    const process = cockpit.spawn(["ostree", "remote", "gpg-import", "--stdin", name],
                                 { superuser: "try", err: "message" });
     process.input(key);
     return process;

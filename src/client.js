@@ -40,16 +40,16 @@ function build_progress_line(progress_arg) {
             return;
     }
 
-    var line;
-    var outstanding_fetches = progress_arg[1][0];
-    var outstanding_writes = progress_arg[1][0];
+    let line;
+    const outstanding_fetches = progress_arg[1][0];
+    const outstanding_writes = progress_arg[1][0];
 
-    var outstanding_metadata_fetches = progress_arg[2][2];
+    const outstanding_metadata_fetches = progress_arg[2][2];
 
-    var total_delta_parts = progress_arg[3][0];
+    const total_delta_parts = progress_arg[3][0];
 
-    var fetched = progress_arg[4][0];
-    var requested = progress_arg[4][1];
+    const fetched = progress_arg[4][0];
+    const requested = progress_arg[4][1];
 
     if (outstanding_fetches) {
         if (total_delta_parts > 0) {
@@ -57,7 +57,7 @@ function build_progress_line(progress_arg) {
         } else if (outstanding_metadata_fetches) {
             line = _("Receiving metadata objects");
         } else {
-            var percent = (fetched / requested) * 100;
+            const percent = (fetched / requested) * 100;
             line = cockpit.format(_("Receiving objects: $0%"), percent.toFixed(2));
         }
     } else if (outstanding_writes) {
@@ -69,16 +69,16 @@ function build_progress_line(progress_arg) {
 }
 
 function process_diff_list(result) {
-    var key_names = ["adds", "removes", "up", "down"];
-    var list = result[0];
-    var diffs = {};
-    for (var i = 0; i < list.length; i++) {
-        var key = key_names[list[i][1]];
+    const key_names = ["adds", "removes", "up", "down"];
+    const list = result[0];
+    const diffs = {};
+    for (let i = 0; i < list.length; i++) {
+        const key = key_names[list[i][1]];
 
         if (!diffs[key])
             diffs[key] = [];
 
-        var obj = {
+        const obj = {
             name: list[i][0],
             type: list[i][1],
         };
@@ -97,7 +97,7 @@ function process_diff_list(result) {
 }
 
 function process_rpm_list(result) {
-    var data = [];
+    const data = [];
     result.split("\n").forEach(v => {
         if (v) {
             data.push({
@@ -114,7 +114,7 @@ function process_rpm_list(result) {
     if (data.length < 1)
         return;
 
-    var half = Math.floor(data.length / 2);
+    let half = Math.floor(data.length / 2);
     if (data.length % 2)
         half = half + 1;
 
@@ -133,11 +133,11 @@ function Packages(promise, transform) {
 
     promise
         .then(result => {
-            var empty = true;
+            let empty = true;
             if (transform)
                 result = transform(result);
 
-            for (var k in result) {
+            for (const k in result) {
                 this[k] = result[k];
                 empty = false;
             }
@@ -184,8 +184,8 @@ class RPMOSTreeDBusClient {
         if (this.local_running) {
             return this.local_running;
         } else if (this.sysroot && this.sysroot.ActiveTransaction) {
-            var active = this.sysroot.ActiveTransaction[0];
-            var proxy = this.os_proxies[this.sysroot.ActiveTransaction[2]];
+            let active = this.sysroot.ActiveTransaction[0];
+            const proxy = this.os_proxies[this.sysroot.ActiveTransaction[2]];
 
             if (proxy && active)
                 active = active + ":" + proxy.Name;
@@ -474,7 +474,7 @@ class RPMOSTreeDBusClient {
             expired: signature.v[1] || signature.v[2],
             valid: signature.v[0],
             timestamp: signature.v[6],
-            by: by
+            by
         };
     }
 
@@ -494,7 +494,7 @@ class RPMOSTreeDBusClient {
             key = checksum;
 
         if (!this.booted_id) {
-            var root_proxy = this.os_proxies[this.sysroot.Booted];
+            const root_proxy = this.os_proxies[this.sysroot.Booted];
             if (root_proxy)
                 this.booted_id = root_proxy.BootedDeployment.id.v;
             else
@@ -502,9 +502,9 @@ class RPMOSTreeDBusClient {
         }
 
         if (key && !this.packages_cache[key]) {
-            var proxy = this.get_os_proxy(item.osname.v);
-            var packages;
-            var promise;
+            const proxy = this.get_os_proxy(item.osname.v);
+            let packages;
+            let promise;
             if (proxy) {
                 if (id === this.booted_id) {
                     promise = cockpit.spawn(['rpm', '-qa']);

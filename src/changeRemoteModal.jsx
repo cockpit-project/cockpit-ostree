@@ -17,8 +17,6 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-"use strict";
-
 import React, { useState } from 'react';
 import PropTypes from "prop-types";
 
@@ -44,19 +42,21 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
     const [error, setError] = useState("");
 
     // Disable 'Change Repository' button when the 'Edit' form is open or when the previously selected remote does not exit any more (got deleted)
-    const footer = <>
-        <Button key="change-repo"
+    const footer = (
+        <>
+            <Button key="change-repo"
                 variant="primary"
                 isDisabled={!!editRepoDialogOpen || !remotesList.includes(selectedRemote)}
                 onClick={() => {
             onChangeRemoteOrigin(selectedRemote).then(() => setIsModalOpen(false), ex => setError(ex.message));
         }}>
-            {_("Change repository")}
-        </Button>
-        <Button key="cancel" variant="link" onClick={() => setIsModalOpen(false)}>
-            {_("Cancel")}
-        </Button>
-    </>;
+                {_("Change repository")}
+            </Button>
+            <Button key="cancel" variant="link" onClick={() => setIsModalOpen(false)}>
+                {_("Cancel")}
+            </Button>
+        </>
+);
 
     return (
         <Modal title={_("Change repository")}
@@ -242,7 +242,8 @@ const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes 
                           }} />
             </FormGroup>
             <FormGroup fieldId="add-another-key">
-                {!addAnotherKey ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
+                {!addAnotherKey
+? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
                  : <TextArea id='gpg-data'
                              placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
                              value={key} onChange={setKey} aria-label={_("GPG public key")} />}

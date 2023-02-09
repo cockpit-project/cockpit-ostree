@@ -17,7 +17,6 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-"use strict";
 import 'cockpit-dark-theme'; // once per page
 
 import React, { useState } from 'react';
@@ -59,7 +58,7 @@ function track_id(item) {
     if (!item)
         return;
 
-    var key = item.osname.v;
+    let key = item.osname.v;
     if (item.id)
         key = key + item.id.v;
 
@@ -70,7 +69,7 @@ function track_id(item) {
 }
 
 function format_version(deployment) {
-    var formatted = "";
+    let formatted = "";
     if (!deployment || !deployment.osname)
         return;
 
@@ -227,7 +226,7 @@ const Packages = ({ packages }) => {
     if (packages.empty)
         return <p>{ _("This deployment contains the same packages as your currently booted system") }</p>;
 
-    var res = [];
+    const res = [];
 
     const render_list = (type, title) => {
         if (packages[type]) {
@@ -517,7 +516,7 @@ class Application extends React.Component {
         this.setState(prevState => ({
             origin: {
                 ...prevState.origin,
-                remote: remote,
+                remote,
             }
         }));
         return this.updateBranches(remote).then(branches => {
@@ -542,7 +541,7 @@ class Application extends React.Component {
         this.setState(prevState => ({
             origin: {
                 ...prevState.origin,
-                branch: branch,
+                branch,
             }
         }));
         return client.cache_update_for(this.state.os, this.state.origin.remote, branch);
