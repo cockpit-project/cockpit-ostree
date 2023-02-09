@@ -584,7 +584,7 @@ class RPMOSTreeDBusClient {
                             // Need to get and store the cached data.
                             // Make it like this is part of the download
                             // call.
-                            this.local_running = "DownloadRebaseRpmDiff" + ":" + os;
+                            this.local_running = "DownloadRebaseRpmDiff:" + os;
                             return this.cache_update_for(os, remote, branch)
                                         .finally(() => {
                                             this.local_running = null;
@@ -707,4 +707,5 @@ class RPMOSTreeDBusClient {
 }
 
 /* singleton client instance */
-export default new RPMOSTreeDBusClient();
+const client = new RPMOSTreeDBusClient();
+export default client;
