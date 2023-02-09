@@ -31,7 +31,7 @@ function formatOption(key, value) {
 }
 
 function formatOptions(options) {
-    var output = [];
+    const output = [];
     let k, v;
     for ([k, v] of Object.entries(options)) {
         if (v || v === false)
@@ -41,7 +41,7 @@ function formatOptions(options) {
 }
 
 function parseData(string) {
-    var data = {};
+    const data = {};
     const lines = string ? string.split(configRegex.lines) : [];
     let section = null;
 
@@ -71,7 +71,7 @@ function changeData(string, section, options) {
 
     /* Find the section and set any existing options */
     for (i = 0; i < lines.length; i++) {
-        var line = lines[i];
+        let line = lines[i];
         var m, k;
         if (configRegex.section.test(line)) {
             /* Leaving section stop processing */
