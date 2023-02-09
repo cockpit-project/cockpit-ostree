@@ -469,7 +469,7 @@ class Application extends React.Component {
 
         const show_failure = ex => {
             if (Array.isArray(ex) && ex.length >= 1) {
-              ex = ex[0];
+                ex = ex[0];
             }
             let message = null;
             let final = false;
@@ -491,23 +491,23 @@ class Application extends React.Component {
         client.addEventListener("changed", () => this.forceUpdate());
 
         client.connect()
-            .then(() => {
-                timeout = window.setTimeout(check_empty, 1000);
+                .then(() => {
+                    timeout = window.setTimeout(check_empty, 1000);
 
-                /* notify overview card */
-                set_page_status({
-                    type: null,
-                    title: _("Checking for package updates..."),
-                    details: {
-                        link: false,
-                        pficon: "spinner",
-                    },
+                    /* notify overview card */
+                    set_page_status({
+                        type: null,
+                        title: _("Checking for package updates..."),
+                        details: {
+                            link: false,
+                            pficon: "spinner",
+                        },
+                    });
+                })
+                .catch(ex => {
+                    window.clearTimeout(timeout);
+                    show_failure(ex);
                 });
-            })
-            .catch(ex => {
-                window.clearTimeout(timeout);
-                show_failure(ex);
-            });
 
         this.refreshRemotes();
     }
@@ -527,14 +527,14 @@ class Application extends React.Component {
 
     refreshRemotes() {
         remotes.listRemotes()
-            .then(remotes => this.setState({ remotes }))
-            .catch(ex => {
-                this.setState({
-                    remotes: null,
-                    branches: null,
-                    curtain: { state: 'failed', failure: true, final: true, message: cockpit.format(_("Error loading remotes: $0"), cockpit.message(ex)) }
+                .then(remotes => this.setState({ remotes }))
+                .catch(ex => {
+                    this.setState({
+                        remotes: null,
+                        branches: null,
+                        curtain: { state: 'failed', failure: true, final: true, message: cockpit.format(_("Error loading remotes: $0"), cockpit.message(ex)) }
+                    });
                 });
-            });
     }
 
     onChangeBranch(branch) {
@@ -553,20 +553,20 @@ class Application extends React.Component {
         }
 
         return remotes.listBranches(remote)
-            .then(branches => {
-                const update = { branches, branchLoadError: null };
-                // if current branch does not exist, change to the first listed branch
-                if (branches.indexOf(this.state.origin.branch) < 0)
-                    update.origin = { remote: this.state.origin.remote, branch: branches[0] };
-                this.setState(update);
-                return branches;
-            })
-            .catch(ex => {
-                this.setState({
-                    branches: null,
-                    branchLoadError: cockpit.message(ex)
+                .then(branches => {
+                    const update = { branches, branchLoadError: null };
+                    // if current branch does not exist, change to the first listed branch
+                    if (branches.indexOf(this.state.origin.branch) < 0)
+                        update.origin = { remote: this.state.origin.remote, branch: branches[0] };
+                    this.setState(update);
+                    return branches;
+                })
+                .catch(ex => {
+                    this.setState({
+                        branches: null,
+                        branchLoadError: cockpit.message(ex)
+                    });
                 });
-            });
     }
 
     render() {
@@ -582,11 +582,11 @@ class Application extends React.Component {
         set_update_status(versions);
 
         const items = versions.map(item => {
-                              const packages = client.packages(item);
-                              if (packages)
-                                  packages.addEventListener("changed", () => this.setState({})); // re-render
-                              return <DeploymentVersion key={ track_id(item) } info={item} packages={packages} />;
-                          });
+            const packages = client.packages(item);
+            if (packages)
+                packages.addEventListener("changed", () => this.setState({})); // re-render
+            return <DeploymentVersion key={ track_id(item) } info={item} packages={packages} />;
+        });
 
         return (
             <Page>

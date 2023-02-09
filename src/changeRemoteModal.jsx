@@ -48,15 +48,15 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                 variant="primary"
                 isDisabled={!!editRepoDialogOpen || !remotesList.includes(selectedRemote)}
                 onClick={() => {
-            onChangeRemoteOrigin(selectedRemote).then(() => setIsModalOpen(false), ex => setError(ex.message));
-        }}>
+                    onChangeRemoteOrigin(selectedRemote).then(() => setIsModalOpen(false), ex => setError(ex.message));
+                }}>
                 {_("Change repository")}
             </Button>
             <Button key="cancel" variant="link" onClick={() => setIsModalOpen(false)}>
                 {_("Cancel")}
             </Button>
         </>
-);
+    );
 
     return (
         <Modal title={_("Change repository")}
@@ -72,7 +72,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                     {(remotesList || []).map(remote => {
                         return (
                             (!editRepoDialogOpen || editRepoDialogOpen.name !== remote)
-                            ? <SimpleListItem key={remote}
+                                ? <SimpleListItem key={remote}
                                               id={remote}
                                               component="a"
                                               onClick={ev => {
@@ -80,41 +80,41 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                                                   ev.preventDefault();
                                               }}
                                               isCurrent={remote === selectedRemote}>
-                                <span>{remote}</span>
-                                <Button onClick={ ev => {
-                                            remotes.loadRemoteSettings(remote)
+                                    <span>{remote}</span>
+                                    <Button onClick={ ev => {
+                                        remotes.loadRemoteSettings(remote)
                                                 .then(remoteSettings => setEditRepoDialogOpen(Object.assign(remoteSettings, { name: remote })));
-                                        }}
+                                    }}
                                         className="edit-remote"
                                         variant="secondary">
-                                    <PencilAltIcon />
-                                </Button>
-                            </SimpleListItem>
-                            : <div key={remote} className="pf-c-simple-list__item-link">
-                                <EditRemoteForm setEditRepoDialogOpen={setEditRepoDialogOpen} remoteSettings={editRepoDialogOpen} refreshRemotes={refreshRemotes} />
-                            </div>
+                                        <PencilAltIcon />
+                                    </Button>
+                                </SimpleListItem>
+                                : <div key={remote} className="pf-c-simple-list__item-link">
+                                    <EditRemoteForm setEditRepoDialogOpen={setEditRepoDialogOpen} remoteSettings={editRepoDialogOpen} refreshRemotes={refreshRemotes} />
+                                </div>
                         );
                     }).concat([
                         !addNewRepoDialogOpen
-                        ? <SimpleListItem component="a"
+                            ? <SimpleListItem component="a"
                                         onClick={ev => {
                                             ev.stopPropagation();
                                             ev.preventDefault();
                                         }}
                                         key="add-new">
-                            <Button onClick={ev => {
-                                ev.stopPropagation();
-                                ev.preventDefault();
-                                setAddNewRepoDialogOpen(true);
-                            }}
+                                <Button onClick={ev => {
+                                    ev.stopPropagation();
+                                    ev.preventDefault();
+                                    setAddNewRepoDialogOpen(true);
+                                }}
                                    variant="link"
                                    icon={<AddCircleOIcon />}
                                    id="add-new-remote-btn"
                                    iconPosition="left">{_("Add new repository")}</Button>
-                        </SimpleListItem>
-                        : <div key="add new" className="pf-c-simple-list__item-link">
-                            <AddNewRepoForm refreshRemotes={refreshRemotes} setAddNewRepoDialogOpen={setAddNewRepoDialogOpen} />
-                        </div>
+                            </SimpleListItem>
+                            : <div key="add new" className="pf-c-simple-list__item-link">
+                                <AddNewRepoForm refreshRemotes={refreshRemotes} setAddNewRepoDialogOpen={setAddNewRepoDialogOpen} />
+                            </div>
                     ])}
                 </SimpleList>
             </>
@@ -243,8 +243,8 @@ const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes 
             </FormGroup>
             <FormGroup fieldId="add-another-key">
                 {!addAnotherKey
-? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
-                 : <TextArea id='gpg-data'
+                    ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
+                    : <TextArea id='gpg-data'
                              placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
                              value={key} onChange={setKey} aria-label={_("GPG public key")} />}
             </FormGroup>
