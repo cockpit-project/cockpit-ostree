@@ -23,13 +23,20 @@
 @use "ct-card.scss";
 @import "patternfly/patternfly-4-overrides.scss";
 
-#deployments {
+.listing {
     @extend .ct-card;
 
-    .deployment-name {
+    .name {
         font-weight: 700;
     }
 
+    // HACK: Mimic .pf-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
+    td:last-child {
+        --pf-c-table--cell--Width: 1%;
+    }
+}
+
+#deployments {
     .packages {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
@@ -40,34 +47,10 @@
         }
     }
 
-    // HACK: Mimic .pf-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
-    td:last-child {
-        --pf-c-table--cell--Width: 1%;
+}
+
+#repo-remote {
+    .delete-resource-red {
+        color: var(--pf-global--danger-color--200);
     }
-}
-
-// PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
-.pf-c-modal-box {
-    max-height: calc(100vh - var(--pf-global--spacer--2xl));
-}
-
-// Create space between the remote name and the edit action
-.remote-select .pf-c-simple-list__item-link {
-    display: flex;
-    justify-content: space-between;
-}
-
-.simple-list-form-header {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-}
-
-.simple-list-form-actions > .pf-c-button {
-    margin-left: .3em;
-    margin-right: .3em;
-}
-
-.pf-c-form.pf-m-horizontal {
-    width: 100%;
 }

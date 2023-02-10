@@ -11,7 +11,7 @@ import CockpitPoPlugin from "./pkg/lib/cockpit-po-plugin.js";
 import CockpitRsyncPlugin from "./pkg/lib/cockpit-rsync-plugin.js";
 
 /* A standard nodejs and webpack pattern */
-const production = process.env.NODE_ENV === 'production';
+const production = false;
 
 /* development options for faster iteration */
 const eslint = process.env.ESLINT !== '0';

@@ -416,44 +416,43 @@ class OstreeCase(MachineCase):
         b.login_and_go("/updates")
         b.enter_page("/updates")
 
-        b.wait_not_present('#app .pf-c-alert.pf-m-warning')
-        b.wait_in_text("#change-branch", branch)
-        # open the branches menu to see the entries
+        b.wait_not_present('.pf-c-alert.pf-m-warning')
+        b.wait_in_text("#branch", branch)
+        b.wait_in_text("#repo", "local")
+
+        # Open the branches menu to see the entries
+        b.click("#edit-source")
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
         b.wait_in_text("#change-branch + ul li", branch)
-        b.click("#change-branch")
-        b.wait_text("#change-repo", "local")
-        b.click("#change-repo")
 
-        b.wait_in_text(".pf-c-modal-box h1", "Change repository")
-        b.wait_in_text(".pf-c-modal-box .pf-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-c-modal-box li:last", "Add new repository")
 
-        b.click(".pf-c-modal-box li:last button")
+        # Check that 'local' is `active`
+        b.wait_text("#repo-remote tbody tr:nth-child(1) td[data-label=Name]", "local")
+        b.wait_text("#repo-remote tbody tr:nth-child(1) td[data-label=State]", "Active")
+
+        # Add new repo
+        b.click("button:contains('Add new repository')")
         b.click(".pf-c-modal-box #new-gpg-verify")
         b.set_input_text(".pf-c-modal-box #new-remote-url", "http://localhost:12344")
         b.set_input_text(".pf-c-modal-box #new-remote-name", "zremote test")
         b.click(".pf-c-modal-box #add-remote-btn")
-        b.wait_in_text(".pf-c-modal-box .pf-c-simple-list__item-link .pf-m-danger", "Invalid remote name")
+        b.wait_in_text(".pf-c-modal-box .pf-m-danger", "Invalid remote name")
         b.set_input_text(".pf-c-modal-box #new-remote-name", "zremote-test1")
-
         b.assert_pixels(".pf-c-modal-box", "dialog-add-repository")
         b.click(".pf-c-modal-box #add-remote-btn")
-
-        b.wait_not_present(".pf-c-modal-box #new-remote-name")
-        b.wait_not_present(".pf-c-modal-box #add-remote-btn")
-        b.wait_not_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
-        b.wait_in_text(".pf-c-modal-box .pf-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-c-modal-box li:last button", "Add new repository")
-        b.click(".pf-c-modal-box #zremote-test1 a")
-
-        b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
         b.wait_not_present(".pf-c-modal-box")
 
-        b.wait_text("#change-repo", "zremote-test1")
+        # And make it active
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=Name]", "zremote-test1")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=State]", "")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Set active')")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=State]", "Active")
+        b.wait_text("#repo-remote tbody tr:nth-child(1) td[data-label=State]", "")
+        b.wait_not_present("a:contains('Set active')")
+
         # Branch is still default
         b.wait_in_text("#change-branch", branch)
         # But can't list
@@ -470,8 +469,8 @@ class OstreeCase(MachineCase):
         # Refresh goes back to default
         b.reload()
         b.enter_page("/updates")
-        b.wait_text("#change-repo", "local")
-        b.wait_in_text("#change-branch", branch)
+        b.wait_text("#repo", "local")
+        b.wait_in_text("#branch", branch)
 
         # Create a new remote with commits, just use the rpm dir
         zrepo = "/var/zrepo"
@@ -494,16 +493,18 @@ class OstreeCase(MachineCase):
         m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
         # Edit
-        b.click("#change-repo")
-        b.click(".pf-c-modal-box li:contains('zremote-test1') button.pf-m-secondary.edit-remote")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
+        b.click("#edit-source")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=Name]", "zremote-test1")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Edit')")
+        b.wait_not_present("a:contains('Edit')")
         b.wait_visible(".pf-c-modal-box #edit-remote-url[value='http://localhost:12344']")
         b.wait_visible(".pf-c-modal-box .pf-c-form #gpg-verify:checked")
         b.wait_not_present(".pf-c-modal-box #gpg-data")
         b.click(".pf-c-modal-box .pf-c-form button.pf-m-secondary")
         b.wait_not_present(".pf-c-modal-box .pf-c-form button.pf-m-secondary")
         b.set_input_text(".pf-c-modal-box #gpg-data", "bad")
-        b.click(".pf-c-modal-box .apply-btn")
+        b.click(".pf-c-modal-box button:contains('Save changes')")
         b.wait_visible(".pf-c-modal-box div.pf-m-danger")
 
         with open(os.path.join(TEST_DIR, "files", "publickey.asc"), 'r') as fp:
@@ -513,26 +514,19 @@ class OstreeCase(MachineCase):
         b.wait_val(".pf-c-modal-box #gpg-data", gpg_data)
         b.focus(".pf-c-modal-box #gpg-data")
         b.key_press("\b")  # Backspace
-        b.click(".pf-c-modal-box .apply-btn")
-        b.wait_not_present(".pf-c-modal-box #apply-btn")
-        b.wait_not_present(".pf-c-modal-box .pf-c-form")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary:not(disabled)")
+        b.click(".pf-c-modal-box button:contains('Save changes')")
+        b.wait_not_present(".pf-c-modal-box")
         m.execute("ls /sysroot/ostree/repo/zremote-test1.trustedkeys.gpg")
 
-        b.click(".pf-c-modal-box li:contains('zremote-test1') .edit-remote")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary:disabled")
-        b.wait_visible(".pf-c-modal-box .apply-btn")
-        b.wait_visible(".pf-c-modal-box #edit-remote-url[value='http://localhost:12344']")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Edit')")
         b.wait_visible(".pf-c-modal-box #gpg-verify:checked")
         b.click(".pf-c-modal-box #gpg-verify")
-        b.click(".pf-c-modal-box .apply-btn")
-        b.wait_not_present(".pf-c-modal-box .pf-c-form")
-        b.wait_not_present(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
-        b.click(".pf-c-modal-box li:contains('zremote-test1')")
-        b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
+        b.click(".pf-c-modal-box button:contains('Save changes')")
         b.wait_not_present(".pf-c-modal-box")
 
-        b.wait_text("#change-repo", "zremote-test1")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Set active')")
         b.wait_in_text("#change-branch", "zremote-branch1")
         b.click("#change-branch")
         b.wait_in_text("#change-branch + ul li:nth-child(1) button", "zremote-branch1")
@@ -565,46 +559,32 @@ class OstreeCase(MachineCase):
         # Refresh, back to local, pull in update
         b.reload()
         b.enter_page("/updates")
-        b.wait_in_text("#change-branch", branch)
+        b.wait_in_text("#branch", branch)
         b.click("#check-for-updates-btn")
         wait_deployment_prop(b, 1, "Actions", "Update and reboot")
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} bad-version")
 
         # Switching to branch shows pulled
-        b.wait_text("#change-repo", "local")
-        b.click("#change-repo")
-        b.wait_visible(".pf-c-modal-box .pf-c-simple-list")
-        b.click(".pf-c-modal-box #zremote-test1 a")
-        b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-c-modal-box")
-
-        b.wait_text("#change-repo", "zremote-test1")
+        b.wait_text("#repo", "local")
+        b.click("#edit-source")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=Name]", "zremote-test1")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=State]", "")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Set active')")
+        b.wait_text("#repo-remote tbody tr:nth-child(3) td[data-label=State]", "Active")
+        b.wait_not_present("a:contains('Set active')")
         b.wait_in_text("#change-branch", "zremote-branch1")
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
         wait_deployment_prop(b, 1, "State", "Available")
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
 
         # delete
-        b.click("#change-repo")
-        b.wait_in_text(".pf-c-modal-box #zremote-test1", "zremote-test1")
-        b.click(".pf-c-modal-box #zremote-test1 .edit-remote")
-        b.wait_visible(".pf-c-modal-box button.pf-m-danger")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary:disabled")
-        b.wait_visible(".pf-c-modal-box #edit-remote-url[value='http://localhost:12344']")
-        b.wait_visible("#gpg-verify")
-        b.wait_visible(".pf-c-modal-box .pf-c-form #gpg-verify:not(:checked)")
-        b.click(".pf-c-modal-box button.pf-m-danger")
-        b.wait_not_present(".pf-c-modal-box .pf-c-form")
-
-        b.wait_not_in_text(".pf-c-modal-box .pf-c-simple-list", "zremote-test1")
-        b.wait_in_text(".pf-c-modal-box .pf-c-simple-list", "local")
-        b.wait_not_present(".pf-c-modal-box .pf-c-simple-list .pf-m-current")
-        b.wait_visible(".pf-c-modal-box .pf-c-modal-box__footer button:disabled")
-        b.click(".pf-c-modal-box #local a")
-        b.wait_visible(".pf-c-modal-box .pf-c-simple-list .pf-m-current")
-        b.click(".pf-c-modal-box .pf-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-c-modal-box")
-        b.wait_text("#change-repo", "local")
+        b.click("#repo-remote tbody tr:nth-child(3) td:last-child button")
+        b.click("a:contains('Delete')")
+        b.wait_not_present("#repo-remote tbody tr:nth-child(3)")
+        b.wait_not_present("a:contains('Delete')")
+        b.wait_text("#repo-remote tbody tr:nth-child(1) td[data-label=Name]", "local")
+        b.wait_text("#repo-remote tbody tr:nth-child(1) td[data-label=State]", "Active")
         b.wait_in_text("#change-branch", branch)
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")

@@ -26,22 +26,28 @@ import PropTypes from "prop-types";
 import 'patternfly/patternfly-4-cockpit.scss';
 
 import {
-    Title, Button, Alert,
+    Alert,
+    Button,
+    Title,
     Card, CardHeader, CardTitle, CardActions, CardBody,
+    Checkbox,
+    Dropdown, DropdownItem, DropdownSeparator,
     EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
+    Form, FormGroup,
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription,
-    Dropdown,
     Label,
     KebabToggle,
+    Modal,
     OverflowMenu, OverflowMenuContent, OverflowMenuGroup, OverflowMenuItem, OverflowMenuControl, OverflowMenuDropdownItem,
-    Page, PageSection, PageSectionVariants,
+    Page, PageSection,
     Popover,
     Select, SelectOption,
     Spinner,
-    Text, TextVariants,
-    Toolbar, ToolbarItem, ToolbarContent,
+    Split, SplitItem,
+    Stack,
+    Text, TextVariants, TextInput, TextArea,
 } from '@patternfly/react-core';
-import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
+import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon, PencilAltIcon } from '@patternfly/react-icons';
 import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
@@ -53,7 +59,6 @@ import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
 
 import client from './client';
 import * as remotes from './remotes';
-import { ChangeRemoteModal } from './changeRemoteModal.jsx';
 
 import './ostree.scss';
 
@@ -151,53 +156,317 @@ Curtain.propTypes = {
     reconnect: PropTypes.bool,
 };
 
-const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote, currentBranch, setChangeRemoteModal, onChangeBranch }) => {
+const AddNewRepo = ({ close, refreshRemotes }) => {
+    const [newRepoName, setNewRepoName] = useState("");
+    const [newRepoURL, setNewRepoURL] = useState("");
+    const [newRepoTrusted, setNewRepoTrusted] = useState(false);
+
+    const [hasValidation, setHasValidation] = useState(false);
+    const [addNewRepoError, setAddNewRepoError] = useState(undefined);
+
+    const onAddRemote = () => {
+        if (!(newRepoURL.trim().length && newRepoName.trim().length)) {
+            setHasValidation(true);
+            return;
+        }
+        return remotes.addRemote(newRepoName, newRepoURL, newRepoTrusted)
+                .then(() => refreshRemotes())
+                .then(() => close(),
+                      ex => setAddNewRepoError(ex.message));
+    };
+
+    return (
+        <Modal title={_("Add new repository")}
+               position="top"
+               variant="medium"
+               appendTo={document.body}
+               isOpen
+               onClose={close}
+               footer={<>
+                   <Button id="add-remote-btn" onClick={onAddRemote} variant="primary">{_("Add")}</Button>
+                   <Button onClick={close} variant="link">{_("Cancel")}</Button>
+               </>}
+        >
+            <Form isHorizontal>
+                {addNewRepoError && <Alert variant="danger" isInline title={addNewRepoError} />}
+                <FormGroup label={_("Name")}
+                           fieldId="new-remote-name"
+                           helperTextInvalid={_("Please provide a valid name")}
+                           validated={(hasValidation && !newRepoName.trim().length) ? "error" : undefined}
+                           isRequired>
+                    <TextInput id="new-remote-name"
+                               value={newRepoName}
+                               isRequired
+                               type="text"
+                               onChange={name => setNewRepoName(name)} />
+                </FormGroup>
+                <FormGroup label={_("URL")}
+                           fieldId="new-remote-url"
+                           helperTextInvalid={_("Please provide a valid URL")}
+                           validated={(hasValidation && !newRepoURL.trim().length) ? "error" : undefined}
+                           isRequired>
+                    <TextInput id="new-remote-url"
+                               value={newRepoURL}
+                               isRequired
+                               type="text"
+                               onChange={url => setNewRepoURL(url)} />
+                </FormGroup>
+                <FormGroup fieldId="new-gpg-verify">
+                    <Checkbox label={_("Use trusted GPG key")}
+                              id="new-gpg-verify"
+                              isChecked={newRepoTrusted}
+                              onChange={(checked, ev) => {
+                                  setNewRepoTrusted(checked);
+                              }} />
+                </FormGroup>
+            </Form>
+        </Modal>
+    );
+};
+
+AddNewRepo.propTypes = {
+    refreshRemotes: PropTypes.func.isRequired,
+    close: PropTypes.func.isRequired,
+};
+
+const EditRepo = ({ remote, close, refreshRemotes }) => {
+    const [addAnotherKey, setAddAnotherKey] = useState(false);
+    const [key, setKey] = useState('');
+    const [isTrusted, setIsTrusted] = useState(remote['gpg-verify'] !== 'false');
+    const [error, setError] = useState('');
+
+    const onUpdate = () => {
+        const promises = [];
+        if (key)
+            promises.push(remotes.importGPGKey(remote.name, key));
+        promises.push(remotes.updateRemoteSettings(remote.name, { "gpg-verify": isTrusted }));
+
+        Promise.all(promises).then(() => close(), ex => setError(ex.message));
+    };
+
+    return (
+        <Modal title={cockpit.format(_("Edit repository: $0"), remote.name)}
+               position="top"
+               variant="medium"
+               appendTo={document.body}
+               isOpen
+               onClose={close}
+               footer={<>
+                   <Button isInline variant="primary" onClick={onUpdate}>{_("Save changes")}</Button>
+                   <Button isInline variant="link" onClick={close}>{_("Cancel")}</Button>
+               </>}
+        >
+            <Form isHorizontal>
+                {error && <Alert variant="danger" isInline title={error} />}
+                <FormGroup label={_("Name")}
+                    fieldId="edit-remote-name">
+                    <TextInput id="edit-remote-name"
+                               value={remote.name}
+                               readOnly
+                               type="text" />
+                </FormGroup>
+                <FormGroup label={_("URL")}
+                    fieldId="edit-remote-url">
+                    <TextInput id="edit-remote-url"
+                               value={remote.url}
+                               readOnly
+                               type="text" />
+                </FormGroup>
+                <FormGroup fieldId="edit-remote-trusted">
+                    <Checkbox label={_("Use trusted GPG key")}
+                              id="gpg-verify"
+                              isChecked={isTrusted}
+                              onChange={(checked, ev) => {
+                                  setIsTrusted(!isTrusted);
+                              }} />
+                </FormGroup>
+                <FormGroup fieldId="add-another-key">
+                    {!addAnotherKey
+                        ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
+                        : <TextArea id='gpg-data'
+                                 placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
+                                 value={key} onChange={setKey} aria-label={_("GPG public key")} />}
+                </FormGroup>
+            </Form>
+        </Modal>
+    );
+};
+EditRepo.propTypes = {
+    refreshRemotes: PropTypes.func.isRequired,
+    close: PropTypes.func.isRequired,
+    remote: PropTypes.object.isRequired,
+};
+
+const EditSourceAction = ({ remote, refreshRemotes, onChangeRemoteOrigin, openDialog }) => {
+    const [isKebabOpen, setKebabOpen] = useState(false);
+
+    const actions = [
+        <DropdownItem key="set-active"
+                      onClick={() => { onChangeRemoteOrigin(remote).then(() => setKebabOpen(false)) }}>
+            {_("Set active")}
+        </DropdownItem>,
+        <DropdownItem key="edit"
+                      onClick={() => {
+                          remotes.loadRemoteSettings(remote)
+                                  .then(remoteSettings => { openDialog(Object.assign(remoteSettings, { name: remote })); setKebabOpen(false) });
+                      }}>
+            {_("Edit")}
+        </DropdownItem>,
+        <DropdownSeparator key="separator" />,
+        <DropdownItem key="delete"
+                      className="delete-resource-red"
+                      onClick={() => { remotes.deleteRemote(remote).then(() => { refreshRemotes(); setKebabOpen(false) }) }}>
+            {_("Delete")}
+        </DropdownItem>
+    ];
+
+    return (
+        <Dropdown toggle={<KebabToggle onToggle={open => setKebabOpen(open)} />}
+                isPlain
+                isOpen={isKebabOpen}
+                position="right"
+                dropdownItems={actions} />
+    );
+};
+
+const EditSource = ({ remotes, currentRemote, refreshRemotes, onChangeRemoteOrigin, openDialog }) => {
+    const renderRepo = (remote) => {
+        return {
+            props: { key: remote },
+            columns: [
+                { title: remote, props: { className: "name" } },
+                { title: remote === currentRemote ? <Label color="blue">{_("Active")}</Label> : "" },
+                {
+                    title: <EditSourceAction remote={remote}
+                                           remotes={remotes}
+                                           refreshRemotes={refreshRemotes}
+                                           onChangeRemoteOrigin={onChangeRemoteOrigin}
+                                           openDialog={openDialog} />
+                },
+            ],
+        };
+    };
+
+    return (
+        <Stack hasGutter>
+            <ListingTable aria-label={_("Repositories")}
+                             id="available-repositories"
+                             columns={[{ title: _("Name") }, { title: _("State") }, { title: "" }]}
+                             variant="compact"
+                             rows={remotes.map(renderRepo)} />
+            <div>
+                <Button variant="secondary"
+                        id="add-new-repo"
+                        onClick={() => openDialog(null)}>
+                    {_("Add new repository")}
+                </Button>
+            </div>
+        </Stack>
+    );
+};
+
+const Repository = ({ os, remotes, branches, branchLoadError, currentRemote, currentBranch, onChangeBranch, refreshRemotes, onChangeRemoteOrigin, openDialog }) => {
     const [branchSelectExpanded, setBranchSelectExpanded] = useState(false);
+    const [editingSouce, setEditingSource] = useState(false);
 
     if (!os)
         return null;
 
     const origin = client.get_default_origin(os);
+    let body = null;
+    let error = null;
 
-    if (!origin || !remotes || remotes.length === 0)
-        return <Alert variant="default" isInline title={ _("No configured remotes") } />;
+    const branch_selector = (
+        <Select aria-label={ _("Select branch") } aria-labelledby="branch-select-label"
+                toggleId="change-branch"
+                isOpen={branchSelectExpanded}
+                selections={currentBranch}
+                onToggle={exp => setBranchSelectExpanded(exp) }
+                onSelect={(event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
+            { branchLoadError
+                ? [<SelectOption key="_error" isDisabled value={branchLoadError} />]
+                : (branches || []).map(branch => <SelectOption key={branch} value={branch} />)
+            }
+        </Select>
+    );
+
+    if (!origin || !remotes || remotes.length === 0) {
+        error = <Alert variant="danger" isInline title={_("No configured remotes")} />;
+    } else if (!editingSouce) {
+        if (branchLoadError)
+            error = <Alert variant="danger" isInline title={branchLoadError} />;
+        body = (
+            <DescriptionList isHorizontal>
+                <DescriptionListGroup>
+                    <DescriptionListTerm>{_("Repository")}</DescriptionListTerm>
+                    <DescriptionListDescription id="repo">{currentRemote}</DescriptionListDescription>
+                </DescriptionListGroup>
+                <DescriptionListGroup>
+                    <DescriptionListTerm>{_("Branch")}</DescriptionListTerm>
+                    <DescriptionListDescription id="branch">{currentBranch}</DescriptionListDescription>
+                </DescriptionListGroup>
+            </DescriptionList>
+        );
+    } else {
+        body = (
+            <Split hasGutter>
+                <SplitItem isFilled>
+                    <DescriptionList isHorizontal>
+                        <DescriptionListGroup>
+                            <DescriptionListTerm>{_("Repository")}</DescriptionListTerm>
+                            <DescriptionListDescription>
+                                <EditSource remotes={remotes}
+                                            currentRemote={currentRemote}
+                                            refreshRemotes={refreshRemotes}
+                                            onChangeRemoteOrigin={onChangeRemoteOrigin}
+                                            openDialog={openDialog} />
+                            </DescriptionListDescription>
+                        </DescriptionListGroup>
+                    </DescriptionList>
+                </SplitItem>
+                <SplitItem>
+                    <DescriptionList isHorizontal>
+                        <DescriptionListGroup>
+                            <DescriptionListTerm>{_("Branch")}</DescriptionListTerm>
+                            <DescriptionListDescription>{branch_selector}</DescriptionListDescription>
+                        </DescriptionListGroup>
+                    </DescriptionList>
+                </SplitItem>
+            </Split>
+        );
+    }
 
     return (
         <>
-            <Toolbar id="repo-remote-toolbar" className="pf-m-page-insets">
-                <ToolbarContent>
-                    <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
-                    <ToolbarItem><Button id="change-repo" variant="link" isInline onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
-
-                    <ToolbarItem variant="label" id="branch-select-label">{ _("Branch")}</ToolbarItem>
-                    <ToolbarItem>
-                        <Select aria-label={ _("Select branch") } ariaLabelledBy="branch-select-label"
-                                toggleId="change-branch"
-                                isOpen={branchSelectExpanded}
-                                selections={currentBranch}
-                                onToggle={exp => setBranchSelectExpanded(exp) }
-                                onSelect={(event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
-                            { branchLoadError
-                                ? [<SelectOption key="_error" isDisabled value={branchLoadError} />]
-                                : (branches || []).map(branch => <SelectOption key={branch} value={branch} />)
-                            }
-                        </Select>
-                    </ToolbarItem>
-                </ToolbarContent>
-            </Toolbar>
-            {branchLoadError && <Alert variant="warning" isInline title={branchLoadError} />}
+            {error}
+            <Card id="repo-remote" className="listing">
+                <CardHeader>
+                    <CardTitle><Text component={TextVariants.h2}>{_("OSTree source")}</Text></CardTitle>
+                    <CardActions>
+                        <Button variant="secondary"
+                                id="edit-source"
+                                icon={<PencilAltIcon />}
+                                iconPosition="left"
+                                onClick={() => setEditingSource(!editingSouce)}>
+                            {editingSouce ? _("Stop editing") : _("Edit source")}
+                        </Button>
+                    </CardActions>
+                </CardHeader>
+                <CardBody>
+                    {body}
+                </CardBody>
+            </Card>
         </>
     );
 };
 
-OriginSelector.propTypes = {
+Repository.propTypes = {
     os: PropTypes.string,
     remotes: PropTypes.arrayOf(PropTypes.string),
     branches: PropTypes.arrayOf(PropTypes.string),
     branchLoadError: PropTypes.string,
     currentRemote: PropTypes.string,
     currentBranch: PropTypes.string,
-    setChangeRemoteModal: PropTypes.func.isRequired,
     onChangeBranch: PropTypes.func.isRequired,
 };
 
@@ -415,7 +684,7 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
     }
 
     const columns = [
-        { title: name, props: { className: "deployment-name" } },
+        { title: name, props: { className: "name" } },
         { title: state }
     ];
 
@@ -496,7 +765,6 @@ class Application extends React.Component {
             origin: { remote: null, branch: null },
             curtain: { state: 'silent', failure: false, message: null, final: false },
             progressMsg: undefined,
-            isChangeRemoteOriginModalOpen: false,
         };
 
         this.onChangeBranch = this.onChangeBranch.bind(this);
@@ -659,24 +927,21 @@ class Application extends React.Component {
                 packages.addEventListener("changed", () => this.setState({})); // re-render
         });
 
+        // this.state.editDialog has the editing item
         return (
             <Page>
-                <ChangeRemoteModal isModalOpen={this.state.isChangeRemoteOriginModalOpen}
-                                   setIsModalOpen={isChangeRemoteOriginModalOpen => this.setState({ isChangeRemoteOriginModalOpen })}
-                                   currentRemote={this.state.origin.remote}
-                                   refreshRemotes={this.refreshRemotes}
-                                   onChangeRemoteOrigin={this.onChangeRemoteOrigin}
-                                   remotesList={this.state.remotes} />
-                <PageSection variant={PageSectionVariants.light}
-                             padding={{ default: 'noPadding' }}>
-                    <OriginSelector os={this.state.os} remotes={this.state.remotes}
-                                    branches={this.state.branches} branchLoadError={this.state.branchLoadError}
-                                    currentRemote={this.state.origin.remote} currentBranch={this.state.origin.branch}
-                                    setChangeRemoteModal={isChangeRemoteOriginModalOpen => this.setState({ isChangeRemoteOriginModalOpen })} onChangeBranch={this.onChangeBranch} />
+                { this.state.editDialog === null && <AddNewRepo close={() => this.setState({ editDialog: undefined })} refreshRemotes={this.refreshRemotes} /> }
+                { this.state.editDialog && <EditRepo remote={this.state.editDialog} close={() => this.setState({ editDialog: undefined })} refreshRemotes={this.refreshRemotes} /> }
+                <PageSection>
+                    <Repository os={this.state.os} remotes={this.state.remotes}
+                                branches={this.state.branches} branchLoadError={this.state.branchLoadError}
+                                currentRemote={this.state.origin.remote} currentBranch={this.state.origin.branch}
+                                refreshRemotes={this.refreshRemotes} onChangeRemoteOrigin={this.onChangeRemoteOrigin}
+                                onChangeBranch={this.onChangeBranch} openDialog={value => this.setState({ editDialog: value })} />
                 </PageSection>
                 <PageSection>
                     {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
-                    <Card id="deployments">
+                    <Card id="deployments" className="listing">
                         <CardHeader>
                             <CardTitle><Text component={TextVariants.h2}>{_("Deployments and updates")}</Text></CardTitle>
                             <CardActions>

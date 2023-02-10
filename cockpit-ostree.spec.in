@@ -25,7 +25,6 @@ Cockpit component for managing software updates for ostree based systems.
 
 %files
 %doc README.md
-%license LICENSE dist/ostree.js.LICENSE.txt.gz
 %{_datadir}/cockpit/*
 
 %changelog

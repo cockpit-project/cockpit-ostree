@@ -131,7 +131,7 @@ ChangeRemoteModal.propTypes = {
     onChangeRemoteOrigin: PropTypes.func.isRequired,
 };
 
-const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
+const AddNewRepoForm = ({ close, refreshRemotes }) => {
     const [newRepoName, setNewRepoName] = useState("");
     const [newRepoURL, setNewRepoURL] = useState("");
     const [newRepoTrusted, setNewRepoTrusted] = useState(false);
@@ -146,7 +146,7 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
         }
         return remotes.addRemote(newRepoName, newRepoURL, newRepoTrusted)
                 .then(() => refreshRemotes())
-                .then(() => setAddNewRepoDialogOpen(false),
+                .then(() => close(),
                       ex => setAddNewRepoError(ex.message));
     };
 
@@ -188,14 +188,14 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
             </FormGroup>
             <ActionGroup>
                 <Button id="add-remote-btn" onClick={() => onAddRemote()} variant="primary">{_("Add")}</Button>
-                <Button onClick={() => setAddNewRepoDialogOpen(false)} variant="link">{_("Cancel")}</Button>
+                <Button onClick={close} variant="link">{_("Cancel")}</Button>
             </ActionGroup>
         </Form>
     );
 };
 AddNewRepoForm.propTypes = {
     refreshRemotes: PropTypes.func.isRequired,
-    setAddNewRepoDialogOpen: PropTypes.func.isRequired,
+    close: PropTypes.func.isRequired,
 };
 
 const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes }) => {
