@@ -27,22 +27,29 @@ import 'patternfly/patternfly-4-cockpit.scss';
 
 import {
     Title, Button, Alert,
+    Card, CardHeader, CardTitle, CardActions, CardBody,
     EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
-    DataList, DataListItem, DataListItemRow, DataListItemCells, DataListCell, DataListContent,
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription,
+    Dropdown,
+    Label,
+    KebabToggle,
+    OverflowMenu, OverflowMenuContent, OverflowMenuGroup, OverflowMenuItem, OverflowMenuControl, OverflowMenuDropdownItem,
     Page, PageSection, PageSectionVariants,
+    Popover,
     Select, SelectOption,
     Spinner,
+    Text, TextVariants,
     Toolbar, ToolbarItem, ToolbarContent,
-    Nav, NavList, NavItem,
 } from '@patternfly/react-core';
-import { ExclamationCircleIcon, OutlinedCheckCircleIcon } from '@patternfly/react-icons';
+import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
 import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
 
 import * as timeformat from 'timeformat';
 import { superuser } from 'superuser';
+import { ListingTable } from "cockpit-components-table.jsx";
+import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
 
 import client from './client';
 import * as remotes from './remotes';
@@ -146,19 +153,9 @@ Curtain.propTypes = {
 
 const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote, currentBranch, setChangeRemoteModal, onChangeBranch }) => {
     const [branchSelectExpanded, setBranchSelectExpanded] = useState(false);
-    const [progressMsg, setProgressMsg] = useState(undefined);
-    const [error, setError] = useState("");
 
     if (!os)
         return null;
-
-    const checkForUpgrades = () => {
-        setProgressMsg(_("Checking for updates"));
-
-        return client.check_for_updates(os, currentRemote, currentBranch)
-                .catch(ex => setError(ex))
-                .finally(() => setProgressMsg(undefined));
-    };
 
     const origin = client.get_default_origin(os);
 
@@ -186,20 +183,9 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
                             }
                         </Select>
                     </ToolbarItem>
-                    <ToolbarItem variant="separator" />
-                    <ToolbarItem>
-                        <Button variant="secondary"
-                                id="check-for-updates-btn"
-                                isLoading={!!client.local_running || !!progressMsg}
-                                isDisabled={!!client.local_running || !!progressMsg}
-                                onClick={checkForUpgrades}>
-                            {_("Check for updates")}
-                        </Button>
-                    </ToolbarItem>
                 </ToolbarContent>
             </Toolbar>
             {branchLoadError && <Alert variant="warning" isInline title={branchLoadError} />}
-            {error && <Alert className="upgrade-error" variant="warning" isInline title={error} />}
         </>
     );
 };
@@ -224,14 +210,14 @@ const Packages = ({ packages }) => {
         return null;
 
     if (packages.empty)
-        return <p>{ _("This deployment contains the same packages as your currently booted system") }</p>;
+        return <p className="same-packages">{ _("This deployment contains the same packages as your currently booted system") }</p>;
 
     const res = [];
 
     const render_list = (type, title) => {
         if (packages[type]) {
             /* rpms{1,2} have version/arch in name, and the version/arch fields are undefined */
-            const f = packages[type].map(p => <dd key={ p.name }>{ p.version ? `${p.name}-${p.version}.${p.arch}` : p.name }</dd>);
+            const f = packages[type].map(p => <dd key={ p.name } className={ p.name }>{ p.version ? `${p.name}-${p.version}.${p.arch}` : p.name }</dd>);
             res.push(
                 <dl key={ "package-" + type} className={type}>
                     {title && <dt>{title}</dt>}
@@ -247,81 +233,17 @@ const Packages = ({ packages }) => {
     render_list("down", _("Downgrades"));
     render_list("rpms-col1");
     render_list("rpms-col2");
-    return res;
+    return <div className="packages">{res}</div>;
 };
 
 Packages.propTypes = {
     packages: PropTypes.object,
 };
 
-const DeploymentVersion = ({ info, packages }) => {
-    const [activeTabKey, setActiveTabKey] = useState('tree');
-    const [inProgress, setInProgress] = useState(false);
-    const [error, setError] = useState(undefined);
-
-    const doRollback = (osname) => {
-        const args = {
-            reboot: cockpit.variant("b", true)
-        };
-        setInProgress(true);
-        return client.run_transaction("Rollback", [args], osname)
-                .catch(ex => setError(ex))
-                .finally(() => setInProgress(false));
-    };
-
-    const doUpgrade = (osname, checksum) => {
-        const args = {
-            reboot: cockpit.variant("b", true)
-        };
-        setInProgress(true);
-        return client.run_transaction("Deploy", [checksum, args], osname)
-                .catch(ex => setError(ex))
-                .finally(() => setInProgress(false));
-    };
-
-    const doRebase = (osname, origin, checksum) => {
-        const args = {
-            reboot: cockpit.variant("b", true),
-            revision: cockpit.variant("s", checksum),
-        };
-        setInProgress(true);
-        return client.run_transaction("Rebase", [args, origin, []], osname)
-                .catch(ex => setError(ex))
-                .finally(() => setInProgress(false));
-    };
-
-    const isUpdate = () => {
-        return client.item_matches(info, 'CachedUpdate') && !client.item_matches(info, 'DefaultDeployment');
-    };
-
-    const isRollback = () => {
-        return !client.item_matches(info, 'CachedUpdate') && client.item_matches(info, 'RollbackDeployment');
-    };
-
-    const isRebase = () => {
-        return !info.id && !client.item_matches(info, 'BootedDeployment', 'origin') && !client.item_matches(info, 'RollbackDeployment') &&
-            !client.item_matches(info, "DefaultDeployment");
-    };
-
-    const id = track_id(info);
-    let name = null;
-    if (info && info.osname) {
-        name = info.osname.v;
-        if (info.version)
-            name += " " + info.version.v;
-    }
-
-    let state;
-    if (inProgress)
-        state = _("Updating");
-    else if (info.booted && info.booted.v)
-        state = <span><OutlinedCheckCircleIcon color="green" /> { _("Running") }</span>;
-    else if (error)
-        state = <span className="deployment-error"><ExclamationCircleIcon color="red" />{ _("Failed") }</span>;
-    else
-        state = _("Available");
-
-    const treeTab = (
+const TreeDetails = ({ info }) => {
+    if (!info)
+        return null;
+    return (
         <DescriptionList isHorizontal>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Operating system") }</DescriptionListTerm>
@@ -341,11 +263,11 @@ const DeploymentVersion = ({ info, packages }) => {
             </DescriptionListGroup>
         </DescriptionList>
     );
+};
 
-    let signaturesTab;
-    if (info.signatures && info.signatures.v.length > 0) {
-        signaturesTab = [info.signatures.v.map((raw, index) => {
-            const sig = client.signature_obj(raw);
+const SignaturesDetails = ({ signatures }) => {
+    if (signatures.length > 0) {
+        return (signatures.map((sig, index) => {
             const when = new Date(sig.timestamp * 1000).toString();
             const validity = sig.valid ? _("Good signature") : (sig.expired ? _("Expired signature") : _("Invalid signature"));
 
@@ -369,52 +291,194 @@ const DeploymentVersion = ({ info, packages }) => {
                     </DescriptionListGroup>
                 </DescriptionList>
             );
-        })];
+        }));
     } else {
-        signaturesTab = <p>{ _("No signature available") }</p>;
+        return (<p className="no-signatures">{ _("No signature available") }</p>);
     }
+};
 
+const Deployments = ({ versions }) => {
+    const [inProgress, setInProgress] = useState({});
+    const [openedKebab, _setOpenedKebab] = useState({});
+    const [error, _setError] = useState({});
+
+    const setError = (id, err) => {
+        _setError({ ...error, [id]: err });
+    };
+
+    const setOpenedKebab = (id, state) => {
+        _setOpenedKebab({ ...openedKebab, [id]: state });
+    };
+
+    const doRollback = (key, osname) => {
+        const args = {
+            reboot: cockpit.variant("b", true)
+        };
+        setInProgress({ ...inProgress, [key]: true });
+        return client.run_transaction("Rollback", [args], osname)
+                .catch(ex => setError(key, { title: _("Failed to roll back deployment"), details: ex }))
+                .finally(() => setInProgress({ ...inProgress, [key]: false }));
+    };
+
+    const doUpgrade = (key, osname, checksum) => {
+        const args = {
+            reboot: cockpit.variant("b", true)
+        };
+        setInProgress({ ...inProgress, [key]: true });
+        return client.run_transaction("Deploy", [checksum, args], osname)
+                .catch(ex => setError(key, { title: _("Failed to upgrade deployment"), details: ex }))
+                .finally(() => setInProgress({ ...inProgress, [key]: false }));
+    };
+
+    const doRebase = (key, osname, origin, checksum) => {
+        const args = {
+            reboot: cockpit.variant("b", true),
+            revision: cockpit.variant("s", checksum),
+        };
+        setInProgress({ ...inProgress, [key]: true });
+        return client.run_transaction("Rebase", [args, origin, []], osname)
+                .catch(ex => setError(key, { title: _("Failed to rebase deployment"), details: ex }))
+                .finally(() => setInProgress({ ...inProgress, [key]: false }));
+    };
+
+    const items = versions.map(item => {
+        const key = track_id(item);
+        const packages = client.packages(item);
+        return DeploymentDetails(key, item, packages, doRollback, doUpgrade, doRebase, inProgress[key], setError, error[key], setOpenedKebab, openedKebab[key]);
+    });
     return (
-        <DataListItem aria-labelledby={id}>
-            <DataListItemRow>
-                <DataListItemCells dataListCells={[
-                    <DataListCell key="name" width={4}> <span className="deployment-name" id={id}>{name}</span> </DataListCell>,
-                    <DataListCell key="state" width={4}><span className="deployment-status">{state}</span></DataListCell>,
-                    <DataListCell key="action" width={2}>
-                        {isUpdate(info) && <Button variant="secondary"
-                                                   onClick={() => doUpgrade(info.osname.v, info.checksum.v)}
-                                                   isDisabled={!!client.local_running}>{_("Update and reboot")}</Button>}
-                        {isRollback(info) && <Button variant="secondary"
-                                                     onClick={() => doRollback(info.osname.v)}
-                                                     isDisabled={!!client.local_running}>{_("Roll back and reboot")}</Button>}
-                        {isRebase(info) && <Button variant="secondary"
-                                                   onClick={() => doRebase(info.osname.v, info.origin.v, info.checksum.v)}
-                                                   isDisabled={!!client.local_running}>{_("Rebase and reboot")}</Button>}
-                    </DataListCell>,
-                ]} />
-            </DataListItemRow>
-            <DataListContent aria-label={cockpit.format("$0 Details", name)} hasNoPadding id="available-deployments-expanded-content">
-                <Nav variant="tertiary" onSelect={result => setActiveTabKey(result.itemId)}>
-                    <NavList>
-                        <NavItem isActive={activeTabKey === "tree"} itemId="tree">{ _("Tree") }</NavItem>
-                        <NavItem isActive={activeTabKey === "packages"} itemId="packages">{ _("Packages") }</NavItem>
-                        <NavItem isActive={activeTabKey === "signatures"} itemId="signatures">{ _("Signatures") }</NavItem>
-                    </NavList>
-                </Nav>
-                {error && <Alert variant="danger" isInline title={error} />}
-                <div className={'available-deployments-nav-content ' + activeTabKey}>
-                    {activeTabKey === "tree" && treeTab}
-                    {activeTabKey === "packages" && <Packages packages={packages} />}
-                    {activeTabKey === "signatures" && signaturesTab}
-                </div>
-            </DataListContent>
-        </DataListItem>
+        <ListingTable aria-label={_("Deployments and updates")}
+                  id="available-deployments"
+                  gridBreakPoint=''
+                  columns={[{ title: _("Name") }, { title: _("State") }, { title: "" }]}
+                  variant="compact"
+                  rows={items} />
     );
 };
 
-DeploymentVersion.propTypes = {
-    info: PropTypes.object.isRequired,
-    packages: PropTypes.object,
+const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase, inProgress, setError, error, setOpenedKebab, openedKebab) => {
+    let name = null;
+    if (info && info.osname) {
+        name = info.osname.v;
+        if (info.version)
+            name += " " + info.version.v;
+    }
+
+    const isUpdate = () => {
+        return client.item_matches(info, 'CachedUpdate') && !client.item_matches(info, 'DefaultDeployment');
+    };
+
+    const isRollback = () => {
+        return !client.item_matches(info, 'CachedUpdate') && client.item_matches(info, 'RollbackDeployment');
+    };
+
+    const isRebase = () => {
+        return !info.id && !client.item_matches(info, 'BootedDeployment', 'origin') && !client.item_matches(info, 'RollbackDeployment') &&
+            !client.item_matches(info, "DefaultDeployment");
+    };
+
+    let state;
+    if (inProgress)
+        state = <Label icon={<PendingIcon />}>{_("Updating")}</Label>;
+    else if (info.booted && info.booted.v)
+        state = <Label color="green">{_("Running")}</Label>;
+    else if (error)
+        state = (
+            <Popover headerContent={error.title} bodyContent={error.details} className="ct-popover-alert">
+                <Label color="red"
+                icon={<ErrorCircleOIcon />}
+                className="deployment-error"
+                closeBtnAriaLabel={_("Close")}
+                onClose={() => setError(akey, null)}>
+                    <>
+                        {_("Failed")}
+                        <Button variant="link" isInline>{_("view more...")}</Button>
+                    </>
+                </Label>
+            </Popover>
+        );
+    else
+        state = <Label>{_("Available")}</Label>;
+
+    let action_name = null;
+    let action = null;
+
+    if (isUpdate(info)) {
+        action_name = _("Update and reboot");
+        action = () => doUpgrade(akey, info.osname.v, info.checksum.v);
+    } else if (isRollback(info)) {
+        action_name = _("Roll back and reboot");
+        action = () => doRollback(akey, info.osname.v);
+    } else if (isRebase(info)) {
+        action_name = _("Rebase and reboot");
+        action = () => doRebase(akey, info.osname.v, info.origin.v, info.checksum.v);
+    }
+
+    const columns = [
+        { title: name, props: { className: "deployment-name" } },
+        { title: state }
+    ];
+
+    if (action_name) {
+        columns.push({
+            title: <OverflowMenu breakpoint="lg">
+                <OverflowMenuContent>
+                    <OverflowMenuGroup groupType="button">
+                        <OverflowMenuItem>
+                            <Button isSmall variant="secondary" onClick={action}>
+                                {action_name}
+                            </Button>
+                        </OverflowMenuItem>
+                    </OverflowMenuGroup>
+                </OverflowMenuContent>
+                <OverflowMenuControl>
+                    <Dropdown position="right"
+                              onSelect={() => setOpenedKebab(akey, !openedKebab)}
+                              toggle={
+                                  <KebabToggle
+                                  onToggle={open => setOpenedKebab(akey, open)}
+                                  />
+                              }
+                              isOpen={openedKebab}
+                              isPlain
+                              dropdownItems={[<OverflowMenuDropdownItem key={action_name} isShared onClick={action}>
+                                  {action_name}
+                              </OverflowMenuDropdownItem>]}
+                    />
+                </OverflowMenuControl>
+            </OverflowMenu>
+        });
+    } else {
+        columns.push({ title: "" });
+    }
+
+    let signatures = [];
+    if (info.signatures && info.signatures.v.length > 0)
+        signatures = info.signatures.v.map((raw, index) => client.signature_obj(raw));
+
+    const tabRenderers = [
+        {
+            name: _("Tree"),
+            renderer: TreeDetails,
+            data: { info },
+        },
+        {
+            name: _("Packages"),
+            renderer: Packages,
+            data: { packages },
+        },
+        {
+            name: _("Signatures"),
+            renderer: SignaturesDetails,
+            data: { signatures },
+        },
+    ];
+
+    return ({
+        props: { key: akey },
+        columns,
+        expandedContent: <ListingPanel tabRenderers={tabRenderers} />
+    });
 };
 
 /**
@@ -425,11 +489,13 @@ class Application extends React.Component {
         super(props);
         this.state = {
             os: null,
+            error: null,
             remotes: null,
             branches: null,
             branchLoadError: null,
             origin: { remote: null, branch: null },
             curtain: { state: 'silent', failure: false, message: null, final: false },
+            progressMsg: undefined,
             runningMethod: null, /* operation in progress, disables actions */
             showChangeRemoteDialog: null,
             isChangeRemoteOriginModalOpen: false,
@@ -438,6 +504,7 @@ class Application extends React.Component {
         this.onChangeBranch = this.onChangeBranch.bind(this);
         this.onChangeRemoteOrigin = this.onChangeRemoteOrigin.bind(this);
         this.refreshRemotes = this.refreshRemotes.bind(this);
+        this.checkForUpgrades = this.checkForUpgrades.bind(this);
 
         /* show "connecting" curtain if connecting to client takes longer than 1s */
         let timeout;
@@ -525,6 +592,14 @@ class Application extends React.Component {
         });
     }
 
+    checkForUpgrades() {
+        this.setState({ progressMsg: _("Checking for updates") });
+
+        return client.check_for_updates(this.state.os, this.state.origin.remote, this.state.origin.branch)
+                .catch(ex => this.setState({ error: ex }))
+                .finally(() => this.setState({ progressMsg: undefined }));
+    }
+
     refreshRemotes() {
         remotes.listRemotes()
                 .then(remotes => this.setState({ remotes }))
@@ -580,12 +655,10 @@ class Application extends React.Component {
         /* successful, deployments are available */
         const versions = client.known_versions_for(this.state.os, this.state.origin.remote, this.state.origin.branch);
         set_update_status(versions);
-
-        const items = versions.map(item => {
+        versions.forEach(item => {
             const packages = client.packages(item);
             if (packages)
                 packages.addEventListener("changed", () => this.setState({})); // re-render
-            return <DeploymentVersion key={ track_id(item) } info={item} packages={packages} />;
         });
 
         return (
@@ -604,9 +677,24 @@ class Application extends React.Component {
                                     setChangeRemoteModal={isChangeRemoteOriginModalOpen => this.setState({ isChangeRemoteOriginModalOpen })} onChangeBranch={this.onChangeBranch} />
                 </PageSection>
                 <PageSection>
-
                     {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
-                    <DataList className="available-deployments" aria-label={ _("available deployments") }>{items}</DataList>
+                    <Card id="deployments">
+                        <CardHeader>
+                            <CardTitle><Text component={TextVariants.h2}>{_("Deployments and updates")}</Text></CardTitle>
+                            <CardActions>
+                                <Button variant="secondary"
+                                        id="check-for-updates-btn"
+                                        isLoading={!!client.local_running || !!this.state.progressMsg}
+                                        isDisabled={!!client.local_running || !!this.state.progressMsg}
+                                        onClick={this.checkForUpgrades}>
+                                    {_("Check for updates")}
+                                </Button>
+                            </CardActions>
+                        </CardHeader>
+                        <CardBody className="contains-list">
+                            <Deployments versions={versions} />
+                        </CardBody>
+                    </Card>
                 </PageSection>
             </Page>
         );

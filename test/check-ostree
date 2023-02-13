@@ -41,11 +41,49 @@ CHECKOUT_LOCATION = "/var/local-tree"
 RPM_LOCATION = "/usr/share/rpm"
 KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
+def switch_tab(b, index, tab):
+    row_sel = f"#available-deployments > tbody:nth-child({index + 1})"
+    b.wait_visible(row_sel)
+    if not b.is_visible(f"{row_sel} .ct-listing-panel-tabs"):
+        b.click(f"{row_sel} .pf-c-table__toggle button")
+        b.wait_visible(f"{row_sel} .ct-listing-panel-tabs")
+    b.click(f"{row_sel} button:contains({tab})")
 
-def get_list_item(index):
-    # there are more <li> inside the item tables, so only count direct children
-    return f".available-deployments > li:nth-child({index})"
+def wait_deployment_details_prop(b, index, tab, prop, value):
+    switch_tab(b, index, tab)
+    b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) {prop}", value)
 
+def wait_deployment_prop(b, index, prop, value):
+    if prop == "Actions":
+        if value == "":
+            b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child", value)
+        else:
+            b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child button", value)
+    else:
+        b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) td[data-label={prop}]", value)
+
+def wait_packages(b, index, packages):
+    switch_tab(b, index, "Packages")
+    for group, pkgs in packages.items():
+        for pkg in pkgs:
+            b.wait_in_text(f"#available-deployments > tbody:nth-child({index + 1}) .{group}", pkg)
+
+def wait_not_packages(b, index, packages):
+    switch_tab(b, index, "Packages")
+    for pkg in packages:
+        b.wait_not_in_text(f"#available-deployments > tbody:nth-child({index + 1})", pkg)
+
+def check_package_count(b, assertIn, index):
+    switch_tab(b, index, "Packages")
+    for group in ['adds', 'removes']:
+        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-child({index + 1}) .{group} dd",  1)
+    # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
+    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .up dd"), [1, 2])
+    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .down dd"), [1, 2])
+
+def do_deployment_action(b, index, action):
+    wait_deployment_prop(b, index, "Actions", action)
+    b.click(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child button")
 
 def ensure_remote_http_port(m, remote="local"):
     remote_spec = m.execute(f"ostree remote show-url {remote} || true")
@@ -126,29 +164,6 @@ def get_name(self):
 
 
 class OstreeRestartCase(MachineCase):
-    def switch_to_packages(self, b, sel, required_classes):
-        b.wait_not_present(f"{sel} div.packages")
-        b.click(f'{sel} ul li a:contains("Packages")')
-        b.wait_visible(f"{sel} div.packages")
-        for c in required_classes:
-            b.wait_visible(f"{sel} div.packages dl.{c}")
-
-    def check_change_counts(self, b, sel):
-        for k in ['adds', 'removes']:
-            b.call_js_func("ph_count_check", f"{sel} dl.{k} dd",  1)
-        # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
-        self.assertIn(b.call_js_func("ph_count", f"{sel} dl.up dd"), [1, 2])
-        self.assertIn(b.call_js_func("ph_count", f"{sel} dl.down dd"), [1, 2])
-
-    def check_sig(self, b, sel):
-        b.wait_not_present(f"{sel} div.signatures")
-        b.click(f'{sel} ul li a:contains("Signature")')
-        b.wait_visible(f"{sel} div.signatures")
-        b.wait_in_text(f"{sel} div.signatures", KEY_ID)
-        b.wait_in_text(f"{sel} div.signatures", "RSA")
-        b.wait_in_text(f"{sel} div.signatures", "Cockpit Tester <do-not-reply@cockpit-project.org>")
-        b.wait_in_text(f"{sel} div.signatures", "Good signature")
-        b.wait_in_text(f"{sel} div.signatures", "When")
 
     def testOstree(self):
         b = self.browser
@@ -169,28 +184,21 @@ class OstreeRestartCase(MachineCase):
         b.enter_page("/updates")
 
         # Check current and rollback target
-        sel_cur = get_list_item(1)
-        sel_prev = get_list_item(2)
-        sel_nonexist = get_list_item(3)
-        b.wait_text(sel_cur + ' .deployment-name', f"{get_name(self)} cockpit-base.1")
-        b.wait_in_text(sel_cur + ' .deployment-status', "Running")
-        b.wait_not_present(sel_cur + ' button.pf-m-secondary')
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Actions", "")
 
-        b.wait_visible(sel_cur + " div.tree")
-        b.wait_in_text(sel_cur + " .os", get_name(self))
-        b.wait_in_text(sel_cur + " .version", "cockpit-base.1")
+        wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
+        wait_deployment_details_prop(b, 1, "Tree", "#osversion", "cockpit-base.1")
 
         b.assert_pixels("#repo-remote-toolbar", "remote-toolbar")
-        b.assert_pixels(sel_cur, "deployment", ignore=[".timestamp"])
+        b.assert_pixels("#available-deployments > tbody:nth-child(2)", "deployment", ignore=[".timestamp"])
 
-        self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
-        b.wait_in_text(sel_cur + " div.packages", remove_pkg)
-        for pkg in INSTALL_RPMS:
-            b.wait_not_in_text(sel_cur + " div.packages", pkg)
+        wait_packages(b, 1, {"rpms-col1": [chrony], "rpms-col2": [tzdata]})
+        wait_packages(b, 1, {"rpms-col2": [remove_pkg]})
+        wait_not_packages(b, 1, INSTALL_RPMS)
 
-        b.wait_not_present(sel_cur + " div.signatures")
-        b.click(sel_cur + ' ul li a:contains("Signature")')
-        b.wait_in_text(sel_cur + ' div.signatures', "No signature available")
+        wait_deployment_details_prop(b, 1, "Signatures", ".no-signatures", "No signature available")
 
         # Require signatures
         m.execute("sed -i /gpg-verify/d /etc/ostree/remotes.d/local.conf")
@@ -198,12 +206,10 @@ class OstreeRestartCase(MachineCase):
         # https://github.com/projectatomic/rpm-ostree/issues/401
         m.execute("systemctl restart rpm-ostreed")
 
-        b.wait_not_in_text(sel_prev + ' .deployment-name', "cockpit")
-        b.wait_in_text(sel_prev + ' .deployment-status', "Available")
-        b.wait_in_text(sel_prev + " button.pf-m-secondary", "Roll back")
-        b.wait_in_text(sel_prev + " .os", get_name(self))
-        b.wait_visible(sel_prev + " div.tree")
-        b.wait_not_present(sel_prev + " div.packages")
+        b.wait_not_in_text("#available-deployments > tbody:nth-child(3) td[data-label=Name]", "cockpit")
+        wait_deployment_prop(b, 2, "State", "Available")
+        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
+        wait_deployment_details_prop(b, 2, "Tree", "#osname", get_name(self))
 
         # Check for new commit, get error
         b.wait_in_text("#check-for-updates-btn", "Check for updates")
@@ -225,52 +231,47 @@ class OstreeRestartCase(MachineCase):
         # Check again not trusted
         b.click("#check-for-updates-btn")
         b.wait_visible("#check-for-updates-btn:not(disabled)")
-        # newer Fedora CoreOS says "public key not found", older RHEL/CentOS says "[sig exists], but none are in trusted keyring"
-        sel = "#app .pf-c-alert.pf-m-warning:nth-child(3)"
-        b.wait_visible(sel)
-        b.wait_js_cond("ph_in_text('{0}', 'none are in trusted keyring') || ph_in_text('{0}', 'public key not found') || ph_in_text('{0}', 'no signatures found')".format(sel))
+        b.wait_in_text("#app .pf-m-danger", "Can't check signature: public key not found")
 
         m.upload(["files/publickey.asc"], "/root/")
         m.execute("ostree remote gpg-import local -k /root/publickey.asc")
 
         # Check again have update data
         b.click("#check-for-updates-btn")
-        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Update")
-        b.wait_in_text(f'{get_list_item(2)} .deployment-status', "Running")
+        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_prop(b, 1, "Actions", "Update and reboot")
+        wait_deployment_prop(b, 2, "State", "Running")
 
         # Check update data
-        b.wait_visible(f"{get_list_item(1)} div.tree")
-        b.wait_in_text(f"{get_list_item(1)} .os", get_name(self))
-        b.wait_in_text(f"{get_list_item(1)} .version", "cockpit-base.2")
+        wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
+        wait_deployment_details_prop(b, 1, "Tree", "#osversion", "cockpit-base.2")
 
-        self.switch_to_packages(b, ".available-deployments li:nth-child(1)",
-                                ['up', 'down',
-                                 'adds', 'removes'])
-        self.check_change_counts(b, ".available-deployments li:nth-child(1)")
-
-        b.wait_in_text(f"{get_list_item(1)} dl.up dd", "tzdata-99999-2.noarch")
-        b.wait_in_text(f"{get_list_item(1)} dl.down dd:first-of-type", "chrony-0.1-2.noarch")
-        b.wait_text(f"{get_list_item(1)} dl.adds dd", "empty-1-0.noarch")
-        b.wait_text(f"{get_list_item(1)} dl.removes dd", remove_pkg)
+        wait_packages(b, 1, {"up": ["tzdata-99999-2.noarch"],
+                             "down": ["chrony-0.1-2.noarch"],
+                             "adds": ["empty-1-0.noarch"],
+                             "removes": [remove_pkg],
+                             })
+        check_package_count(b, self.assertIn, 1)
 
         # Check signatures
-        self.check_sig(b, ".available-deployments li:nth-child(1)")
+        switch_tab(b, 1, "Signatures")
+        sel = "#available-deployments > tbody:nth-child(2)"
+        b.wait_in_text(sel, KEY_ID)
+        b.wait_in_text(sel, "RSA")
+        b.wait_in_text(sel, "Cockpit Tester <do-not-reply@cockpit-project.org>")
+        b.wait_in_text(sel, "Good signature")
+        b.wait_in_text(sel, "When")
 
         # Force an error
         stop_trivial_httpd(m, server_pid)
-        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
-        b.wait_not_present(f"{get_list_item(1)} button.pf-m-secondary:disabled")
-        b.click(f"{get_list_item(1)} button.pf-m-secondary")
-        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:disabled")
-        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:not(disabled)")
-        b.wait_visible(f'{get_list_item(1)} .deployment-error')
+        wait_deployment_prop(b, 1, "State", "Available")
+        do_deployment_action(b, 1, "Update and reboot")
+        wait_deployment_prop(b, 1, "State", "Failedview more...")
         server_pid = start_trivial_httpd(m)
 
         # Apply update
-        b.click(f"{get_list_item(1)} button.pf-m-secondary")
-        b.wait_in_text(f"{get_list_item(1)} .deployment-status", "Updating")
-        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
+        do_deployment_action(b, 1, "Update and reboot")
+        wait_deployment_prop(b, 1, "State", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -284,37 +285,40 @@ class OstreeRestartCase(MachineCase):
         b.login_and_go("/updates")
 
         # After reboot, check commit
-        b.wait_visible('.available-deployments')
-        b.wait_text(sel_cur + ' .deployment-name', f"{get_name(self)} cockpit-base.2")
-        b.wait_in_text(sel_cur + ' .deployment-status', "Running")
-        b.wait_not_present(sel_cur + " button.pf-m-secondary")
-        self.switch_to_packages(b, sel_cur, ['rpms-col1', 'rpms-col2'])
-        b.wait_not_in_text(sel_cur + " div.packages", remove_pkg)
-        for pkg in INSTALL_RPMS:
-            b.wait_in_text(sel_cur + " div.packages", pkg)
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.2")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Actions", "")
+        wait_packages(b, 1, {"rpms-col1": [INSTALL_RPMS[0], INSTALL_RPMS[1]],
+                             "rpms-col2": [INSTALL_RPMS[2]],
+                             })
+        wait_not_packages(b, 1, [remove_pkg])
 
         # Check signatures
-        self.check_sig(b, sel_cur)
+        switch_tab(b, 1, "Signatures")
+        sel = "#available-deployments > tbody:nth-child(2)"
+        b.wait_in_text(sel, KEY_ID)
+        b.wait_in_text(sel, "RSA")
+        b.wait_in_text(sel, "Cockpit Tester <do-not-reply@cockpit-project.org>")
+        b.wait_in_text(sel, "Good signature")
+        b.wait_in_text(sel, "When")
 
         # Check rollback target
-        b.wait_text(sel_prev + ' .deployment-name', f"{get_name(self)} cockpit-base.1")
-        b.wait_in_text(sel_prev + ' .deployment-status', "Available")
-        b.wait_in_text(sel_prev + ' button.pf-m-secondary', "Roll back")
-        b.wait_in_text(sel_prev + ' .os', get_name(self))
-        self.switch_to_packages(b, sel_prev,
-                                ['up', 'down',
-                                 'adds', 'removes'])
-        self.check_change_counts(b, sel_prev)
+        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 2, "State", "Available")
+        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
+        wait_deployment_details_prop(b, 2, "Tree", "#osname", get_name(self))
 
-        b.wait_in_text(sel_prev + " dl.up dd", chrony)
-        b.wait_text(sel_prev + " dl.down dd", tzdata)
-        b.wait_text(sel_prev + " dl.adds dd", remove_pkg)
-        b.wait_text(sel_prev + " dl.removes dd", "empty-1-0.noarch")
+        check_package_count(b, self.assertIn, 2)
+        wait_packages(b, 2, {"down": [tzdata],
+                             "up": [chrony],
+                             "removes": ["empty-1-0.noarch"],
+                             "adds": [remove_pkg],
+                             })
 
         # Rollback
+        do_deployment_action(b, 2, "Roll back and reboot")
         b.wait_visible("button:contains('Roll back')")
-        b.click(sel_prev + " button.pf-m-secondary")
-        b.wait_visible(sel_prev + " .deployment-status")
+        wait_deployment_prop(b, 2, "State", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -326,14 +330,15 @@ class OstreeRestartCase(MachineCase):
         b.reload()
         b.login_and_go("/updates")
 
-        b.wait_text(sel_cur + " .deployment-name", f"{get_name(self)} cockpit-base.1")
-        b.wait_in_text(sel_cur + " .deployment-status", "Running")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Running")
 
-        b.wait_in_text(sel_prev + " .deployment-status", "Available")
-        b.wait_text(sel_prev + " .deployment-name", f"{get_name(self)} cockpit-base.2")
-        b.wait_in_text(sel_prev + " .pf-c-data-list__item-content button.pf-m-secondary", "Roll back")
+        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.2")
+        wait_deployment_prop(b, 2, "State", "Available")
+        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
 
-        b.wait_not_present(sel_nonexist)
+        # Only two deployments
+        b.wait_not_present(f"#available-deployments > tbody:nth-child(4)")
 
         self.allow_restart_journal_messages()
 
@@ -363,32 +368,22 @@ class OstreeRestartCase(MachineCase):
         b.wait_in_text("#change-branch + ul li:last", "znew-branch")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
         b.click("#change-branch + ul li:last button")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} cockpit-base.1")
-        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Running")
-        b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
         b.wait_in_text("#check-for-updates-btn", "Check for updates")
         b.click("#check-for-updates-btn")
 
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} branch-version")
-        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
-        b.wait_in_text(f"{get_list_item(1)} .os", get_name(self))
-        b.wait_in_text(f"{get_list_item(1)} .origin", "local:znew-branch")
-
-        b.wait_not_present(f"{get_list_item(1)} div.packages")
-        b.click(f'{get_list_item(1)} ul li a:contains("Packages")')
-        b.wait_visible(f"{get_list_item(1)} div.packages")
-
-        # wait until the button has stabilized
-        for retry in range(3):
-            b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary:not([disabled])")
-            time.sleep(1)
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} branch-version")
+        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_prop(b, 1, "Actions", "Rebase and reboot")
+        wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "local:znew-branch")
 
         # Apply update
-        b.click(f"{get_list_item(1)} button.pf-m-secondary")
-        b.wait_in_text(f"{get_list_item(1)} .deployment-status", "Updating")
-        b.wait_not_present(f'{get_list_item(1)} .deployment-error')
+        do_deployment_action(b, 1, "Rebase and reboot")
+        wait_deployment_prop(b, 1, "State", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -401,10 +396,9 @@ class OstreeRestartCase(MachineCase):
         b.login_and_go("/updates")
 
         # After reboot, check commit
-        sel = get_list_item(1)
-        b.wait_text(sel + ' .deployment-name', f"{get_name(self)} branch-version")
-        b.wait_in_text(sel + ' .deployment-status', "Running")
-        b.wait_in_text(sel + ' .origin', "local:znew-branch")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} branch-version")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "local:znew-branch")
 
         self.allow_restart_journal_messages()
 
@@ -549,34 +543,32 @@ class OstreeCase(MachineCase):
                          '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify = false')
 
         # Check updates display
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} cockpit-base.1")
-        b.wait_in_text(f"{get_list_item(1)} #osorigin", f"local:{branch}")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
         b.click("#check-for-updates-btn")
 
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
-        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_in_text(f"{get_list_item(1)} button.pf-m-secondary", "Rebase")
-        b.wait_in_text(f"{get_list_item(1)} #osname", get_name(self))
-        b.wait_in_text(f"{get_list_item(1)} #osorigin", "zremote-test1:zremote-branch1")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
+        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_prop(b, 1, "Actions", "Rebase and reboot")
+        wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "zremote-test1:zremote-branch1")
 
-        b.wait_not_present(f"{get_list_item(1)} .packages")
-        b.click(f'{get_list_item(1)} li.pf-c-nav__item a:contains("Packages")')
-        b.wait_in_text(f"{get_list_item(1)} .packages", "contains the same packages as your currently booted")
+        wait_deployment_details_prop(b, 1, "Packages", ".same-packages", "This deployment contains the same packages as your currently booted system")
 
         # Switching back shows pulled
         b.click("#change-branch")
         b.wait_in_text("#change-branch + ul li:first button", "zremote-branch1")
         b.click("#change-branch + ul li:first button")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
 
         # Refresh, back to local, pull in update
         b.reload()
         b.enter_page("/updates")
         b.wait_in_text("#change-branch", branch)
         b.click("#check-for-updates-btn")
-        b.wait_visible(f"{get_list_item(1)} button.pf-m-secondary")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
+        wait_deployment_prop(b, 1, "Actions", "Update and reboot")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} bad-version")
 
         # Switching to branch shows pulled
         b.wait_text("#change-repo", "local")
@@ -588,9 +580,9 @@ class OstreeCase(MachineCase):
 
         b.wait_text("#change-repo", "zremote-test1")
         b.wait_in_text("#change-branch", "zremote-branch1")
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} zremote-branch1.1")
-        b.wait_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_not_in_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
+        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
 
         # delete
         b.click("#change-repo")
@@ -617,9 +609,9 @@ class OstreeCase(MachineCase):
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
-        b.wait_text(f'{get_list_item(1)} .deployment-name', f"{get_name(self)} bad-version")
-        b.wait_in_text(f'{get_list_item(1)} .deployment-status', "Available")
-        b.wait_in_text(f"{get_list_item(1)} .origin", f"local:{branch}")
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} bad-version")
+        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
     @nondestructive
     def testPermission(self):
@@ -634,7 +626,7 @@ class OstreeCase(MachineCase):
 
         b.become_superuser(passwordless=m.image == "rhel4edge")
         b.switch_to_frame("cockpit1:localhost/updates")
-        b.wait_visible('.available-deployments')
+        b.wait_visible('#available-deployments')
 
     def testPageStatus(self):
         m = self.machine
@@ -659,19 +651,20 @@ class OstreeCase(MachineCase):
 
         # updates page sees the new version
         b.click("#check-for-updates-btn")
-        b.wait_in_text(get_list_item(1) + " .version", "cockpit-base.2")
+
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.2")
 
         # overview page notices the new version as well
         b.go("/system")
         b.enter_page("/system")
         b.wait_in_text("#page_status_notification_updates", "Update available:")
-        b.wait_in_text("#page_status_notification_updates", "cockpit-base.2")
+        b.wait_in_text("#page_status_notification_updates", f"{get_name(self)} cockpit-base.2")
 
         # check with new session
         b.logout()
         b.login_and_go("/system")
         b.wait_in_text("#page_status_notification_updates", "Update available:")
-        b.wait_in_text("#page_status_notification_updates", "cockpit-base.2")
+        b.wait_in_text("#page_status_notification_updates", f"{get_name(self)} cockpit-base.2")
 
 
 if __name__ == "__main__":

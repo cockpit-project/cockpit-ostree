@@ -20,22 +20,30 @@
 /* ---------------------------------------------------------------------------------------------------- */
 
 @use "page.scss";
+@use "ct-card.scss";
 @import "patternfly/patternfly-4-overrides.scss";
 
-.available-deployments-nav-content {
-    padding: var(--pf-c-data-list__expandable-content-body--PaddingTop);
-}
+#deployments {
+    @extend .ct-card;
 
-.available-deployments {
-    // Remove data-list border - items are separated by margin
-    border: none;
-    // Set up max width for the data list
-    max-width: 60rem;
-}
+    .deployment-name {
+        font-weight: 700;
+    }
 
-// Data list items should not expand horizontally to the whole page
-.available-deployments li.pf-c-data-list__item {
-    margin-bottom: 2rem;
+    .packages {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+        grid-gap: 1rem;
+
+        dt {
+            font-weight: 600;
+        }
+    }
+
+    // HACK: Mimic .pf-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
+    td:last-child {
+        --pf-c-table--cell--Width: 1%;
+    }
 }
 
 // PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
@@ -62,31 +70,4 @@
 
 .pf-c-form.pf-m-horizontal {
     width: 100%;
-}
-
-// Add a border line below the navigatin
-.available-deployments .pf-c-nav {
-    background: linear-gradient(0deg,var(--pf-global--BorderColor--100) 0,var(--pf-global--BorderColor--100) 1px,transparent 0);
-
-    .pf-c-nav__list {
-        margin-left: var(--pf-global--spacer--sm);
-    }
-}
-
-.deployment-name {
-    font-weight: 700;
-}
-
-.packages {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-    grid-gap: 1rem;
-
-    dt {
-        font-weight: 600;
-    }
-}
-
-.deployment-error svg {
-    margin-right: .5rem;
 }
