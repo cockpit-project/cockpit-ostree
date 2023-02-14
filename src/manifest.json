@@ -3,6 +3,10 @@
     "requires": {
         "cockpit": "125"
     },
+    "conditions": [
+        {"path-exists": "/usr/bin/rpm-ostree"},
+        {"path-exists": "/sysroot/ostree"}
+    ],
 
     "tools": {
         "index": {
