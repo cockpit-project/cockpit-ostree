@@ -403,13 +403,13 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
     let action_name = null;
     let action = null;
 
-    if (isUpdate(info)) {
+    if (isUpdate()) {
         action_name = _("Update and reboot");
         action = () => doUpgrade(akey, info.osname.v, info.checksum.v);
-    } else if (isRollback(info)) {
+    } else if (isRollback()) {
         action_name = _("Roll back and reboot");
         action = () => doRollback(akey, info.osname.v);
-    } else if (isRebase(info)) {
+    } else if (isRebase()) {
         action_name = _("Rebase and reboot");
         action = () => doRebase(akey, info.osname.v, info.origin.v, info.checksum.v);
     }
