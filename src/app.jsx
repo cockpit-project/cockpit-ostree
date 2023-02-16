@@ -496,8 +496,6 @@ class Application extends React.Component {
             origin: { remote: null, branch: null },
             curtain: { state: 'silent', failure: false, message: null, final: false },
             progressMsg: undefined,
-            runningMethod: null, /* operation in progress, disables actions */
-            showChangeRemoteDialog: null,
             isChangeRemoteOriginModalOpen: false,
         };
 
