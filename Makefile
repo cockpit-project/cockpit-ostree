@@ -33,7 +33,7 @@ COCKPIT_REPO_FILES = \
 	$(NULL)
 
 COCKPIT_REPO_URL = https://github.com/cockpit-project/cockpit.git
-COCKPIT_REPO_COMMIT = bc5ea7cc137ffc2f4de23976ac3893896a837c0d # 285
+COCKPIT_REPO_COMMIT = 54f2fd58a3645c4a222e2b1b9b5f1b9321bed998 # 285 + Move to a webpack module
 
 $(COCKPIT_REPO_FILES): $(COCKPIT_REPO_STAMP)
 COCKPIT_REPO_TREE = '$(strip $(COCKPIT_REPO_COMMIT))^{tree}'
@@ -56,10 +56,10 @@ po/$(PACKAGE_NAME).js.pot:
 		--from-code=UTF-8 $$(find src/ -name '*.js' -o -name '*.jsx')
 
 po/$(PACKAGE_NAME).html.pot: $(NODE_MODULES_TEST) $(COCKPIT_REPO_STAMP)
-	pkg/lib/html2po -o $@ $$(find src -name '*.html')
+	pkg/lib/html2po.js -o $@ $$(find src -name '*.html')
 
 po/$(PACKAGE_NAME).manifest.pot: $(NODE_MODULES_TEST) $(COCKPIT_REPO_STAMP)
-	pkg/lib/manifest2po src/manifest.json -o $@
+	pkg/lib/manifest2po.js src/manifest.json -o $@
 
 po/$(PACKAGE_NAME).pot: po/$(PACKAGE_NAME).html.pot po/$(PACKAGE_NAME).js.pot po/$(PACKAGE_NAME).manifest.pot
 	msgcat --sort-output --output-file=$@ $^
