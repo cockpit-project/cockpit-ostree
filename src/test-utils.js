@@ -17,15 +17,15 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
-const QUnit = require("qunit");
-const utils = require("./utils");
+import QUnit from 'qunit';
+import * as utils from './utils.js';
 
 const sample_config = `
 key = value
 
 [section]
 key=section
- indented = commas, or spaces     
+ indented = commas, or spaces
 
 [ section2 ]
 key = section2

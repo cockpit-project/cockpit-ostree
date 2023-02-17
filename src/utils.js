@@ -40,7 +40,7 @@ function formatOptions(options) {
     return output.join("\n") + "\n\n";
 }
 
-function parseData(string) {
+export function parseData(string) {
     const data = {};
     const lines = string ? string.split(configRegex.lines) : [];
     let section = null;
@@ -62,7 +62,7 @@ function parseData(string) {
     return data;
 }
 
-function changeData(string, section, options) {
+export function changeData(string, section, options) {
     const lines = string ? string.split(configRegex.lines) : [];
     let in_section = false;
     const remaining = options;
@@ -110,5 +110,3 @@ function changeData(string, section, options) {
 
     return output;
 }
-
-module.exports = { parseData, changeData };

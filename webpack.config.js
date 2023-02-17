@@ -1,14 +1,14 @@
-const fs = require("fs");
-const path = require("path");
+import fs from "fs";
 
-const copy = require("copy-webpack-plugin");
-const extract = require("mini-css-extract-plugin");
-const TerserJSPlugin = require('terser-webpack-plugin');
-const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
-const CompressionPlugin = require("compression-webpack-plugin");
-const CockpitPoPlugin = require("./pkg/lib/cockpit-po-plugin");
-const CockpitRsyncPlugin = require("./pkg/lib/cockpit-rsync-plugin");
-const ESLintPlugin = require('eslint-webpack-plugin');
+import copy from "copy-webpack-plugin";
+import extract from "mini-css-extract-plugin";
+import TerserJSPlugin from 'terser-webpack-plugin';
+import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
+import CompressionPlugin from "compression-webpack-plugin";
+import ESLintPlugin from 'eslint-webpack-plugin';
+
+import CockpitPoPlugin from "./pkg/lib/cockpit-po-plugin.js";
+import CockpitRsyncPlugin from "./pkg/lib/cockpit-rsync-plugin.js";
 
 /* A standard nodejs and webpack pattern */
 const production = process.env.NODE_ENV === 'production';
@@ -27,9 +27,9 @@ const copy_files = [
 
 const plugins = [
     new copy({ patterns: copy_files }),
-    new extract({filename: "[name].css"}),
+    new extract({ filename: "[name].css" }),
     new CockpitPoPlugin(),
-    new CockpitRsyncPlugin({dest: packageJson.name}),
+    new CockpitRsyncPlugin({ dest: packageJson.name }),
 ];
 
 if (eslint) {
@@ -50,32 +50,32 @@ const babel_loader = {
     options: {
         presets: [
             ["@babel/env", {
-                "targets": {
-                    "chrome": "57",
-                    "firefox": "52",
-                    "safari": "10.3",
-                    "edge": "16",
-                    "opera": "44"
+                targets: {
+                    chrome: "57",
+                    firefox: "52",
+                    safari: "10.3",
+                    edge: "16",
+                    opera: "44"
                 }
             }],
             "@babel/preset-react"
         ]
     }
-}
+};
 
-module.exports = {
+const config = {
     mode: production ? 'production' : 'development',
     resolve: {
-        modules: [ "node_modules", path.resolve(__dirname, 'pkg/lib') ],
+        modules: ['node_modules', 'pkg/lib'],
     },
     resolveLoader: {
-        modules: [ "node_modules", path.resolve(__dirname, 'pkg/lib') ],
+        modules: ['node_modules', 'pkg/lib'],
     },
     watchOptions: {
         ignored: /node_modules/,
     },
     entry: {
-        ostree: [ "./src/app.jsx", "./src/ostree.scss" ],
+        ostree: ["./src/app.jsx", "./src/ostree.scss"],
     },
     devtool: "source-map",
     stats: "errors-warnings",
@@ -166,5 +166,7 @@ module.exports = {
             },
         ]
     },
-    plugins: plugins
-}
+    plugins
+};
+
+export default config;
