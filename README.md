@@ -37,7 +37,7 @@ your browser.
 
 You can also use
 [watch mode](https://webpack.js.org/guides/development/#using-watch-mode) to
-automatically update the webpack on every code change with
+automatically update the bundle on every code change with
 
     $ npm run watch
 
@@ -50,7 +50,7 @@ or
 Cockpit Starter Kit uses [ESLint](https://eslint.org/) to automatically check
 JavaScript code style in `.js` and `.jsx` files.
 
-The linter is executed within every build as a webpack preloader.
+eslint is executed within every build.
 
 For developer convenience, the ESLint can be started explicitly by:
 
