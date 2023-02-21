@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 03:04+0000\n"
+"POT-Creation-Date: 2023-02-19 03:06+0000\n"
 "PO-Revision-Date: 2022-02-16 22:16+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -41,7 +41,7 @@ msgstr "Přidat další klíč"
 msgid "Add new repository"
 msgstr "Přidat nový repozitář"
 
-#: src/app.jsx:244
+#: src/app.jsx:230
 msgid "Additions"
 msgstr "Doplňky"
 
@@ -51,7 +51,7 @@ msgid "Apply"
 msgstr "Použít"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/app.jsx:322
+#: src/app.jsx:401
 msgid "Available"
 msgstr "Dostupný"
 
@@ -59,7 +59,7 @@ msgstr "Dostupný"
 msgid "Begins with $0"
 msgstr "Začíná na $0"
 
-#: src/app.jsx:175
+#: src/app.jsx:172
 msgid "Branch"
 msgstr "Větev"
 
@@ -74,21 +74,26 @@ msgstr "Storno"
 msgid "Change repository"
 msgstr "Změnit repozitář"
 
-#: src/app.jsx:196
+#: src/app.jsx:690
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "Zjistit dostupnost případných aktualizací"
 
-#: src/app.jsx:500
+#: src/app.jsx:567
 msgid "Checking for package updates..."
 msgstr "Zjišťuje se, zda jsou k dispozici aktualizace balíčku…"
 
-#: src/app.jsx:156
+#: src/app.jsx:596
 msgid "Checking for updates"
 msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
 
-#: src/app.jsx:124
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/app.jsx:391
+msgid "Close"
+msgstr "Zavřít"
+
+#: src/app.jsx:131
 msgid "Connecting to OSTree"
 msgstr "Připojování se k OSTree"
 
@@ -97,24 +102,46 @@ msgstr "Připojování se k OSTree"
 msgid "Delete"
 msgstr "Smazat"
 
-#: src/app.jsx:247
+#: src/app.jsx:350 src/app.jsx:683
+#, fuzzy
+#| msgid "Apply all updates"
+msgid "Deployments and updates"
+msgstr "Aplikovat všechny aktualizace"
+
+#: src/app.jsx:233
 msgid "Downgrades"
 msgstr "Návraty zpět k předchozím verzím"
 
-#: src/app.jsx:535
+#: src/app.jsx:610
 msgid "Error loading remotes: $0"
 msgstr "Chyba při načítání vzdálených: $0"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "Platnost podpisu skončila"
 
 # auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
-#: src/app.jsx:320
+#: src/app.jsx:394
 msgid "Failed"
 msgstr "Neúspěšný"
+
+#: src/app.jsx:340
+#, fuzzy
+#| msgid "available deployments"
+msgid "Failed to rebase deployment"
+msgstr "nasazení k dispozici"
+
+#: src/app.jsx:319
+msgid "Failed to roll back deployment"
+msgstr ""
+
+#: src/app.jsx:329
+#, fuzzy
+#| msgid "available deployments"
+msgid "Failed to upgrade deployment"
+msgstr "nasazení k dispozici"
 
 #: src/changeRemoteModal.jsx:249
 #, fuzzy
@@ -122,24 +149,24 @@ msgstr "Neúspěšný"
 msgid "GPG public key"
 msgstr "GPG veřejný klíč"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Good Signature"
 msgid "Good signature"
 msgstr "Podpis v pořádku"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "Neplatný podpis"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:159 src/app.jsx:353
 msgid "Name"
 msgstr "Název"
 
-#: src/app.jsx:453
+#: src/app.jsx:520
 msgid "No OSTree deployments found"
 msgstr "Nenalezena žádná nasazení OSTree"
 
@@ -147,21 +174,21 @@ msgstr "Nenalezena žádná nasazení OSTree"
 msgid "No configuration data found"
 msgstr "Nenalezena žádná data nastavení"
 
-#: src/app.jsx:166
+#: src/app.jsx:163
 msgid "No configured remotes"
 msgstr "Žádné natavené vzdálené zdroje"
 
-#: src/app.jsx:128
+#: src/app.jsx:135
 #, fuzzy
 #| msgid "No Deployments"
 msgid "No deployments"
 msgstr "Žádná nasazení"
 
-#: src/app.jsx:374
+#: src/app.jsx:296
 msgid "No signature available"
 msgstr "Není k dispozici žádný podpis"
 
-#: src/app.jsx:478
+#: src/app.jsx:545
 msgid "Not authorized to update software on this system"
 msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
@@ -169,23 +196,23 @@ msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
 
-#: src/app.jsx:480
+#: src/app.jsx:547
 msgid "OSTree is not available on this system"
 msgstr "OSTree není na tomto systému k dispozici"
 
-#: src/app.jsx:327
+#: src/app.jsx:249
 #, fuzzy
 #| msgid "Operating System"
 msgid "Operating system"
 msgstr "Operační systém"
 
 # auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
-#: src/app.jsx:339
+#: src/app.jsx:261
 msgid "Origin"
 msgstr "Původ"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/app.jsx:400
+#: src/app.jsx:466
 msgid "Packages"
 msgstr "Balíčky"
 
@@ -197,7 +224,7 @@ msgstr "Zadejte platnou URL adresu"
 msgid "Please provide a valid name"
 msgstr "Zadejte platný název"
 
-#: src/app.jsx:392
+#: src/app.jsx:413
 #, fuzzy
 #| msgid "Rebase and Reboot"
 msgid "Rebase and reboot"
@@ -215,31 +242,31 @@ msgstr "Obdržují se objekty metadat"
 msgid "Receiving objects: $0%"
 msgstr "Obdržují se objekty: $0%"
 
-#: src/app.jsx:135
+#: src/app.jsx:142
 msgid "Reconnect"
 msgstr "Znovu připojit"
 
-#: src/app.jsx:335
+#: src/app.jsx:257
 msgid "Released"
 msgstr "Vydáno"
 
-#: src/app.jsx:245
+#: src/app.jsx:231
 msgid "Removals"
 msgstr "Odebrání"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/app.jsx:172
+#: src/app.jsx:169
 msgid "Repository"
 msgstr "Repozitář"
 
-#: src/app.jsx:389
+#: src/app.jsx:410
 #, fuzzy
 #| msgid "Roll Back and Reboot"
 msgid "Roll back and reboot"
 msgstr "Vrátit zpět do původního stavu a restartovat"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/app.jsx:318
+#: src/app.jsx:384
 msgid "Running"
 msgstr "Spuštěné"
 
@@ -247,15 +274,15 @@ msgstr "Spuštěné"
 msgid "Scanning metadata"
 msgstr "Skenování metadat"
 
-#: src/app.jsx:177
+#: src/app.jsx:174
 msgid "Select branch"
 msgstr "Vybrat větev"
 
-#: src/app.jsx:401
+#: src/app.jsx:471
 msgid "Signatures"
 msgstr "Podpisy"
 
-#: src/app.jsx:355
+#: src/app.jsx:277
 msgid "Signed by"
 msgstr "Podepsal"
 
@@ -265,17 +292,22 @@ msgstr "Podepsal"
 msgid "Software updates"
 msgstr "Aktualizace software"
 
-#: src/app.jsx:93
+# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
+#: src/app.jsx:353
+msgid "State"
+msgstr "Stav"
+
+#: src/app.jsx:100
 msgid "System is up to date"
 msgstr "Systém je aktuální"
 
-#: src/app.jsx:227
+#: src/app.jsx:213
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Toto nasazení obsahuje stejné balíčky, jako systém, který máte nyní spuštěný"
 
-#: src/app.jsx:399
+#: src/app.jsx:461
 msgid "Tree"
 msgstr "Strom"
 
@@ -284,27 +316,27 @@ msgstr "Strom"
 msgid "URL"
 msgstr "URL"
 
-#: src/app.jsx:126
+#: src/app.jsx:133
 msgid "Unable to communicate with OSTree"
 msgstr "Nedaří se komunikovat s OSTree"
 
-#: src/app.jsx:386
+#: src/app.jsx:407
 #, fuzzy
 #| msgid "Update and Reboot"
 msgid "Update and reboot"
 msgstr "Aktualizovat a restartovat"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/app.jsx:99
+#: src/app.jsx:106
 msgid "Update available: $0"
 msgstr "Aktualizace k dispozici: $0"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/app.jsx:246
+#: src/app.jsx:232
 msgid "Updates"
 msgstr "Aktualizace"
 
-#: src/app.jsx:316
+#: src/app.jsx:382
 msgid "Updating"
 msgstr "Aktualizuje se"
 
@@ -312,16 +344,16 @@ msgstr "Aktualizuje se"
 msgid "Use trusted GPG key"
 msgstr "Použít důvěryhodný GPG klíč"
 
-#: src/app.jsx:367
+#: src/app.jsx:289
 msgid "Validity"
 msgstr "Platnost"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/app.jsx:331
+#: src/app.jsx:253
 msgid "Version"
 msgstr "Verze"
 
-#: src/app.jsx:359
+#: src/app.jsx:281
 msgid "When"
 msgstr "Kdy"
 
@@ -329,9 +361,9 @@ msgstr "Kdy"
 msgid "Writing objects"
 msgstr "Zapisují se objekty"
 
-#: src/app.jsx:609
-msgid "available deployments"
-msgstr "nasazení k dispozici"
+#: src/app.jsx:395
+msgid "view more..."
+msgstr ""
 
 #~ msgid "$0 package"
 #~ msgstr "$0 balíček"
@@ -994,9 +1026,6 @@ msgstr "nasazení k dispozici"
 #~ msgid "Applications"
 #~ msgstr "Aplikace"
 
-#~ msgid "Apply all updates"
-#~ msgstr "Aplikovat všechny aktualizace"
-
 #~ msgid "Apply security updates"
 #~ msgstr "Aplikovat bezpečnostní aktualizace"
 
@@ -1336,10 +1365,6 @@ msgstr "nasazení k dispozici"
 
 #~ msgid "Client Certificate"
 #~ msgstr "Klientský certifikát"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#~ msgid "Close"
-#~ msgstr "Zavřít"
 
 #~ msgid "Close Selected Pages"
 #~ msgstr "Zavřít vybrané stránky"
@@ -2254,10 +2279,6 @@ msgstr "nasazení k dispozici"
 
 #~ msgid "Start"
 #~ msgstr "Start"
-
-# auto translated by TM merge from project: selinux (policycoreutils), version: master, DocId: policycoreutils
-#~ msgid "State"
-#~ msgstr "Stav"
 
 # auto translated by TM merge from project: libvirt, version: master, DocId: libvirt
 #~ msgid "State:"
