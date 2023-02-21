@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 03:04+0000\n"
-"PO-Revision-Date: 2023-02-06 16:46+0000\n"
+"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/tr/>\n"
@@ -34,7 +34,7 @@ msgstr "Başka anahtar ekle"
 msgid "Add new repository"
 msgstr "Yeni depo ekle"
 
-#: src/app.jsx:244
+#: src/app.jsx:230
 msgid "Additions"
 msgstr "Eklemeler"
 
@@ -42,7 +42,7 @@ msgstr "Eklemeler"
 msgid "Apply"
 msgstr "Uygula"
 
-#: src/app.jsx:322
+#: src/app.jsx:401
 msgid "Available"
 msgstr "Kullanılabilir"
 
@@ -50,7 +50,7 @@ msgstr "Kullanılabilir"
 msgid "Begins with $0"
 msgstr "$0 ile başlar"
 
-#: src/app.jsx:175
+#: src/app.jsx:172
 msgid "Branch"
 msgstr "Dal"
 
@@ -63,19 +63,23 @@ msgstr "İptal"
 msgid "Change repository"
 msgstr "Depoyu değiştir"
 
-#: src/app.jsx:196
+#: src/app.jsx:690
 msgid "Check for updates"
 msgstr "Güncellemeleri denetle"
 
-#: src/app.jsx:500
+#: src/app.jsx:567
 msgid "Checking for package updates..."
 msgstr "Paket güncellemeleri denetleniyor..."
 
-#: src/app.jsx:156
+#: src/app.jsx:596
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
-#: src/app.jsx:124
+#: src/app.jsx:391
+msgid "Close"
+msgstr "Kapat"
+
+#: src/app.jsx:131
 msgid "Connecting to OSTree"
 msgstr "OSTree'ye bağlanılıyor"
 
@@ -83,39 +87,55 @@ msgstr "OSTree'ye bağlanılıyor"
 msgid "Delete"
 msgstr "Sil"
 
-#: src/app.jsx:247
+#: src/app.jsx:350 src/app.jsx:683
+msgid "Deployments and updates"
+msgstr "Dağıtımlar ve güncellemeler"
+
+#: src/app.jsx:233
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/app.jsx:535
+#: src/app.jsx:610
 msgid "Error loading remotes: $0"
 msgstr "Uzak depolar yüklenirken hata oldu: $0"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 msgid "Expired signature"
 msgstr "Süresi dolmuş imza"
 
-#: src/app.jsx:320
+#: src/app.jsx:394
 msgid "Failed"
 msgstr "Başarısız"
+
+#: src/app.jsx:340
+msgid "Failed to rebase deployment"
+msgstr "Dağıtımı yeniden temellendirme başarısız oldu"
+
+#: src/app.jsx:319
+msgid "Failed to roll back deployment"
+msgstr "Dağıtımı geri alma başarısız oldu"
+
+#: src/app.jsx:329
+msgid "Failed to upgrade deployment"
+msgstr "Dağıtımı yükseltme başarısız oldu"
 
 #: src/changeRemoteModal.jsx:249
 msgid "GPG public key"
 msgstr "GPG ortak anahtar"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 msgid "Good signature"
 msgstr "Geçerli imza"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 msgid "Invalid signature"
 msgstr "Geçersiz imza"
 
-#: src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:159 src/app.jsx:353
 msgid "Name"
 msgstr "Ad"
 
-#: src/app.jsx:453
+#: src/app.jsx:520
 msgid "No OSTree deployments found"
 msgstr "Bulunan OSTree dağıtımları yok"
 
@@ -123,19 +143,19 @@ msgstr "Bulunan OSTree dağıtımları yok"
 msgid "No configuration data found"
 msgstr "Bulunan yapılandırma verileri yok"
 
-#: src/app.jsx:166
+#: src/app.jsx:163
 msgid "No configured remotes"
 msgstr "Yapılandırılmış uzaklar yok"
 
-#: src/app.jsx:128
+#: src/app.jsx:135
 msgid "No deployments"
 msgstr "Dağıtımlar yok"
 
-#: src/app.jsx:374
+#: src/app.jsx:296
 msgid "No signature available"
 msgstr "Mevcut imza yok"
 
-#: src/app.jsx:478
+#: src/app.jsx:545
 msgid "Not authorized to update software on this system"
 msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 
@@ -143,19 +163,19 @@ msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 msgid "OS $0 not found"
 msgstr "$0 işletim sistemi bulunamadı"
 
-#: src/app.jsx:480
+#: src/app.jsx:547
 msgid "OSTree is not available on this system"
 msgstr "OSTree bu sistemde kullanılabilir değil"
 
-#: src/app.jsx:327
+#: src/app.jsx:249
 msgid "Operating system"
 msgstr "İşletim sistemi"
 
-#: src/app.jsx:339
+#: src/app.jsx:261
 msgid "Origin"
 msgstr "Kaynak"
 
-#: src/app.jsx:400
+#: src/app.jsx:466
 msgid "Packages"
 msgstr "Paketler"
 
@@ -167,7 +187,7 @@ msgstr "Lütfen geçerli bir URL girin"
 msgid "Please provide a valid name"
 msgstr "Lütfen geçerli bir ad girin"
 
-#: src/app.jsx:392
+#: src/app.jsx:413
 msgid "Rebase and reboot"
 msgstr "Yeniden konumla ve yeniden başlat"
 
@@ -183,27 +203,27 @@ msgstr "Üst veri nesneleri alınıyor"
 msgid "Receiving objects: $0%"
 msgstr "Nesneler alınıyor: %$0"
 
-#: src/app.jsx:135
+#: src/app.jsx:142
 msgid "Reconnect"
 msgstr "Yeniden bağlan"
 
-#: src/app.jsx:335
+#: src/app.jsx:257
 msgid "Released"
 msgstr "Yayımlanma"
 
-#: src/app.jsx:245
+#: src/app.jsx:231
 msgid "Removals"
 msgstr "Kaldırılanlar"
 
-#: src/app.jsx:172
+#: src/app.jsx:169
 msgid "Repository"
 msgstr "Depo"
 
-#: src/app.jsx:389
+#: src/app.jsx:410
 msgid "Roll back and reboot"
 msgstr "Geri al ve yeniden başlat"
 
-#: src/app.jsx:318
+#: src/app.jsx:384
 msgid "Running"
 msgstr "Çalışıyor"
 
@@ -211,15 +231,15 @@ msgstr "Çalışıyor"
 msgid "Scanning metadata"
 msgstr "Üst veriler taranıyor"
 
-#: src/app.jsx:177
+#: src/app.jsx:174
 msgid "Select branch"
 msgstr "Dal seç"
 
-#: src/app.jsx:401
+#: src/app.jsx:471
 msgid "Signatures"
 msgstr "İmzalar"
 
-#: src/app.jsx:355
+#: src/app.jsx:277
 msgid "Signed by"
 msgstr "İmzalayan"
 
@@ -227,16 +247,20 @@ msgstr "İmzalayan"
 msgid "Software updates"
 msgstr "Yazılım güncellemeleri"
 
-#: src/app.jsx:93
+#: src/app.jsx:353
+msgid "State"
+msgstr "Durum"
+
+#: src/app.jsx:100
 msgid "System is up to date"
 msgstr "Sistem güncel"
 
-#: src/app.jsx:227
+#: src/app.jsx:213
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "Bu dağıtım, şu anda önyüklenmiş sisteminizle aynı paketleri içeriyor"
 
-#: src/app.jsx:399
+#: src/app.jsx:461
 msgid "Tree"
 msgstr "Ağaç"
 
@@ -244,23 +268,23 @@ msgstr "Ağaç"
 msgid "URL"
 msgstr "URL"
 
-#: src/app.jsx:126
+#: src/app.jsx:133
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree ile iletişim kurulamadı"
 
-#: src/app.jsx:386
+#: src/app.jsx:407
 msgid "Update and reboot"
 msgstr "Güncelle ve yeniden başlat"
 
-#: src/app.jsx:99
+#: src/app.jsx:106
 msgid "Update available: $0"
 msgstr "Güncelleme mevcut: $0"
 
-#: src/app.jsx:246
+#: src/app.jsx:232
 msgid "Updates"
 msgstr "Güncellemeler"
 
-#: src/app.jsx:316
+#: src/app.jsx:382
 msgid "Updating"
 msgstr "Güncelleniyor"
 
@@ -268,15 +292,15 @@ msgstr "Güncelleniyor"
 msgid "Use trusted GPG key"
 msgstr "Güvenilir GPG anahtarı kullan"
 
-#: src/app.jsx:367
+#: src/app.jsx:289
 msgid "Validity"
 msgstr "Doğrulama"
 
-#: src/app.jsx:331
+#: src/app.jsx:253
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/app.jsx:359
+#: src/app.jsx:281
 msgid "When"
 msgstr "Ne zaman"
 
@@ -284,9 +308,9 @@ msgstr "Ne zaman"
 msgid "Writing objects"
 msgstr "Nesneler yazılıyor"
 
-#: src/app.jsx:609
-msgid "available deployments"
-msgstr "mevcut dağıtımlar"
+#: src/app.jsx:395
+msgid "view more..."
+msgstr "daha fazla görüntüle..."
 
 #~ msgid "$0 package"
 #~ msgstr "$0 paket"
@@ -308,9 +332,6 @@ msgstr "mevcut dağıtımlar"
 
 #~ msgid "Operating System Updates"
 #~ msgstr "İşletim Sistemi Güncellemeleri"
-
-#~ msgid "Status"
-#~ msgstr "Durum"
 
 #~ msgid "at"
 #~ msgstr "şurada"
@@ -525,9 +546,6 @@ msgstr "mevcut dağıtımlar"
 #, fuzzy
 #~ msgid "Claim Name"
 #~ msgstr "Konteyner İsmi"
-
-#~ msgid "Close"
-#~ msgstr "Kapat"
 
 #, fuzzy
 #~ msgid "Cluster"

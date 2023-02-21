@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-12 03:04+0000\n"
+"POT-Creation-Date: 2023-02-19 03:06+0000\n"
 "PO-Revision-Date: 2021-07-06 13:04+0000\n"
 "Last-Translator: Arman Arisman <arman.wu@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -40,7 +40,7 @@ msgstr "Tambah Kunci Lain"
 msgid "Add new repository"
 msgstr "- Tambah Repositori Baru"
 
-#: src/app.jsx:244
+#: src/app.jsx:230
 msgid "Additions"
 msgstr "Tambahan"
 
@@ -48,7 +48,7 @@ msgstr "Tambahan"
 msgid "Apply"
 msgstr "Terapkan"
 
-#: src/app.jsx:322
+#: src/app.jsx:401
 msgid "Available"
 msgstr "Tersedia"
 
@@ -56,7 +56,7 @@ msgstr "Tersedia"
 msgid "Begins with $0"
 msgstr ""
 
-#: src/app.jsx:175
+#: src/app.jsx:172
 msgid "Branch"
 msgstr ""
 
@@ -71,23 +71,27 @@ msgstr "Batal"
 msgid "Change repository"
 msgstr "Ubah Repositori"
 
-#: src/app.jsx:196
+#: src/app.jsx:690
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "Periksa Pemutakhiran"
 
-#: src/app.jsx:500
+#: src/app.jsx:567
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "Memeriksa pemutakhiran"
 
-#: src/app.jsx:156
+#: src/app.jsx:596
 msgid "Checking for updates"
 msgstr "Memeriksa pemutakhiran"
 
-#: src/app.jsx:124
+#: src/app.jsx:391
+msgid "Close"
+msgstr ""
+
+#: src/app.jsx:131
 msgid "Connecting to OSTree"
 msgstr "Menyambung ke OSTree"
 
@@ -95,45 +99,65 @@ msgstr "Menyambung ke OSTree"
 msgid "Delete"
 msgstr "Hapus"
 
-#: src/app.jsx:247
+#: src/app.jsx:350 src/app.jsx:683
+msgid "Deployments and updates"
+msgstr ""
+
+#: src/app.jsx:233
 msgid "Downgrades"
 msgstr "Downgrade"
 
-#: src/app.jsx:535
+#: src/app.jsx:610
 msgid "Error loading remotes: $0"
 msgstr "Kesalahan saat memuat remote: $0"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "Tanda Tangan Kadaluarsa"
 
-#: src/app.jsx:320
+#: src/app.jsx:394
 msgid "Failed"
 msgstr "Gagal"
+
+#: src/app.jsx:340
+#, fuzzy
+#| msgid "No Deployments"
+msgid "Failed to rebase deployment"
+msgstr "Tidak Ada Penyebaran"
+
+#: src/app.jsx:319
+msgid "Failed to roll back deployment"
+msgstr ""
+
+#: src/app.jsx:329
+#, fuzzy
+#| msgid "No Deployments"
+msgid "Failed to upgrade deployment"
+msgstr "Tidak Ada Penyebaran"
 
 #: src/changeRemoteModal.jsx:249
 msgid "GPG public key"
 msgstr ""
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Good Signature"
 msgid "Good signature"
 msgstr "Tanda Tangan yang Baik"
 
-#: src/app.jsx:350
+#: src/app.jsx:272
 #, fuzzy
 #| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "Tanda Tangan yang Tidak Valid"
 
-#: src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:159 src/app.jsx:353
 msgid "Name"
 msgstr "Nama"
 
-#: src/app.jsx:453
+#: src/app.jsx:520
 msgid "No OSTree deployments found"
 msgstr "Tidak menemukan penyebaran OSTree"
 
@@ -141,23 +165,23 @@ msgstr "Tidak menemukan penyebaran OSTree"
 msgid "No configuration data found"
 msgstr "Tidak ada data konfigurasi yang ditemukan"
 
-#: src/app.jsx:166
+#: src/app.jsx:163
 msgid "No configured remotes"
 msgstr ""
 
-#: src/app.jsx:128
+#: src/app.jsx:135
 #, fuzzy
 #| msgid "No Deployments"
 msgid "No deployments"
 msgstr "Tidak Ada Penyebaran"
 
-#: src/app.jsx:374
+#: src/app.jsx:296
 #, fuzzy
 #| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "Tidak ada tanda tangan yang tersedia"
 
-#: src/app.jsx:478
+#: src/app.jsx:545
 msgid "Not authorized to update software on this system"
 msgstr "Tidak berwenang untuk memperbarui perangkat lunak pada sistem ini"
 
@@ -165,21 +189,21 @@ msgstr "Tidak berwenang untuk memperbarui perangkat lunak pada sistem ini"
 msgid "OS $0 not found"
 msgstr "OS $0 tidak ditemukan"
 
-#: src/app.jsx:480
+#: src/app.jsx:547
 msgid "OSTree is not available on this system"
 msgstr "OSTree tidak tersedia di sistem ini"
 
-#: src/app.jsx:327
+#: src/app.jsx:249
 #, fuzzy
 #| msgid "Operating System"
 msgid "Operating system"
 msgstr "Sistem Operasi"
 
-#: src/app.jsx:339
+#: src/app.jsx:261
 msgid "Origin"
 msgstr "Asal"
 
-#: src/app.jsx:400
+#: src/app.jsx:466
 msgid "Packages"
 msgstr "Paket"
 
@@ -191,7 +215,7 @@ msgstr "Harap berikan URL yang valid"
 msgid "Please provide a valid name"
 msgstr "Harap berikan nama yang valid"
 
-#: src/app.jsx:392
+#: src/app.jsx:413
 #, fuzzy
 #| msgid "Rebase and Reboot"
 msgid "Rebase and reboot"
@@ -209,31 +233,31 @@ msgstr "Menerima objek metadata"
 msgid "Receiving objects: $0%"
 msgstr "Menerima objek: $0%"
 
-#: src/app.jsx:135
+#: src/app.jsx:142
 msgid "Reconnect"
 msgstr "Menghubungkan Kembali"
 
-#: src/app.jsx:335
+#: src/app.jsx:257
 msgid "Released"
 msgstr "Dirilis"
 
-#: src/app.jsx:245
+#: src/app.jsx:231
 msgid "Removals"
 msgstr "Penghapusan"
 
-#: src/app.jsx:172
+#: src/app.jsx:169
 #, fuzzy
 #| msgid "Change Repository"
 msgid "Repository"
 msgstr "Ubah Repositori"
 
-#: src/app.jsx:389
+#: src/app.jsx:410
 #, fuzzy
 #| msgid "Roll Back and Reboot"
 msgid "Roll back and reboot"
 msgstr "Roll Back dan Reboot"
 
-#: src/app.jsx:318
+#: src/app.jsx:384
 msgid "Running"
 msgstr "Menjalankan"
 
@@ -241,17 +265,17 @@ msgstr "Menjalankan"
 msgid "Scanning metadata"
 msgstr "Memindai metadata"
 
-#: src/app.jsx:177
+#: src/app.jsx:174
 msgid "Select branch"
 msgstr ""
 
-#: src/app.jsx:401
+#: src/app.jsx:471
 #, fuzzy
 #| msgid "Signature"
 msgid "Signatures"
 msgstr "Tanda Tangan"
 
-#: src/app.jsx:355
+#: src/app.jsx:277
 msgid "Signed by"
 msgstr "Ditandatangani oleh"
 
@@ -261,17 +285,23 @@ msgstr "Ditandatangani oleh"
 msgid "Software updates"
 msgstr "Pembaruan Perangkat Lunak"
 
-#: src/app.jsx:93
+#: src/app.jsx:353
+#, fuzzy
+#| msgid "Status"
+msgid "State"
+msgstr "Status"
+
+#: src/app.jsx:100
 msgid "System is up to date"
 msgstr ""
 
-#: src/app.jsx:227
+#: src/app.jsx:213
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Penerapan ini berisi paket yang sama dengan sistem Anda yang saat ini di-boot"
 
-#: src/app.jsx:399
+#: src/app.jsx:461
 msgid "Tree"
 msgstr "Tree"
 
@@ -279,25 +309,25 @@ msgstr "Tree"
 msgid "URL"
 msgstr "URL"
 
-#: src/app.jsx:126
+#: src/app.jsx:133
 msgid "Unable to communicate with OSTree"
 msgstr "Tidak dapat berkomunikasi dengan OSTree"
 
-#: src/app.jsx:386
+#: src/app.jsx:407
 #, fuzzy
 #| msgid "Update and Reboot"
 msgid "Update and reboot"
 msgstr "Perbarui dan Reboot"
 
-#: src/app.jsx:99
+#: src/app.jsx:106
 msgid "Update available: $0"
 msgstr ""
 
-#: src/app.jsx:246
+#: src/app.jsx:232
 msgid "Updates"
 msgstr "Pembaruan"
 
-#: src/app.jsx:316
+#: src/app.jsx:382
 msgid "Updating"
 msgstr "Memperbarui"
 
@@ -305,15 +335,15 @@ msgstr "Memperbarui"
 msgid "Use trusted GPG key"
 msgstr "Gunakan GPG key terpercaya"
 
-#: src/app.jsx:367
+#: src/app.jsx:289
 msgid "Validity"
 msgstr ""
 
-#: src/app.jsx:331
+#: src/app.jsx:253
 msgid "Version"
 msgstr "Versi"
 
-#: src/app.jsx:359
+#: src/app.jsx:281
 msgid "When"
 msgstr "Kapan"
 
@@ -321,11 +351,9 @@ msgstr "Kapan"
 msgid "Writing objects"
 msgstr "Menulis objek"
 
-#: src/app.jsx:609
-#, fuzzy
-#| msgid "No Deployments"
-msgid "available deployments"
-msgstr "Tidak Ada Penyebaran"
+#: src/app.jsx:395
+msgid "view more..."
+msgstr ""
 
 #~ msgid "$0 package"
 #~ msgstr "$0 paket"
@@ -347,9 +375,6 @@ msgstr "Tidak Ada Penyebaran"
 
 #~ msgid "Operating System Updates"
 #~ msgstr "Pembaruan Sistem Operasi"
-
-#~ msgid "Status"
-#~ msgstr "Status"
 
 #~ msgid "at"
 #~ msgstr "di"
