@@ -183,13 +183,6 @@ class OstreeRestartCase(MachineCase):
         b.login_and_go("/updates")
         b.enter_page("/updates")
 
-        # Wait until all two deployments are shown.  The second one
-        # has a menu, which affects the table layout, which is
-        # important for the pixel tests.  So make sure they are both
-        # there before asserting any pixels.
-        #
-        wait_deployment_prop(b, 2, "State", "Available")
-
         # Check current and rollback target
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
         wait_deployment_prop(b, 1, "State", "Running")
@@ -199,7 +192,10 @@ class OstreeRestartCase(MachineCase):
         wait_deployment_details_prop(b, 1, "Tree", "#osversion", "cockpit-base.1")
 
         b.assert_pixels("#repo-remote-toolbar", "remote-toolbar")
-        b.assert_pixels("#available-deployments > tbody:nth-child(2)", "deployment", ignore=[".timestamp"])
+        b.assert_pixels("#available-deployments > tbody:nth-child(2)", "deployment",
+                        ignore=[".timestamp",
+                                # The columns change size dependent on the second deployment's name.
+                                "td[data-label=Name]", "td[data-label=State]"])
 
         wait_packages(b, 1, {"rpms-col1": [chrony], "rpms-col2": [tzdata]})
         wait_packages(b, 1, {"rpms-col2": [remove_pkg]})
