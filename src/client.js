@@ -235,8 +235,9 @@ class RPMOSTreeDBusClient {
             this.local_running = null;
             this.booted_id = null;
 
-            this.waits = cockpit.defer();
-            this.waits.promise.then(() => {
+            this.waits_resolve = null;
+            this.waits = new Promise(resolve => { this.waits_resolve = resolve });
+            this.waits.then(() => {
                 if (this.sysroot && this.sysroot.valid)
                     this.build_os_list(this.sysroot.Deployments);
                 else
@@ -271,10 +272,10 @@ class RPMOSTreeDBusClient {
                             const proxy = this.os_proxies[path];
                             this.os_names[proxy.Name] = path;
                         }
-                        this.waits.resolve();
+                        this.waits_resolve();
                     });
                 } else {
-                    this.waits.resolve();
+                    this.waits_resolve();
                 }
             });
         }
@@ -359,15 +360,10 @@ class RPMOSTreeDBusClient {
     }
 
     connect() {
-        const dp = cockpit.defer();
         this.get_client();
-        this.waits.promise.done(() => {
-            if (this.connection_error)
-                dp.reject(this.connection_error);
-            else
-                dp.resolve(this.client);
-        });
-        return dp.promise;
+        return this.waits.then(() =>
+            this.connection_error ? Promise.reject(this.connection_error) : this.client
+        );
     }
 
     known_versions_for(os_name, remote, branch) {
@@ -544,7 +540,6 @@ class RPMOSTreeDBusClient {
     }
 
     cache_update_for(os, remote, branch) {
-        const dp = cockpit.defer();
         const refspec = this.build_change_refspec(os, remote, branch);
         const proxy = this.get_os_proxy(os);
 
@@ -552,8 +547,8 @@ class RPMOSTreeDBusClient {
             if (!refspec)
                 return Promise.resolve(proxy.CachedUpdate);
 
-            proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
-                    .done(data => {
+            return proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
+                    .then(data => {
                         let item;
                         if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
                             item = data[1];
@@ -563,16 +558,13 @@ class RPMOSTreeDBusClient {
                         }
 
                         if (item)
-                            dp.resolve(item);
+                            return item;
                         else
-                            dp.reject({ problem: "protocol-error" });
-                    })
-                    .fail(ex => dp.reject(ex));
+                            return Promise.reject(new Error({ problem: "protocol-error" }));
+                    });
         } else {
-            dp.reject(cockpit.format(_("OS $0 not found"), os));
+            return Promise.reject(new Error(cockpit.format(_("OS $0 not found"), os)));
         }
-
-        return dp.promise();
     }
 
     check_for_updates(os, remote, branch) {
