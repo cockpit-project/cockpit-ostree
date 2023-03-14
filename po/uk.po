@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -65,15 +65,15 @@ msgstr "Скасувати"
 msgid "Change repository"
 msgstr "Змінити сховище"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 msgid "Check for updates"
 msgstr "Перевірити наявність оновлень"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "Шукаємо оновлення пакунків…"
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "Шукаємо оновлення"
 
@@ -89,7 +89,7 @@ msgstr "Встановлюємо з’єднання з OSTree"
 msgid "Delete"
 msgstr "Вилучити"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 msgid "Deployments and updates"
 msgstr "Розгортання і оновлення"
 
@@ -97,7 +97,7 @@ msgstr "Розгортання і оновлення"
 msgid "Downgrades"
 msgstr "Зниження"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
 
@@ -133,11 +133,11 @@ msgstr "Чинний підпис"
 msgid "Invalid signature"
 msgstr "Некоректний підпис"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Назва"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "Не знайдено розгорнутих OSTree"
 
@@ -157,7 +157,7 @@ msgstr "Немає розгортань"
 msgid "No signature available"
 msgstr "Немає доступних підписів"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
 
@@ -165,7 +165,7 @@ msgstr "Не уповноважено на оновлення програмно
 msgid "OS $0 not found"
 msgstr "ОС $0 не знайдено"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree у цій системі недоступна"
 

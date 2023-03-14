@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2022-02-16 22:16+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -74,17 +74,17 @@ msgstr "Storno"
 msgid "Change repository"
 msgstr "Změnit repozitář"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "Zjistit dostupnost případných aktualizací"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "Zjišťuje se, zda jsou k dispozici aktualizace balíčku…"
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "Zjišťuje se, zda jsou k dispozici nové aktualizace"
 
@@ -102,7 +102,7 @@ msgstr "Připojování se k OSTree"
 msgid "Delete"
 msgstr "Smazat"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 #, fuzzy
 #| msgid "Apply all updates"
 msgid "Deployments and updates"
@@ -112,7 +112,7 @@ msgstr "Aplikovat všechny aktualizace"
 msgid "Downgrades"
 msgstr "Návraty zpět k předchozím verzím"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "Chyba při načítání vzdálených: $0"
 
@@ -162,11 +162,11 @@ msgid "Invalid signature"
 msgstr "Neplatný podpis"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Název"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "Nenalezena žádná nasazení OSTree"
 
@@ -188,7 +188,7 @@ msgstr "Žádná nasazení"
 msgid "No signature available"
 msgstr "Není k dispozici žádný podpis"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
@@ -196,7 +196,7 @@ msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree není na tomto systému k dispozici"
 

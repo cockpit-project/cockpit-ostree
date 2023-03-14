@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2023-02-19 16:20+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -65,15 +65,15 @@ msgstr "გაუქმება"
 msgid "Change repository"
 msgstr "რეპოზიტორიის შეცვლა"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 msgid "Check for updates"
 msgstr "განახლებების შემოწმება"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "პაკეტების განახლებების შემოწმება..."
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "განახლებების შემოწმება"
 
@@ -89,7 +89,7 @@ msgstr "OSTree-თან დაკავშირება"
 msgid "Delete"
 msgstr "წაშლა"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 msgid "Deployments and updates"
 msgstr "გაშლები და განახლებები"
 
@@ -97,7 +97,7 @@ msgstr "გაშლები და განახლებები"
 msgid "Downgrades"
 msgstr "ვერსიის ჩამოწევა"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "დაშორებულების ჩატვირთვის შეცდომა: $0"
 
@@ -133,11 +133,11 @@ msgstr "კარგი ხელმოწერა"
 msgid "Invalid signature"
 msgstr "არასწორი ხელმოწერა"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "სახელი"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "OSTree-ს გაშლები ნაპოვნი არაა"
 
@@ -157,7 +157,7 @@ msgstr "გაშლილი არაა"
 msgid "No signature available"
 msgstr "ხელმოწერები ხელმიუწვდომელია"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr ""
 "ამ სისტემის პროგრამული უზრუნველყოფის განახლებისთვის ავტორიზაცია არ გაგაჩნიათ"
@@ -166,7 +166,7 @@ msgstr ""
 msgid "OS $0 not found"
 msgstr "OS $0 ნაპოვნი არაა"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "მიმდინარე სისტემაზე OSTree-ი ხელმიუწვდომელია"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2018-05-03 04:56+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan\n"
@@ -69,19 +69,19 @@ msgstr "Cancel·la"
 msgid "Change repository"
 msgstr "Canvia de dipòsit"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "Comprova si hi ha actualitzacions"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "Comprovació per si hi ha actualitzacions"
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "Comprovació per si hi ha actualitzacions"
 
@@ -97,7 +97,7 @@ msgstr "S'està connectant a OSTree"
 msgid "Delete"
 msgstr "Suprimeix"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 #, fuzzy
 #| msgid "Deployment Causes"
 msgid "Deployments and updates"
@@ -107,7 +107,7 @@ msgstr "Causes del desplegament"
 msgid "Downgrades"
 msgstr "Reversions"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "Error en carregar els remots: $0"
 
@@ -155,11 +155,11 @@ msgstr "Bona signatura"
 msgid "Invalid signature"
 msgstr "Signatura no vàlida"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Nom"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "No s'ha trobat desplegaments OSTree"
 
@@ -185,7 +185,7 @@ msgstr "Sense desplegaments"
 msgid "No signature available"
 msgstr "No hi ha disponible cap disc."
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "No autoritzat per actualitzar el programari en aquest sistema"
 
@@ -193,7 +193,7 @@ msgstr "No autoritzat per actualitzar el programari en aquest sistema"
 msgid "OS $0 not found"
 msgstr "SO $0 no trobat"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree no està disponible en aquest sistema"
 

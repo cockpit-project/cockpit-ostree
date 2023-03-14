@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -64,15 +64,15 @@ msgstr "Peru"
 msgid "Change repository"
 msgstr "Vaihda asennuslähde"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 msgid "Check for updates"
 msgstr "Etsi päivityksiä"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "Tarkistetaan pakettipäivityksiä ..."
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
@@ -88,7 +88,7 @@ msgstr "Yhdistetään OSTree:n"
 msgid "Delete"
 msgstr "Poista"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 msgid "Deployments and updates"
 msgstr "Käyttöönotot ja päivitykset"
 
@@ -96,7 +96,7 @@ msgstr "Käyttöönotot ja päivitykset"
 msgid "Downgrades"
 msgstr "Aiemmat versiot"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "Virhe ladattaessa ohjaimia: $0"
 
@@ -132,11 +132,11 @@ msgstr "Hyvä allekirjoitus"
 msgid "Invalid signature"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Nimi"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "OSTree-käyttöönottoja ei löytynyt"
 
@@ -156,7 +156,7 @@ msgstr "Ei käyttöönottoja"
 msgid "No signature available"
 msgstr "Allekirjoitusta ei ole saatavilla"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
@@ -164,7 +164,7 @@ msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree ei ole käytettävissä tässä järjestelmässä"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2023-02-17 14:20+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -68,19 +68,19 @@ msgstr "ביטול"
 msgid "Change repository"
 msgstr "החלפת מאגר"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "חיפוש עדכונים"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "מתבצע חיפוש אחר עדכונים"
 
@@ -96,7 +96,7 @@ msgstr "מתבצעת התחברות ל־OSTree"
 msgid "Delete"
 msgstr "מחיקה"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 msgid "Deployments and updates"
 msgstr ""
 
@@ -104,7 +104,7 @@ msgstr ""
 msgid "Downgrades"
 msgstr "משנמך"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "שגיאה בטעינת המרוחקים: $0"
 
@@ -150,11 +150,11 @@ msgstr "חתימה טובה"
 msgid "Invalid signature"
 msgstr "חתימה שגויה"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "שם"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "לא נמצאו הטמעות OSTree"
 
@@ -178,7 +178,7 @@ msgstr "אין הטמעות"
 msgid "No signature available"
 msgstr "אין חתימה זמינה"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 
@@ -186,7 +186,7 @@ msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 msgid "OS $0 not found"
 msgstr "מערכת ההפעלה $0 לא נמצאה"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree אינה זמינה במערכת הזאת"
 
