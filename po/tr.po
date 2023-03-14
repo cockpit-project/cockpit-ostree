@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -63,15 +63,15 @@ msgstr "İptal"
 msgid "Change repository"
 msgstr "Depoyu değiştir"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 msgid "Check for updates"
 msgstr "Güncellemeleri denetle"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "Paket güncellemeleri denetleniyor..."
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
@@ -87,7 +87,7 @@ msgstr "OSTree'ye bağlanılıyor"
 msgid "Delete"
 msgstr "Sil"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 msgid "Deployments and updates"
 msgstr "Dağıtımlar ve güncellemeler"
 
@@ -95,7 +95,7 @@ msgstr "Dağıtımlar ve güncellemeler"
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "Uzak depolar yüklenirken hata oldu: $0"
 
@@ -131,11 +131,11 @@ msgstr "Geçerli imza"
 msgid "Invalid signature"
 msgstr "Geçersiz imza"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "Ad"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "Bulunan OSTree dağıtımları yok"
 
@@ -155,7 +155,7 @@ msgstr "Dağıtımlar yok"
 msgid "No signature available"
 msgstr "Mevcut imza yok"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 
@@ -163,7 +163,7 @@ msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 msgid "OS $0 not found"
 msgstr "$0 işletim sistemi bulunamadı"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "OSTree bu sistemde kullanılabilir değil"
 

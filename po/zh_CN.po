@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-02-19 03:06+0000\n"
+"POT-Creation-Date: 2023-03-10 03:17+0000\n"
 "PO-Revision-Date: 2022-01-06 08:16+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -71,17 +71,17 @@ msgstr "取消"
 msgid "Change repository"
 msgstr "变更源"
 
-#: src/app.jsx:690
+#: src/app.jsx:688
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "检查更新"
 
-#: src/app.jsx:567
+#: src/app.jsx:565
 msgid "Checking for package updates..."
 msgstr "正在检查软件包更新……"
 
-#: src/app.jsx:596
+#: src/app.jsx:594
 msgid "Checking for updates"
 msgstr "检查升级"
 
@@ -97,7 +97,7 @@ msgstr "连接到系统树"
 msgid "Delete"
 msgstr "删除"
 
-#: src/app.jsx:350 src/app.jsx:683
+#: src/app.jsx:350 src/app.jsx:681
 #, fuzzy
 #| msgid "Deployment Causes"
 msgid "Deployments and updates"
@@ -107,7 +107,7 @@ msgstr "部署原因"
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/app.jsx:610
+#: src/app.jsx:608
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
@@ -155,11 +155,11 @@ msgstr "正确的签名"
 msgid "Invalid signature"
 msgstr "无效的签名"
 
-#: src/changeRemoteModal.jsx:159 src/app.jsx:353
+#: src/app.jsx:353 src/changeRemoteModal.jsx:159
 msgid "Name"
 msgstr "名称"
 
-#: src/app.jsx:520
+#: src/app.jsx:518
 msgid "No OSTree deployments found"
 msgstr "没有找到 OSTree 部署"
 
@@ -181,7 +181,7 @@ msgstr "没有部署"
 msgid "No signature available"
 msgstr "没有可用的签名"
 
-#: src/app.jsx:545
+#: src/app.jsx:543
 msgid "Not authorized to update software on this system"
 msgstr "未授权更新该系统上的软件"
 
@@ -189,7 +189,7 @@ msgstr "未授权更新该系统上的软件"
 msgid "OS $0 not found"
 msgstr "未找到操作系统 $0"
 
-#: src/app.jsx:547
+#: src/app.jsx:545
 msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
