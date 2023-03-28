@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 03:17+0000\n"
+"POT-Creation-Date: 2023-03-26 02:55+0000\n"
 "PO-Revision-Date: 2023-02-19 16:20+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 4.15.2\n"
 
-#: src/client.js:473
+#: src/client.js:469
 msgid "$0 key ID"
 msgstr "$0 გასაღების ID"
 
@@ -162,7 +162,7 @@ msgid "Not authorized to update software on this system"
 msgstr ""
 "ამ სისტემის პროგრამული უზრუნველყოფის განახლებისთვის ავტორიზაცია არ გაგაჩნიათ"
 
-#: src/client.js:572 src/client.js:659
+#: src/client.js:566 src/client.js:651
 msgid "OS $0 not found"
 msgstr "OS $0 ნაპოვნი არაა"
 

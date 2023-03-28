@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 03:17+0000\n"
-"PO-Revision-Date: 2023-03-10 21:20+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"POT-Creation-Date: 2023-03-26 02:55+0000\n"
+"PO-Revision-Date: 2023-03-26 17:20+0000\n"
+"Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/de/>\n"
 "Language: de\n"
@@ -23,7 +23,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 4.15.2\n"
 
-#: src/client.js:473
+#: src/client.js:469
 msgid "$0 key ID"
 msgstr "$0 Schlüssel-ID"
 
@@ -114,15 +114,15 @@ msgstr "Fehlgeschlagen"
 
 #: src/app.jsx:340
 msgid "Failed to rebase deployment"
-msgstr ""
+msgstr "Rebasieren der Bereitstellungen fehlgeschlagen"
 
 #: src/app.jsx:319
 msgid "Failed to roll back deployment"
-msgstr ""
+msgstr "Zurückrollen der Bereitstellungen fehlgeschlagen"
 
 #: src/app.jsx:329
 msgid "Failed to upgrade deployment"
-msgstr ""
+msgstr "Upgrade der Bereitstellungen fehlgechlagen"
 
 #: src/changeRemoteModal.jsx:249
 msgid "GPG public key"
@@ -164,7 +164,7 @@ msgstr "Keine Signatur verfügbar"
 msgid "Not authorized to update software on this system"
 msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 
-#: src/client.js:572 src/client.js:659
+#: src/client.js:566 src/client.js:651
 msgid "OS $0 not found"
 msgstr "OS $0 nicht gefunden"
 
@@ -323,7 +323,7 @@ msgstr "Schreibe Objekte"
 
 #: src/app.jsx:395
 msgid "view more..."
-msgstr ""
+msgstr "mehr sehen..."
 
 #~ msgid "$0 package"
 #~ msgstr "$0 Paket"

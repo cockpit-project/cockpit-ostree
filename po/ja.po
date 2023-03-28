@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 03:17+0000\n"
+"POT-Creation-Date: 2023-03-26 02:55+0000\n"
 "PO-Revision-Date: 2018-02-22 05:00+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Japanese\n"
@@ -16,7 +16,7 @@ msgstr ""
 "X-Generator: Zanata 4.4.5\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: src/client.js:473
+#: src/client.js:469
 msgid "$0 key ID"
 msgstr "$0 キー ID"
 
@@ -187,7 +187,7 @@ msgstr "署名が利用できません"
 msgid "Not authorized to update software on this system"
 msgstr "このシステム上のソフトウェアを更新する権限がありません"
 
-#: src/client.js:572 src/client.js:659
+#: src/client.js:566 src/client.js:651
 msgid "OS $0 not found"
 msgstr "OS $0 が見つかりません"
 

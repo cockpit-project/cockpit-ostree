@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 03:17+0000\n"
+"POT-Creation-Date: 2023-03-26 02:55+0000\n"
 "PO-Revision-Date: 2022-02-16 22:16+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
 "X-Generator: Weblate 4.10.1\n"
 
-#: src/client.js:473
+#: src/client.js:469
 msgid "$0 key ID"
 msgstr "Identif. klíče $0"
 
@@ -192,7 +192,7 @@ msgstr "Není k dispozici žádný podpis"
 msgid "Not authorized to update software on this system"
 msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
 
-#: src/client.js:572 src/client.js:659
+#: src/client.js:566 src/client.js:651
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
 
