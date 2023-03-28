@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-03-10 03:17+0000\n"
+"POT-Creation-Date: 2023-03-26 02:55+0000\n"
 "PO-Revision-Date: 2022-12-08 14:20+0000\n"
 "Last-Translator: Vanhoorne Michael <michaeltjevanhoorne@gmail.com>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/cockpit-"
@@ -15,7 +15,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 4.14.2\n"
 
-#: src/client.js:473
+#: src/client.js:469
 msgid "$0 key ID"
 msgstr "$0 sleutel-ID"
 
@@ -180,7 +180,7 @@ msgstr "Geen handtekening beschikbaar"
 msgid "Not authorized to update software on this system"
 msgstr "Niet geautoriseerd om software op dit systeem bij te werken"
 
-#: src/client.js:572 src/client.js:659
+#: src/client.js:566 src/client.js:651
 msgid "OS $0 not found"
 msgstr "OS $0 niet gevonden"
 
