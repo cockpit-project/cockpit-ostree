@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-04-01 02:52+0000\n"
-"PO-Revision-Date: 2023-04-01 21:20+0000\n"
+"POT-Creation-Date: 2023-04-08 02:53+0000\n"
+"PO-Revision-Date: 2023-04-08 19:20+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/cs/>\n"
@@ -113,11 +113,11 @@ msgstr "Platnost podpisu skončila"
 # auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
 #: src/app.jsx:394
 msgid "Failed"
-msgstr "Neúspěšný"
+msgstr "Nepodařilo se"
 
 #: src/app.jsx:340
 msgid "Failed to rebase deployment"
-msgstr "Nepodařilo se rebase nasazení"
+msgstr "Nepodařilo se přejít na novější zdroj nasazení"
 
 #: src/app.jsx:319
 msgid "Failed to roll back deployment"
