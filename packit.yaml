@@ -9,7 +9,7 @@ copy_upstream_release_description: true
 
 srpm_build_deps:
 - make
-- npm
+- nodejs-npm
 
 actions:
   post-upstream-clone: make cockpit-ostree.spec
