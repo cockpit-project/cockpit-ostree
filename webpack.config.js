@@ -7,8 +7,8 @@ import CssMinimizerPlugin from 'css-minimizer-webpack-plugin';
 import CompressionPlugin from "compression-webpack-plugin";
 import ESLintPlugin from 'eslint-webpack-plugin';
 
-import CockpitPoPlugin from "./pkg/lib/cockpit-po-plugin.js";
-import CockpitRsyncPlugin from "./pkg/lib/cockpit-rsync-plugin.js";
+import { CockpitPoWebpackPlugin } from "./pkg/lib/cockpit-po-plugin.js";
+import { CockpitRsyncWebpackPlugin } from "./pkg/lib/cockpit-rsync-plugin.js";
 
 /* A standard nodejs and webpack pattern */
 const production = process.env.NODE_ENV === 'production';
@@ -28,8 +28,8 @@ const copy_files = [
 const plugins = [
     new copy({ patterns: copy_files }),
     new extract({ filename: "[name].css" }),
-    new CockpitPoPlugin(),
-    new CockpitRsyncPlugin({ dest: packageJson.name }),
+    new CockpitPoWebpackPlugin(),
+    new CockpitRsyncWebpackPlugin({ dest: packageJson.name }),
 ];
 
 if (eslint) {
