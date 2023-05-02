@@ -36,7 +36,7 @@ After changing the code and running `make` again, reload the Cockpit page in
 your browser.
 
 You can also use
-[watch mode](https://webpack.js.org/guides/development/#using-watch-mode) to
+[watch mode](https://esbuild.github.io/api/#watch) to
 automatically update the bundle on every code change with
 
     $ npm run watch
@@ -47,7 +47,7 @@ or
 
 # Running eslint
 
-Cockpit Starter Kit uses [ESLint](https://eslint.org/) to automatically check
+Cockpit uses [ESLint](https://eslint.org/) to automatically check
 JavaScript code style in `.js` and `.jsx` files.
 
 eslint is executed within every build.
@@ -61,6 +61,29 @@ Violations of some rules can be fixed automatically by:
     $ npm run eslint:fix
 
 Rules configuration can be found in the `.eslintrc.json` file.
+
+## Running stylelint
+
+Cockpit uses [Stylelint](https://stylelint.io/) to automatically check CSS code
+style in `.css` and `scss` files.
+
+styleint is executed within every build.
+
+For developer convenience, the Stylelint can be started explicitly by:
+
+    $ npm run stylelint
+
+Violations of some rules can be fixed automatically by:
+
+    $ npm run stylelint:fix
+
+Rules configuration can be found in the `.stylelintrc.json` file.
+
+During fast iterative development, you can also choose to not run eslint/stylelint.
+This speeds up the build and avoids build failures due to e. g. ill-formatted
+css or other issues:
+
+    $ make LINT=0
 
 # Automated Testing
 
