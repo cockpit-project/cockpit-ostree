@@ -20,18 +20,22 @@
 import React, { useState } from 'react';
 import PropTypes from "prop-types";
 
-import {
-    Title, Button, Alert, AlertActionCloseButton,
-    Form, FormGroup, ActionGroup,
-    TextInput, TextArea,
-    Checkbox,
-    SimpleList, SimpleListItem,
-    Modal,
-} from '@patternfly/react-core';
+import { Alert, AlertActionCloseButton } from "@patternfly/react-core/dist/esm/components/Alert";
+import { Button } from "@patternfly/react-core/dist/esm/components/Button";
+import { ActionGroup, Form, FormGroup } from "@patternfly/react-core/dist/esm/components/Form";
+import { Checkbox } from "@patternfly/react-core/dist/esm/components/Checkbox";
+import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
+import { SimpleList, SimpleListItem } from "@patternfly/react-core/dist/esm/components/SimpleList";
+import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
+import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
+import { Title } from "@patternfly/react-core/dist/esm/components/Title";
+
 import { PencilAltIcon, AddCircleOIcon } from '@patternfly/react-icons';
 
-import * as remotes from './remotes';
+import { FormHelper } from 'cockpit-components-form-helper.jsx';
 import cockpit from 'cockpit';
+
+import * as remotes from './remotes';
 
 const _ = cockpit.gettext;
 
@@ -79,7 +83,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                                                   ev.stopPropagation();
                                                   ev.preventDefault();
                                               }}
-                                              isCurrent={remote === selectedRemote}>
+                                              isActive={remote === selectedRemote}>
                                     <span>{remote}</span>
                                     <Button onClick={ ev => {
                                         remotes.loadRemoteSettings(remote)
@@ -158,31 +162,31 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
             {addNewRepoError && <Alert variant="danger" isInline title={addNewRepoError} />}
             <FormGroup label={_("Name")}
                        fieldId="new-remote-name"
-                       helperTextInvalid={_("Please provide a valid name")}
-                       validated={(hasValidation && !newRepoName.trim().length) ? "error" : undefined}
                        isRequired>
                 <TextInput id="new-remote-name"
                            value={newRepoName}
                            isRequired
                            type="text"
                            onChange={name => setNewRepoName(name)} />
+                <FormHelper fieldId="new-remote-name"
+                            helperTextInvalid={(hasValidation && !newRepoName.trim().length) && _("Please provide a valid name")} />
             </FormGroup>
             <FormGroup label={_("URL")}
                        fieldId="new-remote-url"
-                       helperTextInvalid={_("Please provide a valid URL")}
-                       validated={(hasValidation && !newRepoURL.trim().length) ? "error" : undefined}
                        isRequired>
                 <TextInput id="new-remote-url"
                            value={newRepoURL}
                            isRequired
                            type="text"
                            onChange={url => setNewRepoURL(url)} />
+                <FormHelper fieldId="new-remote-url"
+                            helperTextInvalid={(hasValidation && !newRepoURL.trim().length) && _("Please provide a valid URL")} />
             </FormGroup>
             <FormGroup fieldId="new-gpg-verify">
                 <Checkbox label={_("Use trusted GPG key")}
                           id="new-gpg-verify"
                           isChecked={newRepoTrusted}
-                          onChange={(checked, ev) => {
+                          onChange={(ev, checked) => {
                               setNewRepoTrusted(checked);
                           }} />
             </FormGroup>
@@ -237,7 +241,7 @@ const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes 
                 <Checkbox label={_("Use trusted GPG key")}
                           id="gpg-verify"
                           isChecked={isTrusted}
-                          onChange={(checked, ev) => {
+                          onChange={(ev, checked) => {
                               setIsTrusted(!isTrusted);
                           }} />
             </FormGroup>
