@@ -21,7 +21,7 @@
 
 @use "page.scss";
 @use "ct-card.scss";
-@import "patternfly/patternfly-4-overrides.scss";
+@import "patternfly/patternfly-5-overrides.scss";
 
 #deployments {
     @extend .ct-card;

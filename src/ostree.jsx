@@ -22,27 +22,30 @@ import 'cockpit-dark-theme'; // once per page
 import React, { useState } from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from "prop-types";
-
-import 'patternfly/patternfly-4-cockpit.scss';
-
-import {
-    Title, Button, Alert,
-    Card, CardHeader, CardTitle, CardActions, CardBody,
-    EmptyState, EmptyStateVariant, EmptyStateIcon, EmptyStateBody,
-    DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription,
-    Dropdown,
-    Label,
-    KebabToggle,
-    OverflowMenu, OverflowMenuContent, OverflowMenuGroup, OverflowMenuItem, OverflowMenuControl, OverflowMenuDropdownItem,
-    Page, PageSection, PageSectionVariants,
-    Popover,
-    Select, SelectOption,
-    Spinner,
-    Text, TextVariants,
-    Toolbar, ToolbarItem, ToolbarContent,
-} from '@patternfly/react-core';
-import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
 import { debounce } from 'throttle-debounce';
+
+import 'patternfly/patternfly-5-cockpit.scss';
+
+import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
+import { Button } from "@patternfly/react-core/dist/esm/components/Button";
+import { Card, CardHeader, CardTitle, CardBody } from "@patternfly/react-core/dist/esm/components/Card";
+import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
+import {
+    DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription
+} from "@patternfly/react-core/dist/esm/components/DescriptionList";
+import { Label } from "@patternfly/react-core/dist/esm/components/Label";
+import {
+    OverflowMenu, OverflowMenuContent, OverflowMenuGroup, OverflowMenuItem, OverflowMenuControl, OverflowMenuDropdownItem
+} from "@patternfly/react-core/dist/esm/components/OverflowMenu";
+import { Page, PageSection, PageSectionVariants } from "@patternfly/react-core/dist/esm/components/Page";
+import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
+import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
+import { Toolbar, ToolbarContent, ToolbarItem } from "@patternfly/react-core/dist/esm/components/Toolbar";
+
+import { Select, SelectOption } from "@patternfly/react-core/dist/esm/deprecated/components/Select";
+import { Dropdown, KebabToggle } from "@patternfly/react-core/dist/esm/deprecated/components/Dropdown";
+
+import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
 
 import cockpit from 'cockpit';
 
@@ -122,7 +125,7 @@ const Curtain = ({ state, failure, message, reconnect }) => {
 
     let icon = null;
     if (state === 'connecting')
-        icon = <Spinner isSVG size="xl" />;
+        icon = <Spinner size="xl" />;
     else if (failure)
         icon = <EmptyStateIcon icon={ExclamationCircleIcon} />;
 
@@ -137,9 +140,11 @@ const Curtain = ({ state, failure, message, reconnect }) => {
     return (
         <EmptyState variant={EmptyStateVariant.full}>
             {icon}
-            <Title headingLevel="h5" size="lg">{title}</Title>
+            <EmptyStateHeader titleText={title} headingLevel="h5" />
             { message && <EmptyStateBody>{message}</EmptyStateBody> }
-            { (state === 'failed' && reconnect) && <Button variant="primary">{ _("Reconnect") }</Button> }
+            <EmptyStateFooter>
+                { (state === 'failed' && reconnect) && <Button variant="primary">{ _("Reconnect") }</Button> }
+            </EmptyStateFooter>
         </EmptyState>
     );
 };
@@ -169,14 +174,14 @@ const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote,
                     <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
                     <ToolbarItem><Button id="change-repo" variant="link" isInline onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
 
-                    <ToolbarItem variant="label" id="branch-select-label">{ _("Branch")}</ToolbarItem>
+                    <ToolbarItem variant="label" id="branch-select-label">{ _("Branch") }</ToolbarItem>
                     <ToolbarItem>
-                        <Select aria-label={ _("Select branch") } ariaLabelledBy="branch-select-label"
+                        <Select aria-label={ _("Select branch") } aria-labelledby="branch-select-label"
                                 toggleId="change-branch"
                                 isOpen={branchSelectExpanded}
                                 selections={currentBranch}
-                                onToggle={exp => setBranchSelectExpanded(exp) }
-                                onSelect={(event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
+                                onToggle={(_event, exp) => setBranchSelectExpanded(exp) }
+                                onSelect={(_event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
                             { branchLoadError
                                 ? [<SelectOption key="_error" isDisabled value={branchLoadError} />]
                                 : (branches || []).map(branch => <SelectOption key={branch} value={branch} />)
@@ -425,7 +430,7 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
                 <OverflowMenuContent>
                     <OverflowMenuGroup groupType="button">
                         <OverflowMenuItem>
-                            <Button isSmall variant="secondary" onClick={action}>
+                            <Button size="sm" variant="secondary" onClick={action}>
                                 {action_name}
                             </Button>
                         </OverflowMenuItem>
@@ -435,9 +440,7 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
                     <Dropdown position="right"
                               onSelect={() => setOpenedKebab(akey, !openedKebab)}
                               toggle={
-                                  <KebabToggle
-                                  onToggle={open => setOpenedKebab(akey, open)}
-                                  />
+                                  <KebabToggle onToggle={(_event, open) => setOpenedKebab(akey, open)} />
                               }
                               isOpen={openedKebab}
                               isPlain
@@ -659,6 +662,16 @@ class Application extends React.Component {
                 packages.addEventListener("changed", () => this.setState({})); // re-render
         });
 
+        const actionButton = (
+            <Button variant="secondary"
+                    id="check-for-updates-btn"
+                    isLoading={!!client.local_running || !!this.state.progressMsg}
+                    isDisabled={!!client.local_running || !!this.state.progressMsg}
+                    onClick={this.checkForUpgrades}>
+                {_("Check for updates")}
+            </Button>
+        );
+
         return (
             <Page>
                 <ChangeRemoteModal isModalOpen={this.state.isChangeRemoteOriginModalOpen}
@@ -677,17 +690,8 @@ class Application extends React.Component {
                 <PageSection>
                     {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
                     <Card id="deployments">
-                        <CardHeader>
-                            <CardTitle><Text component={TextVariants.h2}>{_("Deployments and updates")}</Text></CardTitle>
-                            <CardActions>
-                                <Button variant="secondary"
-                                        id="check-for-updates-btn"
-                                        isLoading={!!client.local_running || !!this.state.progressMsg}
-                                        isDisabled={!!client.local_running || !!this.state.progressMsg}
-                                        onClick={this.checkForUpgrades}>
-                                    {_("Check for updates")}
-                                </Button>
-                            </CardActions>
+                        <CardHeader actions={{ actions: actionButton, hasNoOffset: false }}>
+                            <CardTitle component="h2">{_("Deployments and updates")}</CardTitle>
                         </CardHeader>
                         <CardBody className="contains-list">
                             <Deployments versions={versions} />
