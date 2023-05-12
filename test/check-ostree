@@ -127,7 +127,7 @@ def stop_trivial_httpd(m, pid):
 
 def generate_new_commit(m, pkg_to_remove):
     # Make one change of each type to a new rpm tree
-    branch = m.execute(f"ostree refs --repo={REPO_LOCATION}")
+    branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
     m.upload([f"files/{k}.rpm" for k in INSTALL_RPMS],
              "/home/admin/")
@@ -153,9 +153,10 @@ def generate_new_commit(m, pkg_to_remove):
     m.upload(["files/secring.gpg",
               "files/pubring.gpg"], "/root/")
 
-    commit_args = [REPO_LOCATION, branch.strip(), CHECKOUT_LOCATION, KEY_ID]
-    command = "ostree commit -s cockpit-tree2 --repo {0} -b {1} --add-metadata-string version=cockpit-base.2 --tree=dir={2} --gpg-sign={3} --gpg-homedir=/root/"
-    m.execute(command.format(*commit_args), timeout=600)
+    m.execute(f"ostree commit -s cockpit-tree2 --repo {REPO_LOCATION} -b {branch} "
+              "--add-metadata-string version=cockpit-base.2 "
+              "--add-metadata-string rpmostree.inputhash=foo "
+              f"--tree=dir={CHECKOUT_LOCATION} --gpg-sign={KEY_ID} --gpg-homedir=/root/",  timeout=600)
     m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
 
