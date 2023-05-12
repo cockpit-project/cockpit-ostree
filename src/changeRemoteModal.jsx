@@ -128,7 +128,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
 
 ChangeRemoteModal.propTypes = {
     remotesList: PropTypes.array.isRequired,
-    currentRemote: PropTypes.string.isRequired,
+    currentRemote: PropTypes.string,
     isModalOpen: PropTypes.bool.isRequired,
     setIsModalOpen: PropTypes.func.isRequired,
     refreshRemotes: PropTypes.func.isRequired,
