@@ -196,15 +196,6 @@ class RPMOSTreeDBusClient {
         }
     }
 
-    resolve_nested(obj, path) {
-        return path.split('.').reduce((prev, curr) => {
-            if (prev !== undefined)
-                return prev[curr];
-            else
-                return prev;
-        }, obj || {});
-    }
-
     trigger_changed() {
         if (!this.timer) {
             this.dispatchEvent("changed");
@@ -333,9 +324,9 @@ class RPMOSTreeDBusClient {
             proxy = this.os_proxies[this.sysroot.Booted];
 
         if (proxy) {
-            origin = this.resolve_nested(proxy, "BootedDeployment.origin.v");
+            origin = proxy.BootedDeployment?.origin?.v;
             if (!origin)
-                origin = this.resolve_nested(proxy, "DefaultDeployment.origin.v");
+                origin = proxy.DefaultDeployment?.origin?.v;
         }
 
         return origin;
@@ -373,27 +364,25 @@ class RPMOSTreeDBusClient {
          */
         const deployments = this.sysroot ? this.sysroot.Deployments : [];
         const list = [];
-        let upgrade_checksum;
         let cached_origin;
         const alt_refspec = this.build_change_refspec(os_name, remote, branch);
 
         const proxy = this.get_os_proxy(os_name);
         if (proxy) {
-            cached_origin = this.resolve_nested(proxy, "CachedUpdate.origin.v");
+            cached_origin = proxy.CachedUpdate?.origin?.v;
             if (cached_origin)
                 this.update_cache[cached_origin] = proxy.CachedUpdate;
         }
 
-        const update = alt_refspec ? this.update_cache[alt_refspec] : this.update_cache[cached_origin];
+        const update = this.update_cache[alt_refspec || cached_origin];
 
-        if (update)
-            upgrade_checksum = this.resolve_nested(update, "checksum.v");
+        const upgrade_checksum = update?.checksum?.v;
 
         for (let i = 0; i < deployments.length; i++) {
             const deployment = deployments[i];
-            const checksum = this.resolve_nested(deployment, "checksum.v");
+            const checksum = deployment.checksum?.v;
 
-            if (deployment.id && this.resolve_nested(deployment, "osname.v") !== os_name)
+            if (deployment.id && deployment.osname?.v !== os_name)
                 continue;
 
             // always show the default deployment,
@@ -405,7 +394,7 @@ class RPMOSTreeDBusClient {
                 list.push(deployment);
 
             // skip other deployments if it is the same as the upgrade
-            } else if (this.resolve_nested(deployment, "checksum.v") !== upgrade_checksum) {
+            } else if (deployment.checksum?.v !== upgrade_checksum) {
                 list.push(deployment);
             }
         }
@@ -482,12 +471,9 @@ class RPMOSTreeDBusClient {
      * can change.
      */
     packages(item) {
-        const id = this.resolve_nested(item, "id.v");
-        const checksum = this.resolve_nested(item, "checksum.v");
-        let key = id;
-
-        if (!id && checksum)
-            key = checksum;
+        const id = item.id?.v;
+        const checksum = item.checksum?.v;
+        const key = id || checksum;
 
         if (!this.booted_id) {
             const root_proxy = this.os_proxies[this.sysroot.Booted];
@@ -523,7 +509,7 @@ class RPMOSTreeDBusClient {
     }
 
     item_matches(item, proxy_attr, attr) {
-        const os_name = this.resolve_nested(item, "osname.v");
+        const os_name = item?.osname?.v;
         let proxy = null;
         let item2 = null;
 
@@ -531,12 +517,11 @@ class RPMOSTreeDBusClient {
             return false;
 
         proxy = this.get_os_proxy(os_name);
-        item2 = this.resolve_nested(proxy, proxy_attr);
+        item2 = proxy[proxy_attr];
 
         if (!attr)
             attr = "checksum";
-        attr = attr + ".v";
-        return this.resolve_nested(item, attr) === this.resolve_nested(item2, attr);
+        return item?.[attr]?.v === item2?.[attr]?.v;
     }
 
     cache_update_for(os, remote, branch) {
@@ -550,7 +535,7 @@ class RPMOSTreeDBusClient {
             return proxy.call("GetCachedRebaseRpmDiff", [refspec, []])
                     .then(data => {
                         let item;
-                        if (data && data.length === 2 && this.resolve_nested(data[1], "checksum.v")) {
+                        if (data && data.length === 2 && data[1].checksum?.v) {
                             item = data[1];
                             this.update_cache[refspec] = item;
                             this.packages_cache[item.checksum.v] = new Packages(Promise.resolve([data[0]]),
