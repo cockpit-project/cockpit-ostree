@@ -21,7 +21,6 @@
 import os
 import sys
 import subprocess
-import time
 
 # import Cockpit's machinery for test VMs and its browser test API
 TEST_DIR = os.path.dirname(__file__)
@@ -41,6 +40,7 @@ CHECKOUT_LOCATION = "/var/local-tree"
 RPM_LOCATION = "/usr/share/rpm"
 KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
+
 def switch_tab(b, index, tab):
     row_sel = f"#available-deployments > tbody:nth-child({index + 1})"
     b.wait_visible(row_sel)
@@ -49,9 +49,11 @@ def switch_tab(b, index, tab):
         b.wait_visible(f"{row_sel} .ct-listing-panel-tabs")
     b.click(f"{row_sel} button:contains({tab})")
 
+
 def wait_deployment_details_prop(b, index, tab, prop, value):
     switch_tab(b, index, tab)
     b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) {prop}", value)
+
 
 def wait_deployment_prop(b, index, prop, value):
     if prop == "Actions":
@@ -62,16 +64,19 @@ def wait_deployment_prop(b, index, prop, value):
     else:
         b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) td[data-label={prop}]", value)
 
+
 def wait_packages(b, index, packages):
     switch_tab(b, index, "Packages")
     for group, pkgs in packages.items():
         for pkg in pkgs:
             b.wait_in_text(f"#available-deployments > tbody:nth-child({index + 1}) .{group}", pkg)
 
+
 def wait_not_packages(b, index, packages):
     switch_tab(b, index, "Packages")
     for pkg in packages:
         b.wait_not_in_text(f"#available-deployments > tbody:nth-child({index + 1})", pkg)
+
 
 def check_package_count(b, assertIn, index):
     switch_tab(b, index, "Packages")
@@ -81,9 +86,11 @@ def check_package_count(b, assertIn, index):
     assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .up dd"), [1, 2])
     assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .down dd"), [1, 2])
 
+
 def do_deployment_action(b, index, action):
     wait_deployment_prop(b, index, "Actions", action)
     b.click(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child button")
+
 
 def ensure_remote_http_port(m, remote="local"):
     remote_spec = m.execute(f"ostree remote show-url {remote} || true")
@@ -156,6 +163,7 @@ def rhsmcertd_hack(m):
     # HACK: https://github.com/candlepin/subscription-manager/issues/1404
     m.execute("systemctl disable rhsmcertd || true")
     m.execute("systemctl stop rhsmcertd || true")
+
 
 def get_name(self):
     if self.image == "rhel4edge":
@@ -341,7 +349,7 @@ class OstreeRestartCase(MachineCase):
         wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
 
         # Only two deployments
-        b.wait_not_present(f"#available-deployments > tbody:nth-child(4)")
+        b.wait_not_present("#available-deployments > tbody:nth-child(4)")
 
         self.allow_restart_journal_messages()
 
