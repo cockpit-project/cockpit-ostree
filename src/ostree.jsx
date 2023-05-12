@@ -256,7 +256,7 @@ const TreeDetails = ({ info }) => {
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Version") }</DescriptionListTerm>
-                <DescriptionListDescription className="version" id="osversion">{info.version.v}</DescriptionListDescription>
+                <DescriptionListDescription className="version" id="osversion">{info.version?.v}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Released") }</DescriptionListTerm>
@@ -264,7 +264,7 @@ const TreeDetails = ({ info }) => {
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Origin") }</DescriptionListTerm>
-                <DescriptionListDescription className="origin" id="osorigin">{info.origin.v}</DescriptionListDescription>
+                <DescriptionListDescription className="origin" id="osorigin">{info.origin?.v}</DescriptionListDescription>
             </DescriptionListGroup>
         </DescriptionList>
     );
