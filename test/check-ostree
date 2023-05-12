@@ -26,7 +26,7 @@ import subprocess
 TEST_DIR = os.path.dirname(__file__)
 sys.path.append(os.path.join(TEST_DIR, "common"))
 sys.path.append(os.path.join(os.path.dirname(TEST_DIR), "bots/machine"))
-from testlib import *
+import testlib
 
 
 INSTALL_RPMS = [
@@ -171,7 +171,7 @@ def get_name(self):
     return "fedora-coreos"
 
 
-class OstreeRestartCase(MachineCase):
+class OstreeRestartCase(testlib.MachineCase):
 
     def testOstree(self):
         b = self.browser
@@ -414,7 +414,7 @@ class OstreeRestartCase(MachineCase):
         self.allow_restart_journal_messages()
 
 
-class OstreeCase(MachineCase):
+class OstreeCase(testlib.MachineCase):
     def testRemoteManagement(self):
         m = self.machine
         b = self.browser
@@ -624,7 +624,7 @@ class OstreeCase(MachineCase):
         wait_deployment_prop(b, 1, "State", "Available")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
-    @nondestructive
+    @testlib.nondestructive
     def testPermission(self):
         m = self.machine
         b = self.browser
@@ -679,4 +679,4 @@ class OstreeCase(MachineCase):
 
 
 if __name__ == "__main__":
-    test_main()
+    testlib.test_main()
