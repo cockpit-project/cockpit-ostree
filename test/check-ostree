@@ -414,6 +414,65 @@ class OstreeRestartCase(testlib.MachineCase):
 
         self.allow_restart_journal_messages()
 
+    def start_oci_registry(self):
+        self.machine.execute(
+            "podman run -d --name ostree-registry --rm -p 5000:5000 "
+            "-v ostree-oci:/var/lib/registry localhost/test-registry")
+
+    @testlib.skipImage("using image-builder workflow", "rhel4edge")
+    def testOCI(self):
+        b = self.browser
+        m = self.machine
+
+        branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
+        bash_ver = m.execute("rpm -q bash").strip()
+
+        # start our local registry
+        self.start_oci_registry()
+
+        self.login_and_go("/updates")
+
+        # our image defaults to local OSTree repo
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
+        wait_packages(b, 1, {"rpms-col1": [bash_ver]})
+
+        # rebase to our OCI repo
+        # FIXME: there is currently no UI way of doing this
+        m.execute("rpm-ostree rebase ostree-unverified-registry:localhost:5000/ostree-oci:cockpit1")
+
+        # UI picks this up
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Available")
+        # OCI deployments have no origin
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "")
+        wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
+                                     "This deployment contains the same packages as your currently booted system")
+
+        # current deployment is now second
+        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 2, "State", "Running")
+        wait_deployment_details_prop(b, 2, "Tree", "#osorigin", f"local:{branch}")
+        wait_packages(b, 2, {"rpms-col1": [bash_ver]})
+
+        # reboot into new available image (not in UI, as it's already deployed)
+        m.reboot()
+        self.start_oci_registry()
+        self.login_and_go("/updates")
+
+        # now the status is reversed: OCI deployment is running and has the package list
+        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "")
+        wait_packages(b, 1, {"rpms-col1": [bash_ver]})
+        # ... and second deployment is the ostree repo one
+        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 2, "State", "Available")
+        wait_deployment_details_prop(b, 2, "Tree", "#osorigin", f"local:{branch}")
+        wait_deployment_details_prop(b, 2, "Packages", ".same-packages",
+                                     "This deployment contains the same packages as your currently booted system")
+
 
 class OstreeCase(testlib.MachineCase):
     def testRemoteManagement(self):
