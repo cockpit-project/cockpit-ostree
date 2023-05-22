@@ -94,7 +94,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                                         <PencilAltIcon />
                                     </Button>
                                 </SimpleListItem>
-                                : <div key={remote} className="pf-c-simple-list__item-link">
+                                : <div key={remote} className="pf-v5-c-simple-list__item-link">
                                     <EditRemoteForm setEditRepoDialogOpen={setEditRepoDialogOpen} remoteSettings={editRepoDialogOpen} refreshRemotes={refreshRemotes} />
                                 </div>
                         );
@@ -116,7 +116,7 @@ export const ChangeRemoteModal = ({ setIsModalOpen, isModalOpen, remotesList, cu
                                    id="add-new-remote-btn"
                                    iconPosition="left">{_("Add new repository")}</Button>
                             </SimpleListItem>
-                            : <div key="add new" className="pf-c-simple-list__item-link">
+                            : <div key="add new" className="pf-v5-c-simple-list__item-link">
                                 <AddNewRepoForm refreshRemotes={refreshRemotes} setAddNewRepoDialogOpen={setAddNewRepoDialogOpen} />
                             </div>
                     ])}
@@ -167,7 +167,7 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
                            value={newRepoName}
                            isRequired
                            type="text"
-                           onChange={name => setNewRepoName(name)} />
+                           onChange={(_ev, name) => setNewRepoName(name)} />
                 <FormHelper fieldId="new-remote-name"
                             helperTextInvalid={(hasValidation && !newRepoName.trim().length) && _("Please provide a valid name")} />
             </FormGroup>
@@ -178,7 +178,7 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
                            value={newRepoURL}
                            isRequired
                            type="text"
-                           onChange={url => setNewRepoURL(url)} />
+                           onChange={(_ev, url) => setNewRepoURL(url)} />
                 <FormHelper fieldId="new-remote-url"
                             helperTextInvalid={(hasValidation && !newRepoURL.trim().length) && _("Please provide a valid URL")} />
             </FormGroup>
@@ -186,9 +186,7 @@ const AddNewRepoForm = ({ setAddNewRepoDialogOpen, refreshRemotes }) => {
                 <Checkbox label={_("Use trusted GPG key")}
                           id="new-gpg-verify"
                           isChecked={newRepoTrusted}
-                          onChange={(ev, checked) => {
-                              setNewRepoTrusted(checked);
-                          }} />
+                          onChange={(_ev, checked) => setNewRepoTrusted(checked)} />
             </FormGroup>
             <ActionGroup>
                 <Button id="add-remote-btn" onClick={() => onAddRemote()} variant="primary">{_("Add")}</Button>
@@ -250,7 +248,7 @@ const EditRemoteForm = ({ remoteSettings, setEditRepoDialogOpen, refreshRemotes 
                     ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
                     : <TextArea id='gpg-data'
                              placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
-                             value={key} onChange={setKey} aria-label={_("GPG public key")} />}
+                             value={key} onChange={(_ev, key) => setKey(key)} aria-label={_("GPG public key")} />}
             </FormGroup>
             <ActionGroup>
                 <Button isInline variant="danger" className="delete-btn" onClick={onDelete}>{_("Delete")}</Button>

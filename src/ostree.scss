@@ -40,19 +40,19 @@
         }
     }
 
-    // HACK: Mimic .pf-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
+    // HACK: Mimic .pf-v5-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
     td:last-child {
-        --pf-c-table--cell--Width: 1%;
+        --pf-v5-c-table--cell--Width: 1%;
     }
 }
 
 // PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
-.pf-c-modal-box {
-    max-height: calc(100vh - var(--pf-global--spacer--2xl));
+.pf-v5-c-modal-box {
+    max-height: calc(100vh - var(--pf-v5-global--spacer--2xl));
 }
 
 // Create space between the remote name and the edit action
-.remote-select .pf-c-simple-list__item-link {
+.remote-select .pf-v5-c-simple-list__item-link {
     display: flex;
     justify-content: space-between;
 }
@@ -63,11 +63,11 @@
     flex-flow: wrap;
 }
 
-.simple-list-form-actions > .pf-c-button {
+.simple-list-form-actions > .pf-v5-c-button {
     margin-left: 0.3em;
     margin-right: 0.3em;
 }
 
-.pf-c-form.pf-m-horizontal {
+.pf-v5-c-form.pf-m-horizontal {
     width: 100%;
 }
