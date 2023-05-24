@@ -419,6 +419,9 @@ class OstreeRestartCase(testlib.MachineCase):
             "podman run -d --name ostree-registry --rm -p 5000:5000 "
             "-v ostree-oci:/var/lib/registry localhost/test-registry")
 
+    def stop_oci_registry(self):
+        self.machine.execute("podman rm -ft0 ostree-registry")
+
     @testlib.skipImage("using image-builder workflow", "rhel4edge")
     def testOCI(self):
         b = self.browser
@@ -455,6 +458,9 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "State", "Running")
         wait_deployment_details_prop(b, 2, "Tree", "#osorigin", f"local:{branch}")
         wait_packages(b, 2, {"rpms-col1": [bash_ver]})
+
+        # podman sometimes leaves the container behind after reboot despite --rm
+        self.stop_oci_registry()
 
         # reboot into new available image (not in UI, as it's already deployed)
         m.reboot()
