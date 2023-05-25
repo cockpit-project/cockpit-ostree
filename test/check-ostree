@@ -26,7 +26,7 @@ import subprocess
 TEST_DIR = os.path.dirname(__file__)
 sys.path.append(os.path.join(TEST_DIR, "common"))
 sys.path.append(os.path.join(os.path.dirname(TEST_DIR), "bots/machine"))
-import testlib
+import testlib  # noqa: E402
 
 
 INSTALL_RPMS = [
@@ -56,13 +56,14 @@ def wait_deployment_details_prop(b, index, tab, prop, value):
 
 
 def wait_deployment_prop(b, index, prop, value):
+    deployment = f"#available-deployments > tbody:nth-child({index + 1})"
     if prop == "Actions":
         if value == "":
-            b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child", value)
+            b.wait_text(f"{deployment} tr:nth-child(1) td:last-child", value)
         else:
-            b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child button", value)
+            b.wait_text(f"{deployment} tr:nth-child(1) td:last-child button", value)
     else:
-        b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) td[data-label={prop}]", value)
+        b.wait_text(f"{deployment} td[data-label={prop}]", value)
 
 
 def wait_packages(b, index, packages):
@@ -631,7 +632,8 @@ class OstreeCase(testlib.MachineCase):
         wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "zremote-test1:zremote-branch1")
 
-        wait_deployment_details_prop(b, 1, "Packages", ".same-packages", "This deployment contains the same packages as your currently booted system")
+        wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
+                                     "This deployment contains the same packages as your currently booted system")
 
         # Switching back shows pulled
         b.click("#change-branch")
@@ -707,7 +709,8 @@ class OstreeCase(testlib.MachineCase):
             b.click("#super-user-indicator button")
 
             if m.image == "rhel4edge":  # passwordless
-                b.wait_in_text(".pf-c-modal-box:contains('Administrative access')", "You now have administrative access.")
+                b.wait_in_text(".pf-c-modal-box:contains('Administrative access')",
+                               "You now have administrative access.")
                 b.click(".pf-c-modal-box button:contains('Close')")
                 b.wait_not_present(".pf-c-modal-box:contains('You now have administrative access.')")
             else:
