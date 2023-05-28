@@ -703,7 +703,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_in_text(".pf-v5-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-v5-c-empty-state button"))
 
-        if self.system_before(292):
+        if self.system_before(293):
             # shell is still PF4
             b.switch_to_top()
             b.click("#super-user-indicator button")
