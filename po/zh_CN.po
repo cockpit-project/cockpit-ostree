@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-04 02:52+0000\n"
+"POT-Creation-Date: 2023-05-30 02:53+0000\n"
 "PO-Revision-Date: 2022-01-06 08:16+0000\n"
 "Last-Translator: Charles Lee <lchopn@gmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -20,146 +20,146 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 4.10.1\n"
 
-#: src/client.js:469
+#: src/client.js:458
 msgid "$0 key ID"
 msgstr "$0 密钥编号"
 
-#: src/changeRemoteModal.jsx:190
+#: src/changeRemoteModal.jsx:192
 msgid "Add"
 msgstr "添加"
 
-#: src/changeRemoteModal.jsx:246
+#: src/changeRemoteModal.jsx:248
 #, fuzzy
 #| msgid "Add Another Key"
 msgid "Add another key"
 msgstr "添加另一个密钥"
 
-#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
 #, fuzzy
 #| msgid "Add New Repository"
 msgid "Add new repository"
 msgstr "添加新的源"
 
-#: src/ostree.jsx:230
+#: src/ostree.jsx:235
 msgid "Additions"
 msgstr "添加"
 
-#: src/changeRemoteModal.jsx:253
+#: src/changeRemoteModal.jsx:255
 msgid "Apply"
 msgstr "应用"
 
-#: src/ostree.jsx:401
+#: src/ostree.jsx:406
 msgid "Available"
 msgstr "可用的"
 
-#: src/changeRemoteModal.jsx:248
+#: src/changeRemoteModal.jsx:250
 msgid "Begins with $0"
 msgstr "由 $0 开始"
 
-#: src/ostree.jsx:172
+#: src/ostree.jsx:177
 msgid "Branch"
 msgstr "分支"
 
-#: src/changeRemoteModal.jsx:56 src/changeRemoteModal.jsx:191
-#: src/changeRemoteModal.jsx:254
+#: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
+#: src/changeRemoteModal.jsx:256
 msgid "Cancel"
 msgstr "取消"
 
-#: src/changeRemoteModal.jsx:53 src/changeRemoteModal.jsx:62
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
 #, fuzzy
 #| msgid "Change Repository"
 msgid "Change repository"
 msgstr "变更源"
 
-#: src/ostree.jsx:688
+#: src/ostree.jsx:671
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "检查更新"
 
-#: src/ostree.jsx:565
+#: src/ostree.jsx:568
 msgid "Checking for package updates..."
 msgstr "正在检查软件包更新……"
 
-#: src/ostree.jsx:594
+#: src/ostree.jsx:597
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/ostree.jsx:391
+#: src/ostree.jsx:396
 msgid "Close"
 msgstr "关闭"
 
-#: src/ostree.jsx:131
+#: src/ostree.jsx:134
 msgid "Connecting to OSTree"
 msgstr "连接到系统树"
 
-#: src/changeRemoteModal.jsx:252
+#: src/changeRemoteModal.jsx:254
 msgid "Delete"
 msgstr "删除"
 
-#: src/ostree.jsx:350 src/ostree.jsx:681
+#: src/ostree.jsx:355 src/ostree.jsx:694
 #, fuzzy
 #| msgid "Deployment Causes"
 msgid "Deployments and updates"
 msgstr "部署原因"
 
-#: src/ostree.jsx:233
+#: src/ostree.jsx:238
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/ostree.jsx:608
+#: src/ostree.jsx:611
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "过期的签名"
 
-#: src/ostree.jsx:394
+#: src/ostree.jsx:399
 msgid "Failed"
 msgstr "已失败"
 
-#: src/ostree.jsx:340
+#: src/ostree.jsx:345
 #, fuzzy
 #| msgid "available deployments"
 msgid "Failed to rebase deployment"
 msgstr "可用的部署"
 
-#: src/ostree.jsx:319
+#: src/ostree.jsx:324
 msgid "Failed to roll back deployment"
 msgstr ""
 
-#: src/ostree.jsx:329
+#: src/ostree.jsx:334
 #, fuzzy
 #| msgid "available deployments"
 msgid "Failed to upgrade deployment"
 msgstr "可用的部署"
 
-#: src/changeRemoteModal.jsx:249
+#: src/changeRemoteModal.jsx:251
 #, fuzzy
 #| msgid "GPG Public Key"
 msgid "GPG public key"
 msgstr "GPG 公钥"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Good Signature"
 msgid "Good signature"
 msgstr "正确的签名"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "无效的签名"
 
-#: src/ostree.jsx:353 src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
 msgid "Name"
 msgstr "名称"
 
-#: src/ostree.jsx:518
+#: src/ostree.jsx:521
 msgid "No OSTree deployments found"
 msgstr "没有找到 OSTree 部署"
 
@@ -167,55 +167,55 @@ msgstr "没有找到 OSTree 部署"
 msgid "No configuration data found"
 msgstr "未找到配置数据"
 
-#: src/ostree.jsx:163
+#: src/ostree.jsx:168
 msgid "No configured remotes"
 msgstr "没有已配置的远程"
 
-#: src/ostree.jsx:135
+#: src/ostree.jsx:138
 #, fuzzy
 #| msgid "No Deployments"
 msgid "No deployments"
 msgstr "没有部署"
 
-#: src/ostree.jsx:296
+#: src/ostree.jsx:301
 msgid "No signature available"
 msgstr "没有可用的签名"
 
-#: src/ostree.jsx:543
+#: src/ostree.jsx:546
 msgid "Not authorized to update software on this system"
 msgstr "未授权更新该系统上的软件"
 
-#: src/client.js:566 src/client.js:651
+#: src/client.js:551 src/client.js:636
 msgid "OS $0 not found"
 msgstr "未找到操作系统 $0"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:548
 msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
-#: src/ostree.jsx:249
+#: src/ostree.jsx:254
 #, fuzzy
 #| msgid "Operating System"
 msgid "Operating system"
 msgstr "操作系统"
 
-#: src/ostree.jsx:261
+#: src/ostree.jsx:266
 msgid "Origin"
 msgstr "Origin"
 
-#: src/ostree.jsx:466
+#: src/ostree.jsx:469
 msgid "Packages"
 msgstr "软件包"
 
-#: src/changeRemoteModal.jsx:172
+#: src/changeRemoteModal.jsx:183
 msgid "Please provide a valid URL"
 msgstr "请提供有效的网址"
 
-#: src/changeRemoteModal.jsx:161
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid name"
 msgstr "请提供有效的名称"
 
-#: src/ostree.jsx:413
+#: src/ostree.jsx:418
 #, fuzzy
 #| msgid "Rebase and Reboot"
 msgid "Rebase and reboot"
@@ -233,29 +233,29 @@ msgstr "正在接收元数据对象"
 msgid "Receiving objects: $0%"
 msgstr "正在接收对象: $0%"
 
-#: src/ostree.jsx:142
+#: src/ostree.jsx:146
 msgid "Reconnect"
 msgstr "重新连接"
 
-#: src/ostree.jsx:257
+#: src/ostree.jsx:262
 msgid "Released"
 msgstr "发布于"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:236
 msgid "Removals"
 msgstr "移除"
 
-#: src/ostree.jsx:169
+#: src/ostree.jsx:174
 msgid "Repository"
 msgstr "存储库"
 
-#: src/ostree.jsx:410
+#: src/ostree.jsx:415
 #, fuzzy
 #| msgid "Roll Back and Reboot"
 msgid "Roll back and reboot"
 msgstr "回滚并重启"
 
-#: src/ostree.jsx:384
+#: src/ostree.jsx:389
 msgid "Running"
 msgstr "运行中"
 
@@ -263,15 +263,15 @@ msgstr "运行中"
 msgid "Scanning metadata"
 msgstr "正在扫描元数据"
 
-#: src/ostree.jsx:174
+#: src/ostree.jsx:179
 msgid "Select branch"
 msgstr "选择分支"
 
-#: src/ostree.jsx:471
+#: src/ostree.jsx:474
 msgid "Signatures"
 msgstr "签名"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:282
 msgid "Signed by"
 msgstr "签名人"
 
@@ -281,62 +281,62 @@ msgstr "签名人"
 msgid "Software updates"
 msgstr "软件更新"
 
-#: src/ostree.jsx:353
+#: src/ostree.jsx:358
 msgid "State"
 msgstr "状态"
 
-#: src/ostree.jsx:100
+#: src/ostree.jsx:103
 msgid "System is up to date"
 msgstr "系统已更新到最新"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:218
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "该部署与当前启动的系统包含相同的软件包"
 
-#: src/ostree.jsx:461
+#: src/ostree.jsx:464
 msgid "Tree"
 msgstr "Tree"
 
-#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
+#: src/changeRemoteModal.jsx:174 src/changeRemoteModal.jsx:231
 msgid "URL"
 msgstr "网址"
 
-#: src/ostree.jsx:133
+#: src/ostree.jsx:136
 msgid "Unable to communicate with OSTree"
 msgstr "无法与 OSTree 通信"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:412
 #, fuzzy
 #| msgid "Update and Reboot"
 msgid "Update and reboot"
 msgstr "更新并重启"
 
-#: src/ostree.jsx:106
+#: src/ostree.jsx:109
 msgid "Update available: $0"
 msgstr "更新可用：$0"
 
-#: src/ostree.jsx:232
+#: src/ostree.jsx:237
 msgid "Updates"
 msgstr "更新"
 
-#: src/ostree.jsx:382
+#: src/ostree.jsx:387
 msgid "Updating"
 msgstr "更新"
 
-#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
+#: src/changeRemoteModal.jsx:186 src/changeRemoteModal.jsx:239
 msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:294
 msgid "Validity"
 msgstr "验证"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:258
 msgid "Version"
 msgstr "版本"
 
-#: src/ostree.jsx:281
+#: src/ostree.jsx:286
 msgid "When"
 msgstr "当"
 
@@ -344,7 +344,7 @@ msgstr "当"
 msgid "Writing objects"
 msgstr "正在写对象"
 
-#: src/ostree.jsx:395
+#: src/ostree.jsx:400
 msgid "view more..."
 msgstr ""
 
