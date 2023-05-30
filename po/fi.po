@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-04 02:52+0000\n"
+"POT-Creation-Date: 2023-05-30 02:53+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -19,124 +19,124 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 4.15.2\n"
 
-#: src/client.js:469
+#: src/client.js:458
 msgid "$0 key ID"
 msgstr "$0 avain ID"
 
-#: src/changeRemoteModal.jsx:190
+#: src/changeRemoteModal.jsx:192
 msgid "Add"
 msgstr "Lisää"
 
-#: src/changeRemoteModal.jsx:246
+#: src/changeRemoteModal.jsx:248
 msgid "Add another key"
 msgstr "Lisää uusi avain"
 
-#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
 msgid "Add new repository"
 msgstr "Lisää uusi asennuslähde"
 
-#: src/ostree.jsx:230
+#: src/ostree.jsx:235
 msgid "Additions"
 msgstr "Lisäykset"
 
-#: src/changeRemoteModal.jsx:253
+#: src/changeRemoteModal.jsx:255
 msgid "Apply"
 msgstr "Toteuta"
 
-#: src/ostree.jsx:401
+#: src/ostree.jsx:406
 msgid "Available"
 msgstr "Saatavilla"
 
-#: src/changeRemoteModal.jsx:248
+#: src/changeRemoteModal.jsx:250
 msgid "Begins with $0"
 msgstr "Alkaa $0"
 
-#: src/ostree.jsx:172
+#: src/ostree.jsx:177
 msgid "Branch"
 msgstr "Haara"
 
-#: src/changeRemoteModal.jsx:56 src/changeRemoteModal.jsx:191
-#: src/changeRemoteModal.jsx:254
+#: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
+#: src/changeRemoteModal.jsx:256
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/changeRemoteModal.jsx:53 src/changeRemoteModal.jsx:62
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
 msgid "Change repository"
 msgstr "Vaihda asennuslähde"
 
-#: src/ostree.jsx:688
+#: src/ostree.jsx:671
 msgid "Check for updates"
 msgstr "Etsi päivityksiä"
 
-#: src/ostree.jsx:565
+#: src/ostree.jsx:568
 msgid "Checking for package updates..."
 msgstr "Tarkistetaan pakettipäivityksiä ..."
 
-#: src/ostree.jsx:594
+#: src/ostree.jsx:597
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
-#: src/ostree.jsx:391
+#: src/ostree.jsx:396
 msgid "Close"
 msgstr "Sulje"
 
-#: src/ostree.jsx:131
+#: src/ostree.jsx:134
 msgid "Connecting to OSTree"
 msgstr "Yhdistetään OSTree:n"
 
-#: src/changeRemoteModal.jsx:252
+#: src/changeRemoteModal.jsx:254
 msgid "Delete"
 msgstr "Poista"
 
-#: src/ostree.jsx:350 src/ostree.jsx:681
+#: src/ostree.jsx:355 src/ostree.jsx:694
 msgid "Deployments and updates"
 msgstr "Käyttöönotot ja päivitykset"
 
-#: src/ostree.jsx:233
+#: src/ostree.jsx:238
 msgid "Downgrades"
 msgstr "Aiemmat versiot"
 
-#: src/ostree.jsx:608
+#: src/ostree.jsx:611
 msgid "Error loading remotes: $0"
 msgstr "Virhe ladattaessa ohjaimia: $0"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Expired signature"
 msgstr "Vanhentunut allekirjoitus"
 
-#: src/ostree.jsx:394
+#: src/ostree.jsx:399
 msgid "Failed"
 msgstr "Epäonnistui"
 
-#: src/ostree.jsx:340
+#: src/ostree.jsx:345
 msgid "Failed to rebase deployment"
 msgstr "Käyttöönoton uudelleen perustaminen epäonnistui"
 
-#: src/ostree.jsx:319
+#: src/ostree.jsx:324
 msgid "Failed to roll back deployment"
 msgstr "Käyttöönoton peruuttaminen epäonnistui"
 
-#: src/ostree.jsx:329
+#: src/ostree.jsx:334
 msgid "Failed to upgrade deployment"
 msgstr "Käyttöönoton päivittäminen epäonnistui"
 
-#: src/changeRemoteModal.jsx:249
+#: src/changeRemoteModal.jsx:251
 msgid "GPG public key"
 msgstr "GPG julkinen avain"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Good signature"
 msgstr "Hyvä allekirjoitus"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Invalid signature"
 msgstr "Virheellinen allekirjoitus"
 
-#: src/ostree.jsx:353 src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
 msgid "Name"
 msgstr "Nimi"
 
-#: src/ostree.jsx:518
+#: src/ostree.jsx:521
 msgid "No OSTree deployments found"
 msgstr "OSTree-käyttöönottoja ei löytynyt"
 
@@ -144,51 +144,51 @@ msgstr "OSTree-käyttöönottoja ei löytynyt"
 msgid "No configuration data found"
 msgstr "Konfigurointitietoja ei löytynyt"
 
-#: src/ostree.jsx:163
+#: src/ostree.jsx:168
 msgid "No configured remotes"
 msgstr "Ei määritettyjä etäpisteitä"
 
-#: src/ostree.jsx:135
+#: src/ostree.jsx:138
 msgid "No deployments"
 msgstr "Ei käyttöönottoja"
 
-#: src/ostree.jsx:296
+#: src/ostree.jsx:301
 msgid "No signature available"
 msgstr "Allekirjoitusta ei ole saatavilla"
 
-#: src/ostree.jsx:543
+#: src/ostree.jsx:546
 msgid "Not authorized to update software on this system"
 msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
-#: src/client.js:566 src/client.js:651
+#: src/client.js:551 src/client.js:636
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:548
 msgid "OSTree is not available on this system"
 msgstr "OSTree ei ole käytettävissä tässä järjestelmässä"
 
-#: src/ostree.jsx:249
+#: src/ostree.jsx:254
 msgid "Operating system"
 msgstr "Käyttöjärjestelmä"
 
-#: src/ostree.jsx:261
+#: src/ostree.jsx:266
 msgid "Origin"
 msgstr "Alkuperä"
 
-#: src/ostree.jsx:466
+#: src/ostree.jsx:469
 msgid "Packages"
 msgstr "Paketit"
 
-#: src/changeRemoteModal.jsx:172
+#: src/changeRemoteModal.jsx:183
 msgid "Please provide a valid URL"
 msgstr "Anna kelvollinen URL"
 
-#: src/changeRemoteModal.jsx:161
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid name"
 msgstr "Anna kelvollinen nimi"
 
-#: src/ostree.jsx:413
+#: src/ostree.jsx:418
 msgid "Rebase and reboot"
 msgstr "Rebase ja käynnistä uudelleen"
 
@@ -204,27 +204,27 @@ msgstr "Vastaanotetaan metadata-objekteja"
 msgid "Receiving objects: $0%"
 msgstr "Vastaanotetaan objekteja: $0%"
 
-#: src/ostree.jsx:142
+#: src/ostree.jsx:146
 msgid "Reconnect"
 msgstr "Yhdistä uudelleen"
 
-#: src/ostree.jsx:257
+#: src/ostree.jsx:262
 msgid "Released"
 msgstr "Julkaistu"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:236
 msgid "Removals"
 msgstr "Poistot"
 
-#: src/ostree.jsx:169
+#: src/ostree.jsx:174
 msgid "Repository"
 msgstr "Ohjelmistolähde"
 
-#: src/ostree.jsx:410
+#: src/ostree.jsx:415
 msgid "Roll back and reboot"
 msgstr "Pura asennus ja käynnistä uudelleen"
 
-#: src/ostree.jsx:384
+#: src/ostree.jsx:389
 msgid "Running"
 msgstr "Käynnissä"
 
@@ -232,15 +232,15 @@ msgstr "Käynnissä"
 msgid "Scanning metadata"
 msgstr "Skannataan metatietoja"
 
-#: src/ostree.jsx:174
+#: src/ostree.jsx:179
 msgid "Select branch"
 msgstr "Valitse haara"
 
-#: src/ostree.jsx:471
+#: src/ostree.jsx:474
 msgid "Signatures"
 msgstr "Allekirjoitukset"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:282
 msgid "Signed by"
 msgstr "Allekirjoittanut"
 
@@ -248,62 +248,62 @@ msgstr "Allekirjoittanut"
 msgid "Software updates"
 msgstr "Ohjelmistopäivitykset"
 
-#: src/ostree.jsx:353
+#: src/ostree.jsx:358
 msgid "State"
 msgstr "Tila"
 
-#: src/ostree.jsx:100
+#: src/ostree.jsx:103
 msgid "System is up to date"
 msgstr "Järjestelmä on ajan tasalla"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:218
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Tämä käyttöönotto sisältää samat paketit kuin nykyisin käynnissäoleva "
 "järjestelmä"
 
-#: src/ostree.jsx:461
+#: src/ostree.jsx:464
 msgid "Tree"
 msgstr "Puu"
 
-#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
+#: src/changeRemoteModal.jsx:174 src/changeRemoteModal.jsx:231
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:133
+#: src/ostree.jsx:136
 msgid "Unable to communicate with OSTree"
 msgstr "Kommunikaatio OSTree:n kanssa epäonnistui"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:412
 msgid "Update and reboot"
 msgstr "Päivitä ja käynnistä uudelleen"
 
-#: src/ostree.jsx:106
+#: src/ostree.jsx:109
 msgid "Update available: $0"
 msgstr "Päivitys saatavilla: $0"
 
-#: src/ostree.jsx:232
+#: src/ostree.jsx:237
 msgid "Updates"
 msgstr "Päivitykset"
 
-#: src/ostree.jsx:382
+#: src/ostree.jsx:387
 msgid "Updating"
 msgstr "Päivitetään"
 
-#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
+#: src/changeRemoteModal.jsx:186 src/changeRemoteModal.jsx:239
 msgid "Use trusted GPG key"
 msgstr "Käytä luotettua GPG-avainta"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:294
 msgid "Validity"
 msgstr "Oikeellisuus"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:258
 msgid "Version"
 msgstr "Versio"
 
-#: src/ostree.jsx:281
+#: src/ostree.jsx:286
 msgid "When"
 msgstr "Kun"
 
@@ -311,7 +311,7 @@ msgstr "Kun"
 msgid "Writing objects"
 msgstr "Kirjoitetaan objekteja"
 
-#: src/ostree.jsx:395
+#: src/ostree.jsx:400
 msgid "view more..."
 msgstr "Katso lisää..."
 

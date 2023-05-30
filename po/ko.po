@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-04 02:52+0000\n"
+"POT-Creation-Date: 2023-05-30 02:53+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -18,124 +18,124 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 4.15.2\n"
 
-#: src/client.js:469
+#: src/client.js:458
 msgid "$0 key ID"
 msgstr "$0 키 ID"
 
-#: src/changeRemoteModal.jsx:190
+#: src/changeRemoteModal.jsx:192
 msgid "Add"
 msgstr "추가"
 
-#: src/changeRemoteModal.jsx:246
+#: src/changeRemoteModal.jsx:248
 msgid "Add another key"
 msgstr "다른 키를 추가합니다"
 
-#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
 msgid "Add new repository"
 msgstr "신규 저장소 추가"
 
-#: src/ostree.jsx:230
+#: src/ostree.jsx:235
 msgid "Additions"
 msgstr "추가"
 
-#: src/changeRemoteModal.jsx:253
+#: src/changeRemoteModal.jsx:255
 msgid "Apply"
 msgstr "적용"
 
-#: src/ostree.jsx:401
+#: src/ostree.jsx:406
 msgid "Available"
 msgstr "사용 할 수 있는"
 
-#: src/changeRemoteModal.jsx:248
+#: src/changeRemoteModal.jsx:250
 msgid "Begins with $0"
 msgstr "$0부터 시작합니다"
 
-#: src/ostree.jsx:172
+#: src/ostree.jsx:177
 msgid "Branch"
 msgstr "분기"
 
-#: src/changeRemoteModal.jsx:56 src/changeRemoteModal.jsx:191
-#: src/changeRemoteModal.jsx:254
+#: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
+#: src/changeRemoteModal.jsx:256
 msgid "Cancel"
 msgstr "취소"
 
-#: src/changeRemoteModal.jsx:53 src/changeRemoteModal.jsx:62
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
 msgid "Change repository"
 msgstr "저장소 변경"
 
-#: src/ostree.jsx:688
+#: src/ostree.jsx:671
 msgid "Check for updates"
 msgstr "최신화를 위한 점검"
 
-#: src/ostree.jsx:565
+#: src/ostree.jsx:568
 msgid "Checking for package updates..."
 msgstr "꾸러미 최신화를 위해 점검하기..."
 
-#: src/ostree.jsx:594
+#: src/ostree.jsx:597
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/ostree.jsx:391
+#: src/ostree.jsx:396
 msgid "Close"
 msgstr "닫기"
 
-#: src/ostree.jsx:131
+#: src/ostree.jsx:134
 msgid "Connecting to OSTree"
 msgstr "OSTree에 연걸"
 
-#: src/changeRemoteModal.jsx:252
+#: src/changeRemoteModal.jsx:254
 msgid "Delete"
 msgstr "삭제"
 
-#: src/ostree.jsx:350 src/ostree.jsx:681
+#: src/ostree.jsx:355 src/ostree.jsx:694
 msgid "Deployments and updates"
 msgstr "개발과 최신화"
 
-#: src/ostree.jsx:233
+#: src/ostree.jsx:238
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/ostree.jsx:608
+#: src/ostree.jsx:611
 msgid "Error loading remotes: $0"
 msgstr "원격적재 오류: $0"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Expired signature"
 msgstr "만료된 서명"
 
-#: src/ostree.jsx:394
+#: src/ostree.jsx:399
 msgid "Failed"
 msgstr "실패함"
 
-#: src/ostree.jsx:340
+#: src/ostree.jsx:345
 msgid "Failed to rebase deployment"
 msgstr "배포 재구성에 실패함"
 
-#: src/ostree.jsx:319
+#: src/ostree.jsx:324
 msgid "Failed to roll back deployment"
 msgstr "배포를 되돌리는데 실패함"
 
-#: src/ostree.jsx:329
+#: src/ostree.jsx:334
 msgid "Failed to upgrade deployment"
 msgstr "배포를 향상하는데 실패함"
 
-#: src/changeRemoteModal.jsx:249
+#: src/changeRemoteModal.jsx:251
 msgid "GPG public key"
 msgstr "GPG 공개키"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Good signature"
 msgstr "양호한 서명"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 msgid "Invalid signature"
 msgstr "유효하지 않은 서명"
 
-#: src/ostree.jsx:353 src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
 msgid "Name"
 msgstr "이름"
 
-#: src/ostree.jsx:518
+#: src/ostree.jsx:521
 msgid "No OSTree deployments found"
 msgstr "OSTree 배포를 찾을 수 없습니다"
 
@@ -143,51 +143,51 @@ msgstr "OSTree 배포를 찾을 수 없습니다"
 msgid "No configuration data found"
 msgstr "설정 자료를 찾을 수 없습니다"
 
-#: src/ostree.jsx:163
+#: src/ostree.jsx:168
 msgid "No configured remotes"
 msgstr "구성된 원격이 없습니다"
 
-#: src/ostree.jsx:135
+#: src/ostree.jsx:138
 msgid "No deployments"
 msgstr "배포 없음"
 
-#: src/ostree.jsx:296
+#: src/ostree.jsx:301
 msgid "No signature available"
 msgstr "이용 가능한 서명이 없습니다"
 
-#: src/ostree.jsx:543
+#: src/ostree.jsx:546
 msgid "Not authorized to update software on this system"
 msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
 
-#: src/client.js:566 src/client.js:651
+#: src/client.js:551 src/client.js:636
 msgid "OS $0 not found"
 msgstr "OS $0 찾을 수 없습니다"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:548
 msgid "OSTree is not available on this system"
 msgstr "OSTree는 이 시스템에서 사용 할 수 없습니다"
 
-#: src/ostree.jsx:249
+#: src/ostree.jsx:254
 msgid "Operating system"
 msgstr "운영 체제"
 
-#: src/ostree.jsx:261
+#: src/ostree.jsx:266
 msgid "Origin"
 msgstr "근원(출발점)"
 
-#: src/ostree.jsx:466
+#: src/ostree.jsx:469
 msgid "Packages"
 msgstr "꾸러미"
 
-#: src/changeRemoteModal.jsx:172
+#: src/changeRemoteModal.jsx:183
 msgid "Please provide a valid URL"
 msgstr "유효한 URL을 제공해야 합니다"
 
-#: src/changeRemoteModal.jsx:161
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid name"
 msgstr "유효한 이름을 제공해야 합니다"
 
-#: src/ostree.jsx:413
+#: src/ostree.jsx:418
 msgid "Rebase and reboot"
 msgstr "재배치와 재시작"
 
@@ -203,27 +203,27 @@ msgstr "메타자료 대상 받기"
 msgid "Receiving objects: $0%"
 msgstr "대상 받기: $0%"
 
-#: src/ostree.jsx:142
+#: src/ostree.jsx:146
 msgid "Reconnect"
 msgstr "재연결"
 
-#: src/ostree.jsx:257
+#: src/ostree.jsx:262
 msgid "Released"
 msgstr "출시됨"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:236
 msgid "Removals"
 msgstr "제거됨"
 
-#: src/ostree.jsx:169
+#: src/ostree.jsx:174
 msgid "Repository"
 msgstr "저장소"
 
-#: src/ostree.jsx:410
+#: src/ostree.jsx:415
 msgid "Roll back and reboot"
 msgstr "되돌리기와 재시작"
 
-#: src/ostree.jsx:384
+#: src/ostree.jsx:389
 msgid "Running"
 msgstr "작동중"
 
@@ -231,15 +231,15 @@ msgstr "작동중"
 msgid "Scanning metadata"
 msgstr "메타자료 검색하기"
 
-#: src/ostree.jsx:174
+#: src/ostree.jsx:179
 msgid "Select branch"
 msgstr "분기 선택"
 
-#: src/ostree.jsx:471
+#: src/ostree.jsx:474
 msgid "Signatures"
 msgstr "서명"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:282
 msgid "Signed by"
 msgstr "서명되었습니다"
 
@@ -247,61 +247,61 @@ msgstr "서명되었습니다"
 msgid "Software updates"
 msgstr "소프트웨어 최신화"
 
-#: src/ostree.jsx:353
+#: src/ostree.jsx:358
 msgid "State"
 msgstr "상태"
 
-#: src/ostree.jsx:100
+#: src/ostree.jsx:103
 msgid "System is up to date"
 msgstr "시스템이 최신 상태입니다"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:218
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "이 배포는 현재 동작하는 시스템에 동일한 꾸러미(package)가 포함되었습니다"
 
-#: src/ostree.jsx:461
+#: src/ostree.jsx:464
 msgid "Tree"
 msgstr "나무"
 
-#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
+#: src/changeRemoteModal.jsx:174 src/changeRemoteModal.jsx:231
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:133
+#: src/ostree.jsx:136
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree와 통신 할 수 없습니다"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:412
 msgid "Update and reboot"
 msgstr "최신화 및 재시작"
 
-#: src/ostree.jsx:106
+#: src/ostree.jsx:109
 msgid "Update available: $0"
 msgstr "최신화 할 수 있습니다: $0"
 
-#: src/ostree.jsx:232
+#: src/ostree.jsx:237
 msgid "Updates"
 msgstr "최신화"
 
-#: src/ostree.jsx:382
+#: src/ostree.jsx:387
 msgid "Updating"
 msgstr "최신화 중"
 
-#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
+#: src/changeRemoteModal.jsx:186 src/changeRemoteModal.jsx:239
 msgid "Use trusted GPG key"
 msgstr "신뢰하는 GPG 키를 사용합니다"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:294
 msgid "Validity"
 msgstr "유효성"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:258
 msgid "Version"
 msgstr "버전"
 
-#: src/ostree.jsx:281
+#: src/ostree.jsx:286
 msgid "When"
 msgstr "언제"
 
@@ -309,7 +309,7 @@ msgstr "언제"
 msgid "Writing objects"
 msgstr "대상에 쓰기"
 
-#: src/ostree.jsx:395
+#: src/ostree.jsx:400
 msgid "view more..."
 msgstr "더 보기..."
 

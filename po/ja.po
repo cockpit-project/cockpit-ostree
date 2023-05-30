@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-04 02:52+0000\n"
+"POT-Creation-Date: 2023-05-30 02:53+0000\n"
 "PO-Revision-Date: 2018-02-22 05:00+0000\n"
 "Last-Translator: Copied by Zanata <copied-by-zanata@zanata.org>\n"
 "Language-Team: Japanese\n"
@@ -16,148 +16,148 @@ msgstr ""
 "X-Generator: Zanata 4.4.5\n"
 "Plural-Forms: nplurals=1; plural=0\n"
 
-#: src/client.js:469
+#: src/client.js:458
 msgid "$0 key ID"
 msgstr "$0 キー ID"
 
-#: src/changeRemoteModal.jsx:190
+#: src/changeRemoteModal.jsx:192
 msgid "Add"
 msgstr "追加する"
 
-#: src/changeRemoteModal.jsx:246
+#: src/changeRemoteModal.jsx:248
 #, fuzzy
 #| msgid "Add Another Key"
 msgid "Add another key"
 msgstr "別の鍵の追加"
 
-#: src/changeRemoteModal.jsx:113 src/changeRemoteModal.jsx:156
+#: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
 #, fuzzy
 #| msgid "- Add New Repository"
 msgid "Add new repository"
 msgstr "- 新規リポジトリーの追加"
 
-#: src/ostree.jsx:230
+#: src/ostree.jsx:235
 msgid "Additions"
 msgstr "追加"
 
-#: src/changeRemoteModal.jsx:253
+#: src/changeRemoteModal.jsx:255
 msgid "Apply"
 msgstr "適用"
 
-#: src/ostree.jsx:401
+#: src/ostree.jsx:406
 msgid "Available"
 msgstr "利用可能"
 
-#: src/changeRemoteModal.jsx:248
+#: src/changeRemoteModal.jsx:250
 msgid "Begins with $0"
 msgstr ""
 
-#: src/ostree.jsx:172
+#: src/ostree.jsx:177
 msgid "Branch"
 msgstr ""
 
-#: src/changeRemoteModal.jsx:56 src/changeRemoteModal.jsx:191
-#: src/changeRemoteModal.jsx:254
+#: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
+#: src/changeRemoteModal.jsx:256
 msgid "Cancel"
 msgstr "取り消し"
 
-#: src/changeRemoteModal.jsx:53 src/changeRemoteModal.jsx:62
+#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
 #, fuzzy
 #| msgid "Change Repository"
 msgid "Change repository"
 msgstr "リポジトリーの変更"
 
-#: src/ostree.jsx:688
+#: src/ostree.jsx:671
 #, fuzzy
 #| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "更新の確認"
 
-#: src/ostree.jsx:565
+#: src/ostree.jsx:568
 #, fuzzy
 #| msgid "Checking for updates"
 msgid "Checking for package updates..."
 msgstr "更新の確認"
 
-#: src/ostree.jsx:594
+#: src/ostree.jsx:597
 msgid "Checking for updates"
 msgstr "更新の確認"
 
-#: src/ostree.jsx:391
+#: src/ostree.jsx:396
 msgid "Close"
 msgstr "閉じる"
 
-#: src/ostree.jsx:131
+#: src/ostree.jsx:134
 msgid "Connecting to OSTree"
 msgstr "OSTree への接続"
 
-#: src/changeRemoteModal.jsx:252
+#: src/changeRemoteModal.jsx:254
 msgid "Delete"
 msgstr "削除"
 
-#: src/ostree.jsx:350 src/ostree.jsx:681
+#: src/ostree.jsx:355 src/ostree.jsx:694
 #, fuzzy
 #| msgid "Deployment Causes"
 msgid "Deployments and updates"
 msgstr "デプロイメントの理由"
 
-#: src/ostree.jsx:233
+#: src/ostree.jsx:238
 msgid "Downgrades"
 msgstr "ダウングレード"
 
-#: src/ostree.jsx:608
+#: src/ostree.jsx:611
 msgid "Error loading remotes: $0"
 msgstr "リモートのロード中にエラーが発生しました: $0"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "期限切れの署名"
 
-#: src/ostree.jsx:394
+#: src/ostree.jsx:399
 msgid "Failed"
 msgstr "失敗"
 
-#: src/ostree.jsx:340
+#: src/ostree.jsx:345
 #, fuzzy
 #| msgid "Available Updates"
 msgid "Failed to rebase deployment"
 msgstr "利用可能なアップデート"
 
-#: src/ostree.jsx:319
+#: src/ostree.jsx:324
 msgid "Failed to roll back deployment"
 msgstr ""
 
-#: src/ostree.jsx:329
+#: src/ostree.jsx:334
 #, fuzzy
 #| msgid "Available Updates"
 msgid "Failed to upgrade deployment"
 msgstr "利用可能なアップデート"
 
-#: src/changeRemoteModal.jsx:249
+#: src/changeRemoteModal.jsx:251
 #, fuzzy
 #| msgid "Public Key"
 msgid "GPG public key"
 msgstr "公開鍵"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Good Signature"
 msgid "Good signature"
 msgstr "優れた署名"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:277
 #, fuzzy
 #| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "無効な署名"
 
-#: src/ostree.jsx:353 src/changeRemoteModal.jsx:159
+#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
 msgid "Name"
 msgstr "名前"
 
-#: src/ostree.jsx:518
+#: src/ostree.jsx:521
 msgid "No OSTree deployments found"
 msgstr "OSTree デプロイメントが見つかりません"
 
@@ -165,59 +165,59 @@ msgstr "OSTree デプロイメントが見つかりません"
 msgid "No configuration data found"
 msgstr "設定データが見つかりません"
 
-#: src/ostree.jsx:163
+#: src/ostree.jsx:168
 #, fuzzy
 #| msgid "No configuration found"
 msgid "No configured remotes"
 msgstr "設定が見つかりません"
 
-#: src/ostree.jsx:135
+#: src/ostree.jsx:138
 #, fuzzy
 #| msgid "No Deployments"
 msgid "No deployments"
 msgstr "デプロイメントなし"
 
-#: src/ostree.jsx:296
+#: src/ostree.jsx:301
 #, fuzzy
 #| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "署名が利用できません"
 
-#: src/ostree.jsx:543
+#: src/ostree.jsx:546
 msgid "Not authorized to update software on this system"
 msgstr "このシステム上のソフトウェアを更新する権限がありません"
 
-#: src/client.js:566 src/client.js:651
+#: src/client.js:551 src/client.js:636
 msgid "OS $0 not found"
 msgstr "OS $0 が見つかりません"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:548
 msgid "OSTree is not available on this system"
 msgstr "このシステムでは OSTree は利用できません"
 
-#: src/ostree.jsx:249
+#: src/ostree.jsx:254
 #, fuzzy
 #| msgid "Operating System"
 msgid "Operating system"
 msgstr "オペレーティングシステム"
 
-#: src/ostree.jsx:261
+#: src/ostree.jsx:266
 msgid "Origin"
 msgstr "生成"
 
-#: src/ostree.jsx:466
+#: src/ostree.jsx:469
 msgid "Packages"
 msgstr "パッケージ"
 
-#: src/changeRemoteModal.jsx:172
+#: src/changeRemoteModal.jsx:183
 msgid "Please provide a valid URL"
 msgstr "有効な URL を提供してください"
 
-#: src/changeRemoteModal.jsx:161
+#: src/changeRemoteModal.jsx:172
 msgid "Please provide a valid name"
 msgstr "有効な名前を提供してください"
 
-#: src/ostree.jsx:413
+#: src/ostree.jsx:418
 #, fuzzy
 #| msgid "Rebase and Reboot"
 msgid "Rebase and reboot"
@@ -235,29 +235,29 @@ msgstr "メタデータオブジェクトの受信"
 msgid "Receiving objects: $0%"
 msgstr "オブジェクトの受信: $0%"
 
-#: src/ostree.jsx:142
+#: src/ostree.jsx:146
 msgid "Reconnect"
 msgstr "再接続"
 
-#: src/ostree.jsx:257
+#: src/ostree.jsx:262
 msgid "Released"
 msgstr "リリース済み"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:236
 msgid "Removals"
 msgstr "削除"
 
-#: src/ostree.jsx:169
+#: src/ostree.jsx:174
 msgid "Repository"
 msgstr "リポジトリー"
 
-#: src/ostree.jsx:410
+#: src/ostree.jsx:415
 #, fuzzy
 #| msgid "Roll Back and Reboot"
 msgid "Roll back and reboot"
 msgstr "ロールバックおよび再起動"
 
-#: src/ostree.jsx:384
+#: src/ostree.jsx:389
 msgid "Running"
 msgstr "実行中"
 
@@ -265,19 +265,19 @@ msgstr "実行中"
 msgid "Scanning metadata"
 msgstr "メタデータのスキャン"
 
-#: src/ostree.jsx:174
+#: src/ostree.jsx:179
 #, fuzzy
 #| msgid "Select"
 msgid "Select branch"
 msgstr "選択"
 
-#: src/ostree.jsx:471
+#: src/ostree.jsx:474
 #, fuzzy
 #| msgid "Signature"
 msgid "Signatures"
 msgstr "署名"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:282
 msgid "Signed by"
 msgstr "署名者"
 
@@ -287,68 +287,68 @@ msgstr "署名者"
 msgid "Software updates"
 msgstr "ソフトウェア更新"
 
-#: src/ostree.jsx:353
+#: src/ostree.jsx:358
 msgid "State"
 msgstr "状態"
 
-#: src/ostree.jsx:100
+#: src/ostree.jsx:103
 msgid "System is up to date"
 msgstr "システムは最新の状態です"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:218
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "このデプロイメントには、現在起動されているシステムと同じパッケージが含まれて"
 "います"
 
-#: src/ostree.jsx:461
+#: src/ostree.jsx:464
 msgid "Tree"
 msgstr "ツリー"
 
-#: src/changeRemoteModal.jsx:170 src/changeRemoteModal.jsx:229
+#: src/changeRemoteModal.jsx:174 src/changeRemoteModal.jsx:231
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:133
+#: src/ostree.jsx:136
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree と通信できません"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:412
 #, fuzzy
 #| msgid "Update and Reboot"
 msgid "Update and reboot"
 msgstr "更新および再起動"
 
-#: src/ostree.jsx:106
+#: src/ostree.jsx:109
 #, fuzzy
 #| msgid "Not available"
 msgid "Update available: $0"
 msgstr "利用できません"
 
-#: src/ostree.jsx:232
+#: src/ostree.jsx:237
 msgid "Updates"
 msgstr "更新"
 
-#: src/ostree.jsx:382
+#: src/ostree.jsx:387
 msgid "Updating"
 msgstr "更新中"
 
-#: src/changeRemoteModal.jsx:182 src/changeRemoteModal.jsx:237
+#: src/changeRemoteModal.jsx:186 src/changeRemoteModal.jsx:239
 msgid "Use trusted GPG key"
 msgstr "信頼済み GPG 鍵の使用"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:294
 #, fuzzy
 #| msgid "Validating key"
 msgid "Validity"
 msgstr "鍵の検証"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:258
 msgid "Version"
 msgstr "バージョン"
 
-#: src/ostree.jsx:281
+#: src/ostree.jsx:286
 msgid "When"
 msgstr "日付"
 
@@ -356,7 +356,7 @@ msgstr "日付"
 msgid "Writing objects"
 msgstr "オブジェクトの書き込み"
 
-#: src/ostree.jsx:395
+#: src/ostree.jsx:400
 msgid "view more..."
 msgstr ""
 
