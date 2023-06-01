@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/python3 -cimport os, sys; os.execv(os.path.dirname(sys.argv[1]) + "/common/pywrap", sys.argv)
 # -*- coding: utf-8 -*-
 
 # This file is part of Cockpit.
@@ -19,14 +19,9 @@
 # along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
 
 import os
-import sys
 import subprocess
 
-# import Cockpit's machinery for test VMs and its browser test API
-TEST_DIR = os.path.dirname(__file__)
-sys.path.append(os.path.join(TEST_DIR, "common"))
-sys.path.append(os.path.join(os.path.dirname(TEST_DIR), "bots/machine"))
-import testlib  # noqa: E402
+import testlib
 
 
 INSTALL_RPMS = [
@@ -584,7 +579,7 @@ class OstreeCase(testlib.MachineCase):
         b.click(".pf-v5-c-modal-box .apply-btn")
         b.wait_visible(".pf-v5-c-modal-box div.pf-m-danger")
 
-        with open(os.path.join(TEST_DIR, "files", "publickey.asc"), 'r') as fp:
+        with open(os.path.join(testlib.TEST_DIR, "files", "publickey.asc"), 'r') as fp:
             gpg_data = fp.read()
 
         b.set_val(".pf-v5-c-modal-box #gpg-data", gpg_data)
