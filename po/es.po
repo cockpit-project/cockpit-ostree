@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 02:53+0000\n"
+"POT-Creation-Date: 2023-06-15 02:55+0000\n"
 "PO-Revision-Date: 2022-05-10 10:18+0000\n"
 "Last-Translator: Pablo Munoz Alabau <pamual@posteo.es>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -164,7 +164,7 @@ msgstr "Firma de calidad"
 msgid "Invalid signature"
 msgstr "La firma no es válida"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Nombre"
 

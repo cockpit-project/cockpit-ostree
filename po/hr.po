@@ -5,7 +5,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 02:53+0000\n"
+"POT-Creation-Date: 2023-06-15 02:55+0000\n"
 "PO-Revision-Date: 2020-06-15 21:40+0000\n"
 "Last-Translator: Milo Ivir <mail@milotype.de>\n"
 "Language-Team: Croatian <https://translate.fedoraproject.org/projects/"
@@ -151,7 +151,7 @@ msgstr "Ispravan potpis"
 msgid "Invalid signature"
 msgstr "Neispravan potpis"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Ime"
 
