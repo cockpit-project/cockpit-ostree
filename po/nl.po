@@ -3,9 +3,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-05-30 02:53+0000\n"
-"PO-Revision-Date: 2022-12-08 14:20+0000\n"
-"Last-Translator: Vanhoorne Michael <michaeltjevanhoorne@gmail.com>\n"
+"POT-Creation-Date: 2023-06-15 02:55+0000\n"
+"PO-Revision-Date: 2023-06-15 14:20+0000\n"
+"Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/nl/>\n"
 "Language: nl\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 4.14.2\n"
+"X-Generator: Weblate 4.17\n"
 
 #: src/client.js:458
 msgid "$0 key ID"
@@ -24,16 +24,12 @@ msgid "Add"
 msgstr "Toevoegen"
 
 #: src/changeRemoteModal.jsx:248
-#, fuzzy
-#| msgid "Add Another Key"
 msgid "Add another key"
 msgstr "Nog een sleutel toevoegen"
 
 #: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
-#, fuzzy
-#| msgid "Add New Repository"
 msgid "Add new repository"
-msgstr "- Voeg nieuwe repository toe"
+msgstr "Voeg nieuwe repository toe"
 
 #: src/ostree.jsx:235
 msgid "Additions"
@@ -49,11 +45,11 @@ msgstr "Beschikbaar"
 
 #: src/changeRemoteModal.jsx:250
 msgid "Begins with $0"
-msgstr ""
+msgstr "Begint met $0"
 
 #: src/ostree.jsx:177
 msgid "Branch"
-msgstr ""
+msgstr "Tak"
 
 #: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
 #: src/changeRemoteModal.jsx:256
@@ -61,14 +57,10 @@ msgid "Cancel"
 msgstr "Annuleren"
 
 #: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
-#, fuzzy
-#| msgid "Change Repository"
 msgid "Change repository"
 msgstr "Wijzig repository"
 
 #: src/ostree.jsx:671
-#, fuzzy
-#| msgid "Check for Updates"
 msgid "Check for updates"
 msgstr "Controleer op updates"
 
@@ -82,7 +74,7 @@ msgstr "Controleren op updates"
 
 #: src/ostree.jsx:396
 msgid "Close"
-msgstr ""
+msgstr "Sluiten"
 
 #: src/ostree.jsx:134
 msgid "Connecting to OSTree"
@@ -94,7 +86,7 @@ msgstr "Verwijderen"
 
 #: src/ostree.jsx:355 src/ostree.jsx:694
 msgid "Deployments and updates"
-msgstr ""
+msgstr "Implementaties en updates"
 
 #: src/ostree.jsx:238
 msgid "Downgrades"
@@ -105,8 +97,6 @@ msgid "Error loading remotes: $0"
 msgstr "Fout bij het laden van remotes: $0"
 
 #: src/ostree.jsx:277
-#, fuzzy
-#| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "Verlopen handtekening"
 
@@ -115,40 +105,30 @@ msgid "Failed"
 msgstr "Mislukt"
 
 #: src/ostree.jsx:345
-#, fuzzy
-#| msgid "No Deployments"
 msgid "Failed to rebase deployment"
-msgstr "Geen implementaties"
+msgstr "Kan de implementatie niet opnieuw baseren"
 
 #: src/ostree.jsx:324
 msgid "Failed to roll back deployment"
-msgstr ""
+msgstr "Kan de implementatie niet ongedaan maken"
 
 #: src/ostree.jsx:334
-#, fuzzy
-#| msgid "No Deployments"
 msgid "Failed to upgrade deployment"
-msgstr "Geen implementaties"
+msgstr "Kan de implementatie niet upgraden"
 
 #: src/changeRemoteModal.jsx:251
-#, fuzzy
-#| msgid "GPG Public Key"
 msgid "GPG public key"
-msgstr "GPG Publieke sleutel"
+msgstr "GPG openbare sleutel"
 
 #: src/ostree.jsx:277
-#, fuzzy
-#| msgid "Good Signature"
 msgid "Good signature"
 msgstr "Goede handtekening"
 
 #: src/ostree.jsx:277
-#, fuzzy
-#| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "Ongeldige handtekening"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Naam"
 
@@ -162,17 +142,13 @@ msgstr "Geen configuratiedata gevonden"
 
 #: src/ostree.jsx:168
 msgid "No configured remotes"
-msgstr ""
+msgstr "Geen geconfigureerde afstandsbedieningen"
 
 #: src/ostree.jsx:138
-#, fuzzy
-#| msgid "No Deployments"
 msgid "No deployments"
 msgstr "Geen implementaties"
 
 #: src/ostree.jsx:301
-#, fuzzy
-#| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "Geen handtekening beschikbaar"
 
@@ -189,8 +165,6 @@ msgid "OSTree is not available on this system"
 msgstr "OSTree is niet beschikbaar op dit systeem"
 
 #: src/ostree.jsx:254
-#, fuzzy
-#| msgid "Operating System"
 msgid "Operating system"
 msgstr "Besturingssysteem"
 
@@ -211,8 +185,6 @@ msgid "Please provide a valid name"
 msgstr "Geef een geldige naam op"
 
 #: src/ostree.jsx:418
-#, fuzzy
-#| msgid "Rebase and Reboot"
 msgid "Rebase and reboot"
 msgstr "Wisselen en opnieuw opstarten"
 
@@ -241,14 +213,10 @@ msgid "Removals"
 msgstr "Verwijderingen"
 
 #: src/ostree.jsx:174
-#, fuzzy
-#| msgid "Change Repository"
 msgid "Repository"
-msgstr "Wijzig repository"
+msgstr "Repository"
 
 #: src/ostree.jsx:415
-#, fuzzy
-#| msgid "Roll Back and Reboot"
 msgid "Roll back and reboot"
 msgstr "Terugdraaien en opnieuw opstarten"
 
@@ -262,33 +230,27 @@ msgstr "Metadata scannen"
 
 #: src/ostree.jsx:179
 msgid "Select branch"
-msgstr ""
+msgstr "Selecteer tak"
 
 #: src/ostree.jsx:474
-#, fuzzy
-#| msgid "Signature"
 msgid "Signatures"
-msgstr "Handtekening"
+msgstr "Handtekeningen"
 
 #: src/ostree.jsx:282
 msgid "Signed by"
 msgstr "Ondertekend door"
 
 #: src/index.html:22 src/manifest.json:0
-#, fuzzy
-#| msgid "Software Updates"
 msgid "Software updates"
 msgstr "Software updates"
 
 #: src/ostree.jsx:358
-#, fuzzy
-#| msgid "Status"
 msgid "State"
-msgstr "Status"
+msgstr "Toestand"
 
 #: src/ostree.jsx:103
 msgid "System is up to date"
-msgstr ""
+msgstr "Systeem is up-to-date"
 
 #: src/ostree.jsx:218
 msgid ""
@@ -309,16 +271,12 @@ msgid "Unable to communicate with OSTree"
 msgstr "Kan niet communiceren met OSTree"
 
 #: src/ostree.jsx:412
-#, fuzzy
-#| msgid "Update and Reboot"
 msgid "Update and reboot"
 msgstr "Updaten en opnieuw opstarten"
 
 #: src/ostree.jsx:109
-#, fuzzy
-#| msgid "No disks are available."
 msgid "Update available: $0"
-msgstr "Geen schijven beschikbaar."
+msgstr "Update beschikbaar: $0"
 
 #: src/ostree.jsx:237
 msgid "Updates"
@@ -334,7 +292,7 @@ msgstr "Gebruik vertrouwde GPG-sleutel"
 
 #: src/ostree.jsx:294
 msgid "Validity"
-msgstr ""
+msgstr "Geldigheid"
 
 #: src/ostree.jsx:258
 msgid "Version"
@@ -350,7 +308,7 @@ msgstr "Objecten schrijven"
 
 #: src/ostree.jsx:400
 msgid "view more..."
-msgstr ""
+msgstr "bekijk meer..."
 
 #~ msgid "$0 package"
 #~ msgstr "$0 pakket"
