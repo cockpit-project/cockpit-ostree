@@ -2,15 +2,14 @@
 # Take an srpm and build it in the default mock environment of a given cockpit test VM image. This is necessary as
 # e. g. an rpm built on Fedora ≥ 31 cannot be installed on continuous-atomic any more due to a format change.
 
-import sys
 import argparse
 import os
+import sys
 
 BOTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bots")
 sys.path.append(BOTS_DIR)
 
-from machine.machine_core import machine_virtual
-
+from machine.machine_core import machine_virtual  # noqa: E402
 
 parser = argparse.ArgumentParser(description="Build rpm inside a cockpit test VM image")
 parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
@@ -19,7 +18,10 @@ parser.add_argument("image", help="image name in which to build the SRPM")
 args = parser.parse_args()
 
 network = machine_virtual.VirtNetwork(0, image=args.image)
-machine = machine_virtual.VirtMachine(image=args.image, networking=network.host(), memory_mb=1024, verbose=args.verbose)
+machine = machine_virtual.VirtMachine(image=args.image,
+                                      networking=network.host(),
+                                      memory_mb=1024,
+                                      verbose=args.verbose)
 machine.start()
 machine.wait_boot()
 machine.upload([args.srpm], "/tmp/", relative_dir=os.getcwd())
