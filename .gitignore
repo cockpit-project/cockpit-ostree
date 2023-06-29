@@ -12,6 +12,7 @@ bots/
 pkg
 test/common/
 test/images/
+test/static-code
 *.mo
 *.pot
 POTFILES*

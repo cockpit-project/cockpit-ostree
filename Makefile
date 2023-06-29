@@ -28,6 +28,7 @@ all: $(DIST_TEST)
 COCKPIT_REPO_FILES = \
 	pkg/lib \
 	test/common \
+	test/static-code \
 	$(NULL)
 
 COCKPIT_REPO_URL = https://github.com/cockpit-project/cockpit.git
@@ -159,6 +160,9 @@ print-vm:
 # run the QUnit tests
 check-unit: $(NODE_MODULES_TEST)
 	npm run test
+
+codecheck: test/static-code $(NODE_MODULES_TEST)
+	test/static-code
 
 # convenience target to setup all the bits needed for the integration tests
 # without actually running them
