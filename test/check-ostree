@@ -23,7 +23,6 @@ import subprocess
 
 import testlib
 
-
 INSTALL_RPMS = [
     "empty-1-0.noarch",
     "chrony-0.1-2.noarch",
