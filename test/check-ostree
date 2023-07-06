@@ -315,12 +315,12 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
         wait_deployment_details_prop(b, 2, "Tree", "#osname", get_name(self))
 
-        check_package_count(b, self.assertIn, 2)
         wait_packages(b, 2, {"down": [tzdata],
                              "up": [chrony],
                              "removes": ["empty-1-0.noarch"],
                              "adds": [remove_pkg],
                              })
+        check_package_count(b, self.assertIn, 2)
 
         # Rollback
         do_deployment_action(b, 2, "Roll back and reboot")
