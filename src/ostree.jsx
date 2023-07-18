@@ -20,7 +20,7 @@
 import 'cockpit-dark-theme'; // once per page
 
 import React, { useState } from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import PropTypes from "prop-types";
 import { debounce } from 'throttle-debounce';
 
@@ -703,6 +703,6 @@ class Application extends React.Component {
     }
 }
 
-document.addEventListener("DOMContentLoaded", function () {
-    ReactDOM.render(React.createElement(Application, {}), document.getElementById('app'));
+document.addEventListener("DOMContentLoaded", () => {
+    createRoot(document.getElementById("app")).render(<Application />);
 });
