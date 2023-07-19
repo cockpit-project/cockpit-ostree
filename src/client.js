@@ -369,6 +369,9 @@ class RPMOSTreeDBusClient {
             if (deployment.id && deployment.osname?.v !== os_name)
                 continue;
 
+            // required for pinning deployments
+            deployment.index = i;
+
             // always show the default deployment,
             // skip showing the upgrade if it is the
             // same as the default.
