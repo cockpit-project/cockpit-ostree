@@ -30,22 +30,22 @@ import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Card, CardHeader, CardTitle, CardBody } from "@patternfly/react-core/dist/esm/components/Card";
 import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
+import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import {
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription
 } from "@patternfly/react-core/dist/esm/components/DescriptionList";
-import { Label } from "@patternfly/react-core/dist/esm/components/Label";
-import {
-    OverflowMenu, OverflowMenuContent, OverflowMenuGroup, OverflowMenuItem, OverflowMenuControl, OverflowMenuDropdownItem
-} from "@patternfly/react-core/dist/esm/components/OverflowMenu";
-import { Page, PageSection, PageSectionVariants } from "@patternfly/react-core/dist/esm/components/Page";
+import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
+import { Label, } from "@patternfly/react-core/dist/esm/components/Label";
+import { List, ListItem } from "@patternfly/react-core/dist/esm/components/List";
+import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
+import { Page, PageSection, } from "@patternfly/react-core/dist/esm/components/Page";
 import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
-import { Toolbar, ToolbarContent, ToolbarItem } from "@patternfly/react-core/dist/esm/components/Toolbar";
+import { Text } from "@patternfly/react-core/dist/esm/components/Text";
 
-import { Select, SelectOption } from "@patternfly/react-core/dist/esm/deprecated/components/Select";
-import { Dropdown, KebabToggle } from "@patternfly/react-core/dist/esm/deprecated/components/Dropdown";
+import { Dropdown, DropdownItem, DropdownSeparator, KebabToggle, } from "@patternfly/react-core/dist/esm/deprecated/components/Dropdown";
 
-import { ExclamationCircleIcon, PendingIcon, ErrorCircleOIcon } from '@patternfly/react-icons';
+import { BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon, PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon } from '@patternfly/react-icons';
 
 import cockpit from 'cockpit';
 
@@ -56,9 +56,11 @@ import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
 
 import client from './client';
 import * as remotes from './remotes';
-import { ChangeRemoteModal } from './changeRemoteModal.jsx';
+import { AddRepositoryModal, EditRepositoryModal, RebaseRepositoryModal, RemoveRepositoryModal } from './repositoryModals.jsx';
 
 import './ostree.scss';
+import { CleanUpModal, ResetModal } from './deploymentModals';
+import { WithDialogs, DialogsContext, useDialogs } from "dialogs.jsx";
 
 const _ = cockpit.gettext;
 
@@ -154,56 +156,6 @@ Curtain.propTypes = {
     failure: PropTypes.bool.isRequired,
     message: PropTypes.string,
     reconnect: PropTypes.bool,
-};
-
-const OriginSelector = ({ os, remotes, branches, branchLoadError, currentRemote, currentBranch, setChangeRemoteModal, onChangeBranch }) => {
-    const [branchSelectExpanded, setBranchSelectExpanded] = useState(false);
-
-    if (!os)
-        return null;
-
-    const origin = client.get_default_origin(os);
-
-    if (!origin || !remotes || remotes.length === 0)
-        return <Alert variant="default" isInline title={ _("No configured remotes") } />;
-
-    return (
-        <>
-            <Toolbar id="repo-remote-toolbar" className="pf-m-page-insets">
-                <ToolbarContent>
-                    <ToolbarItem variant="label">{ _("Repository") }</ToolbarItem>
-                    <ToolbarItem><Button id="change-repo" variant="link" isInline onClick={() => setChangeRemoteModal(true)}>{currentRemote}</Button></ToolbarItem>
-
-                    <ToolbarItem variant="label" id="branch-select-label">{ _("Branch") }</ToolbarItem>
-                    <ToolbarItem>
-                        <Select aria-label={ _("Select branch") } aria-labelledby="branch-select-label"
-                                toggleId="change-branch"
-                                isOpen={branchSelectExpanded}
-                                selections={currentBranch}
-                                onToggle={(_event, exp) => setBranchSelectExpanded(exp) }
-                                onSelect={(_event, branch) => { setBranchSelectExpanded(false); onChangeBranch(branch) } }>
-                            { branchLoadError
-                                ? [<SelectOption key="_error" isDisabled value={branchLoadError} />]
-                                : (branches || []).map(branch => <SelectOption key={branch} value={branch} />)
-                            }
-                        </Select>
-                    </ToolbarItem>
-                </ToolbarContent>
-            </Toolbar>
-            {branchLoadError && <Alert variant="warning" isInline title={branchLoadError} />}
-        </>
-    );
-};
-
-OriginSelector.propTypes = {
-    os: PropTypes.string,
-    remotes: PropTypes.arrayOf(PropTypes.string),
-    branches: PropTypes.arrayOf(PropTypes.string),
-    branchLoadError: PropTypes.string,
-    currentRemote: PropTypes.string,
-    currentBranch: PropTypes.string,
-    setChangeRemoteModal: PropTypes.func.isRequired,
-    onChangeBranch: PropTypes.func.isRequired,
 };
 
 /**
@@ -303,16 +255,12 @@ const SignaturesDetails = ({ signatures }) => {
 };
 
 const Deployments = ({ versions }) => {
+    const Dialogs = useDialogs();
     const [inProgress, setInProgress] = useState({});
-    const [openedKebab, _setOpenedKebab] = useState({});
     const [error, _setError] = useState({});
 
     const setError = (id, err) => {
         _setError({ ...error, [id]: err });
-    };
-
-    const setOpenedKebab = (id, state) => {
-        _setOpenedKebab({ ...openedKebab, [id]: state });
     };
 
     const doRollback = (key, osname) => {
@@ -346,50 +294,115 @@ const Deployments = ({ versions }) => {
                 .finally(() => setInProgress({ ...inProgress, [key]: false }));
     };
 
+    const columns = [
+        {
+            title: _("Version"),
+            props: { width: 15, },
+        },
+        {
+            title: _("Status"),
+            props: { width: 15, },
+        },
+        {
+            title: _("Time"),
+            props: { width: 15, },
+        },
+        {
+            title: _("Branch"),
+        },
+        {
+            title: "",
+            props: { className: "pf-v5-c-table__action" }
+        },
+    ];
+
     const items = versions.map(item => {
         const key = track_id(item);
         const packages = client.packages(item);
-        return DeploymentDetails(key, item, packages, doRollback, doUpgrade, doRebase, inProgress[key], setError, error[key], setOpenedKebab, openedKebab[key]);
+        return DeploymentDetails(key, item, packages, doRollback, doUpgrade, doRebase, inProgress[key], setError, error[key], Dialogs);
     });
+
     return (
         <ListingTable aria-label={_("Deployments and updates")}
                   id="available-deployments"
-                  gridBreakPoint=''
-                  columns={[{ title: _("Name") }, { title: _("State") }, { title: "" }]}
+                  columns={columns}
                   variant="compact"
+                  gridBreakPoint="grid-lg"
                   rows={items} />
     );
 };
 
-const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase, inProgress, setError, error, setOpenedKebab, openedKebab) => {
-    let name = null;
-    if (info && info.osname) {
-        name = info.osname.v;
-        if (info.version)
-            name += " " + info.version.v;
-    }
+const isUpdate = (info) => {
+    return client.item_matches(info, 'CachedUpdate') && !client.item_matches(info, 'DefaultDeployment');
+};
 
-    const isUpdate = () => {
-        return client.item_matches(info, 'CachedUpdate') && !client.item_matches(info, 'DefaultDeployment');
-    };
+const isRollback = (info) => {
+    return !client.item_matches(info, 'CachedUpdate') && client.item_matches(info, 'RollbackDeployment');
+};
 
-    const isRollback = () => {
-        return !client.item_matches(info, 'CachedUpdate') && client.item_matches(info, 'RollbackDeployment');
-    };
+const isRebase = (info) => {
+    return !info.id && !client.item_matches(info, 'BootedDeployment', 'origin') && !client.item_matches(info, 'RollbackDeployment') &&
+        !client.item_matches(info, "DefaultDeployment");
+};
 
-    const isRebase = () => {
-        return !info.id && !client.item_matches(info, 'BootedDeployment', 'origin') && !client.item_matches(info, 'RollbackDeployment') &&
-            !client.item_matches(info, "DefaultDeployment");
-    };
+const ConfirmDeploymentChange = ({ actionName, bodyText, onConfirmAction }) => {
+    const Dialogs = useDialogs();
 
-    let state;
+    const actions = [
+        <Button key="confirm-action" variant="warning"
+            onClick={() => { onConfirmAction(); Dialogs.close() }}
+        >
+            {cockpit.format(_("$0 and reboot"), actionName)}
+        </Button>,
+        <Button key="cancel-action" variant="link" onClick={Dialogs.close}>
+            {_("Cancel")}
+        </Button>
+    ];
+
+    const titleContent = (
+        <Flex justifyContent={{ default: "justifyContentFlexStart" }} spacer={{ default: 'spaceItemsSm' }}
+            flexWrap={{ default: 'nowrap' }}
+        >
+            <FlexItem>
+                <ExclamationTriangleIcon className="pf-v5-u-warning-color-100" />
+            </FlexItem>
+            <FlexItem>
+                <Text>{`${actionName}?`}</Text>
+            </FlexItem>
+        </Flex>
+    );
+
+    return (
+        <Modal isOpen
+            id="confirm-modal"
+            title={titleContent}
+            position="top"
+            variant="small"
+            onClose={Dialogs.close}
+            actions={actions}
+        >
+            <Text>{bodyText}</Text>
+        </Modal>
+    );
+};
+
+const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase, inProgress, setError, error, Dialogs) => {
+    const version = info.version ? info.version.v : null;
+
+    const labels = [];
     if (inProgress)
-        state = <Label icon={<PendingIcon />}>{_("Updating")}</Label>;
-    else if (info.booted && info.booted.v)
-        state = <Label color="green">{_("Running")}</Label>;
-    else if (error)
-        state = (
-            <Popover headerContent={error.title} bodyContent={error.details} className="ct-popover-alert">
+        labels.push(<Label icon={<PendingIcon />} key={"updating" + version}>{_("Updating")}</Label>);
+    if (info.booted && info.booted.v)
+        labels.push(<Label color="blue" key={"current" + version} icon={<CheckCircleIcon />}>{_("Current")}</Label>);
+    if (info?.pinned?.v)
+        labels.push(<Label color="grey" key={"pinned" + version}>{_("Pinned")}</Label>);
+    if (error)
+        labels.push(
+            <Popover headerContent={error.title}
+                bodyContent={error.details}
+                className="ct-popover-alert"
+                key={"error" + version}
+            >
                 <Label color="red"
                 icon={<ErrorCircleOIcon />}
                 className="deployment-error"
@@ -402,57 +415,80 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
                 </Label>
             </Popover>
         );
-    else
-        state = <Label>{_("Available")}</Label>;
+    if (isUpdate(info) || isRebase(info))
+        labels.push(<Label color="green" key={"new" + version}>{_("New")}</Label>);
 
     let action_name = null;
     let action = null;
+    const releaseTime = timeformat.distanceToNow(info.timestamp.v * 1000, true);
 
-    if (isUpdate()) {
-        action_name = _("Update and reboot");
-        action = () => doUpgrade(akey, info.osname.v, info.checksum.v);
-    } else if (isRollback()) {
-        action_name = _("Roll back and reboot");
-        action = () => doRollback(akey, info.osname.v);
-    } else if (isRebase()) {
-        action_name = _("Rebase and reboot");
-        action = () => doRebase(akey, info.osname.v, info.origin.v, info.checksum.v);
+    if (isUpdate(info)) {
+        action_name = "update";
+        action = () => Dialogs.show(<ConfirmDeploymentChange actionName={action_name}
+            bodyText={cockpit.format(_("System will rebase to $0, updated $1."), version, releaseTime)}
+            onConfirmAction={() => doUpgrade(akey, info.osname.v, info.checksum.v)}
+        />);
+    } else if (isRollback(info)) {
+        action_name = "rollback";
+        action = () => Dialogs.show(<ConfirmDeploymentChange actionName={action_name}
+            bodyText={cockpit.format(_("System will rebase to $0, updated $1."), version, releaseTime)}
+            onConfirmAction={() => doRollback(akey, info.osname.v)}
+        />);
+    } else if (isRebase(info)) {
+        action_name = "rebase";
+        action = () => Dialogs.show(<ConfirmDeploymentChange actionName={action_name}
+            bodyText={cockpit.format(_("System will rebase to $0, updated $1."), version, releaseTime)}
+            onConfirmAction={() => doRebase(akey, info.osname.v, info.origin.v, info.checksum.v)}
+        />);
     }
 
+    const action_button_text = {
+        update: _("Update"),
+        rollback: _("Roll back"),
+        rebase: _("Rebase"),
+    };
     const columns = [
-        { title: name, props: { className: "deployment-name" } },
-        { title: state }
+        { title: version, props: { className: "deployment-name" } },
+        {
+            title: (
+                <Flex spaceItems={{ default: 'spaceItemsSm' }}>
+                    {labels}
+                </Flex>
+            ),
+        }
     ];
+
+    columns.push({ title: releaseTime });
+
+    columns.push({ title: info.origin?.v });
 
     if (action_name) {
         columns.push({
-            title: <OverflowMenu breakpoint="lg">
-                <OverflowMenuContent>
-                    <OverflowMenuGroup groupType="button">
-                        <OverflowMenuItem>
-                            <Button size="sm" variant="secondary" onClick={action}>
-                                {action_name}
-                            </Button>
-                        </OverflowMenuItem>
-                    </OverflowMenuGroup>
-                </OverflowMenuContent>
-                <OverflowMenuControl>
-                    <Dropdown position="right"
-                              onSelect={() => setOpenedKebab(akey, !openedKebab)}
-                              toggle={
-                                  <KebabToggle onToggle={(_event, open) => setOpenedKebab(akey, open)} />
-                              }
-                              isOpen={openedKebab}
-                              isPlain
-                              dropdownItems={[<OverflowMenuDropdownItem key={action_name} isShared onClick={action}>
-                                  {action_name}
-                              </OverflowMenuDropdownItem>]}
-                    />
-                </OverflowMenuControl>
-            </OverflowMenu>
+            title: (
+                <Flex justifyContent={{ default: "justifyContentFlexEnd" }}>
+                    <Button size="sm" onClick={action}
+                        variant={action_name === "rollback" ? "secondary" : "primary"}
+                    >
+                        {action_button_text[action_name]}
+                    </Button>
+                </Flex>
+            ),
         });
     } else {
         columns.push({ title: "" });
+    }
+
+    if (info.index !== undefined) {
+        columns.push({
+            title: (
+                <DeploymentActions deploymentIndex={info.index}
+                    deploymentIsPinned={info?.pinned?.v}
+                    isCurrent={info.booted.v}
+                    isStaged={info.staged.v}
+                />
+            ),
+            props: { className: "pf-v5-c-table__action" }
+        });
     }
 
     let signatures = [];
@@ -484,10 +520,213 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
     });
 };
 
+const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isStaged }) => {
+    const [isKebabOpen, setKebabOpen] = useState(false);
+
+    const togglePin = () => {
+        const pinFlags = [];
+        if (deploymentIsPinned) {
+            pinFlags.push("--unpin");
+        }
+
+        cockpit.spawn(["ostree", "admin", "pin", ...pinFlags, deploymentIndex], { superuser: "try" })
+                .then(() => setKebabOpen(false));
+    };
+
+    const deleteDeployment = () => {
+        cockpit.spawn(["ostree", "admin", "undeploy", deploymentIndex], { superuser: "try" })
+                .then(() => setKebabOpen(false));
+    };
+
+    const actions = [];
+    if (!isStaged) {
+        actions.push(
+            <DropdownItem key="pin-deployment"
+                onClick={() => togglePin()}
+            >
+                {deploymentIsPinned ? _("Unpin") : _("Pin")}
+            </DropdownItem>,
+        );
+    }
+
+    if (!isCurrent) {
+        if (actions.length > 0) {
+            actions.push(<DropdownSeparator key="deployment-actions-separator-1" />);
+        }
+        actions.push(
+            <DropdownItem key="delete-deployment"
+                className="pf-v5-u-danger-color-200"
+                onClick={() => deleteDeployment()}
+            >
+                {_("Delete")}
+            </DropdownItem>
+        );
+    }
+
+    return (
+        <Dropdown toggle={<KebabToggle onToggle={(_event, isOpen) => setKebabOpen(isOpen)} />}
+            isOpen={isKebabOpen}
+            id="deployment-actions"
+            isPlain
+            position="right"
+            dropdownItems={actions} />
+    );
+};
+
+const OStreeStatus = ({ ostreeState, versions }) => {
+    const updates = versions.filter(version => isUpdate(version));
+
+    const statusItems = [];
+    if (updates.length) {
+        statusItems.push({
+            key: "update-available",
+            icon: <BugIcon />,
+            message: _("Update available"),
+        });
+    } else {
+        statusItems.push({
+            key: "up-to-date",
+            icon: <CheckIcon color="green" />,
+            message: _("System is up to date"),
+        });
+    }
+
+    if (ostreeState.branchLoadError) {
+        const [errorName, errorDetail] = ostreeState.branchLoadError.replace("error: ", "").split(';');
+        statusItems.push({
+            key: "status-error",
+            icon: <ExclamationTriangleIcon className="pf-v5-u-warning-color-100" />,
+            message: (
+                <>
+                    <Text>
+                        {errorName}
+                    </Text>
+                    <Text component="small" className="pf-v5-u-color-200">
+                        {errorDetail}
+                    </Text>
+                </>
+            ),
+        });
+    }
+
+    return (
+        <Card className="ct-card-info" id="ostree-status">
+            <CardHeader>
+                <CardTitle component="h2">{_("Status")}</CardTitle>
+            </CardHeader>
+            <CardBody>
+                <List isPlain>
+                    {statusItems.map(item => (
+                        <ListItem key={item.key}>
+                            <Flex spacer={{ default: 'spaceItemsSm' }} flexWrap={{ default: 'nowrap' }}>
+                                <FlexItem>{item.icon}</FlexItem>
+                                <FlexItem>{item.message}</FlexItem>
+                            </Flex>
+                        </ListItem>
+                    ))}
+                </List>
+            </CardBody>
+        </Card>
+    );
+};
+
+OStreeStatus.propTypes = {
+    ostreeState: PropTypes.object.isRequired,
+    versions: PropTypes.array.isRequired,
+};
+
+const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRemoteOrigin }) => {
+    const Dialogs = useDialogs();
+    const [isKebabOpen, setKebabOpen] = useState(false);
+
+    const actions = [
+        <DropdownItem key="rebase"
+            isDisabled={!ostreeState.branches && !ostreeState.branchLoadError}
+            onClick={() => Dialogs.show(
+                <RebaseRepositoryModal origin={ostreeState.origin}
+                    availableRemotes={ostreeState.remotes}
+                    currentOriginBranches={ostreeState.branches}
+                    currentBranchLoadError={ostreeState.branchLoadError}
+                    onChangeBranch={onChangeBranch}
+                    onChangeRemoteOrigin={onChangeRemoteOrigin}
+                />
+            )}
+        >
+            {_("Rebase")}
+        </DropdownItem>,
+        <DropdownSeparator key="separator-1" />,
+        <DropdownItem key="add-repository"
+            onClick={() => Dialogs.show(
+                <AddRepositoryModal refreshRemotes={refreshRemotes} />
+            )}
+        >
+            {_("Add repository")}
+        </DropdownItem>,
+        <DropdownItem key="edit-repository"
+            onClick={() => Dialogs.show(
+                <EditRepositoryModal remote={ostreeState.origin.remote}
+                    availableRemotes={ostreeState.remotes}
+                />
+            )}
+        >
+            {_("Edit repository")}
+        </DropdownItem>,
+        <DropdownItem key="remove-repository"
+            onClick={() => Dialogs.show(
+                <RemoveRepositoryModal origin={ostreeState.origin}
+                    availableRemotes={ostreeState.remotes}
+                    refreshRemotes={refreshRemotes}
+                />
+            )}
+        >
+            {_("Remove repository")}
+        </DropdownItem>,
+    ];
+
+    const ostreeSourceActions = (
+        <Dropdown toggle={<KebabToggle onToggle={(_, isOpen) => setKebabOpen(isOpen)} />}
+            isPlain
+            isOpen={isKebabOpen}
+            position="right"
+            id="ostree-source-actions"
+            dropdownItems={actions}
+        />
+    );
+
+    return (
+        <Card className="ct-card-info" id="ostree-source">
+            <CardHeader actions={{ actions: ostreeSourceActions }}>
+                <CardTitle component="h2">{_("OStree source")}</CardTitle>
+            </CardHeader>
+            <CardBody>
+                <DescriptionList isHorizontal>
+                    <DescriptionListGroup id="current-repository">
+                        <DescriptionListTerm>{_("Repository")}</DescriptionListTerm>
+                        <DescriptionListDescription>{ostreeState.origin.remote}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                    <DescriptionListGroup id="current-branch">
+                        <DescriptionListTerm>{_("Branch")}</DescriptionListTerm>
+                        <DescriptionListDescription>{ostreeState.origin.branch}</DescriptionListDescription>
+                    </DescriptionListGroup>
+                </DescriptionList>
+            </CardBody>
+        </Card>
+    );
+};
+
+OStreeSource.propTypes = {
+    ostreeState: PropTypes.object.isRequired,
+    refreshRemotes: PropTypes.func.isRequired,
+    onChangeBranch: PropTypes.func.isRequired,
+    onChangeRemoteOrigin: PropTypes.func.isRequired,
+};
+
 /**
  * Main application
  */
 class Application extends React.Component {
+    static contextType = DialogsContext;
+
     constructor(props) {
         super(props);
         this.state = {
@@ -499,7 +738,7 @@ class Application extends React.Component {
             origin: { remote: null, branch: null },
             curtain: { state: 'silent', failure: false, message: null, final: false },
             progressMsg: undefined,
-            isChangeRemoteOriginModalOpen: false,
+            isKebabOpen: false,
         };
 
         this.onChangeBranch = this.onChangeBranch.bind(this);
@@ -594,7 +833,10 @@ class Application extends React.Component {
     }
 
     checkForUpgrades() {
-        this.setState({ progressMsg: _("Checking for updates") });
+        this.setState({
+            progressMsg: _("Checking for updates"),
+            error: "",
+        });
 
         return client.check_for_updates(this.state.os, this.state.origin.remote, this.state.origin.branch)
                 .catch(ex => this.setState({ error: ex }))
@@ -646,6 +888,7 @@ class Application extends React.Component {
     }
 
     render() {
+        const Dialogs = this.context;
         /* curtain: empty state pattern (connecting, errors) */
         const c = this.state.curtain;
         if (c.state)
@@ -662,41 +905,54 @@ class Application extends React.Component {
                 packages.addEventListener("changed", () => this.setState({})); // re-render
         });
 
-        const actionButton = (
-            <Button variant="secondary"
-                    id="check-for-updates-btn"
-                    isLoading={!!client.local_running || !!this.state.progressMsg}
-                    isDisabled={!!client.local_running || !!this.state.progressMsg}
-                    onClick={this.checkForUpgrades}>
-                {_("Check for updates")}
-            </Button>
+        const kebabActions = [
+            <DropdownItem key="clean-up"
+                          onClick={() => Dialogs.show(<CleanUpModal os={this.state.os} />)}>
+                {_("Clean up")}
+            </DropdownItem>,
+            <DropdownSeparator key="deployment-separator-1" />,
+            <DropdownItem key="reset"
+                          className="pf-v5-u-danger-color-200"
+                          onClick={() => Dialogs.show(<ResetModal os={this.state.os} />)}>
+                {_("Reset")}
+            </DropdownItem>,
+        ];
+
+        const cardActions = (
+            <Flex>
+                <Button variant="secondary"
+                        id="check-for-updates-btn"
+                        isLoading={!!client.local_running || !!this.state.progressMsg}
+                        isDisabled={!!client.local_running || !!this.state.progressMsg}
+                        onClick={this.checkForUpgrades}>
+                    <SyncAltIcon />
+                </Button>
+                <Dropdown toggle={<KebabToggle onToggle={(_, isOpen) => this.setState({ isKebabOpen: isOpen })} />}
+                    isPlain
+                    isOpen={this.state.isKebabOpen}
+                    position="right"
+                    id="deployments-actions"
+                    dropdownItems={kebabActions}
+                />
+            </Flex>
         );
 
         return (
             <Page>
-                <ChangeRemoteModal isModalOpen={this.state.isChangeRemoteOriginModalOpen}
-                                   setIsModalOpen={isChangeRemoteOriginModalOpen => this.setState({ isChangeRemoteOriginModalOpen })}
-                                   currentRemote={this.state.origin.remote}
-                                   refreshRemotes={this.refreshRemotes}
-                                   onChangeRemoteOrigin={this.onChangeRemoteOrigin}
-                                   remotesList={this.state.remotes} />
-                <PageSection variant={PageSectionVariants.light}
-                             padding={{ default: 'noPadding' }}>
-                    <OriginSelector os={this.state.os} remotes={this.state.remotes}
-                                    branches={this.state.branches} branchLoadError={this.state.branchLoadError}
-                                    currentRemote={this.state.origin.remote} currentBranch={this.state.origin.branch}
-                                    setChangeRemoteModal={isChangeRemoteOriginModalOpen => this.setState({ isChangeRemoteOriginModalOpen })} onChangeBranch={this.onChangeBranch} />
-                </PageSection>
                 <PageSection>
-                    {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
-                    <Card id="deployments" isSelectable isClickable>
-                        <CardHeader actions={{ actions: actionButton, hasNoOffset: false }}>
-                            <CardTitle component="h2">{_("Deployments and updates")}</CardTitle>
-                        </CardHeader>
-                        <CardBody className="contains-list">
-                            <Deployments versions={versions} />
-                        </CardBody>
-                    </Card>
+                    <Gallery hasGutter className="ct-cards-grid">
+                        <OStreeStatus ostreeState={this.state} versions={versions} />
+                        <OStreeSource ostreeState={this.state} refreshRemotes={this.refreshRemotes} onChangeBranch={this.onChangeBranch} onChangeRemoteOrigin={this.onChangeRemoteOrigin} />
+                        <Card id="deployments" isSelectable isClickable>
+                            {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
+                            <CardHeader actions={{ actions: cardActions, hasNoOffset: false }}>
+                                <CardTitle component="h2">{_("Deployments and updates")}</CardTitle>
+                            </CardHeader>
+                            <CardBody className="contains-list">
+                                <Deployments versions={versions} />
+                            </CardBody>
+                        </Card>
+                    </Gallery>
                 </PageSection>
             </Page>
         );
@@ -704,5 +960,5 @@ class Application extends React.Component {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    createRoot(document.getElementById("app")).render(<Application />);
+    createRoot(document.getElementById("app")).render(<WithDialogs><Application /></WithDialogs>);
 });

@@ -53,11 +53,11 @@ def wait_deployment_prop(b, index, prop, value):
     deployment = f"#available-deployments > tbody:nth-child({index + 1})"
     if prop == "Actions":
         if value == "":
-            b.wait_text(f"{deployment} tr:nth-child(1) td:last-child", value)
+            b.wait_text(f"{deployment} tr:nth-child(1) td:nth-child(6)", value)
         else:
-            b.wait_text(f"{deployment} tr:nth-child(1) td:last-child button", value)
+            b.wait_text(f"{deployment} tr:nth-child(1) td:nth-child(6) button", value)
     else:
-        b.wait_text(f"{deployment} td[data-label={prop}]", value)
+        b.wait_in_text(f"{deployment} td[data-label={prop}]", value)
 
 
 def wait_packages(b, index, packages):
@@ -83,8 +83,17 @@ def check_package_count(b, assertIn, index):
 
 
 def do_deployment_action(b, index, action):
-    wait_deployment_prop(b, index, "Actions", action)
-    b.click(f"#available-deployments > tbody:nth-child({index + 1}) tr:nth-child(1) td:last-child button")
+    deployment_row = f"#available-deployments > tbody:nth-child({index + 1})"
+    if action in ["Pin", "Unpin", "Delete"]:
+        b.click(f"{deployment_row} tr:nth-child(1) td:last-child button.pf-v5-c-dropdown__toggle")
+        b.click(f"{deployment_row} #deployment-actions")
+        b.click(f"{deployment_row} #deployment-actions ul li:contains({action})")
+    else:
+        wait_deployment_prop(b, index, "Actions", action)
+        b.click(f"{deployment_row} tr:nth-child(1) td:nth-child(6) button")
+        b.wait_visible("#confirm-modal")
+        b.click("#confirm-modal button.pf-m-warning")
+        b.wait_not_present("#confirm-modal")
 
 
 def ensure_remote_http_port(m, remote="local"):
@@ -161,6 +170,13 @@ def get_name(self):
     return "fedora-coreos"
 
 
+def do_card_action(browser, kebab, action):
+    browser.wait_visible(f"{kebab} .pf-v5-c-dropdown__toggle")
+    browser.click(f"{kebab} .pf-v5-c-dropdown__toggle")
+    browser.wait_visible(f"{kebab} .pf-v5-c-dropdown__menu")
+    browser.click(f"{kebab} .pf-v5-c-dropdown__menu li:contains({action}) a")
+
+
 class OstreeRestartCase(testlib.MachineCase):
 
     def testOstree(self):
@@ -180,18 +196,19 @@ class OstreeRestartCase(testlib.MachineCase):
         b.enter_page("/updates")
 
         # Check current and rollback target
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_prop(b, 1, "Actions", "")
 
         wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
         wait_deployment_details_prop(b, 1, "Tree", "#osversion", "cockpit-base.1")
 
-        b.assert_pixels("#repo-remote-toolbar", "remote-toolbar")
+        b.assert_pixels("#ostree-status", "status")
+        b.assert_pixels("#ostree-source", "source")
         b.assert_pixels("#available-deployments > tbody:nth-child(2)", "deployment",
                         ignore=[".timestamp",
                                 # The columns change size dependent on the second deployment's name.
-                                "td[data-label=Name]", "td[data-label=State]"])
+                                "td[data-label=Name]", "td[data-label=State]", "td[data-label='Time']"])
 
         wait_packages(b, 1, {"rpms-col1": [chrony], "rpms-col2": [tzdata]})
         wait_packages(b, 1, {"rpms-col2": [remove_pkg]})
@@ -202,15 +219,13 @@ class OstreeRestartCase(testlib.MachineCase):
         # Require signatures
         m.execute("sed -i /gpg-verify/d /etc/ostree/remotes.d/local.conf")
 
-        b.wait_not_in_text("#available-deployments > tbody:nth-child(3) td[data-label=Name]", "cockpit")
-        wait_deployment_prop(b, 2, "State", "Available")
-        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
+        b.wait_not_in_text("#available-deployments > tbody:nth-child(3) td[data-label=Version]", "cockpit")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
         wait_deployment_details_prop(b, 2, "Tree", "#osname", get_name(self))
 
         # Check for new commit, get error
-        b.wait_in_text("#check-for-updates-btn", "Check for updates")
         b.click("#check-for-updates-btn")
-        b.wait_visible('#app .pf-v5-c-alert.pf-m-warning')
+        b.wait_visible('#app .pf-v5-c-alert.pf-m-danger')
         b.wait_visible("#check-for-updates-btn:not(disabled)")
 
         # Serve repo
@@ -234,9 +249,10 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Check again have update data
         b.click("#check-for-updates-btn")
-        wait_deployment_prop(b, 1, "State", "Available")
-        wait_deployment_prop(b, 1, "Actions", "Update and reboot")
-        wait_deployment_prop(b, 2, "State", "Running")
+        b.wait_in_text("#ostree-status li:first-child > div > div:last-child", "Update available")
+        wait_deployment_prop(b, 1, "Status", "New")
+        wait_deployment_prop(b, 1, "Actions", "Update")
+        wait_deployment_prop(b, 2, "Status", "Current")
 
         # Check update data
         wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
@@ -260,14 +276,15 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Force an error
         stop_trivial_httpd(m, server_pid)
-        wait_deployment_prop(b, 1, "State", "Available")
-        do_deployment_action(b, 1, "Update and reboot")
-        wait_deployment_prop(b, 1, "State", "Failedview more...")
+        wait_deployment_prop(b, 1, "Status", "New")
+        do_deployment_action(b, 1, "Update")
+        with b.wait_timeout(60):
+            wait_deployment_prop(b, 1, "Status", "Failedview more...New")
         server_pid = start_trivial_httpd(m)
 
         # Apply update
-        do_deployment_action(b, 1, "Update and reboot")
-        wait_deployment_prop(b, 1, "State", "Updating")
+        do_deployment_action(b, 1, "Update")
+        wait_deployment_prop(b, 1, "Status", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -280,9 +297,10 @@ class OstreeRestartCase(testlib.MachineCase):
         b.reload()
         b.login_and_go("/updates")
 
+        b.wait_in_text("#ostree-status li:first-child > div > div:last-child", "System is up to date")
         # After reboot, check commit
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.2")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_prop(b, 1, "Actions", "")
         wait_packages(b, 1, {"rpms-col1": [INSTALL_RPMS[0], INSTALL_RPMS[1]],
                              "rpms-col2": [INSTALL_RPMS[2]],
@@ -299,9 +317,9 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_in_text(sel, "When")
 
         # Check rollback target
-        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 2, "State", "Available")
-        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
+        wait_deployment_prop(b, 2, "Status", "")
         wait_deployment_details_prop(b, 2, "Tree", "#osname", get_name(self))
 
         wait_packages(b, 2, {"down": [tzdata],
@@ -312,9 +330,9 @@ class OstreeRestartCase(testlib.MachineCase):
         check_package_count(b, self.assertIn, 2)
 
         # Rollback
-        do_deployment_action(b, 2, "Roll back and reboot")
+        do_deployment_action(b, 2, "Roll back")
         b.wait_visible("button:contains('Roll back')")
-        wait_deployment_prop(b, 2, "State", "Updating")
+        wait_deployment_prop(b, 2, "Status", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -326,12 +344,12 @@ class OstreeRestartCase(testlib.MachineCase):
         b.reload()
         b.login_and_go("/updates")
 
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
 
-        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.2")
-        wait_deployment_prop(b, 2, "State", "Available")
-        wait_deployment_prop(b, 2, "Actions", "Roll back and reboot")
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.2")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
+        wait_deployment_prop(b, 2, "Status", "")
 
         # Only two deployments
         b.wait_not_present("#available-deployments > tbody:nth-child(4)")
@@ -355,30 +373,39 @@ class OstreeRestartCase(testlib.MachineCase):
         b.login_and_go("/updates")
         b.enter_page("/updates")
 
-        b.wait_text("#change-repo", "local")
-        b.wait_in_text("#change-branch", branch)
-        # open the branches menu to see the entries
-        b.click("#change-branch")
-        b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
-        b.wait_in_text("#change-branch + ul li:last-of-type", "znew-branch")
-        b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
-        b.click("#change-branch + ul li:last-of-type button")
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Running")
+        b.wait_in_text("#current-repository", "local")
+        b.wait_in_text("#current-branch", branch)
+
+        # open rebase modal
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.wait_in_text("#change-repository .pf-v5-c-select__toggle-text", "local")
+        b.wait_in_text("#change-branch .pf-v5-c-select__toggle-text", branch)
+
+        # rebase to new branch
+        b.click("#change-branch button.pf-v5-c-select__toggle")
+        b.wait_not_in_text("#change-branch li:first-child button", "error")
+        b.wait_in_text("#change-branch li:last-of-type button", "znew-branch")
+        b.call_js_func("ph_count_check", "#change-branch li",  2)
+        b.click("#change-branch li:last-of-type button")
+        b.click("#rebase-repository-modal button.pf-m-primary")
+        b.wait_in_text("#current-repository", "local")
+        b.wait_in_text("#current-branch", "znew-branch")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
-        b.wait_in_text("#check-for-updates-btn", "Check for updates")
         b.click("#check-for-updates-btn")
 
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} branch-version")
-        wait_deployment_prop(b, 1, "State", "Available")
-        wait_deployment_prop(b, 1, "Actions", "Rebase and reboot")
+        wait_deployment_prop(b, 1, "Version", "branch-version")
+        wait_deployment_prop(b, 1, "Status", "New")
+        wait_deployment_prop(b, 1, "Actions", "Rebase")
         wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "local:znew-branch")
 
         # Apply update
-        do_deployment_action(b, 1, "Rebase and reboot")
-        wait_deployment_prop(b, 1, "State", "Updating")
+        do_deployment_action(b, 1, "Rebase")
+        wait_deployment_prop(b, 1, "Status", "Updating")
 
         b.switch_to_top()
         with b.wait_timeout(120):
@@ -391,8 +418,8 @@ class OstreeRestartCase(testlib.MachineCase):
         b.login_and_go("/updates")
 
         # After reboot, check commit
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} branch-version")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "branch-version")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "local:znew-branch")
 
         self.allow_restart_journal_messages()
@@ -419,8 +446,8 @@ class OstreeRestartCase(testlib.MachineCase):
         self.login_and_go("/updates")
 
         # our image defaults to local OSTree repo
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
 
@@ -429,16 +456,16 @@ class OstreeRestartCase(testlib.MachineCase):
         m.execute("rpm-ostree rebase ostree-unverified-registry:localhost:5000/ostree-oci:cockpit1")
 
         # UI picks this up
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Available")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "")
         # OCI deployments have no origin
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "")
         wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
                                      "This deployment contains the same packages as your currently booted system")
 
         # current deployment is now second
-        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 2, "State", "Running")
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Status", "Current")
         wait_deployment_details_prop(b, 2, "Tree", "#osorigin", f"local:{branch}")
         wait_packages(b, 2, {"rpms-col1": [bash_ver]})
 
@@ -451,16 +478,120 @@ class OstreeRestartCase(testlib.MachineCase):
         self.login_and_go("/updates")
 
         # now the status is reversed: OCI deployment is running and has the package list
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 1, "State", "Running")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "")
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
         # ... and second deployment is the ostree repo one
-        wait_deployment_prop(b, 2, "Name", f"{get_name(self)} cockpit-base.1")
-        wait_deployment_prop(b, 2, "State", "Available")
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Status", "")
         wait_deployment_details_prop(b, 2, "Tree", "#osorigin", f"local:{branch}")
         wait_deployment_details_prop(b, 2, "Packages", ".same-packages",
                                      "This deployment contains the same packages as your currently booted system")
+
+    def testDeploymentManagement(self):
+        m = self.machine
+        b = self.browser
+
+        remove_pkg = m.execute("rpm -qa | grep socat").strip()
+
+        m.start_cockpit()
+        b.login_and_go("/updates")
+        b.enter_page("/updates")
+
+        # Check current and rollback deployment
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Status", "Current")
+        wait_deployment_prop(b, 1, "Actions", "")
+        wait_deployment_prop(b, 2, "Status", "")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
+
+        # Overlay a package
+        OVERLAY_RPM = "empty-1-0.noarch"
+        m.upload([f"files/{OVERLAY_RPM}.rpm"], "/home/admin/")
+        m.execute(f"rpm-ostree install -C /home/admin/{OVERLAY_RPM}.rpm")
+
+        # Deployment with overlay package
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Actions", "")
+        wait_deployment_prop(b, 1, "Status", "")
+        # Current deployment
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Actions", "")
+        wait_deployment_prop(b, 2, "Status", "Current")
+
+        # Reboot to apply overlay package
+        m.reboot()
+        m.start_cockpit()
+        b.reload()
+        b.login_and_go("/updates")
+
+        # Deployment with overlay package
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Actions", "")
+        wait_deployment_prop(b, 1, "Status", "Current")
+        # Previous deployment
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
+        wait_deployment_prop(b, 2, "Status", "")
+
+        wait_packages(b, 1, {"rpms-col1": [OVERLAY_RPM]})
+        do_card_action(b, "#deployments-actions", "Reset")
+        b.wait_visible("#reset-modal")
+        b.click("#remove-overlays-checkbox")
+        b.click("#reset-modal button.pf-m-warning")
+        b.wait_not_present("#reset-modal")
+
+        wait_deployment_details_prop(b, 1, "Packages", ".removes", "Removalsempty-1-0.noarch")
+
+        m.reboot()
+        m.start_cockpit()
+        b.reload()
+        b.login_and_go("/updates")
+        wait_not_packages(b, 1, [OVERLAY_RPM])
+        b.click("#available-deployments > tbody:nth-child(2) .pf-v5-c-table__toggle button")
+
+        # Generate new commit
+        generate_new_commit(m, remove_pkg)
+
+        b.click("#check-for-updates-btn")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
+        wait_deployment_prop(b, 1, "Actions", "Update")
+        wait_deployment_prop(b, 1, "Status", "New")
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  3)
+
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
+        wait_deployment_prop(b, 1, "Status", "New")
+        wait_deployment_prop(b, 1, "Actions", "Update")
+
+        # Pin rollback deployment
+        do_deployment_action(b, 3, "Pin")
+        wait_deployment_prop(b, 3, "Status", "Pinned")
+        # Kebab menu is not available for update
+        b.wait_not_present("""#available-deployments > tbody:nth-child(2) tr:nth-child(1)
+                           td:last-child button.pf-v5-c-dropdown__toggle""")
+
+        # Use clean up to remove pending and rollback deployments
+        do_card_action(b, "#deployments-actions", "Clean up")
+        b.wait_visible("#cleanup-deployment-modal")
+        b.click("#pending-deployment-checkbox")
+        b.click("#rollback-deployment-checkbox")
+        b.click("#cleanup-deployment-modal button.pf-m-primary")
+        b.wait_not_present("#cleanup-deployment-modal")
+
+        # Rollback deployment wasn't deleted because it's pinned
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  2)
+
+        # Manually delete base.1 deployment
+        do_deployment_action(b, 2, "Unpin")
+        b.wait_not_present("#available-deployments .pf-v5-c-dropdown__menu")
+        wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 2, "Status", "")
+        wait_deployment_prop(b, 2, "Actions", "Roll back")
+        do_deployment_action(b, 2, "Delete")
+
+        # only one available deployment
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  1)
 
 
 class OstreeCase(testlib.MachineCase):
@@ -475,50 +606,55 @@ class OstreeCase(testlib.MachineCase):
         b.login_and_go("/updates")
         b.enter_page("/updates")
 
-        b.wait_not_present('#app .pf-v5-c-alert.pf-m-warning')
-        b.wait_in_text("#change-branch", branch)
+        b.wait_not_present('#ostree-status .pf-v5-u-warning-color-100')
+
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.wait_in_text(".pf-v5-c-modal-box h1", "Rebase repository and branch")
+        b.wait_in_text("#change-repository .pf-v5-c-select__toggle-text", "local")
         # open the branches menu to see the entries
-        b.click("#change-branch")
-        b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
-        b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
-        b.wait_in_text("#change-branch + ul li", branch)
-        b.click("#change-branch")
-        b.wait_text("#change-repo", "local")
-        b.click("#change-repo")
+        b.wait_in_text("#change-branch div.pf-v5-c-form__group-control p", branch)
+        b.click("#rebase-repository-modal button.pf-m-link")
 
-        b.wait_in_text(".pf-v5-c-modal-box h1", "Change repository")
-        b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-v5-c-modal-box li:last-of-type", "Add new repository")
-
-        b.click(".pf-v5-c-modal-box li:last-of-type button")
-        b.click(".pf-v5-c-modal-box #new-gpg-verify")
-        b.set_input_text(".pf-v5-c-modal-box #new-remote-url", "http://localhost:12344")
-        b.set_input_text(".pf-v5-c-modal-box #new-remote-name", "zremote test")
-        b.click(".pf-v5-c-modal-box #add-remote-btn")
-        b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list__item-link .pf-m-danger", "Invalid remote name")
-        b.set_input_text(".pf-v5-c-modal-box #new-remote-name", "zremote-test1")
+        # Add new repository
+        do_card_action(b, "#ostree-source-actions", "Add repository")
+        b.wait_visible("#add-repository-modal")
+        b.set_input_text("#add-repository-modal #new-remote-name", "zremote test")
+        b.set_input_text("#add-repository-modal #new-remote-url", "http://localhost:12344")
+        b.click("#add-repository-modal #new-gpg-verify")
+        b.click("#add-repository-modal button.pf-m-primary")
+        b.wait_in_text("#add-repository-modal .pf-v5-c-alert.pf-m-danger", "Invalid remote name")
+        b.set_input_text("#add-repository-modal #new-remote-name", "zremote-test1")
 
         b.assert_pixels(".pf-v5-c-modal-box", "dialog-add-repository")
-        b.click(".pf-v5-c-modal-box #add-remote-btn")
+        b.click("#add-repository-modal button.pf-m-primary")
+        b.wait_not_present("#add-repository-modal #new-remote-name")
+        b.wait_not_present("#add-repository-modal .pf-m-primary")
 
-        b.wait_not_present(".pf-v5-c-modal-box #new-remote-name")
-        b.wait_not_present(".pf-v5-c-modal-box #add-remote-btn")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button:disabled")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
-        b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-v5-c-modal-box li:last-of-type button", "Add new repository")
-        b.click(".pf-v5-c-modal-box #zremote-test1 a")
+        # Try to add repository with same name
+        do_card_action(b, "#ostree-source-actions", "Add repository")
+        b.wait_visible("#add-repository-modal")
+        b.set_input_text("#add-repository-modal #new-remote-name", "zremote-test1")
+        b.set_input_text("#add-repository-modal #new-remote-url", "http://localhost:12344")
+        b.click("#add-repository-modal button.pf-m-primary")
+        b.wait_in_text("#add-repository-modal .pf-v5-c-alert.pf-m-danger", 'already exists')
+        b.click("#add-repository-modal button.pf-m-link")
+        b.wait_not_present("#add-repository-modal #new-remote-name")
+        b.wait_not_present("#add-repository-modal .pf-m-primary")
 
-        b.click(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-v5-c-modal-box")
+        # rebase to newly added remote
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.click("#change-repository button.pf-v5-c-select__toggle")
+        b.wait_in_text("#change-repository li#zremote-test1", "zremote-test1")
+        b.click("#change-repository li#zremote-test1 button")
+        b.wait_in_text("#change-branch .pf-v5-u-danger-color-200 > div:last-child", "While fetching")
+        b.click("#rebase-repository-modal button.pf-m-primary")
+        b.wait_not_present("#rebase-repository-modal")
 
-        b.wait_text("#change-repo", "zremote-test1")
-        # Branch is still default
-        b.wait_in_text("#change-branch", branch)
-        # But can't list
-        b.click("#change-branch")
-        # Actual error message changes between versions
-        b.wait_in_text("#change-branch + ul li button", "error: While fetching")
+        b.wait_in_text("#current-repository", "zremote-test1")
+        b.wait_in_text("#current-branch", branch)
+        b.wait_in_text("#ostree-status li:last-child > div > div:last-child", "While fetching")
 
         # Config created
         self.assertEqual(m.execute("cat /etc/ostree/remotes.d/zremote-test1.conf").strip(),
@@ -529,8 +665,8 @@ class OstreeCase(testlib.MachineCase):
         # Refresh goes back to default
         b.reload()
         b.enter_page("/updates")
-        b.wait_text("#change-repo", "local")
-        b.wait_in_text("#change-branch", branch)
+        b.wait_in_text("#current-repository", "local")
+        b.wait_in_text("#current-branch", branch)
 
         # Create a new remote with commits, just use the rpm dir
         zrepo = "/var/zrepo"
@@ -552,64 +688,69 @@ class OstreeCase(testlib.MachineCase):
                    "--add-metadata-string", "version=bad-version"], timeout=600)
         m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
-        # Edit
-        b.click("#change-repo")
-        b.click(".pf-v5-c-modal-box li:contains('zremote-test1') button.pf-m-secondary.edit-remote")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button:disabled")
-        b.wait_visible(".pf-v5-c-modal-box #edit-remote-url[value='http://localhost:12344']")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-form #gpg-verify:checked")
-        b.wait_not_present(".pf-v5-c-modal-box #gpg-data")
-        b.click(".pf-v5-c-modal-box .pf-v5-c-form button.pf-m-secondary")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-form button.pf-m-secondary")
-        b.set_input_text(".pf-v5-c-modal-box #gpg-data", "bad")
-        b.click(".pf-v5-c-modal-box .apply-btn")
-        b.wait_visible(".pf-v5-c-modal-box div.pf-m-danger")
+        # Edit zremote-test1 repository
+        do_card_action(b, "#ostree-source-actions", "Edit repository")
+        b.wait_visible("#edit-repository-modal")
+        b.click("#edit-repository-modal #select-repository button.pf-v5-c-select__toggle")
+        b.click("#edit-repository-modal .pf-m-expanded li:last-of-type button")
+        b.wait_visible("#edit-repository-modal #edit-remote-url[value='http://localhost:12344']")
+        b.wait_visible("#edit-repository-modal #gpg-verify:checked")
+        b.wait_not_present("redit-repository-modal #gpg-data")
+        b.click("#edit-repository-modal button.pf-m-secondary")
+        b.wait_not_present("#edit-repository-modal button.pf-m-secondary")
+        # set invalid key
+        b.set_input_text("#edit-repository-modal #gpg-data", "bad")
+        b.click("#edit-repository-modal button.pf-m-primary")
+        b.wait_visible("#edit-repository-modal div.pf-m-danger")
 
         with open(os.path.join(testlib.TEST_DIR, "files", "publickey.asc"), 'r') as fp:
             gpg_data = fp.read()
 
-        b.set_val(".pf-v5-c-modal-box #gpg-data", gpg_data)
-        b.wait_val(".pf-v5-c-modal-box #gpg-data", gpg_data)
-        b.focus(".pf-v5-c-modal-box #gpg-data")
+        # set valid key
+        b.set_val("#edit-repository-modal #gpg-data", gpg_data)
+        b.wait_val("#edit-repository-modal #gpg-data", gpg_data)
+        b.focus("#edit-repository-modal #gpg-data")
         b.key_press("\b")  # Backspace
-        b.click(".pf-v5-c-modal-box .apply-btn")
-        b.wait_not_present(".pf-v5-c-modal-box #apply-btn")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-form")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary:not(disabled)")
+        b.click("#edit-repository-modal button.pf-m-primary")
+        b.wait_not_present("#edit-repository-modal")
         m.execute("ls /sysroot/ostree/repo/zremote-test1.trustedkeys.gpg")
 
-        b.click(".pf-v5-c-modal-box li:contains('zremote-test1') .edit-remote")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary:disabled")
-        b.wait_visible(".pf-v5-c-modal-box .apply-btn")
-        b.wait_visible(".pf-v5-c-modal-box #edit-remote-url[value='http://localhost:12344']")
-        b.wait_visible(".pf-v5-c-modal-box #gpg-verify:checked")
-        b.click(".pf-v5-c-modal-box #gpg-verify")
-        b.click(".pf-v5-c-modal-box .apply-btn")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-form")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button:disabled")
-        b.click(".pf-v5-c-modal-box li:contains('zremote-test1')")
-        b.click(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-v5-c-modal-box")
+        # disable gpg verification
+        do_card_action(b, "#ostree-source-actions", "Edit repository")
+        b.wait_visible("#edit-repository-modal")
+        b.click("#edit-repository-modal #select-repository button.pf-v5-c-select__toggle")
+        b.click("#edit-repository-modal .pf-m-expanded li:last-of-type button")
+        b.wait_visible("#edit-repository-modal #edit-remote-url[value='http://localhost:12344']")
+        b.wait_visible("#edit-repository-modal #gpg-verify:checked")
+        b.click("#edit-repository-modal #gpg-verify")
+        b.click("#edit-repository-modal button.pf-m-primary")
+        b.wait_not_present("#edit-repository-modal")
 
-        b.wait_text("#change-repo", "zremote-test1")
-        b.wait_in_text("#change-branch", "zremote-branch1")
-        b.click("#change-branch")
-        b.wait_in_text("#change-branch + ul li:nth-child(1) button", "zremote-branch1")
-        b.wait_in_text("#change-branch + ul li:nth-child(2) button", "zremote-branch2")
-        b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
+        # rebase to zremote-branch1
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.click("#rebase-repository-modal #change-repository button.pf-v5-c-select__toggle")
+        b.click("#rebase-repository-modal .pf-m-expanded li:last-of-type button")
+        b.wait_in_text("#change-repository .pf-v5-c-select__toggle-text", "zremote-test1")
+        b.wait_in_text("#change-branch .pf-v5-c-select__toggle-text", "zremote-branch1")
+        b.click("#rebase-repository-modal #change-branch button.pf-v5-c-select__toggle")
+        b.wait_in_text("#change-branch li:nth-child(1) button", "zremote-branch1")
+        b.wait_in_text("#change-branch li:nth-child(2) button", "zremote-branch2")
+        b.call_js_func("ph_count_check", "#change-branch li",  2)
+        b.click("#rebase-repository-modal button.pf-m-primary")
 
         self.assertEqual(m.execute("cat /etc/ostree/remotes.d/zremote-test1.conf").strip(),
-                         '[remote "zremote-test1"]\nurl=http://localhost:12344\ngpg-verify = false')
+                         '[remote "zremote-test1"]\nurl = http://localhost:12344\ngpg-verify = false')
 
         # Check updates display
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
         b.click("#check-for-updates-btn")
 
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
-        wait_deployment_prop(b, 1, "State", "Available")
-        wait_deployment_prop(b, 1, "Actions", "Rebase and reboot")
+        wait_deployment_prop(b, 1, "Version", "zremote-branch1.1")
+        wait_deployment_prop(b, 1, "Status", "New")
+        wait_deployment_prop(b, 1, "Actions", "Rebase")
         wait_deployment_details_prop(b, 1, "Tree", "#osname", get_name(self))
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", "zremote-test1:zremote-branch1")
 
@@ -617,60 +758,85 @@ class OstreeCase(testlib.MachineCase):
                                      "This deployment contains the same packages as your currently booted system")
 
         # Switching back shows pulled
-        b.click("#change-branch")
-        b.wait_in_text("#change-branch + ul li:first-of-type button", "zremote-branch1")
-        b.click("#change-branch + ul li:first-of-type button")
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.click("#rebase-repository-modal #change-branch button.pf-v5-c-select__toggle")
+        b.wait_in_text("#rebase-repository-modal #change-branch li:first-child button", "zremote-branch1")
+        b.click("#rebase-repository-modal #change-branch li:first-child button")
+        wait_deployment_prop(b, 1, "Version", "zremote-branch1.1")
 
         # Refresh, back to local, pull in update
         b.reload()
         b.enter_page("/updates")
-        b.wait_in_text("#change-branch", branch)
+        b.wait_in_text("#current-branch", branch)
         b.click("#check-for-updates-btn")
-        wait_deployment_prop(b, 1, "Actions", "Update and reboot")
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} bad-version")
+        wait_deployment_prop(b, 1, "Version", "bad-version")
+        wait_deployment_prop(b, 1, "Actions", "Update")
 
         # Switching to branch shows pulled
-        b.wait_text("#change-repo", "local")
-        b.click("#change-repo")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-simple-list")
-        b.click(".pf-v5-c-modal-box #zremote-test1 a")
-        b.click(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-v5-c-modal-box")
+        b.wait_in_text("#current-repository", "local")
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.wait_in_text("#rebase-repository-modal #change-repository .pf-v5-c-select__toggle-text", "local")
+        b.click("#rebase-repository-modal #change-repository button.pf-v5-c-select__toggle")
+        b.click("#rebase-repository-modal .pf-m-expanded li:last-of-type button")
+        b.wait_in_text("#rebase-repository-modal #change-repository .pf-v5-c-select__toggle-text", "zremote-test1")
+        b.wait_in_text("#rebase-repository-modal #change-branch .pf-v5-c-select__toggle-text", "zremote-branch1")
+        b.click("#rebase-repository-modal button.pf-m-primary")
+        b.wait_not_present("#rebase-repository-modal")
 
-        b.wait_text("#change-repo", "zremote-test1")
-        b.wait_in_text("#change-branch", "zremote-branch1")
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
-        wait_deployment_prop(b, 1, "State", "Available")
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
+        b.wait_in_text("#current-repository", "zremote-test1")
+        b.wait_in_text("#current-branch", "zremote-branch1")
+        wait_deployment_prop(b, 1, "Version", "zremote-branch1.1")
+        wait_deployment_prop(b, 1, "Status", "New")
 
-        # delete
-        b.click("#change-repo")
-        b.wait_in_text(".pf-v5-c-modal-box #zremote-test1", "zremote-test1")
-        b.click(".pf-v5-c-modal-box #zremote-test1 .edit-remote")
-        b.wait_visible(".pf-v5-c-modal-box button.pf-m-danger")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary:disabled")
-        b.wait_visible(".pf-v5-c-modal-box #edit-remote-url[value='http://localhost:12344']")
-        b.wait_visible("#gpg-verify")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-form #gpg-verify:not(:checked)")
-        b.click(".pf-v5-c-modal-box button.pf-m-danger")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-form")
+        # Remove zremote-test1 repository
+        do_card_action(b, "#ostree-source-actions", "Remove repository")
+        b.wait_visible("#remove-repository-modal")
+        b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v5-c-form__group-control input", 4)
+        # Current repository checkbox is disabled
+        b.wait_visible("#remove-repository-modal #zremote-test1 + label.pf-m-disabled")
+        b.click("#remove-repository-modal button.pf-m-link")
 
-        b.wait_not_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list", "zremote-test1")
-        b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list", "local")
-        b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button:disabled")
-        b.click(".pf-v5-c-modal-box #local a")
-        b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current")
-        b.click(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
-        b.wait_not_present(".pf-v5-c-modal-box")
-        b.wait_text("#change-repo", "local")
-        b.wait_in_text("#change-branch", branch)
-        b.click("#change-branch")
-        b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
-        b.call_js_func("ph_count_check", "#change-branch + ul li",  1)
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} bad-version")
-        wait_deployment_prop(b, 1, "State", "Available")
+        # Change back to local repository
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.click("#rebase-repository-modal #change-repository button.pf-v5-c-select__toggle")
+        b.click("#rebase-repository-modal .pf-m-expanded li button:contains('local')")
+        b.wait_in_text("#rebase-repository-modal #change-repository .pf-v5-c-select__toggle-text", "local")
+        b.wait_in_text("#rebase-repository-modal #change-branch", branch)
+        b.click("#rebase-repository-modal button.pf-m-primary")
+        b.wait_not_present("#rebase-repository-modal")
+
+        # Remove zremote-test1 repository
+        do_card_action(b, "#ostree-source-actions", "Remove repository")
+        b.wait_visible("#remove-repository-modal")
+        b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v5-c-form__group-control input", 4)
+        b.wait_in_text("#remove-repository-modal #zremote-test1 + label", "zremote-test1")
+
+        # Remove button is disabled when nothing is selected
+        b.wait_visible("#remove-repository-modal button.pf-m-danger[aria-disabled='true']")
+
+        b.click("#remove-repository-modal #zremote-test1")
+        b.click("#remove-repository-modal button.pf-m-danger[aria-disabled='false']")
+        b.wait_not_present("#remove-repository-modal")
+
+        # Verify that the repository is gone
+        do_card_action(b, "#ostree-source-actions", "Rebase")
+        b.wait_visible("#rebase-repository-modal")
+        b.click("#rebase-repository-modal #change-repository button.pf-v5-c-select__toggle")
+        b.call_js_func("ph_count_check", "#rebase-repository-modal #change-repository li",  3)
+        b.wait_in_text("#rebase-repository-modal .pf-m-expanded button.pf-m-selected", "local")
+        b.click("#rebase-repository-modal #change-repository button.pf-v5-c-select__toggle")
+        b.wait_in_text("#change-branch div.pf-v5-c-form__group-control p", branch)
+
+        b.click("#rebase-repository-modal button.pf-m-primary")
+        b.wait_not_present("#rebase-repository-modal")
+
+        b.wait_in_text("#current-repository", "local")
+        b.wait_in_text("#current-branch", branch)
+        wait_deployment_prop(b, 1, "Version", "bad-version")
+        wait_deployment_prop(b, 1, "Status", "New")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
 
     @testlib.nondestructive
@@ -725,7 +891,7 @@ class OstreeCase(testlib.MachineCase):
         # updates page sees the new version
         b.click("#check-for-updates-btn")
 
-        wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.2")
+        wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
 
         # overview page notices the new version as well
         b.go("/system")
