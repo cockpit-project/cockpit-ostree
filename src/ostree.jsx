@@ -689,7 +689,7 @@ class Application extends React.Component {
                 </PageSection>
                 <PageSection>
                     {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
-                    <Card id="deployments">
+                    <Card id="deployments" isSelectable isClickable>
                         <CardHeader actions={{ actions: actionButton, hasNoOffset: false }}>
                             <CardTitle component="h2">{_("Deployments and updates")}</CardTitle>
                         </CardHeader>
