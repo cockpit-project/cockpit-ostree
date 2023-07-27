@@ -20,6 +20,11 @@ COCKPIT_REPO_STAMP=pkg/lib/cockpit-po-plugin.js
 # common arguments for tar, mostly to make the generated tarballs reproducible
 TAR_ARGS = --sort=name --mtime "@$(shell git show --no-patch --format='%at')" --mode=go=rX,u+rw,a-s --numeric-owner --owner=0 --group=0
 
+ifeq ($(TEST_COVERAGE),yes)
+RUN_TESTS_OPTIONS+=--coverage
+NODE_ENV=development
+endif
+
 all: $(DIST_TEST)
 
 # checkout common files from Cockpit repository required to build this project;
@@ -100,11 +105,11 @@ print-version:
 dist: $(TARFILE)
 	@ls -1 $(TARFILE)
 
-# when building a distribution tarball, call bundler with a 'production' environment
+# when building a distribution tarball, call bundler with a 'production' environment by default
 # we don't ship node_modules for license and compactness reasons; we ship a
 # pre-built dist/ (so it's not necessary) and ship package-lock.json (so that
 # node_modules/ can be reconstructed if necessary)
-$(TARFILE): export NODE_ENV=production
+$(TARFILE): export NODE_ENV ?= production
 $(TARFILE): $(DIST_TEST) $(SPEC)
 	tar --xz $(TAR_ARGS) -cf $(TARFILE) --transform 's,^,$(RPM_NAME)/,' \
 		--exclude $(SPEC).in --exclude node_modules --exclude test/reference \
