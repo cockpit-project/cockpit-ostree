@@ -372,9 +372,9 @@ class OstreeRestartCase(testlib.MachineCase):
         # open the branches menu to see the entries
         b.click("#change-branch")
         b.wait_not_in_text("#change-branch + ul li:first-child button", "error")
-        b.wait_in_text("#change-branch + ul li:last", "znew-branch")
+        b.wait_in_text("#change-branch + ul li:last-of-type", "znew-branch")
         b.call_js_func("ph_count_check", "#change-branch + ul li",  2)
-        b.click("#change-branch + ul li:last button")
+        b.click("#change-branch + ul li:last-of-type button")
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} cockpit-base.1")
         wait_deployment_prop(b, 1, "State", "Running")
         wait_deployment_details_prop(b, 1, "Tree", "#osorigin", f"local:{branch}")
@@ -501,9 +501,9 @@ class OstreeCase(testlib.MachineCase):
 
         b.wait_in_text(".pf-v5-c-modal-box h1", "Change repository")
         b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-v5-c-modal-box li:last", "Add new repository")
+        b.wait_in_text(".pf-v5-c-modal-box li:last-of-type", "Add new repository")
 
-        b.click(".pf-v5-c-modal-box li:last button")
+        b.click(".pf-v5-c-modal-box li:last-of-type button")
         b.click(".pf-v5-c-modal-box #new-gpg-verify")
         b.set_input_text(".pf-v5-c-modal-box #new-remote-url", "http://localhost:12344")
         b.set_input_text(".pf-v5-c-modal-box #new-remote-name", "zremote test")
@@ -519,7 +519,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button:disabled")
         b.wait_visible(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
         b.wait_in_text(".pf-v5-c-modal-box .pf-v5-c-simple-list .pf-m-current", "local")
-        b.wait_in_text(".pf-v5-c-modal-box li:last button", "Add new repository")
+        b.wait_in_text(".pf-v5-c-modal-box li:last-of-type button", "Add new repository")
         b.click(".pf-v5-c-modal-box #zremote-test1 a")
 
         b.click(".pf-v5-c-modal-box .pf-v5-c-modal-box__footer button.pf-m-primary")
@@ -631,8 +631,8 @@ class OstreeCase(testlib.MachineCase):
 
         # Switching back shows pulled
         b.click("#change-branch")
-        b.wait_in_text("#change-branch + ul li:first button", "zremote-branch1")
-        b.click("#change-branch + ul li:first button")
+        b.wait_in_text("#change-branch + ul li:first-of-type button", "zremote-branch1")
+        b.click("#change-branch + ul li:first-of-type button")
         wait_deployment_prop(b, 1, "Name", f"{get_name(self)} zremote-branch1.1")
 
         # Refresh, back to local, pull in update
