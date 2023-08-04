@@ -71,3 +71,9 @@
 .pf-v5-c-form.pf-m-horizontal {
     width: 100%;
 }
+
+// properly align the "change-repo" inline button with the other toolbar items
+// it defaults to --pf-v5-c-button--m-inline--PaddingTop, which is 0
+.pf-v5-c-button.pf-m-link.pf-m-inline {
+    padding-top: var(--pf-v5-c-button--PaddingTop);
+}
