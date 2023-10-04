@@ -4,12 +4,12 @@
         "browser": true,
         "es6": true
     },
-    "extends": ["eslint:recommended", "standard", "standard-jsx", "standard-react"],
+    "extends": ["eslint:recommended", "standard", "standard-jsx", "standard-react", "plugin:jsx-a11y/recommended"],
     "parserOptions": {
         "ecmaVersion": "2022",
         "sourceType": "module"
     },
-    "plugins": ["react", "react-hooks"],
+    "plugins": ["react", "react-hooks", "jsx-a11y"],
     "rules": {
         "indent": ["error", 4,
             {
@@ -44,7 +44,9 @@
         "react/jsx-handler-names": "off",
         "react/prop-types": "off",
         "space-before-function-paren": "off",
-        "standard/no-callback-literal": "off"
+        "standard/no-callback-literal": "off",
+
+	"jsx-a11y/anchor-is-valid": "off"
     },
     "globals": {
         "require": false,
