@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-06 02:52+0000\n"
+"POT-Creation-Date: 2023-10-03 02:52+0000\n"
 "PO-Revision-Date: 2018-05-03 04:56+0000\n"
 "Last-Translator: Robert Antoni Buj Gelonch <rbuj@fedoraproject.org>\n"
 "Language-Team: Catalan\n"
@@ -155,7 +155,7 @@ msgstr "Bona signatura"
 msgid "Invalid signature"
 msgstr "Signatura no vàlida"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Nom"
 
