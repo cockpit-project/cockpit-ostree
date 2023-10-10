@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-06 02:52+0000\n"
+"POT-Creation-Date: 2023-10-03 02:52+0000\n"
 "PO-Revision-Date: 2023-03-26 17:20+0000\n"
 "Last-Translator: grimst <grimaitres@gmail.com>\n"
 "Language-Team: French <https://translate.fedoraproject.org/projects/cockpit-"
@@ -134,7 +134,7 @@ msgstr "Bonne signature"
 msgid "Invalid signature"
 msgstr "Signature invalide"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Nom"
 

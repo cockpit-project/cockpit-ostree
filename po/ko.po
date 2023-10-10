@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-06 02:52+0000\n"
+"POT-Creation-Date: 2023-10-03 02:52+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -131,7 +131,7 @@ msgstr "양호한 서명"
 msgid "Invalid signature"
 msgstr "유효하지 않은 서명"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "이름"
 

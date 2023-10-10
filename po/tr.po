@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-09-06 02:52+0000\n"
+"POT-Creation-Date: 2023-10-03 02:52+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -131,7 +131,7 @@ msgstr "Geçerli imza"
 msgid "Invalid signature"
 msgstr "Geçersiz imza"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
 msgid "Name"
 msgstr "Ad"
 
