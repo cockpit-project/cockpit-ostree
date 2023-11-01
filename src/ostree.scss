@@ -48,7 +48,7 @@
 
 // PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
 .pf-v5-c-modal-box {
-    max-height: calc(100vh - var(--pf-v5-global--spacer--2xl));
+    max-block-size: calc(100vh - var(--pf-v5-global--spacer--2xl));
 }
 
 // Create space between the remote name and the edit action
@@ -64,16 +64,15 @@
 }
 
 .simple-list-form-actions > .pf-v5-c-button {
-    margin-left: 0.3em;
-    margin-right: 0.3em;
+    margin-inline: 0.3em;
 }
 
 .pf-v5-c-form.pf-m-horizontal {
-    width: 100%;
+    inline-size: 100%;
 }
 
 // properly align the "change-repo" inline button with the other toolbar items
 // it defaults to --pf-v5-c-button--m-inline--PaddingTop, which is 0
 .pf-v5-c-button.pf-m-link.pf-m-inline {
-    padding-top: var(--pf-v5-c-button--PaddingTop);
+    padding-block-start: var(--pf-v5-c-button--PaddingTop);
 }
