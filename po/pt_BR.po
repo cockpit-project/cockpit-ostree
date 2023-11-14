@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-01 02:52+0000\n"
+"POT-Creation-Date: 2023-11-08 02:52+0000\n"
 "PO-Revision-Date: 2018-05-28 04:25+0000\n"
 "Last-Translator: Luis Carlos Peters Motta <luiscpmotta@gmail.com>\n"
 "Language-Team: Portuguese (Brazil)\n"
@@ -158,7 +158,7 @@ msgstr "Assinatura Boa"
 msgid "Invalid signature"
 msgstr "Assinatura Inválida"
 
-#: src/ostree.jsx:358 src/changeRemoteModal.jsx:163
+#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
 msgid "Name"
 msgstr "Nome"
 
