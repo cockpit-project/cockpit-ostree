@@ -180,22 +180,6 @@ class RPMOSTreeDBusClient {
         this.on_sysroot_changed = this.on_sysroot_changed.bind(this);
     }
 
-    get running_method() {
-        if (this.local_running) {
-            return this.local_running;
-        } else if (this.sysroot && this.sysroot.ActiveTransaction) {
-            let active = this.sysroot.ActiveTransaction[0];
-            const proxy = this.os_proxies[this.sysroot.ActiveTransaction[2]];
-
-            if (proxy && active)
-                active = active + ":" + proxy.Name;
-
-            return active;
-        } else {
-            return null;
-        }
-    }
-
     trigger_changed() {
         if (!this.timer) {
             this.dispatchEvent("changed");
