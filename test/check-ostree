@@ -209,9 +209,6 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Require signatures
         m.execute("sed -i /gpg-verify/d /etc/ostree/remotes.d/local.conf")
-        # HACK: rpm-ostree doesn't reload remote settings properly
-        # https://github.com/projectatomic/rpm-ostree/issues/401
-        m.execute("systemctl restart rpm-ostreed")
 
         b.wait_not_in_text("#available-deployments > tbody:nth-child(3) td[data-label=Name]", "cockpit")
         wait_deployment_prop(b, 2, "State", "Available")
