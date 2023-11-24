@@ -155,12 +155,6 @@ def generate_new_commit(m, pkg_to_remove):
     m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
 
-def rhsmcertd_hack(m):
-    # HACK: https://github.com/candlepin/subscription-manager/issues/1404
-    m.execute("systemctl disable rhsmcertd || true")
-    m.execute("systemctl stop rhsmcertd || true")
-
-
 def get_name(self):
     if self.image == "rhel4edge":
         return "rhel-edge"
@@ -177,8 +171,6 @@ class OstreeRestartCase(testlib.MachineCase):
         ensure_remote_http_port(m)
 
         remove_pkg = m.execute("rpm -qa | grep socat").strip()
-
-        rhsmcertd_hack(m)
 
         chrony = m.execute("rpm -qa | grep chrony").strip()
         tzdata = m.execute("rpm -qa | grep tzdata").strip()
@@ -359,7 +351,6 @@ class OstreeRestartCase(testlib.MachineCase):
                    "--add-metadata-string", "version=branch-version"], timeout=600)
         m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
-        rhsmcertd_hack(m)
         m.start_cockpit()
         b.login_and_go("/updates")
         b.enter_page("/updates")
@@ -480,7 +471,6 @@ class OstreeCase(testlib.MachineCase):
         start_trivial_httpd(m)
         branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
-        rhsmcertd_hack(m)
         m.start_cockpit()
         b.login_and_go("/updates")
         b.enter_page("/updates")
@@ -688,8 +678,6 @@ class OstreeCase(testlib.MachineCase):
         m = self.machine
         b = self.browser
 
-        rhsmcertd_hack(m)
-
         self.login_and_go("/updates", superuser=False)
         b.wait_in_text(".pf-v5-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-v5-c-empty-state button"))
@@ -718,8 +706,6 @@ class OstreeCase(testlib.MachineCase):
     def testPageStatus(self):
         m = self.machine
         b = self.browser
-
-        rhsmcertd_hack(m)
 
         # preloading works, no updates available
         m.start_cockpit()
