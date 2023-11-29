@@ -696,7 +696,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
     return (
         <Card className="ct-card-info" id="ostree-source">
             <CardHeader actions={{ actions: ostreeSourceActions }}>
-                <CardTitle component="h2">{_("OStree source")}</CardTitle>
+                <CardTitle component="h2">{_("OSTree source")}</CardTitle>
             </CardHeader>
             <CardBody>
                 <DescriptionList isHorizontal>
