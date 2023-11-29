@@ -87,7 +87,7 @@ export const CleanUpModal = ({ os }) => {
     return (
         <Modal isOpen
             id="cleanup-deployment-modal"
-            title={_("Remove temporary files")}
+            title={_("Clear cache and deployments")}
             position="top"
             variant="small"
             onClose={Dialogs.close}
