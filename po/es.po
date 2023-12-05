@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-11-08 02:52+0000\n"
+"POT-Creation-Date: 2023-12-04 02:51+0000\n"
 "PO-Revision-Date: 2022-05-10 10:18+0000\n"
 "Last-Translator: Pablo Munoz Alabau <pamual@posteo.es>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -29,146 +29,167 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 4.12.1\n"
 
-#: src/client.js:458
+#: src/ostree.jsx:355
+#, fuzzy
+#| msgid "Rebase and Reboot"
+msgid "$0 and reboot"
+msgstr "Reorganizar y reiniciar"
+
+#: src/client.js:445
 msgid "$0 key ID"
 msgstr "$0 ID de clave"
 
-#: src/changeRemoteModal.jsx:192
-msgid "Add"
-msgstr "Añadir"
-
-#: src/changeRemoteModal.jsx:248
+#: src/repositoryModals.jsx:293
 #, fuzzy
 #| msgid "Add Another Key"
 msgid "Add another key"
 msgstr "Añadir otra clave"
 
-#: src/changeRemoteModal.jsx:117 src/changeRemoteModal.jsx:160
+#: src/repositoryModals.jsx:150
 #, fuzzy
 #| msgid "Add New Repository"
 msgid "Add new repository"
 msgstr "Añadir un repositorio nuevo"
 
-#: src/ostree.jsx:235
+#: src/ostree.jsx:663 src/repositoryModals.jsx:140
+#, fuzzy
+#| msgid "Add New Repository"
+msgid "Add repository"
+msgstr "Añadir un repositorio nuevo"
+
+#: src/ostree.jsx:187
 msgid "Additions"
 msgstr "Añadidos"
 
-#: src/changeRemoteModal.jsx:255
-msgid "Apply"
-msgstr "Aplicar"
-
-#: src/ostree.jsx:406
-msgid "Available"
-msgstr "Disponible"
-
-#: src/changeRemoteModal.jsx:250
+#: src/repositoryModals.jsx:295
 msgid "Begins with $0"
 msgstr "Comienza por $0"
 
-#: src/ostree.jsx:177
+#: src/ostree.jsx:311 src/ostree.jsx:708 src/repositoryModals.jsx:429
 msgid "Branch"
 msgstr "Rama"
 
-#: src/changeRemoteModal.jsx:60 src/changeRemoteModal.jsx:193
-#: src/changeRemoteModal.jsx:256
+#: src/ostree.jsx:358 src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
+#: src/repositoryModals.jsx:247 src/repositoryModals.jsx:361
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Cancelar"
 
-#: src/changeRemoteModal.jsx:57 src/changeRemoteModal.jsx:66
-#, fuzzy
-#| msgid "Change Repository"
-msgid "Change repository"
-msgstr "Cambiar el repositorio"
-
-#: src/ostree.jsx:671
-#, fuzzy
-#| msgid "Check for Updates"
-msgid "Check for updates"
-msgstr "Comprobar actualizaciones"
-
-#: src/ostree.jsx:568
+#: src/ostree.jsx:807
 msgid "Checking for package updates..."
 msgstr "Comprobando actualizaciones de paquetes..."
 
-#: src/ostree.jsx:597
+#: src/ostree.jsx:837
 msgid "Checking for updates"
 msgstr "Comprobando actualizaciones"
 
-#: src/ostree.jsx:396
+#: src/ostree.jsx:911 src/deploymentModals.jsx:80
+msgid "Clean up"
+msgstr ""
+
+#: src/deploymentModals.jsx:90
+#, fuzzy
+#| msgid "Available Updates"
+msgid "Clear cache and deployments"
+msgstr "Actualizaciones Disponibles"
+
+#: src/ostree.jsx:409
 msgid "Close"
 msgstr "Cerrar"
 
-#: src/ostree.jsx:134
+#: src/ostree.jsx:136
 msgid "Connecting to OSTree"
 msgstr "Conectando al OSTree"
 
-#: src/changeRemoteModal.jsx:254
+#: src/ostree.jsx:396
+#, fuzzy
+#| msgid "Current boot"
+msgid "Current"
+msgstr "Arranque actual"
+
+#: src/ostree.jsx:561
 msgid "Delete"
 msgstr "Eliminar"
 
-#: src/ostree.jsx:355 src/ostree.jsx:694
+#: src/ostree.jsx:326 src/ostree.jsx:949
 #, fuzzy
 #| msgid "Deployment Causes"
 msgid "Deployments and updates"
 msgstr "Causas de Despliegue"
 
-#: src/ostree.jsx:238
+#: src/ostree.jsx:190
 msgid "Downgrades"
 msgstr "Degradaciones"
 
-#: src/ostree.jsx:611
+#: src/ostree.jsx:672 src/repositoryModals.jsx:252
+#, fuzzy
+#| msgid "Git Repository"
+msgid "Edit repository"
+msgstr "Repositorio Git"
+
+#: src/ostree.jsx:853
 msgid "Error loading remotes: $0"
 msgstr "Error cargando remotos: $0"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:229
 #, fuzzy
 #| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "Firma expirada"
 
-#: src/ostree.jsx:399
+#: src/ostree.jsx:412
 msgid "Failed"
 msgstr "Falló"
 
-#: src/ostree.jsx:345
+#: src/ostree.jsx:293
 #, fuzzy
 #| msgid "Available Updates"
 msgid "Failed to rebase deployment"
 msgstr "Actualizaciones Disponibles"
 
-#: src/ostree.jsx:324
+#: src/ostree.jsx:272
 msgid "Failed to roll back deployment"
 msgstr ""
 
-#: src/ostree.jsx:334
+#: src/ostree.jsx:282
 #, fuzzy
 #| msgid "Available Updates"
 msgid "Failed to upgrade deployment"
 msgstr "Actualizaciones Disponibles"
 
-#: src/changeRemoteModal.jsx:251
+#: src/repositoryModals.jsx:298
 #, fuzzy
 #| msgid "GPG Public Key"
 msgid "GPG public key"
 msgstr "Llave pública GPG"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:229
 #, fuzzy
 #| msgid "Good Signature"
 msgid "Good signature"
 msgstr "Firma de calidad"
 
-#: src/ostree.jsx:277
+#: src/ostree.jsx:229
 #, fuzzy
 #| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "La firma no es válida"
 
-#: src/changeRemoteModal.jsx:163 src/ostree.jsx:358
+#: src/repositoryModals.jsx:407
+msgid "Loading branches"
+msgstr ""
+
+#: src/repositoryModals.jsx:158
 msgid "Name"
 msgstr "Nombre"
 
-#: src/ostree.jsx:521
+#: src/ostree.jsx:419
+#, fuzzy
+#| msgid "Network"
+msgid "New"
+msgstr "Red"
+
+#: src/ostree.jsx:760
 msgid "No OSTree deployments found"
 msgstr "No se encontraron despliegues de OSTree"
 
@@ -176,63 +197,89 @@ msgstr "No se encontraron despliegues de OSTree"
 msgid "No configuration data found"
 msgstr "No se encontró ningún dato de configuración"
 
-#: src/ostree.jsx:168
-#, fuzzy
-#| msgid "No configuration found"
-msgid "No configured remotes"
-msgstr "No se encontró ninguna configuración"
-
-#: src/ostree.jsx:138
+#: src/ostree.jsx:140
 #, fuzzy
 #| msgid "No Deployments"
 msgid "No deployments"
 msgstr "No hay despliegues"
 
-#: src/ostree.jsx:301
+#: src/ostree.jsx:253
 #, fuzzy
 #| msgid "No signature avaliable"
 msgid "No signature available"
 msgstr "No hay una firma disponible"
 
-#: src/ostree.jsx:546
+#: src/ostree.jsx:785
 msgid "Not authorized to update software on this system"
 msgstr "No está autorizado para actualizar software en este sistema"
 
-#: src/client.js:551 src/client.js:636
+#: src/client.js:538 src/client.js:623
 msgid "OS $0 not found"
 msgstr "OS $0 no encontrado"
 
-#: src/ostree.jsx:548
+#: src/ostree.jsx:787
 msgid "OSTree is not available on this system"
 msgstr "OSTree no está disponible para este sistema"
 
-#: src/ostree.jsx:254
+#: src/ostree.jsx:699
+#, fuzzy
+#| msgid "Source"
+msgid "OSTree source"
+msgstr "Fuente"
+
+#: src/ostree.jsx:206
 #, fuzzy
 #| msgid "Operating System"
 msgid "Operating system"
 msgstr "Sistema operativo"
 
-#: src/ostree.jsx:266
+#: src/ostree.jsx:218
 msgid "Origin"
 msgstr "Origen"
 
-#: src/ostree.jsx:469
+#: src/ostree.jsx:505
 msgid "Packages"
 msgstr "Paquetes"
 
-#: src/changeRemoteModal.jsx:183
+#: src/deploymentModals.jsx:201
+msgid "Packages which have been added to the system"
+msgstr ""
+
+#: src/deploymentModals.jsx:115
+#, fuzzy
+#| msgid "No Deployments"
+msgid "Pending deployment"
+msgstr "No hay despliegues"
+
+#: src/ostree.jsx:547
+msgid "Pin"
+msgstr ""
+
+#: src/ostree.jsx:398
+msgid "Pinned"
+msgstr ""
+
+#: src/repositoryModals.jsx:183
 msgid "Please provide a valid URL"
 msgstr "Proporcione una URL válida"
 
-#: src/changeRemoteModal.jsx:172
+#: src/repositoryModals.jsx:169
 msgid "Please provide a valid name"
 msgstr "Por favor facilite un nombre valido"
 
-#: src/ostree.jsx:418
+#: src/deploymentModals.jsx:109
 #, fuzzy
-#| msgid "Rebase and Reboot"
-msgid "Rebase and reboot"
-msgstr "Reorganizar y reiniciar"
+#| msgid "Metadata"
+msgid "RPM repo metadata"
+msgstr "Metadatos"
+
+#: src/ostree.jsx:448 src/ostree.jsx:655 src/repositoryModals.jsx:355
+msgid "Rebase"
+msgstr ""
+
+#: src/repositoryModals.jsx:412
+msgid "Rebase repository and branch"
+msgstr ""
 
 #: src/client.js:56
 msgid "Receiving delta parts"
@@ -246,49 +293,90 @@ msgstr "Recibiendo metadatos"
 msgid "Receiving objects: $0%"
 msgstr "Recibiendo objetos: $0%"
 
-#: src/ostree.jsx:146
+#: src/ostree.jsx:148
 msgid "Reconnect"
 msgstr "Reconectar"
 
-#: src/ostree.jsx:262
+#: src/ostree.jsx:214
 msgid "Released"
 msgstr "Liberado"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:188
 msgid "Removals"
 msgstr "Eliminados"
 
-#: src/ostree.jsx:174
+#: src/repositoryModals.jsx:69
+msgid "Remove"
+msgstr "Eliminar"
+
+#: src/deploymentModals.jsx:196
+#, fuzzy
+#| msgid "Remove key"
+msgid "Remove overlays"
+msgstr "Borrar clave"
+
+#: src/deploymentModals.jsx:203
+#, fuzzy
+#| msgid "Remove device"
+msgid "Remove overrides"
+msgstr "Quitar dispositivo"
+
+#: src/deploymentModals.jsx:193
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+
+#: src/ostree.jsx:682 src/repositoryModals.jsx:90
+#, fuzzy
+#| msgid "Repository"
+msgid "Remove repository"
+msgstr "Repositorio"
+
+#: src/ostree.jsx:704 src/repositoryModals.jsx:99 src/repositoryModals.jsx:262
+#: src/repositoryModals.jsx:422
 msgid "Repository"
 msgstr "Repositorio"
 
-#: src/ostree.jsx:415
+#: src/ostree.jsx:917 src/deploymentModals.jsx:179
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: src/deploymentModals.jsx:169
+msgid "Reset to original state"
+msgstr ""
+
+#: src/ostree.jsx:447
 #, fuzzy
 #| msgid "Roll Back and Reboot"
-msgid "Roll back and reboot"
+msgid "Roll back"
 msgstr "Revertir y reiniciar"
 
-#: src/ostree.jsx:389
-msgid "Running"
-msgstr "En ejecución"
+#: src/deploymentModals.jsx:121
+#, fuzzy
+#| msgid "No Deployments"
+msgid "Rollback deployment"
+msgstr "No hay despliegues"
+
+#: src/repositoryModals.jsx:244
+msgid "Save"
+msgstr "Guardar"
 
 #: src/client.js:66
 msgid "Scanning metadata"
 msgstr "Escaneando metadatos"
 
-#: src/ostree.jsx:179
-#, fuzzy
-#| msgid "Select"
-msgid "Select branch"
-msgstr "Seleccionar"
+#: src/repositoryModals.jsx:186
+msgid "Security"
+msgstr "Seguridad"
 
-#: src/ostree.jsx:474
+#: src/ostree.jsx:510
 #, fuzzy
 #| msgid "Signature"
 msgid "Signatures"
 msgstr "Firma"
 
-#: src/ostree.jsx:282
+#: src/ostree.jsx:234
 msgid "Signed by"
 msgstr "Firmado por"
 
@@ -298,66 +386,92 @@ msgstr "Firmado por"
 msgid "Software updates"
 msgstr "Actualizaciones de software"
 
-#: src/ostree.jsx:358
-msgid "State"
+#: src/ostree.jsx:303 src/ostree.jsx:615
+msgid "Status"
 msgstr "Estado"
 
-#: src/ostree.jsx:103
+#: src/deploymentModals.jsx:208
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+
+#: src/ostree.jsx:105 src/ostree.jsx:590
 msgid "System is up to date"
 msgstr "El sistema está actualizado"
 
-#: src/ostree.jsx:218
+#: src/ostree.jsx:428 src/ostree.jsx:434 src/ostree.jsx:440
+msgid "System will rebase to $0, updated $1."
+msgstr ""
+
+#: src/deploymentModals.jsx:103
+msgid "Temporary files"
+msgstr ""
+
+#: src/ostree.jsx:170
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "Este despliegue contiene los mismos paquetes que su sistema actual"
 
-#: src/ostree.jsx:464
+#: src/ostree.jsx:307
+#, fuzzy
+#| msgid "Timers"
+msgid "Time"
+msgstr "Temporizadores"
+
+#: src/ostree.jsx:500
 msgid "Tree"
 msgstr "Árbol"
 
-#: src/changeRemoteModal.jsx:174 src/changeRemoteModal.jsx:231
+#: src/repositoryModals.jsx:172 src/repositoryModals.jsx:275
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:136
+#: src/ostree.jsx:138
 msgid "Unable to communicate with OSTree"
 msgstr "Incapaz de comunicarse con OSTree"
 
-#: src/ostree.jsx:412
-#, fuzzy
-#| msgid "Update and Reboot"
-msgid "Update and reboot"
-msgstr "Actualizar y reiniciar"
+#: src/ostree.jsx:547
+msgid "Unpin"
+msgstr ""
 
-#: src/ostree.jsx:109
+#: src/ostree.jsx:446
+msgid "Update"
+msgstr "Actualizar"
+
+#: src/ostree.jsx:584
+#, fuzzy
+#| msgid "Updates Available"
+msgid "Update available"
+msgstr "Actualizaciones Disponibles"
+
+#: src/ostree.jsx:111
 #, fuzzy
 #| msgid "Updates Available"
 msgid "Update available: $0"
 msgstr "Actualizaciones Disponibles"
 
-#: src/ostree.jsx:237
+#: src/ostree.jsx:189
 msgid "Updates"
 msgstr "Actualizaciones"
 
-#: src/ostree.jsx:387
+#: src/ostree.jsx:394
 msgid "Updating"
 msgstr "Actualizando"
 
-#: src/changeRemoteModal.jsx:186 src/changeRemoteModal.jsx:239
+#: src/repositoryModals.jsx:191 src/repositoryModals.jsx:284
 msgid "Use trusted GPG key"
 msgstr "Usar las claves GPG de confianza"
 
-#: src/ostree.jsx:294
+#: src/ostree.jsx:246
 #, fuzzy
 #| msgid "Validating key"
 msgid "Validity"
 msgstr "Validando llave"
 
-#: src/ostree.jsx:258
+#: src/ostree.jsx:210 src/ostree.jsx:299
 msgid "Version"
 msgstr "Versión"
 
-#: src/ostree.jsx:286
+#: src/ostree.jsx:238
 msgid "When"
 msgstr "Cuando"
 
@@ -365,9 +479,49 @@ msgstr "Cuando"
 msgid "Writing objects"
 msgstr "Escribiendo objetos"
 
-#: src/ostree.jsx:400
+#: src/ostree.jsx:413
 msgid "view more..."
 msgstr ""
+
+#~ msgid "Add"
+#~ msgstr "Añadir"
+
+#~ msgid "Apply"
+#~ msgstr "Aplicar"
+
+#~ msgid "Available"
+#~ msgstr "Disponible"
+
+#, fuzzy
+#~| msgid "Change Repository"
+#~ msgid "Change repository"
+#~ msgstr "Cambiar el repositorio"
+
+#, fuzzy
+#~| msgid "Check for Updates"
+#~ msgid "Check for updates"
+#~ msgstr "Comprobar actualizaciones"
+
+#, fuzzy
+#~| msgid "No configuration found"
+#~ msgid "No configured remotes"
+#~ msgstr "No se encontró ninguna configuración"
+
+#~ msgid "Running"
+#~ msgstr "En ejecución"
+
+#, fuzzy
+#~| msgid "Select"
+#~ msgid "Select branch"
+#~ msgstr "Seleccionar"
+
+#~ msgid "State"
+#~ msgstr "Estado"
+
+#, fuzzy
+#~| msgid "Update and Reboot"
+#~ msgid "Update and reboot"
+#~ msgstr "Actualizar y reiniciar"
 
 #~ msgid "$0 package"
 #~ msgstr "$0 paquete"
@@ -389,9 +543,6 @@ msgstr ""
 
 #~ msgid "Operating System Updates"
 #~ msgstr "Actualizaciones de sistema operativo"
-
-#~ msgid "Status"
-#~ msgstr "Estado"
 
 #~ msgid "at"
 #~ msgstr "en"
@@ -1941,9 +2092,6 @@ msgstr ""
 #~ msgid "Critical and above"
 #~ msgstr "Crítico y arriba"
 
-#~ msgid "Current boot"
-#~ msgstr "Arranque actual"
-
 #~ msgid "Custom"
 #~ msgstr "Personalizar"
 
@@ -2627,9 +2775,6 @@ msgstr ""
 
 #~ msgid "GiB"
 #~ msgstr "GiB"
-
-#~ msgid "Git Repository"
-#~ msgstr "Repositorio Git"
 
 #~ msgid "Gluster FS"
 #~ msgstr "Gluster FS"
@@ -3423,9 +3568,6 @@ msgstr ""
 #~ msgid "Message to logged in users"
 #~ msgstr "Mensaje para usuarios activos "
 
-#~ msgid "Metadata"
-#~ msgstr "Metadatos"
-
 #~ msgid "Metadata Used"
 #~ msgstr "Metadatos en uso"
 
@@ -3581,9 +3723,6 @@ msgstr ""
 
 #~ msgid "Need at least one NTP server"
 #~ msgstr "Se requiere al menos un servidor NTP"
-
-#~ msgid "Network"
-#~ msgstr "Red"
 
 #~ msgid "Network Traffic"
 #~ msgstr "Tránsito de redes"
@@ -4676,9 +4815,6 @@ msgstr ""
 #~ msgid "Removable Drive"
 #~ msgstr "Disco Removible"
 
-#~ msgid "Remove"
-#~ msgstr "Eliminar"
-
 #~ msgid "Remove $0"
 #~ msgstr "Quitar $0"
 
@@ -4694,14 +4830,8 @@ msgstr ""
 #~ msgid "Remove User"
 #~ msgstr "Quitar usuario"
 
-#~ msgid "Remove device"
-#~ msgstr "Quitar dispositivo"
-
 #~ msgid "Remove image tag"
 #~ msgstr "Remover etiqueta de imagen"
-
-#~ msgid "Remove key"
-#~ msgstr "Borrar clave"
 
 #~ msgid "Remove membership"
 #~ msgstr "Quitar afiliación"
@@ -4803,9 +4933,6 @@ msgstr ""
 
 #~ msgid "Reserved memory"
 #~ msgstr "Memoria reservada"
-
-#~ msgid "Reset"
-#~ msgstr "Reiniciar"
 
 #~ msgid "Reset Storage Pool"
 #~ msgstr "Restablecer grupo de almacenamiento"
@@ -4961,9 +5088,6 @@ msgstr ""
 #~ msgid "Saturday"
 #~ msgstr "Sábado"
 
-#~ msgid "Save"
-#~ msgstr "Guardar"
-
 #~ msgid "Scheduled Pods"
 #~ msgstr "Pods Programados"
 
@@ -4993,9 +5117,6 @@ msgstr ""
 
 #~ msgid "Securely erasing $target"
 #~ msgstr "Borrando de forma segura $target"
-
-#~ msgid "Security"
-#~ msgstr "Seguridad"
 
 #~ msgid "Security Updates Available"
 #~ msgstr "Actualizaciones de Seguridad Disponibles"
@@ -5256,9 +5377,6 @@ msgstr ""
 
 #~ msgid "Sorry, I don't know how to modify this volume"
 #~ msgstr "Lo siento, no se como modificar este volumen"
-
-#~ msgid "Source"
-#~ msgstr "Fuente"
 
 #~ msgid "Source URL"
 #~ msgstr "URL Fuente"
@@ -6066,9 +6184,6 @@ msgstr ""
 #~ msgid "Time Zone"
 #~ msgstr "Zona Horaria"
 
-#~ msgid "Timers"
-#~ msgstr "Temporizadores"
-
 #~ msgid ""
 #~ "Tip: Make your key password match your login password to automatically "
 #~ "authenticate against other systems."
@@ -6334,9 +6449,6 @@ msgstr ""
 
 #~ msgid "Up since $StartedAt"
 #~ msgstr "Arriba desde $StartedAt"
-
-#~ msgid "Update"
-#~ msgstr "Actualizar"
 
 #~ msgid "Update History"
 #~ msgstr "Histórico de Actualización"
