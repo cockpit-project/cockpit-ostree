@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-04 02:51+0000\n"
-"PO-Revision-Date: 2022-01-06 08:16+0000\n"
-"Last-Translator: Charles Lee <lchopn@gmail.com>\n"
+"POT-Creation-Date: 2023-12-11 02:51+0000\n"
+"PO-Revision-Date: 2023-12-09 00:21+0000\n"
+"Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit-ostree/main/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -18,35 +18,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 4.10.1\n"
+"X-Generator: Weblate 5.2.1\n"
 
 #: src/ostree.jsx:355
-#, fuzzy
-#| msgid "Rebase and Reboot"
 msgid "$0 and reboot"
-msgstr "重构并重启"
+msgstr "$0 并重启"
 
 #: src/client.js:445
 msgid "$0 key ID"
 msgstr "$0 密钥编号"
 
 #: src/repositoryModals.jsx:293
-#, fuzzy
-#| msgid "Add Another Key"
 msgid "Add another key"
 msgstr "添加另一个密钥"
 
 #: src/repositoryModals.jsx:150
-#, fuzzy
-#| msgid "Add New Repository"
 msgid "Add new repository"
 msgstr "添加新的源"
 
 #: src/ostree.jsx:663 src/repositoryModals.jsx:140
-#, fuzzy
-#| msgid "Add New Repository"
 msgid "Add repository"
-msgstr "添加新的源"
+msgstr "添加源"
 
 #: src/ostree.jsx:187
 msgid "Additions"
@@ -60,9 +52,9 @@ msgstr "由 $0 开始"
 msgid "Branch"
 msgstr "分支"
 
-#: src/ostree.jsx:358 src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:358
+#: src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
 #: src/repositoryModals.jsx:247 src/repositoryModals.jsx:361
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "取消"
 
@@ -74,15 +66,13 @@ msgstr "正在检查软件包更新……"
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:911
 msgid "Clean up"
-msgstr ""
+msgstr "清理"
 
 #: src/deploymentModals.jsx:90
-#, fuzzy
-#| msgid "available deployments"
 msgid "Clear cache and deployments"
-msgstr "可用的部署"
+msgstr "清除缓存和部署"
 
 #: src/ostree.jsx:409
 msgid "Close"
@@ -93,38 +83,30 @@ msgid "Connecting to OSTree"
 msgstr "连接到系统树"
 
 #: src/ostree.jsx:396
-#, fuzzy
-#| msgid "Current boot"
 msgid "Current"
-msgstr "当前启动"
+msgstr "当前"
 
 #: src/ostree.jsx:561
 msgid "Delete"
 msgstr "删除"
 
 #: src/ostree.jsx:326 src/ostree.jsx:949
-#, fuzzy
-#| msgid "Deployment Causes"
 msgid "Deployments and updates"
-msgstr "部署原因"
+msgstr "部署和更新"
 
 #: src/ostree.jsx:190
 msgid "Downgrades"
 msgstr "降级"
 
 #: src/ostree.jsx:672 src/repositoryModals.jsx:252
-#, fuzzy
-#| msgid "Git Repository"
 msgid "Edit repository"
-msgstr "Git 仓库"
+msgstr "编辑仓库"
 
 #: src/ostree.jsx:853
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
 #: src/ostree.jsx:229
-#, fuzzy
-#| msgid "Expired Signature"
 msgid "Expired signature"
 msgstr "过期的签名"
 
@@ -133,52 +115,40 @@ msgid "Failed"
 msgstr "已失败"
 
 #: src/ostree.jsx:293
-#, fuzzy
-#| msgid "available deployments"
 msgid "Failed to rebase deployment"
-msgstr "可用的部署"
+msgstr "部署重置失败"
 
 #: src/ostree.jsx:272
 msgid "Failed to roll back deployment"
-msgstr ""
+msgstr "回滚部署失败"
 
 #: src/ostree.jsx:282
-#, fuzzy
-#| msgid "available deployments"
 msgid "Failed to upgrade deployment"
-msgstr "可用的部署"
+msgstr "升级部署失败"
 
 #: src/repositoryModals.jsx:298
-#, fuzzy
-#| msgid "GPG Public Key"
 msgid "GPG public key"
 msgstr "GPG 公钥"
 
 #: src/ostree.jsx:229
-#, fuzzy
-#| msgid "Good Signature"
 msgid "Good signature"
 msgstr "正确的签名"
 
 #: src/ostree.jsx:229
-#, fuzzy
-#| msgid "Invalid Signature"
 msgid "Invalid signature"
 msgstr "无效的签名"
 
 #: src/repositoryModals.jsx:407
 msgid "Loading branches"
-msgstr ""
+msgstr "加载分支"
 
 #: src/repositoryModals.jsx:158
 msgid "Name"
 msgstr "名称"
 
 #: src/ostree.jsx:419
-#, fuzzy
-#| msgid "Network"
 msgid "New"
-msgstr "网络"
+msgstr "新"
 
 #: src/ostree.jsx:760
 msgid "No OSTree deployments found"
@@ -189,8 +159,6 @@ msgid "No configuration data found"
 msgstr "未找到配置数据"
 
 #: src/ostree.jsx:140
-#, fuzzy
-#| msgid "No Deployments"
 msgid "No deployments"
 msgstr "没有部署"
 
@@ -211,14 +179,10 @@ msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
 #: src/ostree.jsx:699
-#, fuzzy
-#| msgid "Source"
 msgid "OSTree source"
-msgstr "源"
+msgstr "OSTree 源"
 
 #: src/ostree.jsx:206
-#, fuzzy
-#| msgid "Operating System"
 msgid "Operating system"
 msgstr "操作系统"
 
@@ -232,21 +196,19 @@ msgstr "软件包"
 
 #: src/deploymentModals.jsx:201
 msgid "Packages which have been added to the system"
-msgstr ""
+msgstr "已添加到系统中的软件包"
 
 #: src/deploymentModals.jsx:115
-#, fuzzy
-#| msgid "No Deployments"
 msgid "Pending deployment"
-msgstr "没有部署"
+msgstr "待部署"
 
 #: src/ostree.jsx:547
 msgid "Pin"
-msgstr ""
+msgstr "针"
 
 #: src/ostree.jsx:398
 msgid "Pinned"
-msgstr ""
+msgstr "已钉"
 
 #: src/repositoryModals.jsx:183
 msgid "Please provide a valid URL"
@@ -257,18 +219,16 @@ msgid "Please provide a valid name"
 msgstr "请提供有效的名称"
 
 #: src/deploymentModals.jsx:109
-#, fuzzy
-#| msgid "Metadata"
 msgid "RPM repo metadata"
-msgstr "元数据"
+msgstr "RPM 仓库元数据"
 
 #: src/ostree.jsx:448 src/ostree.jsx:655 src/repositoryModals.jsx:355
 msgid "Rebase"
-msgstr ""
+msgstr "重置"
 
 #: src/repositoryModals.jsx:412
 msgid "Rebase repository and branch"
-msgstr ""
+msgstr "重置版本库和分支"
 
 #: src/client.js:56
 msgid "Receiving delta parts"
@@ -299,53 +259,43 @@ msgid "Remove"
 msgstr "删除"
 
 #: src/deploymentModals.jsx:196
-#, fuzzy
-#| msgid "Remove Role"
 msgid "Remove overlays"
-msgstr "移除角色"
+msgstr "移除覆盖层"
 
 #: src/deploymentModals.jsx:203
-#, fuzzy
-#| msgid "Remove Role"
 msgid "Remove overrides"
-msgstr "移除角色"
+msgstr "删除覆盖"
 
 #: src/deploymentModals.jsx:193
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
-msgstr ""
+msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
 
 #: src/ostree.jsx:682 src/repositoryModals.jsx:90
-#, fuzzy
-#| msgid "Repository"
 msgid "Remove repository"
-msgstr "存储库"
+msgstr "移除存储库"
 
 #: src/ostree.jsx:704 src/repositoryModals.jsx:99 src/repositoryModals.jsx:262
 #: src/repositoryModals.jsx:422
 msgid "Repository"
 msgstr "存储库"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:917
 msgid "Reset"
 msgstr "重置"
 
 #: src/deploymentModals.jsx:169
 msgid "Reset to original state"
-msgstr ""
+msgstr "重置为原始状态"
 
 #: src/ostree.jsx:447
-#, fuzzy
-#| msgid "Roll Back and Reboot"
 msgid "Roll back"
-msgstr "回滚并重启"
+msgstr "回滚"
 
 #: src/deploymentModals.jsx:121
-#, fuzzy
-#| msgid "No Deployments"
 msgid "Rollback deployment"
-msgstr "没有部署"
+msgstr "回滚部署"
 
 #: src/repositoryModals.jsx:244
 msgid "Save"
@@ -368,8 +318,6 @@ msgid "Signed by"
 msgstr "签名人"
 
 #: src/index.html:22 src/manifest.json:0
-#, fuzzy
-#| msgid "Software Updates"
 msgid "Software updates"
 msgstr "软件更新"
 
@@ -379,7 +327,7 @@ msgstr "状态"
 
 #: src/deploymentModals.jsx:208
 msgid "Substitutions of packages normally included in an OS build"
-msgstr ""
+msgstr "对通常包含在操作系统构建中的软件包进行替换"
 
 #: src/ostree.jsx:105 src/ostree.jsx:590
 msgid "System is up to date"
@@ -387,11 +335,11 @@ msgstr "系统已更新到最新"
 
 #: src/ostree.jsx:428 src/ostree.jsx:434 src/ostree.jsx:440
 msgid "System will rebase to $0, updated $1."
-msgstr ""
+msgstr "系统将重置为 $0, $1 已更新。"
 
 #: src/deploymentModals.jsx:103
 msgid "Temporary files"
-msgstr ""
+msgstr "临时文件"
 
 #: src/ostree.jsx:170
 msgid ""
@@ -399,10 +347,8 @@ msgid ""
 msgstr "该部署与当前启动的系统包含相同的软件包"
 
 #: src/ostree.jsx:307
-#, fuzzy
-#| msgid "Timers"
 msgid "Time"
-msgstr "计时器"
+msgstr "时间"
 
 #: src/ostree.jsx:500
 msgid "Tree"
@@ -418,17 +364,15 @@ msgstr "无法与 OSTree 通信"
 
 #: src/ostree.jsx:547
 msgid "Unpin"
-msgstr ""
+msgstr "移除图钉"
 
 #: src/ostree.jsx:446
 msgid "Update"
 msgstr "更新"
 
 #: src/ostree.jsx:584
-#, fuzzy
-#| msgid "Update available: $0"
 msgid "Update available"
-msgstr "更新可用：$0"
+msgstr "更新可用"
 
 #: src/ostree.jsx:111
 msgid "Update available: $0"
@@ -464,7 +408,7 @@ msgstr "正在写对象"
 
 #: src/ostree.jsx:413
 msgid "view more..."
-msgstr ""
+msgstr "查看更多……"
 
 #~ msgid "Add"
 #~ msgstr "添加"
