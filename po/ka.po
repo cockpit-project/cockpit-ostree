@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-12-11 02:51+0000\n"
+"POT-Creation-Date: 2023-12-25 02:51+0000\n"
 "PO-Revision-Date: 2023-12-11 06:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -52,7 +52,7 @@ msgstr "იწყება $0-ით"
 msgid "Branch"
 msgstr "ბრენჩი"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:358
+#: src/ostree.jsx:358 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 #: src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
 #: src/repositoryModals.jsx:247 src/repositoryModals.jsx:361
 msgid "Cancel"
@@ -66,7 +66,7 @@ msgstr "პაკეტების განახლებების შე�
 msgid "Checking for updates"
 msgstr "განახლებების შემოწმება"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr "მოსუფთავება"
 
@@ -284,7 +284,7 @@ msgstr "რეპოზიტორიის წაშლა"
 msgid "Repository"
 msgstr "რეპოზიტორია"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr "ჩამოყრა"
 
