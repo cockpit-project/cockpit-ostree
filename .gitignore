@@ -1,20 +1,35 @@
-*~
-*.retry
-*.tar.xz
-/*.rpm
-node_modules/
-dist/
-/*.spec
-/.vagrant
-package-lock.json
-Test*FAIL*
+# Please keep this file sorted (LC_COLLATE=C.UTF-8),
+# grouped into the 3 categories below:
+#  - general patterns (match in all directories)
+#  - patterns to match files at the toplevel
+#  - patterns to match files in subdirs
+
+# general patterns
+*.pyc
+*.rpm
+
+# toplevel (/...)
+/Test*.html
+/Test*.json
+/Test*.log
+/Test*.log.gz
+/Test*.png
+/*.whl
 /bots
-pkg
-test/common/
-test/images/
-test/static-code
-*.mo
-*.pot
-POTFILES*
-tmp/
-/tools
+/cockpit-*.tar.xz
+/cockpit-ostree.spec
+/dist/
+/package-lock.json
+/pkg/
+/node_modules/
+/tmp/
+/tools/
+ 
+# subdirs (/subdir/...)
+/packaging/arch/PKGBUILD
+/packaging/debian/changelog
+/po/*.pot
+ /po/LINGUAS
+/test/common/
+/test/images/
+/test/static-code
