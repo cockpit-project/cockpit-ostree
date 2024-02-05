@@ -1,4 +1,7 @@
 [tool.ruff]
+line-length = 118
+
+[tool.ruff.lint]
 select = [
     "A",       # flake8-builtins
     "B",       # flake8-bugbear
@@ -22,5 +25,3 @@ select = [
     "W",       # warnings (mostly whitespace)
     "YTT",     # flake8-2020
 ]
-
-line-length = 118
