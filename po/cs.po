@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 02:51+0000\n"
+"POT-Creation-Date: 2024-02-01 02:52+0000\n"
 "PO-Revision-Date: 2023-04-08 19:20+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -56,7 +56,7 @@ msgstr "Začíná na $0"
 msgid "Branch"
 msgstr "Větev"
 
-#: src/ostree.jsx:358 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:358
 #: src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
 #: src/repositoryModals.jsx:247 src/repositoryModals.jsx:361
 msgid "Cancel"
@@ -70,7 +70,7 @@ msgstr "Zjišťuje se, zda jsou k dispozici aktualizace balíčků…"
 msgid "Checking for updates"
 msgstr "Zjišťuje se, zda jsou k dispozici případné aktualizace"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:911
 msgid "Clean up"
 msgstr ""
 
@@ -314,7 +314,7 @@ msgid "Repository"
 msgstr "Repozitář"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:917 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:917
 msgid "Reset"
 msgstr "Reset"
 
