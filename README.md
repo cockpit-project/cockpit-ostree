@@ -50,7 +50,7 @@ or
 Cockpit uses [ESLint](https://eslint.org/) to automatically check
 JavaScript code style in `.js` and `.jsx` files.
 
-eslint is executed within every build.
+eslint is executed as part of `test/static-code`, aka. `make codecheck`.
 
 For developer convenience, the ESLint can be started explicitly by:
 
@@ -67,7 +67,7 @@ Rules configuration can be found in the `.eslintrc.json` file.
 Cockpit uses [Stylelint](https://stylelint.io/) to automatically check CSS code
 style in `.css` and `scss` files.
 
-styleint is executed within every build.
+styleint is executed as part of `test/static-code`, aka. `make codecheck`.
 
 For developer convenience, the Stylelint can be started explicitly by:
 
@@ -78,12 +78,6 @@ Violations of some rules can be fixed automatically by:
     $ npm run stylelint:fix
 
 Rules configuration can be found in the `.stylelintrc.json` file.
-
-During fast iterative development, you can also choose to not run eslint/stylelint.
-This speeds up the build and avoids build failures due to e. g. ill-formatted
-css or other issues:
-
-    $ make LINT=0
 
 # Automated Testing
 
