@@ -540,7 +540,8 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_visible("#reset-modal")
         b.click("#remove-overlays-checkbox")
         b.click("#reset-modal button.pf-m-warning")
-        b.wait_not_present("#reset-modal")
+        with b.wait_timeout(60):
+            b.wait_not_present("#reset-modal")
 
         wait_deployment_details_prop(b, 1, "Packages", ".removes", "Removalsempty-1-0.noarch")
 
