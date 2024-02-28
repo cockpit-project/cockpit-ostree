@@ -45,11 +45,6 @@
             font-weight: 600;
         }
     }
-
-    // HACK: Mimic .pf-v5-c-table__action, see https://github.com/patternfly/patternfly-react/issues/4612
-    td:last-child {
-        --pf-v5-c-table--cell--Width: 1%;
-    }
 }
 
 // PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
