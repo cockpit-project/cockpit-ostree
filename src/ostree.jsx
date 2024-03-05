@@ -31,6 +31,8 @@ import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Card, CardHeader, CardTitle, CardBody } from "@patternfly/react-core/dist/esm/components/Card";
 import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
+import { Divider } from "@patternfly/react-core/dist/esm/components/Divider";
+import { DropdownItem } from "@patternfly/react-core/dist/esm/components/Dropdown";
 import {
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription
 } from "@patternfly/react-core/dist/esm/components/DescriptionList";
@@ -43,8 +45,6 @@ import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
 import { Text } from "@patternfly/react-core/dist/esm/components/Text";
 
-import { Dropdown, DropdownItem, DropdownSeparator, KebabToggle, } from "@patternfly/react-core/dist/esm/deprecated/components/Dropdown";
-
 import { BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon, PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon } from '@patternfly/react-icons';
 
 import cockpit from 'cockpit';
@@ -53,6 +53,7 @@ import * as timeformat from 'timeformat';
 import { superuser } from 'superuser';
 import { ListingTable } from "cockpit-components-table.jsx";
 import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
+import { KebabDropdown } from 'cockpit-components-dropdown.jsx';
 
 import client from './client';
 import * as remotes from './remotes';
@@ -521,21 +522,17 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
 };
 
 const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isStaged }) => {
-    const [isKebabOpen, setKebabOpen] = useState(false);
-
     const togglePin = () => {
         const pinFlags = [];
         if (deploymentIsPinned) {
             pinFlags.push("--unpin");
         }
 
-        cockpit.spawn(["ostree", "admin", "pin", ...pinFlags, deploymentIndex], { superuser: "try" })
-                .then(() => setKebabOpen(false));
+        cockpit.spawn(["ostree", "admin", "pin", ...pinFlags, deploymentIndex], { superuser: "try" });
     };
 
     const deleteDeployment = () => {
-        cockpit.spawn(["ostree", "admin", "undeploy", deploymentIndex], { superuser: "try" })
-                .then(() => setKebabOpen(false));
+        cockpit.spawn(["ostree", "admin", "undeploy", deploymentIndex], { superuser: "try" });
     };
 
     const actions = [];
@@ -551,7 +548,7 @@ const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isS
 
     if (!isCurrent) {
         if (actions.length > 0) {
-            actions.push(<DropdownSeparator key="deployment-actions-separator-1" />);
+            actions.push(<Divider key="deployment-actions-separator-1" />);
         }
         actions.push(
             <DropdownItem key="delete-deployment"
@@ -563,14 +560,7 @@ const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isS
         );
     }
 
-    return (
-        <Dropdown toggle={<KebabToggle onToggle={(_event, isOpen) => setKebabOpen(isOpen)} />}
-            isOpen={isKebabOpen}
-            id="deployment-actions"
-            isPlain
-            position="right"
-            dropdownItems={actions} />
-    );
+    return <KebabDropdown toggleButtonId="deployment-actions" dropdownItems={actions} position="right" />;
 };
 
 const OStreeStatus = ({ ostreeState, versions }) => {
@@ -637,7 +627,6 @@ OStreeStatus.propTypes = {
 
 const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRemoteOrigin }) => {
     const Dialogs = useDialogs();
-    const [isKebabOpen, setKebabOpen] = useState(false);
 
     const actions = [
         <DropdownItem key="rebase"
@@ -654,7 +643,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
         >
             {_("Rebase")}
         </DropdownItem>,
-        <DropdownSeparator key="separator-1" />,
+        <Divider key="separator-1" />,
         <DropdownItem key="add-repository"
             onClick={() => Dialogs.show(
                 <AddRepositoryModal refreshRemotes={refreshRemotes} />
@@ -684,13 +673,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
     ];
 
     const ostreeSourceActions = (
-        <Dropdown toggle={<KebabToggle onToggle={(_, isOpen) => setKebabOpen(isOpen)} />}
-            isPlain
-            isOpen={isKebabOpen}
-            position="right"
-            id="ostree-source-actions"
-            dropdownItems={actions}
-        />
+        <KebabDropdown toggleButtonId="ostree-source-actions" position="right" dropdownItems={actions} />
     );
 
     return (
@@ -738,7 +721,6 @@ class Application extends React.Component {
             origin: { remote: null, branch: null },
             curtain: { state: 'silent', failure: false, message: null, final: false },
             progressMsg: undefined,
-            isKebabOpen: false,
         };
 
         this.onChangeBranch = this.onChangeBranch.bind(this);
@@ -910,7 +892,7 @@ class Application extends React.Component {
                           onClick={() => Dialogs.show(<CleanUpModal os={this.state.os} />)}>
                 {_("Clean up")}
             </DropdownItem>,
-            <DropdownSeparator key="deployment-separator-1" />,
+            <Divider key="deployment-separator-1" />,
             <DropdownItem key="reset"
                           className="pf-v5-u-danger-color-200"
                           onClick={() => Dialogs.show(<ResetModal os={this.state.os} />)}>
@@ -927,13 +909,7 @@ class Application extends React.Component {
                         onClick={this.checkForUpgrades}>
                     <SyncAltIcon />
                 </Button>
-                <Dropdown toggle={<KebabToggle onToggle={(_, isOpen) => this.setState({ isKebabOpen: isOpen })} />}
-                    isPlain
-                    isOpen={this.state.isKebabOpen}
-                    position="right"
-                    id="deployments-actions"
-                    dropdownItems={kebabActions}
-                />
+                <KebabDropdown toggleButtonId="deployments-actions" position="right" dropdownItems={kebabActions} />
             </Flex>
         );
 
