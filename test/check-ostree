@@ -85,9 +85,8 @@ def check_package_count(b, assertIn, index):
 def do_deployment_action(b, index, action):
     deployment_row = f"#available-deployments > tbody:nth-child({index + 1})"
     if action in ["Pin", "Unpin", "Delete"]:
-        b.click(f"{deployment_row} tr:nth-child(1) td:last-child button.pf-v5-c-dropdown__toggle")
         b.click(f"{deployment_row} #deployment-actions")
-        b.click(f"{deployment_row} #deployment-actions ul li:contains({action})")
+        b.click(f"{deployment_row} button.pf-v5-c-menu__item:contains({action})")
     else:
         wait_deployment_prop(b, index, "Actions", action)
         b.click(f"{deployment_row} tr:nth-child(1) td:nth-child(6) button")
@@ -171,10 +170,9 @@ def get_name(self):
 
 
 def do_card_action(browser, kebab, action):
-    browser.wait_visible(f"{kebab} .pf-v5-c-dropdown__toggle")
-    browser.click(f"{kebab} .pf-v5-c-dropdown__toggle")
-    browser.wait_visible(f"{kebab} .pf-v5-c-dropdown__menu")
-    browser.click(f"{kebab} .pf-v5-c-dropdown__menu li:contains({action}) a")
+    browser.click(f"{kebab}")
+    browser.wait_visible("ul.pf-v5-c-menu__list")
+    browser.click(f"button.pf-v5-c-menu__item:contains({action})")
 
 
 class OstreeRestartCase(testlib.MachineCase):
@@ -570,7 +568,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 3, "Status", "Pinned")
         # Kebab menu is not available for update
         b.wait_not_present("""#available-deployments > tbody:nth-child(2) tr:nth-child(1)
-                           td:last-child button.pf-v5-c-dropdown__toggle""")
+                           td:last-child button.pf-v5-c-menu-toggle""")
 
         # Use clean up to remove pending and rollback deployments
         do_card_action(b, "#deployments-actions", "Clean up")
