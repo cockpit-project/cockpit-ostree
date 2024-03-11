@@ -31,7 +31,8 @@ import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
 import { Text } from "@patternfly/react-core/dist/esm/components/Text";
 import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
 import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
-import { Select, SelectOption } from "@patternfly/react-core/dist/esm/deprecated/components/Select";
+import { Select, SelectList, SelectOption } from "@patternfly/react-core/dist/esm/components/Select";
+import { MenuToggle } from "@patternfly/react-core/dist/esm/components/MenuToggle";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner/index.js";
 import { ExclamationCircleIcon } from '@patternfly/react-icons';
 
@@ -41,6 +42,34 @@ import { useDialogs } from "dialogs.jsx";
 import * as remotes from './remotes';
 
 const _ = cockpit.gettext;
+
+const RemoteSelect = ({ remotes, selectedRemote, setSelectedRemote }) => {
+    const [isSelectOpen, setSelectOpen] = useState(false);
+
+    const toggle = toggleRef => (
+        <MenuToggle
+           ref={toggleRef}
+            onClick={() => setSelectOpen(!isSelectOpen)}
+            isExpanded={isSelectOpen}
+            isFullWidth
+        >
+            {selectedRemote}
+        </MenuToggle>);
+
+    return (
+        <Select
+          isOpen={isSelectOpen}
+          selected={selectedRemote}
+          toggle={toggle}
+          onOpenChange={isOpen => setSelectOpen(isOpen)}
+          onSelect={(_, remote) => { setSelectOpen(false); setSelectedRemote(remote) }}
+        >
+            <SelectList>
+                {remotes.map(remote => <SelectOption id={remote} value={remote} key={remote}> {remote} </SelectOption>)}
+            </SelectList>
+        </Select>
+    );
+};
 
 export const RemoveRepositoryModal = ({ origin, availableRemotes, refreshRemotes }) => {
     const Dialogs = useDialogs();
@@ -208,7 +237,6 @@ export const EditRepositoryModal = ({ remote, availableRemotes }) => {
     const [addAnotherKey, setAddAnotherKey] = useState(false);
     const [key, setKey] = useState('');
     const [error, setError] = useState('');
-    const [isSelectRemoteExpanded, setSelectRemoteExpanded] = useState(false);
     const [selectedRemote, setSelectedRemote] = useState(remote);
     const [newURL, setNewURL] = useState('');
     const [isTrusted, setIsTrusted] = useState(null);
@@ -263,14 +291,11 @@ export const EditRepositoryModal = ({ remote, availableRemotes }) => {
                     id="select-repository"
                     fieldId="select-repository"
                 >
-                    <Select isOpen={isSelectRemoteExpanded}
-                        selections={selectedRemote}
-                        onToggle={(_, expanded) => setSelectRemoteExpanded(expanded) }
-                        onSelect={(_, remote) => { setSelectRemoteExpanded(false); setSelectedRemote(remote) }}
-                        menuAppendTo="parent"
-                    >
-                        {availableRemotes.map(remote => <SelectOption id={remote} value={remote} key={remote}> {remote} </SelectOption>)}
-                    </Select>
+                    <RemoteSelect
+                        remotes={availableRemotes}
+                        selectedRemote={selectedRemote}
+                        setSelectedRemote={setSelectedRemote}
+                    />
                 </FormGroup>
                 <FormGroup label={_("URL")}
                     fieldId="edit-remote-url"
@@ -309,9 +334,7 @@ EditRepositoryModal.propTypes = {
 
 export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginBranches, currentBranchLoadError, onChangeBranch, onChangeRemoteOrigin }) => {
     const Dialogs = useDialogs();
-    const [isSelectRemoteExpanded, setSelectRemoteExpanded] = useState(false);
     const [selectedRemote, setSelectedRemote] = useState(origin.remote);
-    const [isSelectBranchExpanded, setSelectBranchExpanded] = useState(false);
     const [selectedBranch, setSelectedBranch] = useState(origin.branch);
     const [availableBranches, setAvailableBranches] = useState(currentOriginBranches);
     const [branchLoadError, setBranchLoadError] = useState(currentBranchLoadError);
@@ -364,14 +387,11 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
 
     const repositoryComponent = availableRemotes.length > 1
         ? (
-            <Select isOpen={isSelectRemoteExpanded}
-                selections={selectedRemote}
-                onToggle={(_, expanded) => setSelectRemoteExpanded(expanded) }
-                onSelect={(_, remote) => { setSelectRemoteExpanded(false); handeRemoteSelect(remote) }}
-                menuAppendTo="parent"
-            >
-                {availableRemotes.map(remote => <SelectOption id={remote} value={remote} key={remote}> {remote} </SelectOption>)}
-            </Select>
+            <RemoteSelect
+                remotes={availableRemotes}
+                selectedRemote={selectedRemote}
+                setSelectedRemote={handeRemoteSelect}
+            />
         )
         : (
             <Text>{availableRemotes[0]}</Text>
@@ -387,14 +407,11 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
         : (
             availableBranches.length > 1
                 ? (
-                    <Select isOpen={isSelectBranchExpanded}
-                        selections={selectedBranch}
-                        onToggle={(_, expanded) => setSelectBranchExpanded(expanded) }
-                        onSelect={(_, branch) => { setSelectBranchExpanded(false); setSelectedBranch(branch) }}
-                        menuAppendTo="parent"
-                    >
-                        {availableBranches.map(branch => <SelectOption value={branch} key={branch}> {branch} </SelectOption>)}
-                    </Select>
+                    <RemoteSelect
+                        remotes={availableBranches}
+                        selectedRemote={selectedBranch}
+                        setSelectedRemote={setSelectedBranch}
+                    />
                 )
                 : (
                     <Text>{availableBranches[0]}</Text>
