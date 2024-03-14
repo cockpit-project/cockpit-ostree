@@ -52,12 +52,6 @@
     max-block-size: calc(100vh - var(--pf-v5-global--spacer--2xl));
 }
 
-// Create space between the remote name and the edit action
-.remote-select .pf-v5-c-simple-list__item-link {
-    display: flex;
-    justify-content: space-between;
-}
-
 .simple-list-form-header {
     display: flex;
     justify-content: space-between;
