@@ -52,16 +52,6 @@
     max-block-size: calc(100vh - var(--pf-v5-global--spacer--2xl));
 }
 
-.simple-list-form-header {
-    display: flex;
-    justify-content: space-between;
-    flex-flow: wrap;
-}
-
-.simple-list-form-actions > .pf-v5-c-button {
-    margin-inline: 0.3em;
-}
-
 .pf-v5-c-form.pf-m-horizontal {
     inline-size: 100%;
 }
