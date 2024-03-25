@@ -17,6 +17,11 @@
  * along with Cockpit; If not, see <http://www.gnu.org/licenses/>.
  */
 
+export function logDebug(...args) {
+    if (window.debugging === "all" || window.debugging?.includes("ostree"))
+        console.debug('ostree:', ...args);
+}
+
 const configRegex = {
     /* section headers, ei: [section] */
     section: /^\s*\[\s*([^\]]*)\s*\]\s*$/,
