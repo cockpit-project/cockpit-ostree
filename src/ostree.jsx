@@ -62,6 +62,7 @@ import { AddRepositoryModal, EditRepositoryModal, RebaseRepositoryModal, RemoveR
 import './ostree.scss';
 import { CleanUpModal, ResetModal } from './deploymentModals';
 import { WithDialogs, DialogsContext, useDialogs } from "dialogs.jsx";
+import { logDebug } from './utils.js';
 
 const _ = cockpit.gettext;
 
@@ -743,6 +744,7 @@ class Application extends React.Component {
             } else {
                 let newState;
                 if (!this.state.origin.remote) {
+                    logDebug('check_empty: no current origin, detecting from os_list', client.os_list);
                     const os = client.os_list[0];
                     const origin = client.get_default_origin(os) || {};
                     newState = {
@@ -849,15 +851,19 @@ class Application extends React.Component {
 
     updateBranches(remote) {
         if (!remote) {
+            logDebug('updateBranches: no remote');
             return;
         }
 
         return remotes.listBranches(remote)
                 .then(branches => {
+                    logDebug('updateBranches: branches=', branches);
                     const update = { branches, branchLoadError: null };
                     // if current branch does not exist, change to the first listed branch
-                    if (branches.indexOf(this.state.origin.branch) < 0)
+                    if (branches.indexOf(this.state.origin.branch) < 0) {
                         update.origin = { remote: this.state.origin.remote, branch: branches[0] };
+                        logDebug('updateBranches: setting origin to first listed branch:', update.origin);
+                    }
                     this.setState(update);
                     return branches;
                 })

@@ -1,4 +1,6 @@
 import cockpit from 'cockpit';
+
+import { logDebug } from './utils.js';
 const _ = cockpit.gettext;
 
 const DEST = 'org.projectatomic.rpmostree1';
@@ -309,8 +311,14 @@ class RPMOSTreeDBusClient {
 
         if (proxy) {
             origin = proxy.BootedDeployment?.origin?.v;
-            if (!origin)
+            if (origin) {
+                logDebug("get_os_origin", os, "from BootedDeployment", origin);
+            } else {
                 origin = proxy.DefaultDeployment?.origin?.v;
+                logDebug("get_os_origin", os, "from DefaultDeployment", origin);
+            }
+        } else {
+            logDebug("get_os_origin", os, "no proxy");
         }
 
         return origin;
@@ -386,6 +394,7 @@ class RPMOSTreeDBusClient {
             }
         }
 
+        logDebug(`known_versions_for osname '${os_name}' remote '${remote}' branch '${branch}':`, list);
         return list;
     }
 
