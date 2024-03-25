@@ -206,19 +206,19 @@ const TreeDetails = ({ info }) => {
         <DescriptionList isHorizontal>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Operating system") }</DescriptionListTerm>
-                <DescriptionListDescription className="os" id="osname">{info.osname.v}</DescriptionListDescription>
+                <DescriptionListDescription className="os">{info.osname.v}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Version") }</DescriptionListTerm>
-                <DescriptionListDescription className="version" id="osversion">{info.version?.v}</DescriptionListDescription>
+                <DescriptionListDescription className="version">{info.version?.v}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Released") }</DescriptionListTerm>
-                <DescriptionListDescription className="timestamp" id="osrelease">{timeformat.distanceToNow(info.timestamp.v * 1000, true)}</DescriptionListDescription>
+                <DescriptionListDescription className="timestamp">{timeformat.distanceToNow(info.timestamp.v * 1000, true)}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Origin") }</DescriptionListTerm>
-                <DescriptionListDescription className="origin" id="osorigin">{info.origin?.v}</DescriptionListDescription>
+                <DescriptionListDescription className="origin">{info.origin?.v}</DescriptionListDescription>
             </DescriptionListGroup>
         </DescriptionList>
     );
