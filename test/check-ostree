@@ -440,10 +440,15 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # start our local registry
         self.start_oci_registry()
+        oci_repo = "ostree-unverified-registry:localhost:5000/ostree-oci"
+        oci_branch = "cockpit1"
+        oci_repo_branch = f"{oci_repo}:{oci_branch}"
 
         self.login_and_go("/updates")
 
         # our image defaults to local OSTree repo
+        b.wait_text("#current-repository .pf-v5-c-description-list__description", "local")
+        b.wait_text("#current-branch .pf-v5-c-description-list__description", branch)
         wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_details_prop(b, 1, "Tree", ".origin", f"local:{branch}")
@@ -451,13 +456,13 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # rebase to our OCI repo
         # FIXME: there is currently no UI way of doing this
-        m.execute("rpm-ostree rebase ostree-unverified-registry:localhost:5000/ostree-oci:cockpit1")
+        m.execute(f"rpm-ostree rebase {oci_repo_branch}")
 
         # UI picks this up
         wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 1, "Status", "")
-        # OCI deployments have no origin
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", "")
+        wait_deployment_prop(b, 1, "Branch", oci_repo_branch)
+        wait_deployment_details_prop(b, 1, "Tree", ".origin", oci_repo_branch)
         wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
                                      "This deployment contains the same packages as your currently booted system")
 
@@ -475,10 +480,15 @@ class OstreeRestartCase(testlib.MachineCase):
         self.start_oci_registry()
         self.login_and_go("/updates")
 
+        # OCI is now the current deployment
+        b.wait_text("#current-repository .pf-v5-c-description-list__description", oci_repo)
+        b.wait_text("#current-branch .pf-v5-c-description-list__description", oci_branch)
+
         # now the status is reversed: OCI deployment is running and has the package list
         wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 1, "Status", "Current")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", "")
+        wait_deployment_prop(b, 1, "Branch", oci_repo_branch)
+        wait_deployment_details_prop(b, 1, "Tree", ".origin", oci_repo_branch)
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
         # ... and second deployment is the ostree repo one
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")

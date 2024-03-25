@@ -309,12 +309,14 @@ class RPMOSTreeDBusClient {
         if (!proxy && this.sysroot)
             proxy = this.os_proxies[this.sysroot.Booted];
 
+        const deployment_origin = deployment => deployment?.origin?.v || deployment?.["container-image-reference"]?.v;
+
         if (proxy) {
-            origin = proxy.BootedDeployment?.origin?.v;
+            origin = deployment_origin(proxy.BootedDeployment);
             if (origin) {
                 logDebug("get_os_origin", os, "from BootedDeployment", origin);
             } else {
-                origin = proxy.DefaultDeployment?.origin?.v;
+                origin = deployment_origin(proxy.DefaultDeployment);
                 logDebug("get_os_origin", os, "from DefaultDeployment", origin);
             }
         } else {
@@ -377,6 +379,10 @@ class RPMOSTreeDBusClient {
             if (deployment.id && deployment.osname?.v !== os_name)
                 continue;
 
+            // treat container-image-reference as origin
+            if (!deployment.origin && deployment["container-image-reference"])
+                deployment.origin = deployment["container-image-reference"];
+
             // required for pinning deployments
             deployment.index = i;
 
@@ -399,16 +405,16 @@ class RPMOSTreeDBusClient {
     }
 
     get_default_origin(os) {
-        let parts;
         let origin = this.get_os_origin(os);
 
+        // OStree repos look like "local:fedora/x86_64/coreos/testing"
+        // OCI repos like 'ostree-unverified-registry:quay.io/fedora/fedora-coreos:stable'
         if (origin) {
-            parts = origin.split(':');
-            if (parts.length > 1) {
-                origin = { remote: parts[0] };
-                parts.shift();
-                origin.branch = parts.join(':');
-            }
+            const parts = origin.split(':');
+            if (parts.length > 1)
+                origin = { remote: parts.slice(0, -1).join(':'), branch: parts[parts.length - 1] };
+            else
+                origin = { remote: origin };
         }
 
         return origin;
