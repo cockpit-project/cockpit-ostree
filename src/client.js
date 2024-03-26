@@ -597,6 +597,8 @@ class RPMOSTreeDBusClient {
         let i;
         let reboot = false;
 
+        logDebug("run_transaction", method, method_args, os, ": start");
+
         if (Array.isArray(method_args)) {
             for (i = 0; i < method_args.length; i++) {
                 const val = method_args[i];
@@ -627,6 +629,7 @@ class RPMOSTreeDBusClient {
         };
 
         const on_close = (event, ex) => {
+            logDebug("run_transaction", method, method_args, os, ": closed", ex);
             fail(ex);
         };
 
@@ -656,12 +659,15 @@ class RPMOSTreeDBusClient {
                                         { path: "/", },
                                         (path, iface, signal, args) => {
                                             if (signal === "DownloadProgress") {
+                                                logDebug("run_transaction", method, method_args, os, ": got DownloadProgress", args);
                                                 const line = build_progress_line(args);
                                                 if (line)
                                                     dp.notify(line);
                                             } else if (signal === "Message") {
+                                                logDebug("run_transaction", method, method_args, os, ": got Message", args[0]);
                                                 dp.notify(args[0]);
                                             } else if (signal === "Finished") {
+                                                logDebug("run_transaction", method, method_args, os, ": got Finished", args);
                                                 if (args) {
                                                     if (args[0]) {
                                                         dp.resolve(args[1]);
