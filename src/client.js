@@ -12,64 +12,6 @@ const SYSROOT_PATH = '/org/projectatomic/rpmostree1/Sysroot';
 const OS = 'org.projectatomic.rpmostree1.OS';
 const TRANSACTION = 'org.projectatomic.rpmostree1.Transaction';
 
-/*
- * Breaks down progress messages into
- * a string that can be displayed
- * Similar to the cli output but simpler.
- * We don't display object counts or bytes/s.
- * Percentages are only possible when
- * we actually know what is going to be pulled.
- *
- * progress_arg is a tuple of 6 tuples
- * with the following values:
- *
- * time data (tt): (start time, elapsed seconds)
- * outstanding data counts (uu): (outstanding fetches,
- *                                 outstanding writes)
- * metadata counts (uuu): (scanned, fetched, outstanding)
- * delta data (uuut): (total parts, fetched parts,
- *                     total super blocks, total size)
- * content objects (uu): (fetched objects, requested objects)
- * transfer data (tt): (bytes transferred, bytes/s)
- */
-
-function build_progress_line(progress_arg) {
-    if (!progress_arg || progress_arg.length !== 6 ||
-        progress_arg[0].length !== 2 || progress_arg[1].length !== 2 ||
-        progress_arg[2].length !== 3 || progress_arg[3].length !== 4 ||
-        progress_arg[4].length !== 2 || progress_arg[5].length !== 2) {
-        console.warn("Unknown progress data", progress_arg);
-        return;
-    }
-
-    let line;
-    const outstanding_fetches = progress_arg[1][0];
-    const outstanding_writes = progress_arg[1][0];
-
-    const outstanding_metadata_fetches = progress_arg[2][2];
-
-    const total_delta_parts = progress_arg[3][0];
-
-    const fetched = progress_arg[4][0];
-    const requested = progress_arg[4][1];
-
-    if (outstanding_fetches) {
-        if (total_delta_parts > 0) {
-            line = _("Receiving delta parts");
-        } else if (outstanding_metadata_fetches) {
-            line = _("Receiving metadata objects");
-        } else {
-            const percent = (fetched / requested) * 100;
-            line = cockpit.format(_("Receiving objects: $0%"), percent.toFixed(2));
-        }
-    } else if (outstanding_writes) {
-        line = _("Writing objects");
-    } else {
-        line = _("Scanning metadata");
-    }
-    return line;
-}
-
 function process_diff_list(result) {
     const key_names = ["adds", "removes", "up", "down"];
     const list = result[0];
@@ -660,12 +602,8 @@ class RPMOSTreeDBusClient {
                                         (path, iface, signal, args) => {
                                             if (signal === "DownloadProgress") {
                                                 logDebug("run_transaction", method, method_args, os, ": got DownloadProgress", args);
-                                                const line = build_progress_line(args);
-                                                if (line)
-                                                    dp.notify(line);
                                             } else if (signal === "Message") {
                                                 logDebug("run_transaction", method, method_args, os, ": got Message", args[0]);
-                                                dp.notify(args[0]);
                                             } else if (signal === "Finished") {
                                                 logDebug("run_transaction", method, method_args, os, ": got Finished", args);
                                                 if (args) {
