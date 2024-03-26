@@ -652,28 +652,29 @@ class RPMOSTreeDBusClient {
                                     transaction_client = cockpit.dbus(null, connect_args);
                                     transaction_client.addEventListener("close", on_close);
 
-                                    subscription = transaction_client.subscribe({ path: "/", },
-                                                                                (path, iface, signal, args) => {
-                                                                                    if (signal === "DownloadProgress") {
-                                                                                        const line = build_progress_line(args);
-                                                                                        if (line)
-                                                                                            dp.notify(line);
-                                                                                    } else if (signal === "Message") {
-                                                                                        dp.notify(args[0]);
-                                                                                    } else if (signal === "Finished") {
-                                                                                        if (args) {
-                                                                                            if (args[0]) {
-                                                                                                dp.resolve(args[1]);
-                                                                                                cleanup();
-                                                                                            } else {
-                                                                                                fail(args[1]);
-                                                                                            }
-                                                                                        } else {
-                                                                                            console.warn("Unexpected transaction response", args);
-                                                                                            fail({ problem: "protocol-error" });
-                                                                                        }
-                                                                                    }
-                                                                                });
+                                    subscription = transaction_client.subscribe(
+                                        { path: "/", },
+                                        (path, iface, signal, args) => {
+                                            if (signal === "DownloadProgress") {
+                                                const line = build_progress_line(args);
+                                                if (line)
+                                                    dp.notify(line);
+                                            } else if (signal === "Message") {
+                                                dp.notify(args[0]);
+                                            } else if (signal === "Finished") {
+                                                if (args) {
+                                                    if (args[0]) {
+                                                        dp.resolve(args[1]);
+                                                        cleanup();
+                                                    } else {
+                                                        fail(args[1]);
+                                                    }
+                                                } else {
+                                                    console.warn("Unexpected transaction response", args);
+                                                    fail({ problem: "protocol-error" });
+                                                }
+                                            }
+                                        });
                                     transaction_client.call("/", TRANSACTION, "Start");
                                 })
                                 .catch(fail);
