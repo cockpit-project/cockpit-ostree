@@ -592,6 +592,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.call_js_func("ph_count_check", "#available-deployments tbody tr",  2)
 
         # Manually delete base.1 deployment
+        wait_deployment_prop(b, 2, "Status", "Pinned")
         do_deployment_action(b, 2, "Unpin")
         b.wait_not_present("#available-deployments .pf-v5-c-dropdown__menu")
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
