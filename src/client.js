@@ -531,18 +531,16 @@ class RPMOSTreeDBusClient {
         });
     }
 
-    run_transaction(method, method_args, os) {
+    async run_transaction(method, method_args, os) {
         this.local_running = method + ":" + os;
         let transaction_client = null;
         let subscription = null;
-        const dp = cockpit.defer();
-        let i;
         let reboot = false;
 
         logDebug("run_transaction", method, method_args, os, ": start");
 
         if (Array.isArray(method_args)) {
-            for (i = 0; i < method_args.length; i++) {
+            for (let i = 0; i < method_args.length; i++) {
                 const val = method_args[i];
                 if (val !== null && typeof val === 'object' && "reboot" in val) {
                     reboot = method_args[i].reboot;
@@ -551,7 +549,60 @@ class RPMOSTreeDBusClient {
             }
         }
 
-        const cleanup = () => {
+        const on_close = (event, ex) => {
+            logDebug("run_transaction", method, method_args, os, ": closed", ex);
+            throw ex;
+        };
+
+        try {
+            await this.connect();
+            const proxy = this.get_os_proxy(os);
+
+            if (!proxy)
+                throw new Error(cockpit.format(_("OS $0 not found"), os));
+
+            await this.reload();
+
+            const [transaction_address] = await proxy.call(method, method_args);
+            logDebug("run_transaction address:", transaction_address);
+
+            if (reboot)
+                cockpit.hint('restart');
+
+            transaction_client = cockpit.dbus(null, {
+                superuser: true,
+                address: transaction_address,
+                bus: "none"
+            });
+            transaction_client.addEventListener("close", on_close);
+
+            // Starting the transaction returns immediately, we need to wait for the signals
+
+            return await new Promise((resolve, reject) => {
+                subscription = transaction_client.subscribe(
+                    { path: "/", },
+                    (path, iface, signal, args) => {
+                        if (signal === "DownloadProgress") {
+                            logDebug("run_transaction", method, method_args, os, ": got DownloadProgress", args);
+                        } else if (signal === "Message") {
+                            logDebug("run_transaction", method, method_args, os, ": got Message", args[0]);
+                        } else if (signal === "Finished") {
+                            logDebug("run_transaction", method, method_args, os, ": got Finished", args);
+                            if (args) {
+                                if (args[0]) {
+                                    resolve(args[1]);
+                                } else {
+                                    reject(args[1]);
+                                }
+                            } else {
+                                console.warn("Unexpected transaction response", args);
+                                reject(Error({ problem: "protocol-error" }));
+                            }
+                        }
+                    });
+                transaction_client.call("/", TRANSACTION, "Start");
+            });
+        } finally {
             this.local_running = null;
             if (transaction_client) {
                 if (subscription)
@@ -563,70 +614,7 @@ class RPMOSTreeDBusClient {
             transaction_client = null;
             subscription = null;
             this.trigger_changed();
-        };
-
-        const fail = ex => {
-            dp.reject(ex);
-            cleanup();
-        };
-
-        const on_close = (event, ex) => {
-            logDebug("run_transaction", method, method_args, os, ": closed", ex);
-            fail(ex);
-        };
-
-        this.connect()
-                .then(() => {
-                    const proxy = this.get_os_proxy(os);
-
-                    if (!proxy)
-                        return fail(cockpit.format(_("OS $0 not found"), os));
-
-                    this.reload().then(() => {
-                        proxy.call(method, method_args)
-                                .then(result => {
-                                    const connect_args = {
-                                        superuser: true,
-                                        address: result[0],
-                                        bus: "none"
-                                    };
-
-                                    if (reboot)
-                                        cockpit.hint('restart');
-
-                                    transaction_client = cockpit.dbus(null, connect_args);
-                                    transaction_client.addEventListener("close", on_close);
-
-                                    subscription = transaction_client.subscribe(
-                                        { path: "/", },
-                                        (path, iface, signal, args) => {
-                                            if (signal === "DownloadProgress") {
-                                                logDebug("run_transaction", method, method_args, os, ": got DownloadProgress", args);
-                                            } else if (signal === "Message") {
-                                                logDebug("run_transaction", method, method_args, os, ": got Message", args[0]);
-                                            } else if (signal === "Finished") {
-                                                logDebug("run_transaction", method, method_args, os, ": got Finished", args);
-                                                if (args) {
-                                                    if (args[0]) {
-                                                        dp.resolve(args[1]);
-                                                        cleanup();
-                                                    } else {
-                                                        fail(args[1]);
-                                                    }
-                                                } else {
-                                                    console.warn("Unexpected transaction response", args);
-                                                    fail({ problem: "protocol-error" });
-                                                }
-                                            }
-                                        });
-                                    transaction_client.call("/", TRANSACTION, "Start");
-                                })
-                                .catch(fail);
-                    });
-                })
-                .catch(fail);
-
-        return dp.promise();
+        }
     }
 }
 
