@@ -496,26 +496,23 @@ class RPMOSTreeDBusClient {
         }
     }
 
-    check_for_updates(os, remote, branch) {
-        let promise;
+    async check_for_updates(os, remote, branch) {
         const refspec = this.build_change_refspec(os, remote, branch);
         if (refspec) {
-            promise = this.run_transaction("DownloadRebaseRpmDiff", [refspec, []], os)
-                    .then(() => {
-                        // Need to get and store the cached data.
-                        // Make it like this is part of the download
-                        // call.
-                        this.local_running = "DownloadRebaseRpmDiff:" + os;
-                        return this.cache_update_for(os, remote, branch)
-                                .finally(() => {
-                                    this.local_running = null;
-                                    this.trigger_changed();
-                                });
-                    });
+            await this.run_transaction("DownloadRebaseRpmDiff", [refspec, []], os);
+            // Need to get and store the cached data.
+            // Make it like this is part of the download
+            // call.
+            this.local_running = "DownloadRebaseRpmDiff:" + os;
+            try {
+                return await this.cache_update_for(os, remote, branch);
+            } finally {
+                this.local_running = null;
+                this.trigger_changed();
+            }
         } else {
-            promise = this.run_transaction("DownloadUpdateRpmDiff", null, os);
+            await this.run_transaction("DownloadUpdateRpmDiff", null, os);
         }
-        return promise;
     }
 
     reload() {
