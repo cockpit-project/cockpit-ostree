@@ -166,7 +166,7 @@ class RPMOSTreeDBusClient {
             this.client = cockpit.dbus(DEST, { superuser: true, capabilities: ["address"] });
 
             /* Watch before listening for close because watch fires first */
-            this.client.watch(PATH).fail(this.tear_down);
+            this.client.watch(PATH).catch(this.tear_down);
             this.client.addEventListener("close", (event, ex) => {
                 this.tear_down(ex);
                 this.dispatchEvent("connectionLost", [ex]);
