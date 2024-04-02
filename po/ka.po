@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-01 02:51+0000\n"
+"POT-Creation-Date: 2024-03-27 02:51+0000\n"
 "PO-Revision-Date: 2023-12-11 06:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -20,53 +20,53 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 5.2.1\n"
 
-#: src/ostree.jsx:355
+#: src/ostree.jsx:357
 msgid "$0 and reboot"
 msgstr "$0 და გადატვირთვა"
 
-#: src/client.js:445
+#: src/client.js:460
 msgid "$0 key ID"
 msgstr "$0 გასაღების ID"
 
-#: src/repositoryModals.jsx:293
+#: src/repositoryModals.jsx:318
 msgid "Add another key"
 msgstr "კიდევ ერთი გასაღების დამატება"
 
-#: src/repositoryModals.jsx:150
+#: src/repositoryModals.jsx:179
 msgid "Add new repository"
 msgstr "ახალი რეპოზიტორიის დამატება"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:140
+#: src/repositoryModals.jsx:169 src/ostree.jsx:653
 msgid "Add repository"
 msgstr "რეპოზიტორიის დამატება"
 
-#: src/ostree.jsx:187
+#: src/ostree.jsx:189
 msgid "Additions"
 msgstr "დამატებები"
 
-#: src/repositoryModals.jsx:295
+#: src/repositoryModals.jsx:320
 msgid "Begins with $0"
 msgstr "იწყება $0-ით"
 
-#: src/ostree.jsx:311 src/ostree.jsx:708 src/repositoryModals.jsx:429
+#: src/repositoryModals.jsx:446 src/ostree.jsx:313 src/ostree.jsx:692
 msgid "Branch"
 msgstr "ბრენჩი"
 
-#: src/ostree.jsx:358 src/repositoryModals.jsx:72 src/repositoryModals.jsx:143
-#: src/repositoryModals.jsx:247 src/repositoryModals.jsx:361
 #: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
 msgid "Cancel"
 msgstr "გაუქმება"
 
-#: src/ostree.jsx:807
+#: src/ostree.jsx:791
 msgid "Checking for package updates..."
 msgstr "პაკეტების განახლებების შემოწმება..."
 
-#: src/ostree.jsx:837
+#: src/ostree.jsx:821
 msgid "Checking for updates"
 msgstr "განახლებების შემოწმება"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:899
 msgid "Clean up"
 msgstr "მოსუფთავება"
 
@@ -74,83 +74,83 @@ msgstr "მოსუფთავება"
 msgid "Clear cache and deployments"
 msgstr "კეშებისა და გაშლების გასუფთავება"
 
-#: src/ostree.jsx:409
+#: src/ostree.jsx:411
 msgid "Close"
 msgstr "დახურვა"
 
-#: src/ostree.jsx:136
+#: src/ostree.jsx:138
 msgid "Connecting to OSTree"
 msgstr "OSTree-თან დაკავშირება"
 
-#: src/ostree.jsx:396
+#: src/ostree.jsx:398
 msgid "Current"
 msgstr "მიმდინარე"
 
-#: src/ostree.jsx:561
+#: src/ostree.jsx:559
 msgid "Delete"
 msgstr "წაშლა"
 
-#: src/ostree.jsx:326 src/ostree.jsx:949
+#: src/ostree.jsx:328 src/ostree.jsx:931
 msgid "Deployments and updates"
 msgstr "გაშლები და განახლებები"
 
-#: src/ostree.jsx:190
+#: src/ostree.jsx:192
 msgid "Downgrades"
 msgstr "ვერსიის ჩამოწევა"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:252
+#: src/repositoryModals.jsx:280 src/ostree.jsx:662
 msgid "Edit repository"
 msgstr "რეპოზიტორიის ჩასწორება"
 
-#: src/ostree.jsx:853
+#: src/ostree.jsx:837
 msgid "Error loading remotes: $0"
 msgstr "დაშორებულების ჩატვირთვის შეცდომა: $0"
 
-#: src/ostree.jsx:229
+#: src/ostree.jsx:231
 msgid "Expired signature"
 msgstr "ვადაგასული ხელმოწერა"
 
-#: src/ostree.jsx:412
+#: src/ostree.jsx:414
 msgid "Failed"
 msgstr "შეცდომა"
 
-#: src/ostree.jsx:293
+#: src/ostree.jsx:295
 msgid "Failed to rebase deployment"
 msgstr "გაშლის ბაზის შეცვლის შეცდომა"
 
-#: src/ostree.jsx:272
+#: src/ostree.jsx:274
 msgid "Failed to roll back deployment"
 msgstr "გაშლის დაბრუნების შეცდომა"
 
-#: src/ostree.jsx:282
+#: src/ostree.jsx:284
 msgid "Failed to upgrade deployment"
 msgstr "გაშლის განახლების შეცდომა"
 
-#: src/repositoryModals.jsx:298
+#: src/repositoryModals.jsx:323
 msgid "GPG public key"
 msgstr "GPG-ის საჯარო გასაღები"
 
-#: src/ostree.jsx:229
+#: src/ostree.jsx:231
 msgid "Good signature"
 msgstr "კარგი ხელმოწერა"
 
-#: src/ostree.jsx:229
+#: src/ostree.jsx:231
 msgid "Invalid signature"
 msgstr "არასწორი ხელმოწერა"
 
-#: src/repositoryModals.jsx:407
+#: src/repositoryModals.jsx:424
 msgid "Loading branches"
 msgstr "ბრენჩების ჩატვირთვა"
 
-#: src/repositoryModals.jsx:158
+#: src/repositoryModals.jsx:187
 msgid "Name"
 msgstr "სახელი"
 
-#: src/ostree.jsx:419
+#: src/ostree.jsx:421
 msgid "New"
 msgstr "ახალი"
 
-#: src/ostree.jsx:760
+#: src/ostree.jsx:743
 msgid "No OSTree deployments found"
 msgstr "OSTree-ს გაშლები ნაპოვნი არაა"
 
@@ -158,40 +158,40 @@ msgstr "OSTree-ს გაშლები ნაპოვნი არაა"
 msgid "No configuration data found"
 msgstr "კონფიგურაციის მონაცემები ნაპოვნი არაა"
 
-#: src/ostree.jsx:140
+#: src/ostree.jsx:142
 msgid "No deployments"
 msgstr "გაშლილი არაა"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:255
 msgid "No signature available"
 msgstr "ხელმოწერები ხელმიუწვდომელია"
 
-#: src/ostree.jsx:785
+#: src/ostree.jsx:769
 msgid "Not authorized to update software on this system"
 msgstr ""
 "ამ სისტემის პროგრამული უზრუნველყოფის განახლებისთვის ავტორიზაცია არ გაგაჩნიათ"
 
-#: src/client.js:538 src/client.js:623
+#: src/client.js:553 src/client.js:638
 msgid "OS $0 not found"
 msgstr "OS $0 ნაპოვნი არაა"
 
-#: src/ostree.jsx:787
+#: src/ostree.jsx:771
 msgid "OSTree is not available on this system"
 msgstr "მიმდინარე სისტემაზე OSTree-ი ხელმიუწვდომელია"
 
-#: src/ostree.jsx:699
+#: src/ostree.jsx:683
 msgid "OSTree source"
 msgstr "OSTreeის წყარო"
 
-#: src/ostree.jsx:206
+#: src/ostree.jsx:208
 msgid "Operating system"
 msgstr "ოპერაციული სისტემა"
 
-#: src/ostree.jsx:218
+#: src/ostree.jsx:220
 msgid "Origin"
 msgstr "საწყისი"
 
-#: src/ostree.jsx:505
+#: src/ostree.jsx:507
 msgid "Packages"
 msgstr "პაკეტები"
 
@@ -203,19 +203,19 @@ msgstr "პაკეტები, რომლებიც დაემატა
 msgid "Pending deployment"
 msgstr "გაშლის მოლოდინში"
 
-#: src/ostree.jsx:547
+#: src/ostree.jsx:545
 msgid "Pin"
 msgstr "მიმაგრება"
 
-#: src/ostree.jsx:398
+#: src/ostree.jsx:400
 msgid "Pinned"
 msgstr "მიმაგრებულია"
 
-#: src/repositoryModals.jsx:183
+#: src/repositoryModals.jsx:212
 msgid "Please provide a valid URL"
 msgstr "შეიყვანეთ სწორი URL-ი"
 
-#: src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:198
 msgid "Please provide a valid name"
 msgstr "შეიყვანეთ სწორი სახელი"
 
@@ -223,39 +223,39 @@ msgstr "შეიყვანეთ სწორი სახელი"
 msgid "RPM repo metadata"
 msgstr "RPM-ის რეპოზიტორიის მეტამონაცემები"
 
-#: src/ostree.jsx:448 src/ostree.jsx:655 src/repositoryModals.jsx:355
+#: src/repositoryModals.jsx:378 src/ostree.jsx:450 src/ostree.jsx:645
 msgid "Rebase"
 msgstr "ბაზის შეცვლა"
 
-#: src/repositoryModals.jsx:412
+#: src/repositoryModals.jsx:429
 msgid "Rebase repository and branch"
 msgstr "რეპოზიტორიის ბაზის შეცვლა და ბრენჩი"
 
-#: src/client.js:56
+#: src/client.js:58
 msgid "Receiving delta parts"
 msgstr "დელტა ნაწილების მიღება"
 
-#: src/client.js:58
+#: src/client.js:60
 msgid "Receiving metadata objects"
 msgstr "მეტამონაცემების ობიექტების მიღება"
 
-#: src/client.js:61
+#: src/client.js:63
 msgid "Receiving objects: $0%"
 msgstr "ობიექტების მიღება: $0%"
 
-#: src/ostree.jsx:148
+#: src/ostree.jsx:150
 msgid "Reconnect"
 msgstr "თავიდან დაკავშირება"
 
-#: src/ostree.jsx:214
+#: src/ostree.jsx:216
 msgid "Released"
 msgstr "გამოშვებულია"
 
-#: src/ostree.jsx:188
+#: src/ostree.jsx:190
 msgid "Removals"
 msgstr "წაშლები"
 
-#: src/repositoryModals.jsx:69
+#: src/repositoryModals.jsx:98
 msgid "Remove"
 msgstr "წაშლა"
 
@@ -275,16 +275,16 @@ msgstr ""
 "პაკეტების დამატებების ან ჩანაცვლებების მოცილება მიმდინარე გაშლის ორიგინალურ "
 "მდგომარეობაში დასაბრუნებლად."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:90
+#: src/repositoryModals.jsx:119 src/ostree.jsx:672
 msgid "Remove repository"
 msgstr "რეპოზიტორიის წაშლა"
 
-#: src/ostree.jsx:704 src/repositoryModals.jsx:99 src/repositoryModals.jsx:262
-#: src/repositoryModals.jsx:422
+#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:439 src/ostree.jsx:688
 msgid "Repository"
 msgstr "რეპოზიტორია"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:905
 msgid "Reset"
 msgstr "ჩამოყრა"
 
@@ -292,7 +292,7 @@ msgstr "ჩამოყრა"
 msgid "Reset to original state"
 msgstr "ორიგინალურ მდგომარეობაზე დაბრუნება"
 
-#: src/ostree.jsx:447
+#: src/ostree.jsx:449
 msgid "Roll back"
 msgstr "დაბრუნება"
 
@@ -300,23 +300,23 @@ msgstr "დაბრუნება"
 msgid "Rollback deployment"
 msgstr "გაშლის დაბრუნება"
 
-#: src/repositoryModals.jsx:244
+#: src/repositoryModals.jsx:272
 msgid "Save"
 msgstr "შენახვა"
 
-#: src/client.js:66
+#: src/client.js:68
 msgid "Scanning metadata"
 msgstr "მეტამონაცემების ძებნა"
 
-#: src/repositoryModals.jsx:186
+#: src/repositoryModals.jsx:215
 msgid "Security"
 msgstr "უსაფრთხოება"
 
-#: src/ostree.jsx:510
+#: src/ostree.jsx:512
 msgid "Signatures"
 msgstr "ხელმოწერები"
 
-#: src/ostree.jsx:234
+#: src/ostree.jsx:236
 msgid "Signed by"
 msgstr "ხელმოწერილია"
 
@@ -324,7 +324,7 @@ msgstr "ხელმოწერილია"
 msgid "Software updates"
 msgstr "პროგრამული განახლებები"
 
-#: src/ostree.jsx:303 src/ostree.jsx:615
+#: src/ostree.jsx:305 src/ostree.jsx:606
 msgid "Status"
 msgstr "მდგომარეობა"
 
@@ -332,11 +332,11 @@ msgstr "მდგომარეობა"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "პაკეტის ჩანაცვლება, რომლებიც ჩვეულებრივ ოს-ის აგებისას გამოიყენება"
 
-#: src/ostree.jsx:105 src/ostree.jsx:590
+#: src/ostree.jsx:107 src/ostree.jsx:581
 msgid "System is up to date"
 msgstr "სისტემა განახლებულია"
 
-#: src/ostree.jsx:428 src/ostree.jsx:434 src/ostree.jsx:440
+#: src/ostree.jsx:430 src/ostree.jsx:436 src/ostree.jsx:442
 msgid "System will rebase to $0, updated $1."
 msgstr "სისტემის ბაზა შეიცვლება $0-ზე. განახლდება $1."
 
@@ -344,74 +344,74 @@ msgstr "სისტემის ბაზა შეიცვლება $0-ზ
 msgid "Temporary files"
 msgstr "დროებითი ფაილები"
 
-#: src/ostree.jsx:170
+#: src/ostree.jsx:172
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "ეს გაშლა შეიცავს ზოგიერთი პაკეტის იგივე ვერსიას, რომელსაც თქვენი ამჟამად "
 "ჩატვირთული სისტემა"
 
-#: src/ostree.jsx:307
+#: src/ostree.jsx:309
 msgid "Time"
 msgstr "დრო"
 
-#: src/ostree.jsx:500
+#: src/ostree.jsx:502
 msgid "Tree"
 msgstr "ხე"
 
-#: src/repositoryModals.jsx:172 src/repositoryModals.jsx:275
+#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:138
+#: src/ostree.jsx:140
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree-თან დაკავშირება შეუძლებელია"
 
-#: src/ostree.jsx:547
+#: src/ostree.jsx:545
 msgid "Unpin"
 msgstr "მოხსნა"
 
-#: src/ostree.jsx:446
+#: src/ostree.jsx:448
 msgid "Update"
 msgstr "განახლება"
 
-#: src/ostree.jsx:584
+#: src/ostree.jsx:575
 msgid "Update available"
 msgstr "ხელმისაწვდომია განახლება"
 
-#: src/ostree.jsx:111
+#: src/ostree.jsx:113
 msgid "Update available: $0"
 msgstr "განახლება ხელმისაწვდომია: $0"
 
-#: src/ostree.jsx:189
+#: src/ostree.jsx:191
 msgid "Updates"
 msgstr "განახლებები"
 
-#: src/ostree.jsx:394
+#: src/ostree.jsx:396
 msgid "Updating"
 msgstr "მიმდინარეობს განახლება"
 
-#: src/repositoryModals.jsx:191 src/repositoryModals.jsx:284
+#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
 msgid "Use trusted GPG key"
 msgstr "გამოიყენეთ სანდო GPG გასაღები"
 
-#: src/ostree.jsx:246
+#: src/ostree.jsx:248
 msgid "Validity"
 msgstr "სისწორე"
 
-#: src/ostree.jsx:210 src/ostree.jsx:299
+#: src/ostree.jsx:212 src/ostree.jsx:301
 msgid "Version"
 msgstr "ვერსია"
 
-#: src/ostree.jsx:238
+#: src/ostree.jsx:240
 msgid "When"
 msgstr "როდის"
 
-#: src/client.js:64
+#: src/client.js:66
 msgid "Writing objects"
 msgstr "ობიექტების ჩაწერა"
 
-#: src/ostree.jsx:413
+#: src/ostree.jsx:415
 msgid "view more..."
 msgstr "მეტის ნახვა..."
 
