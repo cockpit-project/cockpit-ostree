@@ -9,13 +9,9 @@ printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
 # Install cockpit and run it once to generate certificate; avoids slow startups during tests
 podman container runlabel INSTALL cockpit/ws
 
-# fedora-coreos does not have this checkout
-if [ ! -d /var/local-tree ]; then
-    checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
-    ostree checkout "$checkout" /var/local-tree
-fi
-
 # create a local repository for tests
+checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
+ostree checkout "$checkout" /var/local-tree
 mkdir -p /var/local-repo
 ostree init --repo /var/local-repo --mode archive-z2
 branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\|rhel-edge\):/ { s/^.*://; p; q }')
