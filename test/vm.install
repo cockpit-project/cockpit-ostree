@@ -49,7 +49,7 @@ if [ "${branch%fedora*}" != "$branch" ]; then
 fi
 
 # Enable ssh password authentication
-sed -i '/PasswordAuthentication no/d' /etc/ssh/sshd_config
+echo 'PasswordAuthentication yes' > /etc/ssh/sshd_config.d/90-password.conf
 
 rpm-ostree status
 
