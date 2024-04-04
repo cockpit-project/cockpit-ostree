@@ -9,6 +9,17 @@ printf "[WebService]\\nAllowUnencrypted=true\\n" > /etc/cockpit/cockpit.conf
 # Install cockpit and run it once to generate certificate; avoids slow startups during tests
 podman container runlabel INSTALL cockpit/ws
 
+# unpack the RPM; we want to test that it has the right contents, but we don't want to actually install it:
+# it would be an overlay (colliding with rebase tests), or really expensive to add into the tree especially with
+# OCI/bootc
+if grep -q platform:el9 /etc/os-release; then
+    # meh old and incompatible CLI
+    rpm2archive /tmp/cockpit-ostree-*.rpm
+    tar -C / --transform 's,/usr/,/usr/local/,' -xzvf /tmp/cockpit-ostree-*.rpm.tgz
+else
+    rpm2archive /tmp/cockpit-ostree-*.rpm | tar -C / --transform 's,/usr/,/usr/local/,' -xzv
+fi
+
 # create a local repository for tests
 checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
 ostree checkout "$checkout" /var/local-tree
@@ -23,13 +34,7 @@ ostree commit -s "cockpit-tree" --repo /var/local-repo \
 ostree remote add local file:///var/local-repo --no-gpg-verify
 
 # switch to our local repository
-if [ "${branch%fedora*}" != "$branch" ] || [ "${branch%rhel*}" != "$branch" ]; then
-    # on fedora-coreos we use `rpm-ostree install`, which collides on rebase
-    rpm-ostree rebase --uninstall=cockpit-ostree local:$branch
-else
-    # on rhel4edge, cockpit-ostree is not preinstalled
-    rpm-ostree rebase local:$branch
-fi
+rpm-ostree rebase local:$branch
 
 # build an OCI image from our local repository; ouput to a local registry,
 # as rpm-ostree does not support a local podman image, and using a registry is the realistic use case
