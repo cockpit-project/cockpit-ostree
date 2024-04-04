@@ -20,39 +20,41 @@ else
     rpm2archive /tmp/cockpit-ostree-*.rpm | tar -C / --transform 's,/usr/,/usr/local/,' -xzv
 fi
 
-# create a local repository for tests
-checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
-ostree checkout "$checkout" /var/local-tree
-mkdir -p /var/local-repo
-ostree init --repo /var/local-repo --mode archive-z2
-branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\|rhel-edge\):/ { s/^.*://; p; q }')
-# OCI repository requires rpmostree.inputhash for content comparison; optimization, not important for tests
-ostree commit -s "cockpit-tree" --repo /var/local-repo \
-    --add-metadata-string version=cockpit-base.1 \
-    --add-metadata-string rpmostree.inputhash=dummy \
-    --tree=dir=/var/local-tree  -b $branch
-ostree remote add local file:///var/local-repo --no-gpg-verify
+if ! bootc status >/dev/null; then
+    # for classic rpm-ostree, create a local repository for tests
+    checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
+    ostree checkout "$checkout" /var/local-tree
+    mkdir -p /var/local-repo
+    ostree init --repo /var/local-repo --mode archive-z2
+    branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\|rhel-edge\):/ { s/^.*://; p; q }')
+    # OCI repository requires rpmostree.inputhash for content comparison; optimization, not important for tests
+    ostree commit -s "cockpit-tree" --repo /var/local-repo \
+        --add-metadata-string version=cockpit-base.1 \
+        --add-metadata-string rpmostree.inputhash=dummy \
+        --tree=dir=/var/local-tree  -b $branch
+    ostree remote add local file:///var/local-repo --no-gpg-verify
 
-# switch to our local repository
-rpm-ostree rebase local:$branch
+    # switch to our local repository
+    rpm-ostree rebase local:$branch
 
-# build an OCI image from our local repository; ouput to a local registry,
-# as rpm-ostree does not support a local podman image, and using a registry is the realistic use case
-if [ "${branch%fedora*}" != "$branch" ]; then
-    podman run -d --name ostree-registry --rm -p 5000:5000 -v ostree-oci:/var/lib/registry localhost/test-registry
-    mv /etc/containers/registries.conf /etc/containers/registries.conf.orig
-    printf '[registries.insecure]\nregistries = ["localhost:5000"]\n' > /etc/containers/registries.conf
-    rpm-ostree compose container-encapsulate \
-        --repo=/var/local-repo \
-        --label ostree.bootable=true \
-        $branch registry:localhost:5000/ostree-oci:cockpit1
-    podman stop ostree-registry
+    # build an OCI image from our local repository; ouput to a local registry,
+    # as rpm-ostree does not support a local podman image, and using a registry is the realistic use case
+    if [ "${branch%fedora*}" != "$branch" ]; then
+        podman run -d --name ostree-registry --rm -p 5000:5000 -v ostree-oci:/var/lib/registry localhost/test-registry
+        mv /etc/containers/registries.conf /etc/containers/registries.conf.orig
+        printf '[registries.insecure]\nregistries = ["localhost:5000"]\n' > /etc/containers/registries.conf
+        rpm-ostree compose container-encapsulate \
+            --repo=/var/local-repo \
+            --label ostree.bootable=true \
+            $branch registry:localhost:5000/ostree-oci:cockpit1
+        podman stop ostree-registry
+    fi
+
+    rpm-ostree status
 fi
 
 # Enable ssh password authentication
 echo 'PasswordAuthentication yes' > /etc/ssh/sshd_config.d/90-password.conf
-
-rpm-ostree status
 
 if firewall-cmd --state >/dev/null 2>&1; then
     firewall-cmd --add-service=cockpit --permanent
