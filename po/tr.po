@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 02:51+0000\n"
+"POT-Creation-Date: 2024-04-11 02:52+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "$0 ve yeniden başlat"
 
-#: src/client.js:460
+#: src/client.js:402
 msgid "$0 key ID"
 msgstr "$0 anahtar kimliği"
 
@@ -34,7 +34,7 @@ msgstr "Başka anahtar ekle"
 msgid "Add new repository"
 msgstr "Yeni depo ekle"
 
-#: src/repositoryModals.jsx:169 src/ostree.jsx:653
+#: src/ostree.jsx:653 src/repositoryModals.jsx:169
 msgid "Add repository"
 msgstr "Depo ekle"
 
@@ -46,13 +46,13 @@ msgstr "Eklemeler"
 msgid "Begins with $0"
 msgstr "$0 ile başlar"
 
-#: src/repositoryModals.jsx:446 src/ostree.jsx:313 src/ostree.jsx:692
+#: src/ostree.jsx:313 src/ostree.jsx:692 src/repositoryModals.jsx:446
 msgid "Branch"
 msgstr "Dal"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
 msgid "Cancel"
 msgstr "İptal"
 
@@ -96,7 +96,7 @@ msgstr "Dağıtımlar ve güncellemeler"
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/repositoryModals.jsx:280 src/ostree.jsx:662
+#: src/ostree.jsx:662 src/repositoryModals.jsx:280
 msgid "Edit repository"
 msgstr "Depoyu düzenle"
 
@@ -168,7 +168,7 @@ msgstr "Mevcut imza yok"
 msgid "Not authorized to update software on this system"
 msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 
-#: src/client.js:553 src/client.js:638
+#: src/client.js:495 src/client.js:559
 msgid "OS $0 not found"
 msgstr "$0 işletim sistemi bulunamadı"
 
@@ -220,25 +220,13 @@ msgstr "Lütfen geçerli bir ad girin"
 msgid "RPM repo metadata"
 msgstr "RPM deposu üstverileri"
 
-#: src/repositoryModals.jsx:378 src/ostree.jsx:450 src/ostree.jsx:645
+#: src/ostree.jsx:450 src/ostree.jsx:645 src/repositoryModals.jsx:378
 msgid "Rebase"
 msgstr "Yeniden temellendir"
 
 #: src/repositoryModals.jsx:429
 msgid "Rebase repository and branch"
 msgstr "Depoyu ve dalı yeniden temellendir"
-
-#: src/client.js:58
-msgid "Receiving delta parts"
-msgstr "Delta parçaları alınıyor"
-
-#: src/client.js:60
-msgid "Receiving metadata objects"
-msgstr "Üst veri nesneleri alınıyor"
-
-#: src/client.js:63
-msgid "Receiving objects: $0%"
-msgstr "Nesneler alınıyor: %$0"
 
 #: src/ostree.jsx:150
 msgid "Reconnect"
@@ -272,12 +260,12 @@ msgstr ""
 "Şu anki dağıtımı orijinal durumuna döndürmek için paket eklemelerini veya "
 "değişikliklerini kaldırın."
 
-#: src/repositoryModals.jsx:119 src/ostree.jsx:672
+#: src/ostree.jsx:672 src/repositoryModals.jsx:119
 msgid "Remove repository"
 msgstr "Depoyu kaldır"
 
-#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:439 src/ostree.jsx:688
+#: src/ostree.jsx:688 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:439
 msgid "Repository"
 msgstr "Depo"
 
@@ -300,10 +288,6 @@ msgstr "Dağıtımı geri al"
 #: src/repositoryModals.jsx:272
 msgid "Save"
 msgstr "Kaydet"
-
-#: src/client.js:68
-msgid "Scanning metadata"
-msgstr "Üst veriler taranıyor"
 
 #: src/repositoryModals.jsx:215
 msgid "Security"
@@ -402,13 +386,24 @@ msgstr "Sürüm"
 msgid "When"
 msgstr "Ne zaman"
 
-#: src/client.js:66
-msgid "Writing objects"
-msgstr "Nesneler yazılıyor"
-
 #: src/ostree.jsx:415
 msgid "view more..."
 msgstr "daha fazla görüntüle..."
+
+#~ msgid "Receiving delta parts"
+#~ msgstr "Delta parçaları alınıyor"
+
+#~ msgid "Receiving metadata objects"
+#~ msgstr "Üst veri nesneleri alınıyor"
+
+#~ msgid "Receiving objects: $0%"
+#~ msgstr "Nesneler alınıyor: %$0"
+
+#~ msgid "Scanning metadata"
+#~ msgstr "Üst veriler taranıyor"
+
+#~ msgid "Writing objects"
+#~ msgstr "Nesneler yazılıyor"
 
 #~ msgid "Add"
 #~ msgstr "Ekle"

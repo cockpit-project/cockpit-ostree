@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 02:51+0000\n"
+"POT-Creation-Date: 2024-04-11 02:52+0000\n"
 "PO-Revision-Date: 2023-03-26 17:20+0000\n"
 "Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
@@ -29,7 +29,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "Rebase und Neustart"
 
-#: src/client.js:460
+#: src/client.js:402
 msgid "$0 key ID"
 msgstr "$0 Schlüssel-ID"
 
@@ -41,7 +41,7 @@ msgstr "Einen weiteren Schlüssel hinzufügen"
 msgid "Add new repository"
 msgstr "Neues Repositorium hinzufügen"
 
-#: src/repositoryModals.jsx:169 src/ostree.jsx:653
+#: src/ostree.jsx:653 src/repositoryModals.jsx:169
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Add repository"
@@ -55,13 +55,13 @@ msgstr "Neue Pakete"
 msgid "Begins with $0"
 msgstr "Beginnt mit $0"
 
-#: src/repositoryModals.jsx:446 src/ostree.jsx:313 src/ostree.jsx:692
+#: src/ostree.jsx:313 src/ostree.jsx:692 src/repositoryModals.jsx:446
 msgid "Branch"
 msgstr "Zweig"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -109,7 +109,7 @@ msgstr "Bereitstellungen und Aktualisierungen"
 msgid "Downgrades"
 msgstr "Herabstufungen"
 
-#: src/repositoryModals.jsx:280 src/ostree.jsx:662
+#: src/ostree.jsx:662 src/repositoryModals.jsx:280
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Edit repository"
@@ -185,7 +185,7 @@ msgstr "Keine Signatur verfügbar"
 msgid "Not authorized to update software on this system"
 msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 
-#: src/client.js:553 src/client.js:638
+#: src/client.js:495 src/client.js:559
 msgid "OS $0 not found"
 msgstr "OS $0 nicht gefunden"
 
@@ -239,25 +239,13 @@ msgstr "Bitte geben Sie einen gültigen Namen an"
 msgid "RPM repo metadata"
 msgstr ""
 
-#: src/repositoryModals.jsx:378 src/ostree.jsx:450 src/ostree.jsx:645
+#: src/ostree.jsx:450 src/ostree.jsx:645 src/repositoryModals.jsx:378
 msgid "Rebase"
 msgstr ""
 
 #: src/repositoryModals.jsx:429
 msgid "Rebase repository and branch"
 msgstr ""
-
-#: src/client.js:58
-msgid "Receiving delta parts"
-msgstr "Empfange Delta-Teile"
-
-#: src/client.js:60
-msgid "Receiving metadata objects"
-msgstr "Empfange Metadaten-Objekte"
-
-#: src/client.js:63
-msgid "Receiving objects: $0%"
-msgstr "Empfange Objekte: $0%"
 
 #: src/ostree.jsx:150
 msgid "Reconnect"
@@ -294,14 +282,14 @@ msgid ""
 "to its original state."
 msgstr ""
 
-#: src/repositoryModals.jsx:119 src/ostree.jsx:672
+#: src/ostree.jsx:672 src/repositoryModals.jsx:119
 #, fuzzy
 #| msgid "Repository"
 msgid "Remove repository"
 msgstr "Paketquelle"
 
-#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:439 src/ostree.jsx:688
+#: src/ostree.jsx:688 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:439
 msgid "Repository"
 msgstr "Paketquelle"
 
@@ -330,10 +318,6 @@ msgstr "Zurückrollen der Bereitstellungen fehlgeschlagen"
 #: src/repositoryModals.jsx:272
 msgid "Save"
 msgstr "Speichern"
-
-#: src/client.js:68
-msgid "Scanning metadata"
-msgstr "Untersuche Metadaten"
 
 #: src/repositoryModals.jsx:215
 msgid "Security"
@@ -437,13 +421,24 @@ msgstr "Version"
 msgid "When"
 msgstr "Wenn"
 
-#: src/client.js:66
-msgid "Writing objects"
-msgstr "Schreibe Objekte"
-
 #: src/ostree.jsx:415
 msgid "view more..."
 msgstr "mehr sehen..."
+
+#~ msgid "Receiving delta parts"
+#~ msgstr "Empfange Delta-Teile"
+
+#~ msgid "Receiving metadata objects"
+#~ msgstr "Empfange Metadaten-Objekte"
+
+#~ msgid "Receiving objects: $0%"
+#~ msgstr "Empfange Objekte: $0%"
+
+#~ msgid "Scanning metadata"
+#~ msgstr "Untersuche Metadaten"
+
+#~ msgid "Writing objects"
+#~ msgstr "Schreibe Objekte"
 
 #~ msgid "Add"
 #~ msgstr "Hinzufügen"
