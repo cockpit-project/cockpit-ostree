@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-03-27 02:51+0000\n"
+"POT-Creation-Date: 2024-04-11 02:52+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "$0 및 재시작"
 
-#: src/client.js:460
+#: src/client.js:402
 msgid "$0 key ID"
 msgstr "$0 키 ID"
 
@@ -34,7 +34,7 @@ msgstr "다른 키를 추가합니다"
 msgid "Add new repository"
 msgstr "신규 저장소 추가"
 
-#: src/repositoryModals.jsx:169 src/ostree.jsx:653
+#: src/ostree.jsx:653 src/repositoryModals.jsx:169
 msgid "Add repository"
 msgstr "저장소 추가"
 
@@ -46,13 +46,13 @@ msgstr "추가"
 msgid "Begins with $0"
 msgstr "$0부터 시작합니다"
 
-#: src/repositoryModals.jsx:446 src/ostree.jsx:313 src/ostree.jsx:692
+#: src/ostree.jsx:313 src/ostree.jsx:692 src/repositoryModals.jsx:446
 msgid "Branch"
 msgstr "분기"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
 msgid "Cancel"
 msgstr "취소"
 
@@ -96,7 +96,7 @@ msgstr "개발과 최신화"
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/repositoryModals.jsx:280 src/ostree.jsx:662
+#: src/ostree.jsx:662 src/repositoryModals.jsx:280
 msgid "Edit repository"
 msgstr "저장소 편집"
 
@@ -168,7 +168,7 @@ msgstr "이용 가능한 서명이 없습니다"
 msgid "Not authorized to update software on this system"
 msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
 
-#: src/client.js:553 src/client.js:638
+#: src/client.js:495 src/client.js:559
 msgid "OS $0 not found"
 msgstr "OS $0 찾을 수 없습니다"
 
@@ -220,25 +220,13 @@ msgstr "유효한 이름을 제공해야 합니다"
 msgid "RPM repo metadata"
 msgstr "RPM 저장소 메타자료"
 
-#: src/repositoryModals.jsx:378 src/ostree.jsx:450 src/ostree.jsx:645
+#: src/ostree.jsx:450 src/ostree.jsx:645 src/repositoryModals.jsx:378
 msgid "Rebase"
 msgstr "재구성"
 
 #: src/repositoryModals.jsx:429
 msgid "Rebase repository and branch"
 msgstr "저장소 및 분기를 재구성합니다"
-
-#: src/client.js:58
-msgid "Receiving delta parts"
-msgstr "델타 부분 받기"
-
-#: src/client.js:60
-msgid "Receiving metadata objects"
-msgstr "메타자료 대상 받기"
-
-#: src/client.js:63
-msgid "Receiving objects: $0%"
-msgstr "대상 받기: $0%"
 
 #: src/ostree.jsx:150
 msgid "Reconnect"
@@ -271,12 +259,12 @@ msgid ""
 msgstr ""
 "꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
 
-#: src/repositoryModals.jsx:119 src/ostree.jsx:672
+#: src/ostree.jsx:672 src/repositoryModals.jsx:119
 msgid "Remove repository"
 msgstr "저장소 제거"
 
-#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:439 src/ostree.jsx:688
+#: src/ostree.jsx:688 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:439
 msgid "Repository"
 msgstr "저장소"
 
@@ -299,10 +287,6 @@ msgstr "배포 되돌리기"
 #: src/repositoryModals.jsx:272
 msgid "Save"
 msgstr "저장"
-
-#: src/client.js:68
-msgid "Scanning metadata"
-msgstr "메타자료 검색하기"
 
 #: src/repositoryModals.jsx:215
 msgid "Security"
@@ -402,13 +386,24 @@ msgstr "버전"
 msgid "When"
 msgstr "언제"
 
-#: src/client.js:66
-msgid "Writing objects"
-msgstr "대상에 쓰기"
-
 #: src/ostree.jsx:415
 msgid "view more..."
 msgstr "더 보기..."
+
+#~ msgid "Receiving delta parts"
+#~ msgstr "델타 부분 받기"
+
+#~ msgid "Receiving metadata objects"
+#~ msgstr "메타자료 대상 받기"
+
+#~ msgid "Receiving objects: $0%"
+#~ msgstr "대상 받기: $0%"
+
+#~ msgid "Scanning metadata"
+#~ msgstr "메타자료 검색하기"
+
+#~ msgid "Writing objects"
+#~ msgstr "대상에 쓰기"
 
 #~ msgid "Add"
 #~ msgstr "추가"
