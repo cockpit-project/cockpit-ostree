@@ -175,6 +175,7 @@ def do_card_action(browser, kebab, action):
     browser.click(f"button.pf-v5-c-menu__item:contains({action})")
 
 
+@testlib.skipImage("No OSTree repo on bootc", "*-bootc")
 class OstreeRestartCase(testlib.MachineCase):
 
     def testOstree(self):
@@ -530,6 +531,7 @@ class OstreeRestartCase(testlib.MachineCase):
 
 
 class OstreeCase(testlib.MachineCase):
+    @testlib.skipImage("No OSTree repo on bootc", "*-bootc")
     def testRemoteManagement(self):
         m = self.machine
         b = self.browser
@@ -804,6 +806,7 @@ class OstreeCase(testlib.MachineCase):
         b.switch_to_frame("cockpit1:localhost/updates")
         b.wait_visible('#available-deployments')
 
+    @testlib.skipImage("No OSTree repo on bootc", "*-bootc")
     def testPageStatus(self):
         m = self.machine
         b = self.browser
@@ -841,6 +844,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_in_text("#page_status_notification_updates", f"{get_name(self)} cockpit-base.2")
 
 
+@testlib.skipImage("Currently no OCI repo on bootc test image", "*-bootc")
 @testlib.skipImage("using image-builder workflow", "rhel4edge")
 class OstreeOCICase(testlib.MachineCase):
     def start_oci_registry(self):
