@@ -844,7 +844,6 @@ class OstreeCase(testlib.MachineCase):
         b.wait_in_text("#page_status_notification_updates", f"{get_name(self)} cockpit-base.2")
 
 
-@testlib.skipImage("Currently no OCI repo on bootc test image", "*-bootc")
 @testlib.skipImage("using image-builder workflow", "rhel4edge")
 class OstreeOCICase(testlib.MachineCase):
     def start_oci_registry(self):
@@ -859,7 +858,16 @@ class OstreeOCICase(testlib.MachineCase):
         b = self.browser
         m = self.machine
 
-        branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
+        if m.image.endswith("-bootc"):
+            # -bootc images start with the official OS bootc image, from a local rebuild during image creation
+            repo = "ostree-unverified-registry:localhost/bootc"
+            branch = "latest"
+            version = m.execute("bootc status | grep version").strip().split()[1]
+        else:
+            # -coreos images start with the local ostree repo deployment
+            repo = "local"
+            branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
+            version = "cockpit-base.1"
         bash_ver = m.execute("rpm -q bash").strip()
 
         # start our local registry
@@ -871,19 +879,23 @@ class OstreeOCICase(testlib.MachineCase):
         self.login_and_go("/updates")
 
         # our image defaults to local OSTree repo
-        b.wait_text("#current-repository .pf-v5-c-description-list__description", "local")
+        b.wait_text("#current-repository .pf-v5-c-description-list__description", repo)
         b.wait_text("#current-branch .pf-v5-c-description-list__description", branch)
-        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "Current")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"{repo}:{branch}")
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
+
+        if m.image.endswith("-bootc"):
+            # we don't yet have a local OCI repo on the bootc images to upgrade to
+            return
 
         # rebase to our OCI repo
         # FIXME: there is currently no UI way of doing this
         m.execute(f"rpm-ostree rebase {oci_repo_branch}")
 
         # UI picks this up
-        wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
+        wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "")
         wait_deployment_prop(b, 1, "Branch", oci_repo_branch)
         wait_deployment_details_prop(b, 1, "Tree", ".origin", oci_repo_branch)
@@ -893,7 +905,7 @@ class OstreeOCICase(testlib.MachineCase):
         # current deployment is now second
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 2, "Status", "Current")
-        wait_deployment_details_prop(b, 2, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 2, "Tree", ".origin", f"{repo}:{branch}")
         wait_packages(b, 2, {"rpms-col1": [bash_ver]})
 
         # podman sometimes leaves the container behind after reboot despite --rm
@@ -917,7 +929,7 @@ class OstreeOCICase(testlib.MachineCase):
         # ... and second deployment is the ostree repo one
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 2, "Status", "")
-        wait_deployment_details_prop(b, 2, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 2, "Tree", ".origin", f"{repo}:{branch}")
         wait_deployment_details_prop(b, 2, "Packages", ".same-packages",
                                      "This deployment contains the same packages as your currently booted system")
 
