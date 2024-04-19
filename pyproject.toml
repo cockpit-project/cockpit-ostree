@@ -30,5 +30,6 @@ select = [
 ignore_names = [
    "test[A-Z0-9]*",
    "OstreeCase",
+   "OstreeOCICase",
    "OstreeRestartCase",
 ]
