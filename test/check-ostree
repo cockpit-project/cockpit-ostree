@@ -862,7 +862,7 @@ class OstreeOCICase(testlib.MachineCase):
             # -bootc images start with the official OS bootc image, from a local rebuild during image creation
             old_repo = "ostree-unverified-registry:localhost/bootc"
             old_branch = "latest"
-            new_repo = "not-implemented-repo"
+            new_repo = "ostree-unverified-registry:localhost:5000/bootc"
             version = m.execute("bootc status | grep version").strip().split()[1]
         else:
             # -coreos images start with the local ostree repo deployment
@@ -874,6 +874,7 @@ class OstreeOCICase(testlib.MachineCase):
         old_repo_branch = f"{old_repo}:{old_branch}"
         new_repo_branch = f"{new_repo}:{new_branch}"
         bash_ver = m.execute("rpm -q bash").strip()
+        less_ver = m.execute("rpm -q less").strip()
 
         self.start_oci_registry()
 
@@ -887,21 +888,27 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_details_prop(b, 1, "Tree", ".origin", f"{old_repo}:{old_branch}")
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
 
-        if m.image.endswith("-bootc"):
-            # we don't yet have a local OCI repo on the bootc images to upgrade to
-            return
-
-        # rebase to our OCI repo
+        # rebase to our new OCI repo
         # FIXME: there is currently no UI way of doing this
-        m.execute(f"rpm-ostree rebase {new_repo_branch}")
+        if m.image.endswith("-bootc"):
+            # this works with rpm-ostree as well, but let's use the future designated CLI
+            m.execute(f"bootc switch localhost:5000/bootc:{new_branch}")
+        else:
+            m.execute(f"rpm-ostree rebase {new_repo_branch}")
 
         # UI picks this up
         wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "")
         wait_deployment_prop(b, 1, "Branch", new_repo_branch)
         wait_deployment_details_prop(b, 1, "Tree", ".origin", new_repo_branch)
-        wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
-                                     "This deployment contains the same packages as your currently booted system")
+        if m.image.endswith("-bootc"):
+            # the new branch removes "less"
+            wait_deployment_details_prop(b, 1, "Packages", ".removes", "Removals" + less_ver)
+        else:
+            # the repo is a straight rebuild of the OSTree, no package changes
+            wait_deployment_details_prop(
+                b, 1, "Packages", ".same-packages",
+                "This deployment contains the same packages as your currently booted system")
 
         # current deployment is now second
         wait_deployment_prop(b, 2, "Version", version)
@@ -931,8 +938,14 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Version", version)
         wait_deployment_prop(b, 2, "Status", "")
         wait_deployment_details_prop(b, 2, "Tree", ".origin", old_repo_branch)
-        wait_deployment_details_prop(b, 2, "Packages", ".same-packages",
-                                     "This deployment contains the same packages as your currently booted system")
+        if m.image.endswith("-bootc"):
+            # the new branch removes "less", so the old one adds it
+            wait_deployment_details_prop(b, 2, "Packages", ".adds", "Additions" + less_ver)
+        else:
+            # the repo is a straight rebuild of the OSTree, no package changes
+            wait_deployment_details_prop(
+                b, 2, "Packages", ".same-packages",
+                "This deployment contains the same packages as your currently booted system")
 
 
 if __name__ == "__main__":
