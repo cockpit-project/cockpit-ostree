@@ -1,4 +1,5 @@
 [tool.ruff]
+preview = true
 line-length = 118
 
 [tool.ruff.lint]

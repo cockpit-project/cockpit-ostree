@@ -76,7 +76,7 @@ def wait_not_packages(b, index, packages):
 def check_package_count(b, assertIn, index):
     switch_tab(b, index, "Packages")
     for group in ['adds', 'removes']:
-        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-child({index + 1}) .{group} dd",  1)
+        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-child({index + 1}) .{group} dd", 1)
     # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
     assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .up dd"), [1, 2])
     assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .down dd"), [1, 2])
@@ -159,7 +159,7 @@ def generate_new_commit(m, pkg_to_remove):
     m.execute(f"ostree commit -s cockpit-tree2 --repo {REPO_LOCATION} -b {branch} "
               "--add-metadata-string version=cockpit-base.2 "
               "--add-metadata-string rpmostree.inputhash=foo "
-              f"--tree=dir={CHECKOUT_LOCATION} --gpg-sign={KEY_ID} --gpg-homedir=/root/",  timeout=600)
+              f"--tree=dir={CHECKOUT_LOCATION} --gpg-sign={KEY_ID} --gpg-homedir=/root/", timeout=600)
     m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
 
@@ -385,7 +385,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.click("#change-branch button.pf-v5-c-menu-toggle")
         b.wait_not_in_text("#change-branch li:first-child button", "error")
         b.wait_in_text("#change-branch li:last-of-type button", "znew-branch")
-        b.call_js_func("ph_count_check", "#change-branch li",  2)
+        b.call_js_func("ph_count_check", "#change-branch li", 2)
         b.click("#change-branch li:last-of-type button")
         b.click("#rebase-repository-modal button.pf-m-primary")
         b.wait_in_text("#current-repository", "local")
@@ -493,7 +493,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
         wait_deployment_prop(b, 1, "Actions", "Update")
         wait_deployment_prop(b, 1, "Status", "New")
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  3)
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 3)
 
         wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
         wait_deployment_prop(b, 1, "Status", "New")
@@ -515,7 +515,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_not_present("#cleanup-deployment-modal")
 
         # Rollback deployment wasn't deleted because it's pinned
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  2)
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 2)
 
         # Manually delete base.1 deployment
         wait_deployment_prop(b, 2, "Status", "Pinned")
@@ -527,7 +527,7 @@ class OstreeRestartCase(testlib.MachineCase):
         do_deployment_action(b, 2, "Delete")
 
         # only one available deployment
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr",  1)
+        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 1)
 
 
 class OstreeCase(testlib.MachineCase):
@@ -673,7 +673,7 @@ class OstreeCase(testlib.MachineCase):
         b.click("#rebase-repository-modal #change-branch button.pf-v5-c-menu-toggle")
         b.wait_in_text("#change-branch li:nth-child(1) button", "zremote-branch1")
         b.wait_in_text("#change-branch li:nth-child(2) button", "zremote-branch2")
-        b.call_js_func("ph_count_check", "#change-branch li",  2)
+        b.call_js_func("ph_count_check", "#change-branch li", 2)
         b.click("#rebase-repository-modal button.pf-m-primary")
 
         self.assertEqual(m.execute("cat /etc/ostree/remotes.d/zremote-test1.conf").strip(),
@@ -762,7 +762,7 @@ class OstreeCase(testlib.MachineCase):
         do_card_action(b, "#ostree-source-actions", "Rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
-        b.call_js_func("ph_count_check", "#rebase-repository-modal #change-repository .pf-v5-c-menu__list li",  3)
+        b.call_js_func("ph_count_check", "#rebase-repository-modal #change-repository .pf-v5-c-menu__list li", 3)
         b.wait_in_text("#rebase-repository-modal button.pf-m-selected", "local")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
         b.wait_in_text("#change-branch div.pf-v5-c-form__group-control p", branch)
