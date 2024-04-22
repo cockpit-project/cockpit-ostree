@@ -39,8 +39,11 @@ if ! bootc status >/dev/null; then
 
     # build an OCI image from our local repository; ouput to a local registry,
     # as rpm-ostree does not support a local podman image, and using a registry is the realistic use case
+    # use the same registry volume as bots/images/scripts/bootc.setup
     if [ "${branch%fedora*}" != "$branch" ]; then
-        podman run -d --name ostree-registry --rm -p 5000:5000 -v ostree-oci:/var/lib/registry localhost/test-registry
+        mkdir /var/lib/cockpit-test-registry
+        chcon -t container_file_t /var/lib/cockpit-test-registry/
+        podman run -d --name ostree-registry --rm -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
         mv /etc/containers/registries.conf /etc/containers/registries.conf.orig
         printf '[registries.insecure]\nregistries = ["localhost:5000"]\n' > /etc/containers/registries.conf
         rpm-ostree compose container-encapsulate \

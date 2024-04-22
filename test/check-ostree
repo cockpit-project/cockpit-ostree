@@ -849,7 +849,7 @@ class OstreeOCICase(testlib.MachineCase):
     def start_oci_registry(self):
         self.machine.execute(
             "podman run -d --name ostree-registry --rm -p 5000:5000 "
-            "-v ostree-oci:/var/lib/registry localhost/test-registry")
+            "-v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry")
 
     def stop_oci_registry(self):
         self.machine.execute("podman rm -ft0 ostree-registry")
