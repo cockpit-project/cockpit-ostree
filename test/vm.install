@@ -22,11 +22,11 @@ fi
 
 if bootc status >/dev/null; then
     # for bootc, create a "cockpit1" tag with a removed package, so that we can tell apart the versions in the UI
-    podman run -d --name ostree-registry --rm -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
+    podman run -d --name ostree-registry -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
     printf 'FROM localhost:5000/bootc:latest\nRUN rpm -e --verbose less' | podman build -t localhost:5000/bootc:cockpit1 -
     podman push localhost:5000/bootc:cockpit1
     podman rmi localhost:5000/bootc:latest localhost:5000/bootc:cockpit1
-    podman stop ostree-registry
+    podman rm --force --time 0 ostree-registry
 else
     # for classic rpm-ostree, create a local repository for tests
     checkout=$(rpm-ostree status --booted --jsonpath '$.deployments[0].checksum' | tr -d '[]\n "')
@@ -50,14 +50,14 @@ else
     if [ "${branch%fedora*}" != "$branch" ]; then
         mkdir /var/lib/cockpit-test-registry
         chcon -t container_file_t /var/lib/cockpit-test-registry/
-        podman run -d --name ostree-registry --rm -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
+        podman run -d --name ostree-registry -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
         mv /etc/containers/registries.conf /etc/containers/registries.conf.orig
         printf '[registries.insecure]\nregistries = ["localhost:5000"]\n' > /etc/containers/registries.conf
         rpm-ostree compose container-encapsulate \
             --repo=/var/local-repo \
             --label ostree.bootable=true \
             $branch registry:localhost:5000/ostree-oci:cockpit1
-        podman stop ostree-registry
+        podman rm --force --time 0 ostree-registry
     fi
 
     rpm-ostree status
