@@ -17,15 +17,22 @@ updates:
       esbuild:
         patterns:
           - "esbuild*"
+      patternfly:
+        patterns:
+          - "@patternfly*"
+      react:
+        patterns:
+          - "react*"
       stylelint:
         patterns:
           - "stylelint*"
       xterm:
         patterns:
           - "xterm*"
-      patternfly:
+      types:
         patterns:
-          - "@patternfly*"
+          - "@types*"
+          - "types*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
