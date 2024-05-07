@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-11 02:52+0000\n"
+"POT-Creation-Date: 2024-05-07 02:51+0000\n"
 "PO-Revision-Date: 2023-12-25 18:36+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -36,7 +36,7 @@ msgstr "Menambahkan kunci lain"
 msgid "Add new repository"
 msgstr "Menambahkan repositori baru"
 
-#: src/ostree.jsx:653 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:169 src/ostree.jsx:653
 msgid "Add repository"
 msgstr "Tambahkan repositori"
 
@@ -48,13 +48,13 @@ msgstr "Penambahan"
 msgid "Begins with $0"
 msgstr "Dimulai dengan $0"
 
-#: src/ostree.jsx:313 src/ostree.jsx:692 src/repositoryModals.jsx:446
+#: src/repositoryModals.jsx:446 src/ostree.jsx:313 src/ostree.jsx:692
 msgid "Branch"
 msgstr "Cabang"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Batal"
 
@@ -66,7 +66,7 @@ msgstr "Memeriksa pembaruan paket..."
 msgid "Checking for updates"
 msgstr "Memeriksa pembaruan"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:899
+#: src/ostree.jsx:899 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr "Bersihkan"
 
@@ -98,7 +98,7 @@ msgstr "Penerapan dan pembaruan"
 msgid "Downgrades"
 msgstr "Menurunkan versi"
 
-#: src/ostree.jsx:662 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:280 src/ostree.jsx:662
 msgid "Edit repository"
 msgstr "Mengedit repositori"
 
@@ -222,7 +222,7 @@ msgstr "Harap berikan nama yang valid"
 msgid "RPM repo metadata"
 msgstr "Metadata repo RPM"
 
-#: src/ostree.jsx:450 src/ostree.jsx:645 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:378 src/ostree.jsx:450 src/ostree.jsx:645
 msgid "Rebase"
 msgstr "Rebase"
 
@@ -262,16 +262,16 @@ msgstr ""
 "Menghapus penambahan atau penggantian paket untuk mengembalikan penerapan "
 "saat ini ke kondisi semula."
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:119 src/ostree.jsx:672
 msgid "Remove repository"
 msgstr "Menghapus repositori"
 
-#: src/ostree.jsx:688 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:439
+#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:439 src/ostree.jsx:688
 msgid "Repository"
 msgstr "Repositori"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:905
+#: src/ostree.jsx:905 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr "Atur ulang"
 
