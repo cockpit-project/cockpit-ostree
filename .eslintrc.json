@@ -50,7 +50,7 @@
 	"jsx-a11y/anchor-is-valid": "off"
     },
     "globals": {
-        "require": false,
-        "module": false
+        "require": "readonly",
+        "module": "readonly"
     }
 }
