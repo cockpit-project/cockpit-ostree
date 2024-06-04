@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 02:51+0000\n"
+"POT-Creation-Date: 2024-06-03 02:52+0000\n"
 "PO-Revision-Date: 2023-12-09 00:21+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -53,8 +53,8 @@ msgid "Branch"
 msgstr "分支"
 
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 msgid "Cancel"
 msgstr "取消"
 
@@ -66,7 +66,7 @@ msgstr "正在检查软件包更新……"
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/ostree.jsx:899 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:899
 msgid "Clean up"
 msgstr "清理"
 
@@ -269,7 +269,7 @@ msgstr "移除存储库"
 msgid "Repository"
 msgstr "存储库"
 
-#: src/ostree.jsx:905 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:905
 msgid "Reset"
 msgstr "重置"
 
