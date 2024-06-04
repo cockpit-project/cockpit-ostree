@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 02:51+0000\n"
+"POT-Creation-Date: 2024-06-03 02:52+0000\n"
 "PO-Revision-Date: 2023-12-25 18:36+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -53,8 +53,8 @@ msgid "Branch"
 msgstr "Cabang"
 
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 msgid "Cancel"
 msgstr "Batal"
 
@@ -66,7 +66,7 @@ msgstr "Memeriksa pembaruan paket..."
 msgid "Checking for updates"
 msgstr "Memeriksa pembaruan"
 
-#: src/ostree.jsx:899 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:899
 msgid "Clean up"
 msgstr "Bersihkan"
 
@@ -271,7 +271,7 @@ msgstr "Menghapus repositori"
 msgid "Repository"
 msgstr "Repositori"
 
-#: src/ostree.jsx:905 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:905
 msgid "Reset"
 msgstr "Atur ulang"
 

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-05-07 02:51+0000\n"
+"POT-Creation-Date: 2024-06-03 02:52+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -57,8 +57,8 @@ msgid "Branch"
 msgstr "Гілка"
 
 #: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:360
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:360
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -70,7 +70,7 @@ msgstr "Шукаємо оновлення пакунків…"
 msgid "Checking for updates"
 msgstr "Шукаємо оновлення"
 
-#: src/ostree.jsx:899 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:899
 msgid "Clean up"
 msgstr ""
 
@@ -293,7 +293,7 @@ msgstr "Сховище"
 msgid "Repository"
 msgstr "Сховище"
 
-#: src/ostree.jsx:905 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:905
 msgid "Reset"
 msgstr "Скинути"
 
