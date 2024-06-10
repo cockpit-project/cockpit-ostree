@@ -647,7 +647,7 @@ class OstreeCase(testlib.MachineCase):
         b.set_val("#edit-repository-modal #gpg-data", gpg_data)
         b.wait_val("#edit-repository-modal #gpg-data", gpg_data)
         b.focus("#edit-repository-modal #gpg-data")
-        b.key_press("\b")  # Backspace
+        b.key("Backspace")
         b.click("#edit-repository-modal button.pf-m-primary")
         b.wait_not_present("#edit-repository-modal")
         m.execute("ls /sysroot/ostree/repo/zremote-test1.trustedkeys.gpg")
