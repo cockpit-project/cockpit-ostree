@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-03 02:52+0000\n"
-"PO-Revision-Date: 2023-02-18 11:56+0000\n"
-"Last-Translator: Piotr Drąg <piotrdrag@gmail.com>\n"
+"POT-Creation-Date: 2024-06-14 02:51+0000\n"
+"PO-Revision-Date: 2024-06-14 18:36+0000\n"
+"Last-Translator: Wojciech Teichert <wojtekt99@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/pl/>\n"
 "Language: pl\n"
@@ -22,7 +22,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2;\n"
-"X-Generator: Weblate 4.15.2\n"
+"X-Generator: Weblate 5.5.5\n"
 
 #: src/ostree.jsx:357
 #, fuzzy
@@ -214,7 +214,7 @@ msgstr "Pakiety"
 
 #: src/deploymentModals.jsx:201
 msgid "Packages which have been added to the system"
-msgstr ""
+msgstr "Pakiety które zostały dodane do systemu"
 
 #: src/deploymentModals.jsx:115
 #, fuzzy
@@ -224,11 +224,11 @@ msgstr "Brak wdrożeń"
 
 #: src/ostree.jsx:545
 msgid "Pin"
-msgstr ""
+msgstr "Przypnij"
 
 #: src/ostree.jsx:400
 msgid "Pinned"
-msgstr ""
+msgstr "Przypięte"
 
 #: src/repositoryModals.jsx:212
 msgid "Please provide a valid URL"
@@ -285,6 +285,8 @@ msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
 msgstr ""
+"Usuń dodatki i podmiany z pakietów aby powrócić tą instalacje do stanu "
+"oryginalnego."
 
 #: src/repositoryModals.jsx:119 src/ostree.jsx:672
 #, fuzzy
@@ -303,7 +305,7 @@ msgstr "Przywróć"
 
 #: src/deploymentModals.jsx:169
 msgid "Reset to original state"
-msgstr ""
+msgstr "Resetuj do stanu oryginalnego"
 
 #: src/ostree.jsx:449
 #, fuzzy
@@ -355,7 +357,7 @@ msgstr ""
 
 #: src/deploymentModals.jsx:103
 msgid "Temporary files"
-msgstr ""
+msgstr "Pliki tymczasowe"
 
 #: src/ostree.jsx:172
 msgid ""
@@ -382,7 +384,7 @@ msgstr "Nie można komunikować się OSTree"
 
 #: src/ostree.jsx:545
 msgid "Unpin"
-msgstr ""
+msgstr "Odepnij"
 
 #: src/ostree.jsx:448
 msgid "Update"
