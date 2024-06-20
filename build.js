@@ -107,7 +107,10 @@ const context = await esbuild.context({
 });
 
 try {
-    await context.rebuild();
+    const result = await context.rebuild();
+    if (args.metafile) {
+        fs.writeFileSync(args.metafile, JSON.stringify(result.metafile));
+    }
 } catch (e) {
     if (!args.watch)
         process.exit(1);
@@ -120,10 +123,7 @@ if (args.watch) {
         await context.cancel();
 
         try {
-            const result = await context.rebuild();
-            if (args.metafile) {
-                fs.writeFileSync(args.metafile, JSON.stringify(result.metafile));
-            }
+            await context.rebuild();
         } catch (e) {} // ignore in watch mode
     };
 
