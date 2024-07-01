@@ -214,7 +214,7 @@ const TreeDetails = ({ info }) => {
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Released") }</DescriptionListTerm>
-                <DescriptionListDescription className="timestamp">{timeformat.distanceToNow(info.timestamp.v * 1000, true)}</DescriptionListDescription>
+                <DescriptionListDescription className="timestamp">{timeformat.distanceToNow(info.timestamp.v * 1000)}</DescriptionListDescription>
             </DescriptionListGroup>
             <DescriptionListGroup>
                 <DescriptionListTerm>{ _("Origin") }</DescriptionListTerm>
