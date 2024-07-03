@@ -19,17 +19,17 @@
 
 import React, { useState } from 'react';
 
-import cockpit from 'cockpit';
-import client from './client';
-
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Checkbox } from '@patternfly/react-core/dist/esm/components/Checkbox';
 import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
-import { Stack } from "@patternfly/react-core/dist/esm/layouts/Stack";
 import { Text } from "@patternfly/react-core/dist/esm/components/Text";
-
+import { Stack } from "@patternfly/react-core/dist/esm/layouts/Stack";
 import { useDialogs } from "dialogs.jsx";
+
+import cockpit from 'cockpit';
+
+import client from './client';
 
 const _ = cockpit.gettext;
 
