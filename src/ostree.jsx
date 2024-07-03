@@ -20,23 +20,20 @@
 import 'cockpit-dark-theme'; // once per page
 
 import React, { useState } from 'react';
-import { createRoot } from 'react-dom/client';
-import PropTypes from "prop-types";
-import { debounce } from 'throttle-debounce';
+
+import { createRoot } from 'react-dom/client'; // eslint-disable-line import/order
 
 import 'patternfly/patternfly-5-cockpit.scss';
 
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Card, CardHeader, CardTitle, CardBody } from "@patternfly/react-core/dist/esm/components/Card";
-import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
-import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
-import { Divider } from "@patternfly/react-core/dist/esm/components/Divider";
-import { DropdownItem } from "@patternfly/react-core/dist/esm/components/Dropdown";
 import {
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription
 } from "@patternfly/react-core/dist/esm/components/DescriptionList";
-import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
+import { Divider } from "@patternfly/react-core/dist/esm/components/Divider";
+import { DropdownItem } from "@patternfly/react-core/dist/esm/components/Dropdown";
+import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
 import { Label, } from "@patternfly/react-core/dist/esm/components/Label";
 import { List, ListItem } from "@patternfly/react-core/dist/esm/components/List";
 import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
@@ -44,25 +41,27 @@ import { Page, PageSection, } from "@patternfly/react-core/dist/esm/components/P
 import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
 import { Text } from "@patternfly/react-core/dist/esm/components/Text";
-
+import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
+import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
 import { BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon, PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon } from '@patternfly/react-icons';
+import { KebabDropdown } from 'cockpit-components-dropdown.jsx';
+import { WithDialogs, DialogsContext, useDialogs } from "dialogs.jsx";
+import PropTypes from "prop-types";
+import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
-
-import * as timeformat from 'timeformat';
-import { superuser } from 'superuser';
-import { ListingTable } from "cockpit-components-table.jsx";
 import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
-import { KebabDropdown } from 'cockpit-components-dropdown.jsx';
+import { ListingTable } from "cockpit-components-table.jsx";
+import { superuser } from 'superuser';
+import * as timeformat from 'timeformat';
 
 import client from './client';
+import { CleanUpModal, ResetModal } from './deploymentModals';
 import * as remotes from './remotes';
 import { AddRepositoryModal, EditRepositoryModal, RebaseRepositoryModal, RemoveRepositoryModal } from './repositoryModals.jsx';
+import { logDebug } from './utils.js';
 
 import './ostree.scss';
-import { CleanUpModal, ResetModal } from './deploymentModals';
-import { WithDialogs, DialogsContext, useDialogs } from "dialogs.jsx";
-import { logDebug } from './utils.js';
 
 const _ = cockpit.gettext;
 

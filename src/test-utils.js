@@ -18,6 +18,7 @@
  */
 
 import QUnit from 'qunit';
+
 import * as utils from './utils.js';
 
 const sample_config = `

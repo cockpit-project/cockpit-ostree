@@ -18,26 +18,25 @@
  */
 
 import React, { useEffect, useState } from 'react';
-import PropTypes from "prop-types";
-
-import cockpit from 'cockpit';
 
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Checkbox } from '@patternfly/react-core/dist/esm/components/Checkbox';
-import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { Form, FormGroup } from "@patternfly/react-core/dist/esm/components/Form";
-import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
-import { Text } from "@patternfly/react-core/dist/esm/components/Text";
-import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
-import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
-import { Select, SelectList, SelectOption } from "@patternfly/react-core/dist/esm/components/Select";
 import { MenuToggle } from "@patternfly/react-core/dist/esm/components/MenuToggle";
+import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
+import { Select, SelectList, SelectOption } from "@patternfly/react-core/dist/esm/components/Select";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner/index.js";
+import { Text } from "@patternfly/react-core/dist/esm/components/Text";
+import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
+import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
+import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { ExclamationCircleIcon } from '@patternfly/react-icons';
-
 import { FormHelper } from 'cockpit-components-form-helper.jsx';
 import { useDialogs } from "dialogs.jsx";
+import PropTypes from "prop-types";
+
+import cockpit from 'cockpit';
 
 import * as remotes from './remotes';
 
