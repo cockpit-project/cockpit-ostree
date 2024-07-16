@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-06-21 02:51+0000\n"
+"POT-Creation-Date: 2024-07-13 02:52+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=(n>1)\n"
 "X-Generator: Weblate 5.2.1\n"
 
-#: src/ostree.jsx:357
+#: src/ostree.jsx:356
 msgid "$0 and reboot"
 msgstr "$0 ve yeniden başlat"
 
@@ -26,45 +26,45 @@ msgstr "$0 ve yeniden başlat"
 msgid "$0 key ID"
 msgstr "$0 anahtar kimliği"
 
-#: src/repositoryModals.jsx:318
+#: src/repositoryModals.jsx:317
 msgid "Add another key"
 msgstr "Başka anahtar ekle"
 
-#: src/repositoryModals.jsx:179
+#: src/repositoryModals.jsx:178
 msgid "Add new repository"
 msgstr "Yeni depo ekle"
 
-#: src/ostree.jsx:653 src/repositoryModals.jsx:169
+#: src/ostree.jsx:652 src/repositoryModals.jsx:168
 msgid "Add repository"
 msgstr "Depo ekle"
 
-#: src/ostree.jsx:189
+#: src/ostree.jsx:188
 msgid "Additions"
 msgstr "Eklemeler"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:319
 msgid "Begins with $0"
 msgstr "$0 ile başlar"
 
-#: src/ostree.jsx:313 src/ostree.jsx:692 src/repositoryModals.jsx:446
+#: src/ostree.jsx:312 src/ostree.jsx:691 src/repositoryModals.jsx:445
 msgid "Branch"
 msgstr "Dal"
 
-#: src/ostree.jsx:360 src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
+#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
 msgid "Cancel"
 msgstr "İptal"
 
-#: src/ostree.jsx:791
+#: src/ostree.jsx:790
 msgid "Checking for package updates..."
 msgstr "Paket güncellemeleri denetleniyor..."
 
-#: src/ostree.jsx:821
+#: src/ostree.jsx:820
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
-#: src/ostree.jsx:899 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:898
 msgid "Clean up"
 msgstr "Temizle"
 
@@ -72,99 +72,99 @@ msgstr "Temizle"
 msgid "Clear cache and deployments"
 msgstr "Önbelleği ve dağıtımları temizle"
 
-#: src/ostree.jsx:411
+#: src/ostree.jsx:410
 msgid "Close"
 msgstr "Kapat"
 
-#: src/ostree.jsx:138
+#: src/ostree.jsx:137
 msgid "Connecting to OSTree"
 msgstr "OSTree'ye bağlanılıyor"
 
-#: src/ostree.jsx:398
+#: src/ostree.jsx:397
 msgid "Current"
 msgstr "Şu anki"
 
-#: src/ostree.jsx:559
+#: src/ostree.jsx:558
 msgid "Delete"
 msgstr "Sil"
 
-#: src/ostree.jsx:328 src/ostree.jsx:931
+#: src/ostree.jsx:327 src/ostree.jsx:930
 msgid "Deployments and updates"
 msgstr "Dağıtımlar ve güncellemeler"
 
-#: src/ostree.jsx:192
+#: src/ostree.jsx:191
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/ostree.jsx:662 src/repositoryModals.jsx:280
+#: src/ostree.jsx:661 src/repositoryModals.jsx:279
 msgid "Edit repository"
 msgstr "Depoyu düzenle"
 
-#: src/ostree.jsx:837
+#: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Uzak depolar yüklenirken hata oldu: $0"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:230
 msgid "Expired signature"
 msgstr "Süresi dolmuş imza"
 
-#: src/ostree.jsx:414
+#: src/ostree.jsx:413
 msgid "Failed"
 msgstr "Başarısız"
 
-#: src/ostree.jsx:295
+#: src/ostree.jsx:294
 msgid "Failed to rebase deployment"
 msgstr "Dağıtımı yeniden temellendirme başarısız oldu"
 
-#: src/ostree.jsx:274
+#: src/ostree.jsx:273
 msgid "Failed to roll back deployment"
 msgstr "Dağıtımı geri alma başarısız oldu"
 
-#: src/ostree.jsx:284
+#: src/ostree.jsx:283
 msgid "Failed to upgrade deployment"
 msgstr "Dağıtımı yükseltme başarısız oldu"
 
-#: src/repositoryModals.jsx:323
+#: src/repositoryModals.jsx:322
 msgid "GPG public key"
 msgstr "GPG ortak anahtar"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:230
 msgid "Good signature"
 msgstr "Geçerli imza"
 
-#: src/ostree.jsx:231
+#: src/ostree.jsx:230
 msgid "Invalid signature"
 msgstr "Geçersiz imza"
 
-#: src/repositoryModals.jsx:424
+#: src/repositoryModals.jsx:423
 msgid "Loading branches"
 msgstr "Dallar yükleniyor"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:186
 msgid "Name"
 msgstr "Ad"
 
-#: src/ostree.jsx:421
+#: src/ostree.jsx:420
 msgid "New"
 msgstr "Yeni"
 
-#: src/ostree.jsx:743
+#: src/ostree.jsx:742
 msgid "No OSTree deployments found"
 msgstr "Bulunan OSTree dağıtımları yok"
 
-#: src/remotes.js:98
+#: src/remotes.js:99
 msgid "No configuration data found"
 msgstr "Bulunan yapılandırma verileri yok"
 
-#: src/ostree.jsx:142
+#: src/ostree.jsx:141
 msgid "No deployments"
 msgstr "Dağıtımlar yok"
 
-#: src/ostree.jsx:255
+#: src/ostree.jsx:254
 msgid "No signature available"
 msgstr "Mevcut imza yok"
 
-#: src/ostree.jsx:769
+#: src/ostree.jsx:768
 msgid "Not authorized to update software on this system"
 msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 
@@ -172,23 +172,23 @@ msgstr "Bu sistemde yazılım güncellemeye yetkili değilsiniz"
 msgid "OS $0 not found"
 msgstr "$0 işletim sistemi bulunamadı"
 
-#: src/ostree.jsx:771
+#: src/ostree.jsx:770
 msgid "OSTree is not available on this system"
 msgstr "OSTree bu sistemde kullanılabilir değil"
 
-#: src/ostree.jsx:683
+#: src/ostree.jsx:682
 msgid "OSTree source"
 msgstr "OSTree kaynağı"
 
-#: src/ostree.jsx:208
+#: src/ostree.jsx:207
 msgid "Operating system"
 msgstr "İşletim sistemi"
 
-#: src/ostree.jsx:220
+#: src/ostree.jsx:219
 msgid "Origin"
 msgstr "Kaynak"
 
-#: src/ostree.jsx:507
+#: src/ostree.jsx:506
 msgid "Packages"
 msgstr "Paketler"
 
@@ -200,19 +200,19 @@ msgstr "Sisteme eklenmiş paketler"
 msgid "Pending deployment"
 msgstr "Dağıtım beklemede"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:544
 msgid "Pin"
 msgstr "Sabitle"
 
-#: src/ostree.jsx:400
+#: src/ostree.jsx:399
 msgid "Pinned"
 msgstr "Sabitlendi"
 
-#: src/repositoryModals.jsx:212
+#: src/repositoryModals.jsx:211
 msgid "Please provide a valid URL"
 msgstr "Lütfen geçerli bir URL girin"
 
-#: src/repositoryModals.jsx:198
+#: src/repositoryModals.jsx:197
 msgid "Please provide a valid name"
 msgstr "Lütfen geçerli bir ad girin"
 
@@ -220,27 +220,27 @@ msgstr "Lütfen geçerli bir ad girin"
 msgid "RPM repo metadata"
 msgstr "RPM deposu üstverileri"
 
-#: src/ostree.jsx:450 src/ostree.jsx:645 src/repositoryModals.jsx:378
+#: src/ostree.jsx:449 src/ostree.jsx:644 src/repositoryModals.jsx:377
 msgid "Rebase"
 msgstr "Yeniden temellendir"
 
-#: src/repositoryModals.jsx:429
+#: src/repositoryModals.jsx:428
 msgid "Rebase repository and branch"
 msgstr "Depoyu ve dalı yeniden temellendir"
 
-#: src/ostree.jsx:150
+#: src/ostree.jsx:149
 msgid "Reconnect"
 msgstr "Yeniden bağlan"
 
-#: src/ostree.jsx:216
+#: src/ostree.jsx:215
 msgid "Released"
 msgstr "Yayımlanma"
 
-#: src/ostree.jsx:190
+#: src/ostree.jsx:189
 msgid "Removals"
 msgstr "Kaldırılanlar"
 
-#: src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:97
 msgid "Remove"
 msgstr "Kaldır"
 
@@ -260,16 +260,16 @@ msgstr ""
 "Şu anki dağıtımı orijinal durumuna döndürmek için paket eklemelerini veya "
 "değişikliklerini kaldırın."
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:119
+#: src/ostree.jsx:671 src/repositoryModals.jsx:118
 msgid "Remove repository"
 msgstr "Depoyu kaldır"
 
-#: src/ostree.jsx:688 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:439
+#: src/ostree.jsx:687 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438
 msgid "Repository"
 msgstr "Depo"
 
-#: src/ostree.jsx:905 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:904
 msgid "Reset"
 msgstr "Sıfırla"
 
@@ -277,7 +277,7 @@ msgstr "Sıfırla"
 msgid "Reset to original state"
 msgstr "Orijinal durumuna sıfırla"
 
-#: src/ostree.jsx:449
+#: src/ostree.jsx:448
 msgid "Roll back"
 msgstr "Geri al"
 
@@ -285,19 +285,19 @@ msgstr "Geri al"
 msgid "Rollback deployment"
 msgstr "Dağıtımı geri al"
 
-#: src/repositoryModals.jsx:272
+#: src/repositoryModals.jsx:271
 msgid "Save"
 msgstr "Kaydet"
 
-#: src/repositoryModals.jsx:215
+#: src/repositoryModals.jsx:214
 msgid "Security"
 msgstr "Güvenlik"
 
-#: src/ostree.jsx:512
+#: src/ostree.jsx:511
 msgid "Signatures"
 msgstr "İmzalar"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:235
 msgid "Signed by"
 msgstr "İmzalayan"
 
@@ -305,7 +305,7 @@ msgstr "İmzalayan"
 msgid "Software updates"
 msgstr "Yazılım güncellemeleri"
 
-#: src/ostree.jsx:305 src/ostree.jsx:606
+#: src/ostree.jsx:304 src/ostree.jsx:605
 msgid "Status"
 msgstr "Durum"
 
@@ -313,11 +313,11 @@ msgstr "Durum"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "Normalde bir İS yapısında yer alan paketlerin değiştirilmesi"
 
-#: src/ostree.jsx:107 src/ostree.jsx:581
+#: src/ostree.jsx:106 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "Sistem güncel"
 
-#: src/ostree.jsx:430 src/ostree.jsx:436 src/ostree.jsx:442
+#: src/ostree.jsx:429 src/ostree.jsx:435 src/ostree.jsx:441
 msgid "System will rebase to $0, updated $1."
 msgstr "Sistem, $0 olarak yeniden temellenecek, $1 güncellendi."
 
@@ -325,68 +325,68 @@ msgstr "Sistem, $0 olarak yeniden temellenecek, $1 güncellendi."
 msgid "Temporary files"
 msgstr "Geçici dosyalar"
 
-#: src/ostree.jsx:172
+#: src/ostree.jsx:171
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "Bu dağıtım, şu anda önyüklenmiş sisteminizle aynı paketleri içeriyor"
 
-#: src/ostree.jsx:309
+#: src/ostree.jsx:308
 msgid "Time"
 msgstr "Süre"
 
-#: src/ostree.jsx:502
+#: src/ostree.jsx:501
 msgid "Tree"
 msgstr "Ağaç"
 
-#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:200 src/repositoryModals.jsx:299
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:140
+#: src/ostree.jsx:139
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree ile iletişim kurulamadı"
 
-#: src/ostree.jsx:545
+#: src/ostree.jsx:544
 msgid "Unpin"
 msgstr "Sabitlemeyi kaldır"
 
-#: src/ostree.jsx:448
+#: src/ostree.jsx:447
 msgid "Update"
 msgstr "Güncelle"
 
-#: src/ostree.jsx:575
+#: src/ostree.jsx:574
 msgid "Update available"
 msgstr "Güncelleme mevcut"
 
-#: src/ostree.jsx:113
+#: src/ostree.jsx:112
 msgid "Update available: $0"
 msgstr "Güncelleme mevcut: $0"
 
-#: src/ostree.jsx:191
+#: src/ostree.jsx:190
 msgid "Updates"
 msgstr "Güncellemeler"
 
-#: src/ostree.jsx:396
+#: src/ostree.jsx:395
 msgid "Updating"
 msgstr "Güncelleniyor"
 
-#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:219 src/repositoryModals.jsx:308
 msgid "Use trusted GPG key"
 msgstr "Güvenilir GPG anahtarı kullan"
 
-#: src/ostree.jsx:248
+#: src/ostree.jsx:247
 msgid "Validity"
 msgstr "Doğrulama"
 
-#: src/ostree.jsx:212 src/ostree.jsx:301
+#: src/ostree.jsx:211 src/ostree.jsx:300
 msgid "Version"
 msgstr "Sürüm"
 
-#: src/ostree.jsx:240
+#: src/ostree.jsx:239
 msgid "When"
 msgstr "Ne zaman"
 
-#: src/ostree.jsx:415
+#: src/ostree.jsx:414
 msgid "view more..."
 msgstr "daha fazla görüntüle..."
 
