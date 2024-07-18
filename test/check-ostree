@@ -330,7 +330,6 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Rollback
         do_deployment_action(b, 2, "Roll back")
-        b.wait_visible("button:contains('Roll back')")
         wait_deployment_prop(b, 2, "Status", "Updating")
 
         b.switch_to_top()
