@@ -538,7 +538,9 @@ const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isS
     const actions = [];
     if (!isStaged) {
         actions.push(
-            <DropdownItem key="pin-deployment"
+            <DropdownItem
+                data-action={ deploymentIsPinned ? "unpin" : "pin" }
+                key="pin-deployment"
                 onClick={() => togglePin()}
             >
                 {deploymentIsPinned ? _("Unpin") : _("Pin")}
@@ -552,6 +554,7 @@ const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isS
         }
         actions.push(
             <DropdownItem key="delete-deployment"
+                data-action="delete"
                 className="pf-v5-u-danger-color-200"
                 onClick={() => deleteDeployment()}
             >
