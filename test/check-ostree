@@ -778,31 +778,13 @@ class OstreeCase(testlib.MachineCase):
 
     @testlib.nondestructive
     def testPermission(self):
-        m = self.machine
         b = self.browser
 
         self.login_and_go("/updates", superuser=False)
         b.wait_in_text(".pf-v5-c-empty-state__body", "Not authorized")
         self.assertIn("Reconnect", b.text(".pf-v5-c-empty-state button"))
 
-        if self.system_before(293):
-            # shell is still PF4
-            b.switch_to_top()
-            b.click("#super-user-indicator button")
-
-            if m.image == "rhel4edge":  # passwordless
-                b.wait_in_text(".pf-c-modal-box:contains('Administrative access')",
-                               "You now have administrative access.")
-                b.click(".pf-c-modal-box button:contains('Close')")
-                b.wait_not_present(".pf-c-modal-box:contains('You now have administrative access.')")
-            else:
-                b.wait_in_text(".pf-c-modal-box:contains('Switch to administrative access')", "Password for admin:")
-                b.set_input_text(".pf-c-modal-box:contains('Switch to administrative access') input", "foobar")
-                b.click(".pf-c-modal-box button:contains('Authenticate')")
-                b.wait_not_present(".pf-c-modal-box:contains('Switch to administrative access')")
-            b.check_superuser_indicator("Administrative access")
-        else:
-            b.become_superuser(passwordless=m.image == "rhel4edge")
+        b.become_superuser()
         b.switch_to_frame("cockpit1:localhost/updates")
         b.wait_visible('#available-deployments')
 
