@@ -176,7 +176,7 @@ def get_name(self):
 def do_card_action(browser, kebab, action):
     browser.click(f"{kebab}")
     browser.wait_visible("ul.pf-v5-c-menu__list")
-    browser.click(f"button.pf-v5-c-menu__item:contains({action})")
+    browser.click(f"[data-action={action}] button")
 
 
 @testlib.skipImage("No OSTree repo on bootc", "*-bootc")
@@ -379,7 +379,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_in_text("#current-branch", branch)
 
         # open rebase modal
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.wait_in_text("#change-repository .pf-v5-c-menu-toggle__text", "local")
         b.wait_in_text("#change-branch .pf-v5-c-menu-toggle__text", branch)
@@ -473,7 +473,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Status", "")
 
         wait_packages(b, 1, {"rpms-col1": [OVERLAY_RPM]})
-        do_card_action(b, "#deployments-actions", "Reset")
+        do_card_action(b, "#deployments-actions", "reset")
         b.wait_visible("#reset-modal")
         b.click("#remove-overlays-checkbox")
         b.click("#reset-modal button.pf-m-warning")
@@ -510,7 +510,7 @@ class OstreeRestartCase(testlib.MachineCase):
                            td:last-child button.pf-v5-c-menu-toggle""")
 
         # Use clean up to remove pending and rollback deployments
-        do_card_action(b, "#deployments-actions", "Clean up")
+        do_card_action(b, "#deployments-actions", "clean-up")
         b.wait_visible("#cleanup-deployment-modal")
         b.click("#pending-deployment-checkbox")
         b.click("#rollback-deployment-checkbox")
@@ -548,7 +548,7 @@ class OstreeCase(testlib.MachineCase):
 
         b.wait_not_present('#ostree-status .pf-v5-u-warning-color-100')
 
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.wait_in_text(".pf-v5-c-modal-box h1", "Rebase repository and branch")
         b.wait_in_text("#change-repository .pf-v5-c-menu-toggle__text", "local")
@@ -557,7 +557,7 @@ class OstreeCase(testlib.MachineCase):
         b.click("#rebase-repository-modal button.pf-m-link")
 
         # Add new repository
-        do_card_action(b, "#ostree-source-actions", "Add repository")
+        do_card_action(b, "#ostree-source-actions", "add-repository")
         b.wait_visible("#add-repository-modal")
         b.set_input_text("#add-repository-modal #new-remote-name", "zremote test")
         b.set_input_text("#add-repository-modal #new-remote-url", "http://localhost:12344")
@@ -572,7 +572,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present("#add-repository-modal .pf-m-primary")
 
         # Try to add repository with same name
-        do_card_action(b, "#ostree-source-actions", "Add repository")
+        do_card_action(b, "#ostree-source-actions", "add-repository")
         b.wait_visible("#add-repository-modal")
         b.set_input_text("#add-repository-modal #new-remote-name", "zremote-test1")
         b.set_input_text("#add-repository-modal #new-remote-url", "http://localhost:12344")
@@ -583,7 +583,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present("#add-repository-modal .pf-m-primary")
 
         # rebase to newly added remote
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#change-repository button.pf-v5-c-menu-toggle")
         b.wait_in_text("#change-repository #zremote-test1", "zremote-test1")
@@ -629,7 +629,7 @@ class OstreeCase(testlib.MachineCase):
         m.execute(["ostree", "summary", f"--repo={REPO_LOCATION}", "-u"])
 
         # Edit zremote-test1 repository
-        do_card_action(b, "#ostree-source-actions", "Edit repository")
+        do_card_action(b, "#ostree-source-actions", "edit-repository")
         b.wait_visible("#edit-repository-modal")
         b.click("#edit-repository-modal #select-repository button.pf-v5-c-menu-toggle")
         b.click("#edit-repository-modal #zremote-test1")
@@ -656,7 +656,7 @@ class OstreeCase(testlib.MachineCase):
         m.execute("ls /sysroot/ostree/repo/zremote-test1.trustedkeys.gpg")
 
         # disable gpg verification
-        do_card_action(b, "#ostree-source-actions", "Edit repository")
+        do_card_action(b, "#ostree-source-actions", "edit-repository")
         b.wait_visible("#edit-repository-modal")
         b.click("#edit-repository-modal #select-repository button.pf-v5-c-menu-toggle")
         b.click("#edit-repository-modal #zremote-test1")
@@ -667,7 +667,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present("#edit-repository-modal")
 
         # rebase to zremote-branch1
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
         b.click("#rebase-repository-modal #zremote-test1")
@@ -698,7 +698,7 @@ class OstreeCase(testlib.MachineCase):
                                      "This deployment contains the same packages as your currently booted system")
 
         # Switching back shows pulled
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-branch button.pf-v5-c-menu-toggle")
         b.wait_in_text("#rebase-repository-modal #change-branch li:first-child button", "zremote-branch1")
@@ -715,7 +715,7 @@ class OstreeCase(testlib.MachineCase):
 
         # Switching to branch shows pulled
         b.wait_in_text("#current-repository", "local")
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.wait_in_text("#rebase-repository-modal #change-repository .pf-v5-c-menu-toggle__text", "local")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
@@ -731,7 +731,7 @@ class OstreeCase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Status", "New")
 
         # Remove zremote-test1 repository
-        do_card_action(b, "#ostree-source-actions", "Remove repository")
+        do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
         b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v5-c-form__group-control input", 4)
         # Current repository checkbox is disabled
@@ -739,7 +739,7 @@ class OstreeCase(testlib.MachineCase):
         b.click("#remove-repository-modal button.pf-m-link")
 
         # Change back to local repository
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
         b.click("#rebase-repository-modal #local")
@@ -749,7 +749,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present("#rebase-repository-modal")
 
         # Remove zremote-test1 repository
-        do_card_action(b, "#ostree-source-actions", "Remove repository")
+        do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
         b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v5-c-form__group-control input", 4)
         b.wait_in_text("#remove-repository-modal #zremote-test1 + label", "zremote-test1")
@@ -762,7 +762,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_not_present("#remove-repository-modal")
 
         # Verify that the repository is gone
-        do_card_action(b, "#ostree-source-actions", "Rebase")
+        do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-repository button.pf-v5-c-menu-toggle")
         b.call_js_func("ph_count_check", "#rebase-repository-modal #change-repository .pf-v5-c-menu__list li", 3)
