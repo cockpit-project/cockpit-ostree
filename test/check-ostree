@@ -34,6 +34,10 @@ CHECKOUT_LOCATION = "/var/local-tree"
 RPM_LOCATION = "/usr/share/rpm"
 KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
+TAB_TREE = 1
+TAB_PACKAGES = 2
+TAB_SIGNATURES = 3
+
 
 def switch_tab(b, index, tab):
     row_sel = f"#available-deployments > tbody:nth-of-type({index})"
@@ -41,7 +45,7 @@ def switch_tab(b, index, tab):
     if not b.is_visible(f"{row_sel} .ct-listing-panel-tabs"):
         b.click(f"{row_sel} .pf-v5-c-table__toggle button")
         b.wait_visible(f"{row_sel} .ct-listing-panel-tabs")
-    b.click(f"{row_sel} button:contains({tab})")
+    b.click(f"{row_sel} .pf-v5-c-tabs__item:nth-of-type({tab}) button")
 
 
 def wait_deployment_details_prop(b, index, tab, prop, value):
@@ -61,20 +65,20 @@ def wait_deployment_prop(b, index, prop, value):
 
 
 def wait_packages(b, index, packages):
-    switch_tab(b, index, "Packages")
+    switch_tab(b, index, TAB_PACKAGES)
     for group, pkgs in packages.items():
         for pkg in pkgs:
             b.wait_in_text(f"#available-deployments > tbody:nth-of-type({index}) .{group}", pkg)
 
 
 def wait_not_packages(b, index, packages):
-    switch_tab(b, index, "Packages")
+    switch_tab(b, index, TAB_PACKAGES)
     for pkg in packages:
         b.wait_not_in_text(f"#available-deployments > tbody:nth-of-type({index})", pkg)
 
 
 def check_package_count(b, assertIn, index):
-    switch_tab(b, index, "Packages")
+    switch_tab(b, index, TAB_PACKAGES)
     for group in ['adds', 'removes']:
         b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-of-type({index}) .{group} dd", 1)
     # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
@@ -199,8 +203,8 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_prop(b, 1, "Actions", "")
 
-        wait_deployment_details_prop(b, 1, "Tree", ".os", get_name(self))
-        wait_deployment_details_prop(b, 1, "Tree", ".version", "cockpit-base.1")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".os", get_name(self))
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".version", "cockpit-base.1")
 
         b.assert_pixels("#ostree-status", "status")
         b.assert_pixels("#ostree-source", "source")
@@ -213,14 +217,14 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_packages(b, 1, {"rpms-col2": [remove_pkg]})
         wait_not_packages(b, 1, INSTALL_RPMS)
 
-        wait_deployment_details_prop(b, 1, "Signatures", ".no-signatures", "No signature available")
+        wait_deployment_details_prop(b, 1, TAB_SIGNATURES, ".no-signatures", "No signature available")
 
         # Require signatures
         m.execute("sed -i /gpg-verify/d /etc/ostree/remotes.d/local.conf")
 
         b.wait_not_in_text("#available-deployments > tbody:nth-of-type(2) td[data-label=Version]", "cockpit")
         wait_deployment_prop(b, 2, "Actions", "Roll back")
-        wait_deployment_details_prop(b, 2, "Tree", ".os", get_name(self))
+        wait_deployment_details_prop(b, 2, TAB_TREE, ".os", get_name(self))
 
         # Check for new commit, get error
         b.click("#check-for-updates-btn")
@@ -254,8 +258,8 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Status", "Current")
 
         # Check update data
-        wait_deployment_details_prop(b, 1, "Tree", ".os", get_name(self))
-        wait_deployment_details_prop(b, 1, "Tree", ".version", "cockpit-base.2")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".os", get_name(self))
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".version", "cockpit-base.2")
 
         wait_packages(b, 1, {"up": ["tzdata-99999-2.noarch"],
                              "down": ["chrony-0.1-2.noarch"],
@@ -265,7 +269,7 @@ class OstreeRestartCase(testlib.MachineCase):
         check_package_count(b, self.assertIn, 1)
 
         # Check signatures
-        switch_tab(b, 1, "Signatures")
+        switch_tab(b, 1, TAB_SIGNATURES)
         sel = "#available-deployments > tbody:nth-of-type(1)"
         b.wait_in_text(sel, KEY_ID)
         b.wait_in_text(sel, "RSA")
@@ -307,7 +311,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_not_packages(b, 1, [remove_pkg])
 
         # Check signatures
-        switch_tab(b, 1, "Signatures")
+        switch_tab(b, 1, TAB_SIGNATURES)
         sel = "#available-deployments > tbody:nth-of-type(1)"
         b.wait_in_text(sel, KEY_ID)
         b.wait_in_text(sel, "RSA")
@@ -319,7 +323,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 2, "Actions", "Roll back")
         wait_deployment_prop(b, 2, "Status", "")
-        wait_deployment_details_prop(b, 2, "Tree", ".os", get_name(self))
+        wait_deployment_details_prop(b, 2, TAB_TREE, ".os", get_name(self))
 
         wait_packages(b, 2, {"down": [tzdata],
                              "up": [chrony],
@@ -391,15 +395,15 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_in_text("#current-branch", "znew-branch")
         wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 1, "Status", "Current")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", f"local:{branch}")
 
         b.click("#check-for-updates-btn")
 
         wait_deployment_prop(b, 1, "Version", "branch-version")
         wait_deployment_prop(b, 1, "Status", "New")
         wait_deployment_prop(b, 1, "Actions", "Rebase")
-        wait_deployment_details_prop(b, 1, "Tree", ".os", get_name(self))
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", "local:znew-branch")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".os", get_name(self))
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", "local:znew-branch")
 
         # Apply update
         do_deployment_action(b, 1, "Rebase")
@@ -418,7 +422,7 @@ class OstreeRestartCase(testlib.MachineCase):
         # After reboot, check commit
         wait_deployment_prop(b, 1, "Version", "branch-version")
         wait_deployment_prop(b, 1, "Status", "Current")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", "local:znew-branch")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", "local:znew-branch")
 
         self.allow_restart_journal_messages()
 
@@ -476,7 +480,7 @@ class OstreeRestartCase(testlib.MachineCase):
         with b.wait_timeout(60):
             b.wait_not_present("#reset-modal")
 
-        wait_deployment_details_prop(b, 1, "Packages", ".removes", "Removalsempty-1-0.noarch")
+        wait_deployment_details_prop(b, 1, TAB_PACKAGES, ".removes", "Removalsempty-1-0.noarch")
 
         m.reboot()
         m.start_cockpit()
@@ -680,17 +684,17 @@ class OstreeCase(testlib.MachineCase):
 
         # Check updates display
         wait_deployment_prop(b, 1, "Version", "cockpit-base.1")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", f"local:{branch}")
 
         b.click("#check-for-updates-btn")
 
         wait_deployment_prop(b, 1, "Version", "zremote-branch1.1")
         wait_deployment_prop(b, 1, "Status", "New")
         wait_deployment_prop(b, 1, "Actions", "Rebase")
-        wait_deployment_details_prop(b, 1, "Tree", ".os", get_name(self))
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", "zremote-test1:zremote-branch1")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".os", get_name(self))
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", "zremote-test1:zremote-branch1")
 
-        wait_deployment_details_prop(b, 1, "Packages", ".same-packages",
+        wait_deployment_details_prop(b, 1, TAB_PACKAGES, ".same-packages",
                                      "This deployment contains the same packages as your currently booted system")
 
         # Switching back shows pulled
@@ -773,7 +777,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_in_text("#current-branch", branch)
         wait_deployment_prop(b, 1, "Version", "bad-version")
         wait_deployment_prop(b, 1, "Status", "New")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"local:{branch}")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", f"local:{branch}")
 
     @testlib.nondestructive
     def testPermission(self):
@@ -866,7 +870,7 @@ class OstreeOCICase(testlib.MachineCase):
         b.wait_text("#current-branch .pf-v5-c-description-list__description", old_branch)
         wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "Current")
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", f"{old_repo}:{old_branch}")
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", f"{old_repo}:{old_branch}")
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
 
         # rebase to our new OCI repo
@@ -886,20 +890,20 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "")
         wait_deployment_prop(b, 1, "Branch", new_repo_branch)
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", new_repo_branch)
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", new_repo_branch)
         if m.image.endswith("-bootc"):
             # the new branch removes "less"
-            wait_deployment_details_prop(b, 1, "Packages", ".removes", "Removals" + less_ver)
+            wait_deployment_details_prop(b, 1, TAB_PACKAGES, ".removes", "Removals" + less_ver)
         else:
             # the repo is a straight rebuild of the OSTree, no package changes
             wait_deployment_details_prop(
-                b, 1, "Packages", ".same-packages",
+                b, 1, TAB_PACKAGES, ".same-packages",
                 "This deployment contains the same packages as your currently booted system")
 
         # current deployment is now second
         wait_deployment_prop(b, 2, "Version", version)
         wait_deployment_prop(b, 2, "Status", "Current")
-        wait_deployment_details_prop(b, 2, "Tree", ".origin", old_repo_branch)
+        wait_deployment_details_prop(b, 2, TAB_TREE, ".origin", old_repo_branch)
         wait_packages(b, 2, {"rpms-col1": [bash_ver]})
 
         # podman sometimes leaves the container behind after reboot despite --rm
@@ -918,19 +922,19 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Version", version)
         wait_deployment_prop(b, 1, "Status", "Current")
         wait_deployment_prop(b, 1, "Branch", new_repo_branch)
-        wait_deployment_details_prop(b, 1, "Tree", ".origin", new_repo_branch)
+        wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", new_repo_branch)
         wait_packages(b, 1, {"rpms-col1": [bash_ver]})
         # ... and second deployment is the ostree repo one
         wait_deployment_prop(b, 2, "Version", version)
         wait_deployment_prop(b, 2, "Status", "")
-        wait_deployment_details_prop(b, 2, "Tree", ".origin", old_repo_branch)
+        wait_deployment_details_prop(b, 2, TAB_TREE, ".origin", old_repo_branch)
         if m.image.endswith("-bootc"):
             # the new branch removes "less", so the old one adds it
-            wait_deployment_details_prop(b, 2, "Packages", ".adds", "Additions" + less_ver)
+            wait_deployment_details_prop(b, 2, TAB_PACKAGES, ".adds", "Additions" + less_ver)
         else:
             # the repo is a straight rebuild of the OSTree, no package changes
             wait_deployment_details_prop(
-                b, 2, "Packages", ".same-packages",
+                b, 2, TAB_PACKAGES, ".same-packages",
                 "This deployment contains the same packages as your currently booted system")
 
 
