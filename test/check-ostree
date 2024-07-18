@@ -36,7 +36,7 @@ KEY_ID = "95A8BA1754D0E95E2B3A98A7EE15015654780CBD"
 
 
 def switch_tab(b, index, tab):
-    row_sel = f"#available-deployments > tbody:nth-child({index + 1})"
+    row_sel = f"#available-deployments > tbody:nth-of-type({index})"
     b.wait_visible(row_sel)
     if not b.is_visible(f"{row_sel} .ct-listing-panel-tabs"):
         b.click(f"{row_sel} .pf-v5-c-table__toggle button")
@@ -46,11 +46,11 @@ def switch_tab(b, index, tab):
 
 def wait_deployment_details_prop(b, index, tab, prop, value):
     switch_tab(b, index, tab)
-    b.wait_text(f"#available-deployments > tbody:nth-child({index + 1}) {prop}", value)
+    b.wait_text(f"#available-deployments > tbody:nth-of-type({index}) {prop}", value)
 
 
 def wait_deployment_prop(b, index, prop, value):
-    deployment = f"#available-deployments > tbody:nth-child({index + 1})"
+    deployment = f"#available-deployments > tbody:nth-of-type({index})"
     if prop == "Actions":
         if value == "":
             b.wait_text(f"{deployment} tr:nth-child(1) td:nth-child(6)", value)
@@ -64,26 +64,26 @@ def wait_packages(b, index, packages):
     switch_tab(b, index, "Packages")
     for group, pkgs in packages.items():
         for pkg in pkgs:
-            b.wait_in_text(f"#available-deployments > tbody:nth-child({index + 1}) .{group}", pkg)
+            b.wait_in_text(f"#available-deployments > tbody:nth-of-type({index}) .{group}", pkg)
 
 
 def wait_not_packages(b, index, packages):
     switch_tab(b, index, "Packages")
     for pkg in packages:
-        b.wait_not_in_text(f"#available-deployments > tbody:nth-child({index + 1})", pkg)
+        b.wait_not_in_text(f"#available-deployments > tbody:nth-of-type({index})", pkg)
 
 
 def check_package_count(b, assertIn, index):
     switch_tab(b, index, "Packages")
     for group in ['adds', 'removes']:
-        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-child({index + 1}) .{group} dd", 1)
+        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-of-type({index}) .{group} dd", 1)
     # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
-    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .up dd"), [1, 2])
-    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-child({index + 1}) .down dd"), [1, 2])
+    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-of-type({index}) .up dd"), [1, 2])
+    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-of-type({index}) .down dd"), [1, 2])
 
 
 def do_deployment_action(b, index, action):
-    deployment_row = f"#available-deployments > tbody:nth-child({index + 1})"
+    deployment_row = f"#available-deployments > tbody:nth-of-type({index})"
     if action in ["Pin", "Unpin", "Delete"]:
         b.click(f"{deployment_row} #deployment-actions")
         b.click(f"{deployment_row} button.pf-v5-c-menu__item:contains({action})")
@@ -204,7 +204,7 @@ class OstreeRestartCase(testlib.MachineCase):
 
         b.assert_pixels("#ostree-status", "status")
         b.assert_pixels("#ostree-source", "source")
-        b.assert_pixels("#available-deployments > tbody:nth-child(2)", "deployment",
+        b.assert_pixels("#available-deployments > tbody:nth-of-type(1)", "deployment",
                         ignore=[".timestamp",
                                 # The columns change size dependent on the second deployment's name.
                                 "td[data-label=Name]", "td[data-label=State]", "td[data-label='Time']"])
@@ -218,7 +218,7 @@ class OstreeRestartCase(testlib.MachineCase):
         # Require signatures
         m.execute("sed -i /gpg-verify/d /etc/ostree/remotes.d/local.conf")
 
-        b.wait_not_in_text("#available-deployments > tbody:nth-child(3) td[data-label=Version]", "cockpit")
+        b.wait_not_in_text("#available-deployments > tbody:nth-of-type(2) td[data-label=Version]", "cockpit")
         wait_deployment_prop(b, 2, "Actions", "Roll back")
         wait_deployment_details_prop(b, 2, "Tree", ".os", get_name(self))
 
@@ -266,7 +266,7 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Check signatures
         switch_tab(b, 1, "Signatures")
-        sel = "#available-deployments > tbody:nth-child(2)"
+        sel = "#available-deployments > tbody:nth-of-type(1)"
         b.wait_in_text(sel, KEY_ID)
         b.wait_in_text(sel, "RSA")
         b.wait_in_text(sel, "Cockpit Tester <do-not-reply@cockpit-project.org>")
@@ -308,7 +308,7 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Check signatures
         switch_tab(b, 1, "Signatures")
-        sel = "#available-deployments > tbody:nth-child(2)"
+        sel = "#available-deployments > tbody:nth-of-type(1)"
         b.wait_in_text(sel, KEY_ID)
         b.wait_in_text(sel, "RSA")
         b.wait_in_text(sel, "Cockpit Tester <do-not-reply@cockpit-project.org>")
@@ -351,7 +351,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Status", "")
 
         # Only two deployments
-        b.wait_not_present("#available-deployments > tbody:nth-child(4)")
+        b.wait_not_present("#available-deployments > tbody:nth-of-type(3)")
 
         self.allow_restart_journal_messages()
 
@@ -484,7 +484,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.reload()
         b.login_and_go("/updates")
         wait_not_packages(b, 1, [OVERLAY_RPM])
-        b.click("#available-deployments > tbody:nth-child(2) .pf-v5-c-table__toggle button")
+        b.click("#available-deployments > tbody:nth-of-type(1) .pf-v5-c-table__toggle button")
 
         # Generate new commit
         generate_new_commit(m, remove_pkg)
@@ -503,7 +503,7 @@ class OstreeRestartCase(testlib.MachineCase):
         do_deployment_action(b, 3, "Pin")
         wait_deployment_prop(b, 3, "Status", "Pinned")
         # Kebab menu is not available for update
-        b.wait_not_present("""#available-deployments > tbody:nth-child(2) tr:nth-child(1)
+        b.wait_not_present("""#available-deployments > tbody:nth-of-type(1) tr:nth-child(1)
                            td:last-child button.pf-v5-c-menu-toggle""")
 
         # Use clean up to remove pending and rollback deployments
