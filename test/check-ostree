@@ -88,9 +88,9 @@ def check_package_count(b, assertIn, index):
 
 def do_deployment_action(b, index, action):
     deployment_row = f"#available-deployments > tbody:nth-of-type({index})"
-    if action in ["Pin", "Unpin", "Delete"]:
+    if action in ["pin", "unpin", "delete"]:
         b.click(f"{deployment_row} #deployment-actions")
-        b.click(f"{deployment_row} button.pf-v5-c-menu__item:contains({action})")
+        b.click(f"{deployment_row} [data-action={action}] button")
     else:
         wait_deployment_prop(b, index, "Actions", action)
         b.click(f"{deployment_row} tr:nth-child(1) td:nth-child(6) button")
@@ -503,7 +503,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Actions", "Update")
 
         # Pin rollback deployment
-        do_deployment_action(b, 3, "Pin")
+        do_deployment_action(b, 3, "pin")
         wait_deployment_prop(b, 3, "Status", "Pinned")
         # Kebab menu is not available for update
         b.wait_not_present("""#available-deployments > tbody:nth-of-type(1) tr:nth-child(1)
@@ -522,12 +522,12 @@ class OstreeRestartCase(testlib.MachineCase):
 
         # Manually delete base.1 deployment
         wait_deployment_prop(b, 2, "Status", "Pinned")
-        do_deployment_action(b, 2, "Unpin")
+        do_deployment_action(b, 2, "unpin")
         b.wait_not_present("#available-deployments .pf-v5-c-dropdown__menu")
         wait_deployment_prop(b, 2, "Version", "cockpit-base.1")
         wait_deployment_prop(b, 2, "Status", "")
         wait_deployment_prop(b, 2, "Actions", "Roll back")
-        do_deployment_action(b, 2, "Delete")
+        do_deployment_action(b, 2, "delete")
 
         # only one available deployment
         b.call_js_func("ph_count_check", "#available-deployments tbody tr", 1)
