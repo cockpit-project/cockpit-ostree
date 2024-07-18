@@ -632,7 +632,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
     const Dialogs = useDialogs();
 
     const actions = [
-        <DropdownItem key="rebase"
+        <DropdownItem key="rebase" data-action="rebase"
             isDisabled={!ostreeState.branches && !ostreeState.branchLoadError}
             onClick={() => Dialogs.show(
                 <RebaseRepositoryModal origin={ostreeState.origin}
@@ -647,14 +647,14 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
             {_("Rebase")}
         </DropdownItem>,
         <Divider key="separator-1" />,
-        <DropdownItem key="add-repository"
+        <DropdownItem key="add-repository" data-action="add-repository"
             onClick={() => Dialogs.show(
                 <AddRepositoryModal refreshRemotes={refreshRemotes} />
             )}
         >
             {_("Add repository")}
         </DropdownItem>,
-        <DropdownItem key="edit-repository"
+        <DropdownItem key="edit-repository" data-action="edit-repository"
             onClick={() => Dialogs.show(
                 <EditRepositoryModal remote={ostreeState.origin.remote}
                     availableRemotes={ostreeState.remotes}
@@ -663,7 +663,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
         >
             {_("Edit repository")}
         </DropdownItem>,
-        <DropdownItem key="remove-repository"
+        <DropdownItem key="remove-repository" data-action="remove-repository"
             onClick={() => Dialogs.show(
                 <RemoveRepositoryModal origin={ostreeState.origin}
                     availableRemotes={ostreeState.remotes}
@@ -896,12 +896,12 @@ class Application extends React.Component {
         });
 
         const kebabActions = [
-            <DropdownItem key="clean-up"
+            <DropdownItem key="clean-up" data-action="clean-up"
                           onClick={() => Dialogs.show(<CleanUpModal os={this.state.os} />)}>
                 {_("Clean up")}
             </DropdownItem>,
             <Divider key="deployment-separator-1" />,
-            <DropdownItem key="reset"
+            <DropdownItem key="reset" data-action="reset"
                           className="pf-v5-u-danger-color-200"
                           onClick={() => Dialogs.show(<ResetModal os={this.state.os} />)}>
                 {_("Reset")}
