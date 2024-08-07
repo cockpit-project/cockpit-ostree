@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 02:52+0000\n"
+"POT-Creation-Date: 2024-08-07 02:54+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -37,7 +37,7 @@ msgstr "Lisää uusi avain"
 msgid "Add new repository"
 msgstr "Lisää uusi asennuslähde"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:168
+#: src/repositoryModals.jsx:168 src/ostree.jsx:655
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Add repository"
@@ -51,25 +51,25 @@ msgstr "Lisäykset"
 msgid "Begins with $0"
 msgstr "Alkaa $0"
 
-#: src/ostree.jsx:312 src/ostree.jsx:691 src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
 msgid "Branch"
 msgstr "Haara"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 #: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
-#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383 src/ostree.jsx:359
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Peru"
 
-#: src/ostree.jsx:790
+#: src/ostree.jsx:793
 msgid "Checking for package updates..."
 msgstr "Tarkistetaan pakettipäivityksiä ..."
 
-#: src/ostree.jsx:820
+#: src/ostree.jsx:823
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:898
+#: src/ostree.jsx:901 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr ""
 
@@ -93,11 +93,11 @@ msgstr "Yhdistetään OSTree:n"
 msgid "Current"
 msgstr "Tämänhetkinen käynnistys"
 
-#: src/ostree.jsx:558
+#: src/ostree.jsx:561
 msgid "Delete"
 msgstr "Poista"
 
-#: src/ostree.jsx:327 src/ostree.jsx:930
+#: src/ostree.jsx:327 src/ostree.jsx:933
 msgid "Deployments and updates"
 msgstr "Käyttöönotot ja päivitykset"
 
@@ -105,13 +105,13 @@ msgstr "Käyttöönotot ja päivitykset"
 msgid "Downgrades"
 msgstr "Aiemmat versiot"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:279
+#: src/repositoryModals.jsx:279 src/ostree.jsx:664
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Edit repository"
 msgstr "Lisää uusi asennuslähde"
 
-#: src/ostree.jsx:836
+#: src/ostree.jsx:839
 msgid "Error loading remotes: $0"
 msgstr "Virhe ladattaessa ohjaimia: $0"
 
@@ -161,7 +161,7 @@ msgstr "Nimi"
 msgid "New"
 msgstr "Verkko"
 
-#: src/ostree.jsx:742
+#: src/ostree.jsx:745
 msgid "No OSTree deployments found"
 msgstr "OSTree-käyttöönottoja ei löytynyt"
 
@@ -177,7 +177,7 @@ msgstr "Ei käyttöönottoja"
 msgid "No signature available"
 msgstr "Allekirjoitusta ei ole saatavilla"
 
-#: src/ostree.jsx:768
+#: src/ostree.jsx:771
 msgid "Not authorized to update software on this system"
 msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
@@ -185,11 +185,11 @@ msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 
-#: src/ostree.jsx:770
+#: src/ostree.jsx:773
 msgid "OSTree is not available on this system"
 msgstr "OSTree ei ole käytettävissä tässä järjestelmässä"
 
-#: src/ostree.jsx:682
+#: src/ostree.jsx:685
 #, fuzzy
 #| msgid "Source"
 msgid "OSTree source"
@@ -217,7 +217,7 @@ msgstr ""
 msgid "Pending deployment"
 msgstr "Ei käyttöönottoja"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Pin"
 msgstr ""
 
@@ -237,7 +237,7 @@ msgstr "Anna kelvollinen nimi"
 msgid "RPM repo metadata"
 msgstr ""
 
-#: src/ostree.jsx:449 src/ostree.jsx:644 src/repositoryModals.jsx:377
+#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
 msgid "Rebase"
 msgstr ""
 
@@ -279,18 +279,18 @@ msgid ""
 "to its original state."
 msgstr ""
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:118
+#: src/repositoryModals.jsx:118 src/ostree.jsx:674
 #, fuzzy
 #| msgid "Repository"
 msgid "Remove repository"
 msgstr "Ohjelmistolähde"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438
+#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438 src/ostree.jsx:690
 msgid "Repository"
 msgstr "Ohjelmistolähde"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:904
+#: src/ostree.jsx:907 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr ""
 
@@ -333,7 +333,7 @@ msgstr "Allekirjoittanut"
 msgid "Software updates"
 msgstr "Ohjelmistopäivitykset"
 
-#: src/ostree.jsx:304 src/ostree.jsx:605
+#: src/ostree.jsx:304 src/ostree.jsx:608
 msgid "Status"
 msgstr "Tila"
 
@@ -341,7 +341,7 @@ msgstr "Tila"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr ""
 
-#: src/ostree.jsx:106 src/ostree.jsx:580
+#: src/ostree.jsx:106 src/ostree.jsx:583
 msgid "System is up to date"
 msgstr "Järjestelmä on ajan tasalla"
 
@@ -378,7 +378,7 @@ msgstr "URL"
 msgid "Unable to communicate with OSTree"
 msgstr "Kommunikaatio OSTree:n kanssa epäonnistui"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Unpin"
 msgstr ""
 
@@ -386,7 +386,7 @@ msgstr ""
 msgid "Update"
 msgstr "Päivitä"
 
-#: src/ostree.jsx:574
+#: src/ostree.jsx:577
 #, fuzzy
 #| msgid "Update available: $0"
 msgid "Update available"

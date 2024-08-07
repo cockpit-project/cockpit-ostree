@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 02:52+0000\n"
+"POT-Creation-Date: 2024-08-07 02:54+0000\n"
 "PO-Revision-Date: 2023-03-26 17:20+0000\n"
 "Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
@@ -41,7 +41,7 @@ msgstr "Einen weiteren Schlüssel hinzufügen"
 msgid "Add new repository"
 msgstr "Neues Repositorium hinzufügen"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:168
+#: src/repositoryModals.jsx:168 src/ostree.jsx:655
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Add repository"
@@ -55,25 +55,25 @@ msgstr "Neue Pakete"
 msgid "Begins with $0"
 msgstr "Beginnt mit $0"
 
-#: src/ostree.jsx:312 src/ostree.jsx:691 src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
 msgid "Branch"
 msgstr "Zweig"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 #: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
-#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383 src/ostree.jsx:359
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Abbrechen"
 
-#: src/ostree.jsx:790
+#: src/ostree.jsx:793
 msgid "Checking for package updates..."
 msgstr "Auf Paketaktualisierungen wird geprüft ..."
 
-#: src/ostree.jsx:820
+#: src/ostree.jsx:823
 msgid "Checking for updates"
 msgstr "Auf Aktualisierungen wird geprüft"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:898
+#: src/ostree.jsx:901 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr ""
 
@@ -97,11 +97,11 @@ msgstr "Verbinde zu OSTree"
 msgid "Current"
 msgstr "Parent"
 
-#: src/ostree.jsx:558
+#: src/ostree.jsx:561
 msgid "Delete"
 msgstr "Löschen"
 
-#: src/ostree.jsx:327 src/ostree.jsx:930
+#: src/ostree.jsx:327 src/ostree.jsx:933
 msgid "Deployments and updates"
 msgstr "Bereitstellungen und Aktualisierungen"
 
@@ -109,13 +109,13 @@ msgstr "Bereitstellungen und Aktualisierungen"
 msgid "Downgrades"
 msgstr "Herabstufungen"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:279
+#: src/repositoryModals.jsx:279 src/ostree.jsx:664
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Edit repository"
 msgstr "Neues Repositorium hinzufügen"
 
-#: src/ostree.jsx:836
+#: src/ostree.jsx:839
 msgid "Error loading remotes: $0"
 msgstr "Fehler beim Laden der Remotes: $0"
 
@@ -165,7 +165,7 @@ msgstr "Name"
 msgid "New"
 msgstr "Netzwerk"
 
-#: src/ostree.jsx:742
+#: src/ostree.jsx:745
 msgid "No OSTree deployments found"
 msgstr "Keine OSTree Bereitstellungen gefunden"
 
@@ -181,7 +181,7 @@ msgstr "Keine Bereitstellungen"
 msgid "No signature available"
 msgstr "Keine Signatur verfügbar"
 
-#: src/ostree.jsx:768
+#: src/ostree.jsx:771
 msgid "Not authorized to update software on this system"
 msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 
@@ -189,11 +189,11 @@ msgstr "Nicht autorisiert zum Aktualisieren der Software auf diesem System"
 msgid "OS $0 not found"
 msgstr "OS $0 nicht gefunden"
 
-#: src/ostree.jsx:770
+#: src/ostree.jsx:773
 msgid "OSTree is not available on this system"
 msgstr "OSTree ist auf diesem System nicht verfügbar"
 
-#: src/ostree.jsx:682
+#: src/ostree.jsx:685
 msgid "OSTree source"
 msgstr ""
 
@@ -219,7 +219,7 @@ msgstr ""
 msgid "Pending deployment"
 msgstr "Keine Bereitstellungen"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Pin"
 msgstr ""
 
@@ -239,7 +239,7 @@ msgstr "Bitte geben Sie einen gültigen Namen an"
 msgid "RPM repo metadata"
 msgstr ""
 
-#: src/ostree.jsx:449 src/ostree.jsx:644 src/repositoryModals.jsx:377
+#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
 msgid "Rebase"
 msgstr ""
 
@@ -282,18 +282,18 @@ msgid ""
 "to its original state."
 msgstr ""
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:118
+#: src/repositoryModals.jsx:118 src/ostree.jsx:674
 #, fuzzy
 #| msgid "Repository"
 msgid "Remove repository"
 msgstr "Paketquelle"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438
+#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438 src/ostree.jsx:690
 msgid "Repository"
 msgstr "Paketquelle"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:904
+#: src/ostree.jsx:907 src/deploymentModals.jsx:179
 #, fuzzy
 #| msgid "Preset"
 msgid "Reset"
@@ -335,7 +335,7 @@ msgstr "Signiert von"
 msgid "Software updates"
 msgstr "Software-Aktualisierungen"
 
-#: src/ostree.jsx:304 src/ostree.jsx:605
+#: src/ostree.jsx:304 src/ostree.jsx:608
 msgid "Status"
 msgstr "Status"
 
@@ -343,7 +343,7 @@ msgstr "Status"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr ""
 
-#: src/ostree.jsx:106 src/ostree.jsx:580
+#: src/ostree.jsx:106 src/ostree.jsx:583
 msgid "System is up to date"
 msgstr "System ist auf dem neuesten Stand"
 
@@ -379,7 +379,7 @@ msgstr "URL"
 msgid "Unable to communicate with OSTree"
 msgstr "Kann nicht mit OSTree kommunizieren"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Unpin"
 msgstr ""
 
@@ -387,7 +387,7 @@ msgstr ""
 msgid "Update"
 msgstr "Update"
 
-#: src/ostree.jsx:574
+#: src/ostree.jsx:577
 #, fuzzy
 #| msgid "Update available: $0"
 msgid "Update available"

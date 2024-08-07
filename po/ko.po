@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-07-13 02:52+0000\n"
+"POT-Creation-Date: 2024-08-07 02:54+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -34,7 +34,7 @@ msgstr "다른 키를 추가합니다"
 msgid "Add new repository"
 msgstr "신규 저장소 추가"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:168
+#: src/repositoryModals.jsx:168 src/ostree.jsx:655
 msgid "Add repository"
 msgstr "저장소 추가"
 
@@ -46,25 +46,25 @@ msgstr "추가"
 msgid "Begins with $0"
 msgstr "$0부터 시작합니다"
 
-#: src/ostree.jsx:312 src/ostree.jsx:691 src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
 msgid "Branch"
 msgstr "분기"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 #: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
-#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383 src/ostree.jsx:359
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "취소"
 
-#: src/ostree.jsx:790
+#: src/ostree.jsx:793
 msgid "Checking for package updates..."
 msgstr "꾸러미 최신화를 위해 점검하기..."
 
-#: src/ostree.jsx:820
+#: src/ostree.jsx:823
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:898
+#: src/ostree.jsx:901 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr "정리"
 
@@ -84,11 +84,11 @@ msgstr "OSTree에 연걸"
 msgid "Current"
 msgstr "현재"
 
-#: src/ostree.jsx:558
+#: src/ostree.jsx:561
 msgid "Delete"
 msgstr "삭제"
 
-#: src/ostree.jsx:327 src/ostree.jsx:930
+#: src/ostree.jsx:327 src/ostree.jsx:933
 msgid "Deployments and updates"
 msgstr "개발과 최신화"
 
@@ -96,11 +96,11 @@ msgstr "개발과 최신화"
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:279
+#: src/repositoryModals.jsx:279 src/ostree.jsx:664
 msgid "Edit repository"
 msgstr "저장소 편집"
 
-#: src/ostree.jsx:836
+#: src/ostree.jsx:839
 msgid "Error loading remotes: $0"
 msgstr "원격적재 오류: $0"
 
@@ -148,7 +148,7 @@ msgstr "이름"
 msgid "New"
 msgstr "신규"
 
-#: src/ostree.jsx:742
+#: src/ostree.jsx:745
 msgid "No OSTree deployments found"
 msgstr "OSTree 배포를 찾을 수 없습니다"
 
@@ -164,7 +164,7 @@ msgstr "배포 없음"
 msgid "No signature available"
 msgstr "이용 가능한 서명이 없습니다"
 
-#: src/ostree.jsx:768
+#: src/ostree.jsx:771
 msgid "Not authorized to update software on this system"
 msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
 
@@ -172,11 +172,11 @@ msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다
 msgid "OS $0 not found"
 msgstr "OS $0 찾을 수 없습니다"
 
-#: src/ostree.jsx:770
+#: src/ostree.jsx:773
 msgid "OSTree is not available on this system"
 msgstr "OSTree는 이 시스템에서 사용 할 수 없습니다"
 
-#: src/ostree.jsx:682
+#: src/ostree.jsx:685
 msgid "OSTree source"
 msgstr "OSTree 원천"
 
@@ -200,7 +200,7 @@ msgstr "시스템에 추가된 꾸러미"
 msgid "Pending deployment"
 msgstr "배포 보류 중"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Pin"
 msgstr "핀"
 
@@ -220,7 +220,7 @@ msgstr "유효한 이름을 제공해야 합니다"
 msgid "RPM repo metadata"
 msgstr "RPM 저장소 메타자료"
 
-#: src/ostree.jsx:449 src/ostree.jsx:644 src/repositoryModals.jsx:377
+#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
 msgid "Rebase"
 msgstr "재구성"
 
@@ -259,16 +259,16 @@ msgid ""
 msgstr ""
 "꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:118
+#: src/repositoryModals.jsx:118 src/ostree.jsx:674
 msgid "Remove repository"
 msgstr "저장소 제거"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438
+#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438 src/ostree.jsx:690
 msgid "Repository"
 msgstr "저장소"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:904
+#: src/ostree.jsx:907 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr "재설정"
 
@@ -304,7 +304,7 @@ msgstr "서명되었습니다"
 msgid "Software updates"
 msgstr "소프트웨어 최신화"
 
-#: src/ostree.jsx:304 src/ostree.jsx:605
+#: src/ostree.jsx:304 src/ostree.jsx:608
 msgid "Status"
 msgstr "상태"
 
@@ -312,7 +312,7 @@ msgstr "상태"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "꾸러미의 대체 항목은 일반적으로 OS 제작에 포함되어 있습니다"
 
-#: src/ostree.jsx:106 src/ostree.jsx:580
+#: src/ostree.jsx:106 src/ostree.jsx:583
 msgid "System is up to date"
 msgstr "시스템이 최신 상태입니다"
 
@@ -346,7 +346,7 @@ msgstr "URL"
 msgid "Unable to communicate with OSTree"
 msgstr "OSTree와 통신 할 수 없습니다"
 
-#: src/ostree.jsx:544
+#: src/ostree.jsx:546
 msgid "Unpin"
 msgstr "고정해제"
 
@@ -354,7 +354,7 @@ msgstr "고정해제"
 msgid "Update"
 msgstr "최신화"
 
-#: src/ostree.jsx:574
+#: src/ostree.jsx:577
 msgid "Update available"
 msgstr "최신화 가능"
 
