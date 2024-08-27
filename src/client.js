@@ -176,6 +176,11 @@ class RPMOSTreeDBusClient {
             this.sysroot.addEventListener("changed", this.on_sysroot_changed);
             this.sysroot.wait(() => {
                 if (this.client) {
+                    /* HACK: by default, rpm-ostreed's IdleTimeout is way too aggressive and broken
+                    * Tell it to not do that */
+                    this.sysroot.RegisterClient({ id: cockpit.variant("s", "cockpit-ostree") })
+                            .catch(ex => console.error("Failed to register client:", JSON.stringify(ex)));
+
                     this.os_proxies = this.client.proxies(OS, PATH);
                     this.os_proxies_added = (event, proxy) => {
                         if (proxy.Name)
