@@ -878,11 +878,6 @@ class OstreeOCICase(testlib.MachineCase):
         if m.image.endswith("-bootc"):
             # this works with rpm-ostree as well, but let's use the future designated CLI
             m.execute(f"bootc switch localhost:5000/bootc:{new_branch}")
-
-            # HACK: rpm-ostreed hard-timeouts in a crash-like manner after a minute, with no
-            # obvious way to keep it alive; https://issues.redhat.com/browse/RHEL-49603
-            b.reload()
-            b.enter_page("/updates")
         else:
             m.execute(f"rpm-ostree rebase {new_repo_branch}")
 
