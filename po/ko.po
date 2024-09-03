@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 02:54+0000\n"
+"POT-Creation-Date: 2024-09-02 03:00+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -22,7 +22,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "$0 및 재시작"
 
-#: src/client.js:402
+#: src/client.js:407
 msgid "$0 key ID"
 msgstr "$0 키 ID"
 
@@ -168,7 +168,7 @@ msgstr "이용 가능한 서명이 없습니다"
 msgid "Not authorized to update software on this system"
 msgstr "이 시스템에서 소프트웨어 최신화 할 권한이 없습니다"
 
-#: src/client.js:495 src/client.js:559
+#: src/client.js:500 src/client.js:564
 msgid "OS $0 not found"
 msgstr "OS $0 찾을 수 없습니다"
 

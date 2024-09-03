@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 02:54+0000\n"
+"POT-Creation-Date: 2024-09-02 03:00+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -26,7 +26,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "Перенести і перезавантажити"
 
-#: src/client.js:402
+#: src/client.js:407
 msgid "$0 key ID"
 msgstr "Ід. ключа $0"
 
@@ -182,7 +182,7 @@ msgstr "Немає доступних підписів"
 msgid "Not authorized to update software on this system"
 msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
 
-#: src/client.js:495 src/client.js:559
+#: src/client.js:500 src/client.js:564
 msgid "OS $0 not found"
 msgstr "ОС $0 не знайдено"
 

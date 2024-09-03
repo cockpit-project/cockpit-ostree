@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 02:54+0000\n"
+"POT-Creation-Date: 2024-09-02 03:00+0000\n"
 "PO-Revision-Date: 2023-12-11 06:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "$0 და გადატვირთვა"
 
-#: src/client.js:402
+#: src/client.js:407
 msgid "$0 key ID"
 msgstr "$0 გასაღების ID"
 
@@ -171,7 +171,7 @@ msgid "Not authorized to update software on this system"
 msgstr ""
 "ამ სისტემის პროგრამული უზრუნველყოფის განახლებისთვის ავტორიზაცია არ გაგაჩნიათ"
 
-#: src/client.js:495 src/client.js:559
+#: src/client.js:500 src/client.js:564
 msgid "OS $0 not found"
 msgstr "OS $0 ნაპოვნი არაა"
 
