@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 02:54+0000\n"
+"POT-Creation-Date: 2024-09-02 03:00+0000\n"
 "PO-Revision-Date: 2023-02-18 11:56+0000\n"
 "Last-Translator: Jan Kuparinen <copper_fin@hotmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -25,7 +25,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "Rebase ja käynnistä uudelleen"
 
-#: src/client.js:402
+#: src/client.js:407
 msgid "$0 key ID"
 msgstr "$0 avain ID"
 
@@ -181,7 +181,7 @@ msgstr "Allekirjoitusta ei ole saatavilla"
 msgid "Not authorized to update software on this system"
 msgstr "Ei valtuutusta päivittää tämän järjestelmän ohjelmistoja"
 
-#: src/client.js:495 src/client.js:559
+#: src/client.js:500 src/client.js:564
 msgid "OS $0 not found"
 msgstr "Käyttöjärjestelmää $0 ei löytynyt"
 

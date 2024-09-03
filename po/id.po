@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-08-07 02:54+0000\n"
+"POT-Creation-Date: 2024-09-02 03:00+0000\n"
 "PO-Revision-Date: 2023-12-25 18:36+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -24,7 +24,7 @@ msgstr ""
 msgid "$0 and reboot"
 msgstr "$0 dan reboot"
 
-#: src/client.js:402
+#: src/client.js:407
 msgid "$0 key ID"
 msgstr "ID kunci $0"
 
@@ -170,7 +170,7 @@ msgstr "Tidak ada tanda tangan yang tersedia"
 msgid "Not authorized to update software on this system"
 msgstr "Tidak berwenang untuk memperbarui perangkat lunak pada sistem ini"
 
-#: src/client.js:495 src/client.js:559
+#: src/client.js:500 src/client.js:564
 msgid "OS $0 not found"
 msgstr "OS $0 tidak ditemukan"
 
