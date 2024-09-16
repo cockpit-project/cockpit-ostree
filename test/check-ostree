@@ -206,7 +206,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_details_prop(b, 1, TAB_TREE, ".os", get_name(self))
         wait_deployment_details_prop(b, 1, TAB_TREE, ".version", "cockpit-base.1")
 
-        b.assert_pixels("#ostree-status", "status")
+        b.assert_pixels("#ostree-status", "status", wait_after_layout_change=True)
         b.assert_pixels("#ostree-source", "source")
         b.assert_pixels("#available-deployments > tbody:nth-of-type(1)", "deployment",
                         ignore=[".timestamp",
