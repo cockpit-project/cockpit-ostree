@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-02 03:00+0000\n"
+"POT-Creation-Date: 2024-09-17 02:52+0000\n"
 "PO-Revision-Date: 2024-06-14 18:36+0000\n"
 "Last-Translator: Wojciech Teichert <wojtekt99@gmail.com>\n"
 "Language-Team: Polish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -42,7 +42,7 @@ msgstr "Dodaj inny klucz"
 msgid "Add new repository"
 msgstr "Dodaj nowe repozytorium"
 
-#: src/repositoryModals.jsx:168 src/ostree.jsx:655
+#: src/ostree.jsx:655 src/repositoryModals.jsx:168
 #, fuzzy
 #| msgid "Add new repository"
 msgid "Add repository"
@@ -56,12 +56,12 @@ msgstr "Dodane"
 msgid "Begins with $0"
 msgstr "Zaczyna się od $0"
 
-#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
+#: src/ostree.jsx:312 src/ostree.jsx:694 src/repositoryModals.jsx:445
 msgid "Branch"
 msgstr "Gałąź"
 
-#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
-#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383 src/ostree.jsx:359
+#: src/ostree.jsx:359 src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
 #: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Anuluj"
@@ -110,7 +110,7 @@ msgstr "Wdrożenia i aktualizacje"
 msgid "Downgrades"
 msgstr "Zainstalowane w starszej wersji"
 
-#: src/repositoryModals.jsx:279 src/ostree.jsx:664
+#: src/ostree.jsx:664 src/repositoryModals.jsx:279
 #, fuzzy
 #| msgid "Git Repository"
 msgid "Edit repository"
@@ -244,7 +244,7 @@ msgstr "Proszę podać prawidłową nazwę"
 msgid "RPM repo metadata"
 msgstr "Metadane"
 
-#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
+#: src/ostree.jsx:449 src/ostree.jsx:647 src/repositoryModals.jsx:377
 msgid "Rebase"
 msgstr ""
 
@@ -288,14 +288,14 @@ msgstr ""
 "Usuń dodatki i podmiany z pakietów aby powrócić tą instalacje do stanu "
 "oryginalnego."
 
-#: src/repositoryModals.jsx:118 src/ostree.jsx:674
+#: src/ostree.jsx:674 src/repositoryModals.jsx:118
 #, fuzzy
 #| msgid "Repository"
 msgid "Remove repository"
 msgstr "Repozytorium"
 
-#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438 src/ostree.jsx:690
+#: src/ostree.jsx:690 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438
 msgid "Repository"
 msgstr "Repozytorium"
 
