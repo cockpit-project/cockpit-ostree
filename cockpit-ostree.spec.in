@@ -12,6 +12,10 @@ Requires: rpm-ostree
 
 Source: https://github.com/cockpit-project/%{name}/releases/download/%{version}/cockpit-ostree-%{version}.tar.xz
 
+%if 0%{?fedora} >= 41 || 0%{?rhel}
+ExcludeArch: %{ix86}
+%endif
+
 %define debug_package %{nil}
 
 %description
