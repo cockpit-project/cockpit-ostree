@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-17 02:52+0000\n"
+"POT-Creation-Date: 2024-10-13 03:15+0000\n"
 "PO-Revision-Date: 2023-03-26 17:20+0000\n"
 "Last-Translator: Joachim Philipp <joachim.philipp@gmail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
@@ -59,9 +59,9 @@ msgstr "Beginnt mit $0"
 msgid "Branch"
 msgstr "Zweig"
 
-#: src/ostree.jsx:359 src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
+#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -73,7 +73,7 @@ msgstr "Auf Paketaktualisierungen wird geprüft ..."
 msgid "Checking for updates"
 msgstr "Auf Aktualisierungen wird geprüft"
 
-#: src/ostree.jsx:901 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:901
 msgid "Clean up"
 msgstr ""
 
@@ -293,7 +293,7 @@ msgstr "Paketquelle"
 msgid "Repository"
 msgstr "Paketquelle"
 
-#: src/ostree.jsx:907 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:907
 #, fuzzy
 #| msgid "Preset"
 msgid "Reset"
