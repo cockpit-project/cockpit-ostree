@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-13 03:15+0000\n"
-"PO-Revision-Date: 2024-03-01 22:36+0000\n"
+"POT-Creation-Date: 2024-10-27 03:16+0000\n"
+"PO-Revision-Date: 2024-10-27 18:41+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"X-Generator: Weblate 5.4\n"
+"X-Generator: Weblate 5.7.2\n"
 
 #: src/ostree.jsx:356
 msgid "$0 and reboot"
@@ -120,7 +120,7 @@ msgstr "Nepodařilo se"
 
 #: src/ostree.jsx:294
 msgid "Failed to rebase deployment"
-msgstr "Nepodařilo se přejít na novější zdroj nasazení"
+msgstr "Nepodařilo se přejít na novější/jiný zdroj nasazování"
 
 #: src/ostree.jsx:273
 msgid "Failed to roll back deployment"
@@ -233,11 +233,11 @@ msgstr "Metadata RPM repozitáře"
 
 #: src/ostree.jsx:449 src/ostree.jsx:647 src/repositoryModals.jsx:377
 msgid "Rebase"
-msgstr "Načíst znovu ze zdroje"
+msgstr "Načíst znovu / změnit zdroj"
 
 #: src/repositoryModals.jsx:428
 msgid "Rebase repository and branch"
-msgstr "Načíst znovu z repozitáře a větve"
+msgstr "Načíst znovu / změnit repozitář a větev"
 
 #: src/ostree.jsx:149
 msgid "Reconnect"
@@ -258,7 +258,7 @@ msgstr "Odstranit"
 
 #: src/deploymentModals.jsx:196
 msgid "Remove overlays"
-msgstr "Odebrat překryvné"
+msgstr "Odebrat dodatečné vrstvy"
 
 #: src/deploymentModals.jsx:203
 msgid "Remove overrides"
@@ -269,7 +269,7 @@ msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
 msgstr ""
-"Odebrat přidání balíčků nebo dosazení a vrátit tak stávající nasazení do "
+"Odebrat přidání nebo nahrazení balíčků a vrátit tak stávající nasazení do "
 "jeho původního stavu."
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
@@ -308,7 +308,7 @@ msgstr "Uložit"
 # auto translated by TM merge from project: Fedora OpenSSH Guide, version: master, DocId: Security
 #: src/repositoryModals.jsx:214
 msgid "Security"
-msgstr "Bezpečnost"
+msgstr "Zabezpečení"
 
 #: src/ostree.jsx:511
 msgid "Signatures"
@@ -337,7 +337,7 @@ msgstr "Systém je aktuální"
 
 #: src/ostree.jsx:429 src/ostree.jsx:435 src/ostree.jsx:441
 msgid "System will rebase to $0, updated $1."
-msgstr "Systém bude přenačten na #0, aktualizováno $1."
+msgstr "Systém bude (nově) čerpat z instalačního zdroje $0, aktualizováno $1."
 
 #: src/deploymentModals.jsx:103
 msgid "Temporary files"
