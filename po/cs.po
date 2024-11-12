@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-10-27 03:16+0000\n"
-"PO-Revision-Date: 2024-10-27 18:41+0000\n"
+"POT-Creation-Date: 2024-11-11 03:04+0000\n"
+"PO-Revision-Date: 2024-11-11 23:15+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/cs/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2\n"
-"X-Generator: Weblate 5.7.2\n"
+"X-Generator: Weblate 5.8.2\n"
 
 #: src/ostree.jsx:356
 msgid "$0 and reboot"
@@ -42,7 +42,7 @@ msgstr "Přidat repozitář"
 
 #: src/ostree.jsx:188
 msgid "Additions"
-msgstr "Doplňky"
+msgstr "Přidané"
 
 #: src/repositoryModals.jsx:319
 msgid "Begins with $0"
