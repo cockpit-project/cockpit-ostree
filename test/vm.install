@@ -20,7 +20,7 @@ else
     rpm2archive /tmp/cockpit-ostree-*.rpm | tar -C / --transform 's,/usr/,/usr/local/,' -xzv
 fi
 
-if bootc status >/dev/null; then
+if bootc status --json | jq .status.booted.image | grep -q version; then
     # for bootc, create a "cockpit1" tag with a removed package, so that we can tell apart the versions in the UI
     podman run -d --name ostree-registry -p 5000:5000 -v /var/lib/cockpit-test-registry/:/var/lib/registry localhost/test-registry
     printf 'FROM localhost:5000/bootc:latest\nRUN rpm -e --verbose less' | podman build -t localhost:5000/bootc:cockpit1 -
