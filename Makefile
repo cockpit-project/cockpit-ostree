@@ -141,7 +141,7 @@ rpm: $(TARFILE) $(NODE_CACHE) $(SPEC)
 	  $(SPEC)
 	find `pwd`/output -name '*.rpm' -printf '%f\n' -exec mv {} . \;
 	rm -r "`pwd`/rpmbuild"
-	rm -r "`pwd`/output" "`pwd`/build"
+	rm -rf "`pwd`/output" "`pwd`/build"
 
 # build a VM with locally built rpm installed, cockpit/ws container, and local
 # ostree for testing
