@@ -44,14 +44,14 @@ import { Text } from "@patternfly/react-core/dist/esm/components/Text";
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
 import { BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon, PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon } from '@patternfly/react-icons';
-import { KebabDropdown } from 'cockpit-components-dropdown.jsx';
-import { WithDialogs, DialogsContext, useDialogs } from "dialogs.jsx";
 import PropTypes from "prop-types";
 import { debounce } from 'throttle-debounce';
 
 import cockpit from 'cockpit';
-import { ListingPanel } from 'cockpit-components-listing-panel.jsx';
-import { ListingTable } from "cockpit-components-table.jsx";
+import { KebabDropdown } from 'cockpit-components-dropdown';
+import { ListingPanel } from 'cockpit-components-listing-panel';
+import { ListingTable } from "cockpit-components-table";
+import { WithDialogs, DialogsContext, useDialogs } from "dialogs";
 import { superuser } from 'superuser';
 import * as timeformat from 'timeformat';
 
