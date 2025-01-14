@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 03:20+0000\n"
+"POT-Creation-Date: 2025-01-09 03:28+0000\n"
 "PO-Revision-Date: 2023-06-15 14:20+0000\n"
 "Last-Translator: Geert Warrink <geert.warrink@onsnet.nu>\n"
 "Language-Team: Dutch <https://translate.fedoraproject.org/projects/cockpit-"
@@ -51,9 +51,9 @@ msgstr "Begint met $0"
 msgid "Branch"
 msgstr "Tak"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
-#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/ostree.jsx:359 src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Annuleren"
 
@@ -65,7 +65,7 @@ msgstr "Controleren op updates..."
 msgid "Checking for updates"
 msgstr "Controleren op updates"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:901
+#: src/ostree.jsx:901 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr ""
 
@@ -282,7 +282,7 @@ msgstr "Repository"
 msgid "Repository"
 msgstr "Repository"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:907
+#: src/ostree.jsx:907 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr ""
 
