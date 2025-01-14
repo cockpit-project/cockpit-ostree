@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-12-14 03:20+0000\n"
+"POT-Creation-Date: 2025-01-09 03:28+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -50,9 +50,9 @@ msgstr "$0 ile başlar"
 msgid "Branch"
 msgstr "Dal"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
-#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/ostree.jsx:359 src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "İptal"
 
@@ -64,7 +64,7 @@ msgstr "Paket güncellemeleri denetleniyor..."
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
-#: src/deploymentModals.jsx:80 src/ostree.jsx:901
+#: src/ostree.jsx:901 src/deploymentModals.jsx:80
 msgid "Clean up"
 msgstr "Temizle"
 
@@ -269,7 +269,7 @@ msgstr "Depoyu kaldır"
 msgid "Repository"
 msgstr "Depo"
 
-#: src/deploymentModals.jsx:179 src/ostree.jsx:907
+#: src/ostree.jsx:907 src/deploymentModals.jsx:179
 msgid "Reset"
 msgstr "Sıfırla"
 
