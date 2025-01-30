@@ -36,7 +36,7 @@ COCKPIT_REPO_FILES = \
 	$(NULL)
 
 COCKPIT_REPO_URL = https://github.com/cockpit-project/cockpit.git
-COCKPIT_REPO_COMMIT = fa91d69378d44616cf2b276fcbbcdd6b982b117a # 331 + 103 commits
+COCKPIT_REPO_COMMIT = f05981311645107ac622bd16e702f84368bf0736 # 332 + 4 commits
 
 $(COCKPIT_REPO_FILES): $(COCKPIT_REPO_STAMP)
 COCKPIT_REPO_TREE = '$(strip $(COCKPIT_REPO_COMMIT))^{tree}'
@@ -62,8 +62,8 @@ po/$(PACKAGE_NAME).js.pot:
 po/$(PACKAGE_NAME).html.pot: $(NODE_MODULES_TEST) $(COCKPIT_REPO_STAMP)
 	pkg/lib/html2po.js -o $@ $$(find src -name '*.html')
 
-po/$(PACKAGE_NAME).manifest.pot: $(NODE_MODULES_TEST) $(COCKPIT_REPO_STAMP)
-	pkg/lib/manifest2po.js src/manifest.json -o $@
+po/$(PACKAGE_NAME).manifest.pot: $(COCKPIT_REPO_STAMP)
+	pkg/lib/manifest2po -o $@ src/manifest.json
 
 po/$(PACKAGE_NAME).pot: po/$(PACKAGE_NAME).html.pot po/$(PACKAGE_NAME).js.pot po/$(PACKAGE_NAME).manifest.pot
 	msgcat --sort-output --output-file=$@ $^
