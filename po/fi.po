@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-01-09 03:28+0000\n"
+"POT-Creation-Date: 2025-02-04 03:01+0000\n"
 "PO-Revision-Date: 2024-09-16 16:10+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -51,9 +51,9 @@ msgstr "Alkaa $0"
 msgid "Branch"
 msgstr "Haara"
 
-#: src/ostree.jsx:359 src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
+#: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
 msgid "Cancel"
 msgstr "Peru"
 
@@ -65,7 +65,7 @@ msgstr "Tarkistetaan pakettipäivityksiä ..."
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
-#: src/ostree.jsx:901 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:901
 msgid "Clean up"
 msgstr "Siivoa"
 
@@ -270,7 +270,7 @@ msgstr "Poista tietovarasto"
 msgid "Repository"
 msgstr "Ohjelmistolähde"
 
-#: src/ostree.jsx:907 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:907
 msgid "Reset"
 msgstr "Nollaa"
 
