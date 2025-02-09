@@ -29,7 +29,7 @@ Cockpit component for managing software updates for ostree based systems.
 
 %files
 %doc README.md
-%license LICENSE dist/ostree.js.LEGAL.txt dist/ostree.css.LEGAL.txt
+%license LICENSE dist/ostree.js.LEGAL.txt
 %{_datadir}/cockpit/*
 
 %changelog
