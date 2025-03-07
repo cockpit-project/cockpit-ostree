@@ -598,7 +598,7 @@ class RPMOSTreeDBusClient {
                                 }
                             } else {
                                 console.warn("Unexpected transaction response", args);
-                                reject(Error({ problem: "protocol-error" }));
+                                reject(new Error({ problem: "protocol-error" }));
                             }
                         }
                     });
