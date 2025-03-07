@@ -167,7 +167,7 @@ class RPMOSTreeDBusClient {
 
             /* Watch before listening for close because watch fires first */
             this.client.watch(PATH).catch(this.tear_down);
-            this.client.addEventListener("close", (event, ex) => {
+            this.client.addEventListener("close", (_event, ex) => {
                 this.tear_down(ex);
                 this.dispatchEvent("connectionLost", [ex]);
             });
@@ -182,7 +182,7 @@ class RPMOSTreeDBusClient {
                             .catch(ex => console.error("Failed to register client:", JSON.stringify(ex)));
 
                     this.os_proxies = this.client.proxies(OS, PATH);
-                    this.os_proxies_added = (event, proxy) => {
+                    this.os_proxies_added = (_event, proxy) => {
                         if (proxy.Name)
                             this.os_names[proxy.Name] = proxy.path;
                     };
@@ -241,7 +241,7 @@ class RPMOSTreeDBusClient {
         this.trigger_changed();
     }
 
-    on_sysroot_changed(ev, data) {
+    on_sysroot_changed(_ev, data) {
         if (data.Deployments) {
             this.build_os_list(data.Deployments);
         } else if ("ActiveTransaction" in data) {
@@ -521,7 +521,7 @@ class RPMOSTreeDBusClient {
     }
 
     reload() {
-        return new Promise((resolve, reject) => {
+        return new Promise((resolve) => {
             // Not all Systems support this so just skip if not known
             if (this.sysroot && this.sysroot.ReloadConfig) {
                 this.sysroot.ReloadConfig()
@@ -551,7 +551,7 @@ class RPMOSTreeDBusClient {
             }
         }
 
-        const on_close = (event, ex) => {
+        const on_close = (_event, ex) => {
             logDebug("run_transaction", method, method_args, os, ": closed", ex);
             throw ex;
         };
@@ -583,7 +583,7 @@ class RPMOSTreeDBusClient {
             return await new Promise((resolve, reject) => {
                 subscription = transaction_client.subscribe(
                     { path: "/", },
-                    (path, iface, signal, args) => {
+                    (_path, _iface, signal, args) => {
                         if (signal === "DownloadProgress") {
                             logDebug("run_transaction", method, method_args, os, ": got DownloadProgress", args);
                         } else if (signal === "Message") {

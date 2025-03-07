@@ -494,7 +494,7 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
 
     let signatures = [];
     if (info.signatures && info.signatures.v.length > 0)
-        signatures = info.signatures.v.map((raw, index) => client.signature_obj(raw));
+        signatures = info.signatures.v.map((raw) => client.signature_obj(raw));
 
     const tabRenderers = [
         {
@@ -780,7 +780,7 @@ class Application extends React.Component {
             set_page_status(null);
         };
 
-        client.addEventListener("connectionLost", (event, ex) => show_failure(ex));
+        client.addEventListener("connectionLost", (_event, ex) => show_failure(ex));
         client.addEventListener("changed", () => this.forceUpdate());
 
         client.connect()
