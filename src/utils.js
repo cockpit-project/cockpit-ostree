@@ -37,7 +37,8 @@ function formatOption(key, value) {
 
 function formatOptions(options) {
     const output = [];
-    let k, v;
+    let k;
+    let v;
     for ([k, v] of Object.entries(options)) {
         if (v || v === false)
             output.push(formatOption(k, v));
@@ -77,7 +78,8 @@ export function changeData(string, section, options) {
     /* Find the section and set any existing options */
     for (i = 0; i < lines.length; i++) {
         let line = lines[i];
-        let m, k;
+        let m;
+        let k;
         if (configRegex.section.test(line)) {
             /* Leaving section stop processing */
             if (in_section)
