@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:01+0000\n"
+"POT-Creation-Date: 2025-03-06 03:17+0000\n"
 "PO-Revision-Date: 2023-12-25 18:36+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -36,7 +36,7 @@ msgstr "Menambahkan kunci lain"
 msgid "Add new repository"
 msgstr "Menambahkan repositori baru"
 
-#: src/ostree.jsx:655 src/repositoryModals.jsx:168
+#: src/repositoryModals.jsx:168 src/ostree.jsx:655
 msgid "Add repository"
 msgstr "Tambahkan repositori"
 
@@ -48,13 +48,13 @@ msgstr "Penambahan"
 msgid "Begins with $0"
 msgstr "Dimulai dengan $0"
 
-#: src/ostree.jsx:312 src/ostree.jsx:694 src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
 msgid "Branch"
 msgstr "Cabang"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 #: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 msgid "Cancel"
 msgstr "Batal"
 
@@ -98,7 +98,7 @@ msgstr "Penerapan dan pembaruan"
 msgid "Downgrades"
 msgstr "Menurunkan versi"
 
-#: src/ostree.jsx:664 src/repositoryModals.jsx:279
+#: src/repositoryModals.jsx:279 src/ostree.jsx:664
 msgid "Edit repository"
 msgstr "Mengedit repositori"
 
@@ -222,7 +222,7 @@ msgstr "Harap berikan nama yang valid"
 msgid "RPM repo metadata"
 msgstr "Metadata repo RPM"
 
-#: src/ostree.jsx:449 src/ostree.jsx:647 src/repositoryModals.jsx:377
+#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
 msgid "Rebase"
 msgstr "Rebase"
 
@@ -262,12 +262,12 @@ msgstr ""
 "Menghapus penambahan atau penggantian paket untuk mengembalikan penerapan "
 "saat ini ke kondisi semula."
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:118
+#: src/repositoryModals.jsx:118 src/ostree.jsx:674
 msgid "Remove repository"
 msgstr "Menghapus repositori"
 
-#: src/ostree.jsx:690 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438
+#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438 src/ostree.jsx:690
 msgid "Repository"
 msgstr "Repositori"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-04 03:01+0000\n"
+"POT-Creation-Date: 2025-03-06 03:17+0000\n"
 "PO-Revision-Date: 2024-11-18 11:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -37,7 +37,7 @@ msgstr "הוספת מפתח נוסף"
 msgid "Add new repository"
 msgstr "הוספת מאגר חדש"
 
-#: src/ostree.jsx:655 src/repositoryModals.jsx:168
+#: src/repositoryModals.jsx:168 src/ostree.jsx:655
 msgid "Add repository"
 msgstr "הוספת מאגר"
 
@@ -49,13 +49,13 @@ msgstr "תוספות"
 msgid "Begins with $0"
 msgstr "מתחיל ב־$0"
 
-#: src/ostree.jsx:312 src/ostree.jsx:694 src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:445 src/ostree.jsx:312 src/ostree.jsx:694
 msgid "Branch"
 msgstr "ענף"
 
-#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 #: src/repositoryModals.jsx:100 src/repositoryModals.jsx:171
 #: src/repositoryModals.jsx:274 src/repositoryModals.jsx:383
+#: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172 src/ostree.jsx:359
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -99,7 +99,7 @@ msgstr "הטמעות ועדכונים"
 msgid "Downgrades"
 msgstr "משנמך"
 
-#: src/ostree.jsx:664 src/repositoryModals.jsx:279
+#: src/repositoryModals.jsx:279 src/ostree.jsx:664
 msgid "Edit repository"
 msgstr "עריכת מאגר"
 
@@ -223,7 +223,7 @@ msgstr "לא לספק שם תקף"
 msgid "RPM repo metadata"
 msgstr "נתוני על של מאגר RPM"
 
-#: src/ostree.jsx:449 src/ostree.jsx:647 src/repositoryModals.jsx:377
+#: src/repositoryModals.jsx:377 src/ostree.jsx:449 src/ostree.jsx:647
 msgid "Rebase"
 msgstr "ביסוס מחדש"
 
@@ -262,12 +262,12 @@ msgid ""
 msgstr ""
 "הסרת תוספות או החלפות חבילות כדי להחזיר את ההטמעה הנוכחית למצב המקורי שלה."
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:118
+#: src/repositoryModals.jsx:118 src/ostree.jsx:674
 msgid "Remove repository"
 msgstr "הסרת מאגר"
 
-#: src/ostree.jsx:690 src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
-#: src/repositoryModals.jsx:438
+#: src/repositoryModals.jsx:127 src/repositoryModals.jsx:289
+#: src/repositoryModals.jsx:438 src/ostree.jsx:690
 msgid "Repository"
 msgstr "מאגר"
 
