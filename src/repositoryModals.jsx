@@ -22,14 +22,15 @@ import React, { useEffect, useState } from 'react';
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Checkbox } from '@patternfly/react-core/dist/esm/components/Checkbox';
+import { Content } from "@patternfly/react-core/dist/esm/components/Content";
 import { Form, FormGroup } from "@patternfly/react-core/dist/esm/components/Form";
+import { Icon } from "@patternfly/react-core/dist/esm/components/Icon/index.js";
 import { MenuToggle } from "@patternfly/react-core/dist/esm/components/MenuToggle";
-import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
 import { Select, SelectList, SelectOption } from "@patternfly/react-core/dist/esm/components/Select";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner/index.js";
-import { Text } from "@patternfly/react-core/dist/esm/components/Text";
 import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
 import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
+import { Modal } from '@patternfly/react-core/dist/esm/deprecated/components/Modal';
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { ExclamationCircleIcon } from '@patternfly/react-icons';
 import { FormHelper } from 'cockpit-components-form-helper.jsx';
@@ -92,7 +93,7 @@ export const RemoveRepositoryModal = ({ origin, availableRemotes, refreshRemotes
     const actions = [
         <Button key="remove-repo"
             variant="danger"
-            isDisabled={selectedRemotes.length === 0}
+            isAriaDisabled={selectedRemotes.length === 0}
             onClick={() => onDelete()}>
             {_("Remove")}
         </Button>,
@@ -393,14 +394,20 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
             />
         )
         : (
-            <Text>{availableRemotes[0]}</Text>
+            <Content component="p">{availableRemotes[0]}</Content>
         );
 
     const branchComponent = branchLoadError
         ? (
-            <Flex spacer={{ default: 'spaceItemsSm' }} flexWrap={{ default: 'nowrap' }} className="pf-v5-u-danger-color-200">
-                <FlexItem><ExclamationCircleIcon /></FlexItem>
-                <FlexItem>{branchLoadError.replace("error: ", "")}</FlexItem>
+            <Flex spacer={{ default: 'spaceItemsSm' }} flexWrap={{ default: 'nowrap' }}>
+                <FlexItem>
+                    <Icon status="danger">
+                        <ExclamationCircleIcon />
+                    </Icon>
+                </FlexItem>
+                <FlexItem className='pf-v6-u-text-color-status-danger'>
+                    {branchLoadError.replace("error: ", "")}
+                </FlexItem>
             </Flex>
         )
         : (
@@ -413,7 +420,7 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
                     />
                 )
                 : (
-                    <Text>{availableBranches[0]}</Text>
+                    <Content component="p">{availableBranches[0]}</Content>
                 )
         );
 
