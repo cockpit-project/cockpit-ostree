@@ -21,13 +21,13 @@
 
 @use "page.scss";
 @use "ct-card.scss";
-@import "patternfly/patternfly-5-overrides.scss";
+@import "patternfly/patternfly-6-overrides.scss";
 @import "global-variables";
 @import "@patternfly/patternfly/utilities/Text/text.scss";
 @import "@patternfly/patternfly/utilities/Spacing/spacing.css";
 
 /* Style the list cards as ct-cards */
-.pf-v5-c-page__main-section .pf-v5-c-card {
+.pf-v6-c-page__main-section .pf-v6-c-card {
   @extend .ct-card;
 }
 
@@ -47,17 +47,21 @@
     }
 }
 
-// PF4 modals have a max height and scroll on overflow - unset the maximum height to avoid getting a scrollbar
-.pf-v5-c-modal-box {
-    max-block-size: calc(100vh - var(--pf-v5-global--spacer--2xl));
-}
-
-.pf-v5-c-form.pf-m-horizontal {
+.pf-v6-c-form.pf-m-horizontal {
     inline-size: 100%;
 }
 
 // properly align the "change-repo" inline button with the other toolbar items
 // it defaults to --pf-v5-c-button--m-inline--PaddingTop, which is 0
-.pf-v5-c-button.pf-m-link.pf-m-inline {
+.pf-v6-c-button.pf-m-link.pf-m-inline {
     padding-block-start: var(--pf-v5-c-button--PaddingTop);
+}
+
+#ostree-status .pf-v6-c-content--p {
+    margin-block-end: 0;
+}
+
+// increase space between each checkbox row in clean-up modal
+#cleanup-deployment-modal .pf-v6-c-check:not(:last-of-type) {
+    margin-block-end: var(--pf-t--global--spacer--xs);
 }

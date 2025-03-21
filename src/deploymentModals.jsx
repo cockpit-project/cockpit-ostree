@@ -22,8 +22,8 @@ import React, { useState } from 'react';
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Checkbox } from '@patternfly/react-core/dist/esm/components/Checkbox';
-import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
-import { Text } from "@patternfly/react-core/dist/esm/components/Text";
+import { Content } from "@patternfly/react-core/dist/esm/components/Content";
+import { Modal } from '@patternfly/react-core/dist/esm/deprecated/components/Modal';
 import { Stack } from "@patternfly/react-core/dist/esm/layouts/Stack";
 import { useDialogs } from "dialogs.jsx";
 
@@ -73,7 +73,7 @@ export const CleanUpModal = ({ os }) => {
     const actions = [
         <Button key="cleanup-accept"
             variant="primary"
-            isDisabled={buttonLoading || (!deleteTemporaryFiles && !deleteRPMmetadata && !deletePendingDeployments && !deleteRollbackDeployments)}
+            isAriaDisabled={buttonLoading || (!deleteTemporaryFiles && !deleteRPMmetadata && !deletePendingDeployments && !deleteRollbackDeployments)}
             isLoading={buttonLoading}
             onClick={() => doCleanup()}
         >
@@ -164,7 +164,7 @@ export const ResetModal = ({ os }) => {
         <Button key="reset-accept"
             variant="warning"
             isLoading={buttonLoading}
-            isDisabled={buttonLoading}
+            isAriaDisabled={buttonLoading}
             onClick={() => doReset()}>
             {_("Reset to original state")}
         </Button>,
@@ -189,10 +189,10 @@ export const ResetModal = ({ os }) => {
                     title={error}
                 />
             }
-            <Text>
+            <Content component="p">
                 {_("Remove package additions or substitutions to return the current deployment to its original state.")}
-            </Text>
-            <Stack className="pf-v5-u-pt-md">
+            </Content>
+            <Stack>
                 <Checkbox label={_("Remove overlays")}
                     key="remove-overlays"
                     id="remove-overlays-checkbox"

@@ -23,27 +23,31 @@ import React, { useState } from 'react';
 
 import { createRoot } from 'react-dom/client'; // eslint-disable-line import/order
 
-import 'patternfly/patternfly-5-cockpit.scss';
+import 'patternfly/patternfly-6-cockpit.scss';
 
 import { Alert } from "@patternfly/react-core/dist/esm/components/Alert";
 import { Button } from "@patternfly/react-core/dist/esm/components/Button";
 import { Card, CardHeader, CardTitle, CardBody } from "@patternfly/react-core/dist/esm/components/Card";
+import { Content } from "@patternfly/react-core/dist/esm/components/Content";
 import {
     DescriptionList, DescriptionListGroup, DescriptionListTerm, DescriptionListDescription
 } from "@patternfly/react-core/dist/esm/components/DescriptionList";
 import { Divider } from "@patternfly/react-core/dist/esm/components/Divider";
 import { DropdownItem } from "@patternfly/react-core/dist/esm/components/Dropdown";
-import { EmptyState, EmptyStateIcon, EmptyStateBody, EmptyStateHeader, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
+import { EmptyState, EmptyStateBody, EmptyStateFooter, EmptyStateVariant } from "@patternfly/react-core/dist/esm/components/EmptyState";
+import { Icon } from "@patternfly/react-core/dist/esm/components/Icon/index.js";
 import { Label, } from "@patternfly/react-core/dist/esm/components/Label";
 import { List, ListItem } from "@patternfly/react-core/dist/esm/components/List";
-import { Modal } from "@patternfly/react-core/dist/esm/components/Modal";
 import { Page, PageSection, } from "@patternfly/react-core/dist/esm/components/Page";
 import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
-import { Text } from "@patternfly/react-core/dist/esm/components/Text";
+import { Modal } from '@patternfly/react-core/dist/esm/deprecated/components/Modal';
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
-import { BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon, PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon } from '@patternfly/react-icons';
+import {
+    BugIcon, CheckIcon, ExclamationCircleIcon, ExclamationTriangleIcon,
+    PendingIcon, ErrorCircleOIcon, CheckCircleIcon, SyncAltIcon
+} from '@patternfly/react-icons';
 import PropTypes from "prop-types";
 import { debounce } from 'throttle-debounce';
 
@@ -128,9 +132,9 @@ const Curtain = ({ state, failure, message, reconnect }) => {
 
     let icon = null;
     if (state === 'connecting')
-        icon = <Spinner size="xl" />;
+        icon = Spinner;
     else if (failure)
-        icon = <EmptyStateIcon icon={ExclamationCircleIcon} />;
+        icon = ExclamationCircleIcon;
 
     let title;
     if (state === 'connecting')
@@ -141,9 +145,11 @@ const Curtain = ({ state, failure, message, reconnect }) => {
         title = _("No deployments");
 
     return (
-        <EmptyState variant={EmptyStateVariant.full}>
-            {icon}
-            <EmptyStateHeader titleText={title} headingLevel="h5" />
+        <EmptyState headingLevel="h5"
+            titleText={title}
+            variant={EmptyStateVariant.full}
+            icon={icon}
+        >
             { message && <EmptyStateBody>{message}</EmptyStateBody> }
             <EmptyStateFooter>
                 { (state === 'failed' && reconnect) && <Button variant="primary">{ _("Reconnect") }</Button> }
@@ -313,7 +319,7 @@ const Deployments = ({ versions }) => {
         },
         {
             title: "",
-            props: { className: "pf-v5-c-table__action" }
+            props: { className: "pf-v6-c-table__action" }
         },
     ];
 
@@ -365,10 +371,12 @@ const ConfirmDeploymentChange = ({ actionName, bodyText, onConfirmAction }) => {
             flexWrap={{ default: 'nowrap' }}
         >
             <FlexItem>
-                <ExclamationTriangleIcon className="pf-v5-u-warning-color-100" />
+                <Icon status="warning">
+                    <ExclamationTriangleIcon />
+                </Icon>
             </FlexItem>
             <FlexItem>
-                <Text>{`${actionName}?`}</Text>
+                <Content component="p">{`${actionName}?`}</Content>
             </FlexItem>
         </Flex>
     );
@@ -382,7 +390,7 @@ const ConfirmDeploymentChange = ({ actionName, bodyText, onConfirmAction }) => {
             onClose={Dialogs.close}
             actions={actions}
         >
-            <Text>{bodyText}</Text>
+            <Content component="p">{bodyText}</Content>
         </Modal>
     );
 };
@@ -488,7 +496,7 @@ const DeploymentDetails = (akey, info, packages, doRollback, doUpgrade, doRebase
                     isStaged={info.staged.v}
                 />
             ),
-            props: { className: "pf-v5-c-table__action" }
+            props: { className: "pf-v6-c-table__action" }
         });
     }
 
@@ -555,7 +563,7 @@ const DeploymentActions = ({ deploymentIndex, deploymentIsPinned, isCurrent, isS
         actions.push(
             <DropdownItem key="delete-deployment"
                 data-action="delete"
-                className="pf-v5-u-danger-color-200"
+                className="pf-m-danger"
                 onClick={() => deleteDeployment()}
             >
                 {_("Delete")}
@@ -573,13 +581,13 @@ const OStreeStatus = ({ ostreeState, versions }) => {
     if (updates.length) {
         statusItems.push({
             key: "update-available",
-            icon: <BugIcon />,
+            icon: <Icon><BugIcon /></Icon>,
             message: _("Update available"),
         });
     } else {
         statusItems.push({
             key: "up-to-date",
-            icon: <CheckIcon color="green" />,
+            icon: <Icon status="success"><CheckIcon /></Icon>,
             message: _("System is up to date"),
         });
     }
@@ -588,15 +596,15 @@ const OStreeStatus = ({ ostreeState, versions }) => {
         const [errorName, errorDetail] = ostreeState.branchLoadError.replace("error: ", "").split(';');
         statusItems.push({
             key: "status-error",
-            icon: <ExclamationTriangleIcon className="pf-v5-u-warning-color-100" />,
+            icon: <Icon status="warning"><ExclamationTriangleIcon /></Icon>,
             message: (
                 <>
-                    <Text>
+                    <Content component="p">
                         {errorName}
-                    </Text>
-                    <Text component="small" className="pf-v5-u-color-200">
+                    </Content>
+                    <Content component="small">
                         {errorDetail}
-                    </Text>
+                    </Content>
                 </>
             ),
         });
@@ -633,7 +641,7 @@ const OStreeSource = ({ ostreeState, refreshRemotes, onChangeBranch, onChangeRem
 
     const actions = [
         <DropdownItem key="rebase" data-action="rebase"
-            isDisabled={!ostreeState.branches && !ostreeState.branchLoadError}
+            isAriaDisabled={!ostreeState.branches && !ostreeState.branchLoadError}
             onClick={() => Dialogs.show(
                 <RebaseRepositoryModal origin={ostreeState.origin}
                     availableRemotes={ostreeState.remotes}
@@ -902,7 +910,7 @@ class Application extends React.Component {
             </DropdownItem>,
             <Divider key="deployment-separator-1" />,
             <DropdownItem key="reset" data-action="reset"
-                          className="pf-v5-u-danger-color-200"
+                          className="pf-m-danger"
                           onClick={() => Dialogs.show(<ResetModal os={this.state.os} />)}>
                 {_("Reset")}
             </DropdownItem>,
@@ -910,24 +918,23 @@ class Application extends React.Component {
 
         const cardActions = (
             <Flex>
-                <Button variant="secondary"
+                <Button icon={<SyncAltIcon />} variant="secondary"
                         id="check-for-updates-btn"
                         isLoading={!!client.local_running || !!this.state.progressMsg}
-                        isDisabled={!!client.local_running || !!this.state.progressMsg}
-                        onClick={this.checkForUpgrades}>
-                    <SyncAltIcon />
-                </Button>
+                        isAriaDisabled={!!client.local_running || !!this.state.progressMsg}
+                        onClick={this.checkForUpgrades}
+                />
                 <KebabDropdown toggleButtonId="deployments-actions" position="right" dropdownItems={kebabActions} />
             </Flex>
         );
 
         return (
-            <Page>
-                <PageSection>
+            <Page className="no-masthead-sidebar">
+                <PageSection hasBodyWrapper={false}>
                     <Gallery hasGutter className="ct-cards-grid">
                         <OStreeStatus ostreeState={this.state} versions={versions} />
                         <OStreeSource ostreeState={this.state} refreshRemotes={this.refreshRemotes} onChangeBranch={this.onChangeBranch} onChangeRemoteOrigin={this.onChangeRemoteOrigin} />
-                        <Card id="deployments" isSelectable isClickable>
+                        <Card id="deployments">
                             {this.state.error && <Alert variant="danger" isInline title={this.state.error} />}
                             <CardHeader actions={{ actions: cardActions, hasNoOffset: false }}>
                                 <CardTitle component="h2">{_("Deployments and updates")}</CardTitle>
