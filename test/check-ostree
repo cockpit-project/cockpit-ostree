@@ -848,7 +848,7 @@ class OstreeOCICase(testlib.MachineCase):
             old_repo = "ostree-unverified-registry:localhost/bootc"
             old_branch = "latest"
             new_repo = "ostree-unverified-registry:localhost:5000/bootc"
-            version = m.execute("bootc status | grep version").strip().split()[1]
+            version = m.execute("bootc status --format json | jq -r '.status.booted.image.version'").strip()
         else:
             # -coreos images start with the local ostree repo deployment
             old_repo = "local"
