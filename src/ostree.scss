@@ -33,7 +33,7 @@
 
 #deployments {
     .deployment-name {
-        font-weight: 700;
+        font-weight: var(--pf-t--global--font--weight--body--bold);
     }
 
     .packages {
@@ -42,7 +42,7 @@
         grid-gap: 1rem;
 
         dt {
-            font-weight: 600;
+            font-weight: var(--pf-t--global--font--weight--body--bold);
         }
     }
 }
