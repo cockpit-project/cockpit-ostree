@@ -167,8 +167,6 @@ def generate_new_commit(m, pkg_to_remove):
 
 
 def get_name(self):
-    if self.image == "rhel4edge":
-        return "rhel-edge"
     return "fedora-coreos"
 
 
@@ -829,7 +827,6 @@ class OstreeCase(testlib.MachineCase):
         b.wait_in_text("#page_status_notification_updates", f"{get_name(self)} cockpit-base.2")
 
 
-@testlib.skipImage("using image-builder workflow", "rhel4edge")
 class OstreeOCICase(testlib.MachineCase):
     def start_oci_registry(self):
         self.machine.execute(
