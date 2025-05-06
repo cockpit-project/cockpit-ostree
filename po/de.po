@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-29 03:29+0000\n"
-"PO-Revision-Date: 2024-11-05 19:02+0000\n"
+"POT-Creation-Date: 2025-05-05 03:34+0000\n"
+"PO-Revision-Date: 2025-05-05 07:41+0000\n"
 "Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit-"
 "ostree/main/de/>\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 5.8.2\n"
+"X-Generator: Weblate 5.11.3\n"
 
 #: src/ostree.jsx:362
 msgid "$0 and reboot"
@@ -359,7 +359,7 @@ msgstr "Lösen"
 
 #: src/ostree.jsx:455
 msgid "Update"
-msgstr "Update"
+msgstr "Aktualisierung"
 
 #: src/ostree.jsx:585
 msgid "Update available"
@@ -379,7 +379,7 @@ msgstr "Aktualisiere"
 
 #: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
 msgid "Use trusted GPG key"
-msgstr "Benutze vertrauenswürdigen GPG-Schlüssel"
+msgstr "Vertrauenswürdigen GPG-Schlüssel verwenden"
 
 #: src/ostree.jsx:253
 msgid "Validity"
