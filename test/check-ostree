@@ -756,7 +756,7 @@ class OstreeCase(testlib.MachineCase):
         b.wait_visible("#remove-repository-modal button.pf-m-danger[aria-disabled='true']")
 
         b.click("#remove-repository-modal #zremote-test1")
-        b.click("#remove-repository-modal button.pf-m-danger[aria-disabled='false']")
+        b.click("#remove-repository-modal button.pf-m-danger:not([aria-disabled='true'])")
         b.wait_not_present("#remove-repository-modal")
 
         # Verify that the repository is gone
