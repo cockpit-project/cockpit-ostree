@@ -21,10 +21,10 @@
 
 @use "page.scss";
 @use "ct-card.scss";
-@import "patternfly/patternfly-6-overrides.scss";
-@import "global-variables";
-@import "@patternfly/patternfly/utilities/Text/text.scss";
-@import "@patternfly/patternfly/utilities/Spacing/spacing.css";
+@use "@patternfly/patternfly/utilities/Text/text.scss";
+@use "@patternfly/patternfly/utilities/Spacing/spacing.css";
+@use "patternfly/patternfly-6-overrides.scss";
+@use "global-variables" as *;
 
 /* Style the list cards as ct-cards */
 .pf-v6-c-page__main-section .pf-v6-c-card {
