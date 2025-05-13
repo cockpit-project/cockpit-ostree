@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 03:34+0000\n"
+"POT-Creation-Date: 2025-05-12 03:36+0000\n"
 "PO-Revision-Date: 2024-09-17 15:44+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -36,7 +36,7 @@ msgstr "Додати ще один ключ"
 msgid "Add new repository"
 msgstr "Додати нове сховище"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:169 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "Додати сховище"
 
@@ -48,13 +48,13 @@ msgstr "Додавання"
 msgid "Begins with $0"
 msgstr "Починається з $0"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:452 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "Гілка"
 
-#: src/ostree.jsx:365 src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
 #: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:365
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -66,7 +66,7 @@ msgstr "Шукаємо оновлення пакунків…"
 msgid "Checking for updates"
 msgstr "Шукаємо оновлення"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:909
 msgid "Clean up"
 msgstr "Очистити"
 
@@ -98,7 +98,7 @@ msgstr "Розгортання і оновлення"
 msgid "Downgrades"
 msgstr "Зниження"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:280 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "Редагувати сховище"
 
@@ -222,7 +222,7 @@ msgstr "Будь ласка, вкажіть коректну назву"
 msgid "RPM repo metadata"
 msgstr "Метадані сховища RPM"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:378 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "Перенести"
 
@@ -262,16 +262,16 @@ msgstr ""
 "Вилучити додані або замінені пакунки, щоб повернути поточне розгортання до "
 "його початкового стану."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:119 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "Вилучити сховище"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:445 src/ostree.jsx:698
 msgid "Repository"
 msgstr "Сховище"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:915
 msgid "Reset"
 msgstr "Скинути"
 

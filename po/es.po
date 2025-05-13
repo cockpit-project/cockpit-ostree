@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-05 03:34+0000\n"
+"POT-Creation-Date: 2025-05-12 03:36+0000\n"
 "PO-Revision-Date: 2025-04-02 20:53+0000\n"
 "Last-Translator: Javier Francisco <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -45,7 +45,7 @@ msgstr "Añadir otra clave"
 msgid "Add new repository"
 msgstr "Añadir repositorio nuevo"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:169 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "Añadir repositorio"
 
@@ -57,13 +57,13 @@ msgstr "Añadidos"
 msgid "Begins with $0"
 msgstr "Comienza por $0"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:452 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "Rama"
 
-#: src/ostree.jsx:365 src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
 #: src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384 src/ostree.jsx:365
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -75,7 +75,7 @@ msgstr "Comprobando actualizaciones de paquetes..."
 msgid "Checking for updates"
 msgstr "Comprobando actualizaciones"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:80 src/ostree.jsx:909
 msgid "Clean up"
 msgstr "Vaciar"
 
@@ -107,7 +107,7 @@ msgstr "Despliegues y actualizaciones"
 msgid "Downgrades"
 msgstr "Degradaciones"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:280 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "Editar repositorio"
 
@@ -231,7 +231,7 @@ msgstr "Debe proporcionar un nombre valido"
 msgid "RPM repo metadata"
 msgstr "Repo de metadatos en RPM"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:378 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "Rebase"
 
@@ -271,16 +271,16 @@ msgstr ""
 "Desinstala adiciones del paquete o sustituciones para devolver el despliega "
 "actual a su estado original."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:119 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "Quitar repositorio"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:445 src/ostree.jsx:698
 msgid "Repository"
 msgstr "Repositorio"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/deploymentModals.jsx:179 src/ostree.jsx:915
 msgid "Reset"
 msgstr "Reiniciar"
 
