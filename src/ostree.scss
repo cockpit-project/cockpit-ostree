@@ -65,3 +65,11 @@
 #cleanup-deployment-modal .pf-v6-c-check:not(:last-of-type) {
     margin-block-end: var(--pf-t--global--spacer--xs);
 }
+
+// PF6 workaround, when table is in the small screen layout PF sets too big font-weight
+// https://github.com/patternfly/patternfly/issues/7526
+@media screen and (max-width: $pf-v6-global--breakpoint--lg) {
+    #deployments .pf-v6-c-table :where(.pf-v6-c-table__th, .pf-v6-c-table__td)[data-label]::before {
+        font-weight: var(--pf-t--global--font--weight--body--bold);
+    }
+}
