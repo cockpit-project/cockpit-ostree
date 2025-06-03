@@ -1,0 +1,397 @@
+# #-#-#-#-#  cockpit-ostree.js.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE_VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-06-02 03:44+0000\n"
+"PO-Revision-Date: 2025-06-01 11:33+0000\n"
+"Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
+"Language-Team: Italian <https://translate.fedoraproject.org/projects/cockpit/"
+"cockpit-ostree/it/>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1\n"
+"X-Generator: Weblate 5.11.4\n"
+
+#: src/ostree.jsx:362
+msgid "$0 and reboot"
+msgstr "$0 e riavvia"
+
+#: src/client.js:407
+msgid "$0 key ID"
+msgstr "ID chiave $0"
+
+#: src/repositoryModals.jsx:318
+msgid "Add another key"
+msgstr "Aggiungi un'altra chiave"
+
+#: src/repositoryModals.jsx:179
+msgid "Add new repository"
+msgstr "Aggiungi un nuovo archivio"
+
+#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+msgid "Add repository"
+msgstr "Aggiungi archivio"
+
+#: src/ostree.jsx:194
+msgid "Additions"
+msgstr "Aggiunte"
+
+#: src/repositoryModals.jsx:320
+msgid "Begins with $0"
+msgstr "Inizia con $0"
+
+#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+msgid "Branch"
+msgstr "Ramo"
+
+#: src/ostree.jsx:365 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
+#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
+#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+msgid "Cancel"
+msgstr "Annulla"
+
+#: src/ostree.jsx:801
+msgid "Checking for package updates..."
+msgstr "Controllo degli aggiornamenti del pacchetto..."
+
+#: src/ostree.jsx:831
+msgid "Checking for updates"
+msgstr "Controllo degli aggiornamenti"
+
+#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+msgid "Clean up"
+msgstr "Ripulire"
+
+#: src/deploymentModals.jsx:90
+msgid "Clear cache and deployments"
+msgstr "Cancella cache e distribuzioni"
+
+#: src/ostree.jsx:418
+msgid "Close"
+msgstr "Chiudi"
+
+#: src/ostree.jsx:141
+msgid "Connecting to OSTree"
+msgstr "Connessione a OSTree"
+
+#: src/ostree.jsx:405
+msgid "Current"
+msgstr "Attuale"
+
+#: src/ostree.jsx:569
+msgid "Delete"
+msgstr "Elimina"
+
+#: src/ostree.jsx:333 src/ostree.jsx:940
+msgid "Deployments and updates"
+msgstr "Distribuzioni e aggiornamenti"
+
+#: src/ostree.jsx:197
+msgid "Downgrades"
+msgstr "Downgrades"
+
+#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+msgid "Edit repository"
+msgstr "Modifica repository"
+
+#: src/ostree.jsx:847
+msgid "Error loading remotes: $0"
+msgstr "Errore durante il caricamento dei telecomandi: $0"
+
+#: src/ostree.jsx:236
+msgid "Expired signature"
+msgstr "Firma scaduta"
+
+#: src/ostree.jsx:421
+msgid "Failed"
+msgstr "Fallito"
+
+#: src/ostree.jsx:300
+msgid "Failed to rebase deployment"
+msgstr "Impossibile ribasare la distribuzione"
+
+#: src/ostree.jsx:279
+msgid "Failed to roll back deployment"
+msgstr "Impossibile ripristinare la distribuzione"
+
+#: src/ostree.jsx:289
+msgid "Failed to upgrade deployment"
+msgstr "Impossibile aggiornare la distribuzione"
+
+#: src/repositoryModals.jsx:323
+msgid "GPG public key"
+msgstr "Chiave pubblica GPG"
+
+#: src/ostree.jsx:236
+msgid "Good signature"
+msgstr "Buona firma"
+
+#: src/ostree.jsx:236
+msgid "Invalid signature"
+msgstr "Firma non valida"
+
+#: src/repositoryModals.jsx:430
+msgid "Loading branches"
+msgstr "Caricamento rami"
+
+#: src/repositoryModals.jsx:187
+msgid "Name"
+msgstr "Nome"
+
+#: src/ostree.jsx:428
+msgid "New"
+msgstr "Nuovo"
+
+#: src/ostree.jsx:753
+msgid "No OSTree deployments found"
+msgstr "Nessuna distribuzione OSTree trovata"
+
+#: src/remotes.js:99
+msgid "No configuration data found"
+msgstr "Nessun dato di configurazione trovato"
+
+#: src/ostree.jsx:145
+msgid "No deployments"
+msgstr "Nessuna distribuzione"
+
+#: src/ostree.jsx:260
+msgid "No signature available"
+msgstr "Nessuna firma disponibile"
+
+#: src/ostree.jsx:779
+msgid "Not authorized to update software on this system"
+msgstr "Non autorizzato ad aggiornare il software su questo sistema"
+
+#: src/client.js:500 src/client.js:564
+msgid "OS $0 not found"
+msgstr "Sistema operativo $0 non trovato"
+
+#: src/ostree.jsx:781
+msgid "OSTree is not available on this system"
+msgstr "OSTree non è disponibile su questo sistema"
+
+#: src/ostree.jsx:693
+msgid "OSTree source"
+msgstr "Fonte OSTree"
+
+#: src/ostree.jsx:213
+msgid "Operating system"
+msgstr "Sistema operativo"
+
+#: src/ostree.jsx:225
+msgid "Origin"
+msgstr "Origine"
+
+#: src/ostree.jsx:514
+msgid "Packages"
+msgstr "Pacchetti"
+
+#: src/deploymentModals.jsx:201
+msgid "Packages which have been added to the system"
+msgstr "Pacchetti che sono stati aggiunti al sistema"
+
+#: src/deploymentModals.jsx:115
+msgid "Pending deployment"
+msgstr "In attesa di distribuzione"
+
+#: src/ostree.jsx:554
+msgid "Pin"
+msgstr "Pin"
+
+#: src/ostree.jsx:407
+msgid "Pinned"
+msgstr "Appuntato"
+
+#: src/repositoryModals.jsx:212
+msgid "Please provide a valid URL"
+msgstr "Inserisci un URL valido"
+
+#: src/repositoryModals.jsx:198
+msgid "Please provide a valid name"
+msgstr "Inserisci un nome valido"
+
+#: src/deploymentModals.jsx:109
+msgid "RPM repo metadata"
+msgstr "Metadati del repository RPM"
+
+#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+msgid "Rebase"
+msgstr "Rebase"
+
+#: src/repositoryModals.jsx:435
+msgid "Rebase repository and branch"
+msgstr "Rebase repository e branch"
+
+#: src/ostree.jsx:155
+msgid "Reconnect"
+msgstr "Riconnettiti"
+
+#: src/ostree.jsx:221
+msgid "Released"
+msgstr "Rilasciato"
+
+#: src/ostree.jsx:195
+msgid "Removals"
+msgstr "Rimozioni"
+
+#: src/repositoryModals.jsx:98
+msgid "Remove"
+msgstr "Rimuovi"
+
+#: src/deploymentModals.jsx:196
+msgid "Remove overlays"
+msgstr "Rimuovi le sovrapposizioni"
+
+#: src/deploymentModals.jsx:203
+msgid "Remove overrides"
+msgstr "Rimuovi le sostituzioni"
+
+#: src/deploymentModals.jsx:193
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Rimuovi aggiunte o sostituzioni di pacchetti per riportare la distribuzione "
+"corrente al suo stato originale."
+
+#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+msgid "Remove repository"
+msgstr "Rimuovi deposito"
+
+#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
+#: src/repositoryModals.jsx:445
+msgid "Repository"
+msgstr "Repository"
+
+#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+msgid "Reset"
+msgstr "Ripristina"
+
+#: src/deploymentModals.jsx:169
+msgid "Reset to original state"
+msgstr "Ripristina lo stato originale"
+
+#: src/ostree.jsx:456
+msgid "Roll back"
+msgstr "Roll back"
+
+#: src/deploymentModals.jsx:121
+msgid "Rollback deployment"
+msgstr "Rollback della distribuzione"
+
+#: src/repositoryModals.jsx:272
+msgid "Save"
+msgstr "Salva"
+
+#: src/repositoryModals.jsx:215
+msgid "Security"
+msgstr "Sicurezza"
+
+#: src/ostree.jsx:519
+msgid "Signatures"
+msgstr "Firme"
+
+#: src/ostree.jsx:241
+msgid "Signed by"
+msgstr "Firmato da"
+
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "Aggiornamenti software"
+
+#: src/ostree.jsx:310 src/ostree.jsx:616
+msgid "Status"
+msgstr "Stato"
+
+#: src/deploymentModals.jsx:208
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Sostituzioni di pacchetti normalmente inclusi in una build del sistema "
+"operativo"
+
+#: src/ostree.jsx:110 src/ostree.jsx:591
+msgid "System is up to date"
+msgstr "Il sistema è aggiornato"
+
+#: src/ostree.jsx:437 src/ostree.jsx:443 src/ostree.jsx:449
+msgid "System will rebase to $0, updated $1."
+msgstr "Il sistema verrà basato a $0, aggiornato a $1."
+
+#: src/deploymentModals.jsx:103
+msgid "Temporary files"
+msgstr "File temporanei"
+
+#: src/ostree.jsx:177
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+"Questa distribuzione contiene gli stessi pacchetti del sistema attualmente "
+"avviato"
+
+#: src/ostree.jsx:314
+msgid "Time"
+msgstr "Orario"
+
+#: src/ostree.jsx:509
+msgid "Tree"
+msgstr "Albero"
+
+#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+msgid "URL"
+msgstr "URL"
+
+#: src/ostree.jsx:143
+msgid "Unable to communicate with OSTree"
+msgstr "Impossibile comunicare con OSTree"
+
+#: src/ostree.jsx:554
+msgid "Unpin"
+msgstr "Sblocca"
+
+#: src/ostree.jsx:455
+msgid "Update"
+msgstr "Aggiornamento"
+
+#: src/ostree.jsx:585
+msgid "Update available"
+msgstr "Aggiornamento disponibile"
+
+#: src/ostree.jsx:116
+msgid "Update available: $0"
+msgstr "Aggiornamento disponibile: $0"
+
+#: src/ostree.jsx:196
+msgid "Updates"
+msgstr "Aggiornamenti"
+
+#: src/ostree.jsx:403
+msgid "Updating"
+msgstr "Aggiornamento in corso"
+
+#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+msgid "Use trusted GPG key"
+msgstr "Utilizza una chiave GPG attendibile"
+
+#: src/ostree.jsx:253
+msgid "Validity"
+msgstr "Validità"
+
+#: src/ostree.jsx:217 src/ostree.jsx:306
+msgid "Version"
+msgstr "Versione"
+
+#: src/ostree.jsx:245
+msgid "When"
+msgstr "Quando"
+
+#: src/ostree.jsx:422
+msgid "view more..."
+msgstr "vedere di più..."
