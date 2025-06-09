@@ -38,10 +38,10 @@ import { EmptyState, EmptyStateBody, EmptyStateFooter, EmptyStateVariant } from 
 import { Icon } from "@patternfly/react-core/dist/esm/components/Icon/index.js";
 import { Label, } from "@patternfly/react-core/dist/esm/components/Label";
 import { List, ListItem } from "@patternfly/react-core/dist/esm/components/List";
+import { Modal, ModalBody, ModalFooter, ModalHeader } from '@patternfly/react-core/dist/esm/components/Modal';
 import { Page, PageSection, } from "@patternfly/react-core/dist/esm/components/Page";
 import { Popover } from "@patternfly/react-core/dist/esm/components/Popover";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner";
-import { Modal } from '@patternfly/react-core/dist/esm/deprecated/components/Modal';
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { Gallery, } from "@patternfly/react-core/dist/esm/layouts/Gallery/index.js";
 import {
@@ -355,17 +355,6 @@ const isRebase = (info) => {
 const ConfirmDeploymentChange = ({ actionName, bodyText, onConfirmAction }) => {
     const Dialogs = useDialogs();
 
-    const actions = [
-        <Button key="confirm-action" variant="warning"
-            onClick={() => { onConfirmAction(); Dialogs.close() }}
-        >
-            {cockpit.format(_("$0 and reboot"), actionName)}
-        </Button>,
-        <Button key="cancel-action" variant="link" onClick={Dialogs.close}>
-            {_("Cancel")}
-        </Button>
-    ];
-
     const titleContent = (
         <Flex justifyContent={{ default: "justifyContentFlexStart" }} spacer={{ default: 'spaceItemsSm' }}
             flexWrap={{ default: 'nowrap' }}
@@ -384,13 +373,24 @@ const ConfirmDeploymentChange = ({ actionName, bodyText, onConfirmAction }) => {
     return (
         <Modal isOpen
             id="confirm-modal"
-            title={titleContent}
             position="top"
             variant="small"
             onClose={Dialogs.close}
-            actions={actions}
         >
-            <Content component="p">{bodyText}</Content>
+            <ModalHeader title={titleContent} />
+            <ModalBody>
+                <Content component="p">{bodyText}</Content>
+            </ModalBody>
+            <ModalFooter>
+                <Button key="confirm-action" variant="warning"
+                    onClick={() => { onConfirmAction(); Dialogs.close() }}
+                >
+                    {cockpit.format(_("$0 and reboot"), actionName)}
+                </Button>
+                <Button key="cancel-action" variant="link" onClick={Dialogs.close}>
+                    {_("Cancel")}
+                </Button>
+            </ModalFooter>
         </Modal>
     );
 };
