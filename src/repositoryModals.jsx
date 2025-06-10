@@ -26,11 +26,11 @@ import { Content } from "@patternfly/react-core/dist/esm/components/Content";
 import { Form, FormGroup } from "@patternfly/react-core/dist/esm/components/Form";
 import { Icon } from "@patternfly/react-core/dist/esm/components/Icon/index.js";
 import { MenuToggle } from "@patternfly/react-core/dist/esm/components/MenuToggle";
+import { Modal, ModalBody, ModalFooter, ModalHeader } from '@patternfly/react-core/dist/esm/components/Modal';
 import { Select, SelectList, SelectOption } from "@patternfly/react-core/dist/esm/components/Select";
 import { Spinner } from "@patternfly/react-core/dist/esm/components/Spinner/index.js";
 import { TextArea } from "@patternfly/react-core/dist/esm/components/TextArea";
 import { TextInput } from "@patternfly/react-core/dist/esm/components/TextInput";
-import { Modal } from '@patternfly/react-core/dist/esm/deprecated/components/Modal';
 import { Flex, FlexItem } from "@patternfly/react-core/dist/esm/layouts/Flex/index.js";
 import { ExclamationCircleIcon } from '@patternfly/react-icons';
 import { FormHelper } from 'cockpit-components-form-helper.jsx';
@@ -90,18 +90,6 @@ export const RemoveRepositoryModal = ({ origin, availableRemotes, refreshRemotes
         }
     };
 
-    const actions = [
-        <Button key="remove-repo"
-            variant="danger"
-            isAriaDisabled={selectedRemotes.length === 0}
-            onClick={() => onDelete()}>
-            {_("Remove")}
-        </Button>,
-        <Button key="cancel" variant="link" onClick={Dialogs.close}>
-            {_("Cancel")}
-        </Button>
-    ];
-
     const repositories = availableRemotes.map(remote => {
         return (
             <Checkbox label={remote}
@@ -116,22 +104,34 @@ export const RemoveRepositoryModal = ({ origin, availableRemotes, refreshRemotes
     return (
         <Modal isOpen
             id="remove-repository-modal"
-            title={_("Remove repository")}
             position="top"
             variant="small"
             onClose={Dialogs.close}
-            actions={actions}
         >
-            <Form isHorizontal>
-                {error && <Alert variant="danger" isInline title={error} />}
-                <FormGroup isStack
-                    label={_("Repository")}
-                    role="group"
-                    hasNoPaddingTop
-                >
-                    {repositories}
-                </FormGroup>
-            </Form>
+            <ModalHeader title={_("Remove repository")} />
+            <ModalBody>
+                <Form isHorizontal>
+                    {error && <Alert variant="danger" isInline title={error} />}
+                    <FormGroup isStack
+                        label={_("Repository")}
+                        role="group"
+                        hasNoPaddingTop
+                    >
+                        {repositories}
+                    </FormGroup>
+                </Form>
+            </ModalBody>
+            <ModalFooter>
+                <Button key="remove-repo"
+                    variant="danger"
+                    isAriaDisabled={selectedRemotes.length === 0}
+                    onClick={() => onDelete()}>
+                    {_("Remove")}
+                </Button>
+                <Button key="cancel" variant="link" onClick={Dialogs.close}>
+                    {_("Cancel")}
+                </Button>
+            </ModalFooter>
         </Modal>
     );
 };
@@ -162,68 +162,68 @@ export const AddRepositoryModal = ({ refreshRemotes }) => {
                       ex => setAddNewRepoError(ex.message));
     };
 
-    const actions = [
-        <Button key="add-repo"
-            variant="primary"
-            onClick={() => onAddRemote()}>
-            {_("Add repository")}
-        </Button>,
-        <Button key="cancel" variant="link" onClick={Dialogs.close}>
-            {_("Cancel")}
-        </Button>
-    ];
-
     return (
         <Modal isOpen
             id="add-repository-modal"
-            title={_("Add new repository")}
             position="top"
             variant="small"
             onClose={Dialogs.close}
-            actions={actions}
         >
-            <Form isHorizontal>
-                {addNewRepoError && <Alert variant="danger" isInline title={addNewRepoError} />}
-                <FormGroup label={_("Name")}
-                    fieldId="new-remote-name"
-                    isRequired
-                >
-                    <TextInput id="new-remote-name"
-                        value={newRepoName}
+            <ModalHeader title={_("Add new repository")} />
+            <ModalBody>
+                <Form isHorizontal>
+                    {addNewRepoError && <Alert variant="danger" isInline title={addNewRepoError} />}
+                    <FormGroup label={_("Name")}
+                        fieldId="new-remote-name"
                         isRequired
-                        type="text"
-                        onChange={(_ev, name) => setNewRepoName(name)}
-                    />
-                    <FormHelper fieldId="new-remote-name"
-                        helperTextInvalid={(hasValidation && !newRepoName.trim().length) && _("Please provide a valid name")}
-                    />
-                </FormGroup>
-                <FormGroup label={_("URL")}
-                    fieldId="new-remote-url"
-                    isRequired
-                >
-                    <TextInput id="new-remote-url"
-                        value={newRepoURL}
+                    >
+                        <TextInput id="new-remote-name"
+                            value={newRepoName}
+                            isRequired
+                            type="text"
+                            onChange={(_ev, name) => setNewRepoName(name)}
+                        />
+                        <FormHelper fieldId="new-remote-name"
+                            helperTextInvalid={(hasValidation && !newRepoName.trim().length) && _("Please provide a valid name")}
+                        />
+                    </FormGroup>
+                    <FormGroup label={_("URL")}
+                        fieldId="new-remote-url"
                         isRequired
-                        type="text"
-                        onChange={(_ev, url) => setNewRepoURL(url)}
-                    />
-                    <FormHelper fieldId="new-remote-url"
-                        helperTextInvalid={(hasValidation && !newRepoURL.trim().length) && _("Please provide a valid URL")}
-                    />
-                </FormGroup>
-                <FormGroup label={_("Security")}
-                    fieldId="new-gpg-verify"
-                    role="group"
-                    hasNoPaddingTop
-                >
-                    <Checkbox label={_("Use trusted GPG key")}
-                        id="new-gpg-verify"
-                        isChecked={newRepoTrusted}
-                        onChange={(_ev, checked) => setNewRepoTrusted(checked)}
-                    />
-                </FormGroup>
-            </Form>
+                    >
+                        <TextInput id="new-remote-url"
+                            value={newRepoURL}
+                            isRequired
+                            type="text"
+                            onChange={(_ev, url) => setNewRepoURL(url)}
+                        />
+                        <FormHelper fieldId="new-remote-url"
+                            helperTextInvalid={(hasValidation && !newRepoURL.trim().length) && _("Please provide a valid URL")}
+                        />
+                    </FormGroup>
+                    <FormGroup label={_("Security")}
+                        fieldId="new-gpg-verify"
+                        role="group"
+                        hasNoPaddingTop
+                    >
+                        <Checkbox label={_("Use trusted GPG key")}
+                            id="new-gpg-verify"
+                            isChecked={newRepoTrusted}
+                            onChange={(_ev, checked) => setNewRepoTrusted(checked)}
+                        />
+                    </FormGroup>
+                </Form>
+            </ModalBody>
+            <ModalFooter>
+                <Button key="add-repo"
+                    variant="primary"
+                    onClick={() => onAddRemote()}>
+                    {_("Add repository")}
+                </Button>
+                <Button key="cancel" variant="link" onClick={Dialogs.close}>
+                    {_("Cancel")}
+                </Button>
+            </ModalFooter>
         </Modal>
     );
 };
@@ -267,62 +267,62 @@ export const EditRepositoryModal = ({ remote, availableRemotes }) => {
         Promise.all(promises).then(() => Dialogs.close(), ex => setError(ex.message));
     };
 
-    const actions = [
-        <Button key="edit-repo" variant="primary" onClick={onUpdate}>
-            {_("Save")}
-        </Button>,
-        <Button key="cancel" variant="link" onClick={Dialogs.close}>
-            {_("Cancel")}
-        </Button>,
-    ];
-
     return (
-        <Modal title={_("Edit repository")}
-            position="top"
+        <Modal position="top"
             variant="small"
             id="edit-repository-modal"
             isOpen
             onClose={Dialogs.close}
-            actions={actions}
         >
-            <Form isHorizontal>
-                {error && <Alert variant="danger" isInline title={error} />}
-                <FormGroup label={_("Repository")}
-                    id="select-repository"
-                    fieldId="select-repository"
-                >
-                    <RemoteSelect
-                        remotes={availableRemotes}
-                        selectedRemote={selectedRemote}
-                        setSelectedRemote={setSelectedRemote}
-                    />
-                </FormGroup>
-                <FormGroup label={_("URL")}
-                    fieldId="edit-remote-url"
-                >
-                    <TextInput id="edit-remote-url"
-                        value={newURL}
-                        onChange={(_ev, url) => setNewURL(url)}
-                        type="text" />
-                </FormGroup>
-                <FormGroup fieldId="edit-remote-trusted">
-                    <Checkbox label={_("Use trusted GPG key")}
-                        id="gpg-verify"
-                        isChecked={isTrusted}
-                        onChange={(_ev, checked) => {
-                            setIsTrusted(checked);
-                        }} />
-                </FormGroup>
-                <FormGroup fieldId="add-another-key">
-                    {!addAnotherKey
-                        ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
-                        : <TextArea id='gpg-data'
-                                placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
-                                onChange={(_ev, key) => setKey(key)}
-                                value={key}
-                                aria-label={_("GPG public key")} />}
-                </FormGroup>
-            </Form>
+            <ModalHeader title={_("Edit repository")} />
+            <ModalBody>
+                <Form isHorizontal>
+                    {error && <Alert variant="danger" isInline title={error} />}
+                    <FormGroup label={_("Repository")}
+                        id="select-repository"
+                        fieldId="select-repository"
+                    >
+                        <RemoteSelect
+                            remotes={availableRemotes}
+                            selectedRemote={selectedRemote}
+                            setSelectedRemote={setSelectedRemote}
+                        />
+                    </FormGroup>
+                    <FormGroup label={_("URL")}
+                        fieldId="edit-remote-url"
+                    >
+                        <TextInput id="edit-remote-url"
+                            value={newURL}
+                            onChange={(_ev, url) => setNewURL(url)}
+                            type="text" />
+                    </FormGroup>
+                    <FormGroup fieldId="edit-remote-trusted">
+                        <Checkbox label={_("Use trusted GPG key")}
+                            id="gpg-verify"
+                            isChecked={isTrusted}
+                            onChange={(_ev, checked) => {
+                                setIsTrusted(checked);
+                            }} />
+                    </FormGroup>
+                    <FormGroup fieldId="add-another-key">
+                        {!addAnotherKey
+                            ? <Button isInline variant="secondary" id='add-another-key' onClick={() => setAddAnotherKey(true)}>{_("Add another key")}</Button>
+                            : <TextArea id='gpg-data'
+                                    placeholder={ cockpit.format(_("Begins with $0"), "'-----BEGIN GPG PUBLIC KEY BLOCK-----'") }
+                                    onChange={(_ev, key) => setKey(key)}
+                                    value={key}
+                                    aria-label={_("GPG public key")} />}
+                    </FormGroup>
+                </Form>
+            </ModalBody>
+            <ModalFooter>
+                <Button key="edit-repo" variant="primary" onClick={onUpdate}>
+                    {_("Save")}
+                </Button>
+                <Button key="cancel" variant="link" onClick={Dialogs.close}>
+                    {_("Cancel")}
+                </Button>
+            </ModalFooter>
         </Modal>
     );
 };
@@ -369,21 +369,6 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
                 .then(Dialogs.close())
                 .catch(ex => setError(ex.message));
     };
-
-    const actions = [
-        <Button key="rebase"
-            variant="primary"
-            onClick={onRebaseClicked}
-        >
-            {_("Rebase")}
-        </Button>,
-        <Button key="cancel"
-            variant="link"
-            onClick={Dialogs.close}
-        >
-            {_("Cancel")}
-        </Button>
-    ];
 
     const repositoryComponent = availableRemotes.length > 1
         ? (
@@ -432,34 +417,49 @@ export const RebaseRepositoryModal = ({ origin, availableRemotes, currentOriginB
     );
 
     return (
-        <Modal title={_("Rebase repository and branch")}
-            position="top"
+        <Modal position="top"
             variant="small"
             id="rebase-repository-modal"
             isOpen
             onClose={Dialogs.close}
-            actions={actions}
         >
-            {error && <Alert variant="danger" isInline title={error} />}
-            <Form isHorizontal>
-                <FormGroup label={_("Repository")}
-                    id="change-repository"
-                    fieldId="selected-repository"
-                    hasNoPaddingTop={availableRemotes.length === 1}
+            <ModalHeader title={_("Rebase repository and branch")} />
+            <ModalBody>
+                {error && <Alert variant="danger" isInline title={error} />}
+                <Form isHorizontal>
+                    <FormGroup label={_("Repository")}
+                        id="change-repository"
+                        fieldId="selected-repository"
+                        hasNoPaddingTop={availableRemotes.length === 1}
+                    >
+                        {repositoryComponent}
+                    </FormGroup>
+                    <FormGroup label={_("Branch")}
+                        id="change-branch"
+                        fieldId="selected-branch"
+                        hasNoPaddingTop={loadingBranches || branchLoadError || availableBranches.length === 1}
+                    >
+                        {loadingBranches
+                            ? loadingComponent
+                            : branchComponent
+                        }
+                    </FormGroup>
+                </Form>
+            </ModalBody>
+            <ModalFooter>
+                <Button key="rebase"
+                    variant="primary"
+                    onClick={onRebaseClicked}
                 >
-                    {repositoryComponent}
-                </FormGroup>
-                <FormGroup label={_("Branch")}
-                    id="change-branch"
-                    fieldId="selected-branch"
-                    hasNoPaddingTop={loadingBranches || branchLoadError || availableBranches.length === 1}
+                    {_("Rebase")}
+                </Button>
+                <Button key="cancel"
+                    variant="link"
+                    onClick={Dialogs.close}
                 >
-                    {loadingBranches
-                        ? loadingComponent
-                        : branchComponent
-                    }
-                </FormGroup>
-            </Form>
+                    {_("Cancel")}
+                </Button>
+            </ModalFooter>
         </Modal>
     );
 };
