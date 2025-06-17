@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-08 03:44+0000\n"
+"POT-Creation-Date: 2025-06-17 03:41+0000\n"
 "PO-Revision-Date: 2023-12-09 00:21+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 5.2.1\n"
 
-#: src/ostree.jsx:362
+#: src/ostree.jsx:388
 msgid "$0 and reboot"
 msgstr "$0 并重启"
 
@@ -28,15 +28,15 @@ msgstr "$0 并重启"
 msgid "$0 key ID"
 msgstr "$0 密钥编号"
 
-#: src/repositoryModals.jsx:318
+#: src/repositoryModals.jsx:309
 msgid "Add another key"
 msgstr "添加另一个密钥"
 
-#: src/repositoryModals.jsx:179
+#: src/repositoryModals.jsx:172
 msgid "Add new repository"
 msgstr "添加新的源"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:221 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "添加源"
 
@@ -44,17 +44,17 @@ msgstr "添加源"
 msgid "Additions"
 msgstr "添加"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:311
 msgid "Begins with $0"
 msgstr "由 $0 开始"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:437 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "分支"
 
-#: src/ostree.jsx:365 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
-#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "取消"
 
@@ -66,11 +66,11 @@ msgstr "正在检查软件包更新……"
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/ostree.jsx:909 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "清理"
 
-#: src/deploymentModals.jsx:90
+#: src/deploymentModals.jsx:80
 msgid "Clear cache and deployments"
 msgstr "清除缓存和部署"
 
@@ -98,7 +98,7 @@ msgstr "部署和更新"
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:277 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "编辑仓库"
 
@@ -126,7 +126,7 @@ msgstr "回滚部署失败"
 msgid "Failed to upgrade deployment"
 msgstr "升级部署失败"
 
-#: src/repositoryModals.jsx:323
+#: src/repositoryModals.jsx:314
 msgid "GPG public key"
 msgstr "GPG 公钥"
 
@@ -138,11 +138,11 @@ msgstr "正确的签名"
 msgid "Invalid signature"
 msgstr "无效的签名"
 
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:415
 msgid "Loading branches"
 msgstr "加载分支"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:176
 msgid "Name"
 msgstr "名称"
 
@@ -194,11 +194,11 @@ msgstr "Origin"
 msgid "Packages"
 msgstr "软件包"
 
-#: src/deploymentModals.jsx:201
+#: src/deploymentModals.jsx:189
 msgid "Packages which have been added to the system"
 msgstr "已添加到系统中的软件包"
 
-#: src/deploymentModals.jsx:115
+#: src/deploymentModals.jsx:101
 msgid "Pending deployment"
 msgstr "待部署"
 
@@ -210,23 +210,23 @@ msgstr "针"
 msgid "Pinned"
 msgstr "已钉"
 
-#: src/repositoryModals.jsx:212
+#: src/repositoryModals.jsx:201
 msgid "Please provide a valid URL"
 msgstr "请提供有效的网址"
 
-#: src/repositoryModals.jsx:198
+#: src/repositoryModals.jsx:187
 msgid "Please provide a valid name"
 msgstr "请提供有效的名称"
 
-#: src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:95
 msgid "RPM repo metadata"
 msgstr "RPM 仓库元数据"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:454 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "重置"
 
-#: src/repositoryModals.jsx:435
+#: src/repositoryModals.jsx:426
 msgid "Rebase repository and branch"
 msgstr "重置版本库和分支"
 
@@ -242,38 +242,38 @@ msgstr "发布于"
 msgid "Removals"
 msgstr "移除"
 
-#: src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:129
 msgid "Remove"
 msgstr "删除"
 
-#: src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:184
 msgid "Remove overlays"
 msgstr "移除覆盖层"
 
-#: src/deploymentModals.jsx:203
+#: src/deploymentModals.jsx:191
 msgid "Remove overrides"
 msgstr "删除覆盖"
 
-#: src/deploymentModals.jsx:193
+#: src/deploymentModals.jsx:181
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
 msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:111 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "移除存储库"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:698
 msgid "Repository"
 msgstr "存储库"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/ostree.jsx:915 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "重置"
 
-#: src/deploymentModals.jsx:169
+#: src/deploymentModals.jsx:206
 msgid "Reset to original state"
 msgstr "重置为原始状态"
 
@@ -281,15 +281,15 @@ msgstr "重置为原始状态"
 msgid "Roll back"
 msgstr "回滚"
 
-#: src/deploymentModals.jsx:121
+#: src/deploymentModals.jsx:107
 msgid "Rollback deployment"
 msgstr "回滚部署"
 
-#: src/repositoryModals.jsx:272
+#: src/repositoryModals.jsx:320
 msgid "Save"
 msgstr "保存"
 
-#: src/repositoryModals.jsx:215
+#: src/repositoryModals.jsx:204
 msgid "Security"
 msgstr "安全性"
 
@@ -309,7 +309,7 @@ msgstr "软件更新"
 msgid "Status"
 msgstr "状态"
 
-#: src/deploymentModals.jsx:208
+#: src/deploymentModals.jsx:196
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "对通常包含在操作系统构建中的软件包进行替换"
 
@@ -321,7 +321,7 @@ msgstr "系统已更新到最新"
 msgid "System will rebase to $0, updated $1."
 msgstr "系统将重置为 $0, $1 已更新。"
 
-#: src/deploymentModals.jsx:103
+#: src/deploymentModals.jsx:89
 msgid "Temporary files"
 msgstr "临时文件"
 
@@ -338,7 +338,7 @@ msgstr "时间"
 msgid "Tree"
 msgstr "Tree"
 
-#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:190 src/repositoryModals.jsx:291
 msgid "URL"
 msgstr "网址"
 
@@ -370,7 +370,7 @@ msgstr "更新"
 msgid "Updating"
 msgstr "更新"
 
-#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:209 src/repositoryModals.jsx:300
 msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 

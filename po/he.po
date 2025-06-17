@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-08 03:44+0000\n"
+"POT-Creation-Date: 2025-06-17 03:41+0000\n"
 "PO-Revision-Date: 2024-11-18 11:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -21,7 +21,7 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.8.2\n"
 
-#: src/ostree.jsx:362
+#: src/ostree.jsx:388
 msgid "$0 and reboot"
 msgstr "$0 והפעלה מחדש"
 
@@ -29,15 +29,15 @@ msgstr "$0 והפעלה מחדש"
 msgid "$0 key ID"
 msgstr "מזהה מפתח $0"
 
-#: src/repositoryModals.jsx:318
+#: src/repositoryModals.jsx:309
 msgid "Add another key"
 msgstr "הוספת מפתח נוסף"
 
-#: src/repositoryModals.jsx:179
+#: src/repositoryModals.jsx:172
 msgid "Add new repository"
 msgstr "הוספת מאגר חדש"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:221 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "הוספת מאגר"
 
@@ -45,17 +45,17 @@ msgstr "הוספת מאגר"
 msgid "Additions"
 msgstr "תוספות"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:311
 msgid "Begins with $0"
 msgstr "מתחיל ב־$0"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:437 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "ענף"
 
-#: src/ostree.jsx:365 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
-#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -67,11 +67,11 @@ msgstr "מתבצע חיפוש אחר עדכוני חבילות…"
 msgid "Checking for updates"
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/ostree.jsx:909 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "ניקוי"
 
-#: src/deploymentModals.jsx:90
+#: src/deploymentModals.jsx:80
 msgid "Clear cache and deployments"
 msgstr "ניקוי המטמון וההטמעות"
 
@@ -99,7 +99,7 @@ msgstr "הטמעות ועדכונים"
 msgid "Downgrades"
 msgstr "משנמך"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:277 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "עריכת מאגר"
 
@@ -127,7 +127,7 @@ msgstr "גלגול ההטמעה לאחור נכשל"
 msgid "Failed to upgrade deployment"
 msgstr "שדרוג ההטמעה נכשל"
 
-#: src/repositoryModals.jsx:323
+#: src/repositoryModals.jsx:314
 msgid "GPG public key"
 msgstr "מפתח GPG ציבורי"
 
@@ -139,11 +139,11 @@ msgstr "חתימה טובה"
 msgid "Invalid signature"
 msgstr "חתימה שגויה"
 
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:415
 msgid "Loading branches"
 msgstr "הענפים נטענים"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:176
 msgid "Name"
 msgstr "שם"
 
@@ -195,11 +195,11 @@ msgstr "מקור"
 msgid "Packages"
 msgstr "חבילות"
 
-#: src/deploymentModals.jsx:201
+#: src/deploymentModals.jsx:189
 msgid "Packages which have been added to the system"
 msgstr "חבילות שנוספו למערכת"
 
-#: src/deploymentModals.jsx:115
+#: src/deploymentModals.jsx:101
 msgid "Pending deployment"
 msgstr "הטמעה ממתינה"
 
@@ -211,23 +211,23 @@ msgstr "הצמדה"
 msgid "Pinned"
 msgstr "מוצמד"
 
-#: src/repositoryModals.jsx:212
+#: src/repositoryModals.jsx:201
 msgid "Please provide a valid URL"
 msgstr "נא לספק כתובת תקפה"
 
-#: src/repositoryModals.jsx:198
+#: src/repositoryModals.jsx:187
 msgid "Please provide a valid name"
 msgstr "לא לספק שם תקף"
 
-#: src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:95
 msgid "RPM repo metadata"
 msgstr "נתוני על של מאגר RPM"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:454 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "ביסוס מחדש"
 
-#: src/repositoryModals.jsx:435
+#: src/repositoryModals.jsx:426
 msgid "Rebase repository and branch"
 msgstr "ביסוס מאגר וענף מחדש"
 
@@ -243,39 +243,39 @@ msgstr "שוחרר"
 msgid "Removals"
 msgstr "הסרות"
 
-#: src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:129
 msgid "Remove"
 msgstr "הסרה"
 
-#: src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:184
 msgid "Remove overlays"
 msgstr "הסרת שכבות על"
 
-#: src/deploymentModals.jsx:203
+#: src/deploymentModals.jsx:191
 msgid "Remove overrides"
 msgstr "הסרת מעקפים"
 
-#: src/deploymentModals.jsx:193
+#: src/deploymentModals.jsx:181
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
 msgstr ""
 "הסרת תוספות או החלפות חבילות כדי להחזיר את ההטמעה הנוכחית למצב המקורי שלה."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:111 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "הסרת מאגר"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:698
 msgid "Repository"
 msgstr "מאגר"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/ostree.jsx:915 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "איפוס"
 
-#: src/deploymentModals.jsx:169
+#: src/deploymentModals.jsx:206
 msgid "Reset to original state"
 msgstr "איפוס למצב המקורי"
 
@@ -283,15 +283,15 @@ msgstr "איפוס למצב המקורי"
 msgid "Roll back"
 msgstr "גלגול לאחור"
 
-#: src/deploymentModals.jsx:121
+#: src/deploymentModals.jsx:107
 msgid "Rollback deployment"
 msgstr "גלגול הטמעה לאחור"
 
-#: src/repositoryModals.jsx:272
+#: src/repositoryModals.jsx:320
 msgid "Save"
 msgstr "שמירה"
 
-#: src/repositoryModals.jsx:215
+#: src/repositoryModals.jsx:204
 msgid "Security"
 msgstr "אבטחה"
 
@@ -311,7 +311,7 @@ msgstr "עדכוני תוכנה"
 msgid "Status"
 msgstr "מצב"
 
-#: src/deploymentModals.jsx:208
+#: src/deploymentModals.jsx:196
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "החלפות של חבילות שבדרך כלל הן חלק מבניית מערכת ההפעלה"
 
@@ -323,7 +323,7 @@ msgstr "המערכת עדכנית"
 msgid "System will rebase to $0, updated $1."
 msgstr "המערכת תבוסס מחדש לכדי $0, עודכן $1."
 
-#: src/deploymentModals.jsx:103
+#: src/deploymentModals.jsx:89
 msgid "Temporary files"
 msgstr "קבצים זמניים"
 
@@ -340,7 +340,7 @@ msgstr "זמן"
 msgid "Tree"
 msgstr "עץ"
 
-#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:190 src/repositoryModals.jsx:291
 msgid "URL"
 msgstr "כתובת"
 
@@ -372,7 +372,7 @@ msgstr "עדכונים"
 msgid "Updating"
 msgstr "מתבצע עדכון"
 
-#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:209 src/repositoryModals.jsx:300
 msgid "Use trusted GPG key"
 msgstr "להשתמש במפתח GPG מהימן"
 

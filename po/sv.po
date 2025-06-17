@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-08 03:44+0000\n"
+"POT-Creation-Date: 2025-06-17 03:41+0000\n"
 "PO-Revision-Date: 2025-05-16 21:59+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 5.11.3\n"
 
-#: src/ostree.jsx:362
+#: src/ostree.jsx:388
 msgid "$0 and reboot"
 msgstr "$0 och starta om"
 
@@ -28,15 +28,15 @@ msgstr "$0 och starta om"
 msgid "$0 key ID"
 msgstr "$0 nyckel-ID"
 
-#: src/repositoryModals.jsx:318
+#: src/repositoryModals.jsx:309
 msgid "Add another key"
 msgstr "Lägg till en annan nyckel"
 
-#: src/repositoryModals.jsx:179
+#: src/repositoryModals.jsx:172
 msgid "Add new repository"
 msgstr "Lägg till nytt förråd"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:221 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "Lägg till förråd"
 
@@ -44,17 +44,17 @@ msgstr "Lägg till förråd"
 msgid "Additions"
 msgstr "Tillägg"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:311
 msgid "Begins with $0"
 msgstr "Börjar med $0"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:437 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "Gren"
 
-#: src/ostree.jsx:365 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
-#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -66,11 +66,11 @@ msgstr "Söker efter paketuppdateringar..."
 msgid "Checking for updates"
 msgstr "Söker efter uppdateringar"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/ostree.jsx:909 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "Rensa upp"
 
-#: src/deploymentModals.jsx:90
+#: src/deploymentModals.jsx:80
 msgid "Clear cache and deployments"
 msgstr "Rensa cache och distributioner"
 
@@ -98,7 +98,7 @@ msgstr "Distributioner och uppdateringar"
 msgid "Downgrades"
 msgstr "Nedgraderingar"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:277 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "Redigera förråd"
 
@@ -126,7 +126,7 @@ msgstr "Misslyckades med att rulla tillbaka distribution"
 msgid "Failed to upgrade deployment"
 msgstr "Misslyckades med att uppgradera distribution"
 
-#: src/repositoryModals.jsx:323
+#: src/repositoryModals.jsx:314
 msgid "GPG public key"
 msgstr "GPG-publik nyckel"
 
@@ -138,11 +138,11 @@ msgstr "Bra signatur"
 msgid "Invalid signature"
 msgstr "Ogiltig signatur"
 
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:415
 msgid "Loading branches"
 msgstr "Laddar grenar"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:176
 msgid "Name"
 msgstr "Namn"
 
@@ -194,11 +194,11 @@ msgstr "Ursprung"
 msgid "Packages"
 msgstr "Paket"
 
-#: src/deploymentModals.jsx:201
+#: src/deploymentModals.jsx:189
 msgid "Packages which have been added to the system"
 msgstr "Paket som har lagts till i systemet"
 
-#: src/deploymentModals.jsx:115
+#: src/deploymentModals.jsx:101
 msgid "Pending deployment"
 msgstr "Väntar på distribution"
 
@@ -210,23 +210,23 @@ msgstr "Fäst"
 msgid "Pinned"
 msgstr "Fäst"
 
-#: src/repositoryModals.jsx:212
+#: src/repositoryModals.jsx:201
 msgid "Please provide a valid URL"
 msgstr "Vänligen ange en giltig URL"
 
-#: src/repositoryModals.jsx:198
+#: src/repositoryModals.jsx:187
 msgid "Please provide a valid name"
 msgstr "Vänligen ange ett giltigt namn"
 
-#: src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:95
 msgid "RPM repo metadata"
 msgstr "RPM-förrådmetadata"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:454 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "Basera om"
 
-#: src/repositoryModals.jsx:435
+#: src/repositoryModals.jsx:426
 msgid "Rebase repository and branch"
 msgstr "Basera om förrådd och gren"
 
@@ -242,19 +242,19 @@ msgstr "Släppt"
 msgid "Removals"
 msgstr "Avlägsnanden"
 
-#: src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:129
 msgid "Remove"
 msgstr "Avlägsna"
 
-#: src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:184
 msgid "Remove overlays"
 msgstr "Avlägsna överlägg"
 
-#: src/deploymentModals.jsx:203
+#: src/deploymentModals.jsx:191
 msgid "Remove overrides"
 msgstr "Avlägsna åsidosättningar"
 
-#: src/deploymentModals.jsx:193
+#: src/deploymentModals.jsx:181
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
@@ -262,20 +262,20 @@ msgstr ""
 "Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
 "distributionen till sitt ursprungliga tillstånd."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:111 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "Avlägsna förrådd"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:698
 msgid "Repository"
 msgstr "Förrådd"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/ostree.jsx:915 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "Återställ"
 
-#: src/deploymentModals.jsx:169
+#: src/deploymentModals.jsx:206
 msgid "Reset to original state"
 msgstr "Återställ till ursprungligt tillstånd"
 
@@ -283,15 +283,15 @@ msgstr "Återställ till ursprungligt tillstånd"
 msgid "Roll back"
 msgstr "Rulla tillbaka"
 
-#: src/deploymentModals.jsx:121
+#: src/deploymentModals.jsx:107
 msgid "Rollback deployment"
 msgstr "Återrullning av distribution"
 
-#: src/repositoryModals.jsx:272
+#: src/repositoryModals.jsx:320
 msgid "Save"
 msgstr "Spara"
 
-#: src/repositoryModals.jsx:215
+#: src/repositoryModals.jsx:204
 msgid "Security"
 msgstr "Säkerhet"
 
@@ -311,7 +311,7 @@ msgstr "Programvaruuppdateringar"
 msgid "Status"
 msgstr "Status"
 
-#: src/deploymentModals.jsx:208
+#: src/deploymentModals.jsx:196
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "Ersättningar av paket som normalt ingår i ett OS-bygge"
 
@@ -323,7 +323,7 @@ msgstr "Systemet är uppdaterat"
 msgid "System will rebase to $0, updated $1."
 msgstr "Systemet kommer att baseras om till $0, uppdateras till $1."
 
-#: src/deploymentModals.jsx:103
+#: src/deploymentModals.jsx:89
 msgid "Temporary files"
 msgstr "Temporära filer"
 
@@ -342,7 +342,7 @@ msgstr "Tid"
 msgid "Tree"
 msgstr "Träd"
 
-#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:190 src/repositoryModals.jsx:291
 msgid "URL"
 msgstr "URL"
 
@@ -374,7 +374,7 @@ msgstr "Uppdateringar"
 msgid "Updating"
 msgstr "Uppdaterar"
 
-#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:209 src/repositoryModals.jsx:300
 msgid "Use trusted GPG key"
 msgstr "Använd betrodd GPG-nyckel"
 

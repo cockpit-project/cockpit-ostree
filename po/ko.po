@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-08 03:44+0000\n"
+"POT-Creation-Date: 2025-06-17 03:41+0000\n"
 "PO-Revision-Date: 2025-03-29 04:24+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -18,7 +18,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 5.10.4\n"
 
-#: src/ostree.jsx:362
+#: src/ostree.jsx:388
 msgid "$0 and reboot"
 msgstr "$0 및 재시작"
 
@@ -26,15 +26,15 @@ msgstr "$0 및 재시작"
 msgid "$0 key ID"
 msgstr "$0 키 ID"
 
-#: src/repositoryModals.jsx:318
+#: src/repositoryModals.jsx:309
 msgid "Add another key"
 msgstr "다른 키를 추가합니다"
 
-#: src/repositoryModals.jsx:179
+#: src/repositoryModals.jsx:172
 msgid "Add new repository"
 msgstr "신규 저장소 추가"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:169
+#: src/repositoryModals.jsx:221 src/ostree.jsx:663
 msgid "Add repository"
 msgstr "저장소 추가"
 
@@ -42,17 +42,17 @@ msgstr "저장소 추가"
 msgid "Additions"
 msgstr "추가"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:311
 msgid "Begins with $0"
 msgstr "$0 와 함께 시작합니다"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:452
+#: src/repositoryModals.jsx:437 src/ostree.jsx:318 src/ostree.jsx:702
 msgid "Branch"
 msgstr "분기"
 
-#: src/ostree.jsx:365 src/deploymentModals.jsx:83 src/deploymentModals.jsx:172
-#: src/repositoryModals.jsx:101 src/repositoryModals.jsx:172
-#: src/repositoryModals.jsx:275 src/repositoryModals.jsx:384
+#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "취소"
 
@@ -64,11 +64,11 @@ msgstr "꾸러미 최신화를 위해 점검하기..."
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:80
+#: src/ostree.jsx:909 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "정리"
 
-#: src/deploymentModals.jsx:90
+#: src/deploymentModals.jsx:80
 msgid "Clear cache and deployments"
 msgstr "캐쉬 및 배포 지우기"
 
@@ -96,7 +96,7 @@ msgstr "개발과 최신화"
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:280
+#: src/repositoryModals.jsx:277 src/ostree.jsx:672
 msgid "Edit repository"
 msgstr "저장소 편집"
 
@@ -124,7 +124,7 @@ msgstr "배포를 되돌리는데 실패함"
 msgid "Failed to upgrade deployment"
 msgstr "배포를 향상하는데 실패함"
 
-#: src/repositoryModals.jsx:323
+#: src/repositoryModals.jsx:314
 msgid "GPG public key"
 msgstr "GPG 공개키"
 
@@ -136,11 +136,11 @@ msgstr "양호한 서명"
 msgid "Invalid signature"
 msgstr "유효하지 않은 서명"
 
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:415
 msgid "Loading branches"
 msgstr "분기 적재 중"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:176
 msgid "Name"
 msgstr "이름"
 
@@ -192,11 +192,11 @@ msgstr "근원"
 msgid "Packages"
 msgstr "꾸러미"
 
-#: src/deploymentModals.jsx:201
+#: src/deploymentModals.jsx:189
 msgid "Packages which have been added to the system"
 msgstr "시스템에 추가된 꾸러미"
 
-#: src/deploymentModals.jsx:115
+#: src/deploymentModals.jsx:101
 msgid "Pending deployment"
 msgstr "배포 보류 중"
 
@@ -208,23 +208,23 @@ msgstr "핀"
 msgid "Pinned"
 msgstr "고정됨"
 
-#: src/repositoryModals.jsx:212
+#: src/repositoryModals.jsx:201
 msgid "Please provide a valid URL"
 msgstr "유효한 URL을 제공해야 합니다"
 
-#: src/repositoryModals.jsx:198
+#: src/repositoryModals.jsx:187
 msgid "Please provide a valid name"
 msgstr "유효한 이름을 제공해야 합니다"
 
-#: src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:95
 msgid "RPM repo metadata"
 msgstr "RPM 저장소 메타자료"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:378
+#: src/repositoryModals.jsx:454 src/ostree.jsx:457 src/ostree.jsx:655
 msgid "Rebase"
 msgstr "재구성"
 
-#: src/repositoryModals.jsx:435
+#: src/repositoryModals.jsx:426
 msgid "Rebase repository and branch"
 msgstr "저장소 및 분기를 재구성합니다"
 
@@ -240,39 +240,39 @@ msgstr "출시됨"
 msgid "Removals"
 msgstr "제거됨"
 
-#: src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:129
 msgid "Remove"
 msgstr "제거"
 
-#: src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:184
 msgid "Remove overlays"
 msgstr "겹침 제거"
 
-#: src/deploymentModals.jsx:203
+#: src/deploymentModals.jsx:191
 msgid "Remove overrides"
 msgstr "재정의 제거"
 
-#: src/deploymentModals.jsx:193
+#: src/deploymentModals.jsx:181
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
 msgstr ""
 "꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:119
+#: src/repositoryModals.jsx:111 src/ostree.jsx:682
 msgid "Remove repository"
 msgstr "저장소 제거"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:128 src/repositoryModals.jsx:290
-#: src/repositoryModals.jsx:445
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:698
 msgid "Repository"
 msgstr "저장소"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:179
+#: src/ostree.jsx:915 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "재설정"
 
-#: src/deploymentModals.jsx:169
+#: src/deploymentModals.jsx:206
 msgid "Reset to original state"
 msgstr "원래 상태로 재설정"
 
@@ -280,15 +280,15 @@ msgstr "원래 상태로 재설정"
 msgid "Roll back"
 msgstr "되돌리기"
 
-#: src/deploymentModals.jsx:121
+#: src/deploymentModals.jsx:107
 msgid "Rollback deployment"
 msgstr "배포 되돌리기"
 
-#: src/repositoryModals.jsx:272
+#: src/repositoryModals.jsx:320
 msgid "Save"
 msgstr "저장"
 
-#: src/repositoryModals.jsx:215
+#: src/repositoryModals.jsx:204
 msgid "Security"
 msgstr "보안"
 
@@ -308,7 +308,7 @@ msgstr "소프트웨어 최신화"
 msgid "Status"
 msgstr "상태"
 
-#: src/deploymentModals.jsx:208
+#: src/deploymentModals.jsx:196
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "꾸러미의 대체 항목은 일반적으로 OS 제작에 포함되어 있습니다"
 
@@ -320,7 +320,7 @@ msgstr "시스템이 최신 상태입니다"
 msgid "System will rebase to $0, updated $1."
 msgstr "시스템은 $0 로 재구성하며, $1 를 최신화합니다."
 
-#: src/deploymentModals.jsx:103
+#: src/deploymentModals.jsx:89
 msgid "Temporary files"
 msgstr "임시 파일"
 
@@ -338,7 +338,7 @@ msgstr "시간"
 msgid "Tree"
 msgstr "트리"
 
-#: src/repositoryModals.jsx:201 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:190 src/repositoryModals.jsx:291
 msgid "URL"
 msgstr "URL"
 
@@ -370,7 +370,7 @@ msgstr "최신화"
 msgid "Updating"
 msgstr "최신화 중"
 
-#: src/repositoryModals.jsx:220 src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:209 src/repositoryModals.jsx:300
 msgid "Use trusted GPG key"
 msgstr "신뢰하는 GPG 키를 사용합니다"
 
