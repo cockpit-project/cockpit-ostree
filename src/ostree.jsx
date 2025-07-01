@@ -145,16 +145,18 @@ const Curtain = ({ state, failure, message, reconnect }) => {
         title = _("No deployments");
 
     return (
-        <EmptyState headingLevel="h5"
-            titleText={title}
-            variant={EmptyStateVariant.full}
-            icon={icon}
-        >
-            { message && <EmptyStateBody>{message}</EmptyStateBody> }
-            <EmptyStateFooter>
-                { (state === 'failed' && reconnect) && <Button variant="primary">{ _("Reconnect") }</Button> }
-            </EmptyStateFooter>
-        </EmptyState>
+        <Page className="pf-m-no-sidebar">
+            <EmptyState headingLevel="h5"
+                titleText={title}
+                variant={EmptyStateVariant.full}
+                icon={icon}
+            >
+                { message && <EmptyStateBody>{message}</EmptyStateBody> }
+                <EmptyStateFooter>
+                    { (state === 'failed' && reconnect) && <Button variant="primary">{ _("Reconnect") }</Button> }
+                </EmptyStateFooter>
+            </EmptyState>
+        </Page>
     );
 };
 
@@ -929,7 +931,7 @@ class Application extends React.Component {
         );
 
         return (
-            <Page className="no-masthead-sidebar">
+            <Page className="pf-m-no-sidebar">
                 <PageSection hasBodyWrapper={false}>
                     <Gallery hasGutter className="ct-cards-grid">
                         <OStreeStatus ostreeState={this.state} versions={versions} />
