@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-19 03:40+0000\n"
+"POT-Creation-Date: 2025-07-01 03:52+0000\n"
 "PO-Revision-Date: 2023-12-11 06:43+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -36,7 +36,7 @@ msgstr "კიდევ ერთი გასაღების დამატ
 msgid "Add new repository"
 msgstr "ახალი რეპოზიტორიის დამატება"
 
-#: src/repositoryModals.jsx:221 src/ostree.jsx:663
+#: src/ostree.jsx:663 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "რეპოზიტორიის დამატება"
 
@@ -48,13 +48,13 @@ msgstr "დამატებები"
 msgid "Begins with $0"
 msgstr "იწყება $0-ით"
 
-#: src/repositoryModals.jsx:437 src/ostree.jsx:318 src/ostree.jsx:702
+#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "ბრენჩი"
 
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:391
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:391
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "გაუქმება"
 
@@ -66,7 +66,7 @@ msgstr "პაკეტების განახლებების შე�
 msgid "Checking for updates"
 msgstr "განახლებების შემოწმება"
 
-#: src/ostree.jsx:909 src/deploymentModals.jsx:122
+#: src/deploymentModals.jsx:122 src/ostree.jsx:909
 msgid "Clean up"
 msgstr "მოსუფთავება"
 
@@ -98,7 +98,7 @@ msgstr "გაშლები და განახლებები"
 msgid "Downgrades"
 msgstr "ვერსიის ჩამოწევა"
 
-#: src/repositoryModals.jsx:277 src/ostree.jsx:672
+#: src/ostree.jsx:672 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "რეპოზიტორიის ჩასწორება"
 
@@ -223,7 +223,7 @@ msgstr "შეიყვანეთ სწორი სახელი"
 msgid "RPM repo metadata"
 msgstr "RPM-ის რეპოზიტორიის მეტამონაცემები"
 
-#: src/repositoryModals.jsx:454 src/ostree.jsx:457 src/ostree.jsx:655
+#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "ბაზის შეცვლა"
 
@@ -263,16 +263,16 @@ msgstr ""
 "პაკეტების დამატებების ან ჩანაცვლებების მოცილება მიმდინარე გაშლის ორიგინალურ "
 "მდგომარეობაში დასაბრუნებლად."
 
-#: src/repositoryModals.jsx:111 src/ostree.jsx:682
+#: src/ostree.jsx:682 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "რეპოზიტორიის წაშლა"
 
-#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430 src/ostree.jsx:698
+#: src/ostree.jsx:698 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "რეპოზიტორია"
 
-#: src/ostree.jsx:915 src/deploymentModals.jsx:170
+#: src/deploymentModals.jsx:170 src/ostree.jsx:915
 msgid "Reset"
 msgstr "ჩამოყრა"
 
