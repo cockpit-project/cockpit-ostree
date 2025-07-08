@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-01 03:52+0000\n"
+"POT-Creation-Date: 2025-07-08 03:43+0000\n"
 "PO-Revision-Date: 2023-12-09 00:21+0000\n"
 "Last-Translator: Jingge Chen <mariocanfly@hotmail.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -20,7 +20,7 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0\n"
 "X-Generator: Weblate 5.2.1\n"
 
-#: src/ostree.jsx:388
+#: src/ostree.jsx:390
 msgid "$0 and reboot"
 msgstr "$0 并重启"
 
@@ -36,11 +36,11 @@ msgstr "添加另一个密钥"
 msgid "Add new repository"
 msgstr "添加新的源"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:221
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "添加源"
 
-#: src/ostree.jsx:194
+#: src/ostree.jsx:196
 msgid "Additions"
 msgstr "添加"
 
@@ -48,25 +48,25 @@ msgstr "添加"
 msgid "Begins with $0"
 msgstr "由 $0 开始"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:437
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "分支"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:393
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "取消"
 
-#: src/ostree.jsx:801
+#: src/ostree.jsx:803
 msgid "Checking for package updates..."
 msgstr "正在检查软件包更新……"
 
-#: src/ostree.jsx:831
+#: src/ostree.jsx:833
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:909
+#: src/deploymentModals.jsx:122 src/ostree.jsx:911
 msgid "Clean up"
 msgstr "清理"
 
@@ -74,7 +74,7 @@ msgstr "清理"
 msgid "Clear cache and deployments"
 msgstr "清除缓存和部署"
 
-#: src/ostree.jsx:418
+#: src/ostree.jsx:420
 msgid "Close"
 msgstr "关闭"
 
@@ -82,47 +82,47 @@ msgstr "关闭"
 msgid "Connecting to OSTree"
 msgstr "连接到系统树"
 
-#: src/ostree.jsx:405
+#: src/ostree.jsx:407
 msgid "Current"
 msgstr "当前"
 
-#: src/ostree.jsx:569
+#: src/ostree.jsx:571
 msgid "Delete"
 msgstr "删除"
 
-#: src/ostree.jsx:333 src/ostree.jsx:940
+#: src/ostree.jsx:335 src/ostree.jsx:942
 msgid "Deployments and updates"
 msgstr "部署和更新"
 
-#: src/ostree.jsx:197
+#: src/ostree.jsx:199
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:277
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "编辑仓库"
 
-#: src/ostree.jsx:847
+#: src/ostree.jsx:849
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Expired signature"
 msgstr "过期的签名"
 
-#: src/ostree.jsx:421
+#: src/ostree.jsx:423
 msgid "Failed"
 msgstr "已失败"
 
-#: src/ostree.jsx:300
+#: src/ostree.jsx:302
 msgid "Failed to rebase deployment"
 msgstr "部署重置失败"
 
-#: src/ostree.jsx:279
+#: src/ostree.jsx:281
 msgid "Failed to roll back deployment"
 msgstr "回滚部署失败"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:291
 msgid "Failed to upgrade deployment"
 msgstr "升级部署失败"
 
@@ -130,11 +130,11 @@ msgstr "升级部署失败"
 msgid "GPG public key"
 msgstr "GPG 公钥"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Good signature"
 msgstr "正确的签名"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Invalid signature"
 msgstr "无效的签名"
 
@@ -146,11 +146,11 @@ msgstr "加载分支"
 msgid "Name"
 msgstr "名称"
 
-#: src/ostree.jsx:428
+#: src/ostree.jsx:430
 msgid "New"
 msgstr "新"
 
-#: src/ostree.jsx:753
+#: src/ostree.jsx:755
 msgid "No OSTree deployments found"
 msgstr "没有找到 OSTree 部署"
 
@@ -162,11 +162,11 @@ msgstr "未找到配置数据"
 msgid "No deployments"
 msgstr "没有部署"
 
-#: src/ostree.jsx:260
+#: src/ostree.jsx:262
 msgid "No signature available"
 msgstr "没有可用的签名"
 
-#: src/ostree.jsx:779
+#: src/ostree.jsx:781
 msgid "Not authorized to update software on this system"
 msgstr "未授权更新该系统上的软件"
 
@@ -174,23 +174,23 @@ msgstr "未授权更新该系统上的软件"
 msgid "OS $0 not found"
 msgstr "未找到操作系统 $0"
 
-#: src/ostree.jsx:781
+#: src/ostree.jsx:783
 msgid "OSTree is not available on this system"
 msgstr "该系统上 OSTree 不可用"
 
-#: src/ostree.jsx:693
+#: src/ostree.jsx:695
 msgid "OSTree source"
 msgstr "OSTree 源"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:215
 msgid "Operating system"
 msgstr "操作系统"
 
-#: src/ostree.jsx:225
+#: src/ostree.jsx:227
 msgid "Origin"
 msgstr "Origin"
 
-#: src/ostree.jsx:514
+#: src/ostree.jsx:516
 msgid "Packages"
 msgstr "软件包"
 
@@ -202,11 +202,11 @@ msgstr "已添加到系统中的软件包"
 msgid "Pending deployment"
 msgstr "待部署"
 
-#: src/ostree.jsx:554
+#: src/ostree.jsx:556
 msgid "Pin"
 msgstr "针"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:409
 msgid "Pinned"
 msgstr "已钉"
 
@@ -222,7 +222,7 @@ msgstr "请提供有效的名称"
 msgid "RPM repo metadata"
 msgstr "RPM 仓库元数据"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:454
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "重置"
 
@@ -230,15 +230,15 @@ msgstr "重置"
 msgid "Rebase repository and branch"
 msgstr "重置版本库和分支"
 
-#: src/ostree.jsx:155
+#: src/ostree.jsx:156
 msgid "Reconnect"
 msgstr "重新连接"
 
-#: src/ostree.jsx:221
+#: src/ostree.jsx:223
 msgid "Released"
 msgstr "发布于"
 
-#: src/ostree.jsx:195
+#: src/ostree.jsx:197
 msgid "Removals"
 msgstr "移除"
 
@@ -260,16 +260,16 @@ msgid ""
 "to its original state."
 msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:111
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "移除存储库"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
 #: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "存储库"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:915
+#: src/deploymentModals.jsx:170 src/ostree.jsx:917
 msgid "Reset"
 msgstr "重置"
 
@@ -277,7 +277,7 @@ msgstr "重置"
 msgid "Reset to original state"
 msgstr "重置为原始状态"
 
-#: src/ostree.jsx:456
+#: src/ostree.jsx:458
 msgid "Roll back"
 msgstr "回滚"
 
@@ -293,11 +293,11 @@ msgstr "保存"
 msgid "Security"
 msgstr "安全性"
 
-#: src/ostree.jsx:519
+#: src/ostree.jsx:521
 msgid "Signatures"
 msgstr "签名"
 
-#: src/ostree.jsx:241
+#: src/ostree.jsx:243
 msgid "Signed by"
 msgstr "签名人"
 
@@ -305,7 +305,7 @@ msgstr "签名人"
 msgid "Software updates"
 msgstr "软件更新"
 
-#: src/ostree.jsx:310 src/ostree.jsx:616
+#: src/ostree.jsx:312 src/ostree.jsx:618
 msgid "Status"
 msgstr "状态"
 
@@ -313,11 +313,11 @@ msgstr "状态"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "对通常包含在操作系统构建中的软件包进行替换"
 
-#: src/ostree.jsx:110 src/ostree.jsx:591
+#: src/ostree.jsx:110 src/ostree.jsx:593
 msgid "System is up to date"
 msgstr "系统已更新到最新"
 
-#: src/ostree.jsx:437 src/ostree.jsx:443 src/ostree.jsx:449
+#: src/ostree.jsx:439 src/ostree.jsx:445 src/ostree.jsx:451
 msgid "System will rebase to $0, updated $1."
 msgstr "系统将重置为 $0, $1 已更新。"
 
@@ -325,16 +325,16 @@ msgstr "系统将重置为 $0, $1 已更新。"
 msgid "Temporary files"
 msgstr "临时文件"
 
-#: src/ostree.jsx:177
+#: src/ostree.jsx:179
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "该部署与当前启动的系统包含相同的软件包"
 
-#: src/ostree.jsx:314
+#: src/ostree.jsx:316
 msgid "Time"
 msgstr "时间"
 
-#: src/ostree.jsx:509
+#: src/ostree.jsx:511
 msgid "Tree"
 msgstr "Tree"
 
@@ -346,15 +346,15 @@ msgstr "网址"
 msgid "Unable to communicate with OSTree"
 msgstr "无法与 OSTree 通信"
 
-#: src/ostree.jsx:554
+#: src/ostree.jsx:556
 msgid "Unpin"
 msgstr "移除图钉"
 
-#: src/ostree.jsx:455
+#: src/ostree.jsx:457
 msgid "Update"
 msgstr "更新"
 
-#: src/ostree.jsx:585
+#: src/ostree.jsx:587
 msgid "Update available"
 msgstr "更新可用"
 
@@ -362,11 +362,11 @@ msgstr "更新可用"
 msgid "Update available: $0"
 msgstr "更新可用：$0"
 
-#: src/ostree.jsx:196
+#: src/ostree.jsx:198
 msgid "Updates"
 msgstr "更新"
 
-#: src/ostree.jsx:403
+#: src/ostree.jsx:405
 msgid "Updating"
 msgstr "更新"
 
@@ -374,19 +374,19 @@ msgstr "更新"
 msgid "Use trusted GPG key"
 msgstr "使用可信的 GPG 密钥"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:255
 msgid "Validity"
 msgstr "验证"
 
-#: src/ostree.jsx:217 src/ostree.jsx:306
+#: src/ostree.jsx:219 src/ostree.jsx:308
 msgid "Version"
 msgstr "版本"
 
-#: src/ostree.jsx:245
+#: src/ostree.jsx:247
 msgid "When"
 msgstr "当"
 
-#: src/ostree.jsx:422
+#: src/ostree.jsx:424
 msgid "view more..."
 msgstr "查看更多……"
 

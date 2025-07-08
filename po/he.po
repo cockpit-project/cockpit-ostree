@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-01 03:52+0000\n"
+"POT-Creation-Date: 2025-07-08 03:43+0000\n"
 "PO-Revision-Date: 2024-11-18 11:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -21,7 +21,7 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.8.2\n"
 
-#: src/ostree.jsx:388
+#: src/ostree.jsx:390
 msgid "$0 and reboot"
 msgstr "$0 והפעלה מחדש"
 
@@ -37,11 +37,11 @@ msgstr "הוספת מפתח נוסף"
 msgid "Add new repository"
 msgstr "הוספת מאגר חדש"
 
-#: src/ostree.jsx:663 src/repositoryModals.jsx:221
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "הוספת מאגר"
 
-#: src/ostree.jsx:194
+#: src/ostree.jsx:196
 msgid "Additions"
 msgstr "תוספות"
 
@@ -49,25 +49,25 @@ msgstr "תוספות"
 msgid "Begins with $0"
 msgstr "מתחיל ב־$0"
 
-#: src/ostree.jsx:318 src/ostree.jsx:702 src/repositoryModals.jsx:437
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "ענף"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:391
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:393
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "ביטול"
 
-#: src/ostree.jsx:801
+#: src/ostree.jsx:803
 msgid "Checking for package updates..."
 msgstr "מתבצע חיפוש אחר עדכוני חבילות…"
 
-#: src/ostree.jsx:831
+#: src/ostree.jsx:833
 msgid "Checking for updates"
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:909
+#: src/deploymentModals.jsx:122 src/ostree.jsx:911
 msgid "Clean up"
 msgstr "ניקוי"
 
@@ -75,7 +75,7 @@ msgstr "ניקוי"
 msgid "Clear cache and deployments"
 msgstr "ניקוי המטמון וההטמעות"
 
-#: src/ostree.jsx:418
+#: src/ostree.jsx:420
 msgid "Close"
 msgstr "סגירה"
 
@@ -83,47 +83,47 @@ msgstr "סגירה"
 msgid "Connecting to OSTree"
 msgstr "מתבצעת התחברות ל־OSTree"
 
-#: src/ostree.jsx:405
+#: src/ostree.jsx:407
 msgid "Current"
 msgstr "נוכחי"
 
-#: src/ostree.jsx:569
+#: src/ostree.jsx:571
 msgid "Delete"
 msgstr "מחיקה"
 
-#: src/ostree.jsx:333 src/ostree.jsx:940
+#: src/ostree.jsx:335 src/ostree.jsx:942
 msgid "Deployments and updates"
 msgstr "הטמעות ועדכונים"
 
-#: src/ostree.jsx:197
+#: src/ostree.jsx:199
 msgid "Downgrades"
 msgstr "משנמך"
 
-#: src/ostree.jsx:672 src/repositoryModals.jsx:277
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "עריכת מאגר"
 
-#: src/ostree.jsx:847
+#: src/ostree.jsx:849
 msgid "Error loading remotes: $0"
 msgstr "שגיאה בטעינת המרוחקים: $0"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Expired signature"
 msgstr "חתימה שתוקפה פג"
 
-#: src/ostree.jsx:421
+#: src/ostree.jsx:423
 msgid "Failed"
 msgstr "כשל"
 
-#: src/ostree.jsx:300
+#: src/ostree.jsx:302
 msgid "Failed to rebase deployment"
 msgstr "ביסוס ההטמעה מחדש נכשל"
 
-#: src/ostree.jsx:279
+#: src/ostree.jsx:281
 msgid "Failed to roll back deployment"
 msgstr "גלגול ההטמעה לאחור נכשל"
 
-#: src/ostree.jsx:289
+#: src/ostree.jsx:291
 msgid "Failed to upgrade deployment"
 msgstr "שדרוג ההטמעה נכשל"
 
@@ -131,11 +131,11 @@ msgstr "שדרוג ההטמעה נכשל"
 msgid "GPG public key"
 msgstr "מפתח GPG ציבורי"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Good signature"
 msgstr "חתימה טובה"
 
-#: src/ostree.jsx:236
+#: src/ostree.jsx:238
 msgid "Invalid signature"
 msgstr "חתימה שגויה"
 
@@ -147,11 +147,11 @@ msgstr "הענפים נטענים"
 msgid "Name"
 msgstr "שם"
 
-#: src/ostree.jsx:428
+#: src/ostree.jsx:430
 msgid "New"
 msgstr "חדש"
 
-#: src/ostree.jsx:753
+#: src/ostree.jsx:755
 msgid "No OSTree deployments found"
 msgstr "לא נמצאו הטמעות OSTree"
 
@@ -163,11 +163,11 @@ msgstr "לא נמצאו נתוני הגדרות"
 msgid "No deployments"
 msgstr "אין הטמעות"
 
-#: src/ostree.jsx:260
+#: src/ostree.jsx:262
 msgid "No signature available"
 msgstr "אין חתימה זמינה"
 
-#: src/ostree.jsx:779
+#: src/ostree.jsx:781
 msgid "Not authorized to update software on this system"
 msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 
@@ -175,23 +175,23 @@ msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
 msgid "OS $0 not found"
 msgstr "מערכת ההפעלה $0 לא נמצאה"
 
-#: src/ostree.jsx:781
+#: src/ostree.jsx:783
 msgid "OSTree is not available on this system"
 msgstr "OSTree אינה זמינה במערכת הזאת"
 
-#: src/ostree.jsx:693
+#: src/ostree.jsx:695
 msgid "OSTree source"
 msgstr "מקור OSTree"
 
-#: src/ostree.jsx:213
+#: src/ostree.jsx:215
 msgid "Operating system"
 msgstr "מערכת הפעלה"
 
-#: src/ostree.jsx:225
+#: src/ostree.jsx:227
 msgid "Origin"
 msgstr "מקור"
 
-#: src/ostree.jsx:514
+#: src/ostree.jsx:516
 msgid "Packages"
 msgstr "חבילות"
 
@@ -203,11 +203,11 @@ msgstr "חבילות שנוספו למערכת"
 msgid "Pending deployment"
 msgstr "הטמעה ממתינה"
 
-#: src/ostree.jsx:554
+#: src/ostree.jsx:556
 msgid "Pin"
 msgstr "הצמדה"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:409
 msgid "Pinned"
 msgstr "מוצמד"
 
@@ -223,7 +223,7 @@ msgstr "לא לספק שם תקף"
 msgid "RPM repo metadata"
 msgstr "נתוני על של מאגר RPM"
 
-#: src/ostree.jsx:457 src/ostree.jsx:655 src/repositoryModals.jsx:454
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "ביסוס מחדש"
 
@@ -231,15 +231,15 @@ msgstr "ביסוס מחדש"
 msgid "Rebase repository and branch"
 msgstr "ביסוס מאגר וענף מחדש"
 
-#: src/ostree.jsx:155
+#: src/ostree.jsx:156
 msgid "Reconnect"
 msgstr "התחברות מחדש"
 
-#: src/ostree.jsx:221
+#: src/ostree.jsx:223
 msgid "Released"
 msgstr "שוחרר"
 
-#: src/ostree.jsx:195
+#: src/ostree.jsx:197
 msgid "Removals"
 msgstr "הסרות"
 
@@ -262,16 +262,16 @@ msgid ""
 msgstr ""
 "הסרת תוספות או החלפות חבילות כדי להחזיר את ההטמעה הנוכחית למצב המקורי שלה."
 
-#: src/ostree.jsx:682 src/repositoryModals.jsx:111
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "הסרת מאגר"
 
-#: src/ostree.jsx:698 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
 #: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "מאגר"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:915
+#: src/deploymentModals.jsx:170 src/ostree.jsx:917
 msgid "Reset"
 msgstr "איפוס"
 
@@ -279,7 +279,7 @@ msgstr "איפוס"
 msgid "Reset to original state"
 msgstr "איפוס למצב המקורי"
 
-#: src/ostree.jsx:456
+#: src/ostree.jsx:458
 msgid "Roll back"
 msgstr "גלגול לאחור"
 
@@ -295,11 +295,11 @@ msgstr "שמירה"
 msgid "Security"
 msgstr "אבטחה"
 
-#: src/ostree.jsx:519
+#: src/ostree.jsx:521
 msgid "Signatures"
 msgstr "חתימות"
 
-#: src/ostree.jsx:241
+#: src/ostree.jsx:243
 msgid "Signed by"
 msgstr "נחתם על ידי"
 
@@ -307,7 +307,7 @@ msgstr "נחתם על ידי"
 msgid "Software updates"
 msgstr "עדכוני תוכנה"
 
-#: src/ostree.jsx:310 src/ostree.jsx:616
+#: src/ostree.jsx:312 src/ostree.jsx:618
 msgid "Status"
 msgstr "מצב"
 
@@ -315,11 +315,11 @@ msgstr "מצב"
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "החלפות של חבילות שבדרך כלל הן חלק מבניית מערכת ההפעלה"
 
-#: src/ostree.jsx:110 src/ostree.jsx:591
+#: src/ostree.jsx:110 src/ostree.jsx:593
 msgid "System is up to date"
 msgstr "המערכת עדכנית"
 
-#: src/ostree.jsx:437 src/ostree.jsx:443 src/ostree.jsx:449
+#: src/ostree.jsx:439 src/ostree.jsx:445 src/ostree.jsx:451
 msgid "System will rebase to $0, updated $1."
 msgstr "המערכת תבוסס מחדש לכדי $0, עודכן $1."
 
@@ -327,16 +327,16 @@ msgstr "המערכת תבוסס מחדש לכדי $0, עודכן $1."
 msgid "Temporary files"
 msgstr "קבצים זמניים"
 
-#: src/ostree.jsx:177
+#: src/ostree.jsx:179
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "הטמעה זו כוללת את אותן החבילות כמו המערכת שפועלת כרגע"
 
-#: src/ostree.jsx:314
+#: src/ostree.jsx:316
 msgid "Time"
 msgstr "זמן"
 
-#: src/ostree.jsx:509
+#: src/ostree.jsx:511
 msgid "Tree"
 msgstr "עץ"
 
@@ -348,15 +348,15 @@ msgstr "כתובת"
 msgid "Unable to communicate with OSTree"
 msgstr "לא ניתן ליצור קשר עם OSTree"
 
-#: src/ostree.jsx:554
+#: src/ostree.jsx:556
 msgid "Unpin"
 msgstr "שחרור הצמדה"
 
-#: src/ostree.jsx:455
+#: src/ostree.jsx:457
 msgid "Update"
 msgstr "עדכון"
 
-#: src/ostree.jsx:585
+#: src/ostree.jsx:587
 msgid "Update available"
 msgstr "יש עדכון"
 
@@ -364,11 +364,11 @@ msgstr "יש עדכון"
 msgid "Update available: $0"
 msgstr "יש עדכון: $0"
 
-#: src/ostree.jsx:196
+#: src/ostree.jsx:198
 msgid "Updates"
 msgstr "עדכונים"
 
-#: src/ostree.jsx:403
+#: src/ostree.jsx:405
 msgid "Updating"
 msgstr "מתבצע עדכון"
 
@@ -376,19 +376,19 @@ msgstr "מתבצע עדכון"
 msgid "Use trusted GPG key"
 msgstr "להשתמש במפתח GPG מהימן"
 
-#: src/ostree.jsx:253
+#: src/ostree.jsx:255
 msgid "Validity"
 msgstr "תוקף"
 
-#: src/ostree.jsx:217 src/ostree.jsx:306
+#: src/ostree.jsx:219 src/ostree.jsx:308
 msgid "Version"
 msgstr "גרסה"
 
-#: src/ostree.jsx:245
+#: src/ostree.jsx:247
 msgid "When"
 msgstr "מתי"
 
-#: src/ostree.jsx:422
+#: src/ostree.jsx:424
 msgid "view more..."
 msgstr "להציג עוד…"
 
