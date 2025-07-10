@@ -206,6 +206,8 @@ class OstreeRestartCase(testlib.MachineCase):
         b.assert_pixels("#ostree-status", "status", wait_after_layout_change=True)
         b.assert_pixels("#ostree-source", "source")
         b.assert_pixels("#available-deployments > tbody:nth-of-type(1)", "deployment",
+                        # unpredictable expander head
+                        skip_layouts=["medium"],
                         ignore=[".timestamp",
                                 # The columns change size dependent on the second deployment's name.
                                 "td[data-label=Name]", "td[data-label=State]", "td[data-label='Time']"])
