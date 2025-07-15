@@ -11,8 +11,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-08 03:43+0000\n"
-"PO-Revision-Date: 2025-07-08 08:43+0000\n"
+"POT-Creation-Date: 2025-07-09 03:47+0000\n"
+"PO-Revision-Date: 2025-07-09 15:08+0000\n"
 "Last-Translator: Robert Simai <robert.simai@suse.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/de/>\n"
@@ -320,7 +320,7 @@ msgstr "Ersatz von Paketen, die üblicherweise in einem OS-Build vorhanden sind"
 
 #: src/ostree.jsx:110 src/ostree.jsx:593
 msgid "System is up to date"
-msgstr "System ist auf dem neuesten Stand"
+msgstr "System ist aktuell"
 
 #: src/ostree.jsx:439 src/ostree.jsx:445 src/ostree.jsx:451
 msgid "System will rebase to $0, updated $1."
