@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 03:47+0000\n"
+"POT-Creation-Date: 2025-07-22 03:51+0000\n"
 "PO-Revision-Date: 2025-03-29 04:24+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -50,7 +50,7 @@ msgstr "$0 와 함께 시작합니다"
 msgid "Branch"
 msgstr "분기"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:393
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
@@ -64,7 +64,7 @@ msgstr "꾸러미 최신화를 위해 점검하기..."
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "정리"
 
@@ -268,7 +268,7 @@ msgstr "저장소 제거"
 msgid "Repository"
 msgstr "저장소"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "재설정"
 

@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-09 03:47+0000\n"
-"PO-Revision-Date: 2025-07-09 15:08+0000\n"
-"Last-Translator: Robert Simai <robert.simai@suse.com>\n"
+"POT-Creation-Date: 2025-07-22 03:51+0000\n"
+"PO-Revision-Date: 2025-07-19 13:53+0000\n"
+"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/de/>\n"
 "Language: de\n"
@@ -55,7 +55,7 @@ msgstr "Beginnt mit $0"
 msgid "Branch"
 msgstr "Zweig"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209 src/ostree.jsx:393
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
@@ -69,7 +69,7 @@ msgstr "Auf Paketaktualisierungen wird geprüft ..."
 msgid "Checking for updates"
 msgstr "Auf Aktualisierungen wird geprüft"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "Bereinigen"
 
@@ -87,7 +87,7 @@ msgstr "Verbinde zu OSTree"
 
 #: src/ostree.jsx:407
 msgid "Current"
-msgstr "Derzeit"
+msgstr "Aktuell"
 
 #: src/ostree.jsx:571
 msgid "Delete"
@@ -274,7 +274,7 @@ msgstr "Repositorium entfernen"
 msgid "Repository"
 msgstr "Paketquelle"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "Zurücksetzen"
 
