@@ -36,7 +36,7 @@
     "glob": "11.0.3",
     "jed": "1.1.1",
     "qunit": "2.24.1",
-    "sass": "1.89.2",
+    "sass": "1.90.0",
     "stylelint": "16.23.0",
     "stylelint-config-recommended-scss": "15.0.1",
     "stylelint-config-standard": "39.0.0",
