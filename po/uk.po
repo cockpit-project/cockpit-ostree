@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 03:51+0000\n"
+"POT-Creation-Date: 2025-08-10 03:57+0000\n"
 "PO-Revision-Date: 2025-07-01 04:07+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -52,9 +52,9 @@ msgstr "Починається з $0"
 msgid "Branch"
 msgstr "Гілка"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
-#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/ostree.jsx:393 src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "Скасувати"
 
