@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-22 03:51+0000\n"
+"POT-Creation-Date: 2025-08-10 03:57+0000\n"
 "PO-Revision-Date: 2025-06-01 11:33+0000\n"
 "Last-Translator: Salvatore Cocuzza <info@salvatorecocuzza.it>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -52,9 +52,9 @@ msgstr "Inizia con $0"
 msgid "Branch"
 msgstr "Ramo"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
-#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/ostree.jsx:393 src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "Annulla"
 
