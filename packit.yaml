@@ -40,16 +40,16 @@ jobs:
     trigger: release
     metadata:
       dist_git_branches:
-        - fedora-41
         - fedora-42
+        - fedora-43
         - fedora-development
 
   - job: koji_build
     trigger: commit
     metadata:
       dist_git_branches:
-        - fedora-41
         - fedora-42
+        - fedora-43
         - fedora-development
 
   - job: bodhi_update
@@ -57,5 +57,5 @@ jobs:
     metadata:
       dist_git_branches:
         # rawhide updates are created automatically
-        - fedora-41
         - fedora-42
+        - fedora-43
