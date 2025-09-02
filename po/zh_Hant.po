@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-10 03:57+0000\n"
+"POT-Creation-Date: 2025-08-28 03:27+0000\n"
 "PO-Revision-Date: 2025-03-22 21:04+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://translate."
@@ -36,7 +36,7 @@ msgstr "新增另一個密鑰"
 msgid "Add new repository"
 msgstr "新增套件庫"
 
-#: src/ostree.jsx:665 src/repositoryModals.jsx:221
+#: src/repositoryModals.jsx:221 src/ostree.jsx:665
 msgid "Add repository"
 msgstr "新增套件庫"
 
@@ -48,12 +48,12 @@ msgstr "新增"
 msgid "Begins with $0"
 msgstr "以 $0 開始"
 
-#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
+#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
 msgid "Branch"
 msgstr "分支"
 
-#: src/ostree.jsx:393 src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
 #: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 msgid "Cancel"
 msgstr "取消"
@@ -98,7 +98,7 @@ msgstr "部署與更新"
 msgid "Downgrades"
 msgstr "降級"
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:277
+#: src/repositoryModals.jsx:277 src/ostree.jsx:674
 msgid "Edit repository"
 msgstr "修改套件庫來源"
 
@@ -222,7 +222,7 @@ msgstr "請提供有效的名稱"
 msgid "RPM repo metadata"
 msgstr "RPM 套件庫中繼資料"
 
-#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
+#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
 msgid "Rebase"
 msgstr "回復"
 
@@ -260,12 +260,12 @@ msgid ""
 "to its original state."
 msgstr "移除套件新增內容或替代內容，讓目前的部署回復原始狀態。"
 
-#: src/ostree.jsx:684 src/repositoryModals.jsx:111
+#: src/repositoryModals.jsx:111 src/ostree.jsx:684
 msgid "Remove repository"
 msgstr "移除套件庫"
 
-#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:700
 msgid "Repository"
 msgstr "套件庫"
 
