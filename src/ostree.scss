@@ -39,7 +39,7 @@
     .packages {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
-        grid-gap: 1rem;
+        gap: 1rem;
 
         dt {
             font-weight: var(--pf-t--global--font--weight--body--bold);
