@@ -33,7 +33,7 @@ else
     ostree checkout "$checkout" /var/local-tree
     mkdir -p /var/local-repo
     ostree init --repo /var/local-repo --mode archive-z2
-    branch=$(rpm-ostree status | sed -n '/\(fedora\|ostree\|rhel-edge\):/ { s/^.*://; p; q }')
+    branch=$(rpm-ostree status | sed -n '/\(fedora\|coreos\|ostree\|rhel-edge\):/ { s/^.*://; p; q }')
     # OCI repository requires rpmostree.inputhash for content comparison; optimization, not important for tests
     ostree commit -s "cockpit-tree" --repo /var/local-repo \
         --add-metadata-string version=cockpit-base.1 \
