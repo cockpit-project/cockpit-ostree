@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-24 03:23+0000\n"
+"POT-Creation-Date: 2025-10-11 03:19+0000\n"
 "PO-Revision-Date: 2024-11-11 23:15+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -36,7 +36,7 @@ msgstr "Přidat další klíč"
 msgid "Add new repository"
 msgstr "Přidat nový repozitář"
 
-#: src/repositoryModals.jsx:221 src/ostree.jsx:665
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "Přidat repozitář"
 
@@ -48,13 +48,13 @@ msgstr "Přidané"
 msgid "Begins with $0"
 msgstr "Začíná na $0"
 
-#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "Větev"
 
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "Storno"
 
@@ -101,7 +101,7 @@ msgstr "Nasazení a aktualizace"
 msgid "Downgrades"
 msgstr "Návraty zpět k předchozím verzím"
 
-#: src/repositoryModals.jsx:277 src/ostree.jsx:674
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "Upravit repozitář"
 
@@ -231,7 +231,7 @@ msgstr "Zadejte platný název"
 msgid "RPM repo metadata"
 msgstr "Metadata RPM repozitáře"
 
-#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "Načíst znovu / změnit zdroj"
 
@@ -273,13 +273,13 @@ msgstr ""
 "jeho původního stavu."
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/repositoryModals.jsx:111 src/ostree.jsx:684
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "Odebrat repozitář"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430 src/ostree.jsx:700
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "Repozitář"
 
