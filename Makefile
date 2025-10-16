@@ -116,7 +116,7 @@ $(TARFILE): $(DIST_TEST) $(SPEC)
 		$$(git ls-files) $(COCKPIT_REPO_FILES) $(NODE_MODULES_TEST) $(SPEC) dist/
 
 $(NODE_CACHE): $(NODE_MODULES_TEST)
-	tar --xz $(TAR_ARGS) -cf $@ node_modules
+	tar --xz $(TAR_ARGS) -cf $@ --exclude .git node_modules
 
 node-cache: $(NODE_CACHE)
 
