@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-11 03:19+0000\n"
+"POT-Creation-Date: 2025-10-17 03:25+0000\n"
 "PO-Revision-Date: 2025-05-16 21:59+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -36,7 +36,7 @@ msgstr "Lägg till en annan nyckel"
 msgid "Add new repository"
 msgstr "Lägg till nytt förråd"
 
-#: src/ostree.jsx:665 src/repositoryModals.jsx:221
+#: src/repositoryModals.jsx:221 src/ostree.jsx:665
 msgid "Add repository"
 msgstr "Lägg till förråd"
 
@@ -48,13 +48,13 @@ msgstr "Tillägg"
 msgid "Begins with $0"
 msgstr "Börjar med $0"
 
-#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
+#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
 msgid "Branch"
 msgstr "Gren"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -66,7 +66,7 @@ msgstr "Söker efter paketuppdateringar..."
 msgid "Checking for updates"
 msgstr "Söker efter uppdateringar"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:122
+#: src/deploymentModals.jsx:122 src/ostree.jsx:911
 msgid "Clean up"
 msgstr "Rensa upp"
 
@@ -98,7 +98,7 @@ msgstr "Distributioner och uppdateringar"
 msgid "Downgrades"
 msgstr "Nedgraderingar"
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:277
+#: src/repositoryModals.jsx:277 src/ostree.jsx:674
 msgid "Edit repository"
 msgstr "Redigera förråd"
 
@@ -222,7 +222,7 @@ msgstr "Vänligen ange ett giltigt namn"
 msgid "RPM repo metadata"
 msgstr "RPM-förrådmetadata"
 
-#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
+#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
 msgid "Rebase"
 msgstr "Basera om"
 
@@ -262,16 +262,16 @@ msgstr ""
 "Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
 "distributionen till sitt ursprungliga tillstånd."
 
-#: src/ostree.jsx:684 src/repositoryModals.jsx:111
+#: src/repositoryModals.jsx:111 src/ostree.jsx:684
 msgid "Remove repository"
 msgstr "Avlägsna förrådd"
 
-#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:700
 msgid "Repository"
 msgstr "Förrådd"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:170
+#: src/deploymentModals.jsx:170 src/ostree.jsx:917
 msgid "Reset"
 msgstr "Återställ"
 

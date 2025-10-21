@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-11 03:19+0000\n"
+"POT-Creation-Date: 2025-10-17 03:25+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -34,7 +34,7 @@ msgstr "Başka anahtar ekle"
 msgid "Add new repository"
 msgstr "Yeni depo ekle"
 
-#: src/ostree.jsx:665 src/repositoryModals.jsx:221
+#: src/repositoryModals.jsx:221 src/ostree.jsx:665
 msgid "Add repository"
 msgstr "Depo ekle"
 
@@ -46,13 +46,13 @@ msgstr "Eklemeler"
 msgid "Begins with $0"
 msgstr "$0 ile başlar"
 
-#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
+#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
 msgid "Branch"
 msgstr "Dal"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
 msgid "Cancel"
 msgstr "İptal"
 
@@ -64,7 +64,7 @@ msgstr "Paket güncellemeleri denetleniyor..."
 msgid "Checking for updates"
 msgstr "Güncellemeler denetleniyor"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:122
+#: src/deploymentModals.jsx:122 src/ostree.jsx:911
 msgid "Clean up"
 msgstr "Temizle"
 
@@ -96,7 +96,7 @@ msgstr "Dağıtımlar ve güncellemeler"
 msgid "Downgrades"
 msgstr "Sürüm düşürmeleri"
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:277
+#: src/repositoryModals.jsx:277 src/ostree.jsx:674
 msgid "Edit repository"
 msgstr "Depoyu düzenle"
 
@@ -220,7 +220,7 @@ msgstr "Lütfen geçerli bir ad girin"
 msgid "RPM repo metadata"
 msgstr "RPM deposu üstverileri"
 
-#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
+#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
 msgid "Rebase"
 msgstr "Yeniden temellendir"
 
@@ -260,16 +260,16 @@ msgstr ""
 "Şu anki dağıtımı orijinal durumuna döndürmek için paket eklemelerini veya "
 "değişikliklerini kaldırın."
 
-#: src/ostree.jsx:684 src/repositoryModals.jsx:111
+#: src/repositoryModals.jsx:111 src/ostree.jsx:684
 msgid "Remove repository"
 msgstr "Depoyu kaldır"
 
-#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:700
 msgid "Repository"
 msgstr "Depo"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:170
+#: src/deploymentModals.jsx:170 src/ostree.jsx:917
 msgid "Reset"
 msgstr "Sıfırla"
 
