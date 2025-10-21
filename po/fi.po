@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-11 03:19+0000\n"
+"POT-Creation-Date: 2025-10-17 03:25+0000\n"
 "PO-Revision-Date: 2025-07-22 10:53+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -35,7 +35,7 @@ msgstr "Lisää uusi avain"
 msgid "Add new repository"
 msgstr "Lisää uusi asennuslähde"
 
-#: src/ostree.jsx:665 src/repositoryModals.jsx:221
+#: src/repositoryModals.jsx:221 src/ostree.jsx:665
 msgid "Add repository"
 msgstr "Lisää tietovarasto"
 
@@ -47,13 +47,13 @@ msgstr "Lisäykset"
 msgid "Begins with $0"
 msgstr "Alkaa $0:lla"
 
-#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
+#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
 msgid "Branch"
 msgstr "Haara"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
 msgid "Cancel"
 msgstr "Peru"
 
@@ -65,7 +65,7 @@ msgstr "Tarkistetaan pakettipäivityksiä ..."
 msgid "Checking for updates"
 msgstr "Etsitään päivityksiä"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:122
+#: src/deploymentModals.jsx:122 src/ostree.jsx:911
 msgid "Clean up"
 msgstr "Siivoa"
 
@@ -97,7 +97,7 @@ msgstr "Käyttöönotot ja päivitykset"
 msgid "Downgrades"
 msgstr "Aiemmat versiot"
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:277
+#: src/repositoryModals.jsx:277 src/ostree.jsx:674
 msgid "Edit repository"
 msgstr "Muokkaa tietovarastoa"
 
@@ -221,7 +221,7 @@ msgstr "Anna kelvollinen nimi"
 msgid "RPM repo metadata"
 msgstr "RPM-tietovaraston metatiedot"
 
-#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
+#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
 msgid "Rebase"
 msgstr "Perusta uudelleen"
 
@@ -261,16 +261,16 @@ msgstr ""
 "Poista paketin lisäykset tai korvaukset palauttaaksesi nykyisen käyttöönoton "
 "alkuperäiseen tilaan."
 
-#: src/ostree.jsx:684 src/repositoryModals.jsx:111
+#: src/repositoryModals.jsx:111 src/ostree.jsx:684
 msgid "Remove repository"
 msgstr "Poista tietovarasto"
 
-#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430
+#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430 src/ostree.jsx:700
 msgid "Repository"
 msgstr "Ohjelmistolähde"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:170
+#: src/deploymentModals.jsx:170 src/ostree.jsx:917
 msgid "Reset"
 msgstr "Nollaa"
 
