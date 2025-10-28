@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-17 03:25+0000\n"
+"POT-Creation-Date: 2025-10-28 03:33+0000\n"
 "PO-Revision-Date: 2025-03-29 04:24+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -34,7 +34,7 @@ msgstr "다른 키를 추가합니다"
 msgid "Add new repository"
 msgstr "신규 저장소 추가"
 
-#: src/repositoryModals.jsx:221 src/ostree.jsx:665
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "저장소 추가"
 
@@ -46,13 +46,13 @@ msgstr "추가"
 msgid "Begins with $0"
 msgstr "$0 와 함께 시작합니다"
 
-#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "분기"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "취소"
 
@@ -64,7 +64,7 @@ msgstr "꾸러미 최신화를 위해 점검하기..."
 msgid "Checking for updates"
 msgstr "최신화를 위한 점검하기"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "정리"
 
@@ -96,7 +96,7 @@ msgstr "개발과 최신화"
 msgid "Downgrades"
 msgstr "하향설치"
 
-#: src/repositoryModals.jsx:277 src/ostree.jsx:674
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "저장소 편집"
 
@@ -220,7 +220,7 @@ msgstr "유효한 이름을 제공해야 합니다"
 msgid "RPM repo metadata"
 msgstr "RPM 저장소 메타자료"
 
-#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "재구성"
 
@@ -259,16 +259,16 @@ msgid ""
 msgstr ""
 "꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
 
-#: src/repositoryModals.jsx:111 src/ostree.jsx:684
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "저장소 제거"
 
-#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430 src/ostree.jsx:700
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "저장소"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "재설정"
 
