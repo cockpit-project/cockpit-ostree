@@ -11,9 +11,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-17 03:25+0000\n"
-"PO-Revision-Date: 2025-07-19 13:53+0000\n"
-"Last-Translator: Ettore Atalan <atalanttore@googlemail.com>\n"
+"POT-Creation-Date: 2025-10-28 03:33+0000\n"
+"PO-Revision-Date: 2025-10-26 10:53+0000\n"
+"Last-Translator: Nils Werner <nils@hey.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/de/>\n"
 "Language: de\n"
@@ -21,7 +21,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.13.3\n"
 
 #: src/ostree.jsx:390
 msgid "$0 and reboot"
@@ -39,9 +39,9 @@ msgstr "Einen weiteren Schlüssel hinzufügen"
 msgid "Add new repository"
 msgstr "Neues Repositorium hinzufügen"
 
-#: src/repositoryModals.jsx:221 src/ostree.jsx:665
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
-msgstr "Repositorium hinzufügen"
+msgstr "Repository hinzufügen"
 
 #: src/ostree.jsx:196
 msgid "Additions"
@@ -51,13 +51,13 @@ msgstr "Neue Pakete"
 msgid "Begins with $0"
 msgstr "Beginnt mit $0"
 
-#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "Zweig"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -69,7 +69,7 @@ msgstr "Auf Paketaktualisierungen wird geprüft ..."
 msgid "Checking for updates"
 msgstr "Auf Aktualisierungen wird geprüft"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "Bereinigen"
 
@@ -101,9 +101,9 @@ msgstr "Bereitstellungen und Aktualisierungen"
 msgid "Downgrades"
 msgstr "Herabstufungen"
 
-#: src/repositoryModals.jsx:277 src/ostree.jsx:674
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
-msgstr "Repositorium bearbeiten"
+msgstr "Repository bearbeiten"
 
 #: src/ostree.jsx:849
 msgid "Error loading remotes: $0"
@@ -225,7 +225,7 @@ msgstr "Bitte geben Sie einen gültigen Namen an"
 msgid "RPM repo metadata"
 msgstr "RPM-Repo-Metadaten"
 
-#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "Umbasieren"
 
@@ -265,16 +265,16 @@ msgstr ""
 "Paketerweiterungen oder -ersetzungen entfernen, um die aktuelle "
 "Bereitstellung wieder in den ursprünglichen Zustand zu versetzen."
 
-#: src/repositoryModals.jsx:111 src/ostree.jsx:684
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "Repositorium entfernen"
 
-#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430 src/ostree.jsx:700
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "Paketquelle"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "Zurücksetzen"
 

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-10-17 03:25+0000\n"
+"POT-Creation-Date: 2025-10-28 03:33+0000\n"
 "PO-Revision-Date: 2025-07-18 07:19+0000\n"
 "Last-Translator: Abdullah Albaroty <albaroty@gmail.com>\n"
 "Language-Team: Arabic <https://translate.fedoraproject.org/projects/cockpit/"
@@ -37,7 +37,7 @@ msgstr "إضافة مفتاح آخر"
 msgid "Add new repository"
 msgstr "إضافة مستودع جديد"
 
-#: src/repositoryModals.jsx:221 src/ostree.jsx:665
+#: src/ostree.jsx:665 src/repositoryModals.jsx:221
 msgid "Add repository"
 msgstr "إضافة مستودع"
 
@@ -49,13 +49,13 @@ msgstr "الإضافات"
 msgid "Begins with $0"
 msgstr "البدء مع $0"
 
-#: src/repositoryModals.jsx:437 src/ostree.jsx:320 src/ostree.jsx:704
+#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
 msgid "Branch"
 msgstr "فرع"
 
-#: src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
+#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460 src/ostree.jsx:393
+#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
 msgstr "إلغاء"
 
@@ -67,7 +67,7 @@ msgstr "التحقق من تحديثات الحزمة..."
 msgid "Checking for updates"
 msgstr "التحقق من التحديثات"
 
-#: src/deploymentModals.jsx:122 src/ostree.jsx:911
+#: src/ostree.jsx:911 src/deploymentModals.jsx:122
 msgid "Clean up"
 msgstr "التنظيف"
 
@@ -99,7 +99,7 @@ msgstr "عمليات النشر والتحديثات"
 msgid "Downgrades"
 msgstr "التخفيضات"
 
-#: src/repositoryModals.jsx:277 src/ostree.jsx:674
+#: src/ostree.jsx:674 src/repositoryModals.jsx:277
 msgid "Edit repository"
 msgstr "تعديل المستودع"
 
@@ -223,7 +223,7 @@ msgstr "يُرجى تقديم اسم صالح"
 msgid "RPM repo metadata"
 msgstr "بيانات مستودع RPM الوصفية"
 
-#: src/repositoryModals.jsx:454 src/ostree.jsx:459 src/ostree.jsx:657
+#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
 msgid "Rebase"
 msgstr "إعادة التأسيس"
 
@@ -261,16 +261,16 @@ msgid ""
 "to its original state."
 msgstr "إزالة إضافات أو بدائل الحزمة لإعادة النشر الحالي إلى حالته الأصلية."
 
-#: src/repositoryModals.jsx:111 src/ostree.jsx:684
+#: src/ostree.jsx:684 src/repositoryModals.jsx:111
 msgid "Remove repository"
 msgstr "إزالة المستودع"
 
-#: src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430 src/ostree.jsx:700
+#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
+#: src/repositoryModals.jsx:430
 msgid "Repository"
 msgstr "مستودع"
 
-#: src/deploymentModals.jsx:170 src/ostree.jsx:917
+#: src/ostree.jsx:917 src/deploymentModals.jsx:170
 msgid "Reset"
 msgstr "صفر"
 
