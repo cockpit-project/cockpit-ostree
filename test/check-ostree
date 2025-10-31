@@ -150,7 +150,8 @@ def generate_new_commit(m, pkg_to_remove):
     # Install our dummy packages, dbonly
     rpm_args[-1] = ' '.join([f"{os.path.join('/home/admin', x)}.rpm"
                              for x in INSTALL_RPMS])
-    m.execute("rpm -U --oldpackage --root {0} --dbpath {1} --justdb {2}".format(*rpm_args))
+    # --nodigest to work around the "empty" package
+    m.execute("rpm -U --nodigest --oldpackage --root {0} --dbpath {1} --justdb {2}".format(*rpm_args))
 
     # move /etc back to /usr/etc to
     m.execute(f"mv {rpm_etc} {usr_etc}")
