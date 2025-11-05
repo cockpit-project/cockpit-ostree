@@ -80,10 +80,10 @@ def wait_not_packages(b, index, packages):
 def check_package_count(b, assertIn, index):
     switch_tab(b, index, TAB_PACKAGES)
     for group in ['adds', 'removes']:
-        b.call_js_func("ph_count_check", f"#available-deployments > tbody:nth-of-type({index}) .{group} dd", 1)
+        b.wait_count(f"#available-deployments > tbody:nth-of-type({index}) .{group} dd", 1)
     # 1 or 2, in some scenarios cockpit-ostree gets up/downgraded as well
-    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-of-type({index}) .up dd"), [1, 2])
-    assertIn(b.call_js_func("ph_count", f"#available-deployments > tbody:nth-of-type({index}) .down dd"), [1, 2])
+    assertIn(b.count(f"#available-deployments > tbody:nth-of-type({index}) .up dd"), [1, 2])
+    assertIn(b.count(f"#available-deployments > tbody:nth-of-type({index}) .down dd"), [1, 2])
 
 
 def do_deployment_action(b, index, action):
@@ -389,7 +389,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.click("#change-branch button.pf-v6-c-menu-toggle")
         b.wait_not_in_text(".pf-v6-c-menu li:first-child button", "error")
         b.wait_in_text(".pf-v6-c-menu li:last-of-type button", "znew-branch")
-        b.call_js_func("ph_count_check", "#change-branch li", 2)
+        b.wait_count(".pf-v6-c-menu li", 2)
         b.click(".pf-v6-c-menu li:last-of-type button")
         b.click("#rebase-repository-modal button.pf-m-primary")
         b.wait_in_text("#current-repository", "local")
@@ -497,7 +497,7 @@ class OstreeRestartCase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
         wait_deployment_prop(b, 1, "Actions", "Update")
         wait_deployment_prop(b, 1, "Status", "New")
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 3)
+        b.wait_count("#available-deployments td.deployment-name", 3)
 
         wait_deployment_prop(b, 1, "Version", "cockpit-base.2")
         wait_deployment_prop(b, 1, "Status", "New")
@@ -519,7 +519,7 @@ class OstreeRestartCase(testlib.MachineCase):
         b.wait_not_present("#cleanup-deployment-modal")
 
         # Rollback deployment wasn't deleted because it's pinned
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 2)
+        b.wait_count("#available-deployments td.deployment-name", 2)
 
         # Manually delete base.1 deployment
         wait_deployment_prop(b, 2, "Status", "Pinned")
@@ -531,7 +531,7 @@ class OstreeRestartCase(testlib.MachineCase):
         do_deployment_action(b, 2, "delete")
 
         # only one available deployment
-        b.call_js_func("ph_count_check", "#available-deployments tbody tr", 1)
+        b.wait_count("#available-deployments td.deployment-name", 1)
 
 
 class OstreeCase(testlib.MachineCase):
@@ -677,7 +677,7 @@ class OstreeCase(testlib.MachineCase):
         b.click("#rebase-repository-modal #change-branch button.pf-v6-c-menu-toggle")
         b.wait_in_text(".pf-v6-c-menu li:nth-child(1) button", "zremote-branch1")
         b.wait_in_text(".pf-v6-c-menu li:nth-child(2) button", "zremote-branch2")
-        b.call_js_func("ph_count_check", "#change-branch li", 2)
+        b.wait_count(".pf-v6-c-menu li", 2)
         b.click("#rebase-repository-modal button.pf-m-primary")
 
         self.assertEqual(m.execute("cat /etc/ostree/remotes.d/zremote-test1.conf").strip(),
@@ -734,7 +734,7 @@ class OstreeCase(testlib.MachineCase):
         # Remove zremote-test1 repository
         do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
-        b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v6-c-form__group-control input", 4)
+        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 4)
         # Current repository checkbox is disabled
         b.wait_visible("#remove-repository-modal #zremote-test1 + label.pf-m-disabled")
         b.click("#remove-repository-modal button.pf-m-link")
@@ -752,7 +752,7 @@ class OstreeCase(testlib.MachineCase):
         # Remove zremote-test1 repository
         do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
-        b.call_js_func("ph_count_check", "#remove-repository-modal .pf-v6-c-form__group-control input", 4)
+        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 4)
         b.wait_in_text("#remove-repository-modal #zremote-test1 + label", "zremote-test1")
 
         # Remove button is disabled when nothing is selected
@@ -766,7 +766,7 @@ class OstreeCase(testlib.MachineCase):
         do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.click("#rebase-repository-modal #change-repository button.pf-v6-c-menu-toggle")
-        b.call_js_func("ph_count_check", "#rebase-repository-modal #change-repository .pf-v6-c-menu__list li", 3)
+        b.wait_count(".pf-v6-c-menu li", 3)
         b.wait_in_text(".pf-v6-c-menu button.pf-m-selected", "local")
         b.click("#rebase-repository-modal #change-repository button.pf-v6-c-menu-toggle")
         b.wait_in_text("#change-branch div.pf-v6-c-form__group-control p", branch)
