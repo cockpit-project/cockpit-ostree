@@ -859,7 +859,7 @@ class OstreeOCICase(testlib.MachineCase):
         old_repo_branch = f"{old_repo}:{old_branch}"
         new_repo_branch = f"{new_repo}:{new_branch}"
         bash_ver = m.execute("rpm -q bash").strip()
-        less_ver = m.execute("rpm -q less").strip()
+        nano_ver = m.execute("rpm -q nano").strip()
 
         self.start_oci_registry()
 
@@ -887,8 +887,8 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_prop(b, 1, "Branch", new_repo_branch)
         wait_deployment_details_prop(b, 1, TAB_TREE, ".origin", new_repo_branch)
         if m.image.endswith("-bootc"):
-            # the new branch removes "less"
-            wait_deployment_details_prop(b, 1, TAB_PACKAGES, ".removes", "Removals" + less_ver)
+            # the new branch removes "nano"
+            wait_deployment_details_prop(b, 1, TAB_PACKAGES, ".removes", "Removals" + nano_ver)
         else:
             # the repo is a straight rebuild of the OSTree, no package changes
             wait_deployment_details_prop(
@@ -924,8 +924,8 @@ class OstreeOCICase(testlib.MachineCase):
         wait_deployment_prop(b, 2, "Status", "")
         wait_deployment_details_prop(b, 2, TAB_TREE, ".origin", old_repo_branch)
         if m.image.endswith("-bootc"):
-            # the new branch removes "less", so the old one adds it
-            wait_deployment_details_prop(b, 2, TAB_PACKAGES, ".adds", "Additions" + less_ver)
+            # the new branch removes "nano", so the old one adds it
+            wait_deployment_details_prop(b, 2, TAB_PACKAGES, ".adds", "Additions" + nano_ver)
         else:
             # the repo is a straight rebuild of the OSTree, no package changes
             wait_deployment_details_prop(
