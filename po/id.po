@@ -8,17 +8,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-12-22 03:58+0000\n"
-"PO-Revision-Date: 2023-12-25 18:36+0000\n"
+"POT-Creation-Date: 2025-12-25 03:51+0000\n"
+"PO-Revision-Date: 2025-12-25 06:52+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
-"cockpit-ostree/main/id/>\n"
+"cockpit/cockpit-ostree/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 5.3\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: src/ostree.jsx:390
 msgid "$0 and reboot"
@@ -56,7 +56,7 @@ msgstr "Cabang"
 #: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
 #: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
 msgid "Cancel"
-msgstr "Batal"
+msgstr "Batalkan"
 
 #: src/ostree.jsx:803
 msgid "Checking for package updates..."
@@ -88,7 +88,7 @@ msgstr "Saat ini"
 
 #: src/ostree.jsx:571
 msgid "Delete"
-msgstr "Menghapus"
+msgstr "Hapus"
 
 #: src/ostree.jsx:335 src/ostree.jsx:942
 msgid "Deployments and updates"
@@ -232,7 +232,7 @@ msgstr "Rebase repositori dan cabang"
 
 #: src/ostree.jsx:156
 msgid "Reconnect"
-msgstr "Hubungkan kembali"
+msgstr "Sambungkan ulang"
 
 #: src/ostree.jsx:223
 msgid "Released"
@@ -289,7 +289,7 @@ msgstr "Kembalikan penerapan"
 
 #: src/repositoryModals.jsx:320
 msgid "Save"
-msgstr "Menyimpan"
+msgstr "Simpan"
 
 #: src/repositoryModals.jsx:204
 msgid "Security"
@@ -317,7 +317,7 @@ msgstr "Penggantian paket yang biasanya disertakan dalam pembuatan OS"
 
 #: src/ostree.jsx:110 src/ostree.jsx:593
 msgid "System is up to date"
-msgstr "Sistem sudah diperbarui"
+msgstr "Sistem sudah terbaru"
 
 #: src/ostree.jsx:439 src/ostree.jsx:445 src/ostree.jsx:451
 msgid "System will rebase to $0, updated $1."
@@ -354,7 +354,7 @@ msgstr "Lepas pin"
 
 #: src/ostree.jsx:457
 msgid "Update"
-msgstr "Pembaruan"
+msgstr "Perbarui"
 
 #: src/ostree.jsx:587
 msgid "Update available"
@@ -390,7 +390,7 @@ msgstr "Kapan"
 
 #: src/ostree.jsx:424
 msgid "view more..."
-msgstr "lihat lebih lanjut..."
+msgstr "lihat lebih banyak..."
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Menerima bagian delta"
