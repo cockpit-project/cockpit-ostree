@@ -15,9 +15,9 @@ podman container runlabel INSTALL cockpit/ws
 if grep -q platform:el9 /etc/os-release; then
     # meh old and incompatible CLI
     rpm2archive /tmp/cockpit-ostree-*.rpm
-    tar -C / --transform 's,/usr/,/usr/local/,' -xzvf /tmp/cockpit-ostree-*.rpm.tgz
+    tar -C / --transform 's,/usr/,/usr/local/,' --absolute-names -xzvf /tmp/cockpit-ostree-*.rpm.tgz || { sleep infinity; exit 1; }
 else
-    rpm2archive /tmp/cockpit-ostree-*.rpm | tar -C / --transform 's,/usr/,/usr/local/,' -xzv
+    rpm2archive /tmp/cockpit-ostree-*.rpm | tar -C / --transform 's,/usr/,/usr/local/,' --absolute-names -xzv
 fi
 
 if bootc status --json | jq .status.booted.image | grep -q version; then
