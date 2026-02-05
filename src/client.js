@@ -1,4 +1,7 @@
-/* SPDX-License-Identifier: LGPL-2.1-or-later */
+/* SPDX-License-Identifier: LGPL-2.1-or-later
+ *
+ * Copyright (C) 2023 Red Hat, Inc.
+ */
 import cockpit from 'cockpit';
 
 import { logDebug } from './utils.js';
