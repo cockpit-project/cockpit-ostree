@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-02-03 04:28+0000\n"
+"POT-Creation-Date: 2026-02-06 04:28+0000\n"
 "PO-Revision-Date: 2025-05-16 21:59+0000\n"
 "Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -20,241 +20,241 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n != 1\n"
 "X-Generator: Weblate 5.11.3\n"
 
-#: src/ostree.jsx:390
+#: src/ostree.jsx:377
 msgid "$0 and reboot"
 msgstr "$0 och starta om"
 
-#: src/client.js:407
+#: src/client.js:411
 msgid "$0 key ID"
 msgstr "$0 nyckel-ID"
 
-#: src/repositoryModals.jsx:309
+#: src/repositoryModals.jsx:296
 msgid "Add another key"
 msgstr "Lägg till en annan nyckel"
 
-#: src/repositoryModals.jsx:172
+#: src/repositoryModals.jsx:159
 msgid "Add new repository"
 msgstr "Lägg till nytt förråd"
 
-#: src/ostree.jsx:665 src/repositoryModals.jsx:221
+#: src/ostree.jsx:652 src/repositoryModals.jsx:208
 msgid "Add repository"
 msgstr "Lägg till förråd"
 
-#: src/ostree.jsx:196
+#: src/ostree.jsx:183
 msgid "Additions"
 msgstr "Tillägg"
 
-#: src/repositoryModals.jsx:311
+#: src/repositoryModals.jsx:298
 msgid "Begins with $0"
 msgstr "Börjar med $0"
 
-#: src/ostree.jsx:320 src/ostree.jsx:704 src/repositoryModals.jsx:437
+#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
 msgid "Branch"
 msgstr "Gren"
 
-#: src/ostree.jsx:393 src/deploymentModals.jsx:125 src/deploymentModals.jsx:209
-#: src/repositoryModals.jsx:132 src/repositoryModals.jsx:224
-#: src/repositoryModals.jsx:323 src/repositoryModals.jsx:460
+#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
 msgid "Cancel"
 msgstr "Avbryt"
 
-#: src/ostree.jsx:803
+#: src/ostree.jsx:790
 msgid "Checking for package updates..."
 msgstr "Söker efter paketuppdateringar..."
 
-#: src/ostree.jsx:833
+#: src/ostree.jsx:820
 msgid "Checking for updates"
 msgstr "Söker efter uppdateringar"
 
-#: src/ostree.jsx:911 src/deploymentModals.jsx:122
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "Rensa upp"
 
-#: src/deploymentModals.jsx:80
+#: src/deploymentModals.jsx:67
 msgid "Clear cache and deployments"
 msgstr "Rensa cache och distributioner"
 
-#: src/ostree.jsx:420
+#: src/ostree.jsx:407
 msgid "Close"
 msgstr "Stäng"
 
-#: src/ostree.jsx:141
+#: src/ostree.jsx:128
 msgid "Connecting to OSTree"
 msgstr "Ansluter till OSTree"
 
-#: src/ostree.jsx:407
+#: src/ostree.jsx:394
 msgid "Current"
 msgstr "Nuvarande"
 
-#: src/ostree.jsx:571
+#: src/ostree.jsx:558
 msgid "Delete"
 msgstr "Ta bort"
 
-#: src/ostree.jsx:335 src/ostree.jsx:942
+#: src/ostree.jsx:322 src/ostree.jsx:929
 msgid "Deployments and updates"
 msgstr "Distributioner och uppdateringar"
 
-#: src/ostree.jsx:199
+#: src/ostree.jsx:186
 msgid "Downgrades"
 msgstr "Nedgraderingar"
 
-#: src/ostree.jsx:674 src/repositoryModals.jsx:277
+#: src/ostree.jsx:661 src/repositoryModals.jsx:264
 msgid "Edit repository"
 msgstr "Redigera förråd"
 
-#: src/ostree.jsx:849
+#: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Fel vid laddning av fjärrr: $0"
 
-#: src/ostree.jsx:238
+#: src/ostree.jsx:225
 msgid "Expired signature"
 msgstr "Utgången signatur"
 
-#: src/ostree.jsx:423
+#: src/ostree.jsx:410
 msgid "Failed"
 msgstr "Misslyckades"
 
-#: src/ostree.jsx:302
+#: src/ostree.jsx:289
 msgid "Failed to rebase deployment"
 msgstr "Misslyckades med att ombasera distribution"
 
-#: src/ostree.jsx:281
+#: src/ostree.jsx:268
 msgid "Failed to roll back deployment"
 msgstr "Misslyckades med att rulla tillbaka distribution"
 
-#: src/ostree.jsx:291
+#: src/ostree.jsx:278
 msgid "Failed to upgrade deployment"
 msgstr "Misslyckades med att uppgradera distribution"
 
-#: src/repositoryModals.jsx:314
+#: src/repositoryModals.jsx:301
 msgid "GPG public key"
 msgstr "GPG-publik nyckel"
 
-#: src/ostree.jsx:238
+#: src/ostree.jsx:225
 msgid "Good signature"
 msgstr "Bra signatur"
 
-#: src/ostree.jsx:238
+#: src/ostree.jsx:225
 msgid "Invalid signature"
 msgstr "Ogiltig signatur"
 
-#: src/repositoryModals.jsx:415
+#: src/repositoryModals.jsx:402
 msgid "Loading branches"
 msgstr "Laddar grenar"
 
-#: src/repositoryModals.jsx:176
+#: src/repositoryModals.jsx:163
 msgid "Name"
 msgstr "Namn"
 
-#: src/ostree.jsx:430
+#: src/ostree.jsx:417
 msgid "New"
 msgstr "Ny"
 
-#: src/ostree.jsx:755
+#: src/ostree.jsx:742
 msgid "No OSTree deployments found"
 msgstr "Inga OSTree distributioner hittades"
 
-#: src/remotes.js:99
+#: src/remotes.js:86
 msgid "No configuration data found"
 msgstr "Inga konfigurationsdata hittades"
 
-#: src/ostree.jsx:145
+#: src/ostree.jsx:132
 msgid "No deployments"
 msgstr "Inga distributioner"
 
-#: src/ostree.jsx:262
+#: src/ostree.jsx:249
 msgid "No signature available"
 msgstr "Ingen signatur tillgänglig"
 
-#: src/ostree.jsx:781
+#: src/ostree.jsx:768
 msgid "Not authorized to update software on this system"
 msgstr "Inte behörig att uppdatera programvara på det här systemet"
 
-#: src/client.js:500 src/client.js:564
+#: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "OS $0 hittades inte"
 
-#: src/ostree.jsx:783
+#: src/ostree.jsx:770
 msgid "OSTree is not available on this system"
 msgstr "OSTree är inte tillgängligt på detta system"
 
-#: src/ostree.jsx:695
+#: src/ostree.jsx:682
 msgid "OSTree source"
 msgstr "OSTree källa"
 
-#: src/ostree.jsx:215
+#: src/ostree.jsx:202
 msgid "Operating system"
 msgstr "Operativsystem"
 
-#: src/ostree.jsx:227
+#: src/ostree.jsx:214
 msgid "Origin"
 msgstr "Ursprung"
 
-#: src/ostree.jsx:516
+#: src/ostree.jsx:503
 msgid "Packages"
 msgstr "Paket"
 
-#: src/deploymentModals.jsx:189
+#: src/deploymentModals.jsx:176
 msgid "Packages which have been added to the system"
 msgstr "Paket som har lagts till i systemet"
 
-#: src/deploymentModals.jsx:101
+#: src/deploymentModals.jsx:88
 msgid "Pending deployment"
 msgstr "Väntar på distribution"
 
-#: src/ostree.jsx:556
+#: src/ostree.jsx:543
 msgid "Pin"
 msgstr "Fäst"
 
-#: src/ostree.jsx:409
+#: src/ostree.jsx:396
 msgid "Pinned"
 msgstr "Fäst"
 
-#: src/repositoryModals.jsx:201
+#: src/repositoryModals.jsx:188
 msgid "Please provide a valid URL"
 msgstr "Vänligen ange en giltig URL"
 
-#: src/repositoryModals.jsx:187
+#: src/repositoryModals.jsx:174
 msgid "Please provide a valid name"
 msgstr "Vänligen ange ett giltigt namn"
 
-#: src/deploymentModals.jsx:95
+#: src/deploymentModals.jsx:82
 msgid "RPM repo metadata"
 msgstr "RPM-förrådmetadata"
 
-#: src/ostree.jsx:459 src/ostree.jsx:657 src/repositoryModals.jsx:454
+#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
 msgid "Rebase"
 msgstr "Basera om"
 
-#: src/repositoryModals.jsx:426
+#: src/repositoryModals.jsx:413
 msgid "Rebase repository and branch"
 msgstr "Basera om förrådd och gren"
 
-#: src/ostree.jsx:156
+#: src/ostree.jsx:143
 msgid "Reconnect"
 msgstr "Återanslut"
 
-#: src/ostree.jsx:223
+#: src/ostree.jsx:210
 msgid "Released"
 msgstr "Släppt"
 
-#: src/ostree.jsx:197
+#: src/ostree.jsx:184
 msgid "Removals"
 msgstr "Avlägsnanden"
 
-#: src/repositoryModals.jsx:129
+#: src/repositoryModals.jsx:116
 msgid "Remove"
 msgstr "Avlägsna"
 
-#: src/deploymentModals.jsx:184
+#: src/deploymentModals.jsx:171
 msgid "Remove overlays"
 msgstr "Avlägsna överlägg"
 
-#: src/deploymentModals.jsx:191
+#: src/deploymentModals.jsx:178
 msgid "Remove overrides"
 msgstr "Avlägsna åsidosättningar"
 
-#: src/deploymentModals.jsx:181
+#: src/deploymentModals.jsx:168
 msgid ""
 "Remove package additions or substitutions to return the current deployment "
 "to its original state."
@@ -262,44 +262,44 @@ msgstr ""
 "Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
 "distributionen till sitt ursprungliga tillstånd."
 
-#: src/ostree.jsx:684 src/repositoryModals.jsx:111
+#: src/ostree.jsx:671 src/repositoryModals.jsx:98
 msgid "Remove repository"
 msgstr "Avlägsna förrådd"
 
-#: src/ostree.jsx:700 src/repositoryModals.jsx:116 src/repositoryModals.jsx:281
-#: src/repositoryModals.jsx:430
+#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417
 msgid "Repository"
 msgstr "Förrådd"
 
-#: src/ostree.jsx:917 src/deploymentModals.jsx:170
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "Återställ"
 
-#: src/deploymentModals.jsx:206
+#: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "Återställ till ursprungligt tillstånd"
 
-#: src/ostree.jsx:458
+#: src/ostree.jsx:445
 msgid "Roll back"
 msgstr "Rulla tillbaka"
 
-#: src/deploymentModals.jsx:107
+#: src/deploymentModals.jsx:94
 msgid "Rollback deployment"
 msgstr "Återrullning av distribution"
 
-#: src/repositoryModals.jsx:320
+#: src/repositoryModals.jsx:307
 msgid "Save"
 msgstr "Spara"
 
-#: src/repositoryModals.jsx:204
+#: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "Säkerhet"
 
-#: src/ostree.jsx:521
+#: src/ostree.jsx:508
 msgid "Signatures"
 msgstr "Signaturer"
 
-#: src/ostree.jsx:243
+#: src/ostree.jsx:230
 msgid "Signed by"
 msgstr "Signerad av"
 
@@ -307,89 +307,89 @@ msgstr "Signerad av"
 msgid "Software updates"
 msgstr "Programvaruuppdateringar"
 
-#: src/ostree.jsx:312 src/ostree.jsx:618
+#: src/ostree.jsx:299 src/ostree.jsx:605
 msgid "Status"
 msgstr "Status"
 
-#: src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:183
 msgid "Substitutions of packages normally included in an OS build"
 msgstr "Ersättningar av paket som normalt ingår i ett OS-bygge"
 
-#: src/ostree.jsx:110 src/ostree.jsx:593
+#: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "Systemet är uppdaterat"
 
-#: src/ostree.jsx:439 src/ostree.jsx:445 src/ostree.jsx:451
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
 msgid "System will rebase to $0, updated $1."
 msgstr "Systemet kommer att baseras om till $0, uppdateras till $1."
 
-#: src/deploymentModals.jsx:89
+#: src/deploymentModals.jsx:76
 msgid "Temporary files"
 msgstr "Temporära filer"
 
-#: src/ostree.jsx:179
+#: src/ostree.jsx:166
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr ""
 "Den här distributionen innehåller samma paket som ditt för närvarande "
 "startade system"
 
-#: src/ostree.jsx:316
+#: src/ostree.jsx:303
 msgid "Time"
 msgstr "Tid"
 
-#: src/ostree.jsx:511
+#: src/ostree.jsx:498
 msgid "Tree"
 msgstr "Träd"
 
-#: src/repositoryModals.jsx:190 src/repositoryModals.jsx:291
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
 msgid "URL"
 msgstr "URL"
 
-#: src/ostree.jsx:143
+#: src/ostree.jsx:130
 msgid "Unable to communicate with OSTree"
 msgstr "Kan inte kommunicera med OSTree"
 
-#: src/ostree.jsx:556
+#: src/ostree.jsx:543
 msgid "Unpin"
 msgstr "Avfäst"
 
-#: src/ostree.jsx:457
+#: src/ostree.jsx:444
 msgid "Update"
 msgstr "Uppdatera"
 
-#: src/ostree.jsx:587
+#: src/ostree.jsx:574
 msgid "Update available"
 msgstr "Uppdatering tillgänglig"
 
-#: src/ostree.jsx:116
+#: src/ostree.jsx:103
 msgid "Update available: $0"
 msgstr "Uppdatering tillgänglig: $0"
 
-#: src/ostree.jsx:198
+#: src/ostree.jsx:185
 msgid "Updates"
 msgstr "Uppdateringar"
 
-#: src/ostree.jsx:405
+#: src/ostree.jsx:392
 msgid "Updating"
 msgstr "Uppdaterar"
 
-#: src/repositoryModals.jsx:209 src/repositoryModals.jsx:300
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
 msgid "Use trusted GPG key"
 msgstr "Använd betrodd GPG-nyckel"
 
-#: src/ostree.jsx:255
+#: src/ostree.jsx:242
 msgid "Validity"
 msgstr "Giltighet"
 
-#: src/ostree.jsx:219 src/ostree.jsx:308
+#: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "Version"
 
-#: src/ostree.jsx:247
+#: src/ostree.jsx:234
 msgid "When"
 msgstr "När"
 
-#: src/ostree.jsx:424
+#: src/ostree.jsx:411
 msgid "view more..."
 msgstr "visa mer..."
