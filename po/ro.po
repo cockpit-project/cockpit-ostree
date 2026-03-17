@@ -1,0 +1,398 @@
+# #-#-#-#-#  cockpit-ostree.js.pot (PACKAGE VERSION)  #-#-#-#-#
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE_VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-03-15 04:57+0000\n"
+"PO-Revision-Date: 2026-03-15 22:58+0000\n"
+"Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
+"Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
+"cockpit/cockpit-ostree/ro/>\n"
+"Language: ro\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n==1 ? 0 : (n==0 || (n%100 > 0 && n%100 < "
+"20)) ? 1 : 2;\n"
+"X-Generator: Weblate 5.16.2\n"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 și repornire"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "ID-ul cheii $0"
+
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "Adaugă o altă cheie"
+
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "Adaugă un nou depozit"
+
+#: src/ostree.jsx:652 src/repositoryModals.jsx:208
+msgid "Add repository"
+msgstr "Adaugă un depozit"
+
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "Adăugări"
+
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "Începe cu $0"
+
+#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
+msgid "Branch"
+msgstr "Ramură"
+
+#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+msgid "Cancel"
+msgstr "Anulează"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "Se verifică dacă există actualizări pentru pachete..."
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "Se verifică dacă există actualizări"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "Curățare"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Șterge cache-ul și distribuțiile"
+
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "Închide"
+
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "Se conectează la OSTree"
+
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "Actual"
+
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "Șterge"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "Distribuții și actualizări"
+
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "Retrogradări de versiune"
+
+#: src/ostree.jsx:661 src/repositoryModals.jsx:264
+msgid "Edit repository"
+msgstr "Editare depozit"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "Eroare la încărcarea depozitelor de la distanță: $0"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "Semnătură expirată"
+
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "Eșuare"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "Nu s-a putut efectua rebazarea distribuției"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "Nu s-a putut reveni la versiunea anterioară a distribuției"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "Nu s-a reușit actualizarea distribuțieii"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "Cheie publică GPG"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "Semnătură validă"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "Semnătură nevalidă"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "Se încarcă ramurile"
+
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "Nume"
+
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "Nou"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "Nu s-au găsit distribuții OSTree"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "Nu s-au găsit date de configurare"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "Nu există distribuții"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "Nu există nicio semnătură disponibilă"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "Nu aveți permisiunea de a actualiza software-ul pe acest sistem"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "Sistemul de operare $0 nu a fost găsit"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "OSTree nu este disponibil în acest sistem"
+
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "Sursa OSTree"
+
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "Sistemul de operare"
+
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "Origine"
+
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "Pachete"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Pachetele care au fost adăugate în sistem"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "În așteptarea distribuției"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "Pin"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "Fixat"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "Introduceți o adresă URL validă"
+
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "Introduceți un nume valid"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadate ale depozitului RPM"
+
+#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
+msgid "Rebase"
+msgstr "Rebazare"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "Efectuează rebazarea pentru depozit și ramură"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "Reconectare"
+
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "Publicată"
+
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "Dezinstalări"
+
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "Elimină"
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Elimină depozitele suplimentare (overlays)"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Elimină înlocuirile"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Elimină adăugările sau înlocuirile din pachet pentru a readuce distribuția "
+"actuală la starea inițială."
+
+#: src/ostree.jsx:671 src/repositoryModals.jsx:98
+msgid "Remove repository"
+msgstr "Elimină depozitul"
+
+#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417
+msgid "Repository"
+msgstr "Depozit"
+
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "Restabilește"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Restabilește starea inițială"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "Revenire"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Revenirea la versiunea anterioară"
+
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "Salvează"
+
+#: src/repositoryModals.jsx:191
+msgid "Security"
+msgstr "Securitate"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "Semnături"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "Semnat de"
+
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "Actualizări de software"
+
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "Starea"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Înlocuirea pachetelor incluse în mod obișnuit într-o versiune a sistemului "
+"de operare"
+
+#: src/ostree.jsx:97 src/ostree.jsx:580
+msgid "System is up to date"
+msgstr "Sistemul este la zi"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "Sistemul va fi rebazat la $0, actualizat la $1."
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Fișiere temporare"
+
+#: src/ostree.jsx:166
+msgid ""
+"This deployment contains the same packages as your currently booted system"
+msgstr ""
+"Această distribuție conține aceleași pachete ca și sistemul dvs. pornit în "
+"prezent"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "Timpul"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "Arbore"
+
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "Adresa URL"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "Nu se poate stabili comunicarea cu OSTree"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "Anulează fixarea"
+
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "Actualizare"
+
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "Actualizare disponibilă"
+
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "Actualizare disponibilă: $0"
+
+#: src/ostree.jsx:185
+msgid "Updates"
+msgstr "Actualizări"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "Se actualizează"
+
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "Utilizează o cheie GPG de încredere"
+
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "Valabilitate"
+
+#: src/ostree.jsx:206 src/ostree.jsx:295
+msgid "Version"
+msgstr "Versiunea"
+
+#: src/ostree.jsx:234
+msgid "When"
+msgstr "Când"
+
+#: src/ostree.jsx:411
+msgid "view more..."
+msgstr "vezi mai multe..."
