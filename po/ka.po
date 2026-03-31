@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-15 04:57+0000\n"
-"PO-Revision-Date: 2025-08-10 11:58+0000\n"
+"POT-Creation-Date: 2026-03-24 04:33+0000\n"
+"PO-Revision-Date: 2026-03-25 02:58+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
 "cockpit/cockpit-ostree/ka/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1\n"
-"X-Generator: Weblate 5.12.2\n"
+"X-Generator: Weblate 5.16.2\n"
 
 #: src/ostree.jsx:377
 msgid "$0 and reboot"
@@ -112,7 +112,7 @@ msgstr "ვადაგასული ხელმოწერა"
 
 #: src/ostree.jsx:410
 msgid "Failed"
-msgstr "შეცდომა"
+msgstr "ჩავარდა"
 
 #: src/ostree.jsx:289
 msgid "Failed to rebase deployment"
