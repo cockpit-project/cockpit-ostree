@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 04:33+0000\n"
+"POT-Creation-Date: 2026-04-10 05:15+0000\n"
 "PO-Revision-Date: 2025-11-16 14:52+0000\n"
 "Last-Translator: Jesse Guo <jesseguotech@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -36,7 +36,7 @@ msgstr "添加另一个密钥"
 msgid "Add new repository"
 msgstr "添加新的源"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:208
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
 msgid "Add repository"
 msgstr "添加源"
 
@@ -48,13 +48,13 @@ msgstr "添加"
 msgid "Begins with $0"
 msgstr "由 $0 开始"
 
-#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
 msgid "Branch"
 msgstr "分支"
 
-#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "取消"
 
@@ -66,7 +66,7 @@ msgstr "正在检查软件包更新……"
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
 msgid "Clean up"
 msgstr "清理"
 
@@ -98,7 +98,7 @@ msgstr "部署和更新"
 msgid "Downgrades"
 msgstr "降级"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:264
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
 msgid "Edit repository"
 msgstr "编辑仓库"
 
@@ -222,7 +222,7 @@ msgstr "请提供有效的名称"
 msgid "RPM repo metadata"
 msgstr "RPM 仓库元数据"
 
-#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "重置"
 
@@ -260,16 +260,16 @@ msgid ""
 "to its original state."
 msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
 msgstr "移除存储库"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417
+#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417 src/ostree.jsx:687
 msgid "Repository"
 msgstr "存储库"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
 msgid "Reset"
 msgstr "重置"
 

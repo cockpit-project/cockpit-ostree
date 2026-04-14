@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-03-24 04:33+0000\n"
-"PO-Revision-Date: 2026-03-15 22:58+0000\n"
+"POT-Creation-Date: 2026-04-10 05:15+0000\n"
+"PO-Revision-Date: 2026-04-08 11:18+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
 "cockpit/cockpit-ostree/ro/>\n"
@@ -37,7 +37,7 @@ msgstr "Adaugă o altă cheie"
 msgid "Add new repository"
 msgstr "Adaugă un nou depozit"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:208
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
 msgid "Add repository"
 msgstr "Adaugă un depozit"
 
@@ -49,13 +49,13 @@ msgstr "Adăugări"
 msgid "Begins with $0"
 msgstr "Începe cu $0"
 
-#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
 msgid "Branch"
 msgstr "Ramură"
 
-#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Anulează"
 
@@ -67,7 +67,7 @@ msgstr "Se verifică dacă există actualizări pentru pachete..."
 msgid "Checking for updates"
 msgstr "Se verifică dacă există actualizări"
 
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
 msgid "Clean up"
 msgstr "Curățare"
 
@@ -99,7 +99,7 @@ msgstr "Distribuții și actualizări"
 msgid "Downgrades"
 msgstr "Retrogradări de versiune"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:264
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
 msgid "Edit repository"
 msgstr "Editare depozit"
 
@@ -113,7 +113,7 @@ msgstr "Semnătură expirată"
 
 #: src/ostree.jsx:410
 msgid "Failed"
-msgstr "Eșuare"
+msgstr "Nu a funcționat"
 
 #: src/ostree.jsx:289
 msgid "Failed to rebase deployment"
@@ -223,7 +223,7 @@ msgstr "Introduceți un nume valid"
 msgid "RPM repo metadata"
 msgstr "Metadate ale depozitului RPM"
 
-#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Rebazare"
 
@@ -263,16 +263,16 @@ msgstr ""
 "Elimină adăugările sau înlocuirile din pachet pentru a readuce distribuția "
 "actuală la starea inițială."
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
 msgstr "Elimină depozitul"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417
+#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417 src/ostree.jsx:687
 msgid "Repository"
 msgstr "Depozit"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
 msgid "Reset"
 msgstr "Restabilește"
 
