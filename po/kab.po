@@ -8,8 +8,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-04-19 05:17+0000\n"
-"PO-Revision-Date: 2026-02-19 22:58+0000\n"
+"POT-Creation-Date: 2026-05-05 05:31+0000\n"
+"PO-Revision-Date: 2026-04-30 12:59+0000\n"
 "Last-Translator: Massii Aqvayli <massiin@proton.me>\n"
 "Language-Team: Kabyle <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/kab/>\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1\n"
-"X-Generator: Weblate 5.16\n"
+"X-Generator: Weblate 5.17.1\n"
 
 #: src/ostree.jsx:377
 msgid "$0 and reboot"
@@ -374,7 +374,7 @@ msgstr "Amucceḍ"
 
 #: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
 msgid "Use trusted GPG key"
-msgstr ""
+msgstr "Seqdec tasarut GPG yettwamanen"
 
 #: src/ostree.jsx:242
 msgid "Validity"
