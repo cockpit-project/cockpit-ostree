@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-06 05:45+0000\n"
-"PO-Revision-Date: 2025-11-16 14:52+0000\n"
-"Last-Translator: Jesse Guo <jesseguotech@outlook.com>\n"
+"POT-Creation-Date: 2026-05-17 06:03+0000\n"
+"PO-Revision-Date: 2026-05-17 12:08+0000\n"
+"Last-Translator: Luke Na <narukeu@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
 "projects/cockpit/cockpit-ostree/zh_CN/>\n"
 "Language: zh_CN\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0\n"
-"X-Generator: Weblate 5.14.3\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/ostree.jsx:377
 msgid "$0 and reboot"
@@ -34,11 +34,11 @@ msgstr "添加另一个密钥"
 
 #: src/repositoryModals.jsx:159
 msgid "Add new repository"
-msgstr "添加新的源"
+msgstr "添加新存储库"
 
 #: src/repositoryModals.jsx:208 src/ostree.jsx:652
 msgid "Add repository"
-msgstr "添加源"
+msgstr "添加存储库"
 
 #: src/ostree.jsx:183
 msgid "Additions"
@@ -52,9 +52,9 @@ msgstr "由 $0 开始"
 msgid "Branch"
 msgstr "分支"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 msgid "Cancel"
 msgstr "取消"
 
@@ -66,7 +66,7 @@ msgstr "正在检查软件包更新……"
 msgid "Checking for updates"
 msgstr "检查升级"
 
-#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "清理"
 
@@ -116,7 +116,7 @@ msgstr "失败"
 
 #: src/ostree.jsx:289
 msgid "Failed to rebase deployment"
-msgstr "部署重置失败"
+msgstr "部署变基失败"
 
 #: src/ostree.jsx:268
 msgid "Failed to roll back deployment"
@@ -204,11 +204,11 @@ msgstr "待部署"
 
 #: src/ostree.jsx:543
 msgid "Pin"
-msgstr "针"
+msgstr "固定"
 
 #: src/ostree.jsx:396
 msgid "Pinned"
-msgstr "已钉"
+msgstr "已固定"
 
 #: src/repositoryModals.jsx:188
 msgid "Please provide a valid URL"
@@ -224,11 +224,11 @@ msgstr "RPM 仓库元数据"
 
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
-msgstr "重置"
+msgstr "变基"
 
 #: src/repositoryModals.jsx:413
 msgid "Rebase repository and branch"
-msgstr "重置版本库和分支"
+msgstr "变基存储库和分支"
 
 #: src/ostree.jsx:143
 msgid "Reconnect"
@@ -269,7 +269,7 @@ msgstr "移除存储库"
 msgid "Repository"
 msgstr "存储库"
 
-#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "重置"
 
@@ -319,7 +319,7 @@ msgstr "系统已更新到最新"
 
 #: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
 msgid "System will rebase to $0, updated $1."
-msgstr "系统将重置为 $0, $1 已更新。"
+msgstr "系统将变基至 $0，更新于 $1。"
 
 #: src/deploymentModals.jsx:76
 msgid "Temporary files"
@@ -348,7 +348,7 @@ msgstr "无法与 OSTree 通信"
 
 #: src/ostree.jsx:543
 msgid "Unpin"
-msgstr "移除图钉"
+msgstr "取消固定"
 
 #: src/ostree.jsx:444
 msgid "Update"

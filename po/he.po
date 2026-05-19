@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-06 05:45+0000\n"
+"POT-Creation-Date: 2026-05-17 06:03+0000\n"
 "PO-Revision-Date: 2024-11-18 11:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -53,9 +53,9 @@ msgstr "מתחיל ב־$0"
 msgid "Branch"
 msgstr "ענף"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 msgid "Cancel"
 msgstr "ביטול"
 
@@ -67,7 +67,7 @@ msgstr "מתבצע חיפוש אחר עדכוני חבילות…"
 msgid "Checking for updates"
 msgstr "מתבצע חיפוש אחר עדכונים"
 
-#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "ניקוי"
 
@@ -271,7 +271,7 @@ msgstr "הסרת מאגר"
 msgid "Repository"
 msgstr "מאגר"
 
-#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "איפוס"
 

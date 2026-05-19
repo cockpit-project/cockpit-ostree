@@ -10,7 +10,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-06 05:45+0000\n"
+"POT-Creation-Date: 2026-05-17 06:03+0000\n"
 "PO-Revision-Date: 2025-03-28 01:05+0000\n"
 "Last-Translator: Rafael Fontenelle <rafaelff@gnome.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate.fedoraproject.org/"
@@ -54,9 +54,9 @@ msgstr "Começa com $0"
 msgid "Branch"
 msgstr "Ramo"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -68,7 +68,7 @@ msgstr "Verificando atualizações de pacotes..."
 msgid "Checking for updates"
 msgstr "Verificando atualizações"
 
-#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "Limpar"
 
@@ -273,7 +273,7 @@ msgstr "Remover repositório"
 msgid "Repository"
 msgstr "Repositório"
 
-#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "Redefinir"
 
