@@ -8,9 +8,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-17 06:03+0000\n"
-"PO-Revision-Date: 2026-04-30 12:59+0000\n"
-"Last-Translator: Massii Aqvayli <massiin@proton.me>\n"
+"POT-Creation-Date: 2026-05-21 06:37+0000\n"
+"PO-Revision-Date: 2026-05-21 10:00+0000\n"
+"Last-Translator: ButterflyOfFire "
+"<butterflyoffire@users.noreply.translate.fedoraproject.org>\n"
 "Language-Team: Kabyle <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/kab/>\n"
 "Language: kab\n"
@@ -18,7 +19,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1\n"
-"X-Generator: Weblate 5.17.1\n"
+"X-Generator: Weblate 2026.5\n"
 
 #: src/ostree.jsx:377
 msgid "$0 and reboot"
@@ -204,11 +205,11 @@ msgstr "Asrusu deg uraǧu"
 
 #: src/ostree.jsx:543
 msgid "Pin"
-msgstr ""
+msgstr "Senṭeḍ"
 
 #: src/ostree.jsx:396
 msgid "Pinned"
-msgstr ""
+msgstr "Yenṭeḍ"
 
 #: src/repositoryModals.jsx:188
 msgid "Please provide a valid URL"
@@ -350,7 +351,7 @@ msgstr "Ur yezmir ara ad imseɣwal akked OSTree"
 
 #: src/ostree.jsx:543
 msgid "Unpin"
-msgstr ""
+msgstr "Kkes anṭaḍ"
 
 #: src/ostree.jsx:444
 msgid "Update"
