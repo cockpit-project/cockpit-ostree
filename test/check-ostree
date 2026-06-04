@@ -177,6 +177,10 @@ def do_card_action(browser, kebab, action):
     browser.click(f"[data-action={action}] button")
 
 
+def remove_foreign_remotes(m, ours="local"):
+    m.execute(f"for r in $(ostree remote list); do [ $r == {ours} ] || ostree remote delete $r; done")
+
+
 @testlib.skipImage("No OSTree repo on bootc", "*-bootc")
 class OstreeRestartCase(testlib.MachineCase):
 
@@ -363,6 +367,7 @@ class OstreeRestartCase(testlib.MachineCase):
         m = self.machine
         b = self.browser
 
+        remove_foreign_remotes(m)
         start_trivial_httpd(m)
         branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
@@ -382,7 +387,7 @@ class OstreeRestartCase(testlib.MachineCase):
         # open rebase modal
         do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
-        b.wait_in_text("#change-repository .pf-v6-c-menu-toggle__text", "local")
+        b.wait_in_text("#change-repository div.pf-v6-c-form__group-control p", "local")
         b.wait_in_text("#change-branch .pf-v6-c-menu-toggle__text", branch)
 
         # rebase to new branch
@@ -540,6 +545,8 @@ class OstreeCase(testlib.MachineCase):
         m = self.machine
         b = self.browser
 
+        remove_foreign_remotes(m)
+
         start_trivial_httpd(m)
         branch = m.execute(f"ostree refs --repo={REPO_LOCATION}").strip()
 
@@ -552,7 +559,7 @@ class OstreeCase(testlib.MachineCase):
         do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
         b.wait_in_text(".pf-v6-c-modal-box h1", "Rebase repository and branch")
-        b.wait_in_text("#change-repository .pf-v6-c-menu-toggle__text", "local")
+        b.wait_in_text("#change-repository div.pf-v6-c-form__group-control p", "local")
         # open the branches menu to see the entries
         b.wait_in_text("#change-branch div.pf-v6-c-form__group-control p", branch)
         b.click("#rebase-repository-modal button.pf-m-link")
@@ -734,7 +741,7 @@ class OstreeCase(testlib.MachineCase):
         # Remove zremote-test1 repository
         do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
-        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 4)
+        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 2)
         # Current repository checkbox is disabled
         b.wait_visible("#remove-repository-modal #zremote-test1 + label.pf-m-disabled")
         b.click("#remove-repository-modal button.pf-m-link")
@@ -752,7 +759,7 @@ class OstreeCase(testlib.MachineCase):
         # Remove zremote-test1 repository
         do_card_action(b, "#ostree-source-actions", "remove-repository")
         b.wait_visible("#remove-repository-modal")
-        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 4)
+        b.wait_count("#remove-repository-modal .pf-v6-c-form__group-control input", 2)
         b.wait_in_text("#remove-repository-modal #zremote-test1 + label", "zremote-test1")
 
         # Remove button is disabled when nothing is selected
@@ -762,13 +769,10 @@ class OstreeCase(testlib.MachineCase):
         b.click("#remove-repository-modal button.pf-m-danger:not([aria-disabled='true'])")
         b.wait_not_present("#remove-repository-modal")
 
-        # Verify that the repository is gone
+        # Verify that the repository is gone and only "local" is left
         do_card_action(b, "#ostree-source-actions", "rebase")
         b.wait_visible("#rebase-repository-modal")
-        b.click("#rebase-repository-modal #change-repository button.pf-v6-c-menu-toggle")
-        b.wait_count(".pf-v6-c-menu li", 3)
-        b.wait_in_text(".pf-v6-c-menu button.pf-m-selected", "local")
-        b.click("#rebase-repository-modal #change-repository button.pf-v6-c-menu-toggle")
+        b.wait_in_text("#change-repository div.pf-v6-c-form__group-control p", "local")
         b.wait_in_text("#change-branch div.pf-v6-c-form__group-control p", branch)
 
         b.click("#rebase-repository-modal button.pf-m-primary")
