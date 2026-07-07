@@ -11,7 +11,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-21 06:37+0000\n"
+"POT-Creation-Date: 2026-07-06 06:56+0000\n"
 "PO-Revision-Date: 2025-10-26 10:53+0000\n"
 "Last-Translator: Nils Werner <nils@hey.com>\n"
 "Language-Team: German <https://translate.fedoraproject.org/projects/cockpit/"
@@ -39,7 +39,7 @@ msgstr "Einen weiteren Schlüssel hinzufügen"
 msgid "Add new repository"
 msgstr "Neues Repositorium hinzufügen"
 
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+#: src/ostree.jsx:652 src/repositoryModals.jsx:208
 msgid "Add repository"
 msgstr "Repository hinzufügen"
 
@@ -51,13 +51,13 @@ msgstr "Neue Pakete"
 msgid "Begins with $0"
 msgstr "Beginnt mit $0"
 
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
 msgid "Branch"
 msgstr "Zweig"
 
+#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
 msgid "Cancel"
 msgstr "Abbrechen"
 
@@ -101,7 +101,7 @@ msgstr "Bereitstellungen und Aktualisierungen"
 msgid "Downgrades"
 msgstr "Herabstufungen"
 
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+#: src/ostree.jsx:661 src/repositoryModals.jsx:264
 msgid "Edit repository"
 msgstr "Repository bearbeiten"
 
@@ -225,7 +225,7 @@ msgstr "Bitte geben Sie einen gültigen Namen an"
 msgid "RPM repo metadata"
 msgstr "RPM-Repo-Metadaten"
 
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
 msgid "Rebase"
 msgstr "Umbasieren"
 
@@ -265,12 +265,12 @@ msgstr ""
 "Paketerweiterungen oder -ersetzungen entfernen, um die aktuelle "
 "Bereitstellung wieder in den ursprünglichen Zustand zu versetzen."
 
-#: src/repositoryModals.jsx:98 src/ostree.jsx:671
+#: src/ostree.jsx:671 src/repositoryModals.jsx:98
 msgid "Remove repository"
 msgstr "Repositorium entfernen"
 
-#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417 src/ostree.jsx:687
+#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417
 msgid "Repository"
 msgstr "Paketquelle"
 
