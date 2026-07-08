@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-21 06:37+0000\n"
+"POT-Creation-Date: 2026-07-06 06:56+0000\n"
 "PO-Revision-Date: 2026-05-07 03:59+0000\n"
 "Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://translate.fedoraproject.org/projects/cockpit/"
@@ -36,7 +36,7 @@ msgstr "ເພີ່ມກະແຈອື່ນ"
 msgid "Add new repository"
 msgstr "ເພີ່ມຄັງເກັບຊອບແວໃໝ່"
 
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+#: src/ostree.jsx:652 src/repositoryModals.jsx:208
 msgid "Add repository"
 msgstr "ເພີ່ມຄັງເກັບຊອບແວ"
 
@@ -48,13 +48,13 @@ msgstr "ສ່ວນເພີ່ມ"
 msgid "Begins with $0"
 msgstr "ເລີ່ມຕົ້ນດ້ວຍ $0"
 
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
 msgid "Branch"
 msgstr "ສາຂາ"
 
+#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
 msgid "Cancel"
 msgstr "ຍົກເລີກ"
 
@@ -98,7 +98,7 @@ msgstr "ການຕິດຕັ້ງ ແລະ ການອັບເດດ"
 msgid "Downgrades"
 msgstr "ການຫຼຸດເວີຊັນ"
 
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+#: src/ostree.jsx:661 src/repositoryModals.jsx:264
 msgid "Edit repository"
 msgstr "ແກ້ໄຂຄັງເກັບຊອບແວ"
 
@@ -222,7 +222,7 @@ msgstr "Please provide a valid name"
 msgid "RPM repo metadata"
 msgstr "ຂໍ້ມູນເມຕາຂອງຄັງ RPM"
 
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
 msgid "Rebase"
 msgstr "ປ່ຽນຖານ (Rebase)"
 
@@ -260,12 +260,12 @@ msgid ""
 "to its original state."
 msgstr "ລຶບສ່ວນເພີ່ມ ຫຼື ສ່ວນທີ່ປ່ຽນແທນຂອງແພັກເກດ ເພື່ອເຮັດໃຫ້ການຕິດຕັ້ງປັດຈຸບັນກັບຄືນສູ່ສະພາບເດີມ."
 
-#: src/repositoryModals.jsx:98 src/ostree.jsx:671
+#: src/ostree.jsx:671 src/repositoryModals.jsx:98
 msgid "Remove repository"
 msgstr "ລຶບຄັງເກັບຊອບແວອອກ"
 
-#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417 src/ostree.jsx:687
+#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417
 msgid "Repository"
 msgstr "ຄັງເກັບຊອບແວ"
 

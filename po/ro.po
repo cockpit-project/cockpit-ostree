@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-21 06:37+0000\n"
+"POT-Creation-Date: 2026-07-06 06:56+0000\n"
 "PO-Revision-Date: 2026-04-08 11:18+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
@@ -37,7 +37,7 @@ msgstr "Adaugă o altă cheie"
 msgid "Add new repository"
 msgstr "Adaugă un nou depozit"
 
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+#: src/ostree.jsx:652 src/repositoryModals.jsx:208
 msgid "Add repository"
 msgstr "Adaugă un depozit"
 
@@ -49,13 +49,13 @@ msgstr "Adăugări"
 msgid "Begins with $0"
 msgstr "Începe cu $0"
 
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
 msgid "Branch"
 msgstr "Ramură"
 
+#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
 msgid "Cancel"
 msgstr "Anulează"
 
@@ -99,7 +99,7 @@ msgstr "Distribuții și actualizări"
 msgid "Downgrades"
 msgstr "Retrogradări de versiune"
 
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+#: src/ostree.jsx:661 src/repositoryModals.jsx:264
 msgid "Edit repository"
 msgstr "Editare depozit"
 
@@ -223,7 +223,7 @@ msgstr "Introduceți un nume valid"
 msgid "RPM repo metadata"
 msgstr "Metadate ale depozitului RPM"
 
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
 msgid "Rebase"
 msgstr "Rebazare"
 
@@ -263,12 +263,12 @@ msgstr ""
 "Elimină adăugările sau înlocuirile din pachet pentru a readuce distribuția "
 "actuală la starea inițială."
 
-#: src/repositoryModals.jsx:98 src/ostree.jsx:671
+#: src/ostree.jsx:671 src/repositoryModals.jsx:98
 msgid "Remove repository"
 msgstr "Elimină depozitul"
 
-#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417 src/ostree.jsx:687
+#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417
 msgid "Repository"
 msgstr "Depozit"
 
