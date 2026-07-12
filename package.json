@@ -32,7 +32,7 @@
     "eslint-plugin-promise": "6.6.0",
     "eslint-plugin-react": "7.37.5",
     "eslint-plugin-react-hooks": "4.6.2",
-    "gettext-parser": "9.0.2",
+    "gettext-parser": "9.1.1",
     "qunit": "2.26.0",
     "stylelint": "17.14.0",
     "stylelint-config-recommended-scss": "17.0.1",
