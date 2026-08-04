@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-07-09 06:29+0000\n"
+"POT-Creation-Date: 2026-07-31 05:52+0000\n"
 "PO-Revision-Date: 2025-03-22 21:04+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
@@ -52,7 +52,7 @@ msgstr "以 $0 開始"
 msgid "Branch"
 msgstr "分支"
 
-#: src/ostree.jsx:380 src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
 msgid "Cancel"
@@ -66,7 +66,7 @@ msgstr "檢查套件是否需要更新..."
 msgid "Checking for updates"
 msgstr "檢查更新"
 
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
 msgid "Clean up"
 msgstr "清理"
 
@@ -269,7 +269,7 @@ msgstr "移除套件庫"
 msgid "Repository"
 msgstr "套件庫"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
 msgid "Reset"
 msgstr "重新設置"
 
