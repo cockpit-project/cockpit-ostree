@@ -9,7 +9,7 @@ import sys
 BOTS_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "bots")
 sys.path.append(BOTS_DIR)
 
-from machine.machine_core import machine_virtual  # noqa: E402
+from machine.machine_core import machine_virtual  # ruff: ignore[module-import-not-at-top-of-file]
 
 parser = argparse.ArgumentParser(description="Build rpm inside a cockpit test VM image")
 parser.add_argument("-v", "--verbose", action="store_true", help="Verbose output")
