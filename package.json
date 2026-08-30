@@ -19,7 +19,7 @@
     "argparse": "3.0.0",
     "esbuild": "0.28.2",
     "esbuild-plugin-copy": "2.1.1",
-    "esbuild-plugin-replace": "1.4.0",
+    "esbuild-plugin-replace": "2.0.0",
     "esbuild-sass-plugin": "3.7.0",
     "esbuild-wasm": "0.28.2",
     "eslint": "8.57.1",
