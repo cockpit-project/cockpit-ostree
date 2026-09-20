@@ -16,7 +16,7 @@
     "stylelint:fix": "stylelint --fix src/*{.css,scss}"
   },
   "devDependencies": {
-    "argparse": "3.0.1",
+    "argparse": "3.0.2",
     "esbuild": "0.28.2",
     "esbuild-plugin-copy": "2.1.1",
     "esbuild-sass-plugin": "3.7.0",
