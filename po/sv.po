@@ -8,9 +8,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-08-27 13:06+0000\n"
-"PO-Revision-Date: 2025-05-16 21:59+0000\n"
-"Last-Translator: Luna Jernberg <bittin@reimu.nl>\n"
+"POT-Creation-Date: 2026-09-17 07:59+0000\n"
+"PO-Revision-Date: 2026-09-17 17:17+0000\n"
+"Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
 "cockpit-ostree/sv/>\n"
 "Language: sv\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.3\n"
+"X-Generator: Weblate 2026.9.1\n"
 
 #: src/ostree.jsx:377
 msgid "$0 and reboot"
@@ -36,7 +36,7 @@ msgstr "Lägg till en annan nyckel"
 msgid "Add new repository"
 msgstr "Lägg till nytt förråd"
 
-#: src/ostree.jsx:652 src/repositoryModals.jsx:208
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
 msgid "Add repository"
 msgstr "Lägg till förråd"
 
@@ -48,13 +48,13 @@ msgstr "Tillägg"
 msgid "Begins with $0"
 msgstr "Börjar med $0"
 
-#: src/ostree.jsx:307 src/ostree.jsx:691 src/repositoryModals.jsx:424
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
 msgid "Branch"
 msgstr "Gren"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -98,13 +98,13 @@ msgstr "Distributioner och uppdateringar"
 msgid "Downgrades"
 msgstr "Nedgraderingar"
 
-#: src/ostree.jsx:661 src/repositoryModals.jsx:264
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
 msgid "Edit repository"
 msgstr "Redigera förråd"
 
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
-msgstr "Fel vid laddning av fjärrr: $0"
+msgstr "Fel vid laddning av fjärranslutningar: $0"
 
 #: src/ostree.jsx:225
 msgid "Expired signature"
@@ -222,7 +222,7 @@ msgstr "Vänligen ange ett giltigt namn"
 msgid "RPM repo metadata"
 msgstr "RPM-förrådmetadata"
 
-#: src/ostree.jsx:446 src/ostree.jsx:644 src/repositoryModals.jsx:441
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Basera om"
 
@@ -262,12 +262,12 @@ msgstr ""
 "Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
 "distributionen till sitt ursprungliga tillstånd."
 
-#: src/ostree.jsx:671 src/repositoryModals.jsx:98
+#: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
 msgstr "Avlägsna förrådd"
 
-#: src/ostree.jsx:687 src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
-#: src/repositoryModals.jsx:417
+#: src/repositoryModals.jsx:103 src/repositoryModals.jsx:268
+#: src/repositoryModals.jsx:417 src/ostree.jsx:687
 msgid "Repository"
 msgstr "Förrådd"
 
@@ -352,7 +352,7 @@ msgstr "Kan inte kommunicera med OSTree"
 
 #: src/ostree.jsx:543
 msgid "Unpin"
-msgstr "Avfäst"
+msgstr "Ta bort fästning"
 
 #: src/ostree.jsx:444
 msgid "Update"
