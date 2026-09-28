@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 07:59+0000\n"
+"POT-Creation-Date: 2026-09-27 08:34+0000\n"
 "PO-Revision-Date: 2026-07-31 19:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -53,9 +53,9 @@ msgstr "Начинается с $0"
 msgid "Branch"
 msgstr "Ветка"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -67,7 +67,7 @@ msgstr "Проверка обновлений пакетов..."
 msgid "Checking for updates"
 msgstr "Проверка обновлений"
 
-#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "Очистить"
 
@@ -272,7 +272,7 @@ msgstr "Удалить репозиторий"
 msgid "Repository"
 msgstr "Репозиторий"
 
-#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "Сбросить"
 
