@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-17 07:59+0000\n"
+"POT-Creation-Date: 2026-09-27 08:34+0000\n"
 "PO-Revision-Date: 2026-05-21 10:00+0000\n"
 "Last-Translator: ButterflyOfFire "
 "<butterflyoffire@users.noreply.translate.fedoraproject.org>\n"
@@ -53,9 +53,9 @@ msgstr "Yebda s $0"
 msgid "Branch"
 msgstr "Afurk"
 
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
 #: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
 msgid "Cancel"
 msgstr "Semmet"
 
@@ -67,7 +67,7 @@ msgstr "Asenqed n yileqman n ukemmus..."
 msgid "Checking for updates"
 msgstr "Asenqed n yileqman"
 
-#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
 msgid "Clean up"
 msgstr "Sfeḍ"
 
@@ -272,7 +272,7 @@ msgstr "Kkes akufi"
 msgid "Repository"
 msgstr "akufi"
 
-#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
 msgid "Reset"
 msgstr "Ales awennez"
 
