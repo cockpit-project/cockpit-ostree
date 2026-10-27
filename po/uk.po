@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 08:34+0000\n"
+"POT-Creation-Date: 2026-10-25 07:50+0000\n"
 "PO-Revision-Date: 2026-05-17 07:00+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -20,247 +20,17 @@ msgstr ""
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
 "X-Generator: Weblate 2026.5\n"
 
-#: src/ostree.jsx:377
-msgid "$0 and reboot"
-msgstr "$0 і перезавантажити"
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "Оновлення програм"
 
 #: src/client.js:411
 msgid "$0 key ID"
 msgstr "Ід. ключа $0"
 
-#: src/repositoryModals.jsx:296
-msgid "Add another key"
-msgstr "Додати ще один ключ"
-
-#: src/repositoryModals.jsx:159
-msgid "Add new repository"
-msgstr "Додати нове сховище"
-
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
-msgid "Add repository"
-msgstr "Додати сховище"
-
-#: src/ostree.jsx:183
-msgid "Additions"
-msgstr "Додавання"
-
-#: src/repositoryModals.jsx:298
-msgid "Begins with $0"
-msgstr "Починається з $0"
-
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
-msgid "Branch"
-msgstr "Гілка"
-
-#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
-msgid "Cancel"
-msgstr "Скасувати"
-
-#: src/ostree.jsx:790
-msgid "Checking for package updates..."
-msgstr "Шукаємо оновлення пакунків…"
-
-#: src/ostree.jsx:820
-msgid "Checking for updates"
-msgstr "Шукаємо оновлення"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Очистити"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Очистити кеш і розгортання"
-
-#: src/ostree.jsx:407
-msgid "Close"
-msgstr "Закрити"
-
-#: src/ostree.jsx:128
-msgid "Connecting to OSTree"
-msgstr "Встановлюємо з’єднання з OSTree"
-
-#: src/ostree.jsx:394
-msgid "Current"
-msgstr "Поточне"
-
-#: src/ostree.jsx:558
-msgid "Delete"
-msgstr "Вилучити"
-
-#: src/ostree.jsx:322 src/ostree.jsx:929
-msgid "Deployments and updates"
-msgstr "Розгортання і оновлення"
-
-#: src/ostree.jsx:186
-msgid "Downgrades"
-msgstr "Зниження"
-
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
-msgid "Edit repository"
-msgstr "Редагувати сховище"
-
-#: src/ostree.jsx:836
-msgid "Error loading remotes: $0"
-msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
-
-#: src/ostree.jsx:225
-msgid "Expired signature"
-msgstr "Застарілий підпис"
-
-#: src/ostree.jsx:410
-msgid "Failed"
-msgstr "Не вдалося"
-
-#: src/ostree.jsx:289
-msgid "Failed to rebase deployment"
-msgstr "Не вдалося перенести розгортання"
-
-#: src/ostree.jsx:268
-msgid "Failed to roll back deployment"
-msgstr "Не вдалося відкотити розгортання"
-
-#: src/ostree.jsx:278
-msgid "Failed to upgrade deployment"
-msgstr "Не вдалося оновити розгортання"
-
-#: src/repositoryModals.jsx:301
-msgid "GPG public key"
-msgstr "Відкритий ключ GPG"
-
-#: src/ostree.jsx:225
-msgid "Good signature"
-msgstr "Чинний підпис"
-
-#: src/ostree.jsx:225
-msgid "Invalid signature"
-msgstr "Некоректний підпис"
-
-#: src/repositoryModals.jsx:402
-msgid "Loading branches"
-msgstr "Завантаження гілок"
-
-#: src/repositoryModals.jsx:163
-msgid "Name"
-msgstr "Назва"
-
-#: src/ostree.jsx:417
-msgid "New"
-msgstr "Створити"
-
-#: src/ostree.jsx:742
-msgid "No OSTree deployments found"
-msgstr "Не знайдено розгорнутих OSTree"
-
-#: src/remotes.js:86
-msgid "No configuration data found"
-msgstr "Не знайдено даних налаштувань"
-
-#: src/ostree.jsx:132
-msgid "No deployments"
-msgstr "Немає розгортань"
-
-#: src/ostree.jsx:249
-msgid "No signature available"
-msgstr "Немає доступних підписів"
-
-#: src/ostree.jsx:768
-msgid "Not authorized to update software on this system"
-msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
-
 #: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "ОС $0 не знайдено"
-
-#: src/ostree.jsx:770
-msgid "OSTree is not available on this system"
-msgstr "OSTree у цій системі недоступна"
-
-#: src/ostree.jsx:682
-msgid "OSTree source"
-msgstr "Джерело OSTree"
-
-#: src/ostree.jsx:202
-msgid "Operating system"
-msgstr "Операційна система"
-
-#: src/ostree.jsx:214
-msgid "Origin"
-msgstr "Походження"
-
-#: src/ostree.jsx:503
-msgid "Packages"
-msgstr "Пакунки"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Пакунки, які було додано до системи"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Розгортання у черзі"
-
-#: src/ostree.jsx:543
-msgid "Pin"
-msgstr "Пришпилити"
-
-#: src/ostree.jsx:396
-msgid "Pinned"
-msgstr "Пришпилено"
-
-#: src/repositoryModals.jsx:188
-msgid "Please provide a valid URL"
-msgstr "Будь ласка, вкажіть коректну адресу"
-
-#: src/repositoryModals.jsx:174
-msgid "Please provide a valid name"
-msgstr "Будь ласка, вкажіть коректну назву"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Метадані сховища RPM"
-
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
-msgid "Rebase"
-msgstr "Перенести"
-
-#: src/repositoryModals.jsx:413
-msgid "Rebase repository and branch"
-msgstr "Перенести сховище і гілку"
-
-#: src/ostree.jsx:143
-msgid "Reconnect"
-msgstr "Повторно з’єднатися"
-
-#: src/ostree.jsx:210
-msgid "Released"
-msgstr "Випущено"
-
-#: src/ostree.jsx:184
-msgid "Removals"
-msgstr "Вилучення"
-
-#: src/repositoryModals.jsx:116
-msgid "Remove"
-msgstr "Вилучити"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Вилучити накладки"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Вилучити перевизначення"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Вилучити додані або замінені пакунки, щоб повернути поточне розгортання до "
-"його початкового стану."
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -271,61 +41,111 @@ msgstr "Вилучити сховище"
 msgid "Repository"
 msgstr "Сховище"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Скинути"
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "Вилучити"
 
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Відновити початковий стан"
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+msgid "Cancel"
+msgstr "Скасувати"
 
-#: src/ostree.jsx:445
-msgid "Roll back"
-msgstr "Відкотити"
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "Додати нове сховище"
 
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Відкотити розгортання"
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "Назва"
 
-#: src/repositoryModals.jsx:307
-msgid "Save"
-msgstr "Зберегти"
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "Будь ласка, вкажіть коректну назву"
+
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "Адреса"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "Будь ласка, вкажіть коректну адресу"
 
 #: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "Безпека"
 
-#: src/ostree.jsx:508
-msgid "Signatures"
-msgstr "Підписи"
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "Використовувати надійний ключ GPG"
 
-#: src/ostree.jsx:230
-msgid "Signed by"
-msgstr "Підписано"
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+msgid "Add repository"
+msgstr "Додати сховище"
 
-#: src/index.html:22 src/manifest.json:0
-msgid "Software updates"
-msgstr "Оновлення програм"
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+msgid "Edit repository"
+msgstr "Редагувати сховище"
 
-#: src/ostree.jsx:299 src/ostree.jsx:605
-msgid "Status"
-msgstr "Стан"
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "Додати ще один ключ"
 
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Заміни пакунків, які зазвичай включено до збірки ОС"
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "Починається з $0"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "Відкритий ключ GPG"
+
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "Зберегти"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "Завантаження гілок"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "Перенести сховище і гілку"
+
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+msgid "Branch"
+msgstr "Гілка"
+
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+msgid "Rebase"
+msgstr "Перенести"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "Не знайдено даних налаштувань"
 
 #: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "Система не потребує оновлення"
 
-#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
-msgid "System will rebase to $0, updated $1."
-msgstr "Систему буде перенесено на $0, оновлено $1."
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "Доступне оновлення: $0"
 
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Тимчасові файли"
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "Встановлюємо з’єднання з OSTree"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "Не вдалося обмінятися даними з OSTree"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "Немає розгортань"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "Повторно з’єднатися"
 
 #: src/ostree.jsx:166
 msgid ""
@@ -334,65 +154,245 @@ msgstr ""
 "У цьому розгортанні містяться деякі пакунки, які є у поточній завантаженій "
 "системі"
 
-#: src/ostree.jsx:303
-msgid "Time"
-msgstr "Час"
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "Додавання"
 
-#: src/ostree.jsx:498
-msgid "Tree"
-msgstr "Дерево"
-
-#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
-msgid "URL"
-msgstr "Адреса"
-
-#: src/ostree.jsx:130
-msgid "Unable to communicate with OSTree"
-msgstr "Не вдалося обмінятися даними з OSTree"
-
-#: src/ostree.jsx:543
-msgid "Unpin"
-msgstr "Відшпилити"
-
-#: src/ostree.jsx:444
-msgid "Update"
-msgstr "Оновити"
-
-#: src/ostree.jsx:574
-msgid "Update available"
-msgstr "Доступне оновлення"
-
-#: src/ostree.jsx:103
-msgid "Update available: $0"
-msgstr "Доступне оновлення: $0"
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "Вилучення"
 
 #: src/ostree.jsx:185
 msgid "Updates"
 msgstr "Оновлення"
 
-#: src/ostree.jsx:392
-msgid "Updating"
-msgstr "Оновлення"
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "Зниження"
 
-#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
-msgid "Use trusted GPG key"
-msgstr "Використовувати надійний ключ GPG"
-
-#: src/ostree.jsx:242
-msgid "Validity"
-msgstr "Чинність"
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "Операційна система"
 
 #: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "Версія"
 
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "Випущено"
+
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "Походження"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "Чинний підпис"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "Застарілий підпис"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "Некоректний підпис"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "Підписано"
+
 #: src/ostree.jsx:234
 msgid "When"
 msgstr "Умова"
 
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "Чинність"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "Немає доступних підписів"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "Не вдалося відкотити розгортання"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "Не вдалося оновити розгортання"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "Не вдалося перенести розгортання"
+
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "Стан"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "Час"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "Розгортання і оновлення"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 і перезавантажити"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "Оновлення"
+
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "Поточне"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "Пришпилено"
+
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "Закрити"
+
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "Не вдалося"
+
 #: src/ostree.jsx:411
 msgid "view more..."
 msgstr "докладніше…"
+
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "Створити"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "Систему буде перенесено на $0, оновлено $1."
+
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "Оновити"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "Відкотити"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "Дерево"
+
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "Пакунки"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "Підписи"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "Відшпилити"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "Пришпилити"
+
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "Вилучити"
+
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "Доступне оновлення"
+
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "Джерело OSTree"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "Не знайдено розгорнутих OSTree"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "Не уповноважено на оновлення програмного забезпечення у цій системі"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "OSTree у цій системі недоступна"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "Шукаємо оновлення пакунків…"
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "Шукаємо оновлення"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "Очистити"
+
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "Скинути"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Очистити кеш і розгортання"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Тимчасові файли"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Метадані сховища RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Розгортання у черзі"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Відкотити розгортання"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Вилучити додані або замінені пакунки, щоб повернути поточне розгортання до "
+"його початкового стану."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Вилучити накладки"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Пакунки, які було додано до системи"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Вилучити перевизначення"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Заміни пакунків, які зазвичай включено до збірки ОС"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Відновити початковий стан"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Отримуємо частини відмінностей"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 08:34+0000\n"
+"POT-Creation-Date: 2026-10-25 07:50+0000\n"
 "PO-Revision-Date: 2024-11-11 23:15+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -20,257 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
 "X-Generator: Weblate 5.8.2\n"
 
-#: src/ostree.jsx:377
-msgid "$0 and reboot"
-msgstr "$0 a restartovat"
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "Aktualizace software"
 
 #: src/client.js:411
 msgid "$0 key ID"
 msgstr "Identif. klíče $0"
 
-#: src/repositoryModals.jsx:296
-msgid "Add another key"
-msgstr "Přidat další klíč"
-
-#: src/repositoryModals.jsx:159
-msgid "Add new repository"
-msgstr "Přidat nový repozitář"
-
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
-msgid "Add repository"
-msgstr "Přidat repozitář"
-
-#: src/ostree.jsx:183
-msgid "Additions"
-msgstr "Přidané"
-
-#: src/repositoryModals.jsx:298
-msgid "Begins with $0"
-msgstr "Začíná na $0"
-
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
-msgid "Branch"
-msgstr "Větev"
-
-#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
-msgid "Cancel"
-msgstr "Storno"
-
-#: src/ostree.jsx:790
-msgid "Checking for package updates..."
-msgstr "Zjišťuje se, zda jsou k dispozici aktualizace balíčků…"
-
-#: src/ostree.jsx:820
-msgid "Checking for updates"
-msgstr "Zjišťuje se, zda jsou k dispozici případné aktualizace"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Uklidit"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Vyčistit mezipaměť a nasazení"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:407
-msgid "Close"
-msgstr "Zavřít"
-
-#: src/ostree.jsx:128
-msgid "Connecting to OSTree"
-msgstr "Připojování se k OSTree"
-
-# auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/ostree.jsx:394
-msgid "Current"
-msgstr "Stávající"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:558
-msgid "Delete"
-msgstr "Smazat"
-
-#: src/ostree.jsx:322 src/ostree.jsx:929
-msgid "Deployments and updates"
-msgstr "Nasazení a aktualizace"
-
-#: src/ostree.jsx:186
-msgid "Downgrades"
-msgstr "Návraty zpět k předchozím verzím"
-
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
-msgid "Edit repository"
-msgstr "Upravit repozitář"
-
-#: src/ostree.jsx:836
-msgid "Error loading remotes: $0"
-msgstr "Chyba při načítání vzdálených zdrojů: $0"
-
-#: src/ostree.jsx:225
-msgid "Expired signature"
-msgstr "Platnost podpisu skončila"
-
-# auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
-#: src/ostree.jsx:410
-msgid "Failed"
-msgstr "Nepodařilo se"
-
-#: src/ostree.jsx:289
-msgid "Failed to rebase deployment"
-msgstr "Nepodařilo se přejít na novější/jiný zdroj nasazování"
-
-#: src/ostree.jsx:268
-msgid "Failed to roll back deployment"
-msgstr "Nepodařilo se vrátit k předchozímu stavu nasazení"
-
-#: src/ostree.jsx:278
-msgid "Failed to upgrade deployment"
-msgstr "Nepodařilo se přejít na novější verzi nasazení"
-
-#: src/repositoryModals.jsx:301
-msgid "GPG public key"
-msgstr "GPG veřejný klíč"
-
-#: src/ostree.jsx:225
-msgid "Good signature"
-msgstr "Podpis v pořádku"
-
-#: src/ostree.jsx:225
-msgid "Invalid signature"
-msgstr "Neplatný podpis"
-
-#: src/repositoryModals.jsx:402
-msgid "Loading branches"
-msgstr "Načítají se větve"
-
-# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/repositoryModals.jsx:163
-msgid "Name"
-msgstr "Název"
-
-# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/ostree.jsx:417
-msgid "New"
-msgstr "Nové"
-
-#: src/ostree.jsx:742
-msgid "No OSTree deployments found"
-msgstr "Nenalezena žádná OSTree nasazení"
-
-#: src/remotes.js:86
-msgid "No configuration data found"
-msgstr "Nenalezena žádná data nastavení"
-
-#: src/ostree.jsx:132
-msgid "No deployments"
-msgstr "Žádná nasazení"
-
-#: src/ostree.jsx:249
-msgid "No signature available"
-msgstr "Není k dispozici žádný podpis"
-
-#: src/ostree.jsx:768
-msgid "Not authorized to update software on this system"
-msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
-
 #: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "Operační systém $0 nenalezen"
-
-#: src/ostree.jsx:770
-msgid "OSTree is not available on this system"
-msgstr "OSTree není na tomto systému k dispozici"
-
-# auto translated by TM merge from project: dnf, version: master, DocId: dnf
-#: src/ostree.jsx:682
-msgid "OSTree source"
-msgstr "OSTree zdroj"
-
-#: src/ostree.jsx:202
-msgid "Operating system"
-msgstr "Operační systém"
-
-# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
-#: src/ostree.jsx:214
-msgid "Origin"
-msgstr "Původ"
-
-# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
-#: src/ostree.jsx:503
-msgid "Packages"
-msgstr "Balíčky"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Balíčky které byly přidány do systému"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Čekající nasazení"
-
-#: src/ostree.jsx:543
-msgid "Pin"
-msgstr "Připnout"
-
-#: src/ostree.jsx:396
-msgid "Pinned"
-msgstr "Připnuto"
-
-#: src/repositoryModals.jsx:188
-msgid "Please provide a valid URL"
-msgstr "Zadejte platnou URL adresu"
-
-#: src/repositoryModals.jsx:174
-msgid "Please provide a valid name"
-msgstr "Zadejte platný název"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Metadata RPM repozitáře"
-
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
-msgid "Rebase"
-msgstr "Načíst znovu / změnit zdroj"
-
-#: src/repositoryModals.jsx:413
-msgid "Rebase repository and branch"
-msgstr "Načíst znovu / změnit repozitář a větev"
-
-#: src/ostree.jsx:143
-msgid "Reconnect"
-msgstr "Znovu připojit"
-
-#: src/ostree.jsx:210
-msgid "Released"
-msgstr "Vydáno"
-
-#: src/ostree.jsx:184
-msgid "Removals"
-msgstr "Odebrání"
-
-# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
-#: src/repositoryModals.jsx:116
-msgid "Remove"
-msgstr "Odstranit"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Odebrat dodatečné vrstvy"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Odebrat přebití"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Odebrat přidání nebo nahrazení balíčků a vrátit tak stávající nasazení do "
-"jeho původního stavu."
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
@@ -283,65 +43,117 @@ msgstr "Odebrat repozitář"
 msgid "Repository"
 msgstr "Repozitář"
 
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Reset"
+# auto translated by TM merge from project: system-config-printer, version: master, DocId: system-config-printer
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "Odstranit"
 
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Vrátit do původního stavu"
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+msgid "Cancel"
+msgstr "Storno"
 
-#: src/ostree.jsx:445
-msgid "Roll back"
-msgstr "Vrátit zpět do předchozího stavu"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Vrátit nasazení zpět do předchozího stavu"
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "Přidat nový repozitář"
 
 # auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/repositoryModals.jsx:307
-msgid "Save"
-msgstr "Uložit"
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "Název"
+
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "Zadejte platný název"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "URL"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "Zadejte platnou URL adresu"
 
 # auto translated by TM merge from project: Fedora OpenSSH Guide, version: master, DocId: Security
 #: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "Zabezpečení"
 
-#: src/ostree.jsx:508
-msgid "Signatures"
-msgstr "Podpisy"
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "Použít důvěryhodný GPG klíč"
 
-#: src/ostree.jsx:230
-msgid "Signed by"
-msgstr "Podepsal"
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+msgid "Add repository"
+msgstr "Přidat repozitář"
 
-#: src/index.html:22 src/manifest.json:0
-msgid "Software updates"
-msgstr "Aktualizace software"
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+msgid "Edit repository"
+msgstr "Upravit repozitář"
 
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:299 src/ostree.jsx:605
-msgid "Status"
-msgstr "Stav"
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "Přidat další klíč"
 
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Nahrazení balíčků běžně obsažených v sestavení operačního systému"
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "Začíná na $0"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "GPG veřejný klíč"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "Uložit"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "Načítají se větve"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "Načíst znovu / změnit repozitář a větev"
+
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+msgid "Branch"
+msgstr "Větev"
+
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+msgid "Rebase"
+msgstr "Načíst znovu / změnit zdroj"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "Nenalezena žádná data nastavení"
 
 #: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "Systém je aktuální"
 
-#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
-msgid "System will rebase to $0, updated $1."
-msgstr "Systém bude (nově) čerpat z instalačního zdroje $0, aktualizováno $1."
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "Aktualizace k dispozici: $0"
 
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Dočasné soubory"
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "Připojování se k OSTree"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "Nedaří se komunikovat s OSTree"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "Žádná nasazení"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "Znovu připojit"
 
 #: src/ostree.jsx:166
 msgid ""
@@ -349,71 +161,259 @@ msgid ""
 msgstr ""
 "Toto nasazení obsahuje stejné balíčky, jako systém, který máte nyní spuštěný"
 
-#: src/ostree.jsx:303
-msgid "Time"
-msgstr "Čas"
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "Přidané"
 
-#: src/ostree.jsx:498
-msgid "Tree"
-msgstr "Strom"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
-msgid "URL"
-msgstr "URL"
-
-#: src/ostree.jsx:130
-msgid "Unable to communicate with OSTree"
-msgstr "Nedaří se komunikovat s OSTree"
-
-#: src/ostree.jsx:543
-msgid "Unpin"
-msgstr "Zrušit připnutí"
-
-# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
-#: src/ostree.jsx:444
-msgid "Update"
-msgstr "Aktualizovat"
-
-# auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/ostree.jsx:574
-msgid "Update available"
-msgstr "Aktualizace k dispozici"
-
-# auto translated by TM merge from project: anaconda, version: f25, DocId: main
-#: src/ostree.jsx:103
-msgid "Update available: $0"
-msgstr "Aktualizace k dispozici: $0"
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "Odebrání"
 
 # auto translated by TM merge from project: anaconda, version: f25, DocId: main
 #: src/ostree.jsx:185
 msgid "Updates"
 msgstr "Aktualizace"
 
-#: src/ostree.jsx:392
-msgid "Updating"
-msgstr "Aktualizuje se"
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "Návraty zpět k předchozím verzím"
 
-#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
-msgid "Use trusted GPG key"
-msgstr "Použít důvěryhodný GPG klíč"
-
-#: src/ostree.jsx:242
-msgid "Validity"
-msgstr "Platnost"
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "Operační systém"
 
 # auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
 #: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "Verze"
 
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "Vydáno"
+
+# auto translated by TM merge from project: docbook-locales, version: master, DocId: locale
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "Původ"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "Podpis v pořádku"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "Platnost podpisu skončila"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "Neplatný podpis"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "Podepsal"
+
 #: src/ostree.jsx:234
 msgid "When"
 msgstr "Kdy"
 
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "Platnost"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "Není k dispozici žádný podpis"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "Nepodařilo se vrátit k předchozímu stavu nasazení"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "Nepodařilo se přejít na novější verzi nasazení"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "Nepodařilo se přejít na novější/jiný zdroj nasazování"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "Stav"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "Čas"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "Nasazení a aktualizace"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 a restartovat"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "Aktualizuje se"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "Stávající"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "Připnuto"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "Zavřít"
+
+# auto translated by TM merge from project: retrace-server, version: master, DocId: retrace-server
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "Nepodařilo se"
+
 #: src/ostree.jsx:411
 msgid "view more..."
 msgstr "zobrazit více…"
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "Nové"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "Systém bude (nově) čerpat z instalačního zdroje $0, aktualizováno $1."
+
+# auto translated by TM merge from project: Cockpit, version: rhel-7.4, DocId: cockpit
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "Vrátit zpět do předchozího stavu"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "Strom"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "Balíčky"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "Podpisy"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "Zrušit připnutí"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "Připnout"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "Smazat"
+
+# auto translated by TM merge from project: anaconda, version: f25, DocId: main
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "Aktualizace k dispozici"
+
+# auto translated by TM merge from project: dnf, version: master, DocId: dnf
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "OSTree zdroj"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "Nenalezena žádná OSTree nasazení"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "Nemáte oprávnění aktualizovat software na tomto systému"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "OSTree není na tomto systému k dispozici"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "Zjišťuje se, zda jsou k dispozici aktualizace balíčků…"
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "Zjišťuje se, zda jsou k dispozici případné aktualizace"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "Chyba při načítání vzdálených zdrojů: $0"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "Uklidit"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "Reset"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Vyčistit mezipaměť a nasazení"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Dočasné soubory"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadata RPM repozitáře"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Čekající nasazení"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Vrátit nasazení zpět do předchozího stavu"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Odebrat přidání nebo nahrazení balíčků a vrátit tak stávající nasazení do "
+"jeho původního stavu."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Odebrat dodatečné vrstvy"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Balíčky které byly přidány do systému"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Odebrat přebití"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Nahrazení balíčků běžně obsažených v sestavení operačního systému"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Vrátit do původního stavu"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Získávají se přírůstkové části"
