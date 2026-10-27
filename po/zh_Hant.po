@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 08:34+0000\n"
+"POT-Creation-Date: 2026-10-25 07:50+0000\n"
 "PO-Revision-Date: 2025-03-22 21:04+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
@@ -20,245 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.10.4\n"
 
-#: src/ostree.jsx:377
-msgid "$0 and reboot"
-msgstr "$0 並重新啟動"
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "軟體更新"
 
 #: src/client.js:411
 msgid "$0 key ID"
 msgstr "$0 密鑰ID"
 
-#: src/repositoryModals.jsx:296
-msgid "Add another key"
-msgstr "新增另一個密鑰"
-
-#: src/repositoryModals.jsx:159
-msgid "Add new repository"
-msgstr "新增套件庫"
-
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
-msgid "Add repository"
-msgstr "新增套件庫"
-
-#: src/ostree.jsx:183
-msgid "Additions"
-msgstr "新增"
-
-#: src/repositoryModals.jsx:298
-msgid "Begins with $0"
-msgstr "以 $0 開始"
-
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
-msgid "Branch"
-msgstr "分支"
-
-#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
-msgid "Cancel"
-msgstr "取消"
-
-#: src/ostree.jsx:790
-msgid "Checking for package updates..."
-msgstr "檢查套件是否需要更新..."
-
-#: src/ostree.jsx:820
-msgid "Checking for updates"
-msgstr "檢查更新"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "清理"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "清除快取和部署"
-
-#: src/ostree.jsx:407
-msgid "Close"
-msgstr "關閉"
-
-#: src/ostree.jsx:128
-msgid "Connecting to OSTree"
-msgstr "連接至 OSTree"
-
-#: src/ostree.jsx:394
-msgid "Current"
-msgstr "當前"
-
-#: src/ostree.jsx:558
-msgid "Delete"
-msgstr "刪除"
-
-#: src/ostree.jsx:322 src/ostree.jsx:929
-msgid "Deployments and updates"
-msgstr "部署與更新"
-
-#: src/ostree.jsx:186
-msgid "Downgrades"
-msgstr "降級"
-
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
-msgid "Edit repository"
-msgstr "修改套件庫來源"
-
-#: src/ostree.jsx:836
-msgid "Error loading remotes: $0"
-msgstr "載入遠端出錯： $0"
-
-#: src/ostree.jsx:225
-msgid "Expired signature"
-msgstr "過期簽章"
-
-#: src/ostree.jsx:410
-msgid "Failed"
-msgstr "己失敗"
-
-#: src/ostree.jsx:289
-msgid "Failed to rebase deployment"
-msgstr "重新基礎部署失敗"
-
-#: src/ostree.jsx:268
-msgid "Failed to roll back deployment"
-msgstr "回滾至上回狀態部署失敗"
-
-#: src/ostree.jsx:278
-msgid "Failed to upgrade deployment"
-msgstr "升級部署失敗"
-
-#: src/repositoryModals.jsx:301
-msgid "GPG public key"
-msgstr "GPG 公開密鑰"
-
-#: src/ostree.jsx:225
-msgid "Good signature"
-msgstr "好簽章"
-
-#: src/ostree.jsx:225
-msgid "Invalid signature"
-msgstr "無效簽章"
-
-#: src/repositoryModals.jsx:402
-msgid "Loading branches"
-msgstr "載入分支"
-
-#: src/repositoryModals.jsx:163
-msgid "Name"
-msgstr "名稱"
-
-#: src/ostree.jsx:417
-msgid "New"
-msgstr "新"
-
-#: src/ostree.jsx:742
-msgid "No OSTree deployments found"
-msgstr "未找到 OSTree 部署"
-
-#: src/remotes.js:86
-msgid "No configuration data found"
-msgstr "未找到組態設定資料"
-
-#: src/ostree.jsx:132
-msgid "No deployments"
-msgstr "無部署"
-
-#: src/ostree.jsx:249
-msgid "No signature available"
-msgstr "無法簽署"
-
-#: src/ostree.jsx:768
-msgid "Not authorized to update software on this system"
-msgstr "未能獲得授權更新位於本系統的軟體"
-
 #: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "OS $0 未找到"
-
-#: src/ostree.jsx:770
-msgid "OSTree is not available on this system"
-msgstr "此系統無法使用 OSTree"
-
-#: src/ostree.jsx:682
-msgid "OSTree source"
-msgstr "OSTree 來源"
-
-#: src/ostree.jsx:202
-msgid "Operating system"
-msgstr "作業系統"
-
-#: src/ostree.jsx:214
-msgid "Origin"
-msgstr "來源"
-
-#: src/ostree.jsx:503
-msgid "Packages"
-msgstr "套件包"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "已加入此系統的套件包"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "待進行部署"
-
-#: src/ostree.jsx:543
-msgid "Pin"
-msgstr "引腳"
-
-#: src/ostree.jsx:396
-msgid "Pinned"
-msgstr "已釘選"
-
-#: src/repositoryModals.jsx:188
-msgid "Please provide a valid URL"
-msgstr "請提供有效的 URL"
-
-#: src/repositoryModals.jsx:174
-msgid "Please provide a valid name"
-msgstr "請提供有效的名稱"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM 套件庫中繼資料"
-
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
-msgid "Rebase"
-msgstr "回復"
-
-#: src/repositoryModals.jsx:413
-msgid "Rebase repository and branch"
-msgstr "重置套件庫和分支"
-
-#: src/ostree.jsx:143
-msgid "Reconnect"
-msgstr "重新連接"
-
-#: src/ostree.jsx:210
-msgid "Released"
-msgstr "已發行"
-
-#: src/ostree.jsx:184
-msgid "Removals"
-msgstr "搬遷"
-
-#: src/repositoryModals.jsx:116
-msgid "Remove"
-msgstr "移除"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "移除覆蓋層"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "移除覆寫部分"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr "移除套件新增內容或替代內容，讓目前的部署回復原始狀態。"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -269,123 +41,351 @@ msgstr "移除套件庫"
 msgid "Repository"
 msgstr "套件庫"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "重新設置"
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "移除"
 
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "重新設置為原始狀態"
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+msgid "Cancel"
+msgstr "取消"
 
-#: src/ostree.jsx:445
-msgid "Roll back"
-msgstr "回滾"
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "新增套件庫"
 
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "回滾部署"
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "名稱"
 
-#: src/repositoryModals.jsx:307
-msgid "Save"
-msgstr "儲存"
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "請提供有效的名稱"
+
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "URL"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "請提供有效的 URL"
 
 #: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "安全性"
 
-#: src/ostree.jsx:508
-msgid "Signatures"
-msgstr "簽章"
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "使用可信賴的 GPG 密鑰"
 
-#: src/ostree.jsx:230
-msgid "Signed by"
-msgstr "簽署給"
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+msgid "Add repository"
+msgstr "新增套件庫"
 
-#: src/index.html:22 src/manifest.json:0
-msgid "Software updates"
-msgstr "軟體更新"
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+msgid "Edit repository"
+msgstr "修改套件庫來源"
 
-#: src/ostree.jsx:299 src/ostree.jsx:605
-msgid "Status"
-msgstr "狀態"
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "新增另一個密鑰"
 
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "取代通常包含在作業系統建立中的套件包"
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "以 $0 開始"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "GPG 公開密鑰"
+
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "儲存"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "載入分支"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "重置套件庫和分支"
+
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+msgid "Branch"
+msgstr "分支"
+
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+msgid "Rebase"
+msgstr "回復"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "未找到組態設定資料"
 
 #: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "系統為最新版本"
 
-#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
-msgid "System will rebase to $0, updated $1."
-msgstr "系統將重新回復為 $0，更新為 $1。"
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "可進行更新： $0"
 
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "暫存檔案"
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "連接至 OSTree"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "無法與 OSTree 進行通訊連結"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "無部署"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "重新連接"
 
 #: src/ostree.jsx:166
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "此部署包含與您目前啟動的系統相同的套件包"
 
-#: src/ostree.jsx:303
-msgid "Time"
-msgstr "時間"
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "新增"
 
-#: src/ostree.jsx:498
-msgid "Tree"
-msgstr "樹"
-
-#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
-msgid "URL"
-msgstr "URL"
-
-#: src/ostree.jsx:130
-msgid "Unable to communicate with OSTree"
-msgstr "無法與 OSTree 進行通訊連結"
-
-#: src/ostree.jsx:543
-msgid "Unpin"
-msgstr "解除釘選"
-
-#: src/ostree.jsx:444
-msgid "Update"
-msgstr "更新內容"
-
-#: src/ostree.jsx:574
-msgid "Update available"
-msgstr "可進行更新"
-
-#: src/ostree.jsx:103
-msgid "Update available: $0"
-msgstr "可進行更新： $0"
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "搬遷"
 
 #: src/ostree.jsx:185
 msgid "Updates"
 msgstr "更新"
 
-#: src/ostree.jsx:392
-msgid "Updating"
-msgstr "更新"
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "降級"
 
-#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
-msgid "Use trusted GPG key"
-msgstr "使用可信賴的 GPG 密鑰"
-
-#: src/ostree.jsx:242
-msgid "Validity"
-msgstr "有效性"
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "作業系統"
 
 #: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "版本"
 
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "已發行"
+
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "來源"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "好簽章"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "過期簽章"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "無效簽章"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "簽署給"
+
 #: src/ostree.jsx:234
 msgid "When"
 msgstr "何時"
 
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "有效性"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "無法簽署"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "回滾至上回狀態部署失敗"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "升級部署失敗"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "重新基礎部署失敗"
+
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "狀態"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "時間"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "部署與更新"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 並重新啟動"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "更新"
+
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "當前"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "已釘選"
+
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "關閉"
+
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "己失敗"
+
 #: src/ostree.jsx:411
 msgid "view more..."
 msgstr "檢視更多..."
+
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "新"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "系統將重新回復為 $0，更新為 $1。"
+
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "更新內容"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "回滾"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "樹"
+
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "套件包"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "簽章"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "解除釘選"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "引腳"
+
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "刪除"
+
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "可進行更新"
+
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "OSTree 來源"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "未找到 OSTree 部署"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "未能獲得授權更新位於本系統的軟體"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "此系統無法使用 OSTree"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "檢查套件是否需要更新..."
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "檢查更新"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "載入遠端出錯： $0"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "清理"
+
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "重新設置"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "清除快取和部署"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "暫存檔案"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM 套件庫中繼資料"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "待進行部署"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "回滾部署"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr "移除套件新增內容或替代內容，讓目前的部署回復原始狀態。"
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "移除覆蓋層"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "已加入此系統的套件包"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "移除覆寫部分"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "取代通常包含在作業系統建立中的套件包"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "重新設置為原始狀態"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 08:34+0000\n"
+"POT-Creation-Date: 2026-10-25 07:50+0000\n"
 "PO-Revision-Date: 2024-11-18 11:14+0000\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: Hebrew <https://translate.fedoraproject.org/projects/cockpit-"
@@ -21,246 +21,17 @@ msgstr ""
 "n % 10 == 0) ? 2 : 3));\n"
 "X-Generator: Weblate 5.8.2\n"
 
-#: src/ostree.jsx:377
-msgid "$0 and reboot"
-msgstr "$0 והפעלה מחדש"
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "עדכוני תוכנה"
 
 #: src/client.js:411
 msgid "$0 key ID"
 msgstr "מזהה מפתח $0"
 
-#: src/repositoryModals.jsx:296
-msgid "Add another key"
-msgstr "הוספת מפתח נוסף"
-
-#: src/repositoryModals.jsx:159
-msgid "Add new repository"
-msgstr "הוספת מאגר חדש"
-
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
-msgid "Add repository"
-msgstr "הוספת מאגר"
-
-#: src/ostree.jsx:183
-msgid "Additions"
-msgstr "תוספות"
-
-#: src/repositoryModals.jsx:298
-msgid "Begins with $0"
-msgstr "מתחיל ב־$0"
-
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
-msgid "Branch"
-msgstr "ענף"
-
-#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
-msgid "Cancel"
-msgstr "ביטול"
-
-#: src/ostree.jsx:790
-msgid "Checking for package updates..."
-msgstr "מתבצע חיפוש אחר עדכוני חבילות…"
-
-#: src/ostree.jsx:820
-msgid "Checking for updates"
-msgstr "מתבצע חיפוש אחר עדכונים"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "ניקוי"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "ניקוי המטמון וההטמעות"
-
-#: src/ostree.jsx:407
-msgid "Close"
-msgstr "סגירה"
-
-#: src/ostree.jsx:128
-msgid "Connecting to OSTree"
-msgstr "מתבצעת התחברות ל־OSTree"
-
-#: src/ostree.jsx:394
-msgid "Current"
-msgstr "נוכחי"
-
-#: src/ostree.jsx:558
-msgid "Delete"
-msgstr "מחיקה"
-
-#: src/ostree.jsx:322 src/ostree.jsx:929
-msgid "Deployments and updates"
-msgstr "הטמעות ועדכונים"
-
-#: src/ostree.jsx:186
-msgid "Downgrades"
-msgstr "משנמך"
-
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
-msgid "Edit repository"
-msgstr "עריכת מאגר"
-
-#: src/ostree.jsx:836
-msgid "Error loading remotes: $0"
-msgstr "שגיאה בטעינת המרוחקים: $0"
-
-#: src/ostree.jsx:225
-msgid "Expired signature"
-msgstr "חתימה שתוקפה פג"
-
-#: src/ostree.jsx:410
-msgid "Failed"
-msgstr "כשל"
-
-#: src/ostree.jsx:289
-msgid "Failed to rebase deployment"
-msgstr "ביסוס ההטמעה מחדש נכשל"
-
-#: src/ostree.jsx:268
-msgid "Failed to roll back deployment"
-msgstr "גלגול ההטמעה לאחור נכשל"
-
-#: src/ostree.jsx:278
-msgid "Failed to upgrade deployment"
-msgstr "שדרוג ההטמעה נכשל"
-
-#: src/repositoryModals.jsx:301
-msgid "GPG public key"
-msgstr "מפתח GPG ציבורי"
-
-#: src/ostree.jsx:225
-msgid "Good signature"
-msgstr "חתימה טובה"
-
-#: src/ostree.jsx:225
-msgid "Invalid signature"
-msgstr "חתימה שגויה"
-
-#: src/repositoryModals.jsx:402
-msgid "Loading branches"
-msgstr "הענפים נטענים"
-
-#: src/repositoryModals.jsx:163
-msgid "Name"
-msgstr "שם"
-
-#: src/ostree.jsx:417
-msgid "New"
-msgstr "חדש"
-
-#: src/ostree.jsx:742
-msgid "No OSTree deployments found"
-msgstr "לא נמצאו הטמעות OSTree"
-
-#: src/remotes.js:86
-msgid "No configuration data found"
-msgstr "לא נמצאו נתוני הגדרות"
-
-#: src/ostree.jsx:132
-msgid "No deployments"
-msgstr "אין הטמעות"
-
-#: src/ostree.jsx:249
-msgid "No signature available"
-msgstr "אין חתימה זמינה"
-
-#: src/ostree.jsx:768
-msgid "Not authorized to update software on this system"
-msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
-
 #: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "מערכת ההפעלה $0 לא נמצאה"
-
-#: src/ostree.jsx:770
-msgid "OSTree is not available on this system"
-msgstr "OSTree אינה זמינה במערכת הזאת"
-
-#: src/ostree.jsx:682
-msgid "OSTree source"
-msgstr "מקור OSTree"
-
-#: src/ostree.jsx:202
-msgid "Operating system"
-msgstr "מערכת הפעלה"
-
-#: src/ostree.jsx:214
-msgid "Origin"
-msgstr "מקור"
-
-#: src/ostree.jsx:503
-msgid "Packages"
-msgstr "חבילות"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "חבילות שנוספו למערכת"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "הטמעה ממתינה"
-
-#: src/ostree.jsx:543
-msgid "Pin"
-msgstr "הצמדה"
-
-#: src/ostree.jsx:396
-msgid "Pinned"
-msgstr "מוצמד"
-
-#: src/repositoryModals.jsx:188
-msgid "Please provide a valid URL"
-msgstr "נא לספק כתובת תקפה"
-
-#: src/repositoryModals.jsx:174
-msgid "Please provide a valid name"
-msgstr "לא לספק שם תקף"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "נתוני על של מאגר RPM"
-
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
-msgid "Rebase"
-msgstr "ביסוס מחדש"
-
-#: src/repositoryModals.jsx:413
-msgid "Rebase repository and branch"
-msgstr "ביסוס מאגר וענף מחדש"
-
-#: src/ostree.jsx:143
-msgid "Reconnect"
-msgstr "התחברות מחדש"
-
-#: src/ostree.jsx:210
-msgid "Released"
-msgstr "שוחרר"
-
-#: src/ostree.jsx:184
-msgid "Removals"
-msgstr "הסרות"
-
-#: src/repositoryModals.jsx:116
-msgid "Remove"
-msgstr "הסרה"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "הסרת שכבות על"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "הסרת מעקפים"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"הסרת תוספות או החלפות חבילות כדי להחזיר את ההטמעה הנוכחית למצב המקורי שלה."
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -271,126 +42,355 @@ msgstr "הסרת מאגר"
 msgid "Repository"
 msgstr "מאגר"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "איפוס"
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "הסרה"
 
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "איפוס למצב המקורי"
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+msgid "Cancel"
+msgstr "ביטול"
 
-#: src/ostree.jsx:445
-msgid "Roll back"
-msgstr "גלגול לאחור"
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "הוספת מאגר חדש"
 
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "גלגול הטמעה לאחור"
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "שם"
 
-#: src/repositoryModals.jsx:307
-msgid "Save"
-msgstr "שמירה"
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "לא לספק שם תקף"
+
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "כתובת"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "נא לספק כתובת תקפה"
 
 #: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "אבטחה"
 
-#: src/ostree.jsx:508
-msgid "Signatures"
-msgstr "חתימות"
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "להשתמש במפתח GPG מהימן"
 
-#: src/ostree.jsx:230
-msgid "Signed by"
-msgstr "נחתם על ידי"
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+msgid "Add repository"
+msgstr "הוספת מאגר"
 
-#: src/index.html:22 src/manifest.json:0
-msgid "Software updates"
-msgstr "עדכוני תוכנה"
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+msgid "Edit repository"
+msgstr "עריכת מאגר"
 
-#: src/ostree.jsx:299 src/ostree.jsx:605
-msgid "Status"
-msgstr "מצב"
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "הוספת מפתח נוסף"
 
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "החלפות של חבילות שבדרך כלל הן חלק מבניית מערכת ההפעלה"
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "מתחיל ב־$0"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "מפתח GPG ציבורי"
+
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "שמירה"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "הענפים נטענים"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "ביסוס מאגר וענף מחדש"
+
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+msgid "Branch"
+msgstr "ענף"
+
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+msgid "Rebase"
+msgstr "ביסוס מחדש"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "לא נמצאו נתוני הגדרות"
 
 #: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "המערכת עדכנית"
 
-#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
-msgid "System will rebase to $0, updated $1."
-msgstr "המערכת תבוסס מחדש לכדי $0, עודכן $1."
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "יש עדכון: $0"
 
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "קבצים זמניים"
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "מתבצעת התחברות ל־OSTree"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "לא ניתן ליצור קשר עם OSTree"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "אין הטמעות"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "התחברות מחדש"
 
 #: src/ostree.jsx:166
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "הטמעה זו כוללת את אותן החבילות כמו המערכת שפועלת כרגע"
 
-#: src/ostree.jsx:303
-msgid "Time"
-msgstr "זמן"
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "תוספות"
 
-#: src/ostree.jsx:498
-msgid "Tree"
-msgstr "עץ"
-
-#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
-msgid "URL"
-msgstr "כתובת"
-
-#: src/ostree.jsx:130
-msgid "Unable to communicate with OSTree"
-msgstr "לא ניתן ליצור קשר עם OSTree"
-
-#: src/ostree.jsx:543
-msgid "Unpin"
-msgstr "שחרור הצמדה"
-
-#: src/ostree.jsx:444
-msgid "Update"
-msgstr "עדכון"
-
-#: src/ostree.jsx:574
-msgid "Update available"
-msgstr "יש עדכון"
-
-#: src/ostree.jsx:103
-msgid "Update available: $0"
-msgstr "יש עדכון: $0"
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "הסרות"
 
 #: src/ostree.jsx:185
 msgid "Updates"
 msgstr "עדכונים"
 
-#: src/ostree.jsx:392
-msgid "Updating"
-msgstr "מתבצע עדכון"
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "משנמך"
 
-#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
-msgid "Use trusted GPG key"
-msgstr "להשתמש במפתח GPG מהימן"
-
-#: src/ostree.jsx:242
-msgid "Validity"
-msgstr "תוקף"
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "מערכת הפעלה"
 
 #: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "גרסה"
 
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "שוחרר"
+
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "מקור"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "חתימה טובה"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "חתימה שתוקפה פג"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "חתימה שגויה"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "נחתם על ידי"
+
 #: src/ostree.jsx:234
 msgid "When"
 msgstr "מתי"
 
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "תוקף"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "אין חתימה זמינה"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "גלגול ההטמעה לאחור נכשל"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "שדרוג ההטמעה נכשל"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "ביסוס ההטמעה מחדש נכשל"
+
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "מצב"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "זמן"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "הטמעות ועדכונים"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 והפעלה מחדש"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "מתבצע עדכון"
+
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "נוכחי"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "מוצמד"
+
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "סגירה"
+
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "כשל"
+
 #: src/ostree.jsx:411
 msgid "view more..."
 msgstr "להציג עוד…"
+
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "חדש"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "המערכת תבוסס מחדש לכדי $0, עודכן $1."
+
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "עדכון"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "גלגול לאחור"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "עץ"
+
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "חבילות"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "חתימות"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "שחרור הצמדה"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "הצמדה"
+
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "מחיקה"
+
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "יש עדכון"
+
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "מקור OSTree"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "לא נמצאו הטמעות OSTree"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "אין הרשאה לעדכן תכנה במערכת הזאת"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "OSTree אינה זמינה במערכת הזאת"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "מתבצע חיפוש אחר עדכוני חבילות…"
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "מתבצע חיפוש אחר עדכונים"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "שגיאה בטעינת המרוחקים: $0"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "ניקוי"
+
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "איפוס"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "ניקוי המטמון וההטמעות"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "קבצים זמניים"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "נתוני על של מאגר RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "הטמעה ממתינה"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "גלגול הטמעה לאחור"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"הסרת תוספות או החלפות חבילות כדי להחזיר את ההטמעה הנוכחית למצב המקורי שלה."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "הסרת שכבות על"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "חבילות שנוספו למערכת"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "הסרת מעקפים"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "החלפות של חבילות שבדרך כלל הן חלק מבניית מערכת ההפעלה"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "איפוס למצב המקורי"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "חלקי השינוי מתקבלים"

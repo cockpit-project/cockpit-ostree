@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-09-27 08:34+0000\n"
+"POT-Creation-Date: 2026-10-25 07:50+0000\n"
 "PO-Revision-Date: 2026-02-01 02:58+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -20,247 +20,17 @@ msgstr ""
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.15.2\n"
 
-#: src/ostree.jsx:377
-msgid "$0 and reboot"
-msgstr "$0 dan reboot"
+#: src/index.html:22 src/manifest.json:0
+msgid "Software updates"
+msgstr "Pembaruan perangkat lunak"
 
 #: src/client.js:411
 msgid "$0 key ID"
 msgstr "ID kunci $0"
 
-#: src/repositoryModals.jsx:296
-msgid "Add another key"
-msgstr "Menambahkan kunci lain"
-
-#: src/repositoryModals.jsx:159
-msgid "Add new repository"
-msgstr "Menambahkan repositori baru"
-
-#: src/repositoryModals.jsx:208 src/ostree.jsx:652
-msgid "Add repository"
-msgstr "Tambahkan repositori"
-
-#: src/ostree.jsx:183
-msgid "Additions"
-msgstr "Penambahan"
-
-#: src/repositoryModals.jsx:298
-msgid "Begins with $0"
-msgstr "Dimulai dengan $0"
-
-#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
-msgid "Branch"
-msgstr "Cabang"
-
-#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
-msgid "Cancel"
-msgstr "Batal"
-
-#: src/ostree.jsx:790
-msgid "Checking for package updates..."
-msgstr "Memeriksa pembaruan paket..."
-
-#: src/ostree.jsx:820
-msgid "Checking for updates"
-msgstr "Memeriksa pembaruan"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Bersihkan"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Menghapus cache dan penerapan"
-
-#: src/ostree.jsx:407
-msgid "Close"
-msgstr "Tutup"
-
-#: src/ostree.jsx:128
-msgid "Connecting to OSTree"
-msgstr "Menghubungkan ke OSTree"
-
-#: src/ostree.jsx:394
-msgid "Current"
-msgstr "Saat ini"
-
-#: src/ostree.jsx:558
-msgid "Delete"
-msgstr "Hapus"
-
-#: src/ostree.jsx:322 src/ostree.jsx:929
-msgid "Deployments and updates"
-msgstr "Penerapan dan pembaruan"
-
-#: src/ostree.jsx:186
-msgid "Downgrades"
-msgstr "Menurunkan versi"
-
-#: src/repositoryModals.jsx:264 src/ostree.jsx:661
-msgid "Edit repository"
-msgstr "Mengedit repositori"
-
-#: src/ostree.jsx:836
-msgid "Error loading remotes: $0"
-msgstr "Kesalahan memuat remote: $0"
-
-#: src/ostree.jsx:225
-msgid "Expired signature"
-msgstr "Tanda tangan kedaluwarsa"
-
-#: src/ostree.jsx:410
-msgid "Failed"
-msgstr "Gagal"
-
-#: src/ostree.jsx:289
-msgid "Failed to rebase deployment"
-msgstr "Gagal mengulang penerapan"
-
-#: src/ostree.jsx:268
-msgid "Failed to roll back deployment"
-msgstr "Gagal memutar kembali penerapan"
-
-#: src/ostree.jsx:278
-msgid "Failed to upgrade deployment"
-msgstr "Gagal meningkatkan penerapan"
-
-#: src/repositoryModals.jsx:301
-msgid "GPG public key"
-msgstr "Kunci publik GPG"
-
-#: src/ostree.jsx:225
-msgid "Good signature"
-msgstr "Tanda tangan yang baik"
-
-#: src/ostree.jsx:225
-msgid "Invalid signature"
-msgstr "Tanda tangan tidak valid"
-
-#: src/repositoryModals.jsx:402
-msgid "Loading branches"
-msgstr "Memuat cabang"
-
-#: src/repositoryModals.jsx:163
-msgid "Name"
-msgstr "Nama"
-
-#: src/ostree.jsx:417
-msgid "New"
-msgstr "Baru"
-
-#: src/ostree.jsx:742
-msgid "No OSTree deployments found"
-msgstr "Tidak ditemukan penerapan OSTree"
-
-#: src/remotes.js:86
-msgid "No configuration data found"
-msgstr "Tidak ada data konfigurasi yang ditemukan"
-
-#: src/ostree.jsx:132
-msgid "No deployments"
-msgstr "Tidak ada penyebaran"
-
-#: src/ostree.jsx:249
-msgid "No signature available"
-msgstr "Tidak ada tanda tangan yang tersedia"
-
-#: src/ostree.jsx:768
-msgid "Not authorized to update software on this system"
-msgstr "Tidak berwenang untuk memperbarui perangkat lunak pada sistem ini"
-
 #: src/client.js:504 src/client.js:568
 msgid "OS $0 not found"
 msgstr "OS $0 tidak ditemukan"
-
-#: src/ostree.jsx:770
-msgid "OSTree is not available on this system"
-msgstr "OSTree tidak tersedia pada sistem ini"
-
-#: src/ostree.jsx:682
-msgid "OSTree source"
-msgstr "Sumber OSTree"
-
-#: src/ostree.jsx:202
-msgid "Operating system"
-msgstr "Sistem operasi"
-
-#: src/ostree.jsx:214
-msgid "Origin"
-msgstr "Asal"
-
-#: src/ostree.jsx:503
-msgid "Packages"
-msgstr "Paket"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Paket yang telah ditambahkan ke sistem"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Penerapan yang tertunda"
-
-#: src/ostree.jsx:543
-msgid "Pin"
-msgstr "Sematkan"
-
-#: src/ostree.jsx:396
-msgid "Pinned"
-msgstr "Disematkan"
-
-#: src/repositoryModals.jsx:188
-msgid "Please provide a valid URL"
-msgstr "Harap berikan URL yang valid"
-
-#: src/repositoryModals.jsx:174
-msgid "Please provide a valid name"
-msgstr "Harap berikan nama yang valid"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Metadata repo RPM"
-
-#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
-msgid "Rebase"
-msgstr "Rebase"
-
-#: src/repositoryModals.jsx:413
-msgid "Rebase repository and branch"
-msgstr "Rebase repositori dan cabang"
-
-#: src/ostree.jsx:143
-msgid "Reconnect"
-msgstr "Sambungkan ulang"
-
-#: src/ostree.jsx:210
-msgid "Released"
-msgstr "Dirilis"
-
-#: src/ostree.jsx:184
-msgid "Removals"
-msgstr "Penghapusan"
-
-#: src/repositoryModals.jsx:116
-msgid "Remove"
-msgstr "Menghapus"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Menghapus hamparan"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Menghapus penimpaan"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Menghapus penambahan atau penggantian paket untuk mengembalikan penerapan "
-"saat ini ke kondisi semula."
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -271,126 +41,356 @@ msgstr "Menghapus repositori"
 msgid "Repository"
 msgstr "Repositori"
 
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Atur ulang"
+#: src/repositoryModals.jsx:116
+msgid "Remove"
+msgstr "Menghapus"
 
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Mengatur ulang ke kondisi semula"
+#: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+msgid "Cancel"
+msgstr "Batal"
 
-#: src/ostree.jsx:445
-msgid "Roll back"
-msgstr "Kembalikan"
+#: src/repositoryModals.jsx:159
+msgid "Add new repository"
+msgstr "Menambahkan repositori baru"
 
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Kembalikan penerapan"
+#: src/repositoryModals.jsx:163
+msgid "Name"
+msgstr "Nama"
 
-#: src/repositoryModals.jsx:307
-msgid "Save"
-msgstr "Simpan"
+#: src/repositoryModals.jsx:174
+msgid "Please provide a valid name"
+msgstr "Harap berikan nama yang valid"
+
+#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
+msgid "URL"
+msgstr "URL"
+
+#: src/repositoryModals.jsx:188
+msgid "Please provide a valid URL"
+msgstr "Harap berikan URL yang valid"
 
 #: src/repositoryModals.jsx:191
 msgid "Security"
 msgstr "Keamanan"
 
-#: src/ostree.jsx:508
-msgid "Signatures"
-msgstr "Tanda tangan"
+#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
+msgid "Use trusted GPG key"
+msgstr "Gunakan kunci GPG tepercaya"
 
-#: src/ostree.jsx:230
-msgid "Signed by"
-msgstr "Ditandatangani oleh"
+#: src/repositoryModals.jsx:208 src/ostree.jsx:652
+msgid "Add repository"
+msgstr "Tambahkan repositori"
 
-#: src/index.html:22 src/manifest.json:0
-msgid "Software updates"
-msgstr "Pembaruan perangkat lunak"
+#: src/repositoryModals.jsx:264 src/ostree.jsx:661
+msgid "Edit repository"
+msgstr "Mengedit repositori"
 
-#: src/ostree.jsx:299 src/ostree.jsx:605
-msgid "Status"
-msgstr "Status"
+#: src/repositoryModals.jsx:296
+msgid "Add another key"
+msgstr "Menambahkan kunci lain"
 
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Penggantian paket yang biasanya disertakan dalam pembuatan OS"
+#: src/repositoryModals.jsx:298
+msgid "Begins with $0"
+msgstr "Dimulai dengan $0"
+
+#: src/repositoryModals.jsx:301
+msgid "GPG public key"
+msgstr "Kunci publik GPG"
+
+#: src/repositoryModals.jsx:307
+msgid "Save"
+msgstr "Simpan"
+
+#: src/repositoryModals.jsx:402
+msgid "Loading branches"
+msgstr "Memuat cabang"
+
+#: src/repositoryModals.jsx:413
+msgid "Rebase repository and branch"
+msgstr "Rebase repositori dan cabang"
+
+#: src/repositoryModals.jsx:424 src/ostree.jsx:307 src/ostree.jsx:691
+msgid "Branch"
+msgstr "Cabang"
+
+#: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
+msgid "Rebase"
+msgstr "Rebase"
+
+#: src/remotes.js:86
+msgid "No configuration data found"
+msgstr "Tidak ada data konfigurasi yang ditemukan"
 
 #: src/ostree.jsx:97 src/ostree.jsx:580
 msgid "System is up to date"
 msgstr "Sistem sudah terbaru"
 
-#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
-msgid "System will rebase to $0, updated $1."
-msgstr "Sistem akan rebase menjadi $0, diperbarui menjadi $1."
+#: src/ostree.jsx:103
+msgid "Update available: $0"
+msgstr "Pembaruan tersedia: $0"
 
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Berkas-berkas sementara"
+#: src/ostree.jsx:128
+msgid "Connecting to OSTree"
+msgstr "Menghubungkan ke OSTree"
+
+#: src/ostree.jsx:130
+msgid "Unable to communicate with OSTree"
+msgstr "Tidak dapat berkomunikasi dengan OSTree"
+
+#: src/ostree.jsx:132
+msgid "No deployments"
+msgstr "Tidak ada penyebaran"
+
+#: src/ostree.jsx:143
+msgid "Reconnect"
+msgstr "Sambungkan ulang"
 
 #: src/ostree.jsx:166
 msgid ""
 "This deployment contains the same packages as your currently booted system"
 msgstr "Penerapan ini berisi paket yang sama dengan sistem yang sedang di-boot"
 
-#: src/ostree.jsx:303
-msgid "Time"
-msgstr "Waktu"
+#: src/ostree.jsx:183
+msgid "Additions"
+msgstr "Penambahan"
 
-#: src/ostree.jsx:498
-msgid "Tree"
-msgstr "Pohon"
-
-#: src/repositoryModals.jsx:177 src/repositoryModals.jsx:278
-msgid "URL"
-msgstr "URL"
-
-#: src/ostree.jsx:130
-msgid "Unable to communicate with OSTree"
-msgstr "Tidak dapat berkomunikasi dengan OSTree"
-
-#: src/ostree.jsx:543
-msgid "Unpin"
-msgstr "Lepas pin"
-
-#: src/ostree.jsx:444
-msgid "Update"
-msgstr "Perbarui"
-
-#: src/ostree.jsx:574
-msgid "Update available"
-msgstr "Pembaruan tersedia"
-
-#: src/ostree.jsx:103
-msgid "Update available: $0"
-msgstr "Pembaruan tersedia: $0"
+#: src/ostree.jsx:184
+msgid "Removals"
+msgstr "Penghapusan"
 
 #: src/ostree.jsx:185
 msgid "Updates"
 msgstr "Pembaruan"
 
-#: src/ostree.jsx:392
-msgid "Updating"
-msgstr "Memperbarui"
+#: src/ostree.jsx:186
+msgid "Downgrades"
+msgstr "Menurunkan versi"
 
-#: src/repositoryModals.jsx:196 src/repositoryModals.jsx:287
-msgid "Use trusted GPG key"
-msgstr "Gunakan kunci GPG tepercaya"
-
-#: src/ostree.jsx:242
-msgid "Validity"
-msgstr "Validitas"
+#: src/ostree.jsx:202
+msgid "Operating system"
+msgstr "Sistem operasi"
 
 #: src/ostree.jsx:206 src/ostree.jsx:295
 msgid "Version"
 msgstr "Versi"
 
+#: src/ostree.jsx:210
+msgid "Released"
+msgstr "Dirilis"
+
+#: src/ostree.jsx:214
+msgid "Origin"
+msgstr "Asal"
+
+#: src/ostree.jsx:225
+msgid "Good signature"
+msgstr "Tanda tangan yang baik"
+
+#: src/ostree.jsx:225
+msgid "Expired signature"
+msgstr "Tanda tangan kedaluwarsa"
+
+#: src/ostree.jsx:225
+msgid "Invalid signature"
+msgstr "Tanda tangan tidak valid"
+
+#: src/ostree.jsx:230
+msgid "Signed by"
+msgstr "Ditandatangani oleh"
+
 #: src/ostree.jsx:234
 msgid "When"
 msgstr "Kapan"
 
+#: src/ostree.jsx:242
+msgid "Validity"
+msgstr "Validitas"
+
+#: src/ostree.jsx:249
+msgid "No signature available"
+msgstr "Tidak ada tanda tangan yang tersedia"
+
+#: src/ostree.jsx:268
+msgid "Failed to roll back deployment"
+msgstr "Gagal memutar kembali penerapan"
+
+#: src/ostree.jsx:278
+msgid "Failed to upgrade deployment"
+msgstr "Gagal meningkatkan penerapan"
+
+#: src/ostree.jsx:289
+msgid "Failed to rebase deployment"
+msgstr "Gagal mengulang penerapan"
+
+#: src/ostree.jsx:299 src/ostree.jsx:605
+msgid "Status"
+msgstr "Status"
+
+#: src/ostree.jsx:303
+msgid "Time"
+msgstr "Waktu"
+
+#: src/ostree.jsx:322 src/ostree.jsx:929
+msgid "Deployments and updates"
+msgstr "Penerapan dan pembaruan"
+
+#: src/ostree.jsx:377
+msgid "$0 and reboot"
+msgstr "$0 dan reboot"
+
+#: src/ostree.jsx:392
+msgid "Updating"
+msgstr "Memperbarui"
+
+#: src/ostree.jsx:394
+msgid "Current"
+msgstr "Saat ini"
+
+#: src/ostree.jsx:396
+msgid "Pinned"
+msgstr "Disematkan"
+
+#: src/ostree.jsx:407
+msgid "Close"
+msgstr "Tutup"
+
+#: src/ostree.jsx:410
+msgid "Failed"
+msgstr "Gagal"
+
 #: src/ostree.jsx:411
 msgid "view more..."
 msgstr "lihat lebih banyak..."
+
+#: src/ostree.jsx:417
+msgid "New"
+msgstr "Baru"
+
+#: src/ostree.jsx:426 src/ostree.jsx:432 src/ostree.jsx:438
+msgid "System will rebase to $0, updated $1."
+msgstr "Sistem akan rebase menjadi $0, diperbarui menjadi $1."
+
+#: src/ostree.jsx:444
+msgid "Update"
+msgstr "Perbarui"
+
+#: src/ostree.jsx:445
+msgid "Roll back"
+msgstr "Kembalikan"
+
+#: src/ostree.jsx:498
+msgid "Tree"
+msgstr "Pohon"
+
+#: src/ostree.jsx:503
+msgid "Packages"
+msgstr "Paket"
+
+#: src/ostree.jsx:508
+msgid "Signatures"
+msgstr "Tanda tangan"
+
+#: src/ostree.jsx:543
+msgid "Unpin"
+msgstr "Lepas pin"
+
+#: src/ostree.jsx:543
+msgid "Pin"
+msgstr "Sematkan"
+
+#: src/ostree.jsx:558
+msgid "Delete"
+msgstr "Hapus"
+
+#: src/ostree.jsx:574
+msgid "Update available"
+msgstr "Pembaruan tersedia"
+
+#: src/ostree.jsx:682
+msgid "OSTree source"
+msgstr "Sumber OSTree"
+
+#: src/ostree.jsx:742
+msgid "No OSTree deployments found"
+msgstr "Tidak ditemukan penerapan OSTree"
+
+#: src/ostree.jsx:768
+msgid "Not authorized to update software on this system"
+msgstr "Tidak berwenang untuk memperbarui perangkat lunak pada sistem ini"
+
+#: src/ostree.jsx:770
+msgid "OSTree is not available on this system"
+msgstr "OSTree tidak tersedia pada sistem ini"
+
+#: src/ostree.jsx:790
+msgid "Checking for package updates..."
+msgstr "Memeriksa pembaruan paket..."
+
+#: src/ostree.jsx:820
+msgid "Checking for updates"
+msgstr "Memeriksa pembaruan"
+
+#: src/ostree.jsx:836
+msgid "Error loading remotes: $0"
+msgstr "Kesalahan memuat remote: $0"
+
+#: src/ostree.jsx:898 src/deploymentModals.jsx:109
+msgid "Clean up"
+msgstr "Bersihkan"
+
+#: src/ostree.jsx:904 src/deploymentModals.jsx:157
+msgid "Reset"
+msgstr "Atur ulang"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Menghapus cache dan penerapan"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Berkas-berkas sementara"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadata repo RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Penerapan yang tertunda"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Kembalikan penerapan"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Menghapus penambahan atau penggantian paket untuk mengembalikan penerapan "
+"saat ini ke kondisi semula."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Menghapus hamparan"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Paket yang telah ditambahkan ke sistem"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Menghapus penimpaan"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Penggantian paket yang biasanya disertakan dalam pembuatan OS"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Mengatur ulang ke kondisi semula"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Menerima bagian delta"
