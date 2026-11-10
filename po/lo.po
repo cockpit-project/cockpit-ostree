@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2026-05-07 03:59+0000\n"
 "Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://translate.fedoraproject.org/projects/cockpit/"
@@ -23,14 +23,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "ການອັບເດດຊອບແວ"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "ໄອດີກະແຈ $0"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "ບໍ່ພົບລະບົບປະຕິບັດການ $0"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -389,3 +381,11 @@ msgstr "ການປ່ຽນແທນແພັກເກດທີ່ມັກຈ
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "ຣີເຊັດເປັນສະພາບເດີມ"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "ໄອດີກະແຈ $0"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "ບໍ່ພົບລະບົບປະຕິບັດການ $0"

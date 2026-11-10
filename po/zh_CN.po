@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2026-05-17 12:08+0000\n"
 "Last-Translator: Luke Na <narukeu@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -23,14 +23,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "软件更新"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "$0 密钥编号"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "未找到操作系统 $0"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -389,6 +381,14 @@ msgstr "对通常包含在操作系统构建中的软件包进行替换"
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "重置为原始状态"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "$0 密钥编号"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "未找到操作系统 $0"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "正在接收增量部分"
