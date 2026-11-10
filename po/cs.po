@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2024-11-11 23:15+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -23,14 +23,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "Aktualizace software"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "Identif. klíče $0"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "Operační systém $0 nenalezen"
 
 # auto translated by TM merge from project: dnf, version: master, DocId: po/dnf
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
@@ -414,6 +406,14 @@ msgstr "Nahrazení balíčků běžně obsažených v sestavení operačního sy
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "Vrátit do původního stavu"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "Identif. klíče $0"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "Operační systém $0 nenalezen"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Získávají se přírůstkové části"
