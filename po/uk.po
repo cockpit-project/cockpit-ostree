@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2026-05-17 07:00+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -23,14 +23,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "Оновлення програм"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "Ід. ключа $0"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "ОС $0 не знайдено"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -393,6 +385,14 @@ msgstr "Заміни пакунків, які зазвичай включено 
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "Відновити початковий стан"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "Ід. ключа $0"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "ОС $0 не знайдено"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Отримуємо частини відмінностей"

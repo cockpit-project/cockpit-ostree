@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2025-03-29 04:24+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -21,14 +21,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "소프트웨어 최신화"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "$0 키 ID"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "OS $0 찾을 수 없습니다"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -389,6 +381,14 @@ msgstr "꾸러미의 대체 항목은 일반적으로 OS 제작에 포함되어 
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "원래 상태로 재설정"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "$0 키 ID"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "OS $0 찾을 수 없습니다"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "델타 부분 받기"

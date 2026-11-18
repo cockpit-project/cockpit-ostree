@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2025-10-12 02:54+0000\n"
 "Last-Translator: Hugo Costa <hugo.a.costa@outlook.pt>\n"
 "Language-Team: Portuguese <https://translate.fedoraproject.org/projects/"
@@ -18,14 +18,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "Atualizações de software"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "ID da chave $0"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "Sistema operativo $0 não encontrado"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -390,6 +382,14 @@ msgstr ""
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "Repor ao estado original"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "ID da chave $0"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "Sistema operativo $0 não encontrado"
 
 #~ msgid "$0 package"
 #~ msgstr "$0 pacote"
