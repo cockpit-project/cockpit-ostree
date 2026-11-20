@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-03 10:07+0000\n"
 "PO-Revision-Date: 2026-02-01 02:58+0000\n"
 "Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
 "Language-Team: Indonesian <https://translate.fedoraproject.org/projects/"
@@ -23,14 +23,6 @@ msgstr ""
 #: src/index.html:22 src/manifest.json:0
 msgid "Software updates"
 msgstr "Pembaruan perangkat lunak"
-
-#: src/client.js:411
-msgid "$0 key ID"
-msgstr "ID kunci $0"
-
-#: src/client.js:504 src/client.js:568
-msgid "OS $0 not found"
-msgstr "OS $0 tidak ditemukan"
 
 #: src/repositoryModals.jsx:98 src/ostree.jsx:671
 msgid "Remove repository"
@@ -391,6 +383,14 @@ msgstr "Penggantian paket yang biasanya disertakan dalam pembuatan OS"
 #: src/deploymentModals.jsx:193
 msgid "Reset to original state"
 msgstr "Mengatur ulang ke kondisi semula"
+
+#: src/client.js:411
+msgid "$0 key ID"
+msgstr "ID kunci $0"
+
+#: src/client.js:504 src/client.js:568
+msgid "OS $0 not found"
+msgstr "OS $0 tidak ditemukan"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Menerima bagian delta"
