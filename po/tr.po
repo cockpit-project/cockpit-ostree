@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2023-12-06 16:43+0000\n"
 "Last-Translator: Burak Yavuz <hitowerdigit@hotmail.com>\n"
 "Language-Team: Turkish <https://translate.fedoraproject.org/projects/cockpit-"
@@ -44,8 +44,8 @@ msgid "Remove"
 msgstr "Kaldır"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "İptal"
 
@@ -116,6 +116,62 @@ msgstr "Dal"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Yeniden temellendir"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Önbelleği ve dağıtımları temizle"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Geçici dosyalar"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM deposu üstverileri"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Dağıtım beklemede"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Dağıtımı geri al"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Temizle"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Sıfırla"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Şu anki dağıtımı orijinal durumuna döndürmek için paket eklemelerini veya "
+"değişikliklerini kaldırın."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Üstyazımları kaldır"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Sisteme eklenmiş paketler"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Geçersiz kılmaları kaldır"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Normalde bir İS yapısında yer alan paketlerin değiştirilmesi"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Orijinal durumuna sıfırla"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -333,62 +389,6 @@ msgstr "Güncellemeler denetleniyor"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Uzak depolar yüklenirken hata oldu: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Temizle"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Sıfırla"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Önbelleği ve dağıtımları temizle"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Geçici dosyalar"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM deposu üstverileri"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Dağıtım beklemede"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Dağıtımı geri al"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Şu anki dağıtımı orijinal durumuna döndürmek için paket eklemelerini veya "
-"değişikliklerini kaldırın."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Üstyazımları kaldır"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Sisteme eklenmiş paketler"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Geçersiz kılmaları kaldır"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Normalde bir İS yapısında yer alan paketlerin değiştirilmesi"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Orijinal durumuna sıfırla"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Delta parçaları alınıyor"

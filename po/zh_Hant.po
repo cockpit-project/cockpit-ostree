@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2025-03-22 21:04+0000\n"
 "Last-Translator: hsu zangmen <chzang55@gmail.com>\n"
 "Language-Team: Chinese (Traditional Han script) <https://"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "移除"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "取消"
 
@@ -118,6 +118,60 @@ msgstr "分支"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "回復"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "清除快取和部署"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "暫存檔案"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM 套件庫中繼資料"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "待進行部署"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "回滾部署"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "清理"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "重新設置"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr "移除套件新增內容或替代內容，讓目前的部署回復原始狀態。"
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "移除覆蓋層"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "已加入此系統的套件包"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "移除覆寫部分"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "取代通常包含在作業系統建立中的套件包"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "重新設置為原始狀態"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -335,57 +389,3 @@ msgstr "檢查更新"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "載入遠端出錯： $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "清理"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "重新設置"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "清除快取和部署"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "暫存檔案"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM 套件庫中繼資料"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "待進行部署"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "回滾部署"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr "移除套件新增內容或替代內容，讓目前的部署回復原始狀態。"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "移除覆蓋層"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "已加入此系統的套件包"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "移除覆寫部分"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "取代通常包含在作業系統建立中的套件包"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "重新設置為原始狀態"

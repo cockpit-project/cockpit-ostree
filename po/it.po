@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-04-09 13:58+0000\n"
 "Last-Translator: Ali Ciloqlu <ali.ciloqlu@murena.io>\n"
 "Language-Team: Italian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "Rimuovi"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Annulla"
 
@@ -118,6 +118,64 @@ msgstr "Ramo"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Rebase"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Cancella cache e distribuzioni"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "File temporanei"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadati del repository RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "In attesa di distribuzione"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Rollback della distribuzione"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Ripulire"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Ripristina"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Rimuovi aggiunte o sostituzioni di pacchetti per riportare la distribuzione "
+"corrente al suo stato originale."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Rimuovi le sovrapposizioni"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Pacchetti che sono stati aggiunti al sistema"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Rimuovi le sostituzioni"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Sostituzioni di pacchetti normalmente inclusi in una build del sistema "
+"operativo"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Ripristina lo stato originale"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -337,61 +395,3 @@ msgstr "Controllo degli aggiornamenti"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Errore durante il caricamento dei telecomandi: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Ripulire"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Ripristina"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Cancella cache e distribuzioni"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "File temporanei"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Metadati del repository RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "In attesa di distribuzione"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Rollback della distribuzione"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Rimuovi aggiunte o sostituzioni di pacchetti per riportare la distribuzione "
-"corrente al suo stato originale."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Rimuovi le sovrapposizioni"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Pacchetti che sono stati aggiunti al sistema"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Rimuovi le sostituzioni"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr ""
-"Sostituzioni di pacchetti normalmente inclusi in una build del sistema "
-"operativo"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Ripristina lo stato originale"

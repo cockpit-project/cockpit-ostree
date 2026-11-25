@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-05-17 12:08+0000\n"
 "Last-Translator: Luke Na <narukeu@outlook.com>\n"
 "Language-Team: Chinese (Simplified) <https://translate.fedoraproject.org/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "删除"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "取消"
 
@@ -118,6 +118,60 @@ msgstr "分支"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "变基"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "清除缓存和部署"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "临时文件"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM 仓库元数据"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "待部署"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "回滚部署"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "清理"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "重置"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "移除覆盖层"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "已添加到系统中的软件包"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "删除覆盖"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "对通常包含在操作系统构建中的软件包进行替换"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "重置为原始状态"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -335,60 +389,6 @@ msgstr "检查升级"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "加载远程： $0 出错"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "清理"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "重置"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "清除缓存和部署"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "临时文件"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM 仓库元数据"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "待部署"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "回滚部署"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr "移除添加或替换的软件包，将当前部署恢复到初始状态。"
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "移除覆盖层"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "已添加到系统中的软件包"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "删除覆盖"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "对通常包含在操作系统构建中的软件包进行替换"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "重置为原始状态"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "正在接收增量部分"

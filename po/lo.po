@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-05-07 03:59+0000\n"
 "Last-Translator: Bone NI <bounkirdni@gmail.com>\n"
 "Language-Team: Lao <https://translate.fedoraproject.org/projects/cockpit/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "ລຶບອອກ"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "ຍົກເລີກ"
 
@@ -118,6 +118,60 @@ msgstr "ສາຂາ"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "ປ່ຽນຖານ (Rebase)"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "ລ້າງແຄຊ໌ ແລະ ການຕິດຕັ້ງ"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "ໄຟລ໌ຊົ່ວຄາວ"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "ຂໍ້ມູນເມຕາຂອງຄັງ RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "ການຕິດຕັ້ງທີ່ພວມລໍຖ້າ"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "ຍ້ອນກັບການຕິດຕັ້ງ"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "ລ້າງຂໍ້ມູນ"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "ຣີເຊັດ (Reset)"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr "ລຶບສ່ວນເພີ່ມ ຫຼື ສ່ວນທີ່ປ່ຽນແທນຂອງແພັກເກດ ເພື່ອເຮັດໃຫ້ການຕິດຕັ້ງປັດຈຸບັນກັບຄືນສູ່ສະພາບເດີມ."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "ລຶບສ່ວນທັບຊ້ອນ (overlays) ອອກ"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "ແພັກເກດທີ່ຖືກເພີ່ມເຂົ້າໃນລະບົບ"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "ລຶບສ່ວນທີ່ຂຽນທັບ (overrides) ອອກ"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "ການປ່ຽນແທນແພັກເກດທີ່ມັກຈະລວມຢູ່ໃນການສ້າງລະບົບປະຕິບັດການ"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "ຣີເຊັດເປັນສະພາບເດີມ"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -335,57 +389,3 @@ msgstr "ກຳລັງກວດສອບການອັບເດດ"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "ເກີດຂໍ້ຜິດພາດໃນການໂຫຼດແຫຼ່ງຂໍ້ມູນໄລຍະໄກ: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "ລ້າງຂໍ້ມູນ"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "ຣີເຊັດ (Reset)"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "ລ້າງແຄຊ໌ ແລະ ການຕິດຕັ້ງ"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "ໄຟລ໌ຊົ່ວຄາວ"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "ຂໍ້ມູນເມຕາຂອງຄັງ RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "ການຕິດຕັ້ງທີ່ພວມລໍຖ້າ"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "ຍ້ອນກັບການຕິດຕັ້ງ"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr "ລຶບສ່ວນເພີ່ມ ຫຼື ສ່ວນທີ່ປ່ຽນແທນຂອງແພັກເກດ ເພື່ອເຮັດໃຫ້ການຕິດຕັ້ງປັດຈຸບັນກັບຄືນສູ່ສະພາບເດີມ."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "ລຶບສ່ວນທັບຊ້ອນ (overlays) ອອກ"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "ແພັກເກດທີ່ຖືກເພີ່ມເຂົ້າໃນລະບົບ"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "ລຶບສ່ວນທີ່ຂຽນທັບ (overrides) ອອກ"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "ການປ່ຽນແທນແພັກເກດທີ່ມັກຈະລວມຢູ່ໃນການສ້າງລະບົບປະຕິບັດການ"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "ຣີເຊັດເປັນສະພາບເດີມ"

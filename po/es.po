@@ -17,7 +17,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-04-10 17:00+0000\n"
 "Last-Translator: \"Fco. Javier F. Serrador\" <fserrador@gmail.com>\n"
 "Language-Team: Spanish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -55,8 +55,8 @@ msgid "Remove"
 msgstr "Desinstalar"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Cancelar"
 
@@ -127,6 +127,64 @@ msgstr "Rama"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Rebase"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Vaciar caché y despliegues"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Archivos temporales"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Repo de metadatos en RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Despliegues pendientes"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Revertir despliegues"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Vaciar"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Reiniciar"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Desinstala adiciones del paquete o sustituciones para devolver el despliega "
+"actual a su estado original."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Retirar coberturas"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Paquetes los cuales han sido añadidos al sistema"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Quitar coberturas"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Suscripciones de paquetes normalmente incluidos dentro de una construcción "
+"del SO"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Reiniciar a estado original"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -346,64 +404,6 @@ msgstr "Comprobando actualizaciones"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Error cargando remotos: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Vaciar"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Reiniciar"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Vaciar caché y despliegues"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Archivos temporales"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Repo de metadatos en RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Despliegues pendientes"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Revertir despliegues"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Desinstala adiciones del paquete o sustituciones para devolver el despliega "
-"actual a su estado original."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Retirar coberturas"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Paquetes los cuales han sido añadidos al sistema"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Quitar coberturas"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr ""
-"Suscripciones de paquetes normalmente incluidos dentro de una construcción "
-"del SO"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Reiniciar a estado original"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Recibiendo deltas"

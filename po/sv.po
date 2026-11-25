@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-09-17 17:17+0000\n"
 "Last-Translator: Daniel Nylander <po@danielnylander.se>\n"
 "Language-Team: Swedish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "Avlägsna"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Avbryt"
 
@@ -118,6 +118,62 @@ msgstr "Gren"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Basera om"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Rensa cache och distributioner"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Temporära filer"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM-förrådmetadata"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Väntar på distribution"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Återrullning av distribution"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Rensa upp"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Återställ"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
+"distributionen till sitt ursprungliga tillstånd."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Avlägsna överlägg"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Paket som har lagts till i systemet"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Avlägsna åsidosättningar"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Ersättningar av paket som normalt ingår i ett OS-bygge"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Återställ till ursprungligt tillstånd"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -337,59 +393,3 @@ msgstr "Söker efter uppdateringar"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Fel vid laddning av fjärranslutningar: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Rensa upp"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Återställ"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Rensa cache och distributioner"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Temporära filer"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM-förrådmetadata"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Väntar på distribution"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Återrullning av distribution"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Avlägsna paket tillägg eller ersättningar för att återställa den aktuella "
-"distributionen till sitt ursprungliga tillstånd."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Avlägsna överlägg"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Paket som har lagts till i systemet"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Avlägsna åsidosättningar"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Ersättningar av paket som normalt ingår i ett OS-bygge"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Återställ till ursprungligt tillstånd"

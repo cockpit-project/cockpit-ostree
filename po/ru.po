@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-07-31 19:18+0000\n"
 "Last-Translator: Andrei Stepanov <adem4ik@gmail.com>\n"
 "Language-Team: Russian <https://translate.fedoraproject.org/projects/cockpit/"
@@ -47,8 +47,8 @@ msgid "Remove"
 msgstr "Удалить"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Отмена"
 
@@ -119,6 +119,62 @@ msgstr "Ветка"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Перебазировать"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Очистить кэш и развёртывания"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Временные файлы"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Метаданные RPM-репозитория"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Ожидающее развёртывание"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Откатить развёртывание"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Очистить"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Сбросить"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Удалите добавления или замены пакетов, чтобы вернуть текущее развёртывание в "
+"исходное состояние."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Удалить наложения"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Пакеты, добавленные в систему"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Удалить переопределения"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Замены пакетов, обычно включённых в сборку ОС"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Сбросить в исходное состояние"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -338,59 +394,3 @@ msgstr "Проверка обновлений"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Ошибка загрузки удалённых репозиториев: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Очистить"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Сбросить"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Очистить кэш и развёртывания"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Временные файлы"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Метаданные RPM-репозитория"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Ожидающее развёртывание"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Откатить развёртывание"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Удалите добавления или замены пакетов, чтобы вернуть текущее развёртывание в "
-"исходное состояние."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Удалить наложения"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Пакеты, добавленные в систему"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Удалить переопределения"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Замены пакетов, обычно включённых в сборку ОС"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Сбросить в исходное состояние"

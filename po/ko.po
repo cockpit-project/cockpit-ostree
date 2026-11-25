@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2025-03-29 04:24+0000\n"
 "Last-Translator: 김인수 <simmon@nplob.com>\n"
 "Language-Team: Korean <https://translate.fedoraproject.org/projects/cockpit-"
@@ -44,8 +44,8 @@ msgid "Remove"
 msgstr "제거"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "취소"
 
@@ -116,6 +116,61 @@ msgstr "분기"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "재구성"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "캐쉬 및 배포 지우기"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "임시 파일"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM 저장소 메타자료"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "배포 보류 중"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "배포 되돌리기"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "정리"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "재설정"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "겹침 제거"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "시스템에 추가된 꾸러미"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "재정의 제거"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "꾸러미의 대체 항목은 일반적으로 OS 제작에 포함되어 있습니다"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "원래 상태로 재설정"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -334,61 +389,6 @@ msgstr "최신화를 위한 점검하기"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "원격적재 오류: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "정리"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "재설정"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "캐쉬 및 배포 지우기"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "임시 파일"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM 저장소 메타자료"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "배포 보류 중"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "배포 되돌리기"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"꾸러미 추가나 대체 항목을 제거하고 현재 베포판을 그 원래의 상태로 되돌립니다."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "겹침 제거"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "시스템에 추가된 꾸러미"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "재정의 제거"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "꾸러미의 대체 항목은 일반적으로 OS 제작에 포함되어 있습니다"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "원래 상태로 재설정"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "델타 부분 받기"

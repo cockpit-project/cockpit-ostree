@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2025-07-22 10:53+0000\n"
 "Last-Translator: Ricky Tigg <ricky.tigg@gmail.com>\n"
 "Language-Team: Finnish <https://translate.fedoraproject.org/projects/cockpit/"
@@ -45,8 +45,8 @@ msgid "Remove"
 msgstr "Poista"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Peru"
 
@@ -117,6 +117,63 @@ msgstr "Haara"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Perusta uudelleen"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Tyhjennä välimuisti ja käyttöönotot"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Tilapäiset tiedostot"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM-tietovaraston metatiedot"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Odottava käyttöönotto"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Palauta käyttöönotto"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Siivoa"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Nollaa"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Poista paketin lisäykset tai korvaukset palauttaaksesi nykyisen käyttöönoton "
+"alkuperäiseen tilaan."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Poista peittokuvat"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Paketit, jotka on lisätty järjestelmään"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Poista korvaukset"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Pakettien korvaukset sisältyvät yleensä käyttöjärjestelmän koontiversioon"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Nollaa alkuperäiseen tilaan"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -336,63 +393,6 @@ msgstr "Etsitään päivityksiä"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Virhe ladattaessa etäällä olevat: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Siivoa"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Nollaa"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Tyhjennä välimuisti ja käyttöönotot"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Tilapäiset tiedostot"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM-tietovaraston metatiedot"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Odottava käyttöönotto"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Palauta käyttöönotto"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Poista paketin lisäykset tai korvaukset palauttaaksesi nykyisen käyttöönoton "
-"alkuperäiseen tilaan."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Poista peittokuvat"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Paketit, jotka on lisätty järjestelmään"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Poista korvaukset"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr ""
-"Pakettien korvaukset sisältyvät yleensä käyttöjärjestelmän koontiversioon"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Nollaa alkuperäiseen tilaan"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Vastaanotetaan delta-osia"

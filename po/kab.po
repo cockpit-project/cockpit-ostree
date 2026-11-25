@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-05-21 10:00+0000\n"
 "Last-Translator: ButterflyOfFire "
 "<butterflyoffire@users.noreply.translate.fedoraproject.org>\n"
@@ -47,8 +47,8 @@ msgid "Remove"
 msgstr "Kkes"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Semmet"
 
@@ -119,6 +119,62 @@ msgstr "Afurk"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Alszadur"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Sfeḍ tazarkatut akked isrusuyen"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Ifuyla iskudanen"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Iɣefisefka n ukufi RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Asrusu deg uraǧu"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Taɣalin ɣer deffir n usrusu"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Sfeḍ"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Ales awennez"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Kkes timerniwin neɣ isemselsiyen n ikemmusen iwakken ad d-yuɣal waddad-agi "
+"amiran n usrusu ɣer waddad-is aneṣli."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Kkes tudiliwin"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Ikemmusen i yettwarennan ɣer unagraw"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Kkes iḥettemen"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Isemselsiyen n yikemmusen yewwi-d ddan-d deg Unagraw n Wammud"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Ales awennez ɣer waddad aneṣli"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -336,59 +392,3 @@ msgstr "Asenqed n yileqman"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Tuccḍa deg usali n ikufan inmeggagen: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Sfeḍ"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Ales awennez"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Sfeḍ tazarkatut akked isrusuyen"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Ifuyla iskudanen"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Iɣefisefka n ukufi RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Asrusu deg uraǧu"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Taɣalin ɣer deffir n usrusu"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Kkes timerniwin neɣ isemselsiyen n ikemmusen iwakken ad d-yuɣal waddad-agi "
-"amiran n usrusu ɣer waddad-is aneṣli."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Kkes tudiliwin"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Ikemmusen i yettwarennan ɣer unagraw"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Kkes iḥettemen"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Isemselsiyen n yikemmusen yewwi-d ddan-d deg Unagraw n Wammud"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Ales awennez ɣer waddad aneṣli"

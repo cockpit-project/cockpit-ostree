@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2024-11-11 23:15+0000\n"
 "Last-Translator: Pavel Borecki <pavel.borecki@gmail.com>\n"
 "Language-Team: Czech <https://translate.fedoraproject.org/projects/cockpit-"
@@ -49,8 +49,8 @@ msgid "Remove"
 msgstr "Odstranit"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Storno"
 
@@ -125,6 +125,63 @@ msgstr "Větev"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Načíst znovu / změnit zdroj"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Vyčistit mezipaměť a nasazení"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Dočasné soubory"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadata RPM repozitáře"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Čekající nasazení"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Vrátit nasazení zpět do předchozího stavu"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Uklidit"
+
+# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Reset"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Odebrat přidání nebo nahrazení balíčků a vrátit tak stávající nasazení do "
+"jeho původního stavu."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Odebrat dodatečné vrstvy"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Balíčky které byly přidány do systému"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Odebrat přebití"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Nahrazení balíčků běžně obsažených v sestavení operačního systému"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Vrátit do původního stavu"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -357,63 +414,6 @@ msgstr "Zjišťuje se, zda jsou k dispozici případné aktualizace"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Chyba při načítání vzdálených zdrojů: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Uklidit"
-
-# auto translated by TM merge from project: FreeIPA, version: ipa-4-5, DocId: po/ipa
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Reset"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Vyčistit mezipaměť a nasazení"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Dočasné soubory"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Metadata RPM repozitáře"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Čekající nasazení"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Vrátit nasazení zpět do předchozího stavu"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Odebrat přidání nebo nahrazení balíčků a vrátit tak stávající nasazení do "
-"jeho původního stavu."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Odebrat dodatečné vrstvy"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Balíčky které byly přidány do systému"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Odebrat přebití"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Nahrazení balíčků běžně obsažených v sestavení operačního systému"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Vrátit do původního stavu"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Získávají se přírůstkové části"
