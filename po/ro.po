@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-04-08 11:18+0000\n"
 "Last-Translator: Remus-Gabriel Chelu <remusgabriel.chelu@disroot.org>\n"
 "Language-Team: Romanian <https://translate.fedoraproject.org/projects/"
@@ -47,8 +47,8 @@ msgid "Remove"
 msgstr "Elimină"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Anulează"
 
@@ -119,6 +119,64 @@ msgstr "Ramură"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Rebazare"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Șterge cache-ul și distribuțiile"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Fișiere temporare"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Metadate ale depozitului RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "În așteptarea distribuției"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Revenirea la versiunea anterioară"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Curățare"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Restabilește"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Elimină adăugările sau înlocuirile din pachet pentru a readuce distribuția "
+"actuală la starea inițială."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Elimină depozitele suplimentare (overlays)"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Pachetele care au fost adăugate în sistem"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Elimină înlocuirile"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr ""
+"Înlocuirea pachetelor incluse în mod obișnuit într-o versiune a sistemului "
+"de operare"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Restabilește starea inițială"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -338,61 +396,3 @@ msgstr "Se verifică dacă există actualizări"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Eroare la încărcarea depozitelor de la distanță: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Curățare"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Restabilește"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Șterge cache-ul și distribuțiile"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Fișiere temporare"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Metadate ale depozitului RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "În așteptarea distribuției"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Revenirea la versiunea anterioară"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Elimină adăugările sau înlocuirile din pachet pentru a readuce distribuția "
-"actuală la starea inițială."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Elimină depozitele suplimentare (overlays)"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Pachetele care au fost adăugate în sistem"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Elimină înlocuirile"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr ""
-"Înlocuirea pachetelor incluse în mod obișnuit într-o versiune a sistemului "
-"de operare"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Restabilește starea inițială"

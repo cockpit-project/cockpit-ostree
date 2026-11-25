@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE_VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-03-25 02:58+0000\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <https://translate.fedoraproject.org/projects/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "წაშლა"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "გაუქმება"
 
@@ -118,6 +118,62 @@ msgstr "ბრენჩი"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "ბაზის შეცვლა"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "კეშებისა და გაშლების გასუფთავება"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "დროებითი ფაილები"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "RPM-ის რეპოზიტორიის მეტამონაცემები"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "გაშლის მოლოდინში"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "გაშლის დაბრუნება"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "მოსუფთავება"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "ჩამოყრა"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"პაკეტების დამატებების ან ჩანაცვლებების მოცილება მიმდინარე გაშლის ორიგინალურ "
+"მდგომარეობაში დასაბრუნებლად."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "განაწილებების წაშლა"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "პაკეტები, რომლებიც დაემატა სისტემას"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "გადაფარვების წაშლა"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "პაკეტის ჩანაცვლება, რომლებიც ჩვეულებრივ ოს-ის აგებისას გამოიყენება"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "ორიგინალურ მდგომარეობაზე დაბრუნება"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -338,62 +394,6 @@ msgstr "განახლებების შემოწმება"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "დაშორებულების ჩატვირთვის შეცდომა: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "მოსუფთავება"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "ჩამოყრა"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "კეშებისა და გაშლების გასუფთავება"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "დროებითი ფაილები"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "RPM-ის რეპოზიტორიის მეტამონაცემები"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "გაშლის მოლოდინში"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "გაშლის დაბრუნება"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"პაკეტების დამატებების ან ჩანაცვლებების მოცილება მიმდინარე გაშლის ორიგინალურ "
-"მდგომარეობაში დასაბრუნებლად."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "განაწილებების წაშლა"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "პაკეტები, რომლებიც დაემატა სისტემას"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "გადაფარვების წაშლა"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "პაკეტის ჩანაცვლება, რომლებიც ჩვეულებრივ ოს-ის აგებისას გამოიყენება"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "ორიგინალურ მდგომარეობაზე დაბრუნება"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "დელტა ნაწილების მიღება"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-10-25 07:50+0000\n"
+"POT-Creation-Date: 2026-11-22 10:20+0000\n"
 "PO-Revision-Date: 2026-05-17 07:00+0000\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <https://translate.fedoraproject.org/projects/"
@@ -46,8 +46,8 @@ msgid "Remove"
 msgstr "Вилучити"
 
 #: src/repositoryModals.jsx:119 src/repositoryModals.jsx:211
-#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447 src/ostree.jsx:380
-#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196
+#: src/repositoryModals.jsx:310 src/repositoryModals.jsx:447
+#: src/deploymentModals.jsx:112 src/deploymentModals.jsx:196 src/ostree.jsx:380
 msgid "Cancel"
 msgstr "Скасувати"
 
@@ -118,6 +118,62 @@ msgstr "Гілка"
 #: src/repositoryModals.jsx:441 src/ostree.jsx:446 src/ostree.jsx:644
 msgid "Rebase"
 msgstr "Перенести"
+
+#: src/deploymentModals.jsx:67
+msgid "Clear cache and deployments"
+msgstr "Очистити кеш і розгортання"
+
+#: src/deploymentModals.jsx:76
+msgid "Temporary files"
+msgstr "Тимчасові файли"
+
+#: src/deploymentModals.jsx:82
+msgid "RPM repo metadata"
+msgstr "Метадані сховища RPM"
+
+#: src/deploymentModals.jsx:88
+msgid "Pending deployment"
+msgstr "Розгортання у черзі"
+
+#: src/deploymentModals.jsx:94
+msgid "Rollback deployment"
+msgstr "Відкотити розгортання"
+
+#: src/deploymentModals.jsx:109 src/ostree.jsx:898
+msgid "Clean up"
+msgstr "Очистити"
+
+#: src/deploymentModals.jsx:157 src/ostree.jsx:904
+msgid "Reset"
+msgstr "Скинути"
+
+#: src/deploymentModals.jsx:168
+msgid ""
+"Remove package additions or substitutions to return the current deployment "
+"to its original state."
+msgstr ""
+"Вилучити додані або замінені пакунки, щоб повернути поточне розгортання до "
+"його початкового стану."
+
+#: src/deploymentModals.jsx:171
+msgid "Remove overlays"
+msgstr "Вилучити накладки"
+
+#: src/deploymentModals.jsx:176
+msgid "Packages which have been added to the system"
+msgstr "Пакунки, які було додано до системи"
+
+#: src/deploymentModals.jsx:178
+msgid "Remove overrides"
+msgstr "Вилучити перевизначення"
+
+#: src/deploymentModals.jsx:183
+msgid "Substitutions of packages normally included in an OS build"
+msgstr "Заміни пакунків, які зазвичай включено до збірки ОС"
+
+#: src/deploymentModals.jsx:193
+msgid "Reset to original state"
+msgstr "Відновити початковий стан"
 
 #: src/remotes.js:86
 msgid "No configuration data found"
@@ -337,62 +393,6 @@ msgstr "Шукаємо оновлення"
 #: src/ostree.jsx:836
 msgid "Error loading remotes: $0"
 msgstr "Помилка під час спроби завантажити віддалені сховища: $0"
-
-#: src/ostree.jsx:898 src/deploymentModals.jsx:109
-msgid "Clean up"
-msgstr "Очистити"
-
-#: src/ostree.jsx:904 src/deploymentModals.jsx:157
-msgid "Reset"
-msgstr "Скинути"
-
-#: src/deploymentModals.jsx:67
-msgid "Clear cache and deployments"
-msgstr "Очистити кеш і розгортання"
-
-#: src/deploymentModals.jsx:76
-msgid "Temporary files"
-msgstr "Тимчасові файли"
-
-#: src/deploymentModals.jsx:82
-msgid "RPM repo metadata"
-msgstr "Метадані сховища RPM"
-
-#: src/deploymentModals.jsx:88
-msgid "Pending deployment"
-msgstr "Розгортання у черзі"
-
-#: src/deploymentModals.jsx:94
-msgid "Rollback deployment"
-msgstr "Відкотити розгортання"
-
-#: src/deploymentModals.jsx:168
-msgid ""
-"Remove package additions or substitutions to return the current deployment "
-"to its original state."
-msgstr ""
-"Вилучити додані або замінені пакунки, щоб повернути поточне розгортання до "
-"його початкового стану."
-
-#: src/deploymentModals.jsx:171
-msgid "Remove overlays"
-msgstr "Вилучити накладки"
-
-#: src/deploymentModals.jsx:176
-msgid "Packages which have been added to the system"
-msgstr "Пакунки, які було додано до системи"
-
-#: src/deploymentModals.jsx:178
-msgid "Remove overrides"
-msgstr "Вилучити перевизначення"
-
-#: src/deploymentModals.jsx:183
-msgid "Substitutions of packages normally included in an OS build"
-msgstr "Заміни пакунків, які зазвичай включено до збірки ОС"
-
-#: src/deploymentModals.jsx:193
-msgid "Reset to original state"
-msgstr "Відновити початковий стан"
 
 #~ msgid "Receiving delta parts"
 #~ msgstr "Отримуємо частини відмінностей"
